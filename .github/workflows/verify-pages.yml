@@ -23,8 +23,10 @@ jobs:
           python-version: '3.12'
       - name: Verify the published HTML and hashed service worker are current
         run: python src/build.py --check
-      - name: Validate links, manifest, meta tags, and 34 dossiers
+      - name: Validate links, manifest, meta tags, and 39 dossiers
         run: python src/tests/verify_publication.py
+      - name: Verify complete six-part house architecture for dossiers 35–39
+        run: python src/tests/verify_3_4_house_style.py
       - name: Verify Dossiers 33–34 against source-fidelity corrections
         run: python src/tests/verify_editorial_fidelity.py
       - name: Validate book structure and chapter navigation
@@ -69,6 +71,8 @@ jobs:
         run: python -m playwright install chromium
       - name: Test full-book search, responsive layout, preferences, keyboard and PDF
         run: python src/tests/browser_quality.py
+      - name: Inspect reconstructed 3.4 dossiers with Chromium and a real A4 PDF
+        run: python src/tests/browser_3_4_house_style.py
       - name: Batch 2 permalink and altered-edition checkpoint browser coverage
         run: python src/tests/browser_batch2_continuity.py
       - name: Batch D — altered-edition insertion, reordering and legacy checkpoint continuity
