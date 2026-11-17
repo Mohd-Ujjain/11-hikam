@@ -143,12 +143,12 @@
     }
     var titleEl = section.querySelector('.chapter-title');
     var titleText = titleEl ? titleEl.textContent.trim() : '';
-    // Empirical print guard for the long, mixed-component 3.4 excerpts:
+    // Empirical print guard for the dense, mixed-component 3.4 dossiers:
     // measured in Chromium after full page construction. Their nested tables/
     // lists can consume additional vertical space beyond offsetTop estimates.
-    // Limit this correction to the two observed chapters, leaving every
-    // previously-shipped chapter's pagination untouched.
-    var extraSafetyPx = (section.id === 'ch3-4-3' || section.id === 'ch3-4-4') ? 76 : 0;
+    // Limit this correction to the seven observed 3.4 chapters, leaving all
+    // earlier sub-topics' page packing untouched.
+    var extraSafetyPx = /^ch3-4-[3-9]$/.test(section.id) ? 76 : 0;
 
     var body = section.querySelector('.chapter-body');
     var endnav = section.querySelector('.chapter-endnav');
