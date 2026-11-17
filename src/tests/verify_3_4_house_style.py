@@ -44,6 +44,11 @@ class ChapterStructure(HTMLParser):
         if tag not in VOID:
             self.stack.append(tag)
 
+    def handle_startendtag(self, tag, attrs):
+        if tag not in VOID:
+            self.handle_starttag(tag, attrs)
+            self.handle_endtag(tag)
+
     def handle_endtag(self, tag):
         assert self.stack and self.stack[-1] == tag, ("bad or unbalanced HTML", self.stack[-5:], tag)
         if tag == "section" and self.current is not None and len(self.stack) == self.depth:
