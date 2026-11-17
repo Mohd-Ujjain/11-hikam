@@ -518,3 +518,12 @@ Never auto-open manual TOC disclosures; keep both active chapter and section
 markers legible. The resume prompt stays in the navy/parchment/gold palette
 and never auto-navigates. Technical rules, privacy, and QA are documented in
 `src/docs/hosting/READING_POSITION.md`.
+
+## 2026-11-18 — Complete house-style reconstruction of 3.4.5–3.4.9
+
+- Replaced five brief, structurally incomplete entries with full source-aligned English dossiers; preserved the existing 3.4.3 and 3.4.4 texts, TOC numbers, hue sequence (168° / 188° / 208° / 228° / 248°), and 39-chapter book structure.
+- **Structural regression found in the earlier implementation:** `.chapter-endnav` and `.end-block` were nested inside `.chapter-body` rather than being direct siblings. Because the JS print engine selects these independently, that markup is **not equivalent** and must never be used for new dossiers.
+- The six-section end-block is mandatory, not optional. Each new revision again includes the one-page rev-grid, pagination-safe definition groups, key-table recall, body-linked memory aids, and all five examination-question categories.
+- Restored the full teaching vocabulary: concept/definition/high-yield/tip/mistake boxes; structured comparisons with captions; functional hierarchies; ELI10 analogies; a midpoint checkpoint; concept-relationship maps; and conclusions that follow the supplied source's own logical sequence.
+- An enforceable architecture regression now lives in `src/tests/verify_3_4_house_style.py` so missing components or nested revisions cannot silently pass a future build.
+- See `src/docs/editorial/RECONSTRUCTION_3_4_5_TO_3_4_9.md` for the source-bound content map and exact retained figures. No substantive opinions or counter-arguments were inserted.
