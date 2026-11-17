@@ -25,7 +25,7 @@
     var probe = document.createElement('div');
     probe.style.cssText = 'position:absolute; visibility:hidden; left:-9999px; top:0; ' +
       'width:' + MEASURE_WIDTH_MM + 'mm; box-sizing:border-box;';
-    probe.className = 'js-page-content ' + contentClass + (isRTL ? ' rtl' : '');
+    probe.className = 'js-pagination-probe js-page-content ' + contentClass + (isRTL ? ' rtl' : '');
     if (lang) probe.setAttribute('lang', lang);
     document.body.appendChild(probe);
     for (var i=0;i<items.length;i++){ probe.appendChild(items[i]); }
