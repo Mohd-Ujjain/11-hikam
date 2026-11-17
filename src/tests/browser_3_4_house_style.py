@@ -83,9 +83,12 @@ def print_check(browser, url: str) -> None:
         assert info["maxWidthOverflow"] <= 5, (ident, "printed content exceeds available width", info)
         assert ident.replace("ch", "").replace("-", ".") in info["tabId"], (ident, info)
     print(f"PASS JS pagination across all five dossiers: {pages}", flush=True)
-    # Verify one representative long chapter as an actual PDF, not merely DOM pages.
+    # The previous sample used emulated print media. Restore screen styles before
+    # re-running pagination, just as the normal browser print workflow does.
     page.evaluate("window.dispatchEvent(new Event('afterprint'))")
+    page.emulate_media(media="screen")
     page.evaluate("(ids) => { window.__printControl.setFilter(ids); window.__printControl.includeRevision(true); window.dispatchEvent(new Event('beforeprint')); }", [IDS[-1]])
+    page.emulate_media(media="print")
     expected_pages = page.locator(f"#{IDS[-1]} > .js-print-page").count()
     assert expected_pages >= 12, ("missing generated revision pages", expected_pages)
     pdf = page.pdf(print_background=True, prefer_css_page_size=True)
