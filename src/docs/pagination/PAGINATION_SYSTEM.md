@@ -295,3 +295,18 @@ normal full-book print remains unaffected.
 Browser validation covered a two-chapter reversed-order print and a PDF export
 with chapter 1.1.2 preceding 1.1.1, no frontmatter, and revision pages omitted;
 previous chapter order was restored after the print lifecycle.
+
+## 2026-11-18 — Print restoration for dossiers 3.4.5–3.4.9
+
+- Added **five distinct `@page ch3-4-N` light templates** and **five distinct `@page rev3-4-N` dark templates**, plus the three-selector per-chapter assignment that routes `.chapter-body` and `.chapter-endnav` to light pages and `.end-block` to dark revision pages.
+- Corrected a structural failure: earlier markup nested navigation and revision content inside `.chapter-body`, while `paginateChapter()` clones the body and end-block **as independent sibling flows**. DOM validation now requires the four immediate children in order: front matter, chapter body, end navigation, end block.
+- Every new revision's definitions use short `.keydefs` groups (four entries each), not one oversized atomic container; this follows the measured 3.4.4 pagination lesson. The `.revision-sheet` itself is also a separate dark-flow item.
+- New Chromium regression: `src/tests/browser_3_4_house_style.py` checks 390px/1366px reading, independent chapter light and dark printed pages, footer clearance, actual A4 PDF generation and afterprint restoration. The JS paginator required a narrowly scoped selected-print measurement-probe visibility repair.
+
+### Verified selected-print content-loss bug and resolution
+
+During the new real-PDF audit, the JS paginator correctly prepared **18 screen-measured content/revision pages** for 3.4.9, but Chromium's `page.pdf()` regenerated the print job and produced only **three A4 pages**. This was not a chapter-writing problem: the selected-chapter print rule `body.print-chapters-only > :not(section.chapter){display:none!important}` hid the temporary, absolutely positioned `measureConsumedHeights()` probe appended to `body` when `beforeprint` ran under print media. All measured item heights collapsed and bin packing silently collapsed the entire dossier into a few clipped sheets.
+
+The minimal repair tags the transient probe `.js-pagination-probe` and exempts it from the selected-chapter body-hiding rule. It still has `visibility:hidden` and is removed immediately after measurement. The established print engine's clone-and-restore and the fixed physical-page layout remain unchanged. A **76px chapter-scoped safety reserve** now applies to 3.4.3–3.4.9 (existing 3.4.3–3.4.4 reserve extended to five similarly dense chapters).
+
+Measured in Chromium after the fix, the five new dossiers produced respectively **18, 17, 18, 18 and 18** JS print pages with both light and dark pages; minimum content-to-footer clearance was approximately **102, 97, 109, 90, and 112px**, with zero measured horizontal overflow. A separate real `page.pdf()` call now yielded **19 A4 sheets** for 3.4.9 including front matter and dark revision material, rather than the earlier truncated three-page export. The browser regression requires both the generated-page count and the actual PDF's revision headings, so this bug cannot silently return.
