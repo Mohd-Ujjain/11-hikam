@@ -100,7 +100,14 @@ def print_check(browser, url: str) -> None:
           f'has_revision={"Revision Block" in pdf_text}, '
           f'has_examination={"Possible Examination Questions" in pdf_text}', flush=True)
     assert len(reader.pages) >= expected_pages, ("PDF dropped generated pages", expected_pages, len(reader.pages))
-    assert "Possible Examination Questions" in pdf_text, "The dark revision material did not print"
+    normalized_pdf_text = " ".join(pdf_text.split())
+    for revision_heading in ("Chapter Summary", "One-Page Revision Sheet",
+                             "Key Definitions", "Memory Aids Collected",
+                             "Possible Examination Questions"):
+        assert revision_heading in normalized_pdf_text, (
+            "PDF missing a required dark-revision section", revision_heading,
+            normalized_pdf_text[-900:])
+
     page.evaluate("window.dispatchEvent(new Event('afterprint'))")
     assert page.locator(".js-print-page").count() == 0
     assert page.evaluate("Array.from(document.querySelectorAll('section.chapter')).map(x => x.id)") == original
