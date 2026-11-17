@@ -3,7 +3,7 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import vm from 'node:vm';
-const SW_ROOT = 'https://mohdujjain.github.io/11am-hikam/';
+const SW_ROOT = 'https://mohdujjain.github.io/11-hikam/';
 const workerScript = fs.readFileSync(new URL('../../service-worker.js', import.meta.url), 'utf8');
 const listeners = new Map();
 const normalize = (req) => new URL(typeof req === 'string' ? req : req.url, SW_ROOT).href;
