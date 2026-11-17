@@ -10,7 +10,7 @@ import sys
 import xml.etree.ElementTree as ET
 
 HERE = Path(__file__).resolve().parents[2]
-BASE = 'https://mohdujjain.github.io/11am-hikam/'
+BASE = 'https://mohdujjain.github.io/11-hikam/'
 TITLE = '11AM — Takhassus Hikam Dossier'
 
 class PublishParser(HTMLParser):
@@ -52,8 +52,8 @@ def verify():
     parser.feed(index)
     assert parser.title == TITLE, parser.title
     assert '<title>'+TITLE+'</title>' in main, 'Browser title must be authored in main.html'
-    assert len(parser.chapters)==34, f'Expected 34 dossiers, found {len(parser.chapters)}'
-    assert len(set(parser.chapters))==34, 'Duplicate chapter IDs'
+    assert len(parser.chapters)==39, f'Expected 39 dossiers, found {len(parser.chapters)}'
+    assert len(set(parser.chapters))==39, 'Duplicate chapter IDs'
     assert not any(x.get('src') for x in parser.scripts), 'Published reader must have inline JS'
     assert not any('philosophy_notes.css' in x.get('href','') for x in parser.links), 'Published reader must inline CSS'
     assert 'serviceWorker.register' in index, 'Service worker registration is missing'
@@ -82,7 +82,7 @@ def verify():
     manifest = json.loads((HERE/'manifest.webmanifest').read_text())
     assert manifest['name'] == TITLE
     assert manifest['scope'] == manifest['start_url'] == './'
-    assert manifest['id'] == '/11am-hikam/'
+    assert manifest['id'] == '/11-hikam/'
     assert len(manifest['icons']) == 2
     for icon in manifest['icons']:
         assert (HERE/icon['src']).is_file(), icon
@@ -102,7 +102,7 @@ def verify():
     stale_paths = [path for path in legacy_paths if (HERE / path).exists()]
     assert not stale_paths, 'Obsolete files still at repository root: ' + ', '.join(stale_paths)
 
-    print('Valid publication: 34 dossiers, correct HTML/meta/canonical, manifest/icons, offline update notice, 404, sitemap, social preview.')
+    print('Valid publication: 39 dossiers, correct HTML/meta/canonical, manifest/icons, offline update notice, 404, sitemap, social preview.')
 
 if __name__ == '__main__':
     try:

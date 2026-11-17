@@ -21,11 +21,11 @@ for label, text in (("canonical", source), ("non-inlined", html), ("published", 
     for phrase in ("Scholarly Framing", "لم تُتحقق بصورة مستقلة", "not independently verified", "supplied study extract"):
         assert phrase not in text, (label, phrase)
     assert 'id="ch3-4-3"' in text and 'id="ch3-4-4"' in text
-    chapter_34 = text.split('id="ch3-4-4"', 1)[1]
+    chapter_34 = text.split('id="ch3-4-4"', 1)[1].split('</section>', 1)[0]
     assert not re.search(r"\bextract\b|\bsupplied\s+study\b", chapter_34, re.I), (label, "source-input label restored")
     assert "Indirect routes remain logically possible" in chapter_34
 assert source in html and source in public
-assert len(re.findall(r'<section class="chapter(?: [^"]+)?" id="ch\d+-\d+-\d+"', public)) == 34
+assert len(re.findall(r'<section class="chapter(?: [^"]+)?" id="ch\d+-\d+-\d+"', public)) == 39
 for name in ("3.4.3_Original_Study_Extract.txt", "3.4.4_Original_Study_Extract.txt"):
     assert (ROOT/"src/source_materials"/name).is_file()
-print("PASS: 95 source-faithful corrections; 34 dossiers retained")
+print("PASS: 95 source-faithful corrections; 39 dossiers retained")
