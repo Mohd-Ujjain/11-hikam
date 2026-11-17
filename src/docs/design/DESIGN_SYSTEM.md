@@ -527,3 +527,7 @@ and never auto-navigates. Technical rules, privacy, and QA are documented in
 - Restored the full teaching vocabulary: concept/definition/high-yield/tip/mistake boxes; structured comparisons with captions; functional hierarchies; ELI10 analogies; a midpoint checkpoint; concept-relationship maps; and conclusions that follow the supplied source's own logical sequence.
 - An enforceable architecture regression now lives in `src/tests/verify_3_4_house_style.py` so missing components or nested revisions cannot silently pass a future build.
 - See `src/docs/editorial/RECONSTRUCTION_3_4_5_TO_3_4_9.md` for the source-bound content map and exact retained figures. No substantive opinions or counter-arguments were inserted.
+
+### Browser-verified PDF and revision integrity
+
+The reconstructed dossiers were checked in actual Chromium at 390px and 1366px, including the independent dark end-block, and through the JavaScript A4 paginator. All five used the established hue and component treatments with no horizontal overflow. The targeted print test detected a separate existing selected-print issue: the print CSS hid the paginator's off-screen measurement probe during `beforeprint`, causing drastic PDF truncation. The probe is now exempt from the selected-body visibility rule while it exists. See `PAGINATION_SYSTEM.md` for the verified root cause and measurements. The new browser regression also requires the actual exported PDF to contain all six dark revision sections, not just their presence in the on-screen DOM.
