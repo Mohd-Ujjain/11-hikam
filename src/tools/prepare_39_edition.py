@@ -35,6 +35,12 @@ for name in ("src/main.html", "sitemap.xml", "robots.txt", "README.md"):
 p = root / "manifest.webmanifest"
 p.write_text(p.read_text(encoding="utf-8").replace('"id": "/11am-hikam/"', '"id": "/11-hikam/"'), encoding="utf-8")
 
+# The publication smoke test must follow the new Pages project path.
+test = root / "src/tests/verify_publication.py"
+test.write_text(test.read_text(encoding="utf-8")
+    .replace("https://mohdujjain.github.io/11am-hikam/", "https://mohdujjain.github.io/11-hikam/")
+    .replace("'/11am-hikam/'", "'/11-hikam/'"), encoding="utf-8")
+
 # Keep authored chapter counts and regression expectations consistent.
 for p in (root / "src/tests").glob("*"):
     if p.suffix not in (".py", ".mjs"):
