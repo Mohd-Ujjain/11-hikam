@@ -2033,7 +2033,10 @@ hr.rule{border:none; border-top:1px solid var(--paper-line); margin:38px 0;}
   #tocBackdrop {display:none!important;}
   /* A custom selection includes only the chosen chapter sections;
      full-book printing is unchanged. */
-  body.print-chapters-only > :not(section.chapter) {display:none!important;}
+  /* The print paginator appends a temporary off-screen measurement node to body.
+     Never hide that node during beforeprint: its measured heights would collapse
+     to zero, causing the PDF to drop substantial chapter/revision content. */
+  body.print-chapters-only > :not(section.chapter):not(.js-pagination-probe) {display:none!important;}
 }
 
 /* ============================================================
@@ -10842,6 +10845,7 @@ hr.rule{border:none; border-top:1px solid var(--paper-line); margin:38px 0;}
 
 
 
+
 <!-- CHAPTER 3.4.5 -->
 <section class="chapter" id="ch3-4-5" style="--hue:168;">
 <div class="chapter-frontmatter">
@@ -11516,7 +11520,7 @@ hr.rule{border:none; border-top:1px solid var(--paper-line); margin:38px 0;}
     var probe = document.createElement('div');
     probe.style.cssText = 'position:absolute; visibility:hidden; left:-9999px; top:0; ' +
       'width:' + MEASURE_WIDTH_MM + 'mm; box-sizing:border-box;';
-    probe.className = 'js-page-content ' + contentClass + (isRTL ? ' rtl' : '');
+    probe.className = 'js-pagination-probe js-page-content ' + contentClass + (isRTL ? ' rtl' : '');
     if (lang) probe.setAttribute('lang', lang);
     document.body.appendChild(probe);
     for (var i=0;i<items.length;i++){ probe.appendChild(items[i]); }
