@@ -44,8 +44,10 @@ test.write_text(test.read_text(encoding="utf-8")
 # Scope the original 3.4.4 fidelity guard to its own chapter.
 audit = root / "src/tests/verify_editorial_fidelity.py"
 audit_text = audit.read_text(encoding="utf-8")
-audit_text = audit_text.replace("chapter_34 = text.split(", "chapter_34 = text.split(")
-audit_text = audit_text.replace("chapter_34 = text.split('id=\\\"ch3-4-4\\\"', 1)[1]", "chapter_34 = text.split('id=\\\"ch3-4-4\\\"', 1)[1].split('</section>', 1)[0]")
+audit_text = "\n".join(
+    line + ".split('</section>', 1)[0]" if line.strip().startswith("chapter_34 = text.split(")
+    else line for line in audit_text.split("\n")
+)
 audit.write_text(audit_text, encoding="utf-8")
 
 # Keep authored chapter counts and regression expectations consistent.
