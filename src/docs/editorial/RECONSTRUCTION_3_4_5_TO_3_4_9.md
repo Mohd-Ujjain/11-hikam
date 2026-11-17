@@ -43,3 +43,7 @@ All five revisions use the six named house sections, in the established order: *
 - Five named `ch3-4-N` and `rev3-4-N` templates and their CSS assignments have been added. JS auto-discovers the new chapters without changing chapter-selection logic.
 
 The existing 34 earlier dossier texts were not revised by this chapter reconstruction.
+
+## Browser and printed-PDF acceptance
+
+The 3.4.5–3.4.9 reconstruction underwent a separate Chromium test at 390px and 1366px. Each chapter displayed its six-part dark revision and five examination categories without screen overflow. The selected-chapter print issue where `body.print-chapters-only` hid the off-screen JS measurement probe was discovered and corrected with a narrow probe exemption. The five dossiers then paginated as 18/17/18/18/18 light-plus-dark pages, with at least ~90px footer clearance. An actual A4 PDF export of 3.4.9 returned 19 pages with examination material, instead of an incorrectly truncated three-page PDF. The permanent browser check verifies that the full revision headings survive export as well.
