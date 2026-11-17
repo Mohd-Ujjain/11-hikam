@@ -86,10 +86,18 @@ def print_check(browser, url: str) -> None:
     # Verify one representative long chapter as an actual PDF, not merely DOM pages.
     page.evaluate("window.dispatchEvent(new Event('afterprint'))")
     page.evaluate("(ids) => { window.__printControl.setFilter(ids); window.__printControl.includeRevision(true); window.dispatchEvent(new Event('beforeprint')); }", [IDS[-1]])
+    expected_pages = page.locator(f"#{IDS[-1]} > .js-print-page").count()
+    assert expected_pages >= 12, ("missing generated revision pages", expected_pages)
     pdf = page.pdf(print_background=True, prefer_css_page_size=True)
     assert pdf.startswith(b"%PDF")
     reader = PdfReader(BytesIO(pdf))
-    assert len(reader.pages) >= page.locator(f"#{IDS[-1]} > .js-print-page").count()
+    pdf_text = "\\n".join(p.extract_text() or "" for p in reader.pages)
+    print(f'PDF AUDIT: expected_generated={expected_pages}, actual_pdf={len(reader.pages)}, '
+          f'post_pdf_generated={page.locator(f"#{IDS[-1]} > .js-print-page").count()}, '
+          f'has_revision={"Revision Block" in pdf_text}, '
+          f'has_examination={"Possible Examination Questions" in pdf_text}', flush=True)
+    assert len(reader.pages) >= expected_pages, ("PDF dropped generated pages", expected_pages, len(reader.pages))
+    assert "Possible Examination Questions" in pdf_text, "The dark revision material did not print"
     page.evaluate("window.dispatchEvent(new Event('afterprint'))")
     assert page.locator(".js-print-page").count() == 0
     assert page.evaluate("Array.from(document.querySelectorAll('section.chapter')).map(x => x.id)") == original
