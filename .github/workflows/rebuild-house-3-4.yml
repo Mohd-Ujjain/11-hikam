@@ -1,0 +1,42 @@
+name: Rebuild deep-reconstructed 3.4 dossiers (temporary)
+on:
+  push:
+    branches: [reconstruct-dossiers-3-4-5-to-9-house-style]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Reconstruct canonical fragment and print styles
+        run: python src/tools/reconstruct_3_4.py
+      - name: Generate public book
+        run: |
+          python src/build.py
+          python src/build.py --check
+      - name: Verify authored structures and source fidelity
+        run: |
+          python src/tests/verify_3_4_house_style.py
+          python src/tests/verify_publication.py
+          python src/tests/validate_structure.py
+          python src/tests/verify_editorial_fidelity.py
+          python src/tests/verify_sidebar.py
+          python src/tests/verify_revision_visibility.py
+          python src/tests/verify_search_integrity.py
+          python src/tests/verify_visual_polish.py
+      - name: Commit canonical modules and generated website
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/chapters/subtopic-3-4.html src/philosophy_notes.css src/philosophy_study_notes.html index.html service-worker.js
+          git diff --cached --quiet && exit 0
+          git commit -m "Implement complete 3.4.5–3.4.9 dossiers in canonical house architecture"
+          git push origin HEAD:reconstruct-dossiers-3-4-5-to-9-house-style
