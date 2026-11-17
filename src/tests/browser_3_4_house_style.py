@@ -74,6 +74,7 @@ def print_check(browser, url: str) -> None:
         }
         return out;
     }""", IDS)
+    print(f'PRINT GEOMETRY SAMPLE: {pages}', flush=True)
     for ident, info in pages.items():
         assert info["light"] >= 2, (ident, info)
         assert info["dark"] >= 2, (ident, "revision section not paginated")
