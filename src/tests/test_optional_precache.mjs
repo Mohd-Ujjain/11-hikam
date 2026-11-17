@@ -7,7 +7,7 @@ import {readFileSync} from 'node:fs';
 import vm from 'node:vm';
 
 const worker=readFileSync(new URL('../../service-worker.js',import.meta.url),'utf8');
-const scope='https://mohdujjain.github.io/11am-hikam/';
+const scope='https://mohdujjain.github.io/11-hikam/';
 function harness(failure){
   const handlers=new Map(),stores=new Map(),attempted=[];
   let skip=0,claimed=0;

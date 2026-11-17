@@ -3,7 +3,7 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import vm from 'node:vm';
-const SW_ROOT = 'https://mohdujjain.github.io/11am-hikam/';
+const SW_ROOT = 'https://mohdujjain.github.io/11-hikam/';
 const workerScript = fs.readFileSync(new URL('../../service-worker.js', import.meta.url), 'utf8');
 const listeners = new Map();
 const normalize = (req) => new URL(typeof req === 'string' ? req : req.url, SW_ROOT).href;
@@ -26,7 +26,7 @@ async function fetchMock(req) {
   networkRequests++;
   if (!online) throw new Error('Network offline');
   const url = normalize(req);
-  return new Response(url.endsWith('/index.html') ? 'COMPLETE 34 DOSSIERS':'asset '+url,{status:200,headers:{'content-type': 'text/plain'}});
+  return new Response(url.endsWith('/index.html') ? 'COMPLETE 39 DOSSIERS':'asset '+url,{status:200,headers:{'content-type': 'text/plain'}});
 }
 const context = {
   self:{
@@ -66,7 +66,7 @@ assert.ok(context.self.clients.claimed);
 online=false;
 const before=networkRequests;
 const response=await dispatch('fetch',{request:{method:'GET',mode:'navigate',url:SW_ROOT}});
-assert.equal(await response.text(),'COMPLETE 34 DOSSIERS');
+assert.equal(await response.text(),'COMPLETE 39 DOSSIERS');
 assert.equal(networkRequests,before);
 
 // A font already saved should remain available offline.
@@ -86,4 +86,4 @@ assert.equal(fontResponse.failed,0);
 online=false;
 const cachedFont=await dispatch('fetch',{request:{method:'GET',mode:'cors',url:'https://fonts.gstatic.com/s/amiri/v1/amiri.woff2'}});
 assert.ok((await cachedFont.text()).includes('asset'));
-console.log('Offline worker validated: atomic install, cache-first 34-dossier navigation, old-version cleanup, persistent font cache, allowed-CDN filtering, offline font response.');
+console.log('Offline worker validated: atomic install, cache-first 39-dossier navigation, old-version cleanup, persistent font cache, allowed-CDN filtering, offline font response.');

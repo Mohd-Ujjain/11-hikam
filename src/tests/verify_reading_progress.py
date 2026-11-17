@@ -44,7 +44,7 @@ def main():
                    "location.hash || window.scrollY>100", 'setSectionActive(',
                    'chapterRatio:', 'sectionRatio=', 'suspendUntil=Date.now()+2000']:
         assert phrase in script, f'Missing reader safeguard: {phrase}'
-    assert 'https://mohdujjain.github.io/11am-hikam/' in published
+    assert 'https://mohdujjain.github.io/11-hikam/' in published
     print('Reader progress verified: separate book/chapter gauges, section highlight, local-only resume, direct-link and print safeguards.')
 
 if __name__=='__main__':main()
