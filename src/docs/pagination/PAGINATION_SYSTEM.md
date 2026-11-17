@@ -295,3 +295,10 @@ normal full-book print remains unaffected.
 Browser validation covered a two-chapter reversed-order print and a PDF export
 with chapter 1.1.2 preceding 1.1.1, no frontmatter, and revision pages omitted;
 previous chapter order was restored after the print lifecycle.
+
+## 2026-11-18 — Print restoration for dossiers 3.4.5–3.4.9
+
+- Added **five distinct `@page ch3-4-N` light templates** and **five distinct `@page rev3-4-N` dark templates**, plus the three-selector per-chapter assignment that routes `.chapter-body` and `.chapter-endnav` to light pages and `.end-block` to dark revision pages.
+- Corrected a structural failure: earlier markup nested navigation and revision content inside `.chapter-body`, while `paginateChapter()` clones the body and end-block **as independent sibling flows**. DOM validation now requires the four immediate children in order: front matter, chapter body, end navigation, end block.
+- Every new revision's definitions use short `.keydefs` groups (four entries each), not one oversized atomic container; this follows the measured 3.4.4 pagination lesson. The `.revision-sheet` itself is also a separate dark-flow item.
+- New Chromium regression: `src/tests/browser_3_4_house_style.py` checks 390px/1366px reading, independent chapter light and dark printed pages, footer clearance, actual A4 PDF generation and afterprint restoration. No JS paginator redesign was necessary.
