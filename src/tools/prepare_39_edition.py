@@ -41,6 +41,13 @@ test.write_text(test.read_text(encoding="utf-8")
     .replace("https://mohdujjain.github.io/11am-hikam/", "https://mohdujjain.github.io/11-hikam/")
     .replace("'/11am-hikam/'", "'/11-hikam/'"), encoding="utf-8")
 
+# Scope the original 3.4.4 fidelity guard to its own chapter.
+audit = root / "src/tests/verify_editorial_fidelity.py"
+audit_text = audit.read_text(encoding="utf-8")
+audit_text = audit_text.replace("chapter_34 = text.split(", "chapter_34 = text.split(")
+audit_text = audit_text.replace("chapter_34 = text.split('id=\\\"ch3-4-4\\\"', 1)[1]", "chapter_34 = text.split('id=\\\"ch3-4-4\\\"', 1)[1].split('</section>', 1)[0]")
+audit.write_text(audit_text, encoding="utf-8")
+
 # Keep authored chapter counts and regression expectations consistent.
 for p in (root / "src/tests").glob("*"):
     if p.suffix not in (".py", ".mjs"):
