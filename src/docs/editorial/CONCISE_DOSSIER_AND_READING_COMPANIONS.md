@@ -2,10 +2,20 @@
 
 **Project:** 11AM — Takhassus Hikam Dossier  
 **Adopted:** 18 November 2026  
-**Status:** Binding editorial direction; a three-Companion pilot controller is implemented for 1.1.1 and 1.1.2, subject to release verification. No mass chapter compression has been performed  
+**Status:** Binding editorial direction. The concise Moran/Stout editions have been published; the later context-first Companion/Source Depth amendment is piloted on Moran 1.1.1.  
 **Primary authority:** [Standing Language and Source-Fidelity Protocol](LANGUAGE_AND_SOURCE_FIDELITY_REFINEMENT_PROTOCOL.md)
 
 > **Editorial decision:** The dossier should be an exceptionally clear, compact way to learn the author's essential argument, not a second article. Use a source-dependent **650–850 words of main explanation + 850–1,150 words of instructional study aids per reading**, averaged across the programme and excluding chapter frontmatter and the existing end-of-chapter revision block. Preserve all important source material by assigning it a clearly justified place across the main notes, the existing study aids, and carefully source-grounded **Reading Companions** available at the exact point of need. **Neither Arabic nor English language-fidelity rules change at all.**
+
+## Later 18 November amendment — contextual clarity over new popup facts
+
+**This amendment supersedes every earlier statement in this document that a Reading Companion must add a new source fact, named debate or historical qualification in order to avoid duplication.** The student's immediate need is to understand the current idea and why it matters *here*. A short, source-faithful explanation may legitimately restate or connect already visible concepts in simpler words. It must not launch a new historical or technical subplot while the student is trying to follow the main argument.
+
+**Source Depth** is the separately chosen, optional home for further source-specific details that are useful but would increase cognitive burden inside a contextual popup. Such details remain traceable to the original article and are never the sole home of an indispensable premise. A native closed disclosure after the Moran chapter body is the controlled pilot. Its material is excluded from the immediately visible 1,500–2,000-word target and is not exported by the standard chapter-body print compositor. The complete essential argument must stand without it.
+
+**The original language, source-fidelity, study-aid and six-part revision requirements remain unchanged.** The additional goal is *conceptual continuity*: the reader needs a simple picture connecting the author's question, the many names, the different methods, historical changes and the conclusion. Use existing concept maps and actual timelines whenever they represent those relationships better than repeated descriptive prose.
+
+See [Context-First Reading Companions and Optional Source Depth](CONTEXT_FIRST_COMPANIONS_AND_SOURCE_DEPTH.md) for the binding pilot rules, source-detail register, UI semantics and acceptance checks. Do not automatically apply Moran's implementation to Stout or unrelated chapters.
 
 ## Adopted source-proportionate range — updated November 18, 2026
 
