@@ -40,7 +40,7 @@ def check(browser, url, width):
     errors = []
     page.on('pageerror', lambda exc: errors.append(str(exc)))
     page.goto(url, wait_until='domcontentloaded', timeout=60000)
-    page.wait_for_function("(n) => window.__hikamReadingCompanions && window.__hikamReadingCompanions.attached() === n", EXPECTED_COUNT)
+    page.wait_for_function("(n) => window.__hikamReadingCompanions && window.__hikamReadingCompanions.attached() === n", arg=EXPECTED_COUNT)
     assert page.evaluate("window.__hikamReadingCompanions.failed()") == []
     assert page.locator('section.chapter').count() == 39
     cues = page.locator('.hikam-companion-trigger')
