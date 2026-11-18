@@ -1,0 +1,112 @@
+name: Hikam fork — manual source and publication verification
+
+# This workflow is intentionally maintained ONLY in the second-account fork.
+# It is not a workflow for the original site's deployment.
+on:
+  workflow_dispatch:
+    inputs:
+      candidate_branch:
+        description: 'Existing fork branch to verify (e.g. editorial/my-next-dossier)'
+        required: true
+        type: string
+      commit_generated:
+        description: 'Commit canonical generated files to the fork branch after all checks pass'
+        required: true
+        default: true
+        type: boolean
+
+permissions:
+  contents: write
+
+concurrency:
+  group: hikam-fork-manual-${{ inputs.candidate_branch }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    name: Build and verify source, browser, print and PWA
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    steps:
+      - name: Check branch name and repository owner
+        env:
+          TARGET_BRANCH: ${{ inputs.candidate_branch }}
+        run: |
+          set -euo pipefail
+          test "$GITHUB_REPOSITORY" = "Mohd-Ujjain/11-hikam"
+          case "$TARGET_BRANCH" in
+            editorial/*|feature/*|fix/*|audit/*) ;;
+            *) echo "Refuse to run on main or unapproved branch: $TARGET_BRANCH" >&2; exit 1;;
+          esac
+          if [[ "$TARGET_BRANCH" =~ [[:space:]] ]]; then exit 1; fi
+      - name: Check out candidate source, not the default branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.candidate_branch }}
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Assemble and check the canonical edition
+        run: |
+          python src/build.py
+          python src/build.py --check
+      - name: Source, site, structure, progress, search and offline checks
+        run: |
+          set -e
+          python src/tests/verify_publication.py
+          python src/tests/verify_reading_companions.py
+          python src/tests/verify_source_attribution.py
+          python src/tests/verify_3_4_house_style.py
+          python src/tests/verify_editorial_fidelity.py
+          python src/tests/validate_structure.py
+          python src/tests/verify_sidebar.py
+          python src/tests/verify_reading_progress.py
+          python src/tests/verify_reader_search_tabs.py
+          python src/tests/verify_revision_visibility.py
+          python src/tests/verify_search_integrity.py
+          python src/tests/verify_mobile_interaction.py
+          python src/tests/verify_visual_polish.py
+          node src/tests/test_offline_cache.mjs
+          node src/tests/test_optional_precache.mjs
+      - name: Install pinned browser and PDF dependencies
+        run: |
+          python -m pip install playwright==1.57.0 pypdf==5.9.0
+          python -m playwright install chromium
+      - name: Complete Chromium, print, RTL and offline PWA regressions
+        run: |
+          set -e
+          python src/tests/browser_quality.py
+          python src/tests/browser_reading_companions.py
+          python src/tests/browser_3_4_house_style.py
+          python src/tests/browser_batch2_continuity.py
+          python src/tests/browser_batch4_edition_migration.py
+          python src/tests/browser_pwa_updates.py
+      - name: Preserve generated outputs and browser evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: hikam-fork-verified-${{ github.run_id }}
+          path: |
+            index.html
+            src/philosophy_study_notes.html
+            service-worker.js
+            test-artifacts/
+          if-no-files-found: ignore
+          retention-days: 7
+      - name: Commit only tested generated outputs in the fork
+        if: ${{ success() && inputs.commit_generated }}
+        env:
+          TARGET_BRANCH: ${{ inputs.candidate_branch }}
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html src/philosophy_study_notes.html service-worker.js
+          if ! git diff --cached --quiet; then
+            git commit -m "Build verified Hikam reader outputs [skip ci]"
+            git push origin "HEAD:refs/heads/$TARGET_BRANCH"
+          fi
+          python src/build.py --check
