@@ -8,6 +8,14 @@
 
 > This protocol governs the present **editorial revision programme**, not a redesign, new-chapter template, philosophical critique, or authorization to modify the entire repository. It supplements — and does not supersede — the repository's [Design System](../design/DESIGN_SYSTEM.md), [Pagination System](../pagination/PAGINATION_SYSTEM.md), [source authoring instructions](../../README.md), and root [README](../../../README.md). Always inspect the current repository before editing; paths, counts, and conventions may change.
 
+## Context-first comprehension amendment — adopted later on 18 November 2026
+
+The concise word ranges, strict source fidelity, both languages' writing standards, all existing study aids and six-part revision blocks continue unchanged. **Simplifying individual sentences is not enough:** the reader must be able to trace one intellectual question through many names, changing methods, disagreements and historical circumstances.
+
+Inline **Reading Companions** now primarily clarify the *immediate sentence or idea and why it appears in the author's argument*, not deliver surprising additional historical or scholarly information. Restating an existing source-backed idea in simpler words is permitted when that genuinely resolves confusion. Optional **Source Depth** preserves additional original-source particulars separately so that source completeness does not obstruct first-pass comprehension. No indispensable claim may be moved out of the visible teaching layer. Use an existing concept map to orient complex argumentative progressions and a genuine timeline for successive events, not a comparison table simply because dates are convenient.
+
+This later amendment controls conflicting earlier nonduplication/Companion wording. Refer to [Context-First Companions and Source Depth](CONTEXT_FIRST_COMPANIONS_AND_SOURCE_DEPTH.md). The only implemented editorial pilot is Moran 1.1.1; other dossiers are unchanged pending separate source-guided passes.
+
 ## Adopted November 18 amendment — concision and Reading Companions
 
 **This amendment controls the length and information-distribution decisions in the current editorial programme. It does not change any Arabic or English language instructions, fidelity rules, original-author/title requirements, pedagogical component meanings, or revision-block obligations.**
