@@ -4,7 +4,9 @@
 
 **[Long-Run Editorial Refinement Protocol — Language, Source Fidelity, and Study Aids](LANGUAGE_AND_SOURCE_FIDELITY_REFINEMENT_PROTOCOL.md)** governs the reading-by-reading language-polishing programme and the separately scoped primary-source coverage audit. It protects all established study aids equally, keeps EL10 limited to explaining genuinely difficult concepts, and requires the source to govern intellectual content.
 
-**[Concise Dossiers and Source-Grounded Reading Companions](CONCISE_DOSSIER_AND_READING_COMPANIONS.md)** records the adopted ~650-word main prose / ~850-word teaching-aid planning averages, the research-based Reading Companion standard, source-coverage accounting, unchanged language rules and the requirements for a controlled pilot. Read it together with the standing protocol before editing chapters.
+**[Concise Dossiers and Source-Grounded Reading Companions](CONCISE_DOSSIER_AND_READING_COMPANIONS.md)** records the adopted source-proportionate 650–850-word main prose / 850–1,150-word study-aid range, the research-based Reading Companion standard, source-coverage accounting, unchanged language rules and the requirements for a controlled pilot. Read it together with the standing protocol before editing chapters.
+
+**[Context-First Companions and Optional Source Depth](CONTEXT_FIRST_COMPANIONS_AND_SOURCE_DEPTH.md)** is the latest governing amendment for inline explanation. The 1.1.1 pilot makes Companions clarify the immediate concept rather than deliver extra source facts, moves further source particulars into a separate optional disclosure, strengthens the conceptual thread and uses a true historical timeline. It supersedes earlier advice that every Companion must supply new factual information.
 
 The first [Reading Companion pilot](READING_COMPANIONS_PILOT_1_1_1_1_1_2.md) records source-grounded additions to 1.1.1 and 1.1.2, the unchanged main text, and the offline/print/browser preservation checks.
 
