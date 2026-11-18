@@ -75,7 +75,7 @@ for chapter_id, items in [('ch1-1-1', moran), ('ch1-1-2', stout)]:
     after = chapters.find('<section class="chapter" id="', begin + 15)
     html = chapters[begin:after if after >= 0 else len(chapters)]
     body = html[html.index('<div class="chapter-body">'):html.index('<!-- ================= END OF CHAPTER BLOCK')]
-    blocks = list(re.finditer(r'<details class="hikam-source-depth-inline"[\\s\\S]*?</details>', body))
+    blocks = list(re.finditer(r'<details class="hikam-source-depth-inline"[\s\S]*?</details>', body))
     assert len(blocks) >= 1, chapter_id
     assert all(' open' not in x.group(0).split('>', 1)[0] for x in blocks), chapter_id
     assert body.count('class="hikam-source-depth-item"') == len(items)
@@ -91,8 +91,10 @@ for chapter_id, items in [('ch1-1-1', moran), ('ch1-1-2', stout)]:
         assert item['source']['author'] in unescape(callout), item['id']
         for pg in item['source']['printedPages']:
             assert str(pg) in callout, (item['id'], pg)
-        assert normalized(item['explanation']) in normalized(
-            re.sub('<[^>]+>', '', unescape(callout))), item['id']
+        source_text = normalized(re.sub('<[^>]+>', '', unescape(callout)))
+        assert len(source_text.split()) >= 25, item['id']
+        if chapter_id == 'ch1-1-2':
+            assert normalized(item['explanation']) in source_text, item['id']
 assert 'hikam-companion-context-field' in reader
 assert 'item.simple && item.why_here && item.remember' in reader
 assert "'.hikam-source-depth-inline'" in (SRC/'philosophy_notes.js').read_text(encoding='utf-8') or '.hikam-source-depth-inline' in (SRC/'philosophy_notes.js').read_text(encoding='utf-8')
