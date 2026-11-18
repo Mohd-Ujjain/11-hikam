@@ -122,3 +122,12 @@ This is a pedagogical *delivery* correction. It does not remove original-source 
 ### Context-first Moran pilot — secondary-account verification (18 November 2026)
 
 The later contextual Companion and Source Depth pilot passed the **complete source/structure and Chromium mobile, RTL, printed PDF, pagination and offline PWA regression suite** using the authorized secondary account's genuine fork: [fork Actions run 44367909907](https://github.com/Mohd-Ujjain/11-hikam/actions/runs/44367909907). Three generated edition files were returned through [upstream PR #13](https://github.com/MohdUjjain/11-hikam/pull/13). Their Git blob SHA values, and all canonical authoring sources, were confirmed equal across the fork and the original editorial branch. The public deployment requires a separate Pages check after upstream merge.
+
+
+### 19 November contextual-accessibility pilot — verified secondary-account run
+
+The full two-dossier implementation passed [fork Actions run 44375169683](https://github.com/Mohd-Ujjain/11-hikam/actions/runs/44375169683) (tested head `bad36bb6448170a52629d381c50cc84b9e0fed48`). Canonical build, exact 34 source anchors, original source-detail and page-reference recovery, unchanged 39-chapter structure and revisions, keyboard/RTL/mobile, literature-style pigment/dotted-to-solid cue states, explicit popup close and focus recovery, native no-JS Source Depth, full-text search integrity, A4 print/PDF exclusion and offline-PWA regressions all passed.
+
+Additional attention: an initial [test failure](https://github.com/Mohd-Ujjain/11-hikam/actions/runs/44374653349) exposed the popup reopening when restored keyboard focus fired the focus-in helper. The controller now explicitly suppresses only that restoration event; the corrected behavior passed in the final run. The print composer removes optional source details **before** pagination measurement, and the full-text search index does not surface collapsed supplementary text as an apparently visible search result.
+
+Only the canonical source edition and associated tests/docs were changed; the original source PDFs were not added. The temporary fork-only test workflow was removed afterward. Verified generated assets are to be transferred with this same source tree to the original repository before merging and releasing.
