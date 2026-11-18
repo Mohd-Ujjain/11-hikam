@@ -6,5 +6,6 @@
 - **[Reading progress and resume](hosting/READING_POSITION.md)** — whole-book rail, per-chapter gauge, section highlighting and local saved place.
 - **[Hosting upgrade notes](hosting/HOSTING_UPGRADE_NOTES.md)** — social previews, update notification and font caching.
 - **[Windows migration and deployment](hosting/WINDOWS_CMD_DEPLOY.md)** — replace the previous flat checkout safely.
-- **[Standing language and source-fidelity refinement protocol](editorial/LANGUAGE_AND_SOURCE_FIDELITY_REFINEMENT_PROTOCOL.md)** — mandatory reading-by-reading editorial workflow, voice rules, equal care for study aids, and separate source-coverage pass.\n- **[Dossier editorial revision history](editorial/)** — historical chapter-level revision and source-fidelity records.
+- **[Standing language and source-fidelity refinement protocol](editorial/LANGUAGE_AND_SOURCE_FIDELITY_REFINEMENT_PROTOCOL.md)** — mandatory reading-by-reading editorial workflow, voice rules, equal care for study aids, and separate source-coverage pass.
+- **[Dossier editorial revision history](editorial/)** — historical chapter-level revision and source-fidelity records.
 - **[Repository migration history](history/REORGANIZATION.md)** — original-to-new path table, hashes, and migration invariants.
