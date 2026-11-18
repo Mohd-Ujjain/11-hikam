@@ -7,10 +7,13 @@ from functools import partial
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 import threading
+import json
 
 from playwright.sync_api import sync_playwright
 
 ROOT = Path(__file__).resolve().parents[2]
+EXPECTED_IDS = tuple(entry['id'] for entry in json.loads((ROOT/'src/reading_companions.json').read_text(encoding='utf-8'))['companions'])
+EXPECTED_COUNT = len(EXPECTED_IDS)
 
 class Quiet(SimpleHTTPRequestHandler):
     def log_message(self, *args):
@@ -37,15 +40,15 @@ def check(browser, url, width):
     errors = []
     page.on('pageerror', lambda exc: errors.append(str(exc)))
     page.goto(url, wait_until='domcontentloaded', timeout=60000)
-    page.wait_for_function("window.__hikamReadingCompanions && window.__hikamReadingCompanions.attached() === 3")
+    page.wait_for_function("(n) => window.__hikamReadingCompanions && window.__hikamReadingCompanions.attached() === n", EXPECTED_COUNT)
     assert page.evaluate("window.__hikamReadingCompanions.failed()") == []
     assert page.locator('section.chapter').count() == 39
     cues = page.locator('.hikam-companion-trigger')
-    assert cues.count() == 3
+    assert cues.count() == EXPECTED_COUNT
     assert page.locator('.end-block .hikam-companion-trigger').count() == 0
     assert page.locator('.chapter-frontmatter .hikam-companion-trigger').count() == 0
     assert page.locator('#hikamCompanionPopup').is_hidden()
-    for item in ('h111-russell-idealism','h112-parfit-identity','h112-harrod-rule'):
+    for item in EXPECTED_IDS:
         cue = page.locator('[data-companion-id="'+item+'"]')
         assert cue.count() == 1
         assert cue.get_attribute('role') == 'button'
@@ -92,4 +95,4 @@ with site() as url, sync_playwright() as pw:
             check(browser, url, viewport)
     finally:
         browser.close()
-print('PASS: three exact pilot cues; mobile/desktop, keyboard, RTL, source text and print-clone integrity')
+print(f'PASS: {EXPECTED_COUNT} exact source cues; mobile/desktop, keyboard, RTL, source text and print-clone integrity')
