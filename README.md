@@ -33,6 +33,8 @@ Use **Install app** on Chrome/Edge/Android, or **Add to Home Screen** on iPhone/
 
 More details: [src/README.md](src/README.md), [documentation index](src/docs/README.md).
 
+**Standing editorial refinement instructions:** [Language, Source Fidelity & Study-Aid Protocol](src/docs/editorial/LANGUAGE_AND_SOURCE_FIDELITY_REFINEMENT_PROTOCOL.md) — read before any dossier-by-dossier language or source-coverage pass.
+
 ## Build and verify
 
 Requires Python 3; Node.js is additionally needed for the offline-service-worker simulation.
