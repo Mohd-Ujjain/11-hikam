@@ -132,7 +132,8 @@ def check(browser, url, width):
     page.evaluate("window.__runPagination(['ch1-1-1'])")
     assert page.locator('#ch1-1-1 .js-print-page').count() > 0
     assert page.locator('#ch1-1-1 .js-print-page .historical-timeline-event').count() == 4
-    assert page.locator('#ch1-1-1 .js-print-page .hikam-source-depth').count() == 0
+    assert page.locator('#ch1-1-1 .js-print-page .hikam-source-depth-inline').count() == 0
+    assert page.locator('#ch1-1-2 .js-print-page .hikam-source-depth-inline').count() == 0
     assert page.locator('#ch1-1-1 .js-print-page .hikam-companion-trigger').count() == 0
     assert not errors, errors
     ctx.close()
@@ -151,13 +152,13 @@ with site() as no_js_url, sync_playwright() as no_js_pw:
         context = no_js_browser.new_context(java_script_enabled=False, viewport={'width':390,'height':820})
         page = context.new_page()
         page.goto(no_js_url, wait_until='domcontentloaded')
-        disclosure = page.locator('#hikam-source-depth-ch1-1-1')
-        assert disclosure.count() == 1 and disclosure.get_attribute('open') is None
-        disclosure.locator('summary').first.click()
-        item = disclosure.locator('.hikam-source-depth-item').first
-        item.locator('summary').click()
-        assert item.locator('p').first.is_visible()
+        for chapter in ('ch1-1-1', 'ch1-1-2'):
+            disclosure = page.locator('#'+chapter+' .hikam-source-depth-inline').first
+            assert disclosure.count() == 1 and disclosure.get_attribute('open') is None
+            disclosure.locator('summary').click()
+            assert disclosure.get_attribute('open') is not None
+            assert disclosure.locator('.hikam-source-depth-item p').first.is_visible()
         context.close()
     finally:
         no_js_browser.close()
-print(f'PASS: {EXPECTED_COUNT} source cues; contextual/source-depth layers, timeline, keyboard, RTL, print and no-JS disclosure')
+print(f'PASS: {EXPECTED_COUNT} contextual cues; native paragraph Source Depth, accessible focus, RTL and print integrity')
