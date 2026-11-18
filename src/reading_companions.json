@@ -8,9 +8,9 @@
       "chapter": "ch1-1-1",
       "passage": "Russell initially described analysis as finding simpler elements within a complex claim.",
       "text": "Russell initially described analysis",
-      "kind": "Historical interpretation",
-      "title": "Why Russell's ancestry is less straightforward",
-      "explanation": "Moran reports that some historians portrayed Russell as an heir to Humean empiricism. He also cites Peter Hylton's finding that Russell was deeply shaped by Bradley's and McTaggart's idealism and continued to work on metaphysics. The usual labels can hide those earlier influences.",
+      "kind": "Contextual explanation",
+      "title": "What does Russell mean by analysis?",
+      "explanation": "Russell tries to understand a complicated statement by examining its simpler parts and how they fit together. Moran introduces this as an early method of analytic philosophy. Later thinkers change the method, so this is a starting point rather than the definition of the entire tradition.",
       "source": {
         "author": "Dermot Moran",
         "work": "Towards an Assessment of Twentieth-Century Philosophy",
@@ -19,7 +19,11 @@
           29
         ]
       },
-      "added_value": "Restores Moran's specific historical evidence for why an analytic philosopher may be misclassified as simply empiricist; current prose emphasizes methods but not this disputed intellectual genealogy."
+      "added_value": "Resolves the immediate reader question by restating the nearby point in simpler words and showing its role in Moran's current argument. Extra original-source detail lives in the separate optional Source Depth appendix.",
+      "simple": "Russell tries to understand a complicated statement by examining its simpler parts and how they fit together.",
+      "why_here": "Moran introduces this as an early method of analytic philosophy. Later thinkers change the method, so this is a starting point rather than the definition of the entire tradition.",
+      "remember": "Russell: examine the parts of a complex claim.",
+      "sourceDepthId": "source-depth-h111-russell-idealism"
     },
     {
       "id": "h112-parfit-identity",
@@ -60,9 +64,9 @@
       "chapter": "ch1-1-1",
       "passage": "while Kantian and phenomenological thinkers continued to ask how an objective world can be known by a subject.",
       "text": "Naturalism expanded",
-      "kind": "Source clarification",
-      "title": "Why phenomenologists resisted naturalism",
-      "explanation": "Moran notes that Husserl regarded naturalism as a danger to philosophy understood as a rigorous inquiry. The transcendental response asks about the knowing subject's contribution to the possibility of objectivity; it is not simply a denial of findings from natural science.",
+      "kind": "Contextual explanation",
+      "title": "What is naturalism doing in this discussion?",
+      "explanation": "Naturalism looks mainly to nature and the sciences when explaining how things work. Moran contrasts its growing influence with philosophers who also ask how our knowledge can be objective. He is comparing approaches to a shared question, not changing the subject.",
       "source": {
         "author": "Dermot Moran",
         "work": "Towards an Assessment of Twentieth-Century Philosophy",
@@ -70,16 +74,20 @@
           5
         ]
       },
-      "added_value": "Gives the rationale for Husserl's criticism, not just the two schools' labels."
+      "added_value": "Resolves the immediate reader question by restating the nearby point in simpler words and showing its role in Moran's current argument. Extra original-source detail lives in the separate optional Source Depth appendix.",
+      "simple": "Naturalism looks mainly to nature and the sciences when explaining how things work.",
+      "why_here": "Moran contrasts its growing influence with philosophers who also ask how our knowledge can be objective. He is comparing approaches to a shared question, not changing the subject.",
+      "remember": "Two approaches; one question about knowledge.",
+      "sourceDepthId": "source-depth-h111-naturalism-critique"
     },
     {
       "id": "h111-freud-later",
       "chapter": "ch1-1-1",
       "passage": "Around 1900, Freud's work,",
       "text": "Freud's work",
-      "kind": "Source clarification",
-      "title": "Why Freud entered academic philosophy slowly",
-      "explanation": "Although Freud's psychoanalysis helped shape twentieth-century culture, Moran reports that its direct impact on academic philosophers developed slowly. Sartre rejected a central Freudian claim, and Popper criticized psychoanalysis for its lack of falsifiability; later European thinkers returned to Freud in new ways.",
+      "kind": "Contextual explanation",
+      "title": "Why does Freud appear among philosophers?",
+      "explanation": "Moran is pointing to different intellectual beginnings around 1900. Their effects were not all the same. Freud represents a major new way of thinking about the mind, while the other names in this paragraph mark developments in logic and philosophy. This is a historical overview, not a list of one school.",
       "source": {
         "author": "Dermot Moran",
         "work": "Towards an Assessment of Twentieth-Century Philosophy",
@@ -88,16 +96,20 @@
           10
         ]
       },
-      "added_value": "Explains Moran's distinction between the first appearance of an idea and its eventual philosophical reception."
+      "added_value": "Resolves the immediate reader question by restating the nearby point in simpler words and showing its role in Moran's current argument. Extra original-source detail lives in the separate optional Source Depth appendix.",
+      "simple": "Moran is pointing to different intellectual beginnings around 1900. Their effects were not all the same.",
+      "why_here": "Freud represents a major new way of thinking about the mind, while the other names in this paragraph mark developments in logic and philosophy. This is a historical overview, not a list of one school.",
+      "remember": "One period can have several different beginnings.",
+      "sourceDepthId": "source-depth-h111-freud-later"
     },
     {
       "id": "h111-husserl-development",
       "chapter": "ch1-1-1",
       "passage": "Husserl opposed psychologism and developed phenomenology as a description of what appears to consciousness.",
       "text": "phenomenology as a description",
-      "kind": "Source clarification",
-      "title": "Husserl's method changed during its development",
-      "explanation": "In the early Logical Investigations, Husserl described phenomenology in terms close to descriptive psychology, while rejecting the reduction of logic to psychology. His later work moved toward transcendental questions about how consciousness constitutes or reaches objective meaning. Moran treats both phases as important.",
+      "kind": "Contextual explanation",
+      "title": "What does phenomenological description mean here?",
+      "explanation": "Husserl asks us to describe carefully how something appears in conscious experience before forcing it into an explanation. Moran uses this method to show another influential route into questions about knowledge. Husserl and Frege both cared about logic and objectivity, even though their methods developed differently.",
       "source": {
         "author": "Dermot Moran",
         "work": "Towards an Assessment of Twentieth-Century Philosophy",
@@ -106,16 +118,20 @@
           11
         ]
       },
-      "added_value": "Restores the developmental distinction between early descriptive phenomenology and later transcendental inquiry."
+      "added_value": "Resolves the immediate reader question by restating the nearby point in simpler words and showing its role in Moran's current argument. Extra original-source detail lives in the separate optional Source Depth appendix.",
+      "simple": "Husserl asks us to describe carefully how something appears in conscious experience before forcing it into an explanation.",
+      "why_here": "Moran uses this method to show another influential route into questions about knowledge. Husserl and Frege both cared about logic and objectivity, even though their methods developed differently.",
+      "remember": "Husserl: begin by describing experience.",
+      "sourceDepthId": "source-depth-h111-husserl-development"
     },
     {
       "id": "h111-quine-holism",
       "chapter": "ch1-1-1",
       "passage": "Quine attacked the analytic–synthetic distinction and argued that our beliefs meet experience as an interconnected body, not one statement at a time.",
       "text": "analytic–synthetic distinction",
-      "kind": "Source clarification",
-      "title": "What Quine meant by challenging analytic truth",
-      "explanation": "The analytic–synthetic distinction separates truths supposedly secured by meaning from those established by facts. Moran explains that Quine challenged the distinction itself, not merely a badly drawn boundary. He also rejected the idea that each claim could be checked against experience in isolation.",
+      "kind": "Contextual explanation",
+      "title": "Which distinction did Quine challenge?",
+      "explanation": "The analytic–synthetic distinction separates truths said to depend on meaning from truths said to depend on how the world is. Quine questions whether this neat separation holds. Moran includes him to show that analytic philosophy revised some of its own earlier assumptions.",
       "source": {
         "author": "Dermot Moran",
         "work": "Towards an Assessment of Twentieth-Century Philosophy",
@@ -124,16 +140,20 @@
           19
         ]
       },
-      "added_value": "Clarifies the exact target of Quine's argument, which the short note names but does not derive."
+      "added_value": "Resolves the immediate reader question by restating the nearby point in simpler words and showing its role in Moran's current argument. Extra original-source detail lives in the separate optional Source Depth appendix.",
+      "simple": "The analytic–synthetic distinction separates truths said to depend on meaning from truths said to depend on how the world is.",
+      "why_here": "Quine questions whether this neat separation holds. Moran includes him to show that analytic philosophy revised some of its own earlier assumptions.",
+      "remember": "Quine challenged a familiar boundary between kinds of truth.",
+      "sourceDepthId": "source-depth-h111-quine-holism"
     },
     {
       "id": "h111-europe-concept",
       "chapter": "ch1-1-1",
       "passage": "Husserl, Patočka, Derrida, and Habermas debated its intellectual inheritance and the limits of European identity.",
       "text": "Europe itself became a philosophical question",
-      "kind": "Source clarification",
-      "title": "Why 'Europe' is not a neutral geographical label",
-      "explanation": "Moran describes Husserl's attempt to locate a distinctive rational vocation in Europe while also noting criticism of his exclusions. Patočka questioned a post-European humanity, while Derrida and Habermas reconsidered Europe's philosophical inheritance in relation to political history and wider responsibilities.",
+      "kind": "Contextual explanation",
+      "title": "Why is Europe a philosophical question?",
+      "explanation": "Here 'Europe' means more than a place on a map. Philosophers also argue about the ideas and traditions associated with it. Moran has been discussing wars, migration and changing intellectual centres. He now asks how that history changes the way philosophers understand Europe's identity.",
       "source": {
         "author": "Dermot Moran",
         "work": "Towards an Assessment of Twentieth-Century Philosophy",
@@ -142,7 +162,11 @@
           27
         ]
       },
-      "added_value": "Supplies the contrasting accounts behind a phrase that otherwise lists four thinkers without their actual claims."
+      "added_value": "Resolves the immediate reader question by restating the nearby point in simpler words and showing its role in Moran's current argument. Extra original-source detail lives in the separate optional Source Depth appendix.",
+      "simple": "Here 'Europe' means more than a place on a map. Philosophers also argue about the ideas and traditions associated with it.",
+      "why_here": "Moran has been discussing wars, migration and changing intellectual centres. He now asks how that history changes the way philosophers understand Europe's identity.",
+      "remember": "Europe is both a place and a contested intellectual idea.",
+      "sourceDepthId": "source-depth-h111-europe-concept"
     },
     {
       "id": "h112-dewey-construction",
@@ -289,9 +313,9 @@
       "chapter": "ch1-1-1",
       "passage": "Frege helped establish the precise logical treatment of statements and meanings.",
       "text": "precise logical treatment",
-      "kind": "Source clarification",
-      "title": "Frege's influence had limits, and a political shadow",
-      "explanation": "Moran credits Frege with lasting influence on language, logic, science, mind and metaphysics, though not on every branch of philosophy. He also records Frege's association with a right-wing philosophical society that later supported Hitler and reports anti-Catholic and antisemitic statements in Frege's diary. These historical facts accompany his account of Frege's logical contributions.",
+      "kind": "Contextual explanation",
+      "title": "What does Frege contribute to this story?",
+      "explanation": "Frege used precise logic to study how statements work, including forms that ordinary grammar may hide. Moran identifies this as a major foundation of twentieth-century philosophy. Frege's role here is to show a new tool for questions about language and thought.",
       "source": {
         "author": "Dermot Moran",
         "work": "Towards an Assessment of Twentieth-Century Philosophy",
@@ -300,16 +324,20 @@
           13
         ]
       },
-      "added_value": "Preserves Moran's qualification and historical report without turning it into the logical thesis."
+      "added_value": "Resolves the immediate reader question by restating the nearby point in simpler words and showing its role in Moran's current argument. Extra original-source detail lives in the separate optional Source Depth appendix.",
+      "simple": "Frege used precise logic to study how statements work, including forms that ordinary grammar may hide.",
+      "why_here": "Moran identifies this as a major foundation of twentieth-century philosophy. Frege's role here is to show a new tool for questions about language and thought.",
+      "remember": "Frege: clearer tools for logical structure.",
+      "sourceDepthId": "source-depth-h111-frege-politics"
     },
     {
       "id": "h111-tradition-labels",
       "chapter": "ch1-1-1",
       "passage": "The later opposition between analytic and Continental philosophy can obscure their shared origins.",
       "text": "analytic and Continental philosophy",
-      "kind": "Source clarification",
-      "title": "Why the names themselves are difficult",
-      "explanation": "Moran explains that 'Continental' was often a label applied from outside, especially in Britain. 'European philosophy' is also inadequate: many analytic philosophers were European, and Americans studied thinkers called Continental. Some historians even proposed 'Anglo-German' for analytic philosophy after German-speaking émigrés shaped it in the United States. The difficulty concerns both geography and overlapping methods.",
+      "kind": "Contextual explanation",
+      "title": "Why are analytic and Continental philosophy mentioned together?",
+      "explanation": "They are names for influential philosophical traditions, but they do not describe two completely separate groups. Moran explains that both faced some of the same older questions. Their later differences make more sense once those shared beginnings are understood.",
       "source": {
         "author": "Dermot Moran",
         "work": "Towards an Assessment of Twentieth-Century Philosophy",
@@ -318,16 +346,20 @@
           14
         ]
       },
-      "added_value": "Recovers Moran's specific explanation of why neither name identifies a tidy school."
+      "added_value": "Resolves the immediate reader question by restating the nearby point in simpler words and showing its role in Moran's current argument. Extra original-source detail lives in the separate optional Source Depth appendix.",
+      "simple": "They are names for influential philosophical traditions, but they do not describe two completely separate groups.",
+      "why_here": "Moran explains that both faced some of the same older questions. Their later differences make more sense once those shared beginnings are understood.",
+      "remember": "Different methods can grow from shared questions.",
+      "sourceDepthId": "source-depth-h111-tradition-labels"
     },
     {
       "id": "h111-political-philosophy-return",
       "chapter": "ch1-1-1",
       "passage": "Political philosophy became prominent again through writers such as Arendt and, later, Rawls.",
       "text": "Political philosophy became prominent again",
-      "kind": "Source clarification",
-      "title": "Why political philosophy re-emerged later",
-      "explanation": "Moran observes that systematic political philosophy developed surprisingly late in such a politically violent century. Arendt, Popper and Berlin contributed before Rawls's A Theory of Justice (1971). He also traces engaged critiques of colonialism and imperialism through Sartre, Merleau-Ponty and Fanon, alongside the Frankfurt School and later debates over emancipation.",
+      "kind": "Contextual explanation",
+      "title": "Why does political philosophy enter the history?",
+      "explanation": "Political philosophy asks about questions such as justice, government and how people should live together. Moran is showing how war, persecution and changes in academic life affected what philosophers studied. Political philosophy's growing prominence is part of that historical development.",
       "source": {
         "author": "Dermot Moran",
         "work": "Towards an Assessment of Twentieth-Century Philosophy",
@@ -335,16 +367,20 @@
           31
         ]
       },
-      "added_value": "Restores the source's timing and distinct strands of political philosophy."
+      "added_value": "Resolves the immediate reader question by restating the nearby point in simpler words and showing its role in Moran's current argument. Extra original-source detail lives in the separate optional Source Depth appendix.",
+      "simple": "Political philosophy asks about questions such as justice, government and how people should live together.",
+      "why_here": "Moran is showing how war, persecution and changes in academic life affected what philosophers studied. Political philosophy's growing prominence is part of that historical development.",
+      "remember": "Historical events also change philosophical priorities.",
+      "sourceDepthId": "source-depth-h111-political-philosophy-return"
     },
     {
       "id": "h111-history-philosophy",
       "chapter": "ch1-1-1",
       "passage": "Philosophy must also examine its own history: ideas, names, and inherited problems do not have fixed meanings outside the debates that formed them.",
       "text": "Philosophy must also examine its own history",
-      "kind": "Source clarification",
-      "title": "Why the history of philosophy is philosophical",
-      "explanation": "Moran draws on Hegel's view that philosophy reflects on its own time, while resisting the idea that all events simply follow a rational master-plan. Concepts and problems have histories, and studying those histories can change how we understand the concepts themselves. A philosophical history is therefore more than a dated catalogue of works.",
+      "kind": "Contextual explanation",
+      "title": "Why must philosophy study its own past?",
+      "explanation": "A philosophical idea can be understood differently as later thinkers question or reinterpret it. Moran is warning against a history that simply lists winners, losers and dates. The changing meaning of ideas helps explain why philosophy's development is not one straight line.",
       "source": {
         "author": "Dermot Moran",
         "work": "Towards an Assessment of Twentieth-Century Philosophy",
@@ -353,7 +389,11 @@
           25
         ]
       },
-      "added_value": "Explains why intellectual history is itself philosophically relevant."
+      "added_value": "Resolves the immediate reader question by restating the nearby point in simpler words and showing its role in Moran's current argument. Extra original-source detail lives in the separate optional Source Depth appendix.",
+      "simple": "A philosophical idea can be understood differently as later thinkers question or reinterpret it.",
+      "why_here": "Moran is warning against a history that simply lists winners, losers and dates. The changing meaning of ideas helps explain why philosophy's development is not one straight line.",
+      "remember": "Understanding an idea also involves its history.",
+      "sourceDepthId": "source-depth-h111-history-philosophy"
     },
     {
       "id": "h112-westermarck-perry",

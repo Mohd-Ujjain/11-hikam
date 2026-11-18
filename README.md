@@ -33,6 +33,10 @@ Use **Install app** on Chrome/Edge/Android, or **Add to Home Screen** on iPhone/
 
 More details: [src/README.md](src/README.md), [documentation index](src/docs/README.md).
 
+**GitHub Actions quota workaround:** [Secondary-account CI fork and verified upstream release protocol](src/docs/hosting/SECONDARY_FORK_CI_AND_RELEASE.md) — staged in the current editorial review branch; the original repository remains the publication authority.
+
+**Latest comprehension pilot:** [Context-First Companions, Source Depth and timelines](src/docs/editorial/CONTEXT_FIRST_COMPANIONS_AND_SOURCE_DEPTH.md) — applied to Moran 1.1.1, with existing aids and source fidelity unchanged.
+
 **Standing editorial refinement instructions:** [Language, Source Fidelity & Study-Aid Protocol](src/docs/editorial/LANGUAGE_AND_SOURCE_FIDELITY_REFINEMENT_PROTOCOL.md) and [Concise Dossiers & Reading Companions](src/docs/editorial/CONCISE_DOSSIER_AND_READING_COMPANIONS.md) — read both before any reading-by-reading editorial pass. The adopted density targets are approximately 650–850 words of main prose + 850–1,150 words of teaching aids per dossier, chosen according to the original source (1,500–2,000 total visible words), excluding frontmatter and revision; Companions are separately audited, and the Arabic/English language rules remain unchanged.
 
 **Reading Companion pilot:** Three source-verified contextual explanations are available at existing phrases in Dossiers 1.1.1 and 1.1.2, using an offline-embedded manifest and a screen-only controller. This pilot does **not** shorten the existing chapters. See [the pilot source audit](src/docs/editorial/READING_COMPANIONS_PILOT_1_1_1_1_1_2.md); the controller and source records live at `src/reading_companions.js` and `src/reading_companions.json`.

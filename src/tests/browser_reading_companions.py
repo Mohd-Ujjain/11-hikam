@@ -67,6 +67,46 @@ def check(browser, url, width):
         assert page.locator('#hikamCompanionPopup').is_visible()
         page.keyboard.press('Escape')
         assert page.locator('#hikamCompanionPopup').is_hidden()
+    # Context-first Moran explains the current passage; Stout's prior plain
+    # Companions keep working unchanged while the new approach is piloted.
+    timeline = page.locator('#ch1-1-1 .chapter-body .historical-timeline')
+    assert timeline.count() == 1
+    assert timeline.locator('.historical-timeline-event').count() == 4
+    depth = page.locator('#hikam-source-depth-ch1-1-1')
+    assert depth.count() == 1
+    assert depth.get_attribute('open') is None
+    assert depth.locator('.hikam-source-depth-item').count() == 10
+    cue = page.locator('[data-companion-id="h111-russell-idealism"]')
+    cue.scroll_into_view_if_needed()
+    cue.focus()
+    page.keyboard.press('Enter')
+    popup = page.locator('#hikamCompanionPopup')
+    assert popup.is_visible()
+    assert popup.locator('.hikam-companion-simple').is_visible()
+    assert popup.locator('.hikam-companion-why').is_visible()
+    assert popup.locator('.hikam-companion-remember').is_visible()
+    assert 'simpler parts' in popup.inner_text()
+    assert popup.locator('.hikam-companion-explanation').is_hidden()
+    assert 'McTaggart' not in popup.inner_text(), 'Source-depth information leaked into contextual popup'
+    page.keyboard.press('Escape')
+    cue = page.locator('[data-companion-id="h112-parfit-identity"]')
+    cue.scroll_into_view_if_needed()
+    cue.focus()
+    page.keyboard.press('Enter')
+    assert popup.locator('.hikam-companion-explanation').is_visible()
+    assert popup.locator('.hikam-companion-simple').is_hidden()
+    page.keyboard.press('Escape')
+    depth.locator('summary').first.click()
+    assert depth.get_attribute('open') is not None
+    first_detail = depth.locator('.hikam-source-depth-item').first
+    first_detail.locator('summary').click()
+    assert first_detail.get_attribute('open') is not None
+    assert first_detail.locator('p').first.is_visible()
+    assert 'Moran' in first_detail.locator('.hikam-source-depth-citation').inner_text()
+    first_detail.locator('summary').click()
+    depth.locator('summary').first.click()
+    assert depth.get_attribute('open') is None
+
     # Simulate a RTL chapter at one cue without editing authorial content.
     cue = page.locator('[data-companion-id="h112-harrod-rule"]')
     cue.evaluate("e=>{e.closest('.chapter').classList.add('rtl');e.closest('.chapter').setAttribute('lang','ar')}")
@@ -85,6 +125,11 @@ def check(browser, url, width):
     assert page.locator('#ch1-1-2 .js-print-page').count() > 0
     assert page.locator('.js-print-page .hikam-companion-trigger').count() == 0
     assert page.locator('#ch1-1-2 .js-print-page').first.inner_text()
+    page.evaluate("window.__runPagination(['ch1-1-1'])")
+    assert page.locator('#ch1-1-1 .js-print-page').count() > 0
+    assert page.locator('#ch1-1-1 .js-print-page .historical-timeline-event').count() == 4
+    assert page.locator('#ch1-1-1 .js-print-page .hikam-source-depth').count() == 0
+    assert page.locator('#ch1-1-1 .js-print-page .hikam-companion-trigger').count() == 0
     assert not errors, errors
     ctx.close()
 
@@ -95,4 +140,20 @@ with site() as url, sync_playwright() as pw:
             check(browser, url, viewport)
     finally:
         browser.close()
-print(f'PASS: {EXPECTED_COUNT} exact source cues; mobile/desktop, keyboard, RTL, source text and print-clone integrity')
+# Native Source Depth also remains usable when scripts are entirely disabled.
+with site() as no_js_url, sync_playwright() as no_js_pw:
+    no_js_browser = no_js_pw.chromium.launch(headless=True, args=['--no-sandbox'])
+    try:
+        context = no_js_browser.new_context(java_script_enabled=False, viewport={'width':390,'height':820})
+        page = context.new_page()
+        page.goto(no_js_url, wait_until='domcontentloaded')
+        disclosure = page.locator('#hikam-source-depth-ch1-1-1')
+        assert disclosure.count() == 1 and disclosure.get_attribute('open') is None
+        disclosure.locator('summary').first.click()
+        item = disclosure.locator('.hikam-source-depth-item').first
+        item.locator('summary').click()
+        assert item.locator('p').first.is_visible()
+        context.close()
+    finally:
+        no_js_browser.close()
+print(f'PASS: {EXPECTED_COUNT} source cues; contextual/source-depth layers, timeline, keyboard, RTL, print and no-JS disclosure')

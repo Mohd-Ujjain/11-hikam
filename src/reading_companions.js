@@ -1,6 +1,7 @@
 /* 11AM Hikam — source-grounded Reading Companions.
- * Source chapter HTML is never rewritten. Short, exact-match inline cues are
- * installed only in eligible main prose; print clones unwrap those cues.
+ * Exact-match inline cues in main prose teach the immediate context first.
+ * Optional additional original-source details live in a separate native
+ * disclosure after the chapter body. Print clones unwrap these inline cues.
  * Data is embedded in the canonical single-file publication for offline use.
  */
 (function () {
@@ -29,7 +30,25 @@
   heading.className = 'hikam-companion-title';
   var detail = document.createElement('span');
   detail.className = 'hikam-companion-explanation';
-  popup.append(kind, heading, detail);
+  // Context-first Companions clarify the nearby idea; the source-depth appendix
+  // holds optional further source information without interrupting the reading.
+  function contextField(labelText, className) {
+    var container = document.createElement('div');
+    container.className = 'hikam-companion-context-field ' + className;
+    container.hidden = true;
+    var label = document.createElement('span');
+    label.className = 'hikam-companion-field-label';
+    label.textContent = labelText;
+    var value = document.createElement('span');
+    value.className = 'hikam-companion-field-value';
+    container.append(label, value);
+    return {container:container, value:value};
+  }
+  var simpleField = contextField('In simple words', 'hikam-companion-simple');
+  var whyField = contextField('Why this appears here', 'hikam-companion-why');
+  var rememberField = contextField('Remember', 'hikam-companion-remember');
+  popup.append(kind, heading, detail,
+    simpleField.container, whyField.container, rememberField.container);
   root.appendChild(popup);
   var selector = '.hikam-companion-trigger';
 
@@ -68,7 +87,17 @@
     current = button; pinned = !!keepOpen;
     kind.textContent = item.kind;
     heading.textContent = item.title;
-    detail.textContent = item.explanation;
+    var isContextual = !!(item.simple && item.why_here && item.remember);
+    detail.hidden = isContextual;
+    detail.textContent = isContextual ? '' : item.explanation;
+    simpleField.container.hidden = !isContextual;
+    whyField.container.hidden = !isContextual;
+    rememberField.container.hidden = !isContextual;
+    if (isContextual) {
+      simpleField.value.textContent = item.simple;
+      whyField.value.textContent = item.why_here;
+      rememberField.value.textContent = item.remember;
+    }
     var chapter = button.closest('.chapter');
     var hue = chapter && chapter.style.getPropertyValue('--hue').trim();
     if (hue && /^\d{1,3}$/.test(hue))

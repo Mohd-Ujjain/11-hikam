@@ -2388,3 +2388,106 @@ hr.rule{border:none; border-top:1px solid var(--paper-line); margin:38px 0;}
     border:0!important;outline:0!important;background:transparent!important;
   }
 }
+
+
+/* Context-first teaching, chronological presentation and optional source
+   depth for the controlled Moran pilot. This extends—not reassigns—the
+   existing semantic colours and scholarly component meanings. */
+.hikam-companion-popup [hidden] {display:none!important;}
+.hikam-companion-context-field {display:block;min-width:0;}
+.hikam-companion-field-label {
+  display:block;margin:3px 0 2px;
+  font:700 10px/1.5 var(--font-sans);
+  letter-spacing:.045em;text-transform:uppercase;color:#52627C;
+}
+.hikam-companion-field-value {display:block;font-size:13.5px;line-height:1.52;}
+.hikam-companion-why {margin-top:4px;padding-top:7px;border-top:1px solid #DDD4C4;}
+.hikam-companion-remember {
+  margin-top:6px;padding:7px 9px;
+  border-inline-start:3px solid var(--hikam-companion-accent,#826220);
+  background:#F2EBDD;border-radius:2px;
+}
+.hikam-companion-remember .hikam-companion-field-label {margin-top:0;}
+.hikam-companion-popup[lang="ar"] .hikam-companion-field-label {
+  font:700 14px/1.5 var(--font-arabic);letter-spacing:0;text-transform:none;
+}
+.hikam-companion-popup[lang="ar"] .hikam-companion-field-value {
+  font:400 19px/1.65 var(--font-arabic);
+}
+
+/* A genuine sequence is a timeline, not a comparison table or hierarchy. */
+.historical-timeline {
+  margin:22px 0;padding:20px 24px 10px;
+  background:var(--white-card);border:1px solid var(--paper-line);
+  border-radius:var(--radius-md);break-inside:avoid;
+}
+.historical-timeline-title {
+  margin-bottom:14px;color:var(--ink-soft);
+  font:700 11.5px/1.5 var(--font-sans);
+  letter-spacing:.12em;text-transform:uppercase;
+}
+.historical-timeline-events {list-style:none;margin:0;padding:0 0 0 9px;}
+.historical-timeline-event {
+  position:relative;display:grid;grid-template-columns:minmax(95px,120px) minmax(0,1fr);
+  gap:12px;padding:0 0 19px 18px;
+  border-inline-start:2px solid hsl(var(--hue) 42% 48%);
+}
+.historical-timeline-event:last-child {border-inline-start-color:transparent;padding-bottom:5px;}
+.historical-timeline-event::before {
+  content:"";position:absolute;inset-inline-start:-6px;top:4px;
+  width:10px;height:10px;border-radius:50%;
+  background:hsl(var(--hue) 46% 45%);border:2px solid var(--white-card);
+}
+.historical-timeline-date {
+  color:hsl(var(--hue) 52% 28%);font:700 13.5px/1.45 var(--font-sans);
+}
+.historical-timeline-description {font-size:14.5px;line-height:1.55;}
+@media(max-width:540px) {
+  .historical-timeline {padding:17px 15px 8px;}
+  .historical-timeline-event {grid-template-columns:1fr;gap:2px;padding-inline-start:16px;}
+}
+
+/* Source Depth is not a Reading Companion. Native, intentionally opt-in
+   disclosures retain original-source details while allowing immediate
+   Companions to explain only the idea being read. */
+.hikam-source-depth {
+  margin:26px 40px 14px; padding:0;
+  border:1px solid var(--paper-line);border-radius:var(--radius-md);
+  background:#F7F2E8;color:var(--ink);
+}
+.hikam-source-depth > summary {
+  display:grid;gap:2px;cursor:pointer;padding:14px 18px;
+  list-style-position:inside;
+}
+.hikam-source-depth > summary::marker {color:var(--ink-soft);}
+.hikam-source-depth summary:focus-visible {outline:2px solid hsl(var(--hue) 50% 42%);outline-offset:3px;}
+.hikam-source-depth-kicker {
+  color:hsl(var(--hue) 50% 30%);font:700 10.5px/1.5 var(--font-sans);
+  text-transform:uppercase;letter-spacing:.10em;
+}
+.hikam-source-depth-summary {font:700 15px/1.5 var(--font-sans);}
+.hikam-source-depth-disclosure {color:var(--ink-soft);font-size:12.5px;}
+.hikam-source-depth-inner {padding:3px 18px 17px;}
+.hikam-source-depth-intro {font-size:14px;line-height:1.65;color:var(--ink-soft);}
+.hikam-source-depth-item {border-top:1px solid var(--paper-line-soft);}
+.hikam-source-depth-item > summary {
+  display:grid;grid-template-columns:34px minmax(0,1fr) auto;
+  align-items:baseline;gap:10px;cursor:pointer;padding:13px 3px;
+  list-style-position:inside;font:600 14px/1.5 var(--font-sans);
+}
+.hikam-source-depth-item > summary::marker {color:var(--ink-soft);}
+.hikam-source-depth-item p {font-size:14px;line-height:1.65;margin:6px 4px 10px;}
+.hikam-source-depth-number {font-size:11px;color:var(--ink-faint);}
+.hikam-source-depth-pages {font-size:11px;color:var(--ink-faint);white-space:nowrap;}
+.hikam-source-depth-item .hikam-source-depth-citation {
+  color:var(--ink-soft);font-size:12px;font-style:italic;padding-bottom:10px;
+}
+@media(max-width:720px) {
+  .hikam-source-depth {margin-inline:16px;}
+  .hikam-source-depth-item > summary {grid-template-columns:24px minmax(0,1fr);}
+  .hikam-source-depth-pages {grid-column:2;}
+}
+@media print {
+  .hikam-source-depth {display:none!important;}
+  .historical-timeline {break-inside:avoid;}
+}
