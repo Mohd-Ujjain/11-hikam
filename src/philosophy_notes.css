@@ -2554,6 +2554,13 @@ hr.rule{border:none; border-top:1px solid var(--paper-line); margin:38px 0;}
 .chapter-body .hikam-source-depth-inline > summary::marker {
   color:hsl(var(--hue,208) 52% 30%);
 }
+.chapter-body .hikam-source-depth-inline > summary::after {
+  content:"+";
+  margin-inline-start:auto;
+  color:hsl(var(--hue,208) 52% 30%);
+  font:700 18px/1 var(--font-sans);
+}
+.chapter-body .hikam-source-depth-inline[open] > summary::after {content:"−";}
 .chapter-body .hikam-source-depth-inline > summary:focus-visible {
   outline:3px solid hsl(var(--hue,208) 50% 35%);
   outline-offset:3px;border-radius:4px;
