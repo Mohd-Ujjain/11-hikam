@@ -1186,7 +1186,9 @@
     if(!input||!panel||!hits||!box)return;
     var entries=null, searchTimer=null, lastResults=[],rendered=0,searchGeneration=0;
     var PAGE_SIZE=30;
-    var skipInside='.js-print-page, .chapter-endnav, script, style, template, noscript, [hidden], [aria-hidden="true"]';
+    // Optional closed source records are not normal visible search passages.
+    // Exclude them so search never lands on hidden details instead of prose.
+    var skipInside='.js-print-page, .chapter-endnav, .hikam-source-depth-inline, script, style, template, noscript, [hidden], [aria-hidden="true"]';
     var semanticChildren='h1,h2,h3,h4,h5,h6,p,li,td,th,dt,dd,blockquote,figcaption,caption,pre,ul,ol,table';
     var candidates='h1,h2,h3,h4,h5,h6,p,li,td,th,dt,dd,blockquote,figcaption,caption,pre,div,span,cite,small,svg text';
 
