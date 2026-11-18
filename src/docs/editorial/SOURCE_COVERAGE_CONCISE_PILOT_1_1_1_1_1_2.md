@@ -95,3 +95,17 @@ This is an **editorial traceability register**, not a claim that every supportin
 *Counts use a Unicode-aware word-token method on the canonical HTML. Frontmatter, six-part revision blocks, and optional Companion explanations are separate; different word processors may differ slightly on punctuation.*
 
 **Release verification:** `python src/build.py` rebuilt the published files. `python src/build.py --check` and all repository verification jobs, including source-anchor checks, full-book structure, Reading Companion browser interaction, RTL, printing, offline/PWA installation and migrations, passed in GitHub Actions run [44272376723](https://github.com/MohdUjjain/11-hikam/actions/runs/44272376723). Both six-part revision blocks and five examination-question categories are retained. The chapter frontmatter, all subsequent chapters, unrelated styling and reader architecture are unchanged. The temporary editorial build workflow was removed.
+
+
+## Later comprehension pilot — Moran 1.1.1 (18 November 2026)
+
+The source-completeness assessment above still stands. What has changed is **which optional layer delivers what**. The reader reported that opening a Companion to understand the current concept instead introduced new names and unrelated historical details. See the binding [Context-First Companions and Optional Source Depth](CONTEXT_FIRST_COMPANIONS_AND_SOURCE_DEPTH.md).
+
+- **Ten inline Companions** have been rewritten to explain the exact phrase in simple language, its role in Moran's current argument, and a short recall handle. These are contextual restatements, not independent source additions.
+- **The original ten fuller Companion explanations, including Moran's printed-page references, are preserved without textual loss** in ten native, independently expandable Source Depth disclosures after the main body. This separate original-source material is not required to understand the argument, is excluded from the normal printed dossier and remains accessible without JavaScript on screen.
+- An existing **concept-relationship** aid now establishes one chain linking changing methods, recurring questions, developing traditions, historical upheavals and Moran's non-linear assessment. The introductory four-figure passage explicitly explains why the thinkers are grouped.
+- The historical-sequence comparison table is now a **true four-stop timeline**, with its source-grounded period order and meaning preserved. Other comparison tables keep their comparative function.
+- Updated visible chapter-body count (Unicode-aware method): **746 main prose + 1,132 study aids = 1,878 immediately visible words**. Source Depth, contextual Companions, original frontmatter and six-part revision are separate pools. The target remains 1,500–2,000, with a source-dependent allocation.
+- **All 24 Stout Companions and the Stout dossier remain unchanged** under this trial. The original 39-chapter structure, other chapter content, semantic component assignments and six revision sections are protected.
+
+This is a pedagogical *delivery* correction. It does not remove original-source distinctions, replace Moran's position, change the language profile or authorize a mass rollout. Source Depth is not a second required chapter: intellectual essentials stay visible. Technical release requires the same exact-anchor, keyboard/touch, RTL, mobile, print and offline verification.
