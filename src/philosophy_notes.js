@@ -159,6 +159,10 @@
     // moving) means printing is non-destructive: nothing to restore
     // afterward, screen view is simply untouched the entire time.
     var bodyClone = body.cloneNode(true);
+    // Optional Source Depth is never printed or measured by the page builder.
+    // Remove it from the private clone before splitting the chapter into pages;
+    // the live screen disclosure remains intact and accessible.
+    bodyClone.querySelectorAll('.hikam-source-depth-inline').forEach(function(el) { el.remove(); });
     // Source-text-preserving Reading Companion cues are screen-only.
     // Unwrap only in the print clone, restoring the exact text before
     // measurement, search/link handling, and page construction.
