@@ -1,0 +1,32 @@
+name: Temporary concise editorial branch build
+on:
+  push:
+    branches: [editorial/concise-source-faithful-1-1-1-1-1-2]
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: editorial/concise-source-faithful-1-1-1-1-1-2
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Assemble canonical publication
+        run: python src/build.py
+      - name: Validate source anchors, book structure, and generated files
+        run: |
+          python src/build.py --check
+          python src/tests/verify_reading_companions.py
+          python src/tests/validate_structure.py
+      - name: Commit only generated assets to editorial branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html src/philosophy_study_notes.html service-worker.js
+          if ! git diff --cached --quiet; then
+            git commit -m "Build canonical output for concise editorial review"
+            git push origin HEAD:editorial/concise-source-faithful-1-1-1-1-1-2
+          fi
