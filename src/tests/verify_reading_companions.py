@@ -59,4 +59,37 @@ for item in manifest['companions']:
     assert len(hits) == 1 and hits[0].count(item['text']) == 1, f'Missing/ambiguous text node: {ident}'
     assert ident in built, f'Manifest item not published: {ident}'
 assert len(seen) == len(manifest['companions']), f'Missing manifest entries: {len(seen)} vs {len(manifest["companions"])}'
+# Context-first Moran pilot: extra source details are preserved separately,
+# not delivered as surprising new intellectual branches in the popup.
+moran = [x for x in manifest['companions'] if x['chapter'] == 'ch1-1-1']
+stout = [x for x in manifest['companions'] if x['chapter'] == 'ch1-1-2']
+assert len(moran) == 10 and len(stout) == 24, 'Changed pilot coverage without audit'
+first = chapters.index('<section class="chapter" id="ch1-1-1"')
+second = chapters.index('<section class="chapter" id="ch1-1-2"')
+moran_html = chapters[first:second]
+body_end = moran_html.index('<!-- ================= END OF CHAPTER BLOCK')
+main_body = moran_html[moran_html.index('<div class="chapter-body">'):body_end]
+depth = moran_html[moran_html.index('<details class="hikam-source-depth"'):body_end]
+assert moran_html.count('<details class="hikam-source-depth"') == 1
+assert depth.count('<details class="hikam-source-depth-item"') == 10
+assert 'A short historical sequence</caption>' not in main_body
+assert main_body.count('class="historical-timeline-event"') == 4
+assert main_body.index('1900s') < main_body.index('1914–1918') < main_body.index('1930s–1940s') < main_body.index('After 1945')
+assert 'The One Thread to Follow' in main_body
+assert 'The four thinkers below are not four unrelated stories.' in main_body
+for item in moran:
+    assert all(isinstance(item.get(k), str) and item[k].strip() for k in
+               ('simple','why_here','remember','sourceDepthId')), item['id']
+    assert item['sourceDepthId'] == 'source-depth-' + item['id'], item['id']
+    assert depth.count('id="' + item['sourceDepthId'] + '"') == 1, item['id']
+    card = depth.split('id="' + item['sourceDepthId'] + '"', 1)[1].split('</details>', 1)[0]
+    for page in item['source']['printedPages']:
+        assert str(page) in card, (item['id'], page)
+    assert len(normalized(re.sub(r'<[^>]+>', ' ', card))) > 130, item['id']
+assert 'hikam-companion-context-field' in reader
+assert 'item.simple && item.why_here && item.remember' in reader
+assert '.hikam-source-depth {display:none!important;}' in (SRC/'philosophy_notes.css').read_text(encoding='utf-8')
+assert 'hikam-source-depth-ch1-1-1' in built
+assert 'class="historical-timeline"' in built
+
 print(f'PASS: {len(seen)} source-anchored Companions, source anchors intact, single-file offline embedding')
