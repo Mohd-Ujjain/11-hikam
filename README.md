@@ -31,7 +31,9 @@ Use **Install app** on Chrome/Edge/Android, or **Add to Home Screen** on iPhone/
 | `src/source_materials/` | Previously supplied extracts for 3.4.3 and 3.4.4 (public!) |
 | `src/tools/migrate_flat_repo.py` | One-time safe cleanup when moving from the previous flat repository |
 
-More details: [src/README.md](src/README.md), [documentation index](src/docs/README.md).\n\n**Standing editorial refinement instructions:** [Language, Source Fidelity & Study-Aid Protocol](src/docs/editorial/LANGUAGE_AND_SOURCE_FIDELITY_REFINEMENT_PROTOCOL.md) — read before any dossier-by-dossier language or source-coverage pass.
+More details: [src/README.md](src/README.md), [documentation index](src/docs/README.md).
+
+**Standing editorial refinement instructions:** [Language, Source Fidelity & Study-Aid Protocol](src/docs/editorial/LANGUAGE_AND_SOURCE_FIDELITY_REFINEMENT_PROTOCOL.md) — read before any dossier-by-dossier language or source-coverage pass.
 
 ## Build and verify
 
