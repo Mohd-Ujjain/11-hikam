@@ -25,6 +25,8 @@ jobs:
         run: python src/build.py --check
       - name: Validate links, manifest, meta tags, and 39 dossiers
         run: python src/tests/verify_publication.py
+      - name: Verify source-verified dossier titles and original author credits
+        run: python src/tests/verify_source_attribution.py
       - name: Verify complete six-part house architecture for dossiers 35–39
         run: python src/tests/verify_3_4_house_style.py
       - name: Verify Dossiers 33–34 against source-fidelity corrections
