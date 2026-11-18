@@ -6,6 +6,8 @@
 
 **[Concise Dossiers and Source-Grounded Reading Companions](CONCISE_DOSSIER_AND_READING_COMPANIONS.md)** records the adopted ~650-word main prose / ~850-word teaching-aid planning averages, the research-based Reading Companion standard, source-coverage accounting, unchanged language rules and the requirements for a controlled pilot. Read it together with the standing protocol before editing chapters.
 
+The first [Reading Companion pilot](READING_COMPANIONS_PILOT_1_1_1_1_1_2.md) records source-grounded additions to 1.1.1 and 1.1.2, the unchanged main text, and the offline/print/browser preservation checks.
+
 Read both editorial standards alongside [the design system](../design/DESIGN_SYSTEM.md) and [the pagination system](../pagination/PAGINATION_SYSTEM.md).
 
 ## Existing revision history

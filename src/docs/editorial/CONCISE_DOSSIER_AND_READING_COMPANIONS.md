@@ -2,7 +2,7 @@
 
 **Project:** 11AM — Takhassus Hikam Dossier  
 **Adopted:** 18 November 2026  
-**Status:** Binding editorial direction and researched implementation specification; **not** a claim that companion software has been installed in Hikam  
+**Status:** Binding editorial direction; a three-Companion pilot controller is implemented for 1.1.1 and 1.1.2, subject to release verification. No mass chapter compression has been performed  
 **Primary authority:** [Standing Language and Source-Fidelity Protocol](LANGUAGE_AND_SOURCE_FIDELITY_REFINEMENT_PROTOCOL.md)
 
 > **Editorial decision:** The dossier should be an exceptionally clear, compact way to learn the author's essential argument, not a second article. Use a source-dependent **650–850 words of main explanation + 850–1,150 words of instructional study aids per reading**, averaged across the programme and excluding chapter frontmatter and the existing end-of-chapter revision block. Preserve all important source material by assigning it a clearly justified place across the main notes, the existing study aids, and carefully source-grounded **Reading Companions** available at the exact point of need. **Neither Arabic nor English language-fidelity rules change at all.**
@@ -121,7 +121,7 @@ The coverage register must show **no important source unit lost**. An unverified
 6. **Print and source preservation:** unwrapping any screen-only cues from **private print clones** is a tested necessity for today's JS pagination. The print/PDF must remain coherent, correctly paginated and free of broken buttons. If unique indispensable source detail would otherwise be invisible, determine and test a proper optional print/evidence appendix or equivalent before making the popup its only home; never dump hidden popups into print pages unreviewed.
 7. Confirm no loss of chapter/TOC IDs, author and exact title credits, original quotations, six-part revision zones, search results, progress, resume behavior or offline cache. No unrelated redesign or wholesale CSS/JS refactor.
 
-**Scope boundary:** This file is a **researched editorial and implementation specification**. It does **not** mean Hikam's Reading Companion runtime, external evidence viewer or manifest is already built, nor authorize mass rewriting of chapters without their primary readings. Test one source-verified chapter first, inspect both mobile and desktop, then expand only after confirmed source and reader checks.
+**Scope boundary (pilot):** Hikam now has a small, internally authored Reading Companion controller and manifest for 1.1.1 and 1.1.2, documented in [the pilot audit](READING_COMPANIONS_PILOT_1_1_1_1_1_2.md). This does **not** mean all dossiers are annotated, an original-evidence viewer has been built, or the expanded chapters have been shortened. Browser/print/PWA verification and a source-to-layer coverage map remain required before expanding the pilot or compressing chapter content.
 
 ## 7. Per-reading editorial procedure under the new word decision
 
@@ -136,6 +136,6 @@ The coverage register must show **no important source unit lost**. An unverified
 
 ### Immediate programme implication
 
-The expanded **1.1.1 (Moran)** and **1.1.2 (Stout)** currently exceed the new targets. They are the first candidates for a **source-verified concise-with-companions pilot**. **Do not silently rewrite or deploy them now**: the companion delivery and source coverage mapping must be built and tested together so the extra source material is not lost. Once the pilot is validated, subsequent readings can follow the same disciplined format.
+The expanded **1.1.1 (Moran)** and **1.1.2 (Stout)** currently exceed the new targets. They are the first candidates for a **source-verified future compression pass**. The Companion mechanism is being piloted **without any change to their original prose, aids or revision blocks**; build the source coverage map before compressing any part of their teaching material. Once the pilot is validated, subsequent readings can follow the same disciplined format.
 
 **Final editorial standard:** **~650–850 words of immediately readable scholarly prose + ~850–1,150 words of genuinely useful study aids (together ~1,500–2,000, source-proportionate) + optional, exact, nonredundant, source-grounded Reading Companions + independently preserved revision material. All source-relevant information remains traceable. All original Arabic/English language rules remain binding.**

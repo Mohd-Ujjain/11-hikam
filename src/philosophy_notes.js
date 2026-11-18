@@ -159,6 +159,12 @@
     // moving) means printing is non-destructive: nothing to restore
     // afterward, screen view is simply untouched the entire time.
     var bodyClone = body.cloneNode(true);
+    // Source-text-preserving Reading Companion cues are screen-only.
+    // Unwrap only in the print clone, restoring the exact text before
+    // measurement, search/link handling, and page construction.
+    bodyClone.querySelectorAll('.hikam-companion-trigger').forEach(function(cue){
+      cue.replaceWith(document.createTextNode(cue.textContent));
+    });
     // Section anchors belong to the live reading DOM. Avoid duplicate IDs
     // in the generated print pages (their headings are cloned).
     bodyClone.querySelectorAll('[id^="toc-sec-"]').forEach(function(el){el.removeAttribute('id');});

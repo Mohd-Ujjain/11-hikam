@@ -2325,3 +2325,66 @@ hr.rule{border:none; border-top:1px solid var(--paper-line); margin:38px 0;}
     display:none !important;
   }
 }
+
+/* Reading Companions — optional local source clarification.
+   Distinct from all six semantic box colors; no new study-aid component.
+   The inline cue uses the chapter hue and leaves line wrapping intact. */
+@media screen {
+  section.chapter .chapter-body .hikam-companion-trigger {
+    color:inherit;cursor:pointer;font:inherit;display:inline;
+    white-space:normal;overflow-wrap:normal;
+    text-decoration-line:underline;text-decoration-style:dotted;
+    text-decoration-thickness:1.5px;text-underline-offset:.2em;
+    text-decoration-color:hsl(var(--hue,208) 45% 43%);
+    border-radius:2px;
+  }
+  section.chapter .hikam-companion-trigger:hover {
+    background:rgba(168,124,31,.09);
+    text-decoration-thickness:2px;
+  }
+  section.chapter .hikam-companion-trigger:focus-visible {
+    outline:2px solid hsl(var(--hue,208) 45% 43%);
+    outline-offset:2px;
+  }
+  .hikam-companion-popup[hidden] {display:none!important;}
+  .hikam-companion-popup {
+    position:fixed;z-index:250;
+    box-sizing:border-box;width:min(365px,calc(100vw - 24px));
+    max-height:min(45dvh,300px);overflow-y:auto;overflow-x:hidden;
+    display:grid;gap:5px;padding:13px 16px;
+    border-radius:9px;border:1px solid #CDBA97;
+    background:#FBF7EE;color:#253047;
+    box-shadow:0 12px 35px rgba(15,27,45,.24);
+    font:400 13px/1.58 var(--font-sans);text-align:start;
+    overflow-wrap:anywhere;pointer-events:none;
+  }
+  .hikam-companion-kind {
+    font:700 10px/1.4 var(--font-sans);
+    text-transform:uppercase;letter-spacing:.07em;
+    color:var(--hikam-companion-accent,#826220);
+  }
+  .hikam-companion-title {
+    font:700 14px/1.4 var(--font-sans);color:#172741;
+  }
+  .hikam-companion-explanation {display:block;}
+  .hikam-companion-popup[lang="ar"] {
+    font:400 19px/1.65 var(--font-arabic);
+    direction:rtl;text-align:start;
+  }
+  .hikam-companion-popup[lang="ar"] .hikam-companion-title {
+    font:700 20px/1.55 var(--font-arabic);
+  }
+  .hikam-companion-popup[lang="ar"] .hikam-companion-kind {
+    font:700 15px/1.5 var(--font-arabic);letter-spacing:0;text-transform:none;
+  }
+  @media (max-width:480px) {
+    .hikam-companion-popup {max-height:45dvh;padding:11px 13px;}
+  }
+}
+@media print {
+  #hikamCompanionPopup {display:none!important;}
+  .hikam-companion-trigger {
+    color:inherit!important;text-decoration:none!important;
+    border:0!important;outline:0!important;background:transparent!important;
+  }
+}
