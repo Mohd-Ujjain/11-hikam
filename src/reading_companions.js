@@ -19,6 +19,7 @@
   var failed = [];
   var current = null;
   var pinned = false;
+  var restoringTriggerFocus = false;
   var popup = document.createElement('div');
   popup.id = 'hikamCompanionPopup';
   popup.className = 'hikam-companion-popup';
@@ -73,7 +74,13 @@
     current = null; pinned = false; popup.hidden = true;
     popup.dataset.pinned = 'false';
     closeButton.hidden = true;
-    if (restoreFocus && previous && previous.isConnected) previous.focus();
+    if (restoreFocus && previous && previous.isConnected) {
+      // Suppress only the synthetic focusin caused by closing the popup.
+      // Otherwise our accessible focus-to-explain behavior would re-open it.
+      restoringTriggerFocus = true;
+      previous.focus();
+      restoringTriggerFocus = false;
+    }
   }
   function place() {
     if (!current || popup.hidden) return;
@@ -209,6 +216,7 @@
       if (targetFor(event.target) === current) dismiss();
     });
     document.addEventListener('focusin', function (event) {
+      if (restoringTriggerFocus) return;
       var button = targetFor(event.target);
       if (button) show(button, false);
     });
