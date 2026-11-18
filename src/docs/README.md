@@ -9,5 +9,6 @@
 - **[Standing language and source-fidelity refinement protocol](editorial/LANGUAGE_AND_SOURCE_FIDELITY_REFINEMENT_PROTOCOL.md)** — mandatory reading-by-reading editorial workflow, voice rules, equal care for study aids, and separate source-coverage pass.
 - **[Concise dossiers and Reading Companions](editorial/CONCISE_DOSSIER_AND_READING_COMPANIONS.md)** — adopted 650/850 word averages, coverage traceability, Arabic/English fidelity and a source-grounded contextual explanation design.
 - **[Context-first Companions and Source Depth pilot](editorial/CONTEXT_FIRST_COMPANIONS_AND_SOURCE_DEPTH.md)** — latest local-explanation rule, optional source detail, conceptual continuity and genuine timeline conventions (Moran 1.1.1 only).
+- **[Secondary-account fork CI and safe release workflow](hosting/SECONDARY_FORK_CI_AND_RELEASE.md)** — second-account Actions validation, byte-for-byte generated edition transfer, quota controls and upstream deployment gates.
 - **[Dossier editorial revision history](editorial/)** — historical chapter-level revision and source-fidelity records.
 - **[Repository migration history](history/REORGANIZATION.md)** — original-to-new path table, hashes, and migration invariants.
