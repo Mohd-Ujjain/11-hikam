@@ -5,7 +5,15 @@
 **Status:** Binding editorial direction and researched implementation specification; **not** a claim that companion software has been installed in Hikam  
 **Primary authority:** [Standing Language and Source-Fidelity Protocol](LANGUAGE_AND_SOURCE_FIDELITY_REFINEMENT_PROTOCOL.md)
 
-> **Editorial decision:** The dossier should be an exceptionally clear, compact way to learn the author's essential argument, not a second article. Target approximately **650 words of main explanation + 850 words of instructional study aids per reading**, averaged across the programme and excluding chapter frontmatter and the existing end-of-chapter revision block. Preserve all important source material by assigning it a clearly justified place across the main notes, the existing study aids, and carefully source-grounded **Reading Companions** available at the exact point of need. **Neither Arabic nor English language-fidelity rules change at all.**
+> **Editorial decision:** The dossier should be an exceptionally clear, compact way to learn the author's essential argument, not a second article. Use a source-dependent **650–850 words of main explanation + 850–1,150 words of instructional study aids per reading**, averaged across the programme and excluding chapter frontmatter and the existing end-of-chapter revision block. Preserve all important source material by assigning it a clearly justified place across the main notes, the existing study aids, and carefully source-grounded **Reading Companions** available at the exact point of need. **Neither Arabic nor English language-fidelity rules change at all.**
+
+## Adopted source-proportionate range — updated November 18, 2026
+
+**This is the latest instruction and supersedes the former single ~1,500-word planning average wherever it conflicts.** The immediately visible dossier body should ordinarily contain **approximately 1,500–2,000 words**, in a source-dependent ratio: **650–850 words of main prose** and **850–1,150 words of instructional study aids**. For a shorter or less intricate primary reading, plan near **650 + 850 = 1,500**. For a longer, denser or more argumentatively complex reading, plan progressively up to **850 + 1,150 = 2,000**. Select the position within this range by the **actual article's length and intellectual complexity**, not by a desire to fill pages. This is a **normal operating range**, not permission to delete indispensable source content to satisfy a ceiling.
+
+Exclude chapter frontmatter, all six revision sections and optional Reading Companion text from both visible-word categories; record their lengths separately. Do not count Companions as part of the aid allowance. **The author's complete essential argument stays understandable without opening a Companion.** The additional source-grounded examples, qualifications, evidence, distinctions and local technical explanations may be delivered contextually through companions where doing so improves comprehension without duplicating the visible text.
+
+**The previous language instructions are unchanged in every layer**, including every main-body sentence, aid, companion title and explanation, Arabic source text, revision element, caption and source label. This amendment is a distribution/length policy, not a language-policy change.
 
 ## 1. What was examined and what each reference repository teaches
 
@@ -37,9 +45,9 @@ These figures are **programme-level editorial averages**; they are **not** a dem
 
 | Visible reading layer | Planning average per dossier | Included | Excluded |
 | --- | ---: | --- | --- |
-| **Main explanatory prose** | **~650 words** | Ordinary chapter-body narrative, paragraph text and main-body headings outside aid components | Main-body callouts/tables, frontmatter, revision block, optional Companion contents |
-| **Existing instructional aids** | **~850 words** | Existing `.box.*`, quotations, section objectives, analogies, concept maps, hierarchies, comparisons/tables, checkpoints, tips and other semantic teaching components | Main explanatory prose, frontmatter, revision block, optional Companion contents |
-| **Total immediately visible main-body study** | **~1,500 words** | Sum of the two categories | Frontmatter, revision block and optional Companion contents |
+| **Main explanatory prose** | **~650–850 words** | Ordinary chapter-body narrative, paragraph text and main-body headings outside aid components | Main-body callouts/tables, frontmatter, revision block, optional Companion contents |
+| **Existing instructional aids** | **~850–1,150 words** | Existing `.box.*`, quotations, section objectives, analogies, concept maps, hierarchies, comparisons/tables, checkpoints, tips and other semantic teaching components | Main explanatory prose, frontmatter, revision block, optional Companion contents |
+| **Total immediately visible main-body study** | **~1,500–2,000 words** | Sum of the two categories | Frontmatter, revision block and optional Companion contents |
 | **Reading Companions** | **No word quota** | Only source-justified local explanations and evidence with verified triggers | They are audited separately and never used to pad the 850-word aid average |
 | **Established revision block** | **Preserve independently** | All six existing components and examination categories | It is **not** charged to either 650 or 850 |
 | **Chapter title/frontmatter/roadmap** | **Preserve independently** | Original title and author, roadmap, accurate central thesis | It is **not** charged to either 650 or 850 |
@@ -119,7 +127,7 @@ The coverage register must show **no important source unit lost**. An unverified
 
 1. Reopen the standing protocol, this file, the actual original source, the currently published dossier and its study/revision aids; confirm title/author.
 2. Make a complete **source-unit traceability map** before trying to shorten anything.
-3. Write a very clear **~650-word intellectual spine**, keeping the author's reasoning, not extended lectures. Put compact comparisons, definitions, diagrams, quotes, checkpoints and exam aids into **~850 words of purposeful study aids**, preserving established types where useful.
+3. Write a very clear **~650–850-word intellectual spine**, scaled to the actual reading, keeping the author's reasoning, not extended lectures. Put compact comparisons, definitions, diagrams, quotes, checkpoints and exam aids into **~850–1,150 words of purposeful study aids**, preserving established types where useful.
 4. Identify remaining source-specific detail and difficult points. Apply the Companion acceptance gates; write source-backed, simple, locally complete popups only when they supply genuinely new understanding. Distinguish author examples from newly devised educational illustrations.
 5. Review **semantic repetition** across body, hero, all aid types, companion candidates and revisions. Remove redundant *exposition*, not separate premises, counterarguments, cases or qualifications.
 6. Re-check every important unit of the original against its assigned location; confirm authorship, quotations, cited pages, strength of claims and any unresolved source gaps.
@@ -130,4 +138,4 @@ The coverage register must show **no important source unit lost**. An unverified
 
 The expanded **1.1.1 (Moran)** and **1.1.2 (Stout)** currently exceed the new targets. They are the first candidates for a **source-verified concise-with-companions pilot**. **Do not silently rewrite or deploy them now**: the companion delivery and source coverage mapping must be built and tested together so the extra source material is not lost. Once the pilot is validated, subsequent readings can follow the same disciplined format.
 
-**Final editorial standard:** **~650 words of immediately readable scholarly prose + ~850 words of genuinely useful study aids + optional, exact, nonredundant, source-grounded Reading Companions + independently preserved revision material. All source-relevant information remains traceable. All original Arabic/English language rules remain binding.**
+**Final editorial standard:** **~650–850 words of immediately readable scholarly prose + ~850–1,150 words of genuinely useful study aids (together ~1,500–2,000, source-proportionate) + optional, exact, nonredundant, source-grounded Reading Companions + independently preserved revision material. All source-relevant information remains traceable. All original Arabic/English language rules remain binding.**
