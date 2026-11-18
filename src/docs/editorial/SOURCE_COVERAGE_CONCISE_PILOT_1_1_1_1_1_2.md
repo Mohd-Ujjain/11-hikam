@@ -97,6 +97,14 @@ This is an **editorial traceability register**, not a claim that every supportin
 **Release verification:** `python src/build.py` rebuilt the published files. `python src/build.py --check` and all repository verification jobs, including source-anchor checks, full-book structure, Reading Companion browser interaction, RTL, printing, offline/PWA installation and migrations, passed in GitHub Actions run [44272376723](https://github.com/MohdUjjain/11-hikam/actions/runs/44272376723). Both six-part revision blocks and five examination-question categories are retained. The chapter frontmatter, all subsequent chapters, unrelated styling and reader architecture are unchanged. The temporary editorial build workflow was removed.
 
 
+## Later 19 November refinement — accessible contextual companions and local source details
+
+Both existing chapters are preserved, including all six original revision sections. **Ten Moran and twenty-four Stout Companion entries** now use the simple contextual triple (meaning, why here, remember). Their original fuller source explanations have been retained with their printed-page references in **closed native Source Depth callouts directly after the corresponding main-body paragraphs**; multiple source records for a single paragraph share one disclosure. This restores proximity without reintroducing extra facts into the contextual popup.
+
+The user-authorized change affects delivery and accessibility, not source theses, original quotations, or unrelated chapters. Chapter pigments now determine dotted resting cues; open/hover changes to solid; keyboard focus, dismiss and touch scrolling have been refined. The print compositor removes these HTML-only optional callouts before measurement, while ordinary source text and the timeline continue to print. The visible 1,500–2,000-word target continues to exclude optional closed source detail and revision blocks.
+
+Verification must include all 34 unique anchors, source detail/card counts, source citations, contextual text, no-JS disclosure, no-print source depth, chapter-color cues, screen-reader state, mobile/RTL/pagination, and complete offline PWA checks. Fork-hosted CI remains the designated validation route when primary Actions quota is constrained.
+
 ## Later comprehension pilot — Moran 1.1.1 (18 November 2026)
 
 The source-completeness assessment above still stands. What has changed is **which optional layer delivers what**. The reader reported that opening a Companion to understand the current concept instead introduced new names and unrelated historical details. See the binding [Context-First Companions and Optional Source Depth](CONTEXT_FIRST_COMPANIONS_AND_SOURCE_DEPTH.md).
