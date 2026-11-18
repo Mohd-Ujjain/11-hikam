@@ -432,7 +432,7 @@
       "text": "Continental discussions of our responsibility to others",
       "kind": "Source clarification",
       "title": "Buber, Levinas and Scheler on sensitivity",
-      "explanation": "Stout connects Murdoch's attentive moral perception with Buber's 'I–Thou' relation, where another person is not approached merely as an object, and Levinas's encounter with the Other. He also discusses Scheler's view that emotions can disclose values. These are related accounts of ethical encounter and sensitivity, not one identical theory.",
+      "explanation": "Stout connects Murdoch's attentive moral perception with Buber's 'I–Thou' relation, where another person is not treated merely as an object. For Buber, responding to a particular person also bears on one's relation to God. Levinas develops an ethics of encountering the Other, while Scheler argues that emotional experience can disclose values. These are related approaches, not one identical theory.",
       "source": {
         "author": "Rowland Stout",
         "work": "Twentieth-Century Moral Philosophy",
@@ -504,7 +504,7 @@
       "text": "Singer extends moral consideration",
       "kind": "Source clarification",
       "title": "Who counts according to Singer?",
-      "explanation": "Stout reports Singer's claim that all and only sentient beings count when calculating overall happiness. This has controversial implications when comparing a newborn's and an animal's capacity for pain. Stout also records Singer's qualification: other factors complicate such judgments in real situations. The claim concerns sentience, not simply membership of a human or animal species.",
+      "explanation": "Stout reports Singer's claim that all and only sentient beings count in overall-happiness calculations. On that principle, if a newborn has less capacity to feel pain than a cow, Singer gives more weight to the cow's well-being in that comparison. Stout also records Singer's qualification that other factors complicate the judgment in practice.",
       "source": {
         "author": "Rowland Stout",
         "work": "Twentieth-Century Moral Philosophy",
@@ -565,6 +565,23 @@
         ]
       },
       "added_value": "Provides the decisive details of Nozick's supplied example, which the main note names but does not narrate."
+    },
+    {
+      "id": "h112-baier-gewirth",
+      "chapter": "ch1-1-2",
+      "passage": "Others tried to justify moral rules through self-interest, commitment, or rights.",
+      "text": "self-interest, commitment, or rights",
+      "kind": "Source comparison",
+      "title": "Three attempts to connect rationality and moral commitment",
+      "explanation": "Baier argued that moral reasons take account of others and override immediate self-interest, while still grounding their priority partly in self-interest; Toulmin appealed instead to harmony among interests. Gauthier argued that rational agency includes commitment, which can sustain cooperation despite a temptation to cheat. Gewirth argued that claiming rights for oneself while refusing others' comparable rights is irrational.",
+      "source": {
+        "author": "Rowland Stout",
+        "work": "Twentieth-Century Moral Philosophy",
+        "printedPages": [
+          877
+        ]
+      },
+      "added_value": "Distinguishes four named proposals left hidden by the main note's grouping of self-interest, commitment and rights."
     }
   ]
 }
