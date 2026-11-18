@@ -6,7 +6,7 @@
     {
       "id": "h111-russell-idealism",
       "chapter": "ch1-1-1",
-      "passage": "Russell initially described analysis as finding the simpler elements that make up a complex.",
+      "passage": "Russell initially described analysis as finding simpler elements within a complex claim.",
       "text": "Russell initially described analysis",
       "kind": "Historical interpretation",
       "title": "Why Russell's ancestry is less straightforward",
@@ -24,7 +24,7 @@
     {
       "id": "h112-parfit-identity",
       "chapter": "ch1-1-2",
-      "passage": "Derek Parfit, in Reasons and Persons (1984), asks us to take the interests of future generations seriously.",
+      "passage": "Singer extends moral consideration to sentient animals, while Parfit asks us to consider",
       "text": "future generations",
       "kind": "Argument connection",
       "title": "Why Parfit also questions our future selves",
@@ -41,7 +41,7 @@
     {
       "id": "h112-harrod-rule",
       "chapter": "ch1-1-2",
-      "passage": "Rule-utilitarianism, introduced by R. F. Harrod and analyzed by David Lyons, combines utility with a generalization principle",
+      "passage": "Hare distinguishes ordinary rule-following from critical calculation; rule-utilitarianism combines a generalization principle with a utilitarian way of selecting rules, though critics question whether it collapses into act-utilitarianism.",
       "text": "generalization principle",
       "kind": "Argument bridge",
       "title": "What is borrowed from Kant?",
@@ -54,6 +54,551 @@
         ]
       },
       "added_value": "Identifies the independent Kantian source of the rule-obligation premise, rather than repeating the existing definition of rule-utilitarianism."
+    },
+    {
+      "id": "h111-naturalism-critique",
+      "chapter": "ch1-1-1",
+      "passage": "while Kantian and phenomenological thinkers continued to ask how an objective world can be known by a subject.",
+      "text": "Naturalism expanded",
+      "kind": "Source clarification",
+      "title": "Why phenomenologists resisted naturalism",
+      "explanation": "Moran notes that Husserl regarded naturalism as a danger to philosophy understood as a rigorous inquiry. The transcendental response asks about the knowing subject's contribution to the possibility of objectivity; it is not simply a denial of findings from natural science.",
+      "source": {
+        "author": "Dermot Moran",
+        "work": "Towards an Assessment of Twentieth-Century Philosophy",
+        "printedPages": [
+          5
+        ]
+      },
+      "added_value": "Gives the rationale for Husserl's criticism, not just the two schools' labels."
+    },
+    {
+      "id": "h111-freud-later",
+      "chapter": "ch1-1-1",
+      "passage": "Around 1900, Freud's work,",
+      "text": "Freud's work",
+      "kind": "Source clarification",
+      "title": "Why Freud entered academic philosophy slowly",
+      "explanation": "Although Freud's psychoanalysis helped shape twentieth-century culture, Moran reports that its direct impact on academic philosophers developed slowly. Sartre rejected a central Freudian claim, and Popper criticized psychoanalysis for its lack of falsifiability; later European thinkers returned to Freud in new ways.",
+      "source": {
+        "author": "Dermot Moran",
+        "work": "Towards an Assessment of Twentieth-Century Philosophy",
+        "printedPages": [
+          9,
+          10
+        ]
+      },
+      "added_value": "Explains Moran's distinction between the first appearance of an idea and its eventual philosophical reception."
+    },
+    {
+      "id": "h111-husserl-development",
+      "chapter": "ch1-1-1",
+      "passage": "Husserl opposed psychologism and developed phenomenology as a description of what appears to consciousness.",
+      "text": "phenomenology as a description",
+      "kind": "Source clarification",
+      "title": "Husserl's method changed during its development",
+      "explanation": "In the early Logical Investigations, Husserl described phenomenology in terms close to descriptive psychology, while rejecting the reduction of logic to psychology. His later work moved toward transcendental questions about how consciousness constitutes or reaches objective meaning. Moran treats both phases as important.",
+      "source": {
+        "author": "Dermot Moran",
+        "work": "Towards an Assessment of Twentieth-Century Philosophy",
+        "printedPages": [
+          10,
+          11
+        ]
+      },
+      "added_value": "Restores the developmental distinction between early descriptive phenomenology and later transcendental inquiry."
+    },
+    {
+      "id": "h111-quine-holism",
+      "chapter": "ch1-1-1",
+      "passage": "Quine attacked the analytic–synthetic distinction and argued that our beliefs meet experience as an interconnected body, not one statement at a time.",
+      "text": "analytic–synthetic distinction",
+      "kind": "Source clarification",
+      "title": "What Quine meant by challenging analytic truth",
+      "explanation": "The analytic–synthetic distinction separates truths supposedly secured by meaning from those established by facts. Moran explains that Quine challenged the distinction itself, not merely a badly drawn boundary. He also rejected the idea that each claim could be checked against experience in isolation.",
+      "source": {
+        "author": "Dermot Moran",
+        "work": "Towards an Assessment of Twentieth-Century Philosophy",
+        "printedPages": [
+          18,
+          19
+        ]
+      },
+      "added_value": "Clarifies the exact target of Quine's argument, which the short note names but does not derive."
+    },
+    {
+      "id": "h111-europe-concept",
+      "chapter": "ch1-1-1",
+      "passage": "Husserl, Patočka, Derrida, and Habermas debated its intellectual inheritance and the limits of European identity.",
+      "text": "Europe itself became a philosophical question",
+      "kind": "Source clarification",
+      "title": "Why 'Europe' is not a neutral geographical label",
+      "explanation": "Moran describes Husserl's attempt to locate a distinctive rational vocation in Europe while also noting criticism of his exclusions. Patočka questioned a post-European humanity, while Derrida and Habermas reconsidered Europe's philosophical inheritance in relation to political history and wider responsibilities.",
+      "source": {
+        "author": "Dermot Moran",
+        "work": "Towards an Assessment of Twentieth-Century Philosophy",
+        "printedPages": [
+          26,
+          27
+        ]
+      },
+      "added_value": "Supplies the contrasting accounts behind a phrase that otherwise lists four thinkers without their actual claims."
+    },
+    {
+      "id": "h112-dewey-construction",
+      "chapter": "ch1-1-2",
+      "passage": "He proposed testing and revising moral principles through reflection and practice.",
+      "text": "testing and revising moral principles",
+      "kind": "Source clarification",
+      "title": "Dewey's weaker and stronger claims about constructing value",
+      "explanation": "Stout distinguishes a weaker view, where describing and working through a situation shapes which moral questions arise, from a stronger view, where rational experimentation actually makes the outcome good. He is cautious about attributing this stronger anti-realist claim to Dewey himself.",
+      "source": {
+        "author": "Rowland Stout",
+        "work": "Twentieth-Century Moral Philosophy",
+        "printedPages": [
+          855,
+          856
+        ]
+      },
+      "added_value": "Preserves Stout's explicit source qualification about Dewey rather than presenting constructivism as categorical."
+    },
+    {
+      "id": "h112-ideal-observer",
+      "chapter": "ch1-1-2",
+      "passage": "Stout examines more reductive accounts, including Perry's treatment of value as an object of interest, as well as ideal-observer theories, relativism, and later Cornell realism.",
+      "text": "ideal-observer theories",
+      "kind": "Source clarification",
+      "title": "What the ideal observer is meant to explain",
+      "explanation": "Roderick Firth proposed interpreting an ethical judgment through how a fully informed, disinterested, consistent observer would respond. Stout uses Moore's challenge to ask why that observer's reaction should settle what I ought to do. Brandt developed a related but differently qualified account.",
+      "source": {
+        "author": "Rowland Stout",
+        "work": "Twentieth-Century Moral Philosophy",
+        "printedPages": [
+          857,
+          858
+        ]
+      },
+      "added_value": "Gives the specific mechanism and criticism of an approach otherwise only named."
+    },
+    {
+      "id": "h112-geach",
+      "chapter": "ch1-1-2",
+      "passage": "Peter Geach also asks how a moral statement can keep its meaning inside an “if … then” argument.",
+      "text": "“if … then” argument",
+      "kind": "Source clarification",
+      "title": "The problem of moral words inside logic",
+      "explanation": "Calling stealing wrong may seem like expressing disapproval. But in the statement 'If stealing is wrong, then …,' the speaker is not straightforwardly disapproving of stealing. Geach asks how the expression can still play the same logical role in an argument; Blackburn tried to answer through commitments between attitudes.",
+      "source": {
+        "author": "Rowland Stout",
+        "work": "Twentieth-Century Moral Philosophy",
+        "printedPages": [
+          862
+        ]
+      },
+      "added_value": "Explains the embedded-statement problem and source response without duplicating the main text."
+    },
+    {
+      "id": "h112-mackie-queerness",
+      "chapter": "ch1-1-2",
+      "passage": "John Mackie's error theory argues that ordinary moral judgments claim an objective authority that the world does not provide.",
+      "text": "error theory",
+      "kind": "Source clarification",
+      "title": "Why Mackie called objective values 'queer'",
+      "explanation": "Stout describes two parts of Mackie's challenge. Objective values would be unusual things in the world, and knowing them would require an equally unusual way of detecting them. Mackie therefore held that ordinary moral judgments claim more objectivity than exists and are, strictly speaking, false.",
+      "source": {
+        "author": "Rowland Stout",
+        "work": "Twentieth-Century Moral Philosophy",
+        "printedPages": [
+          863
+        ]
+      },
+      "added_value": "Restores the separate metaphysical and epistemological reasoning behind Mackie's conclusion."
+    },
+    {
+      "id": "h112-sidgwick-phases",
+      "chapter": "ch1-1-2",
+      "passage": "Sidgwick and Moore appealed to fundamental intuitive principles.",
+      "text": "fundamental intuitive principles",
+      "kind": "Source clarification",
+      "title": "Sidgwick's stages of intuitionism",
+      "explanation": "Stout reports Sidgwick's movement from judgments about particular cases, to intuitive rules, to deeper philosophical principles that cannot themselves be derived from still deeper rules. Stout then asks why these final principles should escape further justification and finds Sidgwick's preference for maximizing good open to challenge.",
+      "source": {
+        "author": "Rowland Stout",
+        "work": "Twentieth-Century Moral Philosophy",
+        "printedPages": [
+          864,
+          865
+        ]
+      },
+      "added_value": "Adds the sequence and Stout's challenge, not just a generic description of intuition."
+    },
+    {
+      "id": "h112-ross-duties",
+      "chapter": "ch1-1-2",
+      "passage": "These duties can conflict, leaving particular decisions less than certain.",
+      "text": "duties can conflict",
+      "kind": "Source clarification",
+      "title": "Why Ross does not offer a simple checklist",
+      "explanation": "Ross named duties such as fidelity, reparation, gratitude, justice, beneficence, self-improvement, and avoiding harm. Their weight can differ by case, and consequences may be uncertain. Stout emphasizes that recognizing each duty intuitively does not mean that its final priority in a difficult situation is equally obvious.",
+      "source": {
+        "author": "Rowland Stout",
+        "work": "Twentieth-Century Moral Philosophy",
+        "printedPages": [
+          865,
+          866
+        ]
+      },
+      "added_value": "Gives the full source list and the distinction between identifying duties and judging an all-things-considered action."
+    },
+    {
+      "id": "h112-prisoners",
+      "chapter": "ch1-1-2",
+      "passage": "The Prisoners' Dilemma shows why self-interest alone can undermine cooperative rules.",
+      "text": "Prisoners' Dilemma",
+      "kind": "Source clarification",
+      "title": "Why individual advantage can defeat collective advantage",
+      "explanation": "Stout's problem is that everyone may be better off under shared rules, yet an individual can gain by breaking a rule while others obey it. If each person reasons that way, the system collapses. Gauthier responds by trying to build commitment into rational agency rather than treating every case as a fresh calculation.",
+      "source": {
+        "author": "Rowland Stout",
+        "work": "Twentieth-Century Moral Philosophy",
+        "printedPages": [
+          877
+        ]
+      },
+      "added_value": "Shows the inferential step and Gauthier's response not included in the short note."
+    },
+    {
+      "id": "h112-rawls-agreement",
+      "chapter": "ch1-1-2",
+      "passage": "Scanlon, Rawls, and Habermas developed approaches grounded in agreements that reasonable people could accept.",
+      "text": "Scanlon, Rawls, and Habermas",
+      "kind": "Source clarification",
+      "title": "Three different forms of justified agreement",
+      "explanation": "Stout distinguishes Scanlon's question about rules no one could reasonably reject, Rawls's imagined agreement behind a veil of ignorance about one's place in society, and Habermas's inclusive discussion in which participants respect each other's viewpoints. All use agreement, but not in the same way.",
+      "source": {
+        "author": "Rowland Stout",
+        "work": "Twentieth-Century Moral Philosophy",
+        "printedPages": [
+          878
+        ]
+      },
+      "added_value": "Restores differences between three theories presently grouped in one sentence."
+    },
+    {
+      "id": "h111-frege-politics",
+      "chapter": "ch1-1-1",
+      "passage": "Frege helped establish the precise logical treatment of statements and meanings.",
+      "text": "precise logical treatment",
+      "kind": "Source clarification",
+      "title": "Frege's influence had limits, and a political shadow",
+      "explanation": "Moran credits Frege with lasting influence on language, logic, science, mind and metaphysics, though not on every branch of philosophy. He also records Frege's association with a right-wing philosophical society that later supported Hitler and reports anti-Catholic and antisemitic statements in Frege's diary. These historical facts accompany his account of Frege's logical contributions.",
+      "source": {
+        "author": "Dermot Moran",
+        "work": "Towards an Assessment of Twentieth-Century Philosophy",
+        "printedPages": [
+          12,
+          13
+        ]
+      },
+      "added_value": "Preserves Moran's qualification and historical report without turning it into the logical thesis."
+    },
+    {
+      "id": "h111-tradition-labels",
+      "chapter": "ch1-1-1",
+      "passage": "The later opposition between analytic and Continental philosophy can obscure their shared origins.",
+      "text": "analytic and Continental philosophy",
+      "kind": "Source clarification",
+      "title": "Why the names themselves are difficult",
+      "explanation": "Moran explains that 'Continental' was often a label applied from outside, especially in Britain. 'European philosophy' is also inadequate: many analytic philosophers were European, and Americans studied thinkers called Continental. Some historians even proposed 'Anglo-German' for analytic philosophy after German-speaking émigrés shaped it in the United States. The difficulty concerns both geography and overlapping methods.",
+      "source": {
+        "author": "Dermot Moran",
+        "work": "Towards an Assessment of Twentieth-Century Philosophy",
+        "printedPages": [
+          13,
+          14
+        ]
+      },
+      "added_value": "Recovers Moran's specific explanation of why neither name identifies a tidy school."
+    },
+    {
+      "id": "h111-political-philosophy-return",
+      "chapter": "ch1-1-1",
+      "passage": "Political philosophy became prominent again through writers such as Arendt and, later, Rawls.",
+      "text": "Political philosophy became prominent again",
+      "kind": "Source clarification",
+      "title": "Why political philosophy re-emerged later",
+      "explanation": "Moran observes that systematic political philosophy developed surprisingly late in such a politically violent century. Arendt, Popper and Berlin contributed before Rawls's A Theory of Justice (1971). He also traces engaged critiques of colonialism and imperialism through Sartre, Merleau-Ponty and Fanon, alongside the Frankfurt School and later debates over emancipation.",
+      "source": {
+        "author": "Dermot Moran",
+        "work": "Towards an Assessment of Twentieth-Century Philosophy",
+        "printedPages": [
+          31
+        ]
+      },
+      "added_value": "Restores the source's timing and distinct strands of political philosophy."
+    },
+    {
+      "id": "h111-history-philosophy",
+      "chapter": "ch1-1-1",
+      "passage": "Philosophy must also examine its own history: ideas, names, and inherited problems do not have fixed meanings outside the debates that formed them.",
+      "text": "Philosophy must also examine its own history",
+      "kind": "Source clarification",
+      "title": "Why the history of philosophy is philosophical",
+      "explanation": "Moran draws on Hegel's view that philosophy reflects on its own time, while resisting the idea that all events simply follow a rational master-plan. Concepts and problems have histories, and studying those histories can change how we understand the concepts themselves. A philosophical history is therefore more than a dated catalogue of works.",
+      "source": {
+        "author": "Dermot Moran",
+        "work": "Towards an Assessment of Twentieth-Century Philosophy",
+        "printedPages": [
+          24,
+          25
+        ]
+      },
+      "added_value": "Explains why intellectual history is itself philosophically relevant."
+    },
+    {
+      "id": "h112-westermarck-perry",
+      "chapter": "ch1-1-2",
+      "passage": "Stout examines more reductive accounts, including Perry's treatment of value as an object of interest, as well as ideal-observer theories, relativism, and later Cornell realism.",
+      "text": "Perry's treatment of value",
+      "kind": "Source clarification",
+      "title": "Being valued is not automatically being valuable",
+      "explanation": "Westermarck linked wrongness to a person's or community's inclination to disapprove. Perry linked an object's value to someone's taking an interest in it. Stout applies Moore's question to both: does disapproval establish wrongness, or does interest establish goodness? He also notes that Perry later appealed to harmony among interests when discussing overall value.",
+      "source": {
+        "author": "Rowland Stout",
+        "work": "Twentieth-Century Moral Philosophy",
+        "printedPages": [
+          857
+        ]
+      },
+      "added_value": "Distinguishes Westermarck and Perry and illustrates the open question applied to each."
+    },
+    {
+      "id": "h112-brandt-harman",
+      "chapter": "ch1-1-2",
+      "passage": "Stout examines more reductive accounts, including Perry's treatment of value as an object of interest, as well as ideal-observer theories, relativism, and later Cornell realism.",
+      "text": "relativism",
+      "kind": "Source clarification",
+      "title": "Does a framework make an act right?",
+      "explanation": "Brandt connects ethical language to attitudes endorsed after informed, intelligent reflection. Harman interprets moral claims in relation to a community's framework of conventions and attitudes. Stout asks why an informed judge's endorsement, or acceptance within one's own framework, should settle whether an act is really right or wrong. That question remains open for the agent.",
+      "source": {
+        "author": "Rowland Stout",
+        "work": "Twentieth-Century Moral Philosophy",
+        "printedPages": [
+          858,
+          859
+        ]
+      },
+      "added_value": "Recovers distinct analyses by Brandt and Harman and Stout's common criticism."
+    },
+    {
+      "id": "h112-cornell-cluster",
+      "chapter": "ch1-1-2",
+      "passage": "The Cornell realists answer that moral properties may be natural, causally important features of reality.",
+      "text": "Cornell realists",
+      "kind": "Source clarification",
+      "title": "How the Cornell realists identify moral properties",
+      "explanation": "Boyd described moral properties as clusters of mutually supporting natural properties, rather than definitions based on one feature. Sturgeon argued that someone's badness or goodness might help explain judgments and actions. Stout asks how the natural cluster connected with a moral term can be shown to coincide with what a person would reach through rational moral reflection.",
+      "source": {
+        "author": "Rowland Stout",
+        "work": "Twentieth-Century Moral Philosophy",
+        "printedPages": [
+          859,
+          860
+        ]
+      },
+      "added_value": "Preserves Boyd's cluster and Sturgeon's explanatory criterion and remaining challenge."
+    },
+    {
+      "id": "h112-ross-medicine",
+      "chapter": "ch1-1-2",
+      "passage": "W. D. Ross instead identified several prima facie duties, such as fidelity, gratitude, justice, and avoiding harm.",
+      "text": "prima facie duties",
+      "kind": "Source clarification",
+      "title": "Why plural duties mattered in medical ethics",
+      "explanation": "Stout connects Ross's approach to Beauchamp and Childress's four principles of medical ethics: autonomy, non-maleficence, beneficence and justice. They are distinct considerations that can guide decisions even when no single universal rule determines the answer. This is Stout's example of intuitionism's continuing practical influence.",
+      "source": {
+        "author": "Rowland Stout",
+        "work": "Twentieth-Century Moral Philosophy",
+        "printedPages": [
+          866
+        ]
+      },
+      "added_value": "Adds the source's important application of plural duties."
+    },
+    {
+      "id": "h112-continental-sensibility",
+      "chapter": "ch1-1-2",
+      "passage": "Stout connects this approach with feminist care ethics, virtue theory, and Continental discussions of our responsibility to others.",
+      "text": "Continental discussions of our responsibility to others",
+      "kind": "Source clarification",
+      "title": "Buber, Levinas and Scheler on sensitivity",
+      "explanation": "Stout connects Murdoch's attentive moral perception with Buber's 'I–Thou' relation, where another person is not treated merely as an object. For Buber, responding to a particular person also bears on one's relation to God. Levinas develops an ethics of encountering the Other, while Scheler argues that emotional experience can disclose values. These are related approaches, not one identical theory.",
+      "source": {
+        "author": "Rowland Stout",
+        "work": "Twentieth-Century Moral Philosophy",
+        "printedPages": [
+          868,
+          869
+        ]
+      },
+      "added_value": "Explains three Continental versions of a related idea."
+    },
+    {
+      "id": "h112-existential-ambiguity",
+      "chapter": "ch1-1-2",
+      "passage": "Stout also traces an alternative: Charles Taylor sees self-definition as open to reasoned revision, while existentialists understand radical choice as a deeper source of freedom.",
+      "text": "existentialists understand radical choice",
+      "kind": "Source clarification",
+      "title": "What Beauvoir means by the ambiguity of freedom",
+      "explanation": "Stout contrasts Taylor's rationally revisable self-definition with existentialist radical choice, where value arises from a free decision rather than guiding it from outside. Simone de Beauvoir valued freedom but observed a tension: choosing freely gives a situation meaning, while that settled meaning also limits future freedom. She called this tension ambiguity.",
+      "source": {
+        "author": "Rowland Stout",
+        "work": "Twentieth-Century Moral Philosophy",
+        "printedPages": [
+          872,
+          873
+        ]
+      },
+      "added_value": "Preserves Beauvoir's specific account of ambiguity."
+    },
+    {
+      "id": "h112-preference-ramsey",
+      "chapter": "ch1-1-2",
+      "passage": "Stout traces a shift from pleasure toward preference satisfaction, which influenced decision theory and public policy.",
+      "text": "preference satisfaction",
+      "kind": "Source clarification",
+      "title": "Ramsey's measurements and Stout's challenge",
+      "explanation": "Ramsey showed how choices between outcomes could measure preferences and bets could estimate degrees of belief. This helped rational choice and later welfare calculations. Stout nevertheless questions treating preference-satisfaction as the whole of rationality: the fact that people choose what they want does not establish that whatever they want is what they ought to choose.",
+      "source": {
+        "author": "Rowland Stout",
+        "work": "Twentieth-Century Moral Philosophy",
+        "printedPages": [
+          873,
+          874
+        ]
+      },
+      "added_value": "Connects the method to policy and the source's stated criticism."
+    },
+    {
+      "id": "h112-agent-causation",
+      "chapter": "ch1-1-2",
+      "passage": "Further disagreement concerned whether responsibility requires originating our own causes or having been able to do otherwise.",
+      "text": "originating our own causes",
+      "kind": "Source clarification",
+      "title": "Why some philosophers defended agent causation",
+      "explanation": "Stout reports Taylor's worry that describing mental events as causes leaves out the agent's own role in acting. Chisholm claimed free will requires some events to be caused by an agent rather than by prior events. Other philosophers judged this metaphysically costly, while compatibilists argued that determinism need not remove freedom or responsibility.",
+      "source": {
+        "author": "Rowland Stout",
+        "work": "Twentieth-Century Moral Philosophy",
+        "printedPages": [
+          870,
+          871
+        ]
+      },
+      "added_value": "Explains the causal-origination requirement and competing responses."
+    },
+    {
+      "id": "h112-singer-sentience",
+      "chapter": "ch1-1-2",
+      "passage": "Singer extends moral consideration to sentient animals, while Parfit asks us to consider future generations.",
+      "text": "Singer extends moral consideration",
+      "kind": "Source clarification",
+      "title": "Who counts according to Singer?",
+      "explanation": "Stout reports Singer's claim that all and only sentient beings count in overall-happiness calculations. On that principle, if a newborn has less capacity to feel pain than a cow, Singer gives more weight to the cow's well-being in that comparison. Stout also records Singer's qualification that other factors complicate the judgment in practice.",
+      "source": {
+        "author": "Rowland Stout",
+        "work": "Twentieth-Century Moral Philosophy",
+        "printedPages": [
+          874
+        ]
+      },
+      "added_value": "Preserves the exact criterion and its qualification."
+    },
+    {
+      "id": "h112-rule-collapse",
+      "chapter": "ch1-1-2",
+      "passage": "rule-utilitarianism combines a generalization principle with a utilitarian way of selecting rules, though critics question whether it collapses into act-utilitarianism.",
+      "text": "collapses into act-utilitarianism",
+      "kind": "Source clarification",
+      "title": "Why Smart and Lyons disagreed about rules",
+      "explanation": "Smart argued that the universally best rule might itself be 'always maximize utility in each case', making rule-utilitarianism collapse into act-utilitarianism. Lyons answered that some formulations escape this collapse, though they may be less plausible on other grounds. Stout presents this as a problem for justifying rules when immediate consequences point the other way.",
+      "source": {
+        "author": "Rowland Stout",
+        "work": "Twentieth-Century Moral Philosophy",
+        "printedPages": [
+          876,
+          877
+        ]
+      },
+      "added_value": "Preserves the source objection and qualified response."
+    },
+    {
+      "id": "h112-moore-meaning",
+      "chapter": "ch1-1-2",
+      "passage": "His open question argument asks: even if something gives pleasure, can we still meaningfully ask whether it is good?",
+      "text": "open question argument",
+      "kind": "Methodological qualification",
+      "title": "Why an open question must be tested carefully",
+      "explanation": "Stout warns that knowing how to use a word does not always mean that its meaning is perfectly clear to us. A question may look open even when it concerns meaning itself. Moore's test must therefore be applied carefully rather than treating every question that sounds discussable as proof that a definition fails.",
+      "source": {
+        "author": "Rowland Stout",
+        "work": "Twentieth-Century Moral Philosophy",
+        "printedPages": [
+          854
+        ]
+      },
+      "added_value": "Preserves the explicit methodological caution that the existing examination question asks students to explain."
+    },
+    {
+      "id": "h112-nozick-experience",
+      "chapter": "ch1-1-2",
+      "passage": "Nozick's experience-machine example questions whether pleasant experience is all we value.",
+      "text": "experience-machine example",
+      "kind": "Source example",
+      "title": "What happens in Nozick's experience machine?",
+      "explanation": "Imagine a machine that could give you every feeling of having achieved what matters to you. You could feel that you had written a great book without actually writing it. If you would refuse the machine, Nozick takes that to suggest that real achievements matter to you, not only the pleasant experience of having them.",
+      "source": {
+        "author": "Rowland Stout",
+        "work": "Twentieth-Century Moral Philosophy",
+        "printedPages": [
+          873
+        ]
+      },
+      "added_value": "Provides the decisive details of Nozick's supplied example, which the main note names but does not narrate."
+    },
+    {
+      "id": "h112-baier-gewirth",
+      "chapter": "ch1-1-2",
+      "passage": "Others tried to justify moral rules through self-interest, commitment, or rights.",
+      "text": "self-interest, commitment, or rights",
+      "kind": "Source comparison",
+      "title": "Three attempts to connect rationality and moral commitment",
+      "explanation": "Baier argued that moral reasons take account of others and override immediate self-interest, while still grounding their priority partly in self-interest; Toulmin appealed instead to harmony among interests. Gauthier argued that rational agency includes commitment, which can sustain cooperation despite a temptation to cheat. Gewirth argued that claiming rights for oneself while refusing others' comparable rights is irrational.",
+      "source": {
+        "author": "Rowland Stout",
+        "work": "Twentieth-Century Moral Philosophy",
+        "printedPages": [
+          877
+        ]
+      },
+      "added_value": "Distinguishes four named proposals left hidden by the main note's grouping of self-interest, commitment and rights."
+    },
+    {
+      "id": "h112-foot-thick",
+      "chapter": "ch1-1-2",
+      "passage": "Moral perception joins reason and appropriately developed emotion.",
+      "text": "Moral perception",
+      "kind": "Source example",
+      "title": "Foot's example: the word 'rude'",
+      "explanation": "Stout reports Philippa Foot's example of the word 'rude'. A person's behavior may meet familiar criteria for being rude, while the word also expresses disapproval. Someone unwilling to make that evaluation may have to decline to use the term itself. This is why a morally thick word cannot be treated as a purely neutral description.",
+      "source": {
+        "author": "Rowland Stout",
+        "work": "Twentieth-Century Moral Philosophy",
+        "printedPages": [
+          868
+        ]
+      },
+      "added_value": "Adds Foot's concrete source example of descriptive and evaluative meaning beyond the nearby definition of thick terms."
     }
   ]
 }

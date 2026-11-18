@@ -58,5 +58,5 @@ for item in manifest['companions']:
     hits = [node for node in matches[0][2] if item['text'] in node]
     assert len(hits) == 1 and hits[0].count(item['text']) == 1, f'Missing/ambiguous text node: {ident}'
     assert ident in built, f'Manifest item not published: {ident}'
-assert len(seen) == 3, f'Expected the three approved pilot entries, got {len(seen)}'
-print(f'PASS: {len(seen)} source-anchored Companions, original chapter text intact, single-file offline embedding')
+assert len(seen) == len(manifest['companions']), f'Missing manifest entries: {len(seen)} vs {len(manifest["companions"])}'
+print(f'PASS: {len(seen)} source-anchored Companions, source anchors intact, single-file offline embedding')
