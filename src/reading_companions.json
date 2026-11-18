@@ -531,6 +531,40 @@
         ]
       },
       "added_value": "Preserves the source objection and qualified response."
+    },
+    {
+      "id": "h112-moore-meaning",
+      "chapter": "ch1-1-2",
+      "passage": "His open question argument asks: even if something gives pleasure, can we still meaningfully ask whether it is good?",
+      "text": "open question argument",
+      "kind": "Methodological qualification",
+      "title": "Why an open question must be tested carefully",
+      "explanation": "Stout warns that knowing how to use a word does not always mean that its meaning is perfectly clear to us. A question may look open even when it concerns meaning itself. Moore's test must therefore be applied carefully rather than treating every question that sounds discussable as proof that a definition fails.",
+      "source": {
+        "author": "Rowland Stout",
+        "work": "Twentieth-Century Moral Philosophy",
+        "printedPages": [
+          854
+        ]
+      },
+      "added_value": "Preserves the explicit methodological caution that the existing examination question asks students to explain."
+    },
+    {
+      "id": "h112-nozick-experience",
+      "chapter": "ch1-1-2",
+      "passage": "Nozick's experience-machine example questions whether pleasant experience is all we value.",
+      "text": "experience-machine example",
+      "kind": "Source example",
+      "title": "What happens in Nozick's experience machine?",
+      "explanation": "Imagine a machine that could give you every feeling of having achieved what matters to you. You could feel that you had written a great book without actually writing it. If you would refuse the machine, Nozick takes that to suggest that real achievements matter to you, not only the pleasant experience of having them.",
+      "source": {
+        "author": "Rowland Stout",
+        "work": "Twentieth-Century Moral Philosophy",
+        "printedPages": [
+          873
+        ]
+      },
+      "added_value": "Provides the decisive details of Nozick's supplied example, which the main note names but does not narrate."
     }
   ]
 }
