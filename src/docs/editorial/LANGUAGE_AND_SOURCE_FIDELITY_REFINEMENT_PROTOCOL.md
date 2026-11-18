@@ -29,6 +29,20 @@ Proceed **one reading/article at a time, in dossier order from the beginning**, 
 
 **Style is not substance.** The Arabic author's wording patterns do not license importing that writer's particular theological or philosophical claims into other authors' readings.
 
+## Source identification, author credit, and original titles (mandatory)
+
+**Every dossier must visibly identify its original reading and its actual author.** Attribution is a core scholarly requirement, not a decorative choice. This rule applies to the **table of contents/index**, the **individual chapter frontmatter/title page**, and any other chapter title reused in navigation or print.
+
+1. **Read the actual primary file's title page or first heading** to establish its exact original chapter/article title, author(s), and work or collection of publication. A supplementary study guide is not the authority for title or authorship.
+2. **Use the original source title as the dossier's main title** (`h1.chapter-title`) and its **index/TOC title**. Keep those exact titles consistent with any chapter-navigation or print labels derived from them. Do not replace an authentic title with an invented explanatory heading, abbreviated syllabus label, interpretive thesis, or the title of a study-guide summary. Place any explanation in the existing `.chapter-source` subtitle or chapter body instead.
+3. **Display all verified source authors by name** on the chapter's frontmatter and alongside its index entry, with the source work identified where known. Distinguish the *source author* from the person who compiled or edited the Takhassus dossier.
+4. **Make a per-reading title/author comparison before changing any title.** Check the original source file itself: file names may include prefixes such as `1.1.2 Source -` and collection names that are *not* part of the article title, while headings on the first page establish the actual title. Use its original title, not the mechanically copied full filename.
+5. **Apply this across the publication as sources are inspected.** Audit existing dossiers for missing authors and incorrect titles, but **never guess authorship or original titles** when their primary readings are unavailable. Record unresolved entries for the future reading-by-reading audit and correct them as soon as their verified source is supplied. Do not silently attribute an unsigned course brief to a famous philosopher merely because it discusses that philosopher.
+6. **Do not redesign the book** to accommodate authorship. Work with established chapter and TOC semantics, adding only restrained attribution styling where necessary; retain chapter identifiers and deep links.
+7. **Verification:** Check the source title against the `h1`, TOC, visible author line, and print/revision output; ensure search, deep links, TOC labels and generated publication agree.
+
+This is a continuing **project-wide metadata correction requirement**, separate from changing the intellectual content of unrelated dossiers. For the actively edited reading, resolve its source identification before the language and coverage passes. For other readings without accessible primary files, the audit may remain explicitly unresolved rather than creating invented scholarly credit.
+
 ## 2. Non-negotiable source fidelity
 
 Treat the dossier as an accurate teaching presentation of **what the source author says**, not a place for ChatGPT's independent philosophical opinions.
