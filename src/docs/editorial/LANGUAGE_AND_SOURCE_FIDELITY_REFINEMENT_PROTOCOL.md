@@ -8,6 +8,18 @@
 
 > This protocol governs the present **editorial revision programme**, not a redesign, new-chapter template, philosophical critique, or authorization to modify the entire repository. It supplements — and does not supersede — the repository's [Design System](../design/DESIGN_SYSTEM.md), [Pagination System](../pagination/PAGINATION_SYSTEM.md), [source authoring instructions](../../README.md), and root [README](../../../README.md). Always inspect the current repository before editing; paths, counts, and conventions may change.
 
+## Adopted November 18 amendment — concision and Reading Companions
+
+**This amendment controls the length and information-distribution decisions in the current editorial programme. It does not change any Arabic or English language instructions, fidelity rules, original-author/title requirements, pedagogical component meanings, or revision-block obligations.**
+
+The user has fixed the **planning averages** at approximately **650 words of main chapter-body explanatory prose** and **850 words of existing study aids/callouts**, or **1,500 words of immediately visible main-body material per dossier**. Exclude chapter title/frontmatter, all six end-of-chapter revision sections, and optional Reading Companion contents from these two counts. They are **averages, not rigid per-chapter caps or quotas**; the original source still governs every essential proposition, qualification, example, argument, objection and conclusion. Never insert filler to reach a target or silently delete essential content to hit a number.
+
+The new method favors **brief, natural, connected statements and straightforward one-line points**, with technical terms and the author's reasoning still understandable. Study aids retain their independent functions. The additional, source-specific detail is delivered through **concise, optional, nonduplicative Reading Companions at the exact point of reading**, wherever source-grounded and genuinely helpful. Do **not** repeat surrounding prose/callouts in a popup or create a hidden second article. The main notes and aids must establish the indispensable intellectual spine even when popups are closed; each source-significant detail must be accounted for in a per-reading coverage record, and important details must not disappear from print/offline study.
+
+The **complete requirements, research into `11-history` and `11-literature`, traceability method, Companion acceptance gates, language safeguards, interaction/RTL/print/PWA constraints and proposed pilot** are in **[Concise Dossiers and Source-Grounded Reading Companions](CONCISE_DOSSIER_AND_READING_COMPANIONS.md)**. Read that document together with this standing protocol **before undertaking another reading's language or coverage pass**. Where older sentences in this protocol seemed to require a lengthy explanation for each source point or forbid concise presentation, read them under this amendment: **do not shrink the scholarship; compress and reorganize its presentation across the approved layers**.
+
+**Status boundary:** a documentation decision is not a functioning Companion implementation. Do not assert that the 39 chapters, or 1.1.1 and 1.1.2, have already been shortened or equipped with the new interaction. The original reading, source coverage and a tested pilot control subsequent content edits.
+
 ## 1. Purpose and scope
 
 The established dossiers are substantial academic study notes, already supported by quotations, explanations, diagrams, tables, analogies, prompts, memory devices, checkpoints, and complete revision systems. The aim is **not to rebuild them**, replace their framework, change their visual language, or produce shortened summaries.
