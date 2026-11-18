@@ -1,7 +1,7 @@
 # Source-to-dossier coverage register — concise pilot for 1.1.1 and 1.1.2
 
 **Date:** 18 November 2026  
-**Status:** Completed primary-source coverage and revision synchronization audit for a review branch. Release still depends on canonical build, browser and print/PWA verification.  
+**Status:** Primary-source coverage and revision synchronization completed; canonical build and full GitHub Actions verification passed on the editorial review branch (run [44272376723](https://github.com/MohdUjjain/11-hikam/actions/runs/44272376723)).  
 **Sources consulted:** the user-provided original PDFs, Dermot Moran, *Towards an Assessment of Twentieth-Century Philosophy* (printed pp. 1–34), and Rowland Stout, *Twentieth-Century Moral Philosophy* (printed pp. 851–878). **The original PDFs have not been uploaded to this public repository.**  
 **Canonical content:** `src/chapters/subtopic-1-1.html`; optional sources: `src/reading_companions.json`.  
 **Decision:** preserve the central logic in visible prose and semantically distinct aids; preserve extra local qualifications in short, page-verified companions. Both six-section revision blocks have been reconciled with the concise notes and original readings; their Key Table sections are now self-contained comparisons.
@@ -89,9 +89,9 @@ This is an **editorial traceability register**, not a claim that every supportin
 
 | Dossier | Main prose | Main-body aids | Total visible | Companions |
 |---|---:|---:|---:|---:|
-| 1.1.1 Moran | ~720 | ~1,056 | ~1,776 | 10 |
-| 1.1.2 Stout | ~847 | ~1,146 | ~1,993 | 24 |
+| 1.1.1 Moran | 708 | 1,069 | 1,777 | 10 |
+| 1.1.2 Stout | 847 | 1,146 | 1,993 | 24 |
 
-*These are Unicode-style approximate counts from the canonical HTML, excluding frontmatter, end-of-chapter revision and optional Companion explanations. Refresh the exact counts from the final edition after any further edits.*
+*Counts use a Unicode-aware word-token method on the canonical HTML. Frontmatter, six-part revision blocks, and optional Companion explanations are separate; different word processors may differ slightly on punctuation.*
 
-**Release checklist:** run `python src/build.py`, `python src/build.py --check`, the full repository verification suite and Playwright reading/RTL/print/PWA regressions; verify exact source anchors and quotations, the six revision sections, the five exam-question categories, and the absence of changes to unrelated chapters. Only merge after these checks pass.
+**Release verification:** `python src/build.py` rebuilt the published files. `python src/build.py --check` and all repository verification jobs, including source-anchor checks, full-book structure, Reading Companion browser interaction, RTL, printing, offline/PWA installation and migrations, passed in GitHub Actions run [44272376723](https://github.com/MohdUjjain/11-hikam/actions/runs/44272376723). Both six-part revision blocks and five examination-question categories are retained. The chapter frontmatter, all subsequent chapters, unrelated styling and reader architecture are unchanged. The temporary editorial build workflow was removed.
