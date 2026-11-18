@@ -48,7 +48,9 @@ for item in manifest['companions']:
     assert 20 <= len(item['explanation'].split()) <= 110, f'Explanation out of pilot range: {ident}'
     assert item['added_value'].strip(), ident
     start = chapters.find(f'<section class="chapter" id="{item["chapter"]}"')
-    end = chapters.find('</section>', start)
+    end = chapters.find('<section class="chapter" id="', start + 20)
+    if end < 0:
+        end = len(chapters)
     assert start >= 0 and end > start, item['chapter']
     body = chapters[start:end]
     body = body[body.index('<div class="chapter-body">'):]
