@@ -1,10 +1,10 @@
 # Source-to-dossier coverage register — concise pilot for 1.1.1 and 1.1.2
 
 **Date:** 18 November 2026  
-**Status:** Editorial working register accompanying a **draft branch**, not final approval or publication.  
+**Status:** Completed primary-source coverage and revision synchronization audit for a review branch. Release still depends on canonical build, browser and print/PWA verification.  
 **Sources consulted:** the user-provided original PDFs, Dermot Moran, *Towards an Assessment of Twentieth-Century Philosophy* (printed pp. 1–34), and Rowland Stout, *Twentieth-Century Moral Philosophy* (printed pp. 851–878). **The original PDFs have not been uploaded to this public repository.**  
 **Canonical content:** `src/chapters/subtopic-1-1.html`; optional sources: `src/reading_companions.json`.  
-**Decision:** preserve the central logic in visible prose and semantically distinct aids; preserve extra local qualifications in short, page-verified companions. The six-section revision apparatus remains present, though it must receive a final language/coverage synchronization before release.
+**Decision:** preserve the central logic in visible prose and semantically distinct aids; preserve extra local qualifications in short, page-verified companions. Both six-section revision blocks have been reconciled with the concise notes and original readings; their Key Table sections are now self-contained comparisons.
 
 ## Legend
 
@@ -31,18 +31,18 @@ This is an **editorial traceability register**, not a claim that every supportin
 | Nietzsche, Freud, Moore, Husserl and Russell around 1900 | 8–10 | §III; `h111-freud-later` | **V+C** — philosophical uptake of psychoanalysis clarified |
 | Husserl's anti-psychologism, phenomenological description, later transcendental turn | 10–12 | §III; `h111-husserl-development` | **V+C** — phases distinguished |
 | Heidegger's break with Husserl and political responsibility | 11–12 | §III, §V, §V historical box | **V** — source's account of Nazism made explicit |
-| Frege's logic, semantics, ontology and political views | 12–13 | §III | **P** — logical influence visible; source's political qualification and detailed scope remain to review |
-| Analytic/Continental labels, overlapping issues and common roots | 13–16 | §II–III, hierarchy and high-yield box | **V** — not portrayed as sealed traditions |
+| Frege's logic, semantics, ontology and political views | 12–13 | §III table; `h111-frege-politics` | **V+C** — logical scope and the author's political qualification retained |
+| Analytic/Continental labels, overlapping issues and common roots | 13–16 | §II–III; `h111-tradition-labels`; revision Key Table | **V+C** — common roots, terminological difficulties and methods distinguished |
 | Frege and Husserl on logic, mathematical symbolism and objectivity | 14–15 | §II hierarchy; §III table | **V** — method distinction visible |
 | Russell, Moore, Vienna Circle, ordinary-language strands | 16–19 | §IV, definition and mistake cards | **V** — analytic tradition's changing methods visible |
 | Quine's challenges to analyticity and isolated verification | 18–19 | §IV; `h111-quine-holism` | **V+C** — rejected distinction explained |
 | Davidson's third dogma and scheme/content critique | 19–20 | §IV concept map | **V** — role in the sequence retained |
-| Grand narratives, proclamations of the end and beginnings of philosophy | 20–24 | §VI | **P** — governing argument present, but contrasting Heidegger/Derrida/Ayer cases greatly condensed |
-| History of philosophy as philosophy; Hegelian self-reflection | 24–25 | §VI | **V** — concepts' history is relevant to understanding them |
+| Grand narratives, proclamations of the end and beginnings of philosophy | 20–24 | §VI proclamations table | **V** — Heidegger, Ayer, Wittgenstein, Derrida, Foucault and Lyotard distinguished |
+| History of philosophy as philosophy; Hegelian self-reflection | 24–25 | §VI; `h111-history-philosophy` | **V+C** — avoids turning Hegelian reflection into an inevitable progress narrative |
 | Europe as a contested philosophical idea | 26–27 | §V; `h111-europe-concept` | **V+C** — Husserl/Patočka/Derrida/Habermas claims distinguished |
 | Russell's idealist inheritance and limits of historical labels | 28–29 | §IV; `h111-russell-idealism` | **V+C** — Hylton/McTaggart/Bradley detail preserved in Companion |
 | World War I, World War II, migration and the changing academy | 29–31 | §V, period table and historical box | **V** — persecution and intellectual relocation central |
-| Political philosophy's late-century growth and Arendt/Rawls | 31 | §V | **P** — development named, detailed disagreements and Sartre/Merleau-Ponty debate not developed |
+| Political philosophy's late-century growth and Arendt/Rawls | 31 | §V; `h111-political-philosophy-return` | **V+C** — timing and distinct European political debates made accessible |
 | Reassessing the century and the Wittgenstein–Heidegger comparison | 32 | §III, §VI | **V** — provisional historical judgment emphasized |
 | Two uses of 'identity and discrimination' | 32–33 | §VI comparison table and definition | **V** — moral/social identity versus logical identification distinguished |
 | Philosophical ambiguity and the discovery/process distinction | 33–34 | §VI; Merleau-Ponty quote | **V** — complementary conclusions retained |
@@ -52,37 +52,46 @@ This is an **editorial traceability register**, not a claim that every supportin
 | Source unit and scholarly role | Source pp. | Draft location / Companion | Status / editorial decision |
 |---|---|---|---|
 | Aristotle/Hume/Kant inheritances and five interlocking questions | 851–853 | Central Thesis, five-question table | **V** — the organizing structure remains immediately visible |
-| Moore: extension versus intension, open question, naturalistic fallacy | 853–855 | §I, definition and analogy | **V** — distinction not reduced to slogan |
-| Moore's relation to Quine and analytic/synthetic criticism | 854–855 | §I | **P** — Moore's target stated, Quine-related historical qualification needs separate review |
+| Moore: extension versus intension, open question, naturalistic fallacy | 853–855 | §I definition and analogy; `h112-moore-meaning` | **V+C** — source's warning about uncertain meanings is stated |
+| Moore's relation to Quine and analytic/synthetic criticism | 854–855 | §I motivation/meaning definition aid | **V** — Moore's narrower semantic critique distinguished from Quine's general one |
 | Dewey, experiment, and weaker/stronger constructions of value | 855–856 | §I; `h112-dewey-construction` | **V+C** — Stout's caution about anti-realism retained |
-| Westermarck, Perry, Firth, Brandt, Harman and the open question | 856–859 | §I; `h112-ideal-observer` | **P** — source examples partly grouped; the specific disagreements across all five require checking |
-| Cornell natural-kind moral realism and explanatory properties | 859–860 | §I, §III comparison table | **P** — full cluster/causal explanation still needs a concise source-grounded home |
+| Westermarck, Perry, Firth, Brandt, Harman and the open question | 856–859 | §I; `h112-ideal-observer`, `h112-westermarck-perry`, `h112-brandt-harman` | **V+C** — each approach's target and Stout's questions explained |
+| Cornell natural-kind moral realism and explanatory properties | 859–860 | §III table; `h112-cornell-cluster` | **V+C** — Boyd's cluster, Sturgeon's explanation and Stout's challenge traced |
 | Ogden/Richards, Ayer, Stevenson and non-cognitivism | 860–861 | §II and relationship map | **V** — expressive versus descriptive function visible |
 | Interpersonal disagreement and Hare's universal prescriptivism | 861–862 | §II, definition and `h112-geach` | **V** — disagreement and universalizability distinguished |
 | Geach's logical embedding; Blackburn and Gibbard replies | 862 | §II; `h112-geach` | **V+C** — conditional example elaborated |
-| Truth debates, Mackie, McDowell, Nagel and Korsgaard | 862–864 | §III; `h112-mackie-queerness` | **V+C** — Mackie's two objections explained |
+| Truth debates, Mackie, McDowell, Nagel and Korsgaard | 862–864 | §III including Wiggins table row; `h112-mackie-queerness` | **V+C** — truth, objectivity, reasons and error theory kept distinct |
 | Sidgwick and Moore's fundamental intuitionism | 864–865 | §IV; `h112-sidgwick-phases` | **V+C** — source's three-stage progression available |
 | Ross, prima facie duties and case-level uncertainty | 865–866 | §IV; `h112-ross-duties` | **V+C** — list and weighting qualification retained |
 | Particularism, sensibility and cultivated emotions | 866–867 | §IV and high-yield box | **V** — not confused with mysterious intuition |
-| Gilligan, thick concepts, Murdoch's moral attention | 867–868 | §IV | **P** — care and attention visible; Gilligan/Williams/Foot distinctions still compressed |
-| Buber, Levinas, Scheler, Anscombe, MacIntyre and Williams | 868–870 | §IV, virtue high-yield box | **P** — several author positions visible, detailed continental and agent-centered arguments incomplete |
+| Gilligan, thick concepts, Murdoch's moral attention | 867–868 | §IV definition; `h112-foot-thick` | **V+C** — care, thick/thin distinctions and Foot's specific example available |
+| Buber, Levinas, Scheler, Anscombe, MacIntyre and Williams | 868–870 | §IV high-yield and definition; `h112-continental-sensibility` | **V+C** — distinct approaches to virtue, attention and reasons represented |
 | Davidson's reasons and causes | 870 | §V | **V** — explanatory and causal functions preserved |
-| Causal origination, alternative possibilities and Frankfurt | 870–871 | §V, hierarchy | **V** — reasons for the dispute visible |
-| P. F. Strawson's reactive attitudes, Taylor and existentialism | 871–873 | §V | **P** — key contrasts visible; Beauvoir's ambiguity not developed |
-| Hedonism, ideal/preference utilitarianism, Nozick and Ramsey | 873–874 | §VI | **V** — pleasure versus preferences versus actual achievement |
-| Singer's sentience and Parfit's future persons | 874 | §VI; `h112-parfit-identity` | **V+C** — personal identity bridge available |
-| Utility versus obligations: judge/riots, Hare and rule collapse | 875–877 | §VI; `h112-harrod-rule` | **V+C** — Kantian source of rule obligation clarified |
-| Prisoners' Dilemma, Baier, Gauthier and Gewirth | 877 | §VI; `h112-prisoners` | **V+C** — individual/collective tension traced |
+| Causal origination, alternative possibilities and Frankfurt | 870–871 | §V hierarchy; `h112-agent-causation` | **V+C** — hard determinism, compatibilism, libertarianism and agent causation distinguished |
+| P. F. Strawson's reactive attitudes, Taylor and existentialism | 871–873 | §V; `h112-existential-ambiguity` | **V+C** — Beauvoir's specific ambiguity and Taylor's rational revision included |
+| Hedonism, ideal/preference utilitarianism, Nozick and Ramsey | 873–874 | §VI; `h112-preference-ramsey`, `h112-nozick-experience` | **V+C** — the original illustrative case, measurable preferences and normative worry retained |
+| Singer's sentience and Parfit's future persons | 874 | §VI; `h112-singer-sentience`, `h112-parfit-identity` | **V+C** — precise criterion, source qualification and identity connection |
+| Utility versus obligations: judge/riots, Hare and rule collapse | 875–877 | §VI; `h112-harrod-rule`, `h112-rule-collapse` | **V+C** — the judicial case, Harrod's generalization and Smart/Lyons dispute |
+| Prisoners' Dilemma, Baier, Gauthier and Gewirth | 877 | §VI; `h112-prisoners`, `h112-baier-gewirth` | **V+C** — Baier/Toulmin, Gauthier's commitment and Gewirth's reciprocal rights explained |
 | Thomson's trolley and surgeon, Raz's interest/duty theory | 877–878 | §VI, rights definition box | **V** — numerical similarity versus rights distinction visible |
 | Scanlon, Rawls, Habermas and institutional agreement | 878 | §VI; `h112-rawls-agreement` | **V+C** — the kinds of agreement distinguished |
 
-## Editorial safeguards and outstanding work
+## Completion review and verification gates
 
-1. **Draft status is deliberate.** Several units are marked **P**. Those distinctions need a final read against the PDF before any claim of exhaustive completeness. Do not upgrade statuses merely because a companion mentions the subject.
-2. **The original complete chapter revision blocks were retained as markup.** They still need a per-item language and source synchronization audit; preserving markup is not by itself proof of intellectual agreement.
-3. **All Companions are optional**, and key claims must remain intelligible in the visible note. Source-only details that must appear in print require a print recovery treatment rather than being hidden in a screen-only popup.
-4. **Existing study-aid functions have been reused**, including comparisons, definitions, hierarchies, relationships, mistakes, checkpoints, high-yield points, quotations and EL10 where it clarifies a difficult point. The original *number of individual instances* is not preserved; the editorial decision about dropping any instance needs review against the source.
-5. **No source PDFs, full copyrighted passages or user language samples were placed in GitHub.** Companion explanations are newly written, short paraphrases with source-page pointers.
-6. **Build and browser verification remain necessary.** The current draft branch is not a complete compiled release until generated HTML, offline worker and browser/print checks have succeeded. In particular, the existing strict source-anchor validator and the revised Companion manifest must pass together.
+1. **Intellectual location.** The source units listed above now have an identified visible home, supported where useful by a separate, page-anchored Reading Companion. No major row remains marked **P** or **A**. That statement does **not** claim that every passing name, bibliography item, or historical illustration has been copied into a concise study dossier.
+2. **Main argument independently readable.** Moran's evaluation of continuity, methods, historical divisions and his specifically qualified closing comparison remain visible. Stout's five-question structure, decisive objections and replies, competing approaches to knowing and acting, free will, utilitarianism, duties and agreement remain in the visible body or study aids.
+3. **Revision synchronization.** Both original six-part revision blocks retain their sections and all five question types. Their Key Table sections now contain real source-based comparison tables; definitions and prompts on motivation, thick concepts, moral duties, Frege, Quine and Davidson have been checked against the teaching layer. A repeated Stout examination prompt was replaced with a distinct source question.
+4. **Source-faithful optional details.** No Companion is required to follow the entire principal argument. There is no quota imposed on Companions; entries preserve the author's distinctions, level of certainty, and original examples without presenting newly devised examples as the source.
+5. **Publication and confidentiality.** The two full user-supplied PDFs and user language-profile files remain outside the public repository. Only short original explanations and non-substantial source quotations appear in the authored reader.
+6. **Architecture protected.** Only the intended chapters within `src/chapters/subtopic-1-1.html`, the Companion manifest, the two pilot test scripts and this audit are edited. The existing revision block, its five question categories, chapter IDs, navigation and semantic component meanings remain intact. Generated outputs must be rebuilt rather than edited by hand.
 
-**Before merge:** resolve all important **P** units, verify every quote and original example, check title/author/TOC and the six revision components, confirm exact four-pool word counts, run canonical build and reader/browser tests, and verify no other chapter changed.
+### Final word pools and release checks
+
+| Dossier | Main prose | Main-body aids | Total visible | Companions |
+|---|---:|---:|---:|---:|
+| 1.1.1 Moran | ~720 | ~1,056 | ~1,776 | 10 |
+| 1.1.2 Stout | ~847 | ~1,146 | ~1,993 | 24 |
+
+*These are Unicode-style approximate counts from the canonical HTML, excluding frontmatter, end-of-chapter revision and optional Companion explanations. Refresh the exact counts from the final edition after any further edits.*
+
+**Release checklist:** run `python src/build.py`, `python src/build.py --check`, the full repository verification suite and Playwright reading/RTL/print/PWA regressions; verify exact source anchors and quotations, the six revision sections, the five exam-question categories, and the absence of changes to unrelated chapters. Only merge after these checks pass.
