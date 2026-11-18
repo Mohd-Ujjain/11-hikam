@@ -33,7 +33,7 @@ Use **Install app** on Chrome/Edge/Android, or **Add to Home Screen** on iPhone/
 
 More details: [src/README.md](src/README.md), [documentation index](src/docs/README.md).
 
-**Standing editorial refinement instructions:** [Language, Source Fidelity & Study-Aid Protocol](src/docs/editorial/LANGUAGE_AND_SOURCE_FIDELITY_REFINEMENT_PROTOCOL.md) — read before any dossier-by-dossier language or source-coverage pass.
+**Standing editorial refinement instructions:** [Language, Source Fidelity & Study-Aid Protocol](src/docs/editorial/LANGUAGE_AND_SOURCE_FIDELITY_REFINEMENT_PROTOCOL.md) and [Concise Dossiers & Reading Companions](src/docs/editorial/CONCISE_DOSSIER_AND_READING_COMPANIONS.md) — read both before any reading-by-reading editorial pass. The adopted density targets are approximately 650 words of main prose + 850 words of teaching aids per dossier, excluding frontmatter and revision; Companions are separately audited, and the Arabic/English language rules remain unchanged.
 
 ## Build and verify
 
