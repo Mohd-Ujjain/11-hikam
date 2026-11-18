@@ -136,9 +136,10 @@ def full_text_and_keyboard(browser, url):
     ctx = context(browser, 390)
     page = load(ctx, url)
     inp = page.locator('#readerSearchInput')
+    # Use durable names and terms, not phrasing that changes in editorial passes.
     for phrase in (
-        'Ruth Barcan Marcus transforming modal logic',
-        'Both Analytic & Continental traditions',
+        'Ruth Barcan Marcus',
+        'analytic and Continental',
         'No universal history leads from savagery',
         'Hierarchy Recognition',
     ):
@@ -172,7 +173,7 @@ def full_text_and_keyboard(browser, url):
     page.keyboard.press('Escape')
     assert page.evaluate('document.activeElement.id') == 'readerSearchInput'
     # Clicking a hit should place accessible focus on the *real passage*.
-    inp.fill('Ruth Barcan Marcus transforming modal logic')
+    inp.fill('Ruth Barcan Marcus')
     page.evaluate('window.__hikamFullTextSearch.run()')
     page.locator('.reader-search-hit').first.click()
     # Passage navigation intentionally commits on the next animation frame.
