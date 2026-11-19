@@ -63,7 +63,7 @@ visible=unescape(re.sub(r'<[^>]+>',' ',re.sub(
     r'<details class="hikam-source-depth-inline"[\s\S]*?</details>', '', body))).lower()
 for term in (
     "two contrasting faces", "jekyll-and-hyde", "passports", "wills",
-    "surveillance", "hamm", "hiroshima", "nagasaki", "tokyo",
+    "surveillance", "hiroshima", "nagasaki", "tokyo",
     "dresden", "hamburg", "nazis", "cold war", "deterrence",
     "criminal punishment", "slavery", "child labour", "women",
     "religious intolerance", "racial and ethnic discrimination",
@@ -74,16 +74,13 @@ for term in (
     "representation", "rights", "property", "coercion", "sovereignty",
     "judge", "neighbour", "archaeologist", "theory", "practice",
     "oxfam", "nazi party", "vote", "of a piece",
-    "trotsky", "passive voice", "sales taxes", "socialization",
+    "trotsky", "passive voice", "socialization",
     "conscripts", "defensible beliefs",
 ):
-    # Search in visibly available material; no key claim may be solely in depth.
-    if term in ("hamm","conscripts","sales taxes","defensible beliefs"):
-        continue
     assert term in visible, f"Important Bird source unit missing from visible study: {term}"
 
 for phrase in (
-    "may be defended", "may conclude", "not as answers already established",
+    "in some circumstances", "may conclude", "not as answers already established",
     "Sincerity is not the same thing as justification",
 ):
     assert phrase.lower() in visible, f"Qualification lost: {phrase}"
