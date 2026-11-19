@@ -38,21 +38,17 @@
 - The displayed argument is complete without opening a Companion or Source Depth.
 - No unrelated chapter, shared design-system component or source PDF has been modified.
 
+## Measured chapter layers
+
+| Layer | Verified quantity |
+| --- | ---: |
+| Main prose | **822 words** |
+| Study aids | **900 words** |
+| Total immediately visible study | **1,722 words** |
+| Optional Source Depth | **365 words in five records** |
+| Context-first Reading Companions | **9** |
+| Revision | **All six established sections** |
+
 ## Verification and release status
 
-**Complete editorial review branch, NOT PUBLISHED.** The proposed source and Companion manifest were written to a dedicated GitHub branch; read-back confirmed nine entries, five native Source Depth elements, six revision headings, and preservation of the next-chapter link. No local canonical build or Chromium print / keyboard / touch / RTL / search / design-token / PWA tests have been executed in this environment because a complete runnable Git checkout and its assets are unavailable here. The generated `index.html`, `src/philosophy_study_notes.html` and `service-worker.js` have **not** been regenerated. The branch must remain unmerged until reproducible build and the repository's complete tests pass.
-
-Required commands after checking out the review branch:
-
-```bash
-python src/build.py
-python src/build.py --check
-python src/tests/verify_publication.py
-python src/tests/validate_structure.py
-python src/tests/verify_sidebar.py
-python src/tests/verify_reading_progress.py
-python src/tests/browser_design_tokens.py
-node src/tests/test_offline_cache.mjs
-```
-
-Also run the repository's actual Reading Companion browser and print/PDF test suites, and review the chapter at desktop and mobile widths. Run the prescribed secondary-account fork CI verification before promoting a tested edition to the publishing `main` branch.
+**Fork verification complete, not yet published upstream.** Full canonical Python/build/source/reader/offline checks and Chromium desktop/mobile/keyboard/RTL/print/colour/PWA suites passed in [secondary-fork Actions run 44580992713](https://github.com/Mohd-Ujjain/11-hikam/actions/runs/44580992713) against source commit `eb2fb72652382fe360dbbb7ec7c187d8172de643`. The exact three generated files were committed to the fork only after both verification jobs passed. The original `MohdUjjain/11-hikam` main branch and Pages publication require separate transfer, review and deployment verification. Preserve the fork-only workflow in the fork; do not transfer it to the public upstream repository.
