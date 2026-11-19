@@ -1,6 +1,6 @@
 # Dossier 1.1.4 — Gary Gutting, Sartre, Foucault and Derrida
 
-**Prepared:** 19 November 2026. **Status:** Source-aligned candidate on the secondary-account editorial branch; approval requires real fork QA, matching upstream transfer hashes, and Pages verification.
+**Prepared:** 19 November 2026. **Status:** Source-aligned edition fully validated on the secondary-account fork through [successful Actions run 44562601029](https://github.com/Mohd-Ujjain/11-hikam/actions/runs/44562601029). Original-repository blob transfer, review merge, post-merge checks and Pages publication remain separate release gates.
 
 **Authoritative source:** Gary Gutting, “Sartre, Foucault and Derrida,” Chapter 42 in Nicholas Bunnin and E. P. Tsui-James (eds.), *The Blackwell Companion to Philosophy*, second edition (Blackwell, 2003), printed pp. **860–871**. The full 12-page user-supplied PDF was reopened and inspected. The three user-supplied extended teaching syntheses were **comparison aids only**, not alternative primary authorities. Neither PDF nor syntheses are included in the public repository.
 
@@ -62,4 +62,4 @@ Counts use the adopted canonical HTML layer separation and will be recomputed by
 
 **Preservation boundary:** no changes to the other 38 academic dossiers or their source texts; no CSS, shared reader JavaScript or component redefinition is authorized.
 
-**Publication evidence:** Pending actual completed workflow runs and deployment. Do not mark published until independently confirmed.
+**Verified fork evidence:** [Run 44562601029](https://github.com/Mohd-Ujjain/11-hikam/actions/runs/44562601029) completed successfully. It rebuilt the canonical single-file reader, passed source/quote/word/revision tests (824 prose + 1,017 aids + 736 optional depth), 58 unique contextual cues, no-script and interactive Source Depth, real Chromium 39-chapter hue/contrast/accessibility checks, actual A4 pagination, reader continuity, offline PWA installation/update/recovery; and committed the generated three publication files **only to the fork** after green tests. The original primary repository's review/merge and Pages release are still unverified at the time of this record.
