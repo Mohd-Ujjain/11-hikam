@@ -151,7 +151,7 @@ critchley = [x for x in manifest['companions'] if x['chapter'] == 'ch1-1-5']
 assert len(critchley) == 9
 assert 'style="--hue:288;"' in html
 assert 'Simon Critchley' in html
-blocks = list(re.finditer(r'<details class="hikam-source-depth-inline"[\\s\\S]*?</details>', body))
+blocks = list(re.finditer(r'<details class="hikam-source-depth-inline"[\s\S]*?</details>', body))
 assert len(blocks) == 5
 assert body.count('class="hikam-source-depth-item"') == 5
 assert all(' open' not in b.group(0).split('>', 1)[0] for b in blocks)
