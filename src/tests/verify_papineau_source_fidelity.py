@@ -109,7 +109,7 @@ assert all(x["source"]["author"] == "David Papineau" for x in papineau)
 assert all(all(286 <= p <= 315 for p in x["source"]["printedPages"]) for x in papineau)
 all_sources = '\n'.join(p.read_text(encoding="utf-8")
                         for p in sorted((ROOT/"src/chapters").glob("subtopic-*.html")))
-assert all_sources.count('<section class="chapter" id=') == 39
+assert len(re.findall(r'<section class="chapter(?: [^"]+)?" id="ch\d', all_sources)) == 39
 
 print("PASS: Papineau source structure; 39 chapters; 15 subsections; "
       f"{len(papineau)} contextual cues; prose={counts['prose']}, "
