@@ -61,6 +61,8 @@ The sequence reaches 348° at 2.1.3, wraps to 8° at 2.1.4, and repeats after 18
 
 The regression `src/tests/browser_design_tokens.py` checks actual Chromium computed styles at 390px and 1366px: exact 39-chapter hue order and 18-stop wrap, six consistent semantic-box surfaces, existing Fraunces/Source Serif 4/IBM Plex Sans font stacks, author-credit visibility and WCAG AA 4.5:1 foreground contrast in every revision comparison-table cell. Fix a failed **component pairing** at its source rather than adding compensating late CSS overrides.
 
+**First verification:** [Secondary-account GitHub Actions run 44524655246](https://github.com/Mohd-Ujjain/11-hikam/actions/runs/44524655246) passed the complete canonical build, source/structure tests, Chromium computed-style audit at 390px and 1366px, Reader/RTL, real PDF pagination and offline/PWA regressions. The computed-style audit confirmed **39 chapters**, **18 unique rotational hues**, **two existing revision comparison tables** (Moran and Stout), **two authored source-credit emphasis instances**, and the six fixed semantic backgrounds. The missing table/author contrast was caused by CSS foreground inheritance, not by a missing or reset hue sequence. No source text or semantic callout type was revised.
+
 ## Typography
 
 | Token | Stack | Use |
