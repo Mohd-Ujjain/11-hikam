@@ -80,7 +80,7 @@ for term in [
     "underdetermination", "duhem", "meta-induction",
     "naturalized epistemology", "hypothetical prescription",
     "covering-law", "flagpole", "ramsey", "armstrong",
-    "direction of causation", "reichenbach", "smoking",
+    "causal direction", "reichenbach", "smoking",
     "barometer", "screening off", "propensity",
     "measurement problem", "teleological", "token",
 ]:
