@@ -51,4 +51,12 @@
 
 ## Verification and release status
 
-**Fork verification complete, not yet published upstream.** Full canonical Python/build/source/reader/offline checks and Chromium desktop/mobile/keyboard/RTL/print/colour/PWA suites passed in [secondary-fork Actions run 44580992713](https://github.com/Mohd-Ujjain/11-hikam/actions/runs/44580992713) against source commit `eb2fb72652382fe360dbbb7ec7c187d8172de643`. The exact three generated files were committed to the fork only after both verification jobs passed. The original `MohdUjjain/11-hikam` main branch and Pages publication require separate transfer, review and deployment verification. Preserve the fork-only workflow in the fork; do not transfer it to the public upstream repository.
+**Published and verified on original `main`.** Original [merge commit `acf081a3`](https://github.com/MohdUjjain/11-hikam/commit/acf081a3eaf6fc8c1e8c9297cb4cc0ecfd52ac1c) was deployed successfully in [Pages run 44583168139](https://github.com/MohdUjjain/11-hikam/actions/runs/44583168139); all original post-merge build, source and Chromium/print/PWA checks succeeded in [run 44583169276](https://github.com/MohdUjjain/11-hikam/actions/runs/44583169276). Full canonical Python/build/source/reader/offline checks and Chromium desktop/mobile/keyboard/RTL/print/colour/PWA suites passed in [secondary-fork Actions run 44580992713](https://github.com/Mohd-Ujjain/11-hikam/actions/runs/44580992713) against source commit `eb2fb72652382fe360dbbb7ec7c187d8172de643`. The exact three generated files were committed to the fork only after both verification jobs passed. The original `MohdUjjain/11-hikam` main branch and Pages publication require separate transfer, review and deployment verification. Preserve the fork-only workflow in the fork; do not transfer it to the public upstream repository.
+
+
+### Completed publication evidence
+
+- Exact verified fork [run 44580992713](https://github.com/Mohd-Ujjain/11-hikam/actions/runs/44580992713): all source, offline, accessibility, browser, print and 67-Companion checks green.
+- All eleven fork-transferred Git blob SHAs matched the original review branch before merge; the fork-only workflow stayed outside upstream.
+- Original review [PR #25](https://github.com/MohdUjjain/11-hikam/pull/25) passed [run 44582569244](https://github.com/MohdUjjain/11-hikam/actions/runs/44582569244), merged at `acf081a3`, then passed [post-merge run 44583169276](https://github.com/MohdUjjain/11-hikam/actions/runs/44583169276) and [Pages deployment 44583168139](https://github.com/MohdUjjain/11-hikam/actions/runs/44583168139).
+- The publication edition is the source-verified 39-chapter reader. No PDF or supplied teaching synthesis was added to public Git history.
