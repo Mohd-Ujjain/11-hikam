@@ -68,7 +68,7 @@ def check(browser, url, width):
         page.keyboard.press('Escape')
         assert page.locator('#hikamCompanionPopup').is_hidden()
     # Local paragraph-level disclosures for all four source authors.
-    for chapter, number in [('ch1-1-1', 10), ('ch1-1-2', 24), ('ch1-1-3', 9), ('ch1-1-4', 9)]:
+    for chapter, number in [('ch1-1-1', 10), ('ch1-1-2', 24), ('ch1-1-3', 9), ('ch1-1-4', 9), ('ch1-1-5', 5)]:
         callouts = page.locator('#' + chapter + ' .chapter-body .hikam-source-depth-inline')
         assert callouts.count() >= 1
         assert callouts.locator('.hikam-source-depth-item').count() == number
@@ -91,7 +91,9 @@ def check(browser, url, width):
         "(e) => getComputedStyle(e).textDecorationColor")
     gutting_color = page.locator('[data-companion-id="h114-intentionality"]').evaluate(
         "(e) => getComputedStyle(e).textDecorationColor")
-    assert len({color, other_color, papineau_color, gutting_color}) == 4
+    critchley_color = page.locator('[data-companion-id="h115-felt-gap"]').evaluate(
+        "(e) => getComputedStyle(e).textDecorationColor")
+    assert len({color, other_color, papineau_color, gutting_color, critchley_color}) == 5
     cue.focus()
     page.keyboard.press('Enter')
     popup = page.locator('#hikamCompanionPopup')
@@ -152,6 +154,11 @@ def check(browser, url, width):
     assert page.locator('#ch1-1-4 .js-print-page .hikam-companion-trigger').count() == 0
     assert page.locator('#ch1-1-4 .js-print-page .historical-timeline-event').count() == 3
     assert page.locator('#ch1-1-1 .js-print-page .hikam-companion-trigger').count() == 0
+    # Critchley: Source Depth is never copied into print; cue prose survives.
+    page.evaluate("window.__runPagination(['ch1-1-5'])")
+    assert page.locator('#ch1-1-5 .js-print-page').count() > 0
+    assert page.locator('#ch1-1-5 .js-print-page .hikam-source-depth-inline').count() == 0
+    assert page.locator('#ch1-1-5 .js-print-page .hikam-companion-trigger').count() == 0
     assert not errors, errors
     ctx.close()
 
@@ -169,7 +176,7 @@ with site() as no_js_url, sync_playwright() as no_js_pw:
         context = no_js_browser.new_context(java_script_enabled=False, viewport={'width':390,'height':820})
         page = context.new_page()
         page.goto(no_js_url, wait_until='domcontentloaded')
-        for chapter in ('ch1-1-1', 'ch1-1-2', 'ch1-1-3', 'ch1-1-4'):
+        for chapter in ('ch1-1-1', 'ch1-1-2', 'ch1-1-3', 'ch1-1-4', 'ch1-1-5'):
             disclosure = page.locator('#'+chapter+' .hikam-source-depth-inline').first
             assert disclosure.count() == 1 and disclosure.get_attribute('open') is None
             # Native summary keyboard activation works even when page JS is
