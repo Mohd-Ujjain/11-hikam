@@ -44,7 +44,7 @@ for item in manifest['companions']:
     seen.add(ident)
     assert re.fullmatch(r'ch\d+-\d+-\d+', item['chapter']), ident
     assert item['source']['printedPages'], f'No primary page reference: {ident}'
-    assert item['source']['author'] in ('Dermot Moran', 'Rowland Stout'), ident
+    assert item['source']['author'] in ('Dermot Moran', 'Rowland Stout', 'David Papineau'), ident
     assert 20 <= len(item['explanation'].split()) <= 110, f'Explanation out of pilot range: {ident}'
     assert item['added_value'].strip(), ident
     start = chapters.find(f'<section class="chapter" id="{item["chapter"]}"')
@@ -64,11 +64,12 @@ for item in manifest['companions']:
     assert len(hits) == 1 and hits[0].count(item['text']) == 1, f'Missing/ambiguous text node: {ident}'
     assert ident in built, f'Manifest item not published: {ident}'
 assert len(seen) == len(manifest['companions']), f'Missing manifest entries: {len(seen)} vs {len(manifest["companions"])}'
-# Two source-grounded dossiers, 34 contextual cues and exactly 34 depth records.
+# Preserve the 34 Moran/Stout records, and verify the new Papineau pilot separately.
 moran = [x for x in manifest['companions'] if x['chapter'] == 'ch1-1-1']
 stout = [x for x in manifest['companions'] if x['chapter'] == 'ch1-1-2']
-assert len(moran) == 10 and len(stout) == 24
-assert len(seen) == 34
+papineau = [x for x in manifest['companions'] if x['chapter'] == 'ch1-1-3']
+assert len(moran) == 10 and len(stout) == 24 and len(papineau) == 12
+assert len(seen) == 46
 assert 'class="historical-timeline"' in chapters
 assert 'The One Thread to Follow' in chapters
 assert 'The four thinkers below are not four unrelated stories.' in chapters
@@ -97,6 +98,37 @@ for chapter_id, items in [('ch1-1-1', moran), ('ch1-1-2', stout)]:
         assert len(source_text.split()) >= 25, item['id']
         if chapter_id == 'ch1-1-2':
             assert normalized(item['explanation']) in source_text, item['id']
+# New original-source-specific Companion/Source Depth rules for Papineau 1.1.3.
+begin = chapters.index('<section class="chapter" id="ch1-1-3"')
+after = chapters.find('<section class="chapter" id="', begin + 15)
+html = chapters[begin:after if after >= 0 else len(chapters)]
+body = html[html.index('<div class="chapter-body">'):html.index('<nav class="chapter-endnav"')]
+blocks = list(re.finditer(r'<details class="hikam-source-depth-inline"[\\s\\S]*?</details>', body))
+assert len(blocks) == 9, f'Papineau: wrong number of local source disclosures {len(blocks)}'
+assert len(re.findall(r'class="hikam-source-depth-item"', body)) == 9
+assert all(' open' not in block.group(0).split('>', 1)[0] for block in blocks)
+assert 'Original author: <strong>David Papineau</strong>' in html
+assert 'style="--hue:248;"' in html
+assert all('sourceDepthId' not in item or
+           body.count('id="' + item['sourceDepthId'] + '"') == 1
+           for item in papineau), 'Papineau Source Depth reference cannot be resolved'
+for block in blocks:
+    assert 'David Papineau' in block.group(0)
+    # Source detail must follow a normal paragraph, not precede the idea it deepens.
+    assert re.search(r'</p>\\s*
+assert 'item.simple && item.why_here && item.remember' in reader
+assert "'.hikam-source-depth-inline'" in (SRC/'philosophy_notes.js').read_text(encoding='utf-8') or '.hikam-source-depth-inline' in (SRC/'philosophy_notes.js').read_text(encoding='utf-8')
+assert '.hikam-source-depth-inline {display:none!important;}' in (SRC/'philosophy_notes.css').read_text(encoding='utf-8')
+assert 'class="hikam-source-depth-inline"' in built
+assert 'class="historical-timeline"' in built
+
+print(f'PASS: {len(seen)} source-anchored Companions, source anchors intact, single-file offline embedding')
+, body[:block.start()]), 'Depth is not paragraph-adjacent'
+    assert 'hikam-source-depth-citation' in block.group(0)
+for item in papineau:
+    assert all(item.get(k) for k in ('simple', 'why_here', 'remember'))
+    assert item['source']['printedPages']
+    assert item['source']['author'] == 'David Papineau'
 assert 'hikam-companion-context-field' in reader
 assert 'item.simple && item.why_here && item.remember' in reader
 assert "'.hikam-source-depth-inline'" in (SRC/'philosophy_notes.js').read_text(encoding='utf-8') or '.hikam-source-depth-inline' in (SRC/'philosophy_notes.js').read_text(encoding='utf-8')
