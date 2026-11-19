@@ -107,7 +107,9 @@ papineau = [x for x in manifest["companions"] if x["chapter"] == "ch1-1-3"]
 assert len(papineau) == 12
 assert all(x["source"]["author"] == "David Papineau" for x in papineau)
 assert all(all(286 <= p <= 315 for p in x["source"]["printedPages"]) for x in papineau)
-assert source.count('<section class="chapter" id=') == 39
+all_sources = '\n'.join(p.read_text(encoding="utf-8")
+                        for p in sorted((ROOT/"src/chapters").glob("subtopic-*.html")))
+assert all_sources.count('<section class="chapter" id=') == 39
 
 print("PASS: Papineau source structure; 39 chapters; 15 subsections; "
       f"{len(papineau)} contextual cues; prose={counts['prose']}, "
