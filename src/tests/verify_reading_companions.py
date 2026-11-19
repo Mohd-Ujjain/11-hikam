@@ -44,7 +44,7 @@ for item in manifest['companions']:
     seen.add(ident)
     assert re.fullmatch(r'ch\d+-\d+-\d+', item['chapter']), ident
     assert item['source']['printedPages'], f'No primary page reference: {ident}'
-    assert item['source']['author'] in ('Dermot Moran', 'Rowland Stout', 'David Papineau', 'Gary Gutting', 'Simon Critchley'), ident
+    assert item['source']['author'] in ('Dermot Moran', 'Rowland Stout', 'David Papineau', 'Gary Gutting', 'Simon Critchley', 'Colin Bird'), ident
     assert 20 <= len(item['explanation'].split()) <= 110, f'Explanation out of pilot range: {ident}'
     assert item['added_value'].strip(), ident
     start = chapters.find(f'<section class="chapter" id="{item["chapter"]}"')
@@ -70,7 +70,7 @@ stout = [x for x in manifest['companions'] if x['chapter'] == 'ch1-1-2']
 papineau = [x for x in manifest['companions'] if x['chapter'] == 'ch1-1-3']
 gutting = [x for x in manifest['companions'] if x['chapter'] == 'ch1-1-4']
 assert len(moran) == 10 and len(stout) == 24 and len(papineau) == 12 and len(gutting) == 12
-assert len(seen) == 67
+assert len(seen) == 78
 assert 'class="historical-timeline"' in chapters
 assert 'The One Thread to Follow' in chapters
 assert 'The four thinkers below are not four unrelated stories.' in chapters
@@ -165,6 +165,31 @@ for block in blocks:
     assert 'Simon Critchley' in block.group(0)
     assert body[:block.start()].rstrip().endswith('</p>'), 'Critchley depth is not paragraph-adjacent'
     assert 'hikam-source-depth-citation' in block.group(0)
+# Bird 2.1.1: original title and author; eleven cues with six
+# independent, closed paragraph-adjacent source-detail records.
+begin = chapters.index('<section class="chapter" id="ch2-1-1"')
+after = chapters.find('<section class="chapter" id="', begin + 15)
+html = chapters[begin:after if after >= 0 else len(chapters)]
+body = html[html.index('<div class="chapter-body">'):html.index('<nav class="chapter-endnav"')]
+bird = [x for x in manifest['companions'] if x['chapter'] == 'ch2-1-1']
+assert len(bird) == 11
+assert 'style="--hue:308;"' in html
+assert 'Original author: <strong>Colin Bird</strong>' in html
+assert '<h1 class="chapter-title">Introduction</h1>' in html
+blocks = list(re.finditer(r'<details class="hikam-source-depth-inline"[\s\S]*?</details>', body))
+assert len(blocks) == 6
+assert body.count('class="hikam-source-depth-item"') == 6
+for item in bird:
+    assert item['source']['author'] == 'Colin Bird'
+    assert all(item.get(k) for k in ('simple','why_here','remember'))
+    assert all(1 <= pg <= 11 for pg in item['source']['printedPages'])
+    if item.get('sourceDepthId'):
+        assert body.count('id="' + item['sourceDepthId'] + '"') == 1
+for disclosure in blocks:
+    assert 'Colin Bird' in disclosure.group(0)
+    assert body[:disclosure.start()].rstrip().endswith('</p>')
+    assert ' open' not in disclosure.group(0).split('>',1)[0]
+    assert 'hikam-source-depth-citation' in disclosure.group(0)
 assert 'hikam-companion-context-field' in reader
 assert 'item.simple && item.why_here && item.remember' in reader
 assert "'.hikam-source-depth-inline'" in (SRC/'philosophy_notes.js').read_text(encoding='utf-8') or '.hikam-source-depth-inline' in (SRC/'philosophy_notes.js').read_text(encoding='utf-8')
