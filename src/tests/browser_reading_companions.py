@@ -172,7 +172,11 @@ with site() as no_js_url, sync_playwright() as no_js_pw:
         for chapter in ('ch1-1-1', 'ch1-1-2', 'ch1-1-3', 'ch1-1-4'):
             disclosure = page.locator('#'+chapter+' .hikam-source-depth-inline').first
             assert disclosure.count() == 1 and disclosure.get_attribute('open') is None
-            disclosure.locator('summary').click()
+            # Native summary keyboard activation works even when page JS is
+            # disabled and the very long single-file reader is not scrollable
+            # by Playwright's pointer auto-scroll in this no-script context.
+            disclosure.locator('summary').focus()
+            page.keyboard.press('Enter')
             assert disclosure.get_attribute('open') is not None
             assert disclosure.locator('.hikam-source-depth-item p').first.is_visible()
         context.close()
