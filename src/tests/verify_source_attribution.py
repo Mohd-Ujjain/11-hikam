@@ -37,4 +37,17 @@ for chapter_id, (title, author) in READINGS.items():
     assert toc_title and plain(toc_title.group(1)) == title, f"Incorrect TOC title: {chapter_id}"
     assert toc_source and author in plain(toc_source.group(1)), f"Missing TOC author: {chapter_id}"
 
-print(f"Verified {len(READINGS)} primary-source titles and author credits in chapter frontmatter and TOC")
+# The next source-verified reading resides in another canonical subtopic module.
+bird_html = (ROOT / "src/chapters/subtopic-2-1.html").read_text(encoding="utf-8")
+bird_start = bird_html.index('<section class="chapter" id="ch2-1-1"')
+bird_end = bird_html.index('<nav class="chapter-endnav"',bird_start)
+bird = bird_html[bird_start:bird_end]
+assert '<h1 class="chapter-title">Introduction</h1>' in bird
+assert 'Original author: <strong>Colin Bird</strong>' in bird
+assert '<em>An Introduction to Political Philosophy</em>' in bird
+bird_toc = re.search(r'<a class="toc-item" href="#ch2-1-1">([\s\S]*?)</a>', MAIN)
+assert bird_toc
+assert '<span class="tt">Introduction</span>' in bird_toc.group(1)
+assert '<span class="ts">Colin Bird · Cambridge</span>' in bird_toc.group(1)
+
+print(f"Verified {len(READINGS)+1} primary-source titles and author credits in chapter frontmatter and TOC")

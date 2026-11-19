@@ -1,7 +1,7 @@
 {
   "version": 1,
   "editorialPolicy": "src/docs/editorial/CONCISE_DOSSIER_AND_READING_COMPANIONS.md",
-  "description": "Source-grounded context-first explanations for readings 1.1.1–1.1.5; optional additional source detail is kept separately in local Source Depth.",
+  "description": "Source-grounded context-first explanations for completed readings 1.1.1–1.1.5 and 2.1.1; optional source particulars are preserved in adjacent Source Depth.",
   "companions": [
     {
       "id": "h111-russell-idealism",
@@ -1434,6 +1434,235 @@
       "why_here": "Critchley's final point is a claim about philosophy's responsibility, not a rule for sorting traditions.",
       "remember": "Remember: not a school test; a philosophical task.",
       "sourceDepthId": "source-depth-h115-wittgenstein"
+    },
+    {
+      "id": "h211-two-faces",
+      "chapter": "ch2-1-1",
+      "passage": "Politics has two contrasting faces, like the weather",
+      "text": "two contrasting faces",
+      "kind": "Contextual explanation",
+      "title": "Why does Bird compare politics with weather?",
+      "explanation": "Politics may appear routine and predictable or threatening and disruptive, just as weather changes. This establishes two appearances that Bird will refuse to equate automatically with moral goodness or badness.",
+      "source": {
+        "author": "Colin Bird",
+        "work": "An Introduction to Political Philosophy, “Introduction” (supplied source PDF page indices)",
+        "printedPages": [
+          1,
+          2
+        ]
+      },
+      "added_value": "Explains this exact phrase and its role in Bird's present argument without a new external claim.",
+      "simple": "Politics may appear routine and predictable or threatening and disruptive, just as weather changes.",
+      "why_here": "This establishes two appearances that Bird will refuse to equate automatically with moral goodness or badness.",
+      "remember": "Two faces, but no automatic verdict."
+    },
+    {
+      "id": "h211-jekyll",
+      "chapter": "ch2-1-1",
+      "passage": "Bird calls the temptation to label the first face good and the second bad the Jekyll-and-Hyde picture of politics",
+      "text": "Jekyll-and-Hyde picture",
+      "kind": "Contextual explanation",
+      "title": "What is wrong with the Jekyll-and-Hyde picture?",
+      "explanation": "It assumes that calm politics is good and violent politics bad merely because they look different. Bird is introducing that easy division so he can challenge it with cases of unjust routines and sometimes defensible disruptions.",
+      "source": {
+        "author": "Colin Bird",
+        "work": "An Introduction to Political Philosophy, “Introduction” (supplied source PDF page indices)",
+        "printedPages": [
+          2,
+          3
+        ]
+      },
+      "added_value": "Explains this exact phrase and its role in Bird's present argument without a new external claim.",
+      "simple": "It assumes that calm politics is good and violent politics bad merely because they look different.",
+      "why_here": "Bird is introducing that easy division so he can challenge it with cases of unjust routines and sometimes defensible disruptions.",
+      "remember": "Appearance is not justification."
+    },
+    {
+      "id": "h211-violence",
+      "chapter": "ch2-1-1",
+      "passage": "be defended as justified for a legitimate political end",
+      "text": "justified for a legitimate political end",
+      "kind": "Contextual explanation",
+      "title": "Is Bird saying political violence is good?",
+      "explanation": "No. He says an act's destructive character does not by itself answer whether it could be defended for a legitimate political purpose. He then weighs different types of warfare, deterrence and punishment without endorsing them all.",
+      "source": {
+        "author": "Colin Bird",
+        "work": "An Introduction to Political Philosophy, “Introduction” (supplied source PDF page indices)",
+        "printedPages": [
+          2
+        ]
+      },
+      "added_value": "Explains this exact phrase and its role in Bird's present argument without a new external claim.",
+      "simple": "No. He says an act's destructive character does not by itself answer whether it could be defended for a legitimate political purpose.",
+      "why_here": "He then weighs different types of warfare, deterrence and punishment without endorsing them all.",
+      "remember": "Ask for the reasons in the particular case.",
+      "sourceDepthId": "source-depth-h211-violence"
+    },
+    {
+      "id": "h211-choice",
+      "chapter": "ch2-1-1",
+      "passage": "They can be understood as alterable objects of choice",
+      "text": "alterable objects of choice",
+      "kind": "Contextual explanation",
+      "title": "How can an inherited institution be a choice?",
+      "explanation": "Even a long-standing arrangement could have been organized differently. Recognizing alternatives allows people to question whether it should continue. This connects historical diversity with Bird's demand for political justification.",
+      "source": {
+        "author": "Colin Bird",
+        "work": "An Introduction to Political Philosophy, “Introduction” (supplied source PDF page indices)",
+        "printedPages": [
+          4
+        ]
+      },
+      "added_value": "Explains this exact phrase and its role in Bird's present argument without a new external claim.",
+      "simple": "Even a long-standing arrangement could have been organized differently. Recognizing alternatives allows people to question whether it should continue.",
+      "why_here": "This connects historical diversity with Bird's demand for political justification.",
+      "remember": "Alternatives make criticism possible."
+    },
+    {
+      "id": "h211-sincerity",
+      "chapter": "ch2-1-1",
+      "passage": "Sincerity is not the same thing as justification",
+      "text": "Sincerity is not the same thing as justification.",
+      "kind": "Contextual explanation",
+      "title": "Why distinguish intention from justification?",
+      "explanation": "Someone may earnestly believe a political programme will improve society, yet that belief still needs critical examination. Bird uses changing judgments and historical self-understandings to show why sincerity alone cannot settle the issue.",
+      "source": {
+        "author": "Colin Bird",
+        "work": "An Introduction to Political Philosophy, “Introduction” (supplied source PDF page indices)",
+        "printedPages": [
+          4
+        ]
+      },
+      "added_value": "Explains this exact phrase and its role in Bird's present argument without a new external claim.",
+      "simple": "Someone may earnestly believe a political programme will improve society, yet that belief still needs critical examination.",
+      "why_here": "Bird uses changing judgments and historical self-understandings to show why sincerity alone cannot settle the issue.",
+      "remember": "Good intentions are not a proof.",
+      "sourceDepthId": "source-depth-h211-history"
+    },
+    {
+      "id": "h211-wejustdo",
+      "chapter": "ch2-1-1",
+      "passage": "“We just do” cannot adequately explain",
+      "text": "“We just do”",
+      "kind": "Contextual explanation",
+      "title": "Why is 'We just do' insufficient here?",
+      "explanation": "A taste can be personal and need no defence. A political practice such as slavery or war affects a community and invites questions about the reasons for maintaining it. Bird's strawberry comparison marks the move from habit to rational political justification.",
+      "source": {
+        "author": "Colin Bird",
+        "work": "An Introduction to Political Philosophy, “Introduction” (supplied source PDF page indices)",
+        "printedPages": [
+          5
+        ]
+      },
+      "added_value": "Explains this exact phrase and its role in Bird's present argument without a new external claim.",
+      "simple": "A taste can be personal and need no defence. A political practice such as slavery or war affects a community and invites questions about the reasons for maintaining it.",
+      "why_here": "Bird's strawberry comparison marks the move from habit to rational political justification.",
+      "remember": "Habit cannot justify everything.",
+      "sourceDepthId": "source-depth-h211-choice"
+    },
+    {
+      "id": "h211-ideals",
+      "chapter": "ch2-1-1",
+      "passage": "Some name ethical ideals appealed to",
+      "text": "ethical ideals",
+      "kind": "Contextual explanation",
+      "title": "What makes these concepts ethical ideals?",
+      "explanation": "They express standards such as justice, freedom or the common good, to which people appeal when arguing for or against political practices. Bird distinguishes these standards from the institutional features that people wish to defend.",
+      "source": {
+        "author": "Colin Bird",
+        "work": "An Introduction to Political Philosophy, “Introduction” (supplied source PDF page indices)",
+        "printedPages": [
+          6
+        ]
+      },
+      "added_value": "Explains this exact phrase and its role in Bird's present argument without a new external claim.",
+      "simple": "They express standards such as justice, freedom or the common good, to which people appeal when arguing for or against political practices.",
+      "why_here": "Bird distinguishes these standards from the institutional features that people wish to defend.",
+      "remember": "Ideals are invoked in evaluation."
+    },
+    {
+      "id": "h211-authority",
+      "chapter": "ch2-1-1",
+      "passage": "we must understand what political authority is",
+      "text": "what political authority is",
+      "kind": "Contextual explanation",
+      "title": "Why does Bird stop to ask what authority means?",
+      "explanation": "Before deciding whether political authority is justified, we must know what kind of relationship the word picks out. The judge, neighbour and archaeologist examples reveal a puzzle; Bird has not supplied a finished definition here.",
+      "source": {
+        "author": "Colin Bird",
+        "work": "An Introduction to Political Philosophy, “Introduction” (supplied source PDF page indices)",
+        "printedPages": [
+          7
+        ]
+      },
+      "added_value": "Explains this exact phrase and its role in Bird's present argument without a new external claim.",
+      "simple": "Before deciding whether political authority is justified, we must know what kind of relationship the word picks out.",
+      "why_here": "The judge, neighbour and archaeologist examples reveal a puzzle; Bird has not supplied a finished definition here.",
+      "remember": "Clarify the practice before judging it.",
+      "sourceDepthId": "source-depth-h211-authority"
+    },
+    {
+      "id": "h211-of-piece",
+      "chapter": "ch2-1-1",
+      "passage": "A vote is of a piece with one's beliefs",
+      "text": "of a piece",
+      "kind": "Contextual explanation",
+      "title": "What does 'of a piece' mean for voting?",
+      "explanation": "Voting and the judgments behind it belong together: supporting a candidate already expresses beliefs about political goals and participation. This explains why Bird rejects a clean separation between political thought and political action.",
+      "source": {
+        "author": "Colin Bird",
+        "work": "An Introduction to Political Philosophy, “Introduction” (supplied source PDF page indices)",
+        "printedPages": [
+          9
+        ]
+      },
+      "added_value": "Explains this exact phrase and its role in Bird's present argument without a new external claim.",
+      "simple": "Voting and the judgments behind it belong together: supporting a candidate already expresses beliefs about political goals and participation.",
+      "why_here": "This explains why Bird rejects a clean separation between political thought and political action.",
+      "remember": "Actions carry beliefs."
+    },
+    {
+      "id": "h211-passive",
+      "chapter": "ch2-1-1",
+      "passage": "Much political experience arrives in the passive voice",
+      "text": "passive voice",
+      "kind": "Contextual explanation",
+      "title": "Why does Bird use the grammatical passive voice?",
+      "explanation": "He is describing people who are ordered, regulated, taxed or recruited, rather than always initiating political activity themselves. The wording prepares his claim that the state makes people politically involved without their prior choice.",
+      "source": {
+        "author": "Colin Bird",
+        "work": "An Introduction to Political Philosophy, “Introduction” (supplied source PDF page indices)",
+        "printedPages": [
+          10
+        ]
+      },
+      "added_value": "Explains this exact phrase and its role in Bird's present argument without a new external claim.",
+      "simple": "He is describing people who are ordered, regulated, taxed or recruited, rather than always initiating political activity themselves.",
+      "why_here": "The wording prepares his claim that the state makes people politically involved without their prior choice.",
+      "remember": "Politics can act on you.",
+      "sourceDepthId": "source-depth-h211-state"
+    },
+    {
+      "id": "h211-socialization",
+      "chapter": "ch2-1-1",
+      "passage": "We often comply through habits learned through socialization",
+      "text": "habits learned through socialization",
+      "kind": "Contextual explanation",
+      "title": "Why can people obey without examining state power?",
+      "explanation": "People grow accustomed to a state's rules and learn claims about its legitimacy while growing up. Bird lists such beliefs as possible justifications that philosophy must examine, not as facts proving the state is just.",
+      "source": {
+        "author": "Colin Bird",
+        "work": "An Introduction to Political Philosophy, “Introduction” (supplied source PDF page indices)",
+        "printedPages": [
+          10,
+          11
+        ]
+      },
+      "added_value": "Explains this exact phrase and its role in Bird's present argument without a new external claim.",
+      "simple": "People grow accustomed to a state's rules and learn claims about its legitimacy while growing up.",
+      "why_here": "Bird lists such beliefs as possible justifications that philosophy must examine, not as facts proving the state is just.",
+      "remember": "Habitual obedience still raises questions.",
+      "sourceDepthId": "source-depth-h211-state"
     }
   ]
 }

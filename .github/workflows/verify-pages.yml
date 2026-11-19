@@ -39,6 +39,8 @@ jobs:
         run: python src/tests/verify_gutting_source_fidelity.py
       - name: Verify Critchley 1.1.5 source, source depth, word distribution and six-part revision
         run: python src/tests/verify_critchley_source_fidelity.py
+      - name: Verify Bird 2.1.1 source fidelity, chapter density and six-part revision
+        run: python src/tests/verify_bird_source_fidelity.py
       - name: Validate book structure and chapter navigation
         run: python src/tests/validate_structure.py
       - name: Validate accessible contents and print controls
