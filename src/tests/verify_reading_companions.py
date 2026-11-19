@@ -44,7 +44,7 @@ for item in manifest['companions']:
     seen.add(ident)
     assert re.fullmatch(r'ch\d+-\d+-\d+', item['chapter']), ident
     assert item['source']['printedPages'], f'No primary page reference: {ident}'
-    assert item['source']['author'] in ('Dermot Moran', 'Rowland Stout', 'David Papineau', 'Gary Gutting'), ident
+    assert item['source']['author'] in ('Dermot Moran', 'Rowland Stout', 'David Papineau', 'Gary Gutting', 'Simon Critchley'), ident
     assert 20 <= len(item['explanation'].split()) <= 110, f'Explanation out of pilot range: {ident}'
     assert item['added_value'].strip(), ident
     start = chapters.find(f'<section class="chapter" id="{item["chapter"]}"')
@@ -70,7 +70,7 @@ stout = [x for x in manifest['companions'] if x['chapter'] == 'ch1-1-2']
 papineau = [x for x in manifest['companions'] if x['chapter'] == 'ch1-1-3']
 gutting = [x for x in manifest['companions'] if x['chapter'] == 'ch1-1-4']
 assert len(moran) == 10 and len(stout) == 24 and len(papineau) == 12 and len(gutting) == 12
-assert len(seen) == 58
+assert len(seen) == 67
 assert 'class="historical-timeline"' in chapters
 assert 'The One Thread to Follow' in chapters
 assert 'The four thinkers below are not four unrelated stories.' in chapters
@@ -141,6 +141,29 @@ for item in gutting:
 for block in blocks:
     assert 'Gary Gutting' in block.group(0)
     assert body[:block.start()].rstrip().endswith('</p>'), 'Gutting depth is not paragraph-adjacent'
+    assert 'hikam-source-depth-citation' in block.group(0)
+# Critchley 1.1.5: all local cues must resolve in visible prose, and the
+# five optional records remain adjacent to the correct explanatory paragraphs.
+begin = chapters.index('<section class="chapter" id="ch1-1-5"')
+html = chapters[begin:]
+body = html[html.index('<div class="chapter-body">'):html.index('<nav class="chapter-endnav"')]
+critchley = [x for x in manifest['companions'] if x['chapter'] == 'ch1-1-5']
+assert len(critchley) == 9
+assert 'style="--hue:288;"' in html
+assert 'Simon Critchley' in html
+blocks = list(re.finditer(r'<details class="hikam-source-depth-inline"[\s\S]*?</details>', body))
+assert len(blocks) == 5
+assert body.count('class="hikam-source-depth-item"') == 5
+assert all(' open' not in b.group(0).split('>', 1)[0] for b in blocks)
+for item in critchley:
+    assert item['source']['author'] == 'Simon Critchley'
+    assert all(item.get(k) for k in ('simple','why_here','remember'))
+    assert all(1 <= pg <= 8 for pg in item['source']['printedPages'])
+    if item.get('sourceDepthId'):
+        assert body.count('id="' + item['sourceDepthId'] + '"') == 1
+for block in blocks:
+    assert 'Simon Critchley' in block.group(0)
+    assert body[:block.start()].rstrip().endswith('</p>'), 'Critchley depth is not paragraph-adjacent'
     assert 'hikam-source-depth-citation' in block.group(0)
 assert 'hikam-companion-context-field' in reader
 assert 'item.simple && item.why_here && item.remember' in reader

@@ -1,7 +1,7 @@
 {
   "version": 1,
   "editorialPolicy": "src/docs/editorial/CONCISE_DOSSIER_AND_READING_COMPANIONS.md",
-  "description": "Source-grounded context-first explanations for Moran 1.1.1, Stout 1.1.2, Papineau 1.1.3 and Gutting 1.1.4; further original-source material is separately optional in local Source Depth.",
+  "description": "Source-grounded context-first explanations for readings 1.1.1–1.1.5; optional additional source detail is kept separately in local Source Depth.",
   "companions": [
     {
       "id": "h111-russell-idealism",
@@ -1247,6 +1247,193 @@
       "why_here": "The decision must challenge an inadequate rule but then justify a more adequate rational rule.",
       "remember": "Beyond this law is not beyond all reason.",
       "sourceDepthId": "source-depth-h114-justice"
+    },
+    {
+      "id": "h115-ancient-form",
+      "chapter": "ch1-1-5",
+      "passage": "Philosophy was supposed to form human beings, not just inform them",
+      "text": "form human beings, not just inform them",
+      "kind": "Contextual explanation",
+      "title": "Why does philosophy form rather than only inform?",
+      "explanation": "Critchley means that philosophy once aimed to shape how someone lived, not only increase what they knew. This clarifies why his history begins with the good life before discussing scientific knowledge.",
+      "source": {
+        "author": "Simon Critchley",
+        "work": "Continental Philosophy, chapter 1: The Gap between Knowledge and Wisdom",
+        "printedPages": [
+          1
+        ]
+      },
+      "added_value": "Clarifies the immediate phrase and its place in Critchley's argument, without adding an independent thesis.",
+      "simple": "Critchley means that philosophy once aimed to shape how someone lived, not only increase what they knew.",
+      "why_here": "This clarifies why his history begins with the good life before discussing scientific knowledge.",
+      "remember": "Remember: lived wisdom, not just facts.",
+      "sourceDepthId": "source-depth-h115-ancient"
+    },
+    {
+      "id": "h115-party",
+      "chapter": "ch1-1-5",
+      "passage": "Philosophy need not answer the question of life's meaning, but it should at least tackle it",
+      "text": "tackle",
+      "kind": "Contextual explanation",
+      "title": "Why is tackling different from answering?",
+      "explanation": "Critchley does not demand that philosophers produce one final solution to life's meaning. He asks them to take the question seriously. This explains why he sides with the stranger at the party without claiming to possess an answer.",
+      "source": {
+        "author": "Simon Critchley",
+        "work": "Continental Philosophy, chapter 1: The Gap between Knowledge and Wisdom",
+        "printedPages": [
+          2
+        ]
+      },
+      "added_value": "Clarifies the immediate phrase and its place in Critchley's argument, without adding an independent thesis.",
+      "simple": "Critchley does not demand that philosophers produce one final solution to life's meaning. He asks them to take the question seriously.",
+      "why_here": "This explains why he sides with the stranger at the party without claiming to possess an answer.",
+      "remember": "Remember: a philosophical question can be legitimate without a settled answer."
+    },
+    {
+      "id": "h115-spectator",
+      "chapter": "ch1-1-5",
+      "passage": "people become spectators looking at objects presented in sensations or representations",
+      "text": "spectators looking at objects",
+      "kind": "Contextual explanation",
+      "title": "What does the spectator picture mean?",
+      "explanation": "The spectator stands back and observes things as facts to be understood. This image describes the theoretical stance Critchley associates with modern knowledge. It helps show how the role of knowing changes before he turns to philosophy as epistemology.",
+      "source": {
+        "author": "Simon Critchley",
+        "work": "Continental Philosophy, chapter 1: The Gap between Knowledge and Wisdom",
+        "printedPages": [
+          3
+        ]
+      },
+      "added_value": "Clarifies the immediate phrase and its place in Critchley's argument, without adding an independent thesis.",
+      "simple": "The spectator stands back and observes things as facts to be understood. This image describes the theoretical stance Critchley associates with modern knowledge.",
+      "why_here": "It helps show how the role of knowing changes before he turns to philosophy as epistemology.",
+      "remember": "Remember: observer of facts, rather than wisdom about living."
+    },
+    {
+      "id": "h115-underlabourer",
+      "chapter": "ch1-1-5",
+      "passage": "John Locke's image of the philosopher as an “under-labourer”",
+      "text": "“under-labourer”",
+      "kind": "Contextual explanation",
+      "title": "Why does Locke's image matter?",
+      "explanation": "An under-labourer clears the way for another worker. Critchley uses the image for philosophy's narrower job of checking and clarifying how scientific knowledge is possible. The metaphor contrasts philosophy's modern supporting role with its ancient aim of wisdom.",
+      "source": {
+        "author": "Simon Critchley",
+        "work": "Continental Philosophy, chapter 1: The Gap between Knowledge and Wisdom",
+        "printedPages": [
+          3
+        ]
+      },
+      "added_value": "Clarifies the immediate phrase and its place in Critchley's argument, without adding an independent thesis.",
+      "simple": "An under-labourer clears the way for another worker. Critchley uses the image for philosophy's narrower job of checking and clarifying how scientific knowledge is possible.",
+      "why_here": "The metaphor contrasts philosophy's modern supporting role with its ancient aim of wisdom.",
+      "remember": "Remember: philosophy clears conceptual obstacles for science."
+    },
+    {
+      "id": "h115-felt-gap",
+      "chapter": "ch1-1-5",
+      "passage": "not an explanatory gap",
+      "text": "not an explanatory gap",
+      "kind": "Contextual explanation",
+      "title": "Why isn't this a gap in explanation?",
+      "explanation": "Critchley is not saying that science lacks a particular missing cause. He says that even complete factual knowledge would leave a different question: how should one live? This distinction makes his criticism of reductive approaches understandable without denying their scientific explanations.",
+      "source": {
+        "author": "Simon Critchley",
+        "work": "Continental Philosophy, chapter 1: The Gap between Knowledge and Wisdom",
+        "printedPages": [
+          4
+        ]
+      },
+      "added_value": "Clarifies the immediate phrase and its place in Critchley's argument, without adding an independent thesis.",
+      "simple": "Critchley is not saying that science lacks a particular missing cause. He says that even complete factual knowledge would leave a different question: how should one live?",
+      "why_here": "This distinction makes his criticism of reductive approaches understandable without denying their scientific explanations.",
+      "remember": "Remember: better facts do not by themselves supply a good life.",
+      "sourceDepthId": "source-depth-h115-appendix"
+    },
+    {
+      "id": "h115-disenchantment",
+      "chapter": "ch1-1-5",
+      "passage": "disenchantment of nature",
+      "text": "disenchantment of nature",
+      "kind": "Contextual explanation",
+      "title": "What changes when nature is disenchanted?",
+      "explanation": "Nature remains knowable through physical laws, but those laws do not express a human purpose. That is the sense of disenchantment in this passage. It explains why Critchley sees a historical break between explanations of nature and questions of meaning.",
+      "source": {
+        "author": "Simon Critchley",
+        "work": "Continental Philosophy, chapter 1: The Gap between Knowledge and Wisdom",
+        "printedPages": [
+          6,
+          7
+        ]
+      },
+      "added_value": "Clarifies the immediate phrase and its place in Critchley's argument, without adding an independent thesis.",
+      "simple": "Nature remains knowable through physical laws, but those laws do not express a human purpose. That is the sense of disenchantment in this passage.",
+      "why_here": "It explains why Critchley sees a historical break between explanations of nature and questions of meaning.",
+      "remember": "Remember: causally intelligible, no longer humanly purposeful.",
+      "sourceDepthId": "source-depth-h115-disenchantment"
+    },
+    {
+      "id": "h115-paired-risks",
+      "chapter": "ch1-1-5",
+      "passage": "Scientism takes the authority of science too far",
+      "text": "Scientism",
+      "kind": "Contextual explanation",
+      "title": "What is wrong with scientism here?",
+      "explanation": "Critchley praises the success of science. Scientism is the further claim that scientific explanation can replace any inquiry into wisdom. He needs this distinction before setting scientism beside the opposite risk of rejecting science.",
+      "source": {
+        "author": "Simon Critchley",
+        "work": "Continental Philosophy, chapter 1: The Gap between Knowledge and Wisdom",
+        "printedPages": [
+          5,
+          7
+        ]
+      },
+      "added_value": "Clarifies the immediate phrase and its place in Critchley's argument, without adding an independent thesis.",
+      "simple": "Critchley praises the success of science. Scientism is the further claim that scientific explanation can replace any inquiry into wisdom.",
+      "why_here": "He needs this distinction before setting scientism beside the opposite risk of rejecting science.",
+      "remember": "Remember: science is not the same as scientism."
+    },
+    {
+      "id": "h115-wittgenstein",
+      "chapter": "ch1-1-5",
+      "passage": "Ludwig Wittgenstein is his counterexample",
+      "text": "Wittgenstein is his counterexample",
+      "kind": "Contextual explanation",
+      "title": "Why does Wittgenstein change the conclusion?",
+      "explanation": "Wittgenstein shows that a philosopher associated with analytic philosophy can also connect intellectual truth with a way of life. Critchley uses him to prevent the knowledge–wisdom bridge from becoming an exclusive label for Continental philosophy.",
+      "source": {
+        "author": "Simon Critchley",
+        "work": "Continental Philosophy, chapter 1: The Gap between Knowledge and Wisdom",
+        "printedPages": [
+          8
+        ]
+      },
+      "added_value": "Clarifies the immediate phrase and its place in Critchley's argument, without adding an independent thesis.",
+      "simple": "Wittgenstein shows that a philosopher associated with analytic philosophy can also connect intellectual truth with a way of life.",
+      "why_here": "Critchley uses him to prevent the knowledge–wisdom bridge from becoming an exclusive label for Continental philosophy.",
+      "remember": "Remember: the task belongs to all philosophy.",
+      "sourceDepthId": "source-depth-h115-wittgenstein"
+    },
+    {
+      "id": "h115-necessary",
+      "chapter": "ch1-1-5",
+      "passage": "not sufficient to distinguish Continental from analytic philosophy",
+      "text": "not sufficient",
+      "kind": "Contextual explanation",
+      "title": "What does not sufficient mean?",
+      "explanation": "Even when a thinker bridges knowledge and wisdom, that fact alone does not establish whether their school is analytic or Continental. Critchley's final point is a claim about philosophy's responsibility, not a rule for sorting traditions.",
+      "source": {
+        "author": "Simon Critchley",
+        "work": "Continental Philosophy, chapter 1: The Gap between Knowledge and Wisdom",
+        "printedPages": [
+          8
+        ]
+      },
+      "added_value": "Clarifies the immediate phrase and its place in Critchley's argument, without adding an independent thesis.",
+      "simple": "Even when a thinker bridges knowledge and wisdom, that fact alone does not establish whether their school is analytic or Continental.",
+      "why_here": "Critchley's final point is a claim about philosophy's responsibility, not a rule for sorting traditions.",
+      "remember": "Remember: not a school test; a philosophical task.",
+      "sourceDepthId": "source-depth-h115-wittgenstein"
     }
   ]
 }
