@@ -104,7 +104,7 @@ begin = chapters.index('<section class="chapter" id="ch1-1-3"')
 after = chapters.find('<section class="chapter" id="', begin + 15)
 html = chapters[begin:after if after >= 0 else len(chapters)]
 body = html[html.index('<div class="chapter-body">'):html.index('<nav class="chapter-endnav"')]
-blocks = list(re.finditer(r'<details class="hikam-source-depth-inline"[\\s\\S]*?</details>', body))
+blocks = list(re.finditer(r'<details class="hikam-source-depth-inline"[\s\S]*?</details>', body))
 assert len(blocks) == 9, f'Papineau: source disclosures {len(blocks)} != 9'
 assert body.count('class="hikam-source-depth-item"') == 9
 assert all(' open' not in block.group(0).split('>', 1)[0] for block in blocks)
