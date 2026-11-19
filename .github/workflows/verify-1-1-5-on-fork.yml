@@ -1,0 +1,124 @@
+name: Verify Critchley 1.1.5 in secondary fork
+
+on:
+  push:
+    branches:
+      - editorial/reading-1-1-5-critchley-2026-11-19
+
+permissions:
+  contents: read
+
+concurrency:
+  group: hikam-1-1-5-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Rebuild candidate edition canonically
+        run: |
+          python src/build.py
+          python src/build.py --check
+      - name: Verify all original and new source, publication and reader contracts
+        run: |
+          set -e
+          python src/tests/verify_publication.py
+          python src/tests/verify_reading_companions.py
+          python src/tests/verify_source_attribution.py
+          python src/tests/verify_3_4_house_style.py
+          python src/tests/verify_editorial_fidelity.py
+          python src/tests/verify_papineau_source_fidelity.py
+          python src/tests/verify_gutting_source_fidelity.py
+          python src/tests/verify_critchley_source_fidelity.py
+          python src/tests/validate_structure.py
+          python src/tests/verify_sidebar.py
+          python src/tests/verify_reading_progress.py
+          python src/tests/verify_reader_search_tabs.py
+          python src/tests/verify_revision_visibility.py
+          python src/tests/verify_search_integrity.py
+          python src/tests/verify_mobile_interaction.py
+          python src/tests/verify_visual_polish.py
+          node src/tests/test_offline_cache.mjs
+          node src/tests/test_optional_precache.mjs
+      - name: Upload generated preview for review
+        uses: actions/upload-artifact@v4
+        with:
+          name: hikam-115-generated-${{ github.run_id }}
+          path: |
+            index.html
+            src/philosophy_study_notes.html
+            service-worker.js
+          retention-days: 7
+
+  browser:
+    name: Full Chromium, accessibility, pagination and offline/PWA regressions
+    needs: verify
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python src/build.py && python src/build.py --check
+      - run: python -m pip install playwright==1.57.0 pypdf==5.9.0
+      - run: python -m playwright install chromium
+      - name: Run the complete canonical browser suite
+        run: |
+          set -e
+          python src/tests/browser_quality.py
+          python src/tests/browser_reading_companions.py
+          python src/tests/browser_design_tokens.py
+          python src/tests/browser_3_4_house_style.py
+          python src/tests/browser_batch2_continuity.py
+          python src/tests/browser_batch4_edition_migration.py
+          python src/tests/browser_pwa_updates.py
+      - name: Upload printed PDFs and browser evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: hikam-115-browser-${{ github.run_id }}
+          path: test-artifacts/
+          if-no-files-found: ignore
+          retention-days: 7
+
+  write-verified-build:
+    name: Save build on fork only after all gates pass
+    needs: [verify, browser]
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: editorial/reading-1-1-5-critchley-2026-11-19
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Build and record exact verified fork run
+        run: |
+          set -e
+          python src/build.py
+          python src/build.py --check
+          cat > src/docs/editorial/READING_1_1_5_FORK_VERIFICATION.md <<EOF
+          # 1.1.5 Fork Verification Receipt
+
+          The 1.1.5 secondary-fork validation jobs have succeeded before this file was committed.
+
+          - Fork run: https://github.com/Mohd-Ujjain/11-hikam/actions/runs/${{ github.run_id }}
+          - Source commit that triggered validation: ${{ github.sha }}
+          - Publishing repository remains `MohdUjjain/11-hikam`; this fork build is not a deployment.
+          - Tested: canonical build, Python source/content/readability/reading companion checks, 39-chapter structure, design/contrast, mobile/keyboard/RTL, Chromium A4 print, and offline PWA.
+          - Generated publication outputs were regenerated from the same source tree after both jobs passed.
+          EOF
+          git add index.html src/philosophy_study_notes.html service-worker.js src/docs/editorial/READING_1_1_5_FORK_VERIFICATION.md
+          git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Record verified 1.1.5 fork reader edition [skip ci]'
+          git push origin HEAD:editorial/reading-1-1-5-critchley-2026-11-19
