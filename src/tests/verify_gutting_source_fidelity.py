@@ -76,7 +76,7 @@ for term in [
     "authenticity", "atheism", "summum bonum", "structuralism", "poststructuralism",
     "centrifugal", "madness", "unreason", "moral imprisonment",
     "archaeology", "episteme", "grammar", "genealogy", "knowledge can be objective",
-    "discipline", "surveillance", "self-scrutiny", "ancient",
+    "discipline", "surveillance", "self-scrutiny", "greek and roman",
     "centripetal", "presence to itself", "logocentrism",
     "opposition", "logical exclusion", "priority", "deconstruction",
     "writing in the soul", "différance", "defer", "law", "justice",
