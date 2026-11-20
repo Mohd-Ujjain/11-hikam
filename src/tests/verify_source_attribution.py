@@ -50,4 +50,18 @@ assert bird_toc
 assert '<span class="tt">Introduction</span>' in bird_toc.group(1)
 assert '<span class="ts">Colin Bird · Cambridge</span>' in bird_toc.group(1)
 
-print(f"Verified {len(READINGS)+1} primary-source titles and author credits in chapter frontmatter and TOC")
+# Bird chapter 2: verify the original source title and credit independently
+# from the previous Introduction, preserving both contents entries.
+common_start = bird_html.index('<section class="chapter" id="ch2-1-2"')
+common_end = bird_html.index('<nav class="chapter-endnav"',common_start)
+common = bird_html[common_start:common_end]
+assert '<h1 class="chapter-title">The Common Good</h1>' in common
+assert 'Original author: <strong>Colin Bird</strong>' in common
+assert 'Chapter 2, “The Common Good,”' in common
+assert '<em>An Introduction to Political Philosophy</em>' in common
+common_toc = re.search(r'<a class="toc-item" href="#ch2-1-2">([\s\S]*?)</a>', MAIN)
+assert common_toc
+assert '<span class="tt">The Common Good</span>' in common_toc.group(1)
+assert '<span class="ts">Colin Bird · Cambridge</span>' in common_toc.group(1)
+
+print(f"Verified {len(READINGS)+2} primary-source titles and author credits in chapter frontmatter and TOC")
