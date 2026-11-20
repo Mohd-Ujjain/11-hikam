@@ -68,7 +68,7 @@ def check(browser, url, width):
         page.keyboard.press('Escape')
         assert page.locator('#hikamCompanionPopup').is_hidden()
     # Local paragraph-level disclosures for all four source authors.
-    for chapter, number in [('ch1-1-1', 10), ('ch1-1-2', 24), ('ch1-1-3', 9), ('ch1-1-4', 9), ('ch1-1-5', 5), ('ch2-1-1', 6), ('ch2-1-2', 6), ('ch2-1-3', 14), ('ch2-1-4', 17), ('ch2-1-5', 16)]:
+    for chapter, number in [('ch1-1-1', 10), ('ch1-1-2', 24), ('ch1-1-3', 9), ('ch1-1-4', 9), ('ch1-1-5', 5), ('ch2-1-1', 6), ('ch2-1-2', 6), ('ch2-1-3', 14), ('ch2-1-4', 17), ('ch2-1-5', 16), ('ch2-1-6', 2)]:
         callouts = page.locator('#' + chapter + ' .chapter-body .hikam-source-depth-inline')
         assert callouts.count() >= 1
         assert callouts.locator('.hikam-source-depth-item').count() == number
@@ -103,7 +103,9 @@ def check(browser, url, width):
         "(e) => getComputedStyle(e).textDecorationColor")
     liberty_color = page.locator('[data-companion-id="h215-majority"]').evaluate(
         "(e) => getComputedStyle(e).textDecorationColor")
-    assert len({color, other_color, papineau_color, gutting_color, critchley_color, bird_color, common_good_color, war_color, wolff_color, liberty_color}) == 10
+    individualism_color = page.locator('[data-companion-id="h216-moral-bond"]').evaluate(
+        "(e) => getComputedStyle(e).textDecorationColor")
+    assert len({color, other_color, papineau_color, gutting_color, critchley_color, bird_color, common_good_color, war_color, wolff_color, liberty_color, individualism_color}) == 11
     cue.focus()
     page.keyboard.press('Enter')
     popup = page.locator('#hikamCompanionPopup')
@@ -136,6 +138,9 @@ def check(browser, url, width):
     assert page.locator('#hikamCompanionPopup').get_attribute('lang') == 'ar'
     page.keyboard.press('Escape')
     cue.evaluate("e=>{e.closest('.chapter').classList.remove('rtl');e.closest('.chapter').removeAttribute('lang')}")
+    # Source-depth and Companion cue remain distinct on Wolff's introduction to feminism.
+    assert page.locator('#ch2-1-6 .chapter-body .hikam-source-depth-inline').count() == 2
+    assert page.locator('#ch2-1-6 .chapter-body .hikam-companion-trigger').count() == 4
     # The original paragraph text must include the uninterrupted wrapped phrase.
     assert page.locator('[data-companion-id="h112-parfit-identity"]').inner_text() == 'future generations'
     page.evaluate("""() => {
