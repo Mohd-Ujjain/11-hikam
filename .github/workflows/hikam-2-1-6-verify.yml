@@ -1,0 +1,107 @@
+name: Verify 2.1.6 on secondary CI fork
+# Fork-only. Does not belong in the authoritative upstream repository.
+on:
+  push:
+    branches:
+      - editorial/2-1-6-source-faithful
+permissions:
+  contents: write
+concurrency:
+  group: hikam-216-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  verify:
+    name: Canonical build, source checks, Chromium, PDF and offline
+    runs-on: ubuntu-24.04
+    timeout-minutes: 50
+    steps:
+      - name: Ensure secondary account and exact branch
+        run: |
+          test "$GITHUB_REPOSITORY" = "Mohd-Ujjain/11-hikam"
+          test "$GITHUB_REF_NAME" = "editorial/2-1-6-source-faithful"
+      - name: Check out candidate
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Record source SHA, build and reproducibility
+        run: |
+          git rev-parse HEAD
+          python src/build.py
+          python src/build.py --check
+      - name: Full original-repository source, integrity and offline checks
+        run: |
+          set -e
+          python src/tests/verify_dossier_archive.py
+          python src/tests/verify_publication.py
+          python src/tests/verify_reading_companions.py
+          python src/tests/verify_source_attribution.py
+          python src/tests/verify_3_4_house_style.py
+          python src/tests/verify_editorial_fidelity.py
+          python src/tests/verify_papineau_source_fidelity.py
+          python src/tests/verify_gutting_source_fidelity.py
+          python src/tests/verify_critchley_source_fidelity.py
+          python src/tests/verify_bird_source_fidelity.py
+          python src/tests/verify_common_good_source_fidelity.py
+          python src/tests/verify_war_source_fidelity.py
+          python src/tests/verify_wolff_source_fidelity.py
+          python src/tests/verify_liberty_source_fidelity.py
+          python src/tests/validate_structure.py
+          python src/tests/verify_sidebar.py
+          python src/tests/verify_reading_progress.py
+          python src/tests/verify_reader_search_tabs.py
+          python src/tests/verify_revision_visibility.py
+          python src/tests/verify_search_integrity.py
+          python src/tests/verify_mobile_interaction.py
+          python src/tests/verify_visual_polish.py
+          node src/tests/test_offline_cache.mjs
+          node src/tests/test_optional_precache.mjs
+          python src/tests/browser_quality.py
+          python src/tests/browser_reading_companions.py
+          python src/tests/browser_design_tokens.py
+          python src/tests/browser_3_4_house_style.py
+          python src/tests/browser_batch2_continuity.py
+          python src/tests/browser_batch4_edition_migration.py
+          python src/tests/browser_pwa_updates.py
+      - name: Pinned browser and PDF dependencies
+        run: |
+          python -m pip install playwright==1.57.0 pypdf==5.9.0
+          python -m playwright install chromium
+      - name: Full original-repository Chromium, print, RTL and PWA tests
+        run: |
+          set -e
+          python src/tests/browser_quality.py
+          python src/tests/browser_reading_companions.py
+          python src/tests/browser_design_tokens.py
+          python src/tests/browser_3_4_house_style.py
+          python src/tests/browser_batch2_continuity.py
+          python src/tests/browser_batch4_edition_migration.py
+          python src/tests/browser_pwa_updates.py
+      - name: Save verified outputs and browser evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: verified-hikam-216-${{ github.run_id }}
+          path: |
+            index.html
+            src/philosophy_study_notes.html
+            service-worker.js
+            test-artifacts/
+          if-no-files-found: ignore
+          retention-days: 7
+      - name: Commit generated reader files on fork only
+        if: success()
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html src/philosophy_study_notes.html service-worker.js
+          if ! git diff --cached --quiet; then
+            git commit -m "Build verified 2.1.6 reader outputs [skip ci]"
+            git push origin HEAD:refs/heads/editorial/2-1-6-source-faithful
+          fi
+          python src/build.py --check
