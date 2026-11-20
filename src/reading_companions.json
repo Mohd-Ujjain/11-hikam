@@ -1,7 +1,7 @@
 {
   "version": 1,
   "editorialPolicy": "src/docs/editorial/CONCISE_DOSSIER_AND_READING_COMPANIONS.md",
-  "description": "Source-grounded context-first explanations for completed readings 1.1.1–1.1.5 and 2.1.1; optional source particulars are preserved in adjacent Source Depth.",
+  "description": "Source-grounded context-first companions for the completed 1.1 and 2.1.1–2.1.2 readings; optional source detail is placed in paragraph-adjacent Source Depth.",
   "companions": [
     {
       "id": "h111-russell-idealism",
@@ -1663,6 +1663,257 @@
       "why_here": "Bird lists such beliefs as possible justifications that philosophy must examine, not as facts proving the state is just.",
       "remember": "Habitual obedience still raises questions.",
       "sourceDepthId": "source-depth-h211-state"
+    },
+    {
+      "id": "h212-marx",
+      "chapter": "ch2-1-2",
+      "passage": "Marx's challenge to philosophical introspection",
+      "text": "philosophical introspection",
+      "kind": "Contextual explanation",
+      "title": "Why begin with Marx before discussing Aristotle?",
+      "explanation": "Introspection here means trying to judge inherited practices by reflecting on one's own thinking. Marx doubts that this alone can free someone from the assumptions of their society. Bird introduces the doubt to explain why an older common-good approach deserves examination before it is rejected.",
+      "source": {
+        "author": "Colin Bird",
+        "work": "An Introduction to Political Philosophy, chapter 2: The Common Good (supplied extract PDF page indices)",
+        "printedPages": [
+          1
+        ]
+      },
+      "added_value": "Clarifies a specific nearby source claim and its argumentative role; additional source detail stays in the adjacent collapsed disclosure.",
+      "simple": "Introspection here means trying to judge inherited practices by reflecting on one's own thinking. Marx doubts that this alone can free someone from the assumptions of their society.",
+      "why_here": "Bird introduces the doubt to explain why an older common-good approach deserves examination before it is rejected.",
+      "remember": "Marx's doubt sets the question; it does not settle it.",
+      "sourceDepthId": "source-depth-h212-roadmap"
+    },
+    {
+      "id": "h212-corporate",
+      "chapter": "ch2-1-2",
+      "passage": "a self-conscious corporate “we”",
+      "text": "corporate “we”",
+      "kind": "Contextual explanation",
+      "title": "What does a corporate 'we' mean?",
+      "explanation": "It means a group that can think of itself as pursuing interests belonging to the community, rather than to a single ruler or member. This explains why Bird moves from Louis XIV's private-property image to the idea of a common good.",
+      "source": {
+        "author": "Colin Bird",
+        "work": "An Introduction to Political Philosophy, chapter 2: The Common Good (supplied extract PDF page indices)",
+        "printedPages": [
+          2
+        ]
+      },
+      "added_value": "Clarifies a specific nearby source claim and its argumentative role; additional source detail stays in the adjacent collapsed disclosure.",
+      "simple": "It means a group that can think of itself as pursuing interests belonging to the community, rather than to a single ruler or member.",
+      "why_here": "This explains why Bird moves from Louis XIV's private-property image to the idea of a common good.",
+      "remember": "The public interest is not one person's interest."
+    },
+    {
+      "id": "h212-identity",
+      "chapter": "ch2-1-2",
+      "passage": "countries are social and historical constructs",
+      "text": "social and historical constructs",
+      "kind": "Contextual explanation",
+      "title": "How is a country different from a biological person?",
+      "explanation": "A person has a biological body and a finite life, whereas a country's continuing identity depends on social institutions and history. Bird uses Belgium and Poland to show why biology cannot identify the collective political agent.",
+      "source": {
+        "author": "Colin Bird",
+        "work": "An Introduction to Political Philosophy, chapter 2: The Common Good (supplied extract PDF page indices)",
+        "printedPages": [
+          3
+        ]
+      },
+      "added_value": "Clarifies a specific nearby source claim and its argumentative role; additional source detail stays in the adjacent collapsed disclosure.",
+      "simple": "A person has a biological body and a finite life, whereas a country's continuing identity depends on social institutions and history.",
+      "why_here": "Bird uses Belgium and Poland to show why biology cannot identify the collective political agent.",
+      "remember": "A state is not a living organism.",
+      "sourceDepthId": "source-depth-h212-identity"
+    },
+    {
+      "id": "h212-morality",
+      "chapter": "ch2-1-2",
+      "passage": "positive morality is likely an important part of any plausible answer",
+      "text": "positive morality",
+      "kind": "Contextual explanation",
+      "title": "What does positive morality do here?",
+      "explanation": "It names the shared standards people actually recognise as guides to conduct, rather than private commands backed only by someone's force. Bird offers it as a likely clue to how a public group exists, not as a complete solution to political identity.",
+      "source": {
+        "author": "Colin Bird",
+        "work": "An Introduction to Political Philosophy, chapter 2: The Common Good (supplied extract PDF page indices)",
+        "printedPages": [
+          3,
+          4
+        ]
+      },
+      "added_value": "Clarifies a specific nearby source claim and its argumentative role; additional source detail stays in the adjacent collapsed disclosure.",
+      "simple": "It names the shared standards people actually recognise as guides to conduct, rather than private commands backed only by someone's force.",
+      "why_here": "Bird offers it as a likely clue to how a public group exists, not as a complete solution to political identity.",
+      "remember": "Shared norms help make the 'we' intelligible."
+    },
+    {
+      "id": "h212-warrant",
+      "chapter": "ch2-1-2",
+      "passage": "de jure warrant comes from prior, independent recognition of rules",
+      "text": "de jure",
+      "kind": "Contextual explanation",
+      "title": "What makes a warrant de jure rather than de facto?",
+      "explanation": "De jure concerns an official's rule-based permission to act. De facto concerns whether that official can actually compel anyone. Bird needs this distinction to explain how a referee or public official can retain a recognised right without physical control.",
+      "source": {
+        "author": "Colin Bird",
+        "work": "An Introduction to Political Philosophy, chapter 2: The Common Good (supplied extract PDF page indices)",
+        "printedPages": [
+          4
+        ]
+      },
+      "added_value": "Clarifies a specific nearby source claim and its argumentative role; additional source detail stays in the adjacent collapsed disclosure.",
+      "simple": "De jure concerns an official's rule-based permission to act. De facto concerns whether that official can actually compel anyone.",
+      "why_here": "Bird needs this distinction to explain how a referee or public official can retain a recognised right without physical control.",
+      "remember": "Right to act is not identical to power to enforce.",
+      "sourceDepthId": "source-depth-h212-referee"
+    },
+    {
+      "id": "h212-referee",
+      "chapter": "ch2-1-2",
+      "passage": "a soccer referee who sends a player off",
+      "text": "sends a player off",
+      "kind": "Contextual explanation",
+      "title": "Why can the referee's call stand during a riot?",
+      "explanation": "The decision is authorised by rules players and spectators recognise; riotous behaviour can break enforcement without erasing that earlier authorization. Bird uses the game to show how impersonal norms create a shared standpoint for evaluating acts.",
+      "source": {
+        "author": "Colin Bird",
+        "work": "An Introduction to Political Philosophy, chapter 2: The Common Good (supplied extract PDF page indices)",
+        "printedPages": [
+          4,
+          5
+        ]
+      },
+      "added_value": "Clarifies a specific nearby source claim and its argumentative role; additional source detail stays in the adjacent collapsed disclosure.",
+      "simple": "The decision is authorised by rules players and spectators recognise; riotous behaviour can break enforcement without erasing that earlier authorization.",
+      "why_here": "Bird uses the game to show how impersonal norms create a shared standpoint for evaluating acts.",
+      "remember": "Control can fail while a rule-based warrant remains.",
+      "sourceDepthId": "source-depth-h212-referee"
+    },
+    {
+      "id": "h212-parity",
+      "chapter": "ch2-1-2",
+      "passage": "at least minimal mutual parity and partnership",
+      "text": "mutual parity and partnership",
+      "kind": "Contextual explanation",
+      "title": "Why is parity necessary for civic relations?",
+      "explanation": "Each party must count as someone with independent claims and needs, not merely as a tool employed by another person. Bird uses this requirement to explain why absolute subordination falls outside the civic relationship in Aristotle's account.",
+      "source": {
+        "author": "Colin Bird",
+        "work": "An Introduction to Political Philosophy, chapter 2: The Common Good (supplied extract PDF page indices)",
+        "printedPages": [
+          6
+        ]
+      },
+      "added_value": "Clarifies a specific nearby source claim and its argumentative role; additional source detail stays in the adjacent collapsed disclosure.",
+      "simple": "Each party must count as someone with independent claims and needs, not merely as a tool employed by another person.",
+      "why_here": "Bird uses this requirement to explain why absolute subordination falls outside the civic relationship in Aristotle's account.",
+      "remember": "Civic partners recognise each other's claims.",
+      "sourceDepthId": "source-depth-h212-parity"
+    },
+    {
+      "id": "h212-engine",
+      "chapter": "ch2-1-2",
+      "passage": "the thrust of a jet engine",
+      "text": "thrust of a jet engine",
+      "kind": "Contextual explanation",
+      "title": "What exactly does the engine illustrate?",
+      "explanation": "An engine contributes power only when the pilot directs it; it does not independently decide to cooperate. Bird uses the comparison to describe a master's unilateral appropriation of the slave's capacities, not to deny the slave's humanity.",
+      "source": {
+        "author": "Colin Bird",
+        "work": "An Introduction to Political Philosophy, chapter 2: The Common Good (supplied extract PDF page indices)",
+        "printedPages": [
+          6
+        ]
+      },
+      "added_value": "Clarifies a specific nearby source claim and its argumentative role; additional source detail stays in the adjacent collapsed disclosure.",
+      "simple": "An engine contributes power only when the pilot directs it; it does not independently decide to cooperate.",
+      "why_here": "Bird uses the comparison to describe a master's unilateral appropriation of the slave's capacities, not to deny the slave's humanity.",
+      "remember": "One-sided control is not shared agency.",
+      "sourceDepthId": "source-depth-h212-parity"
+    },
+    {
+      "id": "h212-compulsory",
+      "chapter": "ch2-1-2",
+      "passage": "People can decline a game; political association is virtually inescapable, and its rules are typically compulsory.",
+      "text": "virtually inescapable",
+      "kind": "Contextual explanation",
+      "title": "Why does compulsory membership change the game analogy?",
+      "explanation": "Someone can decline to play chess or soccer, but people cannot ordinarily opt out of the state's rules. This difference makes it urgent to ask not only how shared rules work but whether they are good for those subjected to them.",
+      "source": {
+        "author": "Colin Bird",
+        "work": "An Introduction to Political Philosophy, chapter 2: The Common Good (supplied extract PDF page indices)",
+        "printedPages": [
+          8
+        ]
+      },
+      "added_value": "Clarifies a specific nearby source claim and its argumentative role; additional source detail stays in the adjacent collapsed disclosure.",
+      "simple": "Someone can decline to play chess or soccer, but people cannot ordinarily opt out of the state's rules.",
+      "why_here": "This difference makes it urgent to ask not only how shared rules work but whether they are good for those subjected to them.",
+      "remember": "Politics is not simply an optional game."
+    },
+    {
+      "id": "h212-pacifica",
+      "chapter": "ch2-1-2",
+      "passage": "Pacifica and Atlantis",
+      "text": "Pacifica and Atlantis",
+      "kind": "Contextual explanation",
+      "title": "What are Pacifica and Atlantis doing in this argument?",
+      "explanation": "They are Bird's contrasting examples of political communities that pursue different ideas of justice while claiming a common good. Their disagreement shows why a shared label of justice is not yet a test of whether the rules benefit citizens.",
+      "source": {
+        "author": "Colin Bird",
+        "work": "An Introduction to Political Philosophy, chapter 2: The Common Good (supplied extract PDF page indices)",
+        "printedPages": [
+          8
+        ]
+      },
+      "added_value": "Clarifies a specific nearby source claim and its argumentative role; additional source detail stays in the adjacent collapsed disclosure.",
+      "simple": "They are Bird's contrasting examples of political communities that pursue different ideas of justice while claiming a common good.",
+      "why_here": "Their disagreement shows why a shared label of justice is not yet a test of whether the rules benefit citizens.",
+      "remember": "Competing claims need evaluation.",
+      "sourceDepthId": "source-depth-h212-polities"
+    },
+    {
+      "id": "h212-possessor",
+      "chapter": "ch2-1-2",
+      "passage": "justice benefits its possessor",
+      "text": "benefits its possessor",
+      "kind": "Contextual explanation",
+      "title": "Who is the possessor of justice?",
+      "explanation": "A person or community possesses a conception of justice by internalising its rules and living by them. Bird draws on Plato to ask whether that lived morality actually makes its possessors better off.",
+      "source": {
+        "author": "Colin Bird",
+        "work": "An Introduction to Political Philosophy, chapter 2: The Common Good (supplied extract PDF page indices)",
+        "printedPages": [
+          9
+        ]
+      },
+      "added_value": "Clarifies a specific nearby source claim and its argumentative role; additional source detail stays in the adjacent collapsed disclosure.",
+      "simple": "A person or community possesses a conception of justice by internalising its rules and living by them.",
+      "why_here": "Bird draws on Plato to ask whether that lived morality actually makes its possessors better off.",
+      "remember": "Practising a rule is not proof that it helps.",
+      "sourceDepthId": "source-depth-h212-medicine"
+    },
+    {
+      "id": "h212-democracy",
+      "chapter": "ch2-1-2",
+      "passage": "If Plato is right",
+      "text": "If Plato is right",
+      "kind": "Contextual explanation",
+      "title": "Why is Bird's final claim conditional?",
+      "explanation": "Bird presents Plato's argument as implying that accepted liberal democratic ideas of justice could harm some people who live under them. The phrase matters because Bird is setting up a philosophical challenge to examine, not reporting a demonstrated empirical verdict here.",
+      "source": {
+        "author": "Colin Bird",
+        "work": "An Introduction to Political Philosophy, chapter 2: The Common Good (supplied extract PDF page indices)",
+        "printedPages": [
+          10
+        ]
+      },
+      "added_value": "Clarifies a specific nearby source claim and its argumentative role; additional source detail stays in the adjacent collapsed disclosure.",
+      "simple": "Bird presents Plato's argument as implying that accepted liberal democratic ideas of justice could harm some people who live under them.",
+      "why_here": "The phrase matters because Bird is setting up a philosophical challenge to examine, not reporting a demonstrated empirical verdict here.",
+      "remember": "The challenge depends on Plato's case.",
+      "sourceDepthId": "source-depth-h212-medicine"
     }
   ]
 }
