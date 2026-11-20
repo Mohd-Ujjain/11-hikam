@@ -105,7 +105,7 @@ for phrase in units:
 for phrase in (
     "possibly exaggerated",
     "not yet a triumphant defence of democracy",
-    "Wolff explicitly rejects",
+    "Wolff explicitly",
     "Condorcet himself doubts",
     "the explanatory account of the general will is",
 ):
