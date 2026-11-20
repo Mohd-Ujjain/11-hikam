@@ -45,11 +45,11 @@ class LayerCounter(HTMLParser):
 counter=LayerCounter()
 counter.feed(body)
 n=counter.counts
-# A dense 14-page original, covering several different source arguments,
-# permits a documented density exception without hiding decisive claims.
-assert 1200 <= n["prose"] <= 1450, n
-assert 1100 <= n["aids"] <= 1380, n
-assert 2350 <= n["prose"]+n["aids"] <= 2750, n
+# The approved programme density is a binding normal target; retain the
+# full reasoning without expanding repeated explanations into a new article.
+assert 650 <= n["prose"] <= 850, n
+assert 850 <= n["aids"] <= 1150, n
+assert 1500 <= n["prose"]+n["aids"] <= 2000, n
 assert 1450 <= n["depth"] <= 1900, n
 
 assert 'id="ch2-1-5" style="--hue:28;"' in chapter
@@ -115,12 +115,12 @@ assert "apparently a highly unreliable source" in unescape(body).lower()
 assert "according to some accounts" in unescape(body).lower()
 assert "wolff does not treat mill's answer as conclusive" in unescape(body).lower()
 assert "injury to someone's interests is still not sufficient" in unescape(body).lower()
-assert "wolff even leaves open whether damage to interests is always a necessary condition" in unescape(body).lower()
-assert "does not include the subsequent demonstration" in plain
-assert "the supplied extract stops there" in plain
+assert "even questions whether injury is always necessary" in plain
+assert "ends before the subsequent justification" in plain
+assert "the supplied extract ends before" in plain
 # Prevent accidental promotion of the supporting syntheses' later demonstration
 # into an accomplished conclusion within the source-extract scope.
-assert 'the subsequent demonstration' in plain
+assert 'the subsequent justification' in plain
 assert 'the argument is unfinished in this extract' in unescape(chapter).lower()
 
 # Pre-existing semantics and independent study/revision architecture.
