@@ -70,7 +70,7 @@ stout = [x for x in manifest['companions'] if x['chapter'] == 'ch1-1-2']
 papineau = [x for x in manifest['companions'] if x['chapter'] == 'ch1-1-3']
 gutting = [x for x in manifest['companions'] if x['chapter'] == 'ch1-1-4']
 assert len(moran) == 10 and len(stout) == 24 and len(papineau) == 12 and len(gutting) == 12
-assert len(seen) == 90
+assert len(seen) == 109
 assert 'class="historical-timeline"' in chapters
 assert 'The One Thread to Follow' in chapters
 assert 'The four thinkers below are not four unrelated stories.' in chapters
@@ -213,6 +213,33 @@ for item in common_good:
 for disclosure in blocks:
     assert body[:disclosure.start()].rstrip().endswith('</p>'), "2.1.2 depth must be adjacent"
     assert ' open' not in disclosure.group(0).split('>',1)[0]
+    assert 'Colin Bird' in disclosure.group(0)
+    assert 'hikam-source-depth-citation' in disclosure.group(0)
+# Bird 2.1.3: source-proportionate 30-page War edition, with nineteen
+# contextual cues and fourteen grouped source records inside ten disclosures.
+begin = chapters.index('<section class="chapter" id="ch2-1-3"')
+after = chapters.index('<section class="chapter" id="ch2-1-4"', begin)
+html = chapters[begin:after]
+body = html[html.index('<div class="chapter-body">'):html.index('<nav class="chapter-endnav"')]
+war = [item for item in manifest['companions'] if item['chapter'] == 'ch2-1-3']
+assert len(war) == 19
+assert 'style="--hue:348;"' in html
+assert 'Original author: <strong>Colin Bird</strong>' in html
+assert 'Chapter 11, “War,”' in html and '2nd ed.' in html
+blocks = list(re.finditer(r'<details class="hikam-source-depth-inline"[\s\S]*?</details>', body))
+assert len(blocks) == 10
+assert body.count('class="hikam-source-depth-item"') == 14
+assert sum(int(m.group(1)) for b in blocks for m in re.finditer(r'data-depth-count="(\d+)"', b.group(0))) == 14
+for item in war:
+    assert item['source']['author'] == 'Colin Bird'
+    assert '2019' in item['source']['work']
+    assert all(item.get(k) for k in ('simple', 'why_here', 'remember'))
+    assert all(1 <= pg <= 30 for pg in item['source']['printedPages'])
+    if item.get('sourceDepthId'):
+        assert body.count('id="' + item['sourceDepthId'] + '"') == 1, item['id']
+for disclosure in blocks:
+    assert body[:disclosure.start()].rstrip().endswith('</p>'), 'War depth is not paragraph adjacent'
+    assert ' open' not in disclosure.group(0).split('>',1)[0], 'War depth starts open'
     assert 'Colin Bird' in disclosure.group(0)
     assert 'hikam-source-depth-citation' in disclosure.group(0)
 assert 'hikam-companion-context-field' in reader
