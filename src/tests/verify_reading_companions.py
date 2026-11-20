@@ -70,7 +70,7 @@ stout = [x for x in manifest['companions'] if x['chapter'] == 'ch1-1-2']
 papineau = [x for x in manifest['companions'] if x['chapter'] == 'ch1-1-3']
 gutting = [x for x in manifest['companions'] if x['chapter'] == 'ch1-1-4']
 assert len(moran) == 10 and len(stout) == 24 and len(papineau) == 12 and len(gutting) == 12
-assert len(seen) == 78
+assert len(seen) == 90
 assert 'class="historical-timeline"' in chapters
 assert 'The One Thread to Follow' in chapters
 assert 'The four thinkers below are not four unrelated stories.' in chapters
@@ -189,6 +189,31 @@ for disclosure in blocks:
     assert 'Colin Bird' in disclosure.group(0)
     assert body[:disclosure.start()].rstrip().endswith('</p>')
     assert ' open' not in disclosure.group(0).split('>',1)[0]
+    assert 'hikam-source-depth-citation' in disclosure.group(0)
+# Bird 2.1.2: twelve source-grounded contextual cues and six native,
+# paragraph-adjacent optional disclosures, separate from the prior introduction.
+begin = chapters.index('<section class="chapter" id="ch2-1-2"')
+after = chapters.index('<section class="chapter" id="ch2-1-3"', begin)
+html = chapters[begin:after]
+body = html[html.index('<div class="chapter-body">'):html.index('<nav class="chapter-endnav"')]
+common_good = [x for x in manifest['companions'] if x['chapter'] == 'ch2-1-2']
+assert len(common_good) == 12
+assert 'style="--hue:328;"' in html
+assert 'Original author: <strong>Colin Bird</strong>' in html
+assert '<h1 class="chapter-title">The Common Good</h1>' in html
+blocks = list(re.finditer(r'<details class="hikam-source-depth-inline"[\s\S]*?</details>', body))
+assert len(blocks) == 6
+assert body.count('class="hikam-source-depth-item"') == 6
+for item in common_good:
+    assert item['source']['author'] == 'Colin Bird'
+    assert all(item.get(k) for k in ('simple', 'why_here', 'remember'))
+    assert all(1 <= pg <= 10 for pg in item['source']['printedPages'])
+    if item.get('sourceDepthId'):
+        assert body.count('id="' + item['sourceDepthId'] + '"') == 1
+for disclosure in blocks:
+    assert body[:disclosure.start()].rstrip().endswith('</p>'), "2.1.2 depth must be adjacent"
+    assert ' open' not in disclosure.group(0).split('>',1)[0]
+    assert 'Colin Bird' in disclosure.group(0)
     assert 'hikam-source-depth-citation' in disclosure.group(0)
 assert 'hikam-companion-context-field' in reader
 assert 'item.simple && item.why_here && item.remember' in reader
