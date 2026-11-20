@@ -308,10 +308,10 @@ assert 'style="--hue:48;"' in html
 assert 'Original author: <strong>Jonathan Wolff</strong>' in html
 assert 'pp. 177–182' in html
 assert 'the promised feminist arguments' in body
-blocks = list(re.finditer(r'<details class="hikam-source-depth-inline"[\\s\\S]*?</details>', body))
+blocks = list(re.finditer(r'<details class="hikam-source-depth-inline"[\s\S]*?</details>', body))
 assert len(blocks) == 2
 assert body.count('class="hikam-source-depth-item"') == 2
-assert sum(int(m.group(1)) for b in blocks for m in re.finditer(r'data-depth-count="(\\d+)"', b.group(0))) == 2
+assert sum(int(m.group(1)) for b in blocks for m in re.finditer(r'data-depth-count="(\d+)"', b.group(0))) == 2
 for item in items:
     assert item['source']['author'] == 'Jonathan Wolff'
     assert all(177 <= pg <= 182 for pg in item['source']['printedPages'])
