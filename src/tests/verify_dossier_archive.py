@@ -90,7 +90,23 @@ def verify() -> None:
     assert "pre-revamp-2026-11-05" not in (
         ROOT / "src/main.html"
     ).read_text(encoding="utf-8"), "Archive must not enter the current book spine"
-    print("PASS: ten original dossiers match pinned Git blobs, with full revision systems")
+    # Subsequent dossiers use separately dated snapshots; the closed ten-file set
+    # above must never be enlarged or rewritten.
+    later = ROOT / "src/archive/pre-redevelopment-2026-11-21/dossier-2.1.6.html"
+    original = later.read_bytes()
+    assert blob_sha(original) == "eb45bb6ac0de1827cbf812bcc0f223c20ce3ed81", (
+        "2.1.6 pre-redevelopment snapshot changed"
+    )
+    html = original.decode("utf-8")
+    assert html.startswith('<section class="chapter" id="ch2-1-6"')
+    assert html.rstrip().endswith("</section>")
+    assert html.count('class="end-block"') == 1
+    assert all(title in html for title in REVISION_HEADINGS)
+    assert html.count('class="examq-cat"') >= 5
+    assert "pre-redevelopment-2026-11-21" not in (
+        ROOT / "src/main.html"
+    ).read_text(encoding="utf-8")
+    print("PASS: ten pinned original dossiers and full 2.1.6 pre-redevelopment snapshot")
 
 
 if __name__ == "__main__":
