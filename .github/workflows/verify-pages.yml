@@ -45,6 +45,8 @@ jobs:
         run: python src/tests/verify_common_good_source_fidelity.py
       - name: Verify Colin Bird War 2.1.3 source fidelity, exact Companions, optional depth and six-part revision
         run: python src/tests/verify_war_source_fidelity.py
+      - name: Verify Wolff 2.1.4 full source, exact Companions and six-part revision
+        run: python src/tests/verify_wolff_source_fidelity.py
       - name: Validate book structure and chapter navigation
         run: python src/tests/validate_structure.py
       - name: Validate accessible contents and print controls

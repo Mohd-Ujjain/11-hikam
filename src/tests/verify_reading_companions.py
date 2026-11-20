@@ -44,7 +44,7 @@ for item in manifest['companions']:
     seen.add(ident)
     assert re.fullmatch(r'ch\d+-\d+-\d+', item['chapter']), ident
     assert item['source']['printedPages'], f'No primary page reference: {ident}'
-    assert item['source']['author'] in ('Dermot Moran', 'Rowland Stout', 'David Papineau', 'Gary Gutting', 'Simon Critchley', 'Colin Bird'), ident
+    assert item['source']['author'] in ('Dermot Moran', 'Rowland Stout', 'David Papineau', 'Gary Gutting', 'Simon Critchley', 'Colin Bird', 'Jonathan Wolff'), ident
     assert 20 <= len(item['explanation'].split()) <= 110, f'Explanation out of pilot range: {ident}'
     assert item['added_value'].strip(), ident
     start = chapters.find(f'<section class="chapter" id="{item["chapter"]}"')
@@ -70,7 +70,7 @@ stout = [x for x in manifest['companions'] if x['chapter'] == 'ch1-1-2']
 papineau = [x for x in manifest['companions'] if x['chapter'] == 'ch1-1-3']
 gutting = [x for x in manifest['companions'] if x['chapter'] == 'ch1-1-4']
 assert len(moran) == 10 and len(stout) == 24 and len(papineau) == 12 and len(gutting) == 12
-assert len(seen) == 109
+assert len(seen) == 132
 assert 'class="historical-timeline"' in chapters
 assert 'The One Thread to Follow' in chapters
 assert 'The four thinkers below are not four unrelated stories.' in chapters
@@ -241,6 +241,34 @@ for disclosure in blocks:
     assert body[:disclosure.start()].rstrip().endswith('</p>'), 'War depth is not paragraph adjacent'
     assert ' open' not in disclosure.group(0).split('>',1)[0], 'War depth starts open'
     assert 'Colin Bird' in disclosure.group(0)
+    assert 'hikam-source-depth-citation' in disclosure.group(0)
+# Wolff 2.1.4: both original selections, nine adjacent native disclosures,
+# seventeen source records and 23 independently anchored contextual cues.
+begin = chapters.index('<section class="chapter" id="ch2-1-4"')
+after = chapters.index('<section class="chapter" id="ch2-1-5"', begin)
+html = chapters[begin:after]
+body = html[html.index('<div class="chapter-body">'):html.index('<nav class="chapter-endnav"')]
+wolff = [item for item in manifest['companions'] if item['chapter'] == 'ch2-1-4']
+assert len(wolff) == 23
+assert 'style="--hue:8;"' in html
+assert 'Original author: <strong>Jonathan Wolff</strong>' in html
+assert 'Oxford University Press' in html and '2006' in html
+assert '<h1 class="chapter-title">Introduction &amp; Who Should Rule?</h1>' in html
+blocks = list(re.finditer(r'<details class="hikam-source-depth-inline"[\s\S]*?</details>', body))
+assert len(blocks) == 9
+assert body.count('class="hikam-source-depth-item"') == 17
+assert sum(int(m.group(1)) for b in blocks for m in re.finditer(r'data-depth-count="(\d+)"', b.group(0))) == 17
+for item in wolff:
+    assert item['source']['author'] == 'Jonathan Wolff'
+    assert '2006' in item['source']['work']
+    assert all(item.get(k) for k in ('simple', 'why_here', 'remember'))
+    assert all((1 <= pg <= 5) or (62 <= pg <= 77) for pg in item['source']['printedPages'])
+    if item.get('sourceDepthId'):
+        assert body.count('id="' + item['sourceDepthId'] + '"') == 1, item['id']
+for disclosure in blocks:
+    assert body[:disclosure.start()].rstrip().endswith('</p>'), 'Wolff depth is not adjacent'
+    assert ' open' not in disclosure.group(0).split('>', 1)[0]
+    assert 'Jonathan Wolff' in disclosure.group(0)
     assert 'hikam-source-depth-citation' in disclosure.group(0)
 assert 'hikam-companion-context-field' in reader
 assert 'item.simple && item.why_here && item.remember' in reader
