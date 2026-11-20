@@ -1,7 +1,7 @@
 {
   "version": 1,
   "editorialPolicy": "src/docs/editorial/CONCISE_DOSSIER_AND_READING_COMPANIONS.md",
-  "description": "Source-grounded context-first Companions through Colin Bird 2.1.3; Source Depth remains in native paragraph-adjacent disclosures.",
+  "description": "Context-first source-grounded companions through Wolff 2.1.4, with source-author strictness and local optional evidence.",
   "companions": [
     {
       "id": "h111-russell-idealism",
@@ -2327,6 +2327,501 @@
       "why_here": "Bird asks whether this conflicts with the rule protecting civilians; he is not recommending their targeting.",
       "remember": "Responsibility and combatant status diverge.",
       "sourceDepthId": "source-depth-h213-command"
+    },
+    {
+      "id": "h214-power",
+      "chapter": "ch2-1-4",
+      "passage": "Locke defines that power by a right",
+      "text": "right to command and to punish disobedience",
+      "kind": "Contextual explanation",
+      "title": "How can law-making differ from mere force?",
+      "explanation": "Political authority claims that commands may rightly be enforced, with penalties if people disobey. Wolff introduces the legitimacy puzzle: the ability to coerce alone cannot tell us who is entitled to do it.",
+      "source": {
+        "author": "Jonathan Wolff",
+        "work": "An Introduction to Political Philosophy, revised edition (Oxford University Press, 2006), Introduction and Who Should Rule? (printed pages)",
+        "printedPages": [
+          1
+        ]
+      },
+      "added_value": "Clarifies the immediate question and its position in Wolff's supplied argument without importing material beyond the assigned extract.",
+      "simple": "Political authority claims that commands may rightly be enforced, with penalties if people disobey.",
+      "why_here": "Wolff introduces the legitimacy puzzle: the ability to coerce alone cannot tell us who is entitled to do it.",
+      "remember": "Power is a claim to rightful command.",
+      "sourceDepthId": "source-depth-h214-locke"
+    },
+    {
+      "id": "h214-autonomy",
+      "chapter": "ch2-1-4",
+      "passage": "Authority confronts autonomy.",
+      "text": "anarchist's plea",
+      "kind": "Contextual explanation",
+      "title": "Why put the anarchist and authoritarian together?",
+      "explanation": "The anarchist questions a person's right to order another about; the authoritarian stresses the dangers of having no enforcing authority. The contrast makes Wolff's subject the justification and limits of power, not mere preference for a political label.",
+      "source": {
+        "author": "Jonathan Wolff",
+        "work": "An Introduction to Political Philosophy, revised edition (Oxford University Press, 2006), Introduction and Who Should Rule? (printed pages)",
+        "printedPages": [
+          1,
+          2
+        ]
+      },
+      "added_value": "Clarifies the immediate question and its position in Wolff's supplied argument without importing material beyond the assigned extract.",
+      "simple": "The anarchist questions a person's right to order another about; the authoritarian stresses the dangers of having no enforcing authority.",
+      "why_here": "The contrast makes Wolff's subject the justification and limits of power, not mere preference for a political label.",
+      "remember": "The question is how authority can be justified.",
+      "sourceDepthId": "source-depth-h214-wealth"
+    },
+    {
+      "id": "h214-normative",
+      "chapter": "ch2-1-4",
+      "passage": "Political philosophy is normative",
+      "text": "normative",
+      "kind": "Contextual explanation",
+      "title": "What is a normative political question?",
+      "explanation": "It asks which arrangements would be fair or just rather than merely reporting which arrangements exist. Wolff needs a way to evaluate actual power structures instead of simply describing them.",
+      "source": {
+        "author": "Jonathan Wolff",
+        "work": "An Introduction to Political Philosophy, revised edition (Oxford University Press, 2006), Introduction and Who Should Rule? (printed pages)",
+        "printedPages": [
+          2
+        ]
+      },
+      "added_value": "Clarifies the immediate question and its position in Wolff's supplied argument without importing material beyond the assigned extract.",
+      "simple": "It asks which arrangements would be fair or just rather than merely reporting which arrangements exist.",
+      "why_here": "Wolff needs a way to evaluate actual power structures instead of simply describing them.",
+      "remember": "Normative means what ought to be.",
+      "sourceDepthId": "source-depth-h214-is-ought"
+    },
+    {
+      "id": "h214-no-hiding",
+      "chapter": "ch2-1-4",
+      "passage": "political agnosticism cannot suspend",
+      "text": "political agnosticism",
+      "kind": "Contextual explanation",
+      "title": "Why can't withdrawing remove the political question?",
+      "explanation": "Refusing to participate does not stop property being held or government power being exercised over people. Wolff explains why politics remains a practical concern even for someone unsure of the right answer.",
+      "source": {
+        "author": "Jonathan Wolff",
+        "work": "An Introduction to Political Philosophy, revised edition (Oxford University Press, 2006), Introduction and Who Should Rule? (printed pages)",
+        "printedPages": [
+          3,
+          4
+        ]
+      },
+      "added_value": "Clarifies the immediate question and its position in Wolff's supplied argument without importing material beyond the assigned extract.",
+      "simple": "Refusing to participate does not stop property being held or government power being exercised over people.",
+      "why_here": "Wolff explains why politics remains a practical concern even for someone unsure of the right answer.",
+      "remember": "Silence does not suspend the rules.",
+      "sourceDepthId": "source-depth-h214-no-hiding"
+    },
+    {
+      "id": "h214-praise",
+      "chapter": "ch2-1-4",
+      "passage": "critics call it merely a term of praise",
+      "text": "term of praise",
+      "kind": "Contextual explanation",
+      "title": "What does it mean to call democracy a praise-word?",
+      "explanation": "Different governments can claim the word while disagreeing about which institutions deserve it. This is why Wolff first distinguishes democracy's meanings before deciding whether it is desirable.",
+      "source": {
+        "author": "Jonathan Wolff",
+        "work": "An Introduction to Political Philosophy, revised edition (Oxford University Press, 2006), Introduction and Who Should Rule? (printed pages)",
+        "printedPages": [
+          62,
+          63
+        ]
+      },
+      "added_value": "Clarifies the immediate question and its position in Wolff's supplied argument without importing material beyond the assigned extract.",
+      "simple": "Different governments can claim the word while disagreeing about which institutions deserve it.",
+      "why_here": "This is why Wolff first distinguishes democracy's meanings before deciding whether it is desirable.",
+      "remember": "A popular name need not settle a definition.",
+      "sourceDepthId": "source-depth-h214-triad"
+    },
+    {
+      "id": "h214-majority",
+      "chapter": "ch2-1-4",
+      "passage": "Wolff presents this as a choice within democratic theory.",
+      "text": "Madisonian protection of minorities",
+      "kind": "Contextual explanation",
+      "title": "Why might democracy need something beyond 51%?",
+      "explanation": "If the majority can severely harm a smaller group, democratic legitimacy may also require safeguards for individual and minority rights. Wolff is distinguishing two rival accounts of what democracy itself demands.",
+      "source": {
+        "author": "Jonathan Wolff",
+        "work": "An Introduction to Political Philosophy, revised edition (Oxford University Press, 2006), Introduction and Who Should Rule? (printed pages)",
+        "printedPages": [
+          64,
+          65
+        ]
+      },
+      "added_value": "Clarifies the immediate question and its position in Wolff's supplied argument without importing material beyond the assigned extract.",
+      "simple": "If the majority can severely harm a smaller group, democratic legitimacy may also require safeguards for individual and minority rights.",
+      "why_here": "Wolff is distinguishing two rival accounts of what democracy itself demands.",
+      "remember": "Numbers and protections can pull apart.",
+      "sourceDepthId": "source-depth-h214-rights"
+    },
+    {
+      "id": "h214-direct",
+      "chapter": "ch2-1-4",
+      "passage": "In a direct democracy, citizens vote",
+      "text": "direct democracy",
+      "kind": "Contextual explanation",
+      "title": "What is direct democracy actually direct about?",
+      "explanation": "Citizens vote on laws and policies themselves instead of only choosing people who will decide them. Wolff contrasts direct participation with the representative arrangements common in large states.",
+      "source": {
+        "author": "Jonathan Wolff",
+        "work": "An Introduction to Political Philosophy, revised edition (Oxford University Press, 2006), Introduction and Who Should Rule? (printed pages)",
+        "printedPages": [
+          65
+        ]
+      },
+      "added_value": "Clarifies the immediate question and its position in Wolff's supplied argument without importing material beyond the assigned extract.",
+      "simple": "Citizens vote on laws and policies themselves instead of only choosing people who will decide them.",
+      "why_here": "Wolff contrasts direct participation with the representative arrangements common in large states.",
+      "remember": "The vote decides the issue.",
+      "sourceDepthId": "source-depth-h214-voting-design"
+    },
+    {
+      "id": "h214-lottery",
+      "chapter": "ch2-1-4",
+      "passage": "disputes over election versus lottery",
+      "text": "election versus lottery",
+      "kind": "Contextual explanation",
+      "title": "Why might an election be considered less democratic than a lottery?",
+      "explanation": "Popular candidates have an advantage in elections; selecting by lot can give less popular eligible citizens a more equal chance. Wolff uses the historical proposal to complicate what equal popular rule might require.",
+      "source": {
+        "author": "Jonathan Wolff",
+        "work": "An Introduction to Political Philosophy, revised edition (Oxford University Press, 2006), Introduction and Who Should Rule? (printed pages)",
+        "printedPages": [
+          65
+        ]
+      },
+      "added_value": "Clarifies the immediate question and its position in Wolff's supplied argument without importing material beyond the assigned extract.",
+      "simple": "Popular candidates have an advantage in elections; selecting by lot can give less popular eligible citizens a more equal chance.",
+      "why_here": "Wolff uses the historical proposal to complicate what equal popular rule might require.",
+      "remember": "Selection can be disputed too.",
+      "sourceDepthId": "source-depth-h214-voting-design"
+    },
+    {
+      "id": "h214-craft",
+      "chapter": "ch2-1-4",
+      "passage": "Plato exploits the two meanings",
+      "text": "craft analogy",
+      "kind": "Contextual explanation",
+      "title": "Why does Plato compare ruling with medicine?",
+      "explanation": "A sick person looks for someone trained to diagnose and treat illness, not an opinion poll of passers-by. Plato wants governing to be assigned according to competence in the same way.",
+      "source": {
+        "author": "Jonathan Wolff",
+        "work": "An Introduction to Political Philosophy, revised edition (Oxford University Press, 2006), Introduction and Who Should Rule? (printed pages)",
+        "printedPages": [
+          66,
+          67
+        ]
+      },
+      "added_value": "Clarifies the immediate question and its position in Wolff's supplied argument without importing material beyond the assigned extract.",
+      "simple": "A sick person looks for someone trained to diagnose and treat illness, not an opinion poll of passers-by.",
+      "why_here": "Plato wants governing to be assigned according to competence in the same way.",
+      "remember": "A craft requires skill.",
+      "sourceDepthId": "source-depth-h214-ship"
+    },
+    {
+      "id": "h214-navigator",
+      "chapter": "ch2-1-4",
+      "passage": "His ship has a powerful",
+      "text": "true navigator",
+      "kind": "Contextual explanation",
+      "title": "Who is the true navigator politically?",
+      "explanation": "The person who has acquired the knowledge needed to guide the vessel rather than merely the popularity needed to command its crew. In Plato's criticism, political expertise can be ignored when crowds reward manipulative speakers.",
+      "source": {
+        "author": "Jonathan Wolff",
+        "work": "An Introduction to Political Philosophy, revised edition (Oxford University Press, 2006), Introduction and Who Should Rule? (printed pages)",
+        "printedPages": [
+          66,
+          67
+        ]
+      },
+      "added_value": "Clarifies the immediate question and its position in Wolff's supplied argument without importing material beyond the assigned extract.",
+      "simple": "The person who has acquired the knowledge needed to guide the vessel rather than merely the popularity needed to command its crew.",
+      "why_here": "In Plato's criticism, political expertise can be ignored when crowds reward manipulative speakers.",
+      "remember": "Good navigators may be unpopular.",
+      "sourceDepthId": "source-depth-h214-ship"
+    },
+    {
+      "id": "h214-guardian",
+      "chapter": "ch2-1-4",
+      "passage": "The proposed remedy is rule by philosopher-guardians.",
+      "text": "rule by philosopher-guardians",
+      "kind": "Contextual explanation",
+      "title": "What distinguishes a guardian from an ordinary ruler?",
+      "explanation": "For Plato the ruler must be selected and formed by years of demanding intellectual and practical training. Wolff presents the guardian ideal as the consequence of ruling being a craft.",
+      "source": {
+        "author": "Jonathan Wolff",
+        "work": "An Introduction to Political Philosophy, revised edition (Oxford University Press, 2006), Introduction and Who Should Rule? (printed pages)",
+        "printedPages": [
+          67,
+          68
+        ]
+      },
+      "added_value": "Clarifies the immediate question and its position in Wolff's supplied argument without importing material beyond the assigned extract.",
+      "simple": "For Plato the ruler must be selected and formed by years of demanding intellectual and practical training.",
+      "why_here": "Wolff presents the guardian ideal as the consequence of ruling being a craft.",
+      "remember": "Guardianship grounds rule in expertise.",
+      "sourceDepthId": "source-depth-h214-training"
+    },
+    {
+      "id": "h214-guards",
+      "chapter": "ch2-1-4",
+      "passage": "Plato's guardians might enrich themselves",
+      "text": "who guards the guardians?",
+      "kind": "Contextual explanation",
+      "title": "Why isn't excellent training enough to guarantee trustworthy rule?",
+      "explanation": "Even capable rulers might use unchecked authority to reward themselves or revise restrictions that inconvenience them. Wolff is testing the right to give experts power, not whether experts have useful knowledge.",
+      "source": {
+        "author": "Jonathan Wolff",
+        "work": "An Introduction to Political Philosophy, revised edition (Oxford University Press, 2006), Introduction and Who Should Rule? (printed pages)",
+        "printedPages": [
+          68,
+          69
+        ]
+      },
+      "added_value": "Clarifies the immediate question and its position in Wolff's supplied argument without importing material beyond the assigned extract.",
+      "simple": "Even capable rulers might use unchecked authority to reward themselves or revise restrictions that inconvenience them.",
+      "why_here": "Wolff is testing the right to give experts power, not whether experts have useful knowledge.",
+      "remember": "Expertise does not supply external scrutiny.",
+      "sourceDepthId": "source-depth-h214-corruption"
+    },
+    {
+      "id": "h214-fallibility",
+      "chapter": "ch2-1-4",
+      "passage": "Crucially, Wolff says these are",
+      "text": "not yet a triumphant defence of democracy",
+      "kind": "Contextual explanation",
+      "title": "Why is criticising dictatorship not a proof of democracy?",
+      "explanation": "Plato's arrangement might fail without demonstrating that popular rule is the best remaining alternative. Wolff deliberately leaves the anti-democratic craft objection standing until he finds a stronger democratic response.",
+      "source": {
+        "author": "Jonathan Wolff",
+        "work": "An Introduction to Political Philosophy, revised edition (Oxford University Press, 2006), Introduction and Who Should Rule? (printed pages)",
+        "printedPages": [
+          70
+        ]
+      },
+      "added_value": "Clarifies the immediate question and its position in Wolff's supplied argument without importing material beyond the assigned extract.",
+      "simple": "Plato's arrangement might fail without demonstrating that popular rule is the best remaining alternative.",
+      "why_here": "Wolff deliberately leaves the anti-democratic craft objection standing until he finds a stronger democratic response.",
+      "remember": "Refutation of one rival is not proof of another.",
+      "sourceDepthId": "source-depth-h214-corruption"
+    },
+    {
+      "id": "h214-relative-skill",
+      "chapter": "ch2-1-4",
+      "passage": "Nor does the claim that experts are fallible",
+      "text": "experts are fallible",
+      "kind": "Contextual explanation",
+      "title": "Why doesn't fallibility level all professional judgment?",
+      "explanation": "A doctor who sometimes makes mistakes may still be far more reliable than an untrained person pretending to be one. Wolff rejects the easy argument that limited knowledge eliminates political expertise.",
+      "source": {
+        "author": "Jonathan Wolff",
+        "work": "An Introduction to Political Philosophy, revised edition (Oxford University Press, 2006), Introduction and Who Should Rule? (printed pages)",
+        "printedPages": [
+          70,
+          71
+        ]
+      },
+      "added_value": "Clarifies the immediate question and its position in Wolff's supplied argument without importing material beyond the assigned extract.",
+      "simple": "A doctor who sometimes makes mistakes may still be far more reliable than an untrained person pretending to be one.",
+      "why_here": "Wolff rejects the easy argument that limited knowledge eliminates political expertise.",
+      "remember": "Fallible does not mean equally competent.",
+      "sourceDepthId": "source-depth-h214-fallibility"
+    },
+    {
+      "id": "h214-interests",
+      "chapter": "ch2-1-4",
+      "passage": "Expert knowledge does not automatically disclose",
+      "text": "citizens' competing interests",
+      "kind": "Contextual explanation",
+      "title": "How are interests different from professional knowledge?",
+      "explanation": "Knowing how to plan a road does not reveal who benefits from one possible route and who would lose. Wolff is shifting attention from how well rulers make plans to what people actually need and value.",
+      "source": {
+        "author": "Jonathan Wolff",
+        "work": "An Introduction to Political Philosophy, revised edition (Oxford University Press, 2006), Introduction and Who Should Rule? (printed pages)",
+        "printedPages": [
+          71,
+          72
+        ]
+      },
+      "added_value": "Clarifies the immediate question and its position in Wolff's supplied argument without importing material beyond the assigned extract.",
+      "simple": "Knowing how to plan a road does not reveal who benefits from one possible route and who would lose.",
+      "why_here": "Wolff is shifting attention from how well rulers make plans to what people actually need and value.",
+      "remember": "Skill doesn't reveal every preference.",
+      "sourceDepthId": "source-depth-h214-road"
+    },
+    {
+      "id": "h214-polling",
+      "chapter": "ch2-1-4",
+      "passage": "Opinion polling might disclose preferences",
+      "text": "Opinion polling",
+      "kind": "Contextual explanation",
+      "title": "Why does polling weaken a defence of elections?",
+      "explanation": "A survey can ask people more detailed questions about what they want than a yes/no election often can. If voting is defended only as a way to gather preferences, Wolff asks why a vote is uniquely necessary.",
+      "source": {
+        "author": "Jonathan Wolff",
+        "work": "An Introduction to Political Philosophy, revised edition (Oxford University Press, 2006), Introduction and Who Should Rule? (printed pages)",
+        "printedPages": [
+          73
+        ]
+      },
+      "added_value": "Clarifies the immediate question and its position in Wolff's supplied argument without importing material beyond the assigned extract.",
+      "simple": "A survey can ask people more detailed questions about what they want than a yes/no election often can.",
+      "why_here": "If voting is defended only as a way to gather preferences, Wolff asks why a vote is uniquely necessary.",
+      "remember": "A ballot is not always the best survey.",
+      "sourceDepthId": "source-depth-h214-road"
+    },
+    {
+      "id": "h214-mixed",
+      "chapter": "ch2-1-4",
+      "passage": "Wolff calls this a mixed-motivation mess",
+      "text": "mixed-motivation mess",
+      "kind": "Contextual explanation",
+      "title": "Why is a majority vote difficult to interpret here?",
+      "explanation": "Some people vote for what they prefer, while others vote according to a moral principle even against their preference. That mix means the winning option cannot be read as either a majority's desires or a shared belief about the good.",
+      "source": {
+        "author": "Jonathan Wolff",
+        "work": "An Introduction to Political Philosophy, revised edition (Oxford University Press, 2006), Introduction and Who Should Rule? (printed pages)",
+        "printedPages": [
+          73,
+          74
+        ]
+      },
+      "added_value": "Clarifies the immediate question and its position in Wolff's supplied argument without importing material beyond the assigned extract.",
+      "simple": "Some people vote for what they prefer, while others vote according to a moral principle even against their preference.",
+      "why_here": "That mix means the winning option cannot be read as either a majority's desires or a shared belief about the good.",
+      "remember": "The vote says what won, not why.",
+      "sourceDepthId": "source-depth-h214-smoking"
+    },
+    {
+      "id": "h214-jury",
+      "chapter": "ch2-1-4",
+      "passage": "Condorcet's jury theorem supplies a reply",
+      "text": "Condorcet's jury theorem",
+      "kind": "Contextual explanation",
+      "title": "How could many imperfect judgments outperform a single judgment?",
+      "explanation": "Wolff reports Condorcet's result: when individual voters are more often right than wrong, majority judgment becomes more reliable in a large group. This is a new defence of voting as a way to discover the common good rather than poll private interests.",
+      "source": {
+        "author": "Jonathan Wolff",
+        "work": "An Introduction to Political Philosophy, revised edition (Oxford University Press, 2006), Introduction and Who Should Rule? (printed pages)",
+        "printedPages": [
+          75
+        ]
+      },
+      "added_value": "Clarifies the immediate question and its position in Wolff's supplied argument without importing material beyond the assigned extract.",
+      "simple": "Wolff reports Condorcet's result: when individual voters are more often right than wrong, majority judgment becomes more reliable in a large group.",
+      "why_here": "This is a new defence of voting as a way to discover the common good rather than poll private interests.",
+      "remember": "The result needs its assumptions.",
+      "sourceDepthId": "source-depth-h214-condorcet"
+    },
+    {
+      "id": "h214-conditions",
+      "chapter": "ch2-1-4",
+      "passage": "But Wolff stresses two conditions",
+      "text": "two conditions",
+      "kind": "Contextual explanation",
+      "title": "Which two conditions control Condorcet's conclusion?",
+      "explanation": "Voters must have better-than-even judgment and must actually vote about what they regard as the common good. Wolff immediately warns that losing either requirement prevents the claimed democratic advantage.",
+      "source": {
+        "author": "Jonathan Wolff",
+        "work": "An Introduction to Political Philosophy, revised edition (Oxford University Press, 2006), Introduction and Who Should Rule? (printed pages)",
+        "printedPages": [
+          75
+        ]
+      },
+      "added_value": "Clarifies the immediate question and its position in Wolff's supplied argument without importing material beyond the assigned extract.",
+      "simple": "Voters must have better-than-even judgment and must actually vote about what they regard as the common good.",
+      "why_here": "Wolff immediately warns that losing either requirement prevents the claimed democratic advantage.",
+      "remember": "Competence plus common-good motivation.",
+      "sourceDepthId": "source-depth-h214-condorcet"
+    },
+    {
+      "id": "h214-intrinsic",
+      "chapter": "ch2-1-4",
+      "passage": "Wolff introduces an intrinsic defence",
+      "text": "intrinsic",
+      "kind": "Contextual explanation",
+      "title": "What makes democracy valuable in itself?",
+      "explanation": "Taking part in shaping decisions can matter even when an expert might produce a more efficient outcome. Wolff therefore moves from judging the result of ruling to judging the value of political participation.",
+      "source": {
+        "author": "Jonathan Wolff",
+        "work": "An Introduction to Political Philosophy, revised edition (Oxford University Press, 2006), Introduction and Who Should Rule? (printed pages)",
+        "printedPages": [
+          76
+        ]
+      },
+      "added_value": "Clarifies the immediate question and its position in Wolff's supplied argument without importing material beyond the assigned extract.",
+      "simple": "Taking part in shaping decisions can matter even when an expert might produce a more efficient outcome.",
+      "why_here": "Wolff therefore moves from judging the result of ruling to judging the value of political participation.",
+      "remember": "Process can have value as well as results.",
+      "sourceDepthId": "source-depth-h214-intrinsic"
+    },
+    {
+      "id": "h214-voyage",
+      "chapter": "ch2-1-4",
+      "passage": "A ship might undertake a training voyage",
+      "text": "training voyage",
+      "kind": "Contextual explanation",
+      "title": "Why would the voyage let everyone steer?",
+      "explanation": "A voyage for learning is not measured solely by the speed or efficiency of arrival; practising navigation is also an aim. Wolff uses it to loosen the grip of Plato's purely outcome-based ship comparison.",
+      "source": {
+        "author": "Jonathan Wolff",
+        "work": "An Introduction to Political Philosophy, revised edition (Oxford University Press, 2006), Introduction and Who Should Rule? (printed pages)",
+        "printedPages": [
+          76,
+          77
+        ]
+      },
+      "added_value": "Clarifies the immediate question and its position in Wolff's supplied argument without importing material beyond the assigned extract.",
+      "simple": "A voyage for learning is not measured solely by the speed or efficiency of arrival; practising navigation is also an aim.",
+      "why_here": "Wolff uses it to loosen the grip of Plato's purely outcome-based ship comparison.",
+      "remember": "Sometimes the voyage is for learning.",
+      "sourceDepthId": "source-depth-h214-intrinsic"
+    },
+    {
+      "id": "h214-freedom",
+      "chapter": "ch2-1-4",
+      "passage": "Wolff identifies freedom and equality",
+      "text": "freedom and equality",
+      "kind": "Contextual explanation",
+      "title": "How do freedom and equality enter the defence?",
+      "explanation": "Freedom gives each person some say in decisions affecting them; equality extends that opportunity to everyone. Wolff identifies these as reasons participation might be worthwhile independently of perfect policy results.",
+      "source": {
+        "author": "Jonathan Wolff",
+        "work": "An Introduction to Political Philosophy, revised edition (Oxford University Press, 2006), Introduction and Who Should Rule? (printed pages)",
+        "printedPages": [
+          77
+        ]
+      },
+      "added_value": "Clarifies the immediate question and its position in Wolff's supplied argument without importing material beyond the assigned extract.",
+      "simple": "Freedom gives each person some say in decisions affecting them; equality extends that opportunity to everyone.",
+      "why_here": "Wolff identifies these as reasons participation might be worthwhile independently of perfect policy results.",
+      "remember": "A voice, shared equally.",
+      "sourceDepthId": "source-depth-h214-rousseau"
+    },
+    {
+      "id": "h214-rousseau",
+      "chapter": "ch2-1-4",
+      "passage": "Rousseau asks how people can unite",
+      "text": "obey himself alone",
+      "kind": "Contextual explanation",
+      "title": "What does Rousseau's question demand?",
+      "explanation": "He asks how individuals could submit to a shared political arrangement while remaining free rather than simply obeying someone else. Wolff states this problem at the extract's endpoint; the proposed explanation follows in pages not supplied here.",
+      "source": {
+        "author": "Jonathan Wolff",
+        "work": "An Introduction to Political Philosophy, revised edition (Oxford University Press, 2006), Introduction and Who Should Rule? (printed pages)",
+        "printedPages": [
+          77
+        ]
+      },
+      "added_value": "Clarifies the immediate question and its position in Wolff's supplied argument without importing material beyond the assigned extract.",
+      "simple": "He asks how individuals could submit to a shared political arrangement while remaining free rather than simply obeying someone else.",
+      "why_here": "Wolff states this problem at the extract's endpoint; the proposed explanation follows in pages not supplied here.",
+      "remember": "This is the next question, not yet the answer.",
+      "sourceDepthId": "source-depth-h214-rousseau"
     }
   ]
 }
