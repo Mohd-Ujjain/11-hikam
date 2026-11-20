@@ -78,4 +78,17 @@ assert war_toc
 assert '<span class="tt">War</span>' in war_toc.group(1)
 assert '<span class="ts">Colin Bird · Cambridge</span>' in war_toc.group(1)
 
-print(f"Verified {len(READINGS)+3} primary-source titles and author credits in chapter frontmatter and TOC")
+# Wolff 2.1.4 combines the Oxford Introduction and opening Who Should Rule?
+wolff_start = bird_html.index('<section class="chapter" id="ch2-1-4"')
+wolff_end = bird_html.index('<nav class="chapter-endnav"', wolff_start)
+wolff = bird_html[wolff_start:wolff_end]
+assert '<h1 class="chapter-title">Introduction &amp; Who Should Rule?</h1>' in wolff
+assert 'Original author: <strong>Jonathan Wolff</strong>' in wolff
+assert '<em>An Introduction to Political Philosophy</em>' in wolff
+assert 'pp. 1–5' in wolff and 'pp. 62–77' in wolff
+assert 'Oxford University Press' in wolff and '2006' in wolff
+wolff_toc = re.search(r'<a class="toc-item" href="#ch2-1-4">([\s\S]*?)</a>', MAIN)
+assert wolff_toc
+assert '<span class="tt">Introduction &amp; Who Should Rule?</span>' in wolff_toc.group(1)
+assert '<span class="ts">Jonathan Wolff · Oxford</span>' in wolff_toc.group(1)
+print(f"Verified {len(READINGS)+4} primary-source titles and author credits in chapter frontmatter and TOC")
