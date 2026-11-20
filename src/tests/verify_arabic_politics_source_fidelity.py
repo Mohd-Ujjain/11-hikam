@@ -94,6 +94,11 @@ assert '«العمليات الاجتماعية المتميزة بالصراع 
 assert '«حيوان سياسي بطبعه»' in body
 assert 'النتائج والتغذية الراجعة' not in body or 'المعطيات' in body
 assert 'أربعة عناصر' not in body, "Easton enumerates exactly three elements in source"
+visible_body = re.sub(r'<details class="hikam-source-depth-inline"[\s\S]*?</details>', "", body)
+assert "التقصير في معرفة الشريعة ومعرفة الواقع" in visible_body
+assert "العمل السياسي الجاري تاريخ معاصر" in visible_body
+assert "أول تراث سياسي مكتوب وصل إلينا" in visible_body
+assert "هيمنة الكنيسة البابوية" in visible_body
 
 manifest = json.loads((ROOT / "src/reading_companions.json").read_text(encoding="utf-8"))
 items = [x for x in manifest["companions"] if x["chapter"] == "ch2-1-7"]

@@ -155,7 +155,10 @@ def full_text_and_keyboard(browser, url):
         variants.append(page.evaluate('window.__hikamFullTextSearch.getStats().matched'))
     assert variants[0] > 0 and variants[0] == variants[1], f'Arabic normalization mismatch: {variants}'
     inp.fill('الله')
-    page.evaluate('window.__hikamFullTextSearch.run()')
+    # Wait for the reader's real debounced input search. Calling run()
+    # immediately leaves the 120ms input timer pending, which can reset
+    # the long Show-more list while results are being expanded.
+    page.wait_for_function('window.__hikamFullTextSearch.getStats().matched > 45')
     total = page.evaluate('window.__hikamFullTextSearch.getStats().matched')
     assert total > 45, f'The long-result test needs >45 hits, got {total}'
     for _ in range(50):

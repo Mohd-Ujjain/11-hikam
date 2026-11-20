@@ -47,11 +47,17 @@ for item in manifest['companions']:
     assert item['source']['author'] in ('Dermot Moran', 'Rowland Stout', 'David Papineau', 'Gary Gutting', 'Simon Critchley', 'Colin Bird', 'Jonathan Wolff', 'المؤلف غير مذكور في النص المقرر'), ident
     assert 20 <= len(item['explanation'].split()) <= 110, f'Explanation out of pilot range: {ident}'
     assert item['added_value'].strip(), ident
-    start = chapters.find(f'<section class="chapter" id="{item["chapter"]}"')
-    end = chapters.find('<section class="chapter" id="', start + 20)
-    if end < 0:
-        end = len(chapters)
-    assert start >= 0 and end > start, item['chapter']
+    # Arabic chapters are existing "chapter rtl" sections; match both
+    # established spellings without changing any chapter markup.
+    open_match = re.search(
+        r'<section class="chapter(?: rtl)?" id="' + re.escape(item["chapter"]) + r'"',
+        chapters,
+    )
+    start = open_match.start() if open_match else -1
+    assert start >= 0, item['chapter']
+    next_match = re.search(r'<section class="chapter(?: rtl)?" id="', chapters[start + 20:])
+    end = (start + 20 + next_match.start()) if next_match else len(chapters)
+    assert end > start, item['chapter']
     body = chapters[start:end]
     body = body[body.index('<div class="chapter-body">'):]
     # Exclude intentionally hidden optional Source Depth before checking prose
