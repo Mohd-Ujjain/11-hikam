@@ -1,5 +1,8 @@
 # 2.1.3 — Colin Bird, “War”: Complete Source-to-Dossier Register
 
+> **Current published edition — concise re-pass, 21 November 2026.** The authoritative source-faithful **2.1.3 — War** dossier now measures **780 prose + 1,117 aids = 1,897 visible**, meeting the adopted individual prose, aid and combined word bands. Figures below describing **1,234 prose + 1,184 aids = 2,418 visible** document the **earlier historical release**, not the present chapter. See the [current three-dossier coverage audit](READINGS_2_1_3_TO_2_1_5_CONCISE_REPASS.md), [original PR #31](https://github.com/MohdUjjain/11-hikam/pull/31), [passing post-merge suite](https://github.com/MohdUjjain/11-hikam/actions/runs/44806050346), and [Pages deployment](https://github.com/MohdUjjain/11-hikam/actions/runs/44806049856). Original source boundaries, separately cited optional material and all six revision sections remain intact. The archived previous dossiers are unchanged.
+
+
 **Original reading:** Colin Bird, *An Introduction to Political Philosophy*, **second edition (Cambridge University Press, 2019), chapter 11, “War.”** The supplied primary reading is a **30-page PDF extract**. All references below count PDF pages **1–30**, because the user's document extraction does not supply dependable printed folios.
 
 **Edition resolution:** This is not the same numbered chapter as the 2006 first edition, which labels “War” chapter **10**. The supplied document itself is headed **11 — War**. Cambridge's book listings independently verify that “War” is chapter 11 in the **2019 second edition** and chapter 10 in the **2006 first edition**:
