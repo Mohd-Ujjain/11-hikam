@@ -74,7 +74,7 @@ for disclosure in blocks:
     assert 'hikam-source-depth-citation' in disclosure.group(0)
 
 visible = re.sub(r'<details class="hikam-source-depth-inline"[\s\S]*?</details>', '', body)
-plain = unescape(re.sub(r'<[^>]+>', ' ',visible)).lower()
+plain = ' '.join(unescape(re.sub(r'<[^>]+>', ' ', visible)).split()).lower()
 # Complete units in original narrative order, not merely popup material.
 source_units = (
     # 104–106: rationale and principle
