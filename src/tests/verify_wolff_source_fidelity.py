@@ -107,7 +107,7 @@ for phrase in (
     "not yet a triumphant defence of democracy",
     "Wolff explicitly rejects",
     "Condorcet himself doubts",
-    "the general-will theory is not yet developed",
+    "the explanatory account of the general will is",
 ):
     assert phrase.lower() in unescape(chapter).lower(), phrase
 assert "the supplied extract stops" in plain
