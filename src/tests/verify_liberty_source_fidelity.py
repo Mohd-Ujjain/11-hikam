@@ -102,7 +102,7 @@ source_units = (
     "rights",
     # 114–116: rights problem, Bentham and natural-rights debate
     "rights-based interests", "natural rights", "bentham",
-    "locke", "existing legal protections", "current laws",
+    "locke", "existing legal protections", "laws already in force",
     # 116–117: limited exposition of utility and exact terminal question
     "utility", "progressive beings", "utilitarian legislator",
     "maximise happiness", "not so obvious",
@@ -121,7 +121,7 @@ assert "the supplied extract stops there" in plain
 # Prevent accidental promotion of the supporting syntheses' later demonstration
 # into an accomplished conclusion within the source-extract scope.
 assert 'the subsequent demonstration' in plain
-assert 'the unfinished legislator' in unescape(chapter).lower()
+assert 'the argument is unfinished in this extract' in unescape(chapter).lower()
 
 # Pre-existing semantics and independent study/revision architecture.
 for css in ("box concept","box definition","box mistake","box highyield",
