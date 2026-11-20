@@ -1,7 +1,7 @@
 {
   "version": 1,
   "editorialPolicy": "src/docs/editorial/CONCISE_DOSSIER_AND_READING_COMPANIONS.md",
-  "description": "Context-first source-grounded companions through Wolff 2.1.5, with source-author strictness and local optional evidence.",
+  "description": "Context-first source-grounded companions through Wolff 2.1.6, with source-author strictness and local optional evidence.",
   "companions": [
     {
       "id": "h111-russell-idealism",
@@ -3295,6 +3295,87 @@
       "why_here": "The extract raises the practical question of how a utilitarian system of laws should be designed but stops before its answer.",
       "remember": "A goal is not yet a system of laws.",
       "sourceDepthId": "source-depth-h215-ending"
+    },
+    {
+      "id": "h216-moral-bond",
+      "chapter": "ch2-1-6",
+      "passage": "Neither fact settles the moral bond between individuals and society.",
+      "text": "moral bond",
+      "kind": "Contextual explanation",
+      "title": "What is Wolff asking about the moral bond?",
+      "explanation": "The question is not which came first in time. It is which obligations individuals owe society, which obligations society owes individuals, and how those claims can be justified. Wolff shifts away from historical or chronological priority because those questions cannot answer the moral question he needs to examine.",
+      "source": {
+        "author": "Jonathan Wolff",
+        "work": "An Introduction to Political Philosophy, revised Oxford University Press edition (2006), Individualism, Justice, Feminism",
+        "printedPages": [
+          178
+        ]
+      },
+      "added_value": "Explains the immediate idea and its role in Wolff's argument without adding any independent philosophical claim.",
+      "simple": "The question is not which came first in time. It is which obligations individuals owe society, which obligations society owes individuals, and how those claims can be justified.",
+      "why_here": "Wolff shifts away from historical or chronological priority because those questions cannot answer the moral question he needs to examine.",
+      "remember": "Priority here concerns justification, not dates."
+    },
+    {
+      "id": "h216-analytical-model",
+      "chapter": "ch2-1-6",
+      "passage": "Wolff deliberately defines extreme liberal individualism.",
+      "text": "extreme liberal individualism",
+      "kind": "Contextual explanation",
+      "title": "Why construct an extreme position?",
+      "explanation": "Wolff gathers four clear claims into one deliberately sharp model. He is not saying that Locke, Rawls or any other named thinker must accept all four together. This makes separate claims testable and allows critics to reject a specific part instead of attacking a vague slogan.",
+      "source": {
+        "author": "Jonathan Wolff",
+        "work": "An Introduction to Political Philosophy, revised Oxford University Press edition (2006), Individualism, Justice, Feminism",
+        "printedPages": [
+          178,
+          179
+        ]
+      },
+      "added_value": "Explains the immediate idea and its role in Wolff's argument without adding any independent philosophical claim.",
+      "simple": "Wolff gathers four clear claims into one deliberately sharp model. He is not saying that Locke, Rawls or any other named thinker must accept all four together.",
+      "why_here": "This makes separate claims testable and allows critics to reject a specific part instead of attacking a vague slogan.",
+      "remember": "A model for analysis, not an attributed creed."
+    },
+    {
+      "id": "h216-unchosen-duties",
+      "chapter": "ch2-1-6",
+      "passage": "some duties can bind a person without any promise.",
+      "text": "without any promise",
+      "kind": "Contextual explanation",
+      "title": "How can there be a duty without consent?",
+      "explanation": "A promise can create a new obligation, but it is not the only possible source of duty. Wolff notes Locke’s example of a duty not to harm others, which does not wait for an agreement. This example explains why even a liberal individualist need not accept the extreme thesis that all duties arise through personal actions.",
+      "source": {
+        "author": "Jonathan Wolff",
+        "work": "An Introduction to Political Philosophy, revised Oxford University Press edition (2006), Individualism, Justice, Feminism",
+        "printedPages": [
+          181
+        ]
+      },
+      "added_value": "Explains the immediate idea and its role in Wolff's argument without adding any independent philosophical claim.",
+      "simple": "A promise can create a new obligation, but it is not the only possible source of duty. Wolff notes Locke’s example of a duty not to harm others, which does not wait for an agreement.",
+      "why_here": "This example explains why even a liberal individualist need not accept the extreme thesis that all duties arise through personal actions.",
+      "remember": "Not all obligations are chosen."
+    },
+    {
+      "id": "h216-feminist-next",
+      "chapter": "ch2-1-6",
+      "passage": "The supplied extract ends with this programme; it does not yet give the promised feminist arguments.",
+      "text": "ends with this programme",
+      "kind": "Contextual explanation",
+      "title": "What does this chapter actually establish about feminism?",
+      "explanation": "These pages explain why Wolff chooses feminist political philosophy as the next test of individualism. They announce two lines of inquiry but do not yet examine their detailed arguments. The closing transition establishes the purpose of the next discussion, not its results.",
+      "source": {
+        "author": "Jonathan Wolff",
+        "work": "An Introduction to Political Philosophy, revised Oxford University Press edition (2006), Individualism, Justice, Feminism",
+        "printedPages": [
+          182
+        ]
+      },
+      "added_value": "Explains the immediate idea and its role in Wolff's argument without adding any independent philosophical claim.",
+      "simple": "These pages explain why Wolff chooses feminist political philosophy as the next test of individualism. They announce two lines of inquiry but do not yet examine their detailed arguments.",
+      "why_here": "The closing transition establishes the purpose of the next discussion, not its results.",
+      "remember": "A research programme, not a verdict."
     }
   ]
 }
