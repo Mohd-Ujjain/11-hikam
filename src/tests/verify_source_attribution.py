@@ -73,7 +73,7 @@ assert '<h1 class="chapter-title">War</h1>' in war
 assert 'Original author: <strong>Colin Bird</strong>' in war
 assert 'Chapter 11, “War,”' in war and '2nd ed.' in war and '2019' in war
 assert '<em>An Introduction to Political Philosophy</em>' in war
-war_toc = re.search(r'<a class="toc-item" href="#ch2-1-3">([\\s\\S]*?)</a>', MAIN)
+war_toc = re.search(r'<a class="toc-item" href="#ch2-1-3">([\s\S]*?)</a>', MAIN)
 assert war_toc
 assert '<span class="tt">War</span>' in war_toc.group(1)
 assert '<span class="ts">Colin Bird · Cambridge</span>' in war_toc.group(1)
