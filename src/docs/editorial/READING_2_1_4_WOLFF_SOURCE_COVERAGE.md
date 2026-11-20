@@ -47,15 +47,25 @@
 
 | Separate editorial pool | Current count | Evaluation |
 | --- | ---: | --- |
-| Visible explanatory prose | **1,404** words | Deliberately over the programme average of 650–850 |
-| Visible study aids | **1,195** words | Slightly above the 850–1,150 average |
-| **Total immediately visible chapter body** | **2,599** words | Explicit exception: two readings and many independent source moves |
+| Visible explanatory prose | **1,430** words | Deliberately over the programme average of 650–850 |
+| Visible study aids | **1,247** words | Slightly above the 850–1,150 average |
+| **Total immediately visible chapter body** | **2,677** words | Explicit exception: two readings and many independent source moves |
 | Optional locally collapsed Source Depth | **1,682** words | Nine disclosures containing 17 independently cited original-source records |
 | Reading Companions | **23 exact contextual cues** | Chosen to resolve discrete local questions, not as a uniform quota |
 | Revision | **Six complete independent elements**, five question categories | Outside chapter-body density accounting |
 
 The original supplied text spans **21 PDF pages**, approximately **8,365 extracted words**, two separate selections and a source argument with many substantive reversals (Plato's expertise → weak anti-expert reply → votes fail to disclose preferences → conditional Condorcet reply → intrinsic-value alternative). Tightening beyond this point without transferring decisive visible steps to screen-only Source Depth would undermine comprehension and paper printing. The dedicated test records this justified exception. Reading Companions paraphrase the immediate visible question, not a substitute for argument.
 
-## Release requirements
+## Verified release — 20 November 2026
 
-Current status: **source-authored for secondary-fork verification; not yet published.** The new `src/tests/verify_wolff_source_fidelity.py` tests all source units, caveats, visible layers, page boundaries, exact cues, paragraph-adjacent disclosures, the actual Rousseau cutoff, 39 preserved dossiers and six revision components. Existing author/TOC, manifest, native no-JS, keyboard, mobile, RTL, chapter-hue contrast, print and offline PWA regressions are extended. Build output is generated **only** by `src/build.py`; no copyrighted PDF or secondary teaching text enters the repository. The fork tests must pass before generated files are committed there. Exact blobs are then transferred through an authoritative review PR and checked before and after merging, with Pages deployment separately confirmed.
+**Status: fully verified and published on authoritative `main`.** The published academic edition is at original-repository merge [`79088072`](https://github.com/MohdUjjain/11-hikam/commit/79088072d05195a4cb25d28fd9557f8f15ac0805).
+
+- **Author and source:** Jonathan Wolff, *An Introduction to Political Philosophy*, revised Oxford edition (2006), original **Introduction pp. 1–5** and **Who Should Rule? pp. 62–77** only. The next Rousseau argument is not in the supplied PDF. No user-supplied source PDF or three derivative working texts were committed.
+- **Independent secondary fork:** [successful run 44737649820](https://github.com/Mohd-Ujjain/11-hikam/actions/runs/44737649820), triggered by source commit `778e7da737042556bb0d84367b9486e4a75db58e`. It passed the canonical builder and all 39-dossier source and publication tests, 132 exact source-grounded Companions in the whole reader, all source-fidelity units, ninth rotating hue/colour contrast, keyboard/mobile/RTL/no-JavaScript Source Depth, real A4 Chromium PDF and print clones, search, revision controls and offline/PWA edition migration and failure tests. The verified output was committed **only to the fork after both jobs passed**.
+- **Exact safe transfer:** all 12 affected authored chapter/contents/manifest, tests, documentation and generated root/index/reference/service-worker Git blob hashes on the original review branch were verified **byte-for-byte identical** to the successful secondary fork. Fork-only workflow did not enter the original repository; the original Pages verification gained only the Wolff source-fidelity gate.
+- **Original review:** [PR #29](https://github.com/MohdUjjain/11-hikam/pull/29), [passing original PR verification 44738545054](https://github.com/MohdUjjain/11-hikam/actions/runs/44738545054); then merged into `main` as [`79088072`](https://github.com/MohdUjjain/11-hikam/commit/79088072d05195a4cb25d28fd9557f8f15ac0805).
+- **Independent post-merge results:** [successful run 44739056579](https://github.com/MohdUjjain/11-hikam/actions/runs/44739056579) and [successful Pages deployment 44739056012](https://github.com/MohdUjjain/11-hikam/actions/runs/44739056012) for that same exact merge commit. Authored chapter, TOC, 132-entry manifest, generated published/reference HTML and service worker were checked against the verified fork hashes again **after merging**.
+- **Read online:** [Dossier 2.1.4 — Introduction & Who Should Rule?](https://mohdujjain.github.io/11-hikam/#ch2-1-4).
+- **Editorial density:** the definitive test measured **1,430 visible prose + 1,247 instructional aid words = 2,677 visible words**, with **1,682 optional Source Depth words**. The slightly earlier preliminary counts in the draft coverage register were corrected here after restoring a genuine, pre-existing Hierarchy Recognition teaching aid. This is an explicitly recorded source-dependent exception, not a change to the programme average.
+
+This release-receipt update changes **only documentation** (root README and this audit); it does **not** modify any academic chapter, Companion record, CSS, JS, search/print behaviour, build script or generated publication output.
