@@ -9,11 +9,11 @@
 | Dossier | Original source | Previous prose | Concise prose | Previous aids | Concise aids | Previous visible | Concise visible |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: |
 | **2.1.3 — War** | Colin Bird, *An Introduction to Political Philosophy*, 2nd ed. (2019), chapter 11, 30-page PDF | 1,234 | **780** | 1,184 | **1,117** | 2,418 | **1,897** |
-| **2.1.4 — Introduction & Who Should Rule?** | Jonathan Wolff, *An Introduction to Political Philosophy*, revised 2006 ed., Introduction pp. 1–5 and Chapter 3 pp. 62–77 (21 pages) | 1,430 | **729** | 1,247 | **1,133** | 2,677 | **1,862** |
+| **2.1.4 — Introduction & Who Should Rule?** | Jonathan Wolff, *An Introduction to Political Philosophy*, revised 2006 ed., Introduction pp. 1–5 and Chapter 3 pp. 62–77 (21 pages) | 1,430 | **729** | 1,247 | **1,131** | 2,677 | **1,860** |
 | **2.1.5 — The Place of Liberty** | Jonathan Wolff, Chapter 4, pp. 104–117 (14 pages) | 1,331 | **715** | 1,202 | **1,113** | 2,533 | **1,828** |
-| **Total** | 65 pages of original supplied academic reading | **3,995** | **2,224** | **3,633** | **3,363** | **7,628** | **5,587** |
+| **Total** | 65 pages of original supplied academic reading | **3,995** | **2,224** | **3,633** | **3,361** | **7,628** | **5,585** |
 
-**Result:** All three fit the agreed **individual prose, aid and combined visible bands**; visible reading drops **2,041 words** while preserving the original source argument sequence and the existing revision system. Counts are direct word-layer measurements of the source HTML, not estimated page numbers or total DOM text. Rerun the three dedicated source-fidelity scripts before release for definitive CI confirmation.
+**Result:** All three fit the agreed **individual prose, aid and combined visible bands**; visible reading drops **2,043 words** while preserving the original source argument sequence and the existing revision system. Counts are direct word-layer measurements of the source HTML, not estimated page numbers or total DOM text. Rerun the three dedicated source-fidelity scripts before release for definitive CI confirmation.
 
 | Unchanged optional and revision material | 2.1.3 | 2.1.4 | 2.1.5 |
 | --- | ---: | ---: | ---: |
