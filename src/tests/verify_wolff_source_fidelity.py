@@ -42,11 +42,11 @@ class LayerCounter(HTMLParser):
 counter=LayerCounter()
 counter.feed(body)
 n=counter.counts
-# 21 substantial PDF pages and two chapters yield a deliberately longer
-# argument than the ordinary 1,500–2,000 average. The source controls length.
-assert 1300<=n["prose"]<=1500, n
-assert 1100<=n["aids"]<=1350, n
-assert 2350<=n["prose"]+n["aids"]<=2750, n
+# Normal policy ranges restored: complete source argument remains in
+# concise connected prose and purpose-built visible study aids.
+assert 650<=n["prose"]<=850, n
+assert 850<=n["aids"]<=1150, n
+assert 1500<=n["prose"]+n["aids"]<=2000, n
 assert 1550<=n["depth"]<=1900, n
 
 assert 'id="ch2-1-4" style="--hue:8;"' in chapter
@@ -85,18 +85,18 @@ units = (
     "plato", "demos", "craft analogy", "true navigator", "doctor",
     "sophists", "philosopher-guardians", "thirty", "fifteen years",
     # Guardianship objections and limits (68–71)
-    "who guards the guardians", "private property", "reluctantly",
-    "public scrutiny", "appointed elite", "not yet a triumphant",
-    "doctors make mistakes", "fallible",
+    "who guards the guardians", "private property", "reluctant turns governing",
+    "public scrutiny", "appointed experts", "not yet a triumphant",
+    "qualified doctor can err", "fallible",
     # Interests, voting and the epistemic test (71–75)
     "road", "competing interests", "hume", "opinion polling",
-    "student-house smoking", "mixed-motivation", "different questions",
-    "condorcet", "two conditions", "even chance", "common good",
+    "student-house smoking", "mixed-motivation", "ballot therefore reveals neither",
+    "condorcet", "two conditions", "better than chance", "common good",
     "condorcet himself doubts",
     # Values and exact limit (76–77)
-    "instrumental", "intrinsic", "hobbyist", "training voyage",
+    "instrumental", "intrinsic", "making one\'s own table", "training voyage",
     "freedom and equality", "rousseau", "obey himself alone",
-    "extract stops", "opening quotation",
+    "extract stops", "opening epigraph",
 )
 for phrase in units:
     assert phrase in plain, f"Original Wolff source unit absent from visible chapter: {phrase}"
