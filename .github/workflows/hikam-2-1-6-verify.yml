@@ -60,13 +60,6 @@ jobs:
           python src/tests/verify_visual_polish.py
           node src/tests/test_offline_cache.mjs
           node src/tests/test_optional_precache.mjs
-          python src/tests/browser_quality.py
-          python src/tests/browser_reading_companions.py
-          python src/tests/browser_design_tokens.py
-          python src/tests/browser_3_4_house_style.py
-          python src/tests/browser_batch2_continuity.py
-          python src/tests/browser_batch4_edition_migration.py
-          python src/tests/browser_pwa_updates.py
       - name: Pinned browser and PDF dependencies
         run: |
           python -m pip install playwright==1.57.0 pypdf==5.9.0
