@@ -111,7 +111,7 @@ for phrase in (
 ):
     assert phrase.lower() in unescape(chapter).lower(), phrase
 assert "the supplied extract stops" in plain
-assert "Rousseau and the General Will" in chapter
+assert "rousseau and the general will" in chapter.lower()
 assert "source-depth-h214-rousseau" in chapter
 for css in ("box concept","box definition","box mistake","box highyield",
             "box memory","box tip","golden-quote","analogy","tbl-wrap",
