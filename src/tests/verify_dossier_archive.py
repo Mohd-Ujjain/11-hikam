@@ -106,7 +106,21 @@ def verify() -> None:
     assert "pre-redevelopment-2026-11-21" not in (
         ROOT / "src/main.html"
     ).read_text(encoding="utf-8")
-    print("PASS: ten pinned original dossiers and full 2.1.6 pre-redevelopment snapshot")
+    original_217 = ROOT / "src/archive/pre-redevelopment-2026-11-21/dossier-2.1.7.html"
+    archived_217 = original_217.read_bytes()
+    assert blob_sha(archived_217) == "10d7b05acc14bcd58eb130abedead2b1930c2f55", (
+        "2.1.7 original Arabic dossier snapshot changed"
+    )
+    old_217 = archived_217.decode("utf-8")
+    assert old_217.startswith('<section class="chapter rtl" id="ch2-1-7" lang="ar"')
+    assert old_217.endswith("</section>")
+    assert old_217.count('class="end-block"') == 1
+    assert old_217.count('class="examq-cat"') == 5
+    assert old_217.count('class="endh"') == 6
+    assert "pre-redevelopment-2026-11-21" not in (
+        ROOT / "src/main.html"
+    ).read_text(encoding="utf-8")
+    print("PASS: ten pinned historical originals plus complete preserved 2.1.6 and Arabic 2.1.7")
 
 
 if __name__ == "__main__":

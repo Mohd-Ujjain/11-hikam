@@ -2,6 +2,8 @@
 
 `src/main.html` and `src/chapters/subtopic-*.html` are the canonical book source. Build the website with `python src/build.py` **from the repository root**. No build framework or package installation is required.
 
+**Arabic 2.1.7:** The current source-aligned edition uses the [16-page Arabic source and language-fidelity register](docs/editorial/READING_2_1_7_ARABIC_SOURCE_COVERAGE.md); its original full HTML section was [archived before replacement](archive/pre-redevelopment-2026-11-21/README.md). The three teaching syntheses, original DOCX and personal Arabic voice samples remain outside GitHub. Verify with `python src/tests/verify_arabic_politics_source_fidelity.py` in addition to all established checks.
+
 ## Subsequent dossier snapshots
 
 Dossier 2.1.6 was archived in full before its first replacement on 21 November 2026: [pre-redevelopment snapshot](archive/pre-redevelopment-2026-11-21/README.md). It is separately pinned and never a build input. The fixed original ten-dossier baseline below remains unchanged.

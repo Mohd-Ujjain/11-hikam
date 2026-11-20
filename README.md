@@ -8,6 +8,8 @@ This repository follows the same **published root → modular `src/` → organiz
 
 **Earlier historical preservation:** [Ten complete original dossier sections](src/archive/pre-revamp-2026-11-05/README.md) (1.1.1–1.1.5 and 2.1.1–2.1.5) have been preserved from the 5 November 2026 pre-revamp commit, with a pinned manifest and CI integrity check. These are read-only historical snapshots outside the published book; the revised `main` dossiers remain canonical.
 
+**Arabic dossier 2.1.7:** The source-faithful Arabic edition of *تطور علم السياسة* follows the user-supplied language-profile and three editorial protocols, with [the 16-page original-to-dossier coverage record](src/docs/editorial/READING_2_1_7_ARABIC_SOURCE_COVERAGE.md) and a [complete pre-redevelopment historical snapshot](src/archive/pre-redevelopment-2026-11-21/README.md). The source DOCX, profile and private Arabic writing samples are not published in this repository.
+
 ## Quick start
 
 Published GitHub Pages URL: **https://mohdujjain.github.io/11-hikam/**. GitHub Pages serves the root `index.html` from `main`, folder `/(root)`.
