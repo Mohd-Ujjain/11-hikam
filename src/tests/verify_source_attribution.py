@@ -64,4 +64,18 @@ assert common_toc
 assert '<span class="tt">The Common Good</span>' in common_toc.group(1)
 assert '<span class="ts">Colin Bird · Cambridge</span>' in common_toc.group(1)
 
-print(f"Verified {len(READINGS)+2} primary-source titles and author credits in chapter frontmatter and TOC")
+# 2.1.3 belongs to the second edition (2019): it is chapter 11, not
+# chapter 10 as in the distinct 2006 first edition.
+war_start = bird_html.index('<section class="chapter" id="ch2-1-3"')
+war_end = bird_html.index('<nav class="chapter-endnav"', war_start)
+war = bird_html[war_start:war_end]
+assert '<h1 class="chapter-title">War</h1>' in war
+assert 'Original author: <strong>Colin Bird</strong>' in war
+assert 'Chapter 11, “War,”' in war and '2nd ed.' in war and '2019' in war
+assert '<em>An Introduction to Political Philosophy</em>' in war
+war_toc = re.search(r'<a class="toc-item" href="#ch2-1-3">([\s\S]*?)</a>', MAIN)
+assert war_toc
+assert '<span class="tt">War</span>' in war_toc.group(1)
+assert '<span class="ts">Colin Bird · Cambridge</span>' in war_toc.group(1)
+
+print(f"Verified {len(READINGS)+3} primary-source titles and author credits in chapter frontmatter and TOC")
