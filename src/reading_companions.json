@@ -1,7 +1,7 @@
 {
   "version": 1,
   "editorialPolicy": "src/docs/editorial/CONCISE_DOSSIER_AND_READING_COMPANIONS.md",
-  "description": "Context-first source-grounded companions through Wolff 2.1.4, with source-author strictness and local optional evidence.",
+  "description": "Context-first source-grounded companions through Wolff 2.1.5, with source-author strictness and local optional evidence.",
   "companions": [
     {
       "id": "h111-russell-idealism",
@@ -2822,6 +2822,479 @@
       "why_here": "Wolff states this problem at the extract's endpoint; the proposed explanation follows in pages not supplied here.",
       "remember": "This is the next question, not yet the answer.",
       "sourceDepthId": "source-depth-h214-rousseau"
+    },
+    {
+      "id": "h215-majority",
+      "chapter": "ch2-1-5",
+      "passage": "Even a fair electoral procedure can produce",
+      "text": "tyranny of the majority",
+      "kind": "Contextual explanation",
+      "title": "How can democracy still threaten liberty?",
+      "explanation": "People who win elections can enact laws that disadvantage those who did not vote with them. Wolff begins by showing why a fair procedure is not by itself a guarantee of fair treatment.",
+      "source": {
+        "author": "Jonathan Wolff",
+        "work": "An Introduction to Political Philosophy, revised Oxford University Press edition (2006), chapter 4: The Place of Liberty (printed pages)",
+        "printedPages": [
+          104
+        ]
+      },
+      "added_value": "A precise local clarification of Wolff's current claim and why it occurs here; distinct source particulars remain separately cited in local optional depth.",
+      "simple": "People who win elections can enact laws that disadvantage those who did not vote with them.",
+      "why_here": "Wolff begins by showing why a fair procedure is not by itself a guarantee of fair treatment.",
+      "remember": "A majority can still oppress.",
+      "sourceDepthId": "source-depth-h215-spectrum"
+    },
+    {
+      "id": "h215-spectrum",
+      "chapter": "ch2-1-5",
+      "passage": "Mill rejects both extremes in the spectrum",
+      "text": "Anarchists",
+      "kind": "Contextual explanation",
+      "title": "Why doesn't more liberty simply mean no state?",
+      "explanation": "Without legal restraints, powerful or aggressive people can use their own freedom to exploit others. Wolff explains why Mill seeks a limit on government rather than eliminating all government.",
+      "source": {
+        "author": "Jonathan Wolff",
+        "work": "An Introduction to Political Philosophy, revised Oxford University Press edition (2006), chapter 4: The Place of Liberty (printed pages)",
+        "printedPages": [
+          105
+        ]
+      },
+      "added_value": "A precise local clarification of Wolff's current claim and why it occurs here; distinct source particulars remain separately cited in local optional depth.",
+      "simple": "Without legal restraints, powerful or aggressive people can use their own freedom to exploit others.",
+      "why_here": "Wolff explains why Mill seeks a limit on government rather than eliminating all government.",
+      "remember": "Liberty also needs some restraint.",
+      "sourceDepthId": "source-depth-h215-spectrum"
+    },
+    {
+      "id": "h215-custom",
+      "chapter": "ch2-1-5",
+      "passage": "He searches instead for a justified boundary",
+      "text": "arbitrary custom and popular morality",
+      "kind": "Contextual explanation",
+      "title": "Why can't custom define the correct limit?",
+      "explanation": "People may support a restriction because they are accustomed to it or dislike the conduct, without showing that it is justified. This is why Mill proposes a single principle that should be applied to each case.",
+      "source": {
+        "author": "Jonathan Wolff",
+        "work": "An Introduction to Political Philosophy, revised Oxford University Press edition (2006), chapter 4: The Place of Liberty (printed pages)",
+        "printedPages": [
+          105,
+          106
+        ]
+      },
+      "added_value": "A precise local clarification of Wolff's current claim and why it occurs here; distinct source particulars remain separately cited in local optional depth.",
+      "simple": "People may support a restriction because they are accustomed to it or dislike the conduct, without showing that it is justified.",
+      "why_here": "This is why Mill proposes a single principle that should be applied to each case.",
+      "remember": "Popularity is not justification.",
+      "sourceDepthId": "source-depth-h215-restrictions"
+    },
+    {
+      "id": "h215-principle",
+      "chapter": "ch2-1-5",
+      "passage": "Mill's Liberty Principle, also called",
+      "text": "Harm Principle",
+      "kind": "Contextual explanation",
+      "title": "What does the principle actually prohibit?",
+      "explanation": "It denies that a mature person's own physical or moral benefit is enough to justify coercion against their will. Wolff uses the principle to separate the individual's protected choices from conduct threatening others.",
+      "source": {
+        "author": "Jonathan Wolff",
+        "work": "An Introduction to Political Philosophy, revised Oxford University Press edition (2006), chapter 4: The Place of Liberty (printed pages)",
+        "printedPages": [
+          104,
+          106
+        ]
+      },
+      "added_value": "A precise local clarification of Wolff's current claim and why it occurs here; distinct source particulars remain separately cited in local optional depth.",
+      "simple": "It denies that a mature person's own physical or moral benefit is enough to justify coercion against their will.",
+      "why_here": "Wolff uses the principle to separate the individual's protected choices from conduct threatening others.",
+      "remember": "Another person's harm is the stated test.",
+      "sourceDepthId": "source-depth-h215-addiction"
+    },
+    {
+      "id": "h215-addiction",
+      "chapter": "ch2-1-5",
+      "passage": "Wolff makes the difficulty concrete",
+      "text": "drug addiction",
+      "kind": "Contextual explanation",
+      "title": "Why introduce a friend's addiction?",
+      "explanation": "It makes the principle difficult to accept: saving a person from their own injury seems compassionate, yet the rule denies that this alone justifies force. Wolff is testing how demanding Mill's distinction between self-harm and harm to others really is.",
+      "source": {
+        "author": "Jonathan Wolff",
+        "work": "An Introduction to Political Philosophy, revised Oxford University Press edition (2006), chapter 4: The Place of Liberty (printed pages)",
+        "printedPages": [
+          106
+        ]
+      },
+      "added_value": "A precise local clarification of Wolff's current claim and why it occurs here; distinct source particulars remain separately cited in local optional depth.",
+      "simple": "It makes the principle difficult to accept: saving a person from their own injury seems compassionate, yet the rule denies that this alone justifies force.",
+      "why_here": "Wolff is testing how demanding Mill's distinction between self-harm and harm to others really is.",
+      "remember": "A hard case for paternalism.",
+      "sourceDepthId": "source-depth-h215-addiction"
+    },
+    {
+      "id": "h215-maturity",
+      "chapter": "ch2-1-5",
+      "passage": "Mill does not present this rule",
+      "text": "maturity of their faculties",
+      "kind": "Contextual explanation",
+      "title": "What qualifies someone for Mill's liberty principle?",
+      "explanation": "Mill says the person must be developed enough to improve through their own discussion and judgment. Wolff highlights this stated limitation before testing where individual freedom ends.",
+      "source": {
+        "author": "Jonathan Wolff",
+        "work": "An Introduction to Political Philosophy, revised Oxford University Press edition (2006), chapter 4: The Place of Liberty (printed pages)",
+        "printedPages": [
+          106,
+          107
+        ]
+      },
+      "added_value": "A precise local clarification of Wolff's current claim and why it occurs here; distinct source particulars remain separately cited in local optional depth.",
+      "simple": "Mill says the person must be developed enough to improve through their own discussion and judgment.",
+      "why_here": "Wolff highlights this stated limitation before testing where individual freedom ends.",
+      "remember": "The rule has a maturity condition.",
+      "sourceDepthId": "source-depth-h215-maturity"
+    },
+    {
+      "id": "h215-three-views",
+      "chapter": "ch2-1-5",
+      "passage": "An unpopular view may be",
+      "text": "partly true",
+      "kind": "Contextual explanation",
+      "title": "Why discuss partial truth as a separate case?",
+      "explanation": "An established belief and its challenger may each capture something that the other misses. Mill thinks discussion can reveal those missing parts rather than forcing one side into silence.",
+      "source": {
+        "author": "Jonathan Wolff",
+        "work": "An Introduction to Political Philosophy, revised Oxford University Press edition (2006), chapter 4: The Place of Liberty (printed pages)",
+        "printedPages": [
+          107,
+          111
+        ]
+      },
+      "added_value": "A precise local clarification of Wolff's current claim and why it occurs here; distinct source particulars remain separately cited in local optional depth.",
+      "simple": "An established belief and its challenger may each capture something that the other misses.",
+      "why_here": "Mill thinks discussion can reveal those missing parts rather than forcing one side into silence.",
+      "remember": "Different views may each add truth.",
+      "sourceDepthId": "source-depth-h215-socrates"
+    },
+    {
+      "id": "h215-infallibility",
+      "chapter": "ch2-1-5",
+      "passage": "Suppression based solely on one's own certainty",
+      "text": "infallibility",
+      "kind": "Contextual explanation",
+      "title": "What is the censor assuming?",
+      "explanation": "Someone who bans disagreement on the strength of their own belief treats their judgment as unable to err. Wolff uses Mill's examples to separate conviction from genuine certainty.",
+      "source": {
+        "author": "Jonathan Wolff",
+        "work": "An Introduction to Political Philosophy, revised Oxford University Press edition (2006), chapter 4: The Place of Liberty (printed pages)",
+        "printedPages": [
+          107,
+          108
+        ]
+      },
+      "added_value": "A precise local clarification of Wolff's current claim and why it occurs here; distinct source particulars remain separately cited in local optional depth.",
+      "simple": "Someone who bans disagreement on the strength of their own belief treats their judgment as unable to err.",
+      "why_here": "Wolff uses Mill's examples to separate conviction from genuine certainty.",
+      "remember": "Confidence can be mistaken.",
+      "sourceDepthId": "source-depth-h215-socrates"
+    },
+    {
+      "id": "h215-alexandria",
+      "chapter": "ch2-1-5",
+      "passage": "Wolff also recounts a story about the Library",
+      "text": "Library of Alexandria",
+      "kind": "Contextual explanation",
+      "title": "How should the library story be read here?",
+      "explanation": "Wolff presents the story as an illustration of censorship but explicitly says the later source reporting it appears unreliable. The example must remain a qualified historical report, not a documented fact about the library's destruction.",
+      "source": {
+        "author": "Jonathan Wolff",
+        "work": "An Introduction to Political Philosophy, revised Oxford University Press edition (2006), chapter 4: The Place of Liberty (printed pages)",
+        "printedPages": [
+          108
+        ]
+      },
+      "added_value": "A precise local clarification of Wolff's current claim and why it occurs here; distinct source particulars remain separately cited in local optional depth.",
+      "simple": "Wolff presents the story as an illustration of censorship but explicitly says the later source reporting it appears unreliable.",
+      "why_here": "The example must remain a qualified historical report, not a documented fact about the library's destruction.",
+      "remember": "Report is not verification.",
+      "sourceDepthId": "source-depth-h215-alexandria"
+    },
+    {
+      "id": "h215-rousseau",
+      "chapter": "ch2-1-5",
+      "passage": "Wolff next introduces a serious objection through",
+      "text": "Rousseau's",
+      "kind": "Contextual explanation",
+      "title": "Why does Rousseau challenge a defence of knowledge?",
+      "explanation": "Rousseau argues that advances in learning can corrupt morals and increase unhappiness rather than improve lives. Wolff tests whether learning the truth is always socially useful, not merely whether opinions are true.",
+      "source": {
+        "author": "Jonathan Wolff",
+        "work": "An Introduction to Political Philosophy, revised Oxford University Press edition (2006), chapter 4: The Place of Liberty (printed pages)",
+        "printedPages": [
+          109
+        ]
+      },
+      "added_value": "A precise local clarification of Wolff's current claim and why it occurs here; distinct source particulars remain separately cited in local optional depth.",
+      "simple": "Rousseau argues that advances in learning can corrupt morals and increase unhappiness rather than improve lives.",
+      "why_here": "Wolff tests whether learning the truth is always socially useful, not merely whether opinions are true.",
+      "remember": "Truth and usefulness can be questioned.",
+      "sourceDepthId": "source-depth-h215-rousseau"
+    },
+    {
+      "id": "h215-usefulness",
+      "chapter": "ch2-1-5",
+      "passage": "Mill's reply is that the alleged",
+      "text": "usefulness or danger of an opinion is itself disputable",
+      "kind": "Contextual explanation",
+      "title": "How does Mill answer the claim that truth harms society?",
+      "explanation": "Predictions that an idea will damage society may be as uncertain as claims that the idea is false. Wolff gives Mill's reply to the case for suppressing beliefs for their alleged social effects.",
+      "source": {
+        "author": "Jonathan Wolff",
+        "work": "An Introduction to Political Philosophy, revised Oxford University Press edition (2006), chapter 4: The Place of Liberty (printed pages)",
+        "printedPages": [
+          110
+        ]
+      },
+      "added_value": "A precise local clarification of Wolff's current claim and why it occurs here; distinct source particulars remain separately cited in local optional depth.",
+      "simple": "Predictions that an idea will damage society may be as uncertain as claims that the idea is false.",
+      "why_here": "Wolff gives Mill's reply to the case for suppressing beliefs for their alleged social effects.",
+      "remember": "Utility claims also need discussion.",
+      "sourceDepthId": "source-depth-h215-utility-belief"
+    },
+    {
+      "id": "h215-reservation",
+      "chapter": "ch2-1-5",
+      "passage": "Yet Wolff does not treat Mill's answer",
+      "text": "Wolff does not treat Mill's answer as conclusive",
+      "kind": "Contextual explanation",
+      "title": "What remains unresolved after Mill's reply?",
+      "explanation": "If we are unsure whether truth promotes happiness, that uncertainty by itself cannot prove that permission to discuss is preferable. Wolff identifies the extra assumption the argument appears to need.",
+      "source": {
+        "author": "Jonathan Wolff",
+        "work": "An Introduction to Political Philosophy, revised Oxford University Press edition (2006), chapter 4: The Place of Liberty (printed pages)",
+        "printedPages": [
+          110
+        ]
+      },
+      "added_value": "A precise local clarification of Wolff's current claim and why it occurs here; distinct source particulars remain separately cited in local optional depth.",
+      "simple": "If we are unsure whether truth promotes happiness, that uncertainty by itself cannot prove that permission to discuss is preferable.",
+      "why_here": "Wolff identifies the extra assumption the argument appears to need.",
+      "remember": "Fallibility alone favours neither option.",
+      "sourceDepthId": "source-depth-h215-utility-belief"
+    },
+    {
+      "id": "h215-dogma",
+      "chapter": "ch2-1-5",
+      "passage": "A true view may become a",
+      "text": "dead dogma",
+      "kind": "Contextual explanation",
+      "title": "How can a true belief still become weak?",
+      "explanation": "People may repeat it without remembering its reasons or knowing how to answer objections. Mill thinks challenge keeps a correct belief intellectually alive and influential in conduct.",
+      "source": {
+        "author": "Jonathan Wolff",
+        "work": "An Introduction to Political Philosophy, revised Oxford University Press edition (2006), chapter 4: The Place of Liberty (printed pages)",
+        "printedPages": [
+          110,
+          111
+        ]
+      },
+      "added_value": "A precise local clarification of Wolff's current claim and why it occurs here; distinct source particulars remain separately cited in local optional depth.",
+      "simple": "People may repeat it without remembering its reasons or knowing how to answer objections.",
+      "why_here": "Mill thinks challenge keeps a correct belief intellectually alive and influential in conduct.",
+      "remember": "True but unexamined is not fully understood.",
+      "sourceDepthId": "source-depth-h215-evolution"
+    },
+    {
+      "id": "h215-corn",
+      "chapter": "ch2-1-5",
+      "passage": "Mill nevertheless distinguishes protected discussion",
+      "text": "corn-dealers",
+      "kind": "Contextual explanation",
+      "title": "Why does the same statement receive different treatment?",
+      "explanation": "Public discussion of an opinion can be protected while speaking it to an agitated crowd at someone's house can create a threat. Wolff uses Mill's example to connect liberty of expression with the harm principle.",
+      "source": {
+        "author": "Jonathan Wolff",
+        "work": "An Introduction to Political Philosophy, revised Oxford University Press edition (2006), chapter 4: The Place of Liberty (printed pages)",
+        "printedPages": [
+          111,
+          112
+        ]
+      },
+      "added_value": "A precise local clarification of Wolff's current claim and why it occurs here; distinct source particulars remain separately cited in local optional depth.",
+      "simple": "Public discussion of an opinion can be protected while speaking it to an agitated crowd at someone's house can create a threat.",
+      "why_here": "Wolff uses Mill's example to connect liberty of expression with the harm principle.",
+      "remember": "Setting can turn speech into danger.",
+      "sourceDepthId": "source-depth-h215-corn"
+    },
+    {
+      "id": "h215-self",
+      "chapter": "ch2-1-5",
+      "passage": "Mill distinguishes self-regarding actions",
+      "text": "self-regarding actions",
+      "kind": "Contextual explanation",
+      "title": "What is self-regarding conduct?",
+      "explanation": "It concerns the person acting, or others who freely agree to participate. Wolff uses the distinction to identify a sphere where society should not interfere simply because it disapproves.",
+      "source": {
+        "author": "Jonathan Wolff",
+        "work": "An Introduction to Political Philosophy, revised Oxford University Press edition (2006), chapter 4: The Place of Liberty (printed pages)",
+        "printedPages": [
+          112
+        ]
+      },
+      "added_value": "A precise local clarification of Wolff's current claim and why it occurs here; distinct source particulars remain separately cited in local optional depth.",
+      "simple": "It concerns the person acting, or others who freely agree to participate.",
+      "why_here": "Wolff uses the distinction to identify a sphere where society should not interfere simply because it disapproves.",
+      "remember": "The action may be personal.",
+      "sourceDepthId": "source-depth-h215-offence"
+    },
+    {
+      "id": "h215-affected",
+      "chapter": "ch2-1-5",
+      "passage": "Being affected is not automatically being harmed.",
+      "text": "Being affected is not automatically being harmed",
+      "kind": "Contextual explanation",
+      "title": "Why isn't every effect on someone a harm?",
+      "explanation": "An action can alter someone's opportunities or cause annoyance without giving them a justified claim to stop it. Wolff is protecting Mill's liberty principle from expanding to almost every ordinary choice.",
+      "source": {
+        "author": "Jonathan Wolff",
+        "work": "An Introduction to Political Philosophy, revised Oxford University Press edition (2006), chapter 4: The Place of Liberty (printed pages)",
+        "printedPages": [
+          112,
+          113
+        ]
+      },
+      "added_value": "A precise local clarification of Wolff's current claim and why it occurs here; distinct source particulars remain separately cited in local optional depth.",
+      "simple": "An action can alter someone's opportunities or cause annoyance without giving them a justified claim to stop it.",
+      "why_here": "Wolff is protecting Mill's liberty principle from expanding to almost every ordinary choice.",
+      "remember": "Effect does not equal wrongful harm.",
+      "sourceDepthId": "source-depth-h215-offence"
+    },
+    {
+      "id": "h215-competition",
+      "chapter": "ch2-1-5",
+      "passage": "But injury to someone's interests is still not sufficient",
+      "text": "injury to someone's interests is still not sufficient",
+      "kind": "Contextual explanation",
+      "title": "Why doesn't losing a competition justify a ban?",
+      "explanation": "The winner's success may disappoint or disadvantage others, yet Mill does not think ordinary success should be prohibited. Wolff separates real setbacks from the special interests society ought to protect.",
+      "source": {
+        "author": "Jonathan Wolff",
+        "work": "An Introduction to Political Philosophy, revised Oxford University Press edition (2006), chapter 4: The Place of Liberty (printed pages)",
+        "printedPages": [
+          113,
+          114
+        ]
+      },
+      "added_value": "A precise local clarification of Wolff's current claim and why it occurs here; distinct source particulars remain separately cited in local optional depth.",
+      "simple": "The winner's success may disappoint or disadvantage others, yet Mill does not think ordinary success should be prohibited.",
+      "why_here": "Wolff separates real setbacks from the special interests society ought to protect.",
+      "remember": "Loss alone is not enough.",
+      "sourceDepthId": "source-depth-h215-competition"
+    },
+    {
+      "id": "h215-rights",
+      "chapter": "ch2-1-5",
+      "passage": "Wolff quotes Mill on interests that",
+      "text": "ought to be treated as rights",
+      "kind": "Contextual explanation",
+      "title": "Why shift from interests to rights?",
+      "explanation": "Many things matter to people, but only some merit a claim that others must respect or protect. Wolff needs a further standard to distinguish injury from justified limits on action.",
+      "source": {
+        "author": "Jonathan Wolff",
+        "work": "An Introduction to Political Philosophy, revised Oxford University Press edition (2006), chapter 4: The Place of Liberty (printed pages)",
+        "printedPages": [
+          114
+        ]
+      },
+      "added_value": "A precise local clarification of Wolff's current claim and why it occurs here; distinct source particulars remain separately cited in local optional depth.",
+      "simple": "Many things matter to people, but only some merit a claim that others must respect or protect.",
+      "why_here": "Wolff needs a further standard to distinguish injury from justified limits on action.",
+      "remember": "Some interests deserve special protection.",
+      "sourceDepthId": "source-depth-h215-aunt"
+    },
+    {
+      "id": "h215-natural",
+      "chapter": "ch2-1-5",
+      "passage": "Wolff considers the attraction of natural rights",
+      "text": "natural rights",
+      "kind": "Contextual explanation",
+      "title": "What difficulty does Wolff find with natural rights?",
+      "explanation": "If the rights are treated as basic truths, people who disagree may find no shared reason to decide which list is correct. This motivates Mill's search for a foundation that can defend rights rather than merely assert them.",
+      "source": {
+        "author": "Jonathan Wolff",
+        "work": "An Introduction to Political Philosophy, revised Oxford University Press edition (2006), chapter 4: The Place of Liberty (printed pages)",
+        "printedPages": [
+          115,
+          116
+        ]
+      },
+      "added_value": "A precise local clarification of Wolff's current claim and why it occurs here; distinct source particulars remain separately cited in local optional depth.",
+      "simple": "If the rights are treated as basic truths, people who disagree may find no shared reason to decide which list is correct.",
+      "why_here": "This motivates Mill's search for a foundation that can defend rights rather than merely assert them.",
+      "remember": "Rights lists need reasons.",
+      "sourceDepthId": "source-depth-h215-bentham"
+    },
+    {
+      "id": "h215-law",
+      "chapter": "ch2-1-5",
+      "passage": "But simply identifying rights with the laws",
+      "text": "laws already in force",
+      "kind": "Contextual explanation",
+      "title": "Why can't Mill rely on current law for rights?",
+      "explanation": "Existing law could embody the very customary prejudices and restrictions his theory aims to change. Wolff shows that a reforming moral argument cannot merely repeat the status quo.",
+      "source": {
+        "author": "Jonathan Wolff",
+        "work": "An Introduction to Political Philosophy, revised Oxford University Press edition (2006), chapter 4: The Place of Liberty (printed pages)",
+        "printedPages": [
+          116
+        ]
+      },
+      "added_value": "A precise local clarification of Wolff's current claim and why it occurs here; distinct source particulars remain separately cited in local optional depth.",
+      "simple": "Existing law could embody the very customary prejudices and restrictions his theory aims to change.",
+      "why_here": "Wolff shows that a reforming moral argument cannot merely repeat the status quo.",
+      "remember": "Existing law cannot be the final test.",
+      "sourceDepthId": "source-depth-h215-bentham"
+    },
+    {
+      "id": "h215-utility",
+      "chapter": "ch2-1-5",
+      "passage": "Mill's alternative is utility",
+      "text": "utility “in the largest sense,”",
+      "kind": "Contextual explanation",
+      "title": "What does utility supply as the basis of rights?",
+      "explanation": "A right should be defended because its protection serves general human happiness and enduring development. Wolff introduces this as Mill's proposed justification in place of abstract or merely conventional rights.",
+      "source": {
+        "author": "Jonathan Wolff",
+        "work": "An Introduction to Political Philosophy, revised Oxford University Press edition (2006), chapter 4: The Place of Liberty (printed pages)",
+        "printedPages": [
+          116,
+          117
+        ]
+      },
+      "added_value": "A precise local clarification of Wolff's current claim and why it occurs here; distinct source particulars remain separately cited in local optional depth.",
+      "simple": "A right should be defended because its protection serves general human happiness and enduring development.",
+      "why_here": "Wolff introduces this as Mill's proposed justification in place of abstract or merely conventional rights.",
+      "remember": "Protection must serve general utility.",
+      "sourceDepthId": "source-depth-h215-utility"
+    },
+    {
+      "id": "h215-legislator",
+      "chapter": "ch2-1-5",
+      "passage": "Wolff now asks readers to imagine a",
+      "text": "utilitarian legislator",
+      "kind": "Contextual explanation",
+      "title": "Why does Wolff end with a lawmaker?",
+      "explanation": "A legislator must choose what rules will promote happiness, not merely announce a good objective. The extract raises the practical question of how a utilitarian system of laws should be designed but stops before its answer.",
+      "source": {
+        "author": "Jonathan Wolff",
+        "work": "An Introduction to Political Philosophy, revised Oxford University Press edition (2006), chapter 4: The Place of Liberty (printed pages)",
+        "printedPages": [
+          117
+        ]
+      },
+      "added_value": "A precise local clarification of Wolff's current claim and why it occurs here; distinct source particulars remain separately cited in local optional depth.",
+      "simple": "A legislator must choose what rules will promote happiness, not merely announce a good objective.",
+      "why_here": "The extract raises the practical question of how a utilitarian system of laws should be designed but stops before its answer.",
+      "remember": "A goal is not yet a system of laws.",
+      "sourceDepthId": "source-depth-h215-ending"
     }
   ]
 }
