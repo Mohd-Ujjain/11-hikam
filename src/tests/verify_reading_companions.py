@@ -226,10 +226,10 @@ assert len(war) == 19
 assert 'style="--hue:348;"' in html
 assert 'Original author: <strong>Colin Bird</strong>' in html
 assert 'Chapter 11, “War,”' in html and '2nd ed.' in html
-blocks = list(re.finditer(r'<details class="hikam-source-depth-inline"[\\s\\S]*?</details>', body))
+blocks = list(re.finditer(r'<details class="hikam-source-depth-inline"[\s\S]*?</details>', body))
 assert len(blocks) == 10
 assert body.count('class="hikam-source-depth-item"') == 14
-assert sum(int(m.group(1)) for b in blocks for m in re.finditer(r'data-depth-count="(\\d+)"', b.group(0))) == 14
+assert sum(int(m.group(1)) for b in blocks for m in re.finditer(r'data-depth-count="(\d+)"', b.group(0))) == 14
 for item in war:
     assert item['source']['author'] == 'Colin Bird'
     assert '2019' in item['source']['work']
