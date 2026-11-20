@@ -91,4 +91,18 @@ wolff_toc = re.search(r'<a class="toc-item" href="#ch2-1-4">([\s\S]*?)</a>', MAI
 assert wolff_toc
 assert '<span class="tt">Introduction &amp; Who Should Rule?</span>' in wolff_toc.group(1)
 assert '<span class="ts">Jonathan Wolff · Oxford</span>' in wolff_toc.group(1)
-print(f"Verified {len(READINGS)+4} primary-source titles and author credits in chapter frontmatter and TOC")
+# Wolff 2.1.5: the distinct Oxford chapter is his own original work.
+liberty_start = bird_html.index('<section class="chapter" id="ch2-1-5"')
+liberty_end = bird_html.index('<nav class="chapter-endnav"', liberty_start)
+liberty = bird_html[liberty_start:liberty_end]
+assert '<h1 class="chapter-title">The Place of Liberty</h1>' in liberty
+assert 'Original author: <strong>Jonathan Wolff</strong>' in liberty
+assert '<em>An Introduction to Political Philosophy</em>' in liberty
+assert 'Chapter 4, “The Place of Liberty,”' in liberty
+assert 'pp. 104–117' in liberty
+assert 'Oxford University Press' in liberty and '2006' in liberty
+liberty_toc = re.search(r'<a class="toc-item" href="#ch2-1-5">([\s\S]*?)</a>', MAIN)
+assert liberty_toc
+assert '<span class="tt">The Place of Liberty</span>' in liberty_toc.group(1)
+assert '<span class="ts">Jonathan Wolff · Oxford</span>' in liberty_toc.group(1)
+print(f"Verified {len(READINGS)+5} primary-source titles and author credits in chapter frontmatter and TOC")
