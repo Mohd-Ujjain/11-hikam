@@ -6,6 +6,7 @@
 - **[Reading progress and resume](hosting/READING_POSITION.md)** — whole-book rail, per-chapter gauge, section highlighting and local saved place.
 - **[Hosting upgrade notes](hosting/HOSTING_UPGRADE_NOTES.md)** — social previews, update notification and font caching.
 - **[Windows migration and deployment](hosting/WINDOWS_CMD_DEPLOY.md)** — replace the previous flat checkout safely.
+- **[Original dossier archive and read-only policy](../archive/pre-revamp-2026-11-05/README.md)** — ten preserved pre-revamp dossiers, original Git commit, per-file content hashes, integrity checks and restoration guidance.
 - **[Standing language and source-fidelity refinement protocol](editorial/LANGUAGE_AND_SOURCE_FIDELITY_REFINEMENT_PROTOCOL.md)** — mandatory reading-by-reading editorial workflow, voice rules, equal care for study aids, and separate source-coverage pass.
 - **[Concise dossiers and Reading Companions](editorial/CONCISE_DOSSIER_AND_READING_COMPANIONS.md)** — adopted 650/850 word averages, coverage traceability, Arabic/English fidelity and a source-grounded contextual explanation design.
 - **[Binding context-first Companions and Source Depth](editorial/CONTEXT_FIRST_COMPANIONS_AND_SOURCE_DEPTH.md#8-binding-future-reading-protocol--accessibility-contextual-richness-and-source-depth)** — approved for Moran and Stout, including accessible rotating-hue dotted/solid cues, native paragraph-adjacent Source Depth, purposeful richer evidence and real timelines.

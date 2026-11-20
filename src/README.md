@@ -2,6 +2,10 @@
 
 `src/main.html` and `src/chapters/subtopic-*.html` are the canonical book source. Build the website with `python src/build.py` **from the repository root**. No build framework or package installation is required.
 
+## Preserved pre-revamp originals
+
+The [dated original-dossier archive](archive/pre-revamp-2026-11-05/README.md) holds the **full unmodified HTML chapter sections** for 1.1.1–1.1.5 and 2.1.1–2.1.5 from the 5 November 2026 baseline, including every original study aid and revision block. These are **not build inputs**. Do not edit or incorporate them into the live reader. Verify the pinned content with `python src/tests/verify_dossier_archive.py`; follow the standing editorial protocol to preserve future pre-edit snapshots.
+
 ## Authoring sequence
 
 1. Edit or add a `src/chapters/subtopic-*.html` fragment.

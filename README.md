@@ -4,6 +4,8 @@
 
 This repository follows the same **published root → modular `src/` → organized documentation/tests** model as [World History Dossier](https://github.com/MohdUjjain/world-history-dossier). The book text, interactive sidebar, print layout and offline app have not been redesigned during this directory migration.
 
+**Historical preservation:** [Ten complete original dossier sections](src/archive/pre-revamp-2026-11-05/README.md) (1.1.1–1.1.5 and 2.1.1–2.1.5) have been preserved from the 5 November 2026 pre-revamp commit, with a pinned manifest and CI integrity check. These are read-only historical snapshots outside the published book; the revised `main` dossiers remain canonical.
+
 ## Quick start
 
 Published GitHub Pages URL: **https://mohdujjain.github.io/11-hikam/**. GitHub Pages serves the root `index.html` from `main`, folder `/(root)`.

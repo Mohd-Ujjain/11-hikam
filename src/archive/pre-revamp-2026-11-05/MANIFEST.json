@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "description": "Unmodified historical chapter-section snapshots before the November 2026 editorial revamp",
+  "source_repository": "MohdUjjain/11-hikam",
+  "source_commit": "aa601b2441f81ab1469b37e64514b5c2f117b273",
+  "baseline_date": "2026-11-05",
+  "archived_on": "2026-11-21",
+  "policy": "Read-only by project policy and pinned hash test; never modify the archived fragments",
+  "entries": [
+    {
+      "dossier": "1.1.1",
+      "section_id": "ch1-1-1",
+      "title_at_baseline": "Towards an Assessment of Twentieth-Century Philosophy",
+      "archive_path": "src/archive/pre-revamp-2026-11-05/dossier-1.1.1.html",
+      "archive_git_blob_sha": "8519e267ca29786a5be2725b7406eab9e704a4df",
+      "original_module": "src/chapters/subtopic-1-1.html",
+      "original_module_git_blob_sha": "d6506007d70f5d868a9424763e5a42a7545cfa10"
+    },
+    {
+      "dossier": "1.1.2",
+      "section_id": "ch1-1-2",
+      "title_at_baseline": "Twentieth-Century Moral Philosophy",
+      "archive_path": "src/archive/pre-revamp-2026-11-05/dossier-1.1.2.html",
+      "archive_git_blob_sha": "f2e04101842693e17a43f45a3bfc8252fec0c179",
+      "original_module": "src/chapters/subtopic-1-1.html",
+      "original_module_git_blob_sha": "d6506007d70f5d868a9424763e5a42a7545cfa10"
+    },
+    {
+      "dossier": "1.1.3",
+      "section_id": "ch1-1-3",
+      "title_at_baseline": "Philosophy of Science",
+      "archive_path": "src/archive/pre-revamp-2026-11-05/dossier-1.1.3.html",
+      "archive_git_blob_sha": "c37214a498fd57803bedfaf946e0bfd7737722bf",
+      "original_module": "src/chapters/subtopic-1-1.html",
+      "original_module_git_blob_sha": "d6506007d70f5d868a9424763e5a42a7545cfa10"
+    },
+    {
+      "dossier": "1.1.4",
+      "section_id": "ch1-1-4",
+      "title_at_baseline": "Sartre, Foucault and Derrida",
+      "archive_path": "src/archive/pre-revamp-2026-11-05/dossier-1.1.4.html",
+      "archive_git_blob_sha": "be8c2762c75c1eb0434d27456f665de26aeede42",
+      "original_module": "src/chapters/subtopic-1-1.html",
+      "original_module_git_blob_sha": "d6506007d70f5d868a9424763e5a42a7545cfa10"
+    },
+    {
+      "dossier": "1.1.5",
+      "section_id": "ch1-1-5",
+      "title_at_baseline": "The Gap Between Knowledge and Wisdom",
+      "archive_path": "src/archive/pre-revamp-2026-11-05/dossier-1.1.5.html",
+      "archive_git_blob_sha": "4047bfa26f0e069732a8188676e7c3dd78d1f0f9",
+      "original_module": "src/chapters/subtopic-1-1.html",
+      "original_module_git_blob_sha": "d6506007d70f5d868a9424763e5a42a7545cfa10"
+    },
+    {
+      "dossier": "2.1.1",
+      "section_id": "ch2-1-1",
+      "title_at_baseline": "Introduction to Political Philosophy",
+      "archive_path": "src/archive/pre-revamp-2026-11-05/dossier-2.1.1.html",
+      "archive_git_blob_sha": "a106165e4592f372291092321fe813ff2051c5ea",
+      "original_module": "src/chapters/subtopic-2-1.html",
+      "original_module_git_blob_sha": "8bb5355829d1f12c7096316c452e859df6143a2e"
+    },
+    {
+      "dossier": "2.1.2",
+      "section_id": "ch2-1-2",
+      "title_at_baseline": "The Common Good",
+      "archive_path": "src/archive/pre-revamp-2026-11-05/dossier-2.1.2.html",
+      "archive_git_blob_sha": "5efd59bbec39309978fed3cccd43a8ccbdf36c20",
+      "original_module": "src/chapters/subtopic-2-1.html",
+      "original_module_git_blob_sha": "8bb5355829d1f12c7096316c452e859df6143a2e"
+    },
+    {
+      "dossier": "2.1.3",
+      "section_id": "ch2-1-3",
+      "title_at_baseline": "War",
+      "archive_path": "src/archive/pre-revamp-2026-11-05/dossier-2.1.3.html",
+      "archive_git_blob_sha": "c367bf7903d68ac91b54f165827e531ed712113f",
+      "original_module": "src/chapters/subtopic-2-1.html",
+      "original_module_git_blob_sha": "8bb5355829d1f12c7096316c452e859df6143a2e"
+    },
+    {
+      "dossier": "2.1.4",
+      "section_id": "ch2-1-4",
+      "title_at_baseline": "Introduction & Who Should Rule?",
+      "archive_path": "src/archive/pre-revamp-2026-11-05/dossier-2.1.4.html",
+      "archive_git_blob_sha": "489ffd440712f27d6bca17cc244a9b7d616146a4",
+      "original_module": "src/chapters/subtopic-2-1.html",
+      "original_module_git_blob_sha": "8bb5355829d1f12c7096316c452e859df6143a2e"
+    },
+    {
+      "dossier": "2.1.5",
+      "section_id": "ch2-1-5",
+      "title_at_baseline": "The Place of Liberty",
+      "archive_path": "src/archive/pre-revamp-2026-11-05/dossier-2.1.5.html",
+      "archive_git_blob_sha": "a0b27efff6716d37af26ca489d5fe6809a2348c4",
+      "original_module": "src/chapters/subtopic-2-1.html",
+      "original_module_git_blob_sha": "8bb5355829d1f12c7096316c452e859df6143a2e"
+    }
+  ]
+}

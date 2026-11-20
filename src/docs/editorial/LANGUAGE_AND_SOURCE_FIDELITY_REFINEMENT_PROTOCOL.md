@@ -281,3 +281,11 @@ Before undertaking a reading's language or fidelity pass:
 6. Report the actual files changed, source coverage reviewed, tests performed, and remaining limitations.
 
 **Final standard:** **Source fidelity + full intellectual coverage + accessible scholarly language + equal care for every established study aid + unchanged dossier architecture.** The result should be much easier to read but no poorer in content.
+
+## 21 November 2026 — Preserve the original dossier before rewriting it
+
+A [dated read-only historical archive](../../archive/pre-revamp-2026-11-05/README.md) now preserves the **complete pre-revamp chapter sections** for dossiers **1.1.1–1.1.5 and 2.1.1–2.1.5**, exactly as committed on 5 November 2026 (`aa601b2441f81ab1469b37e64514b5c2f117b273`). Frontmatter, body, pedagogical aids, all six revision sections and examination-question classes are preserved without rewriting. The [manifest](../../archive/pre-revamp-2026-11-05/MANIFEST.json) records exact Git blob hashes and source-module provenance.
+
+**Mandatory continuing safeguard:** before editing any as-yet-unrevised dossier for the first time, preserve its existing full chapter `<section>` in a **new, dated and integrity-checked pre-edit snapshot**. Do not overwrite historical archives or automatically restore earlier editorial errors to the current publication. The original reading remains the intellectual authority; `src/chapters/` remains the active canonical source. Archived fragments must never be inserted into the reader's book spine, search index, print output or offline package.
+
+Run `python src/tests/verify_dossier_archive.py` to confirm the ten preserved originals match their **independently pinned** Git objects; the publication CI also runs this verification. The archive is read-only by **policy and automated integrity gate**, not by GitHub file-level permissions. Maintain an additional offline or mirrored backup for protection against destructive history rewrites or repository deletion.

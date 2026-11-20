@@ -21,6 +21,8 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Verify the ten original archived dossier fragments and six-part revision blocks
+        run: python src/tests/verify_dossier_archive.py
       - name: Verify the published HTML and hashed service worker are current
         run: python src/build.py --check
       - name: Validate links, manifest, meta tags, and 39 dossiers
