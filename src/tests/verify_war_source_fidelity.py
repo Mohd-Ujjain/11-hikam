@@ -37,12 +37,11 @@ class LayerCounter(HTMLParser):
 layers=LayerCounter()
 layers.feed(body)
 n=layers.n
-# Deliberate, source-proportionate exception to the ordinary 650–850 + 850–1150
-# average: this original contains 30 PDF pages and numerous distinct
-# source objections/replies that must remain visible to a first-time reader.
-assert 1100 <= n["prose"] <= 1300, n
-assert 1000 <= n["aids"] <= 1250, n
-assert 2150 <= n["prose"]+n["aids"] <= 2500, n
+# Return to the adopted 18 November programme ranges without losing
+# the original's indispensable propositions, counterarguments and replies.
+assert 650 <= n["prose"] <= 850, n
+assert 850 <= n["aids"] <= 1150, n
+assert 1500 <= n["prose"]+n["aids"] <= 2000, n
 assert 1300 <= n["depth"] <= 1800, n
 
 assert 'id="ch2-1-3" style="--hue:348;"' in chapter
@@ -73,18 +72,18 @@ required=(
     "pacifists", "realists", "gandhi", "hobbes", "blameless liberty",
     "disposition to fight",
     # PDF pp. 6–11: enmity, both kinds of justice and difficulty of application
-    "cultivation of enmity", "morally coercive", "turn the other cheek",
+    "cultivation of enmity", "morally coercive", "turning the other cheek",
     "jus ad bellum", "jus in bello", "legitimate public declaration",
     "just cause", "right intention", "proportionality", "prospects",
     "last resort", "noncombatant immunity", "2003 invasion of iraq",
-    "elshtain", "catholic", "clear critical guidance",
+    "elshtain", "catholic", "substantially clear guidance",
     # PDF pp. 12–13: independence, sliding scale, Walzer
     "independent", "nazi", "sliding scale", "walzer",
     "supreme emergency", "1942", "civilians",
     # PDF pp. 14–19: sovereignty and human rights, peace/enmity
     "vattel", "un charter article 2(4)", "mutual forbearance",
     "cosmopolitan", "darrel moellendorf", "aquinas", "grotius",
-    "publicly acknowledging a just cause", "justice must trump peace",
+    "publicly acknowledging a just cause", "whether justice must outrank peace",
     # PDF pp. 20–22: kinds of pacifism and regulated force
     "radical pacifists", "just war pacifists", "nonviolent direct action",
     "martin luther king", "william penn", "force of the magistrate",
@@ -92,7 +91,7 @@ required=(
     "combatants necessarily forfeit", "conscripts", "sleepwalking attacker",
     "one restraining member", "c. e. m. joad", "civilian deaths",
     "known attackers", "imminent danger", "border crossings",
-    "planned attack next week", "excuse", "justification",
+    "attack planned next week", "excuse", "justification",
     "civilian officials who direct aggression", "london", "moscow",
 )
 for phrase in required:
@@ -101,15 +100,20 @@ for phrase in required:
 # Attribution/epistemic gates: do not convert inquiries into endorsement
 # of attacks on civilians, or assert that Bird finished his realist theory.
 for phrase in (
-    "Bird worries", "Bird argues", "may give a terrified person",
-    "does not necessarily establish", "Bird concludes",
-    "without fully resolving", "not a policy recommendation",
+    "bird accepts that unanimity is unrealistic",
+    "bird replies",
+    "sudden danger may",
+    "bird leaves this unresolved",
+    "a question rather than his completed verdict",
+    "without justifying it",
+    "some pacifists",
+    "moellendorf replies",
+    "walzer rejects",
+    "yet considers a narrow",
 ):
-    assert phrase.lower() in unescape(chapter).lower(), phrase
-assert "some pacifists" in visible
-assert "moellendorf can reply" in visible
-assert "bird finds this inadequate" in visible
-assert "walzer nonetheless allows" in visible
+    assert phrase in visible, phrase
+assert "not a policy recommendation" in unescape(chapter).lower()
+assert "bird accepts that unanimity is unrealistic, but insists" in visible
 assert "not as a policy recommendation" not in visible  # limitation belongs in optional author-specific record
 assert "Source Thought Experiment — The Sleepwalker" in body
 assert "Thomas Hobbes" in body
