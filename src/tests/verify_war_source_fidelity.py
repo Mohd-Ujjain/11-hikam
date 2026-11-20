@@ -107,9 +107,9 @@ for phrase in (
 ):
     assert phrase.lower() in unescape(chapter).lower(), phrase
 assert "some pacifists" in visible
-assert "Moellendorf can reply" in visible
-assert "Bird finds this inadequate" in visible
-assert "Walzer nonetheless allows" in visible
+assert "moellendorf can reply" in visible
+assert "bird finds this inadequate" in visible
+assert "walzer nonetheless allows" in visible
 assert "not as a policy recommendation" not in visible  # limitation belongs in optional author-specific record
 assert "Source Thought Experiment — The Sleepwalker" in body
 assert "Thomas Hobbes" in body
