@@ -1,7 +1,7 @@
 {
   "version": 1,
   "editorialPolicy": "src/docs/editorial/CONCISE_DOSSIER_AND_READING_COMPANIONS.md",
-  "description": "Source-grounded context-first companions for the completed 1.1 and 2.1.1–2.1.2 readings; optional source detail is placed in paragraph-adjacent Source Depth.",
+  "description": "Source-grounded context-first Companions through Colin Bird 2.1.3; Source Depth remains in native paragraph-adjacent disclosures.",
   "companions": [
     {
       "id": "h111-russell-idealism",
@@ -1914,6 +1914,419 @@
       "why_here": "The phrase matters because Bird is setting up a philosophical challenge to examine, not reporting a demonstrated empirical verdict here.",
       "remember": "The challenge depends on Plato's case.",
       "sourceDepthId": "source-depth-h212-medicine"
+    },
+    {
+      "id": "h213-institution",
+      "chapter": "ch2-1-3",
+      "passage": "war is an organised human practice",
+      "text": "organised human practice",
+      "kind": "Contextual explanation",
+      "title": "Why does organisation make war assessable?",
+      "explanation": "An army does not operate by impulse alone: leaders plan, soldiers obey rules, and institutions set expectations. Bird opens with this point because deliberate practices can be evaluated for their reasons and rules.",
+      "source": {
+        "author": "Colin Bird",
+        "work": "An Introduction to Political Philosophy, 2nd ed. (2019), chapter 11: War (supplied PDF page indices)",
+        "printedPages": [
+          1,
+          2
+        ]
+      },
+      "added_value": "Brief clarification of the current source passage and its argumentative role; additional primary-source context is separately disclosed.",
+      "simple": "An army does not operate by impulse alone: leaders plan, soldiers obey rules, and institutions set expectations.",
+      "why_here": "Bird opens with this point because deliberate practices can be evaluated for their reasons and rules.",
+      "remember": "An institution can be judged.",
+      "sourceDepthId": "source-depth-h213-truce"
+    },
+    {
+      "id": "h213-truce",
+      "chapter": "ch2-1-3",
+      "passage": "Bird invokes the 1914 Christmas Truce: opposing soldiers fraternised, then returned to their trenches and organised killing.",
+      "text": "1914 Christmas Truce",
+      "kind": "Contextual explanation",
+      "title": "What does Bird find disturbing about the truce?",
+      "explanation": "Former enemies treated one another as human companions briefly, yet later resumed their assigned military roles. Bird uses the contrast to show how institutional expectations can override personal fellowship.",
+      "source": {
+        "author": "Colin Bird",
+        "work": "An Introduction to Political Philosophy, 2nd ed. (2019), chapter 11: War (supplied PDF page indices)",
+        "printedPages": [
+          2
+        ]
+      },
+      "added_value": "Brief clarification of the current source passage and its argumentative role; additional primary-source context is separately disclosed.",
+      "simple": "Former enemies treated one another as human companions briefly, yet later resumed their assigned military roles.",
+      "why_here": "Bird uses the contrast to show how institutional expectations can override personal fellowship.",
+      "remember": "Fellowship did not end the institution of war.",
+      "sourceDepthId": "source-depth-h213-truce"
+    },
+    {
+      "id": "h213-hobbes",
+      "chapter": "ch2-1-3",
+      "passage": "War is not only battle but an enduring disposition to fight when no assurance of peace exists.",
+      "text": "disposition to fight",
+      "kind": "Contextual explanation",
+      "title": "Can war exist without anyone fighting at that moment?",
+      "explanation": "Hobbes calls a standing willingness to fight a condition of war even during periods with no shots fired. Bird needs this idea later when public declarations of just cause create hostility without initiating battle.",
+      "source": {
+        "author": "Colin Bird",
+        "work": "An Introduction to Political Philosophy, 2nd ed. (2019), chapter 11: War (supplied PDF page indices)",
+        "printedPages": [
+          5,
+          17,
+          18
+        ]
+      },
+      "added_value": "Brief clarification of the current source passage and its argumentative role; additional primary-source context is separately disclosed.",
+      "simple": "Hobbes calls a standing willingness to fight a condition of war even during periods with no shots fired.",
+      "why_here": "Bird needs this idea later when public declarations of just cause create hostility without initiating battle.",
+      "remember": "A known threat to fight can itself be a state of war.",
+      "sourceDepthId": "source-depth-h213-hobbes"
+    },
+    {
+      "id": "h213-enmity",
+      "chapter": "ch2-1-3",
+      "passage": "Bird calls the cultivation of enmity its defining characteristic.",
+      "text": "cultivation of enmity",
+      "kind": "Contextual explanation",
+      "title": "What does 'cultivating enmity' mean?",
+      "explanation": "It means treating others as enemies and creating a durable relationship of hostile opposition, not just one violent incident. This frames Bird's later worry that even identifying just cause can increase international hostility.",
+      "source": {
+        "author": "Colin Bird",
+        "work": "An Introduction to Political Philosophy, 2nd ed. (2019), chapter 11: War (supplied PDF page indices)",
+        "printedPages": [
+          6,
+          17
+        ]
+      },
+      "added_value": "Brief clarification of the current source passage and its argumentative role; additional primary-source context is separately disclosed.",
+      "simple": "It means treating others as enemies and creating a durable relationship of hostile opposition, not just one violent incident.",
+      "why_here": "This frames Bird's later worry that even identifying just cause can increase international hostility.",
+      "remember": "War makes and sustains enemies.",
+      "sourceDepthId": "source-depth-h213-aggression"
+    },
+    {
+      "id": "h213-morally-coercive",
+      "chapter": "ch2-1-3",
+      "passage": "Michael Walzer says aggression is “morally coercive”: it challenges victims' independence and draws them into defending their rights.",
+      "text": "morally coercive",
+      "kind": "Contextual explanation",
+      "title": "How can aggression morally coerce its victim?",
+      "explanation": "An attack confronts a victim with a threat to independence and puts pressure on that person to resist and vindicate their rights. Bird uses Walzer to explain why belligerence itself often generates the enmity it presupposes.",
+      "source": {
+        "author": "Colin Bird",
+        "work": "An Introduction to Political Philosophy, 2nd ed. (2019), chapter 11: War (supplied PDF page indices)",
+        "printedPages": [
+          6,
+          7
+        ]
+      },
+      "added_value": "Brief clarification of the current source passage and its argumentative role; additional primary-source context is separately disclosed.",
+      "simple": "An attack confronts a victim with a threat to independence and puts pressure on that person to resist and vindicate their rights.",
+      "why_here": "Bird uses Walzer to explain why belligerence itself often generates the enmity it presupposes.",
+      "remember": "Aggression draws its victim into conflict.",
+      "sourceDepthId": "source-depth-h213-aggression"
+    },
+    {
+      "id": "h213-ad-bellum",
+      "chapter": "ch2-1-3",
+      "passage": "Just war theory accordingly asks when anyone may resort to war",
+      "text": "when anyone may resort to war",
+      "kind": "Contextual explanation",
+      "title": "What is the first of the two just-war questions?",
+      "explanation": "It asks whether a political authority has adequate grounds to initiate organised fighting in the first place. Bird separates this from whether each subsequent military action is permissible.",
+      "source": {
+        "author": "Colin Bird",
+        "work": "An Introduction to Political Philosophy, 2nd ed. (2019), chapter 11: War (supplied PDF page indices)",
+        "printedPages": [
+          8,
+          9
+        ]
+      },
+      "added_value": "Brief clarification of the current source passage and its argumentative role; additional primary-source context is separately disclosed.",
+      "simple": "It asks whether a political authority has adequate grounds to initiate organised fighting in the first place.",
+      "why_here": "Bird separates this from whether each subsequent military action is permissible.",
+      "remember": "Resort and conduct require different tests."
+    },
+    {
+      "id": "h213-iraq",
+      "chapter": "ch2-1-3",
+      "passage": "opposite, defensible judgments about the same war",
+      "text": "opposite, defensible judgments",
+      "kind": "Contextual explanation",
+      "title": "What is Bird's objection to contradictory just-war verdicts?",
+      "explanation": "A list of principles is less helpful if people who accept it can reasonably reach opposing conclusions about the same grave case. The dispute over Iraq makes Bird ask whether a moral theory really gives usable guidance when lives are at stake.",
+      "source": {
+        "author": "Colin Bird",
+        "work": "An Introduction to Political Philosophy, 2nd ed. (2019), chapter 11: War (supplied PDF page indices)",
+        "printedPages": [
+          9,
+          10,
+          11
+        ]
+      },
+      "added_value": "Brief clarification of the current source passage and its argumentative role; additional primary-source context is separately disclosed.",
+      "simple": "A list of principles is less helpful if people who accept it can reasonably reach opposing conclusions about the same grave case.",
+      "why_here": "The dispute over Iraq makes Bird ask whether a moral theory really gives usable guidance when lives are at stake.",
+      "remember": "Agreement is not required, but useful discrimination is.",
+      "sourceDepthId": "source-depth-h213-equivocation"
+    },
+    {
+      "id": "h213-sliding",
+      "chapter": "ch2-1-3",
+      "passage": "the utilitarian “sliding scale”",
+      "text": "sliding scale",
+      "kind": "Contextual explanation",
+      "title": "Why does a sliding scale threaten the separation of war duties?",
+      "explanation": "The more righteous the war's goal is judged, the more violence this view would allow in pursuing it. Bird describes traditional just-war theory as rejecting that trade-off between ends and means.",
+      "source": {
+        "author": "Colin Bird",
+        "work": "An Introduction to Political Philosophy, 2nd ed. (2019), chapter 11: War (supplied PDF page indices)",
+        "printedPages": [
+          12,
+          13
+        ]
+      },
+      "added_value": "Brief clarification of the current source passage and its argumentative role; additional primary-source context is separately disclosed.",
+      "simple": "The more righteous the war's goal is judged, the more violence this view would allow in pursuing it.",
+      "why_here": "Bird describes traditional just-war theory as rejecting that trade-off between ends and means.",
+      "remember": "A good cause does not freely license bad means.",
+      "sourceDepthId": "source-depth-h213-walzer"
+    },
+    {
+      "id": "h213-emergency",
+      "chapter": "ch2-1-3",
+      "passage": "Walzer nonetheless allows a narrow “supreme emergency” exception.",
+      "text": "supreme emergency",
+      "kind": "Contextual explanation",
+      "title": "What changes under Walzer's supreme-emergency exception?",
+      "explanation": "Walzer considers briefly suspending some restrictions on wartime conduct in an extreme threat to a political community. Bird introduces this as a significant qualification to Walzer's general refusal to weigh just ends against forbidden means.",
+      "source": {
+        "author": "Colin Bird",
+        "work": "An Introduction to Political Philosophy, 2nd ed. (2019), chapter 11: War (supplied PDF page indices)",
+        "printedPages": [
+          13
+        ]
+      },
+      "added_value": "Brief clarification of the current source passage and its argumentative role; additional primary-source context is separately disclosed.",
+      "simple": "Walzer considers briefly suspending some restrictions on wartime conduct in an extreme threat to a political community.",
+      "why_here": "Bird introduces this as a significant qualification to Walzer's general refusal to weigh just ends against forbidden means.",
+      "remember": "The exception does not become a general sliding scale.",
+      "sourceDepthId": "source-depth-h213-walzer"
+    },
+    {
+      "id": "h213-statism",
+      "chapter": "ch2-1-3",
+      "passage": "Equal states owe each other mutual forbearance.",
+      "text": "mutual forbearance",
+      "kind": "Contextual explanation",
+      "title": "What is mutual forbearance among sovereign states?",
+      "explanation": "Each state refrains from forcibly directing the internal affairs of other independent states. Bird shows why statist just cause can sustain international peace but may also shield domestic oppression.",
+      "source": {
+        "author": "Colin Bird",
+        "work": "An Introduction to Political Philosophy, 2nd ed. (2019), chapter 11: War (supplied PDF page indices)",
+        "printedPages": [
+          14,
+          15
+        ]
+      },
+      "added_value": "Brief clarification of the current source passage and its argumentative role; additional primary-source context is separately disclosed.",
+      "simple": "Each state refrains from forcibly directing the internal affairs of other independent states.",
+      "why_here": "Bird shows why statist just cause can sustain international peace but may also shield domestic oppression.",
+      "remember": "Sovereignty requires reciprocal restraint.",
+      "sourceDepthId": "source-depth-h213-statism"
+    },
+    {
+      "id": "h213-cosmo",
+      "chapter": "ch2-1-3",
+      "passage": "The cosmopolitan alternative, developed by Darrel Moellendorf, puts individual claims of justice before sovereignty as a shield.",
+      "text": "cosmopolitan",
+      "kind": "Contextual explanation",
+      "title": "Why can human rights override a sovereign boundary in this account?",
+      "explanation": "Moellendorf asks first whether a state's institutions satisfy justified claims of persons affected by its policies. This challenges a view that state sovereignty automatically protects rulers even when they commit grave abuses.",
+      "source": {
+        "author": "Colin Bird",
+        "work": "An Introduction to Political Philosophy, 2nd ed. (2019), chapter 11: War (supplied PDF page indices)",
+        "printedPages": [
+          16,
+          17
+        ]
+      },
+      "added_value": "Brief clarification of the current source passage and its argumentative role; additional primary-source context is separately disclosed.",
+      "simple": "Moellendorf asks first whether a state's institutions satisfy justified claims of persons affected by its policies.",
+      "why_here": "This challenges a view that state sovereignty automatically protects rulers even when they commit grave abuses.",
+      "remember": "The relevant claim belongs to persons as well as states.",
+      "sourceDepthId": "source-depth-h213-humanitarian"
+    },
+    {
+      "id": "h213-hostility",
+      "chapter": "ch2-1-3",
+      "passage": "publicly acknowledging a just cause for violence can itself cultivate enmity",
+      "text": "publicly acknowledging a just cause for violence",
+      "kind": "Contextual explanation",
+      "title": "Why does Bird think merely stating just cause can threaten peace?",
+      "explanation": "Declaring another state liable to violent intervention signals a willingness to fight even if no operation follows. Bird replies to the claim that success and last-resort conditions remove the danger of an expansive just-cause doctrine.",
+      "source": {
+        "author": "Colin Bird",
+        "work": "An Introduction to Political Philosophy, 2nd ed. (2019), chapter 11: War (supplied PDF page indices)",
+        "printedPages": [
+          17,
+          18
+        ]
+      },
+      "added_value": "Brief clarification of the current source passage and its argumentative role; additional primary-source context is separately disclosed.",
+      "simple": "Declaring another state liable to violent intervention signals a willingness to fight even if no operation follows.",
+      "why_here": "Bird replies to the claim that success and last-resort conditions remove the danger of an expansive just-cause doctrine.",
+      "remember": "The declaration may foster hostility by itself.",
+      "sourceDepthId": "source-depth-h213-enmity"
+    },
+    {
+      "id": "h213-just-war-pacifist",
+      "chapter": "ch2-1-3",
+      "passage": "“just war pacifists”, who accept the criteria but doubt any actual war can meet them",
+      "text": "just war pacifists",
+      "kind": "Contextual explanation",
+      "title": "How can someone accept just-war rules and still oppose every war?",
+      "explanation": "They can regard the principles as sound while believing that no real war satisfies demanding intentions and proportionality standards. Bird distinguishes this argument from rejecting the moral framework from the outset.",
+      "source": {
+        "author": "Colin Bird",
+        "work": "An Introduction to Political Philosophy, 2nd ed. (2019), chapter 11: War (supplied PDF page indices)",
+        "printedPages": [
+          20,
+          21
+        ]
+      },
+      "added_value": "Brief clarification of the current source passage and its argumentative role; additional primary-source context is separately disclosed.",
+      "simple": "They can regard the principles as sound while believing that no real war satisfies demanding intentions and proportionality standards.",
+      "why_here": "Bird distinguishes this argument from rejecting the moral framework from the outset.",
+      "remember": "Accepting a test does not mean any war passes it."
+    },
+    {
+      "id": "h213-king",
+      "chapter": "ch2-1-3",
+      "passage": "creating tension through nonviolent direct action",
+      "text": "nonviolent direct action",
+      "kind": "Contextual explanation",
+      "title": "Why is nonviolent direct action not passive?",
+      "explanation": "King advocates intentionally generating political pressure and a crisis that makes negotiation unavoidable. Bird includes him to show that opposing military violence does not mean abandoning confrontation or forceful demands.",
+      "source": {
+        "author": "Colin Bird",
+        "work": "An Introduction to Political Philosophy, 2nd ed. (2019), chapter 11: War (supplied PDF page indices)",
+        "printedPages": [
+          21,
+          22
+        ]
+      },
+      "added_value": "Brief clarification of the current source passage and its argumentative role; additional primary-source context is separately disclosed.",
+      "simple": "King advocates intentionally generating political pressure and a crisis that makes negotiation unavoidable.",
+      "why_here": "Bird includes him to show that opposing military violence does not mean abandoning confrontation or forceful demands.",
+      "remember": "Nonviolence can be actively disruptive.",
+      "sourceDepthId": "source-depth-h213-king"
+    },
+    {
+      "id": "h213-magistrate",
+      "chapter": "ch2-1-3",
+      "passage": "force of the magistrate",
+      "text": "force of the magistrate",
+      "kind": "Contextual explanation",
+      "title": "How can a pacifist allow magistrate's force?",
+      "explanation": "Some Quakers distinguish the state enforcing justice under law from parties cultivating violent enmity in warfare. Bird uses Penn to show that pacifism does not always renounce every use of legally restrained coercion.",
+      "source": {
+        "author": "Colin Bird",
+        "work": "An Introduction to Political Philosophy, 2nd ed. (2019), chapter 11: War (supplied PDF page indices)",
+        "printedPages": [
+          22
+        ]
+      },
+      "added_value": "Brief clarification of the current source passage and its argumentative role; additional primary-source context is separately disclosed.",
+      "simple": "Some Quakers distinguish the state enforcing justice under law from parties cultivating violent enmity in warfare.",
+      "why_here": "Bird uses Penn to show that pacifism does not always renounce every use of legally restrained coercion.",
+      "remember": "Not all coercion is war.",
+      "sourceDepthId": "source-depth-h213-penn"
+    },
+    {
+      "id": "h213-innocent",
+      "chapter": "ch2-1-3",
+      "passage": "combatants necessarily forfeit their right not to be killed",
+      "text": "combatants necessarily forfeit their right not to be killed",
+      "kind": "Contextual explanation",
+      "title": "Why might soldiers remain innocent?",
+      "explanation": "Soldiers may follow campaigns they did not design, through conscription, economic necessity or orders they are not free to refuse. Bird presents this pacifist objection before examining whether self-defence can justify killing such soldiers.",
+      "source": {
+        "author": "Colin Bird",
+        "work": "An Introduction to Political Philosophy, 2nd ed. (2019), chapter 11: War (supplied PDF page indices)",
+        "printedPages": [
+          23
+        ]
+      },
+      "added_value": "Brief clarification of the current source passage and its argumentative role; additional primary-source context is separately disclosed.",
+      "simple": "Soldiers may follow campaigns they did not design, through conscription, economic necessity or orders they are not free to refuse.",
+      "why_here": "Bird presents this pacifist objection before examining whether self-defence can justify killing such soldiers.",
+      "remember": "Combatant status does not automatically imply blame.",
+      "sourceDepthId": "source-depth-h213-cases"
+    },
+    {
+      "id": "h213-moellendorf",
+      "chapter": "ch2-1-3",
+      "passage": "Moellendorf presents a sleepwalking attacker and a group containing one restraining member",
+      "text": "sleepwalking attacker",
+      "kind": "Contextual explanation",
+      "title": "Why does Moellendorf choose an unknowing attacker?",
+      "explanation": "His examples make an innocent person's actions an immediate lethal threat while excluding safer ways to stop it. He aims to show that some defensive killing may be permissible even when attackers are not personally blameworthy.",
+      "source": {
+        "author": "Colin Bird",
+        "work": "An Introduction to Political Philosophy, 2nd ed. (2019), chapter 11: War (supplied PDF page indices)",
+        "printedPages": [
+          24,
+          25
+        ]
+      },
+      "added_value": "Brief clarification of the current source passage and its argumentative role; additional primary-source context is separately disclosed.",
+      "simple": "His examples make an innocent person's actions an immediate lethal threat while excluding safer ways to stop it.",
+      "why_here": "He aims to show that some defensive killing may be permissible even when attackers are not personally blameworthy.",
+      "remember": "Imminent attack is the test, not malice.",
+      "sourceDepthId": "source-depth-h213-cases"
+    },
+    {
+      "id": "h213-excuse",
+      "chapter": "ch2-1-3",
+      "passage": "The pressure of a sudden attack may give a terrified person an excuse for killing",
+      "text": "excuse",
+      "kind": "Contextual explanation",
+      "title": "Why does an excuse differ from moral permission?",
+      "explanation": "An excuse may lessen blame for someone's panicked act while admitting that the act remained wrong. Bird distinguishes this from calling killing itself the right choice, especially for distant officials planning war.",
+      "source": {
+        "author": "Colin Bird",
+        "work": "An Introduction to Political Philosophy, 2nd ed. (2019), chapter 11: War (supplied PDF page indices)",
+        "printedPages": [
+          28,
+          29
+        ]
+      },
+      "added_value": "Brief clarification of the current source passage and its argumentative role; additional primary-source context is separately disclosed.",
+      "simple": "An excuse may lessen blame for someone's panicked act while admitting that the act remained wrong.",
+      "why_here": "Bird distinguishes this from calling killing itself the right choice, especially for distant officials planning war.",
+      "remember": "Excused conduct need not be justified.",
+      "sourceDepthId": "source-depth-h213-command"
+    },
+    {
+      "id": "h213-command",
+      "chapter": "ch2-1-3",
+      "passage": "civilian officials who direct aggression may be more responsible than the conscripts they command",
+      "text": "civilian officials who direct aggression",
+      "kind": "Contextual explanation",
+      "title": "Why do civilian planners create a problem for immunity?",
+      "explanation": "If participation in attacking defeats immunity, those authorising and organising a wrong attack may appear more involved than the soldiers they order. Bird asks whether this conflicts with the rule protecting civilians; he is not recommending their targeting.",
+      "source": {
+        "author": "Colin Bird",
+        "work": "An Introduction to Political Philosophy, 2nd ed. (2019), chapter 11: War (supplied PDF page indices)",
+        "printedPages": [
+          29
+        ]
+      },
+      "added_value": "Brief clarification of the current source passage and its argumentative role; additional primary-source context is separately disclosed.",
+      "simple": "If participation in attacking defeats immunity, those authorising and organising a wrong attack may appear more involved than the soldiers they order.",
+      "why_here": "Bird asks whether this conflicts with the rule protecting civilians; he is not recommending their targeting.",
+      "remember": "Responsibility and combatant status diverge.",
+      "sourceDepthId": "source-depth-h213-command"
     }
   ]
 }
