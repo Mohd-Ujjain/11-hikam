@@ -44,7 +44,7 @@ for item in manifest['companions']:
     seen.add(ident)
     assert re.fullmatch(r'ch\d+-\d+-\d+', item['chapter']), ident
     assert item['source']['printedPages'], f'No primary page reference: {ident}'
-    assert item['source']['author'] in ('Dermot Moran', 'Rowland Stout', 'David Papineau', 'Gary Gutting', 'Simon Critchley', 'Colin Bird', 'Jonathan Wolff'), ident
+    assert item['source']['author'] in ('Dermot Moran', 'Rowland Stout', 'David Papineau', 'Gary Gutting', 'Simon Critchley', 'Colin Bird', 'Jonathan Wolff', 'المؤلف غير مذكور في النص المقرر'), ident
     assert 20 <= len(item['explanation'].split()) <= 110, f'Explanation out of pilot range: {ident}'
     assert item['added_value'].strip(), ident
     start = chapters.find(f'<section class="chapter" id="{item["chapter"]}"')
@@ -70,7 +70,7 @@ stout = [x for x in manifest['companions'] if x['chapter'] == 'ch1-1-2']
 papineau = [x for x in manifest['companions'] if x['chapter'] == 'ch1-1-3']
 gutting = [x for x in manifest['companions'] if x['chapter'] == 'ch1-1-4']
 assert len(moran) == 10 and len(stout) == 24 and len(papineau) == 12 and len(gutting) == 12
-assert len(seen) == 158  # through 2.1.6; preserve dossier-specific count checks
+assert len(seen) == 166  # through Arabic 2.1.7; each dossier checked independently
 assert 'class="historical-timeline"' in chapters
 assert 'The One Thread to Follow' in chapters
 assert 'The four thinkers below are not four unrelated stories.' in chapters
@@ -321,6 +321,31 @@ for disclosure in blocks:
     assert ' open' not in disclosure.group(0).split('>', 1)[0]
     assert 'Jonathan Wolff' in disclosure.group(0)
     assert 'hikam-source-depth-citation' in disclosure.group(0)
+# Arabic 2.1.7: source-led chapter, eight contextual explanations and nine optional records.
+begin = chapters.index('<section class="chapter rtl" id="ch2-1-7"')
+after = chapters.index('<section class="chapter rtl" id="ch2-1-8"', begin)
+arabic = chapters[begin:after]
+arabic_body = arabic[arabic.index('<div class="chapter-body">'):arabic.index('<nav class="chapter-endnav"')]
+arabic_companions = [item for item in manifest['companions'] if item['chapter'] == 'ch2-1-7']
+assert len(arabic_companions) == 8
+assert 'lang="ar"' in arabic.split('>', 1)[0]
+assert 'style="--hue:68;"' in arabic
+assert '<h1 class="chapter-title">تطور علم السياسة</h1>' in arabic
+assert 'اسم المؤلف غير مذكور' in arabic
+assert len(re.findall(r'<h2 class="endh">', arabic)) == 6
+assert len(re.findall(r'class="examq-cat"', arabic)) == 5
+arabic_depths = list(re.finditer(r'<details class="hikam-source-depth-inline"[\s\S]*?</details>', arabic_body))
+assert len(arabic_depths) == 7, len(arabic_depths)
+assert arabic_body.count('class="hikam-source-depth-item"') == 9
+assert sum(int(m.group(1)) for block in arabic_depths for m in re.finditer(r'data-depth-count="(\d+)"', block.group(0))) == 9
+for item in arabic_companions:
+    assert item['source']['author'] == 'المؤلف غير مذكور في النص المقرر'
+    assert all(1 <= page <= 16 for page in item['source']['printedPages'])
+    assert all(item.get(k) for k in ('simple', 'why_here', 'remember'))
+for disclosure in arabic_depths:
+    assert arabic_body[:disclosure.start()].rstrip().endswith('</p>'), "Arabic detail not adjacent to paragraph"
+    assert ' open' not in disclosure.group(0).split('>', 1)[0]
+    assert 'class="hikam-source-depth-citation"' in disclosure.group(0)
 assert 'hikam-companion-context-field' in reader
 assert 'item.simple && item.why_here && item.remember' in reader
 assert "'.hikam-source-depth-inline'" in (SRC/'philosophy_notes.js').read_text(encoding='utf-8') or '.hikam-source-depth-inline' in (SRC/'philosophy_notes.js').read_text(encoding='utf-8')
