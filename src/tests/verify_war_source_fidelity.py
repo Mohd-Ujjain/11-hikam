@@ -63,8 +63,8 @@ for x in blocks:
     assert "supplied primary-source PDF" in x.group(0)
     assert "SOURCE DEPTH" in x.group(0) and "Optional source detail" in x.group(0)
 
-visible=unescape(re.sub(r'<[^>]+>',' ',re.sub(
-    r'<details class="hikam-source-depth-inline"[\s\S]*?</details>','',body))).lower()
+visible=' '.join(unescape(re.sub(r'<[^>]+>',' ',re.sub(
+    r'<details class="hikam-source-depth-inline"[\s\S]*?</details>','',body))).lower().split())
 required=(
     # PDF pp. 1–5: institutional organisation and the three views
     "philosophers", "modern states", "mindless violence", "strateg", "professional",
