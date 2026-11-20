@@ -38,9 +38,9 @@
 
 | Layer | Measured amount / status |
 |---|---|
-| Main explanatory body | 834 words |
+| Main explanatory body | 836 words |
 | Purposeful visible study aids | 985 words |
-| Immediately visible study total | 1,819 words |
+| Immediately visible study total | 1,821 words |
 | Native source-depth disclosures | 6, immediately after the relevant paragraph, all closed by default |
 | Optional source detail | 573 words |
 | Context-first Reading Companions | 12 exact, uniquely anchored visible phrases |
@@ -51,6 +51,6 @@ Companions clarify the immediate concept without introducing independent debate.
 
 ## Release gates
 
-**Status: fork source candidate, not yet published.** Build and verify on `Mohd-Ujjain/11-hikam` before transfer. The source source-coverage script (`src/tests/verify_common_good_source_fidelity.py`) must check concepts, qualifications, density, source depth and revision; update the existing Companion manifest/Chromium tests, author/source attribution, 39 chapter, design-token, accessibility, print/PDF and offline-PWA suites. Generate `index.html`, `src/philosophy_study_notes.html`, and `service-worker.js` from the exact candidate only after both fork jobs pass, then compare the Git blob hashes of source and generated outputs against the upstream review branch. Preserve the fork-only workflow exclusively in the secondary repository, release through the original's review PR and verify original main and GitHub Pages.
+**Status: secondary-fork verified, awaiting upstream publication.** Full source, structural and Chromium/print/offline checks passed in [run 44726626192](https://github.com/Mohd-Ujjain/11-hikam/actions/runs/44726626192) against source commit `a273d6d202df78c0de09f42494129c68ad856119`. The canonical generated publication assets were committed on the fork after all gates passed. Build and verify on `Mohd-Ujjain/11-hikam` before transfer. The source source-coverage script (`src/tests/verify_common_good_source_fidelity.py`) must check concepts, qualifications, density, source depth and revision; update the existing Companion manifest/Chromium tests, author/source attribution, 39 chapter, design-token, accessibility, print/PDF and offline-PWA suites. Generate `index.html`, `src/philosophy_study_notes.html`, and `service-worker.js` from the exact candidate only after both fork jobs pass, then compare the Git blob hashes of source and generated outputs against the upstream review branch. Preserve the fork-only workflow exclusively in the secondary repository, release through the original's review PR and verify original main and GitHub Pages.
 
 No original PDF, teaching synthesis or confidential style sample may be placed in Git history or Actions artifacts.
