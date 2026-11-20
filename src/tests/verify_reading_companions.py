@@ -70,7 +70,7 @@ stout = [x for x in manifest['companions'] if x['chapter'] == 'ch1-1-2']
 papineau = [x for x in manifest['companions'] if x['chapter'] == 'ch1-1-3']
 gutting = [x for x in manifest['companions'] if x['chapter'] == 'ch1-1-4']
 assert len(moran) == 10 and len(stout) == 24 and len(papineau) == 12 and len(gutting) == 12
-assert len(seen) == 132
+assert len(seen) == 154
 assert 'class="historical-timeline"' in chapters
 assert 'The One Thread to Follow' in chapters
 assert 'The four thinkers below are not four unrelated stories.' in chapters
@@ -267,6 +267,33 @@ for item in wolff:
         assert body.count('id="' + item['sourceDepthId'] + '"') == 1, item['id']
 for disclosure in blocks:
     assert body[:disclosure.start()].rstrip().endswith('</p>'), 'Wolff depth is not adjacent'
+    assert ' open' not in disclosure.group(0).split('>', 1)[0]
+    assert 'Jonathan Wolff' in disclosure.group(0)
+    assert 'hikam-source-depth-citation' in disclosure.group(0)
+# Wolff 2.1.5: 22 new source-specific contextual Companions and
+# 16 independently cited records immediately after eight prose paragraphs.
+begin = chapters.index('<section class="chapter" id="ch2-1-5"')
+after = chapters.index('<section class="chapter" id="ch2-1-6"', begin)
+html = chapters[begin:after]
+body = html[html.index('<div class="chapter-body">'):html.index('<nav class="chapter-endnav"')]
+liberty = [item for item in manifest['companions'] if item['chapter'] == 'ch2-1-5']
+assert len(liberty) == 22
+assert 'style="--hue:28;"' in html
+assert 'Original author: <strong>Jonathan Wolff</strong>' in html
+assert 'pp. 104–117' in html
+blocks = list(re.finditer(r'<details class="hikam-source-depth-inline"[\s\S]*?</details>', body))
+assert len(blocks) == 8
+assert body.count('class="hikam-source-depth-item"') == 16
+assert sum(int(m.group(1)) for b in blocks for m in re.finditer(r'data-depth-count="(\d+)"', b.group(0))) == 16
+for item in liberty:
+    assert item['source']['author'] == 'Jonathan Wolff'
+    assert '2006' in item['source']['work']
+    assert all(item.get(k) for k in ('simple', 'why_here', 'remember'))
+    assert all(104 <= pg <= 117 for pg in item['source']['printedPages'])
+    if item.get('sourceDepthId'):
+        assert body.count('id="' + item['sourceDepthId'] + '"') == 1, item['id']
+for disclosure in blocks:
+    assert body[:disclosure.start()].rstrip().endswith('</p>')
     assert ' open' not in disclosure.group(0).split('>', 1)[0]
     assert 'Jonathan Wolff' in disclosure.group(0)
     assert 'hikam-source-depth-citation' in disclosure.group(0)
