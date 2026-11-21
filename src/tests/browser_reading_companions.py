@@ -184,10 +184,14 @@ def check(browser, url, width):
     page.keyboard.press('Enter')
     assert popup.get_attribute('dir') == 'rtl'
     assert popup.get_attribute('lang') == 'ar'
-    assert 'أندرونيقوس' in popup.inner_text()
+    assert 'ترتيب كتب أرسطو' in popup.inner_text()
     assert metaphysics_cue.evaluate("(e) => getComputedStyle(e).textDecorationStyle") == 'solid'
     page.keyboard.press('Escape')
     assert popup.is_hidden()
+    assert metaphysics_cue.get_attribute('aria-expanded') == 'false'
+    # The restored keyboard focus correctly keeps a solid focus-visible cue.
+    # It returns to the chapter's dotted resting style once focus leaves.
+    page.keyboard.press('Tab')
     assert metaphysics_cue.evaluate("(e) => getComputedStyle(e).textDecorationStyle") == 'dotted'
     assert page.locator('#ch2-2-1 .chapter-body .hikam-companion-trigger').count() == 12
     assert page.locator('#ch2-2-1 .chapter-body .hikam-source-depth-inline').count() == 7
