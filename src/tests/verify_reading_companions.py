@@ -378,7 +378,7 @@ for disclosure in plato_depths:
     assert 'hikam-source-depth-citation' in disclosure.group(0)
 # Arabic metaphysics 2.2.1 — 12 contextual Companions, 11 optional source records.
 m_begin = chapters.index('<section class="chapter rtl" id="ch2-2-1"')
-m_chapter = chapters[m_begin:chapters.index('\\n</section>', m_begin) + len('\\n</section>')]
+m_chapter = chapters[m_begin:chapters.index('\n</section>', m_begin) + len('\n</section>')]
 m_body = m_chapter[m_chapter.index('<div class="chapter-body">'):m_chapter.index('<nav class="chapter-endnav"')]
 m_items = [x for x in manifest['companions'] if x['chapter'] == 'ch2-2-1']
 assert len(m_items) == 12
@@ -388,10 +388,10 @@ assert '<h1 class="chapter-title">ما الميتافيزيقا...؟</h1>' in m_
 assert 'اسم المؤلف غير مذكور' in m_chapter
 assert len(re.findall(r'<h2 class="endh">', m_chapter)) == 6
 assert len(re.findall(r'class="examq-cat"', m_chapter)) == 5
-m_depths = list(re.finditer(r'<details class="hikam-source-depth-inline"[\\s\\S]*?</details>', m_body))
+m_depths = list(re.finditer(r'<details class="hikam-source-depth-inline"[\s\S]*?</details>', m_body))
 assert len(m_depths) == 7, len(m_depths)
 assert m_body.count('class="hikam-source-depth-item"') == 11
-assert sum(map(int, re.findall(r'data-depth-count="(\\d+)"', m_body))) == 11
+assert sum(map(int, re.findall(r'data-depth-count="(\d+)"', m_body))) == 11
 for item in m_items:
     assert item['source']['author'] == 'المؤلف غير مذكور في النص المقرر'
     assert all(1 <= page <= 16 for page in item['source']['printedPages'])
