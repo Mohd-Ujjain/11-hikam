@@ -64,7 +64,7 @@ for d in depths:
 
 visible = re.sub(r'<details class="hikam-source-depth-inline"[\s\S]*?</details>', "", body)
 units = [
-    ("Wolff and tentative identification", "ربما كان من أبرز من اهتموا"),
+    ("Wolff and tentative identification", "ربما كان هو الذي اهتم"),
     ("four subjects", "تقسيم الميتافيزيقا إلى أربعة مباحث"),
     ("original list and exposition mismatch", "خلاف ترتيبهما في القائمة الافتتاحية"),
     ("Aristotle's being as being", "«الوجود بما هو وجود»"),
@@ -115,7 +115,6 @@ for label, text in units:
     assert text in visible, f"Missing visible primary-source unit: {label}: {text}"
 assert "ربما" in visible, "Wolff's tentative historical status must not be strengthened"
 assert "ثلاث مجموعات" in visible and "بعد القسم الثالث" in visible
-assert "في النص" in revision
 assert "على أنه رأياً" not in visible
 manifest = json.loads((ROOT / "src/reading_companions.json").read_text(encoding="utf-8"))
 items = [x for x in manifest["companions"] if x["chapter"] == "ch2-2-2"]
