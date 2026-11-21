@@ -35,3 +35,14 @@ The source DOCX, three user-supplied syntheses, language-profile skill and perso
 - **Authoritative source:** user-provided `2.1.8 Source - أفلاطون المدينة الفاضلة.docx`, «الفصل الرابع: أفلاطون: المدينة الفاضلة» (12 pages in its supplied source), with no verified original-chapter author's name. Three supporting Arabic syntheses, user's Arabic writing samples, and language profile are editorial references and are **not** committed here.
 
 **Do not change or publish the archived section as a second live dossier.** The ten older originals, 2.1.6 and 2.1.7 remain independently pinned and unaffected. Subsequent dossier redevelopment must preserve each original before replacement, with a verifiable blob hash.
+
+## Dossier 2.2.1 — Arabic metaphysics, before full source-led edition
+
+**Preserved before editing:** 21 November 2026, authoritative `main` commit [`4a963704`](https://github.com/MohdUjjain/11-hikam/commit/4a963704405005579b4c4901f86ded242b2014e8).
+
+- **Complete historical HTML:** [`dossier-2.2.1.html`](dossier-2.2.1.html), including its original frontmatter, all six main-body sections and aids, navigation, six-part revision and five examination categories.
+- **Original location:** `src/chapters/subtopic-2-2.html`; section `ch2-2-1`, Arabic `lang="ar"`, hue `108`.
+- **Pinned original Git blob:** `7db0c56b5cb7ff363c7fa95f8b43517f7acc9c8d`. `python src/tests/verify_dossier_archive.py` enforces immutable integrity separately from the ten earlier preserved dossiers and later 2.1.6–2.1.8 snapshots.
+- **Source:** user-supplied `2.2.1 Source - ما الميتافيزيقا.docx`, «الفصل الأول: ما الميتافيزيقا...؟» (16 pages in supplied file), **no verified author name** in document metadata. Three syntheses and the user's linguistic profile and Arabic prose samples are editorial references only and **must not be published**.
+
+This original is for historical recovery, **never** a second published reading, and no earlier archive is modified.
