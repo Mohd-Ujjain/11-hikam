@@ -55,6 +55,8 @@ jobs:
         run: python src/tests/verify_arabic_politics_source_fidelity.py
       - name: Verify Arabic Plato 2.1.8 source argument, RTL reading density and six-part revision
         run: python src/tests/verify_arabic_plato_source_fidelity.py
+      - name: Verify Arabic metaphysics 2.2.1 source coverage, reading density, citations and revision
+        run: python src/tests/verify_arabic_metaphysics_source_fidelity.py
       - name: Validate book structure and chapter navigation
         run: python src/tests/validate_structure.py
       - name: Validate accessible contents and print controls
