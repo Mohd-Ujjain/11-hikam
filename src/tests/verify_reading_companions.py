@@ -76,7 +76,7 @@ stout = [x for x in manifest['companions'] if x['chapter'] == 'ch1-1-2']
 papineau = [x for x in manifest['companions'] if x['chapter'] == 'ch1-1-3']
 gutting = [x for x in manifest['companions'] if x['chapter'] == 'ch1-1-4']
 assert len(moran) == 10 and len(stout) == 24 and len(papineau) == 12 and len(gutting) == 12
-assert len(seen) == 166  # through Arabic 2.1.7; each dossier checked independently
+assert len(seen) == 175  # through Arabic Plato 2.1.8; dossier counts independently tested
 assert 'class="historical-timeline"' in chapters
 assert 'The One Thread to Follow' in chapters
 assert 'The four thinkers below are not four unrelated stories.' in chapters
@@ -352,6 +352,30 @@ for disclosure in arabic_depths:
     assert arabic_body[:disclosure.start()].rstrip().endswith('</p>'), "Arabic detail not adjacent to paragraph"
     assert ' open' not in disclosure.group(0).split('>', 1)[0]
     assert 'class="hikam-source-depth-citation"' in disclosure.group(0)
+# Arabic Plato 2.1.8: nine contextual explanations, eleven source records.
+plato_begin = chapters.index('<section class="chapter rtl" id="ch2-1-8"')
+plato = chapters[plato_begin:chapters.index('</section>', plato_begin) + len('</section>')]
+plato_body = plato[plato.index('<div class="chapter-body">'):plato.index('<nav class="chapter-endnav"')]
+plato_items = [item for item in manifest['companions'] if item['chapter'] == 'ch2-1-8']
+assert len(plato_items) == 9
+assert 'lang="ar"' in plato.split('>', 1)[0]
+assert 'style="--hue:88;"' in plato
+assert '<h1 class="chapter-title">أفلاطون: المدينة الفاضلة</h1>' in plato
+assert 'اسم المؤلف غير مذكور' in plato
+assert len(re.findall(r'<h2 class="endh">', plato)) == 6
+assert len(re.findall(r'class="examq-cat"', plato)) == 5
+plato_depths = list(re.finditer(r'<details class="hikam-source-depth-inline"[\s\S]*?</details>', plato_body))
+assert len(plato_depths) == 8, len(plato_depths)
+assert plato_body.count('class="hikam-source-depth-item"') == 11
+assert sum(map(int, re.findall(r'data-depth-count="(\d+)"', plato_body))) == 11
+for item in plato_items:
+    assert item['source']['author'] == 'المؤلف غير مذكور في النص المقرر'
+    assert all(1 <= page <= 12 for page in item['source']['printedPages'])
+    assert all(item.get(k) for k in ('simple', 'why_here', 'remember'))
+for disclosure in plato_depths:
+    assert plato_body[:disclosure.start()].rstrip().endswith('</p>'), "2.1.8 optional detail not adjacent to paragraph"
+    assert ' open' not in disclosure.group(0).split('>', 1)[0]
+    assert 'hikam-source-depth-citation' in disclosure.group(0)
 assert 'hikam-companion-context-field' in reader
 assert 'item.simple && item.why_here && item.remember' in reader
 assert "'.hikam-source-depth-inline'" in (SRC/'philosophy_notes.js').read_text(encoding='utf-8') or '.hikam-source-depth-inline' in (SRC/'philosophy_notes.js').read_text(encoding='utf-8')
