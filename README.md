@@ -4,6 +4,8 @@
 
 This repository follows the same **published root → modular `src/` → organized documentation/tests** model as [World History Dossier](https://github.com/MohdUjjain/world-history-dossier). The book text, interactive sidebar, print layout and offline app have not been redesigned during this directory migration.
 
+**Arabic 2.1.8:** The [source-led Plato revision and twelve-page coverage register](src/docs/editorial/READING_2_1_8_ARABIC_PLATO_SOURCE_COVERAGE.md) preserve the user's scholarly Arabic voice and the source's exact perspective. The [entire unrevised 2.1.8](src/archive/pre-redevelopment-2026-11-21/README.md) was archived on original `main` before any replacement. Private source materials and writing samples are not published.
+
 **Historical preservation:** The complete 2.1.6 pre-redevelopment section was separately preserved [on 21 November 2026](src/archive/pre-redevelopment-2026-11-21/README.md), before its replacement, with a pinned Git blob and verification. The existing ten-file original archive remains unchanged.
 
 **Earlier historical preservation:** [Ten complete original dossier sections](src/archive/pre-revamp-2026-11-05/README.md) (1.1.1–1.1.5 and 2.1.1–2.1.5) have been preserved from the 5 November 2026 pre-revamp commit, with a pinned manifest and CI integrity check. These are read-only historical snapshots outside the published book; the revised `main` dossiers remain canonical.
