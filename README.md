@@ -8,6 +8,8 @@ This repository follows the same **published root → modular `src/` → organiz
 
 **Arabic 2.2.1:** The new [source-faithful metaphysics reading and full 16-page coverage register](src/docs/editorial/READING_2_2_1_ARABIC_METAPHYSICS_SOURCE_COVERAGE.md) retain the original author's treatment of principles, cognition, existence and death. The [entire previous 2.2.1](src/archive/pre-redevelopment-2026-11-21/README.md) was archived before replacement. Arabic language samples and source files remain unpublished.
 
+**Arabic 2.2.2:** The [source-faithful eight-page Arabic traditional-division coverage register](src/docs/editorial/READING_2_2_2_ARABIC_METAPHYSICS_DIVISION_SOURCE_COVERAGE.md) governs the expanded source-verified four-branch dossier and preserves the source's Kant/Hegel conclusion. The [full old edition](src/archive/pre-redevelopment-2026-11-21/README.md) was archived before replacement. Private Arabic sources and authorial profile samples are not published.
+
 **Historical preservation:** The complete 2.1.6 pre-redevelopment section was separately preserved [on 21 November 2026](src/archive/pre-redevelopment-2026-11-21/README.md), before its replacement, with a pinned Git blob and verification. The existing ten-file original archive remains unchanged.
 
 **Earlier historical preservation:** [Ten complete original dossier sections](src/archive/pre-revamp-2026-11-05/README.md) (1.1.1–1.1.5 and 2.1.1–2.1.5) have been preserved from the 5 November 2026 pre-revamp commit, with a pinned manifest and CI integrity check. These are read-only historical snapshots outside the published book; the revised `main` dossiers remain canonical.
