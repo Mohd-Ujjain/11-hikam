@@ -12,7 +12,7 @@ import re
 ROOT = Path(__file__).resolve().parents[2]
 chapter_html = (ROOT / "src/chapters/subtopic-2-1.html").read_text(encoding="utf-8")
 start = chapter_html.index('<section class="chapter rtl" id="ch2-1-8"')
-chapter = chapter_html[start:chapter_html.index('</section>', start) + 10]
+chapter = chapter_html[start:]  # final 2.1 module chapter; nested source sections are not chapter boundaries
 body = chapter[chapter.index('<div class="chapter-body">'):chapter.index('<nav class="chapter-endnav"')]
 rev = chapter[chapter.index('<div class="end-block">'):]
 

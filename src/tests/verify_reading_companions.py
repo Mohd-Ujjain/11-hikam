@@ -354,7 +354,7 @@ for disclosure in arabic_depths:
     assert 'class="hikam-source-depth-citation"' in disclosure.group(0)
 # Arabic Plato 2.1.8: nine contextual explanations, eleven source records.
 plato_begin = chapters.index('<section class="chapter rtl" id="ch2-1-8"')
-plato = chapters[plato_begin:chapters.index('</section>', plato_begin) + len('</section>')]
+plato = chapters[plato_begin:chapters.index('\n</section>', plato_begin) + len('\n</section>')]  # chapter-closing tag at column zero
 plato_body = plato[plato.index('<div class="chapter-body">'):plato.index('<nav class="chapter-endnav"')]
 plato_items = [item for item in manifest['companions'] if item['chapter'] == 'ch2-1-8']
 assert len(plato_items) == 9
