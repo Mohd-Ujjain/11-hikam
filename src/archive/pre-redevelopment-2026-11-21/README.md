@@ -46,3 +46,14 @@ The source DOCX, three user-supplied syntheses, language-profile skill and perso
 - **Source:** user-supplied `2.2.1 Source - ما الميتافيزيقا.docx`, «الفصل الأول: ما الميتافيزيقا...؟» (16 pages in supplied file), **no verified author name** in document metadata. Three syntheses and the user's linguistic profile and Arabic prose samples are editorial references only and **must not be published**.
 
 This original is for historical recovery, **never** a second published reading, and no earlier archive is modified.
+
+## Dossier 2.2.2 — Arabic traditional division of metaphysics before source-led redevelopment
+
+**Complete original preserved before editing:** 21 November 2026, authoritative `main` commit [`e19473fa`](https://github.com/MohdUjjain/11-hikam/commit/e19473faffc5fa110c15b316a994bb9fa55994b0).
+
+- **Immutable historical HTML:** [`dossier-2.2.2.html`](dossier-2.2.2.html), containing the complete original Arabic frontmatter, five sections of main reading with all teaching aids, navigation, all six revision sections and five examination categories.
+- **Original location:** `src/chapters/subtopic-2-2.html`, section `ch2-2-2`, `lang="ar"`, chapter hue `128`.
+- **Pinned Git blob SHA:** `7378c12e696cfa253328f9d44669fe046e62b135`; enforced by `python src/tests/verify_dossier_archive.py`.
+- **Intellectual source:** the user's `2.2.2 Source - التقسيم التقليدي للميتافيزيقا.docx`, eight supplied pages, chapter title «الفصل الثاني: التقسيم التقليدي للميتافيزيقا», with no verified author credit in Word metadata. Three Arabic syntheses, language-profile instructions and private writing examples inform editorial phrasing and are **not** published or treated as higher authority than this reading.
+
+Preserve this entire historical edition for future recovery, separate from the live reader. This addition does not alter the ten original protected dossiers or the preserved 2.1.6–2.2.1 snapshots.
