@@ -68,7 +68,7 @@ def check(browser, url, width):
         page.keyboard.press('Escape')
         assert page.locator('#hikamCompanionPopup').is_hidden()
     # Local paragraph-level disclosures for all four source authors.
-    for chapter, number in [('ch1-1-1', 10), ('ch1-1-2', 24), ('ch1-1-3', 9), ('ch1-1-4', 9), ('ch1-1-5', 5), ('ch2-1-1', 6), ('ch2-1-2', 6), ('ch2-1-3', 14), ('ch2-1-4', 17), ('ch2-1-5', 16), ('ch2-1-6', 2), ('ch2-1-7', 9), ('ch2-1-8', 11), ('ch2-2-1', 11)]:
+    for chapter, number in [('ch1-1-1', 10), ('ch1-1-2', 24), ('ch1-1-3', 9), ('ch1-1-4', 9), ('ch1-1-5', 5), ('ch2-1-1', 6), ('ch2-1-2', 6), ('ch2-1-3', 14), ('ch2-1-4', 17), ('ch2-1-5', 16), ('ch2-1-6', 2), ('ch2-1-7', 9), ('ch2-1-8', 11), ('ch2-2-1', 11), ('ch2-2-2', 11)]:
         callouts = page.locator('#' + chapter + ' .chapter-body .hikam-source-depth-inline')
         assert callouts.count() >= 1
         assert callouts.locator('.hikam-source-depth-item').count() == number
@@ -111,7 +111,9 @@ def check(browser, url, width):
         "(e) => getComputedStyle(e).textDecorationColor")
     metaphysics_color = page.locator('[data-companion-id="h221-shelf"]').evaluate(
         "(e) => getComputedStyle(e).textDecorationColor")
-    assert len({color, other_color, papineau_color, gutting_color, critchley_color, bird_color, common_good_color, war_color, wolff_color, liberty_color, individualism_color, arabic_color, plato_color, metaphysics_color}) == 14
+    division_color = page.locator('[data-companion-id="h222-division"]').evaluate(
+        "(e) => getComputedStyle(e).textDecorationColor")
+    assert len({color, other_color, papineau_color, gutting_color, critchley_color, bird_color, common_good_color, war_color, wolff_color, liberty_color, individualism_color, arabic_color, plato_color, metaphysics_color, division_color}) == 15
     cue.focus()
     page.keyboard.press('Enter')
     popup = page.locator('#hikamCompanionPopup')
@@ -195,6 +197,26 @@ def check(browser, url, width):
     assert metaphysics_cue.evaluate("(e) => getComputedStyle(e).textDecorationStyle") == 'dotted'
     assert page.locator('#ch2-2-1 .chapter-body .hikam-companion-trigger').count() == 12
     assert page.locator('#ch2-2-1 .chapter-body .hikam-source-depth-inline').count() == 7
+    # 2.2.2 is an actual Arabic chapter, with its own 128-degree cue pigment.
+    division_cue = page.locator('[data-companion-id="h222-division"]')
+    assert page.locator('#ch2-2-2').get_attribute('lang') == 'ar'
+    assert division_cue.count() == 1
+    division_cue.scroll_into_view_if_needed()
+    division_cue.focus()
+    page.keyboard.press('Enter')
+    assert popup.get_attribute('dir') == 'rtl'
+    assert popup.get_attribute('lang') == 'ar'
+    assert 'أربعة ميادين' in popup.inner_text()
+    assert division_cue.get_attribute('aria-expanded') == 'true'
+    assert division_cue.evaluate("(e) => getComputedStyle(e).textDecorationStyle") == 'solid'
+    page.keyboard.press('Escape')
+    assert popup.is_hidden()
+    assert division_cue.get_attribute('aria-expanded') == 'false'
+    # Keyboard focus must remain visible; resting dotted style after blur.
+    page.keyboard.press('Tab')
+    assert division_cue.evaluate("(e) => getComputedStyle(e).textDecorationStyle") == 'dotted'
+    assert page.locator('#ch2-2-2 .chapter-body .hikam-companion-trigger').count() == 13
+    assert page.locator('#ch2-2-2 .chapter-body .hikam-source-depth-inline').count() == 7
     # The original paragraph text must include the uninterrupted wrapped phrase.
     assert page.locator('[data-companion-id="h112-parfit-identity"]').inner_text() == 'future generations'
     page.evaluate("""() => {
@@ -272,6 +294,10 @@ def check(browser, url, width):
     assert page.locator('#ch2-2-1 .js-print-page').count() > 0
     assert page.locator('#ch2-2-1 .js-print-page .hikam-source-depth-inline').count() == 0
     assert page.locator('#ch2-2-1 .js-print-page .hikam-companion-trigger').count() == 0
+    page.evaluate("window.__runPagination(['ch2-2-2'])")
+    assert page.locator('#ch2-2-2 .js-print-page').count() > 0
+    assert page.locator('#ch2-2-2 .js-print-page .hikam-source-depth-inline').count() == 0
+    assert page.locator('#ch2-2-2 .js-print-page .hikam-companion-trigger').count() == 0
     assert not errors, errors
     ctx.close()
 
@@ -289,7 +315,7 @@ with site() as no_js_url, sync_playwright() as no_js_pw:
         context = no_js_browser.new_context(java_script_enabled=False, viewport={'width':390,'height':820})
         page = context.new_page()
         page.goto(no_js_url, wait_until='domcontentloaded')
-        for chapter in ('ch1-1-1', 'ch1-1-2', 'ch1-1-3', 'ch1-1-4', 'ch1-1-5', 'ch2-1-1', 'ch2-1-2', 'ch2-1-3', 'ch2-1-4', 'ch2-1-5', 'ch2-1-6', 'ch2-1-7', 'ch2-1-8', 'ch2-2-1'):
+        for chapter in ('ch1-1-1', 'ch1-1-2', 'ch1-1-3', 'ch1-1-4', 'ch1-1-5', 'ch2-1-1', 'ch2-1-2', 'ch2-1-3', 'ch2-1-4', 'ch2-1-5', 'ch2-1-6', 'ch2-1-7', 'ch2-1-8', 'ch2-2-1', 'ch2-2-2'):
             disclosure = page.locator('#'+chapter+' .hikam-source-depth-inline').first
             assert disclosure.count() == 1 and disclosure.get_attribute('open') is None
             # Native summary keyboard activation works even when page JS is
