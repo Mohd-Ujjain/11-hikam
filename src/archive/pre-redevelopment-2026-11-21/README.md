@@ -24,3 +24,14 @@ The integrity test `python src/tests/verify_dossier_archive.py` now verifies thi
 - **Integrity:** `python src/tests/verify_dossier_archive.py` protects this blob separately; the ten-item original archive and the 2.1.6 snapshot remain unchanged.
 
 The source DOCX, three user-supplied syntheses, language-profile skill and personal Arabic samples are **editorial inputs only**, not published to this repository. The original document does not identify an author in its supplied metadata; do not fabricate one. This preserved edition is a historical artifact, not an alternative live source of the book.
+
+## Dossier 2.1.8 — Plato's Arabic dossier before source-led redevelopment
+
+**Full original preserved before changing any canonical 2.1.8 text:** 21 November 2026, authoritative `main`, commit [`3cc3bd81`](https://github.com/MohdUjjain/11-hikam/commit/3cc3bd81ca443ae4aa76bdc650cfc47107f9b703).
+
+- **Complete immutable HTML snapshot:** [`dossier-2.1.8.html`](dossier-2.1.8.html), including its complete Arabic frontmatter, body, all aids, navigation, six-part revision and five exam categories.
+- **Original source section:** `src/chapters/subtopic-2-1.html`, `<section class="chapter rtl" id="ch2-1-8" lang="ar" style="--hue:88;">…</section>`.
+- **Pinned Git blob SHA-1:** `375b0d2733a27470c713bce7ef8554a9ae30dfd1`; `python src/tests/verify_dossier_archive.py` enforces the original bytes.
+- **Authoritative source:** user-provided `2.1.8 Source - أفلاطون المدينة الفاضلة.docx`, «الفصل الرابع: أفلاطون: المدينة الفاضلة» (12 pages in its supplied source), with no verified original-chapter author's name. Three supporting Arabic syntheses, user's Arabic writing samples, and language profile are editorial references and are **not** committed here.
+
+**Do not change or publish the archived section as a second live dossier.** The ten older originals, 2.1.6 and 2.1.7 remain independently pinned and unaffected. Subsequent dossier redevelopment must preserve each original before replacement, with a verifiable blob hash.
