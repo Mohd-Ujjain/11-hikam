@@ -184,7 +184,7 @@ def check(browser, url, width):
     page.keyboard.press('Enter')
     assert popup.get_attribute('dir') == 'rtl'
     assert popup.get_attribute('lang') == 'ar'
-    assert 'أندرونيقوس' in popup.inner_text()
+    assert 'ترتيب كتب أرسطو' in popup.inner_text()
     assert metaphysics_cue.evaluate("(e) => getComputedStyle(e).textDecorationStyle") == 'solid'
     page.keyboard.press('Escape')
     assert popup.is_hidden()
