@@ -76,7 +76,7 @@ stout = [x for x in manifest['companions'] if x['chapter'] == 'ch1-1-2']
 papineau = [x for x in manifest['companions'] if x['chapter'] == 'ch1-1-3']
 gutting = [x for x in manifest['companions'] if x['chapter'] == 'ch1-1-4']
 assert len(moran) == 10 and len(stout) == 24 and len(papineau) == 12 and len(gutting) == 12
-assert len(seen) == 200  # through Arabic metaphysics 2.2.2, per-dossier counts separately tested
+assert len(seen) == 213  # includes thirteen verified Arabic 2.2.3 contextual cues
 assert 'class="historical-timeline"' in chapters
 assert 'The One Thread to Follow' in chapters
 assert 'The four thinkers below are not four unrelated stories.' in chapters
@@ -422,6 +422,30 @@ for entry in d222_items:
     assert all(entry.get(k) for k in ('simple', 'why_here', 'remember'))
 for disclosure in d222_depths:
     assert d222_body[:disclosure.start()].rstrip().endswith('</p>'), "2.2.2 disclosure not immediately paragraph-adjacent"
+    assert ' open' not in disclosure.group(0).split('>', 1)[0]
+    assert 'hikam-source-depth-citation' in disclosure.group(0)
+# Arabic 2.2.3 — both source chapters, thirteen Companions, thirteen Depth records.
+d223_start = chapters.index('<section class="chapter rtl" id="ch2-2-3"')
+d223 = chapters[d223_start:chapters.index('\n</section>', d223_start) + len('\n</section>')]
+d223_body = d223[d223.index('<div class="chapter-body">'):d223.index('<nav class="chapter-endnav"')]
+d223_items = [x for x in manifest['companions'] if x['chapter'] == 'ch2-2-3']
+assert len(d223_items) == 13
+assert 'lang="ar"' in d223.split('>', 1)[0]
+assert 'style="--hue:148;"' in d223
+assert '<h1 class="chapter-title">الميتافيزيقا عند فلاسفة الإسلام والمسيحية</h1>' in d223
+assert "اسم المؤلف غير مثبت" in d223
+assert len(re.findall(r'<h2 class="endh">', d223)) == 6
+assert len(re.findall(r'class="examq-cat"', d223)) == 5
+d223_depths = list(re.finditer(r'<details class="hikam-source-depth-inline"[\s\S]*?</details>', d223_body))
+assert len(d223_depths) == 7
+assert d223_body.count('class="hikam-source-depth-item"') == 13
+assert sum(map(int, re.findall(r'data-depth-count="(\d+)"', d223_body))) == 13
+for entry in d223_items:
+    assert entry['source']['author'] == 'المؤلف غير مذكور في النص المقرر'
+    assert all(1 <= page <= 8 for page in entry['source']['printedPages'])
+    assert all(entry.get(k) for k in ('simple', 'why_here', 'remember'))
+for disclosure in d223_depths:
+    assert d223_body[:disclosure.start()].rstrip().endswith('</p>'), "2.2.3 Source Depth must immediately follow prose"
     assert ' open' not in disclosure.group(0).split('>', 1)[0]
     assert 'hikam-source-depth-citation' in disclosure.group(0)
 assert 'hikam-companion-context-field' in reader
