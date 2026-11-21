@@ -68,7 +68,7 @@ def check(browser, url, width):
         page.keyboard.press('Escape')
         assert page.locator('#hikamCompanionPopup').is_hidden()
     # Local paragraph-level disclosures for all four source authors.
-    for chapter, number in [('ch1-1-1', 10), ('ch1-1-2', 24), ('ch1-1-3', 9), ('ch1-1-4', 9), ('ch1-1-5', 5), ('ch2-1-1', 6), ('ch2-1-2', 6), ('ch2-1-3', 14), ('ch2-1-4', 17), ('ch2-1-5', 16), ('ch2-1-6', 2), ('ch2-1-7', 9)]:
+    for chapter, number in [('ch1-1-1', 10), ('ch1-1-2', 24), ('ch1-1-3', 9), ('ch1-1-4', 9), ('ch1-1-5', 5), ('ch2-1-1', 6), ('ch2-1-2', 6), ('ch2-1-3', 14), ('ch2-1-4', 17), ('ch2-1-5', 16), ('ch2-1-6', 2), ('ch2-1-7', 9), ('ch2-1-8', 11)]:
         callouts = page.locator('#' + chapter + ' .chapter-body .hikam-source-depth-inline')
         assert callouts.count() >= 1
         assert callouts.locator('.hikam-source-depth-item').count() == number
@@ -107,7 +107,9 @@ def check(browser, url, width):
         "(e) => getComputedStyle(e).textDecorationColor")
     arabic_color = page.locator('[data-companion-id="h217-tadbir"]').evaluate(
         "(e) => getComputedStyle(e).textDecorationColor")
-    assert len({color, other_color, papineau_color, gutting_color, critchley_color, bird_color, common_good_color, war_color, wolff_color, liberty_color, individualism_color, arabic_color}) == 12
+    plato_color = page.locator('[data-companion-id="h218-birth"]').evaluate(
+        "(e) => getComputedStyle(e).textDecorationColor")
+    assert len({color, other_color, papineau_color, gutting_color, critchley_color, bird_color, common_good_color, war_color, wolff_color, liberty_color, individualism_color, arabic_color, plato_color}) == 13
     cue.focus()
     page.keyboard.press('Enter')
     popup = page.locator('#hikamCompanionPopup')
@@ -157,6 +159,20 @@ def check(browser, url, width):
     assert popup.is_hidden()
     assert page.locator('#ch2-1-7 .chapter-body .hikam-companion-trigger').count() == 8
     assert page.locator('#ch2-1-7 .chapter-body .hikam-source-depth-inline').count() == 7
+    # Arabic 2.1.8 uses its real Arabic script and chapter hue, not a simulated RTL tag.
+    plato_cue = page.locator('[data-companion-id="h218-birth"]')
+    assert page.locator('#ch2-1-8').get_attribute('lang') == 'ar'
+    assert plato_cue.count() == 1
+    plato_cue.scroll_into_view_if_needed()
+    plato_cue.focus()
+    page.keyboard.press('Enter')
+    assert popup.get_attribute('dir') == 'rtl'
+    assert popup.get_attribute('lang') == 'ar'
+    assert 'التوالد' in popup.inner_text()
+    page.keyboard.press('Escape')
+    assert popup.is_hidden()
+    assert page.locator('#ch2-1-8 .chapter-body .hikam-companion-trigger').count() == 9
+    assert page.locator('#ch2-1-8 .chapter-body .hikam-source-depth-inline').count() == 8
     # The original paragraph text must include the uninterrupted wrapped phrase.
     assert page.locator('[data-companion-id="h112-parfit-identity"]').inner_text() == 'future generations'
     page.evaluate("""() => {
@@ -226,6 +242,10 @@ def check(browser, url, width):
     assert page.locator('#ch2-1-7 .js-print-page').count() > 0
     assert page.locator('#ch2-1-7 .js-print-page .hikam-source-depth-inline').count() == 0
     assert page.locator('#ch2-1-7 .js-print-page .hikam-companion-trigger').count() == 0
+    page.evaluate("window.__runPagination(['ch2-1-8'])")
+    assert page.locator('#ch2-1-8 .js-print-page').count() > 0
+    assert page.locator('#ch2-1-8 .js-print-page .hikam-source-depth-inline').count() == 0
+    assert page.locator('#ch2-1-8 .js-print-page .hikam-companion-trigger').count() == 0
     assert not errors, errors
     ctx.close()
 
@@ -243,7 +263,7 @@ with site() as no_js_url, sync_playwright() as no_js_pw:
         context = no_js_browser.new_context(java_script_enabled=False, viewport={'width':390,'height':820})
         page = context.new_page()
         page.goto(no_js_url, wait_until='domcontentloaded')
-        for chapter in ('ch1-1-1', 'ch1-1-2', 'ch1-1-3', 'ch1-1-4', 'ch1-1-5', 'ch2-1-1', 'ch2-1-2', 'ch2-1-3', 'ch2-1-4', 'ch2-1-5', 'ch2-1-6', 'ch2-1-7'):
+        for chapter in ('ch1-1-1', 'ch1-1-2', 'ch1-1-3', 'ch1-1-4', 'ch1-1-5', 'ch2-1-1', 'ch2-1-2', 'ch2-1-3', 'ch2-1-4', 'ch2-1-5', 'ch2-1-6', 'ch2-1-7', 'ch2-1-8'):
             disclosure = page.locator('#'+chapter+' .hikam-source-depth-inline').first
             assert disclosure.count() == 1 and disclosure.get_attribute('open') is None
             # Native summary keyboard activation works even when page JS is
