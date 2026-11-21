@@ -131,7 +131,19 @@ def verify() -> None:
     assert old_218.count('class="end-block"') == 1
     assert old_218.count('class="examq-cat"') == 5
     assert old_218.count('class="endh"') == 6
-    print("PASS: ten originals and complete protected 2.1.6, Arabic 2.1.7 and Plato 2.1.8 snapshots")
+    original_221 = ROOT / "src/archive/pre-redevelopment-2026-11-21/dossier-2.2.1.html"
+    archived_221 = original_221.read_bytes()
+    assert blob_sha(archived_221) == "7db0c56b5cb7ff363c7fa95f8b43517f7acc9c8d", (
+        "Original Arabic metaphysics dossier 2.2.1 changed"
+    )
+    old_221 = archived_221.decode("utf-8")
+    assert old_221.startswith('<section class="chapter rtl" id="ch2-2-1" lang="ar"')
+    assert old_221.endswith("</section>")
+    assert old_221.count('class="end-block"') == 1
+    assert old_221.count('class="endh"') == 6
+    assert old_221.count('class="examq-cat"') == 5
+    assert "pre-redevelopment-2026-11-21" not in (ROOT / "src/main.html").read_text(encoding="utf-8")
+    print("PASS: ten originals, complete protected 2.1.6–2.1.8 and Arabic metaphysics 2.2.1 snapshots")
 
 
 if __name__ == "__main__":
