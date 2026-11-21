@@ -65,8 +65,8 @@ jobs:
       - name: Full browser regression including Arabic RTL, colors, mobile, A4 and offline
         run: |
           set -e
-          python src/tests/browser_quality.py
           python src/tests/browser_reading_companions.py
+          python src/tests/browser_quality.py
           python src/tests/browser_design_tokens.py
           python src/tests/browser_3_4_house_style.py
           python src/tests/browser_batch2_continuity.py
