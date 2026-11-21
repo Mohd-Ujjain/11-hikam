@@ -6,6 +6,8 @@
 
 **Arabic 2.1.8:** The source-complete Plato chapter uses the [12-page Arabic source-to-dossier register](docs/editorial/READING_2_1_8_ARABIC_PLATO_SOURCE_COVERAGE.md) and the [pinned full historical section](archive/pre-redevelopment-2026-11-21/README.md). The original DOCX, three Arabic syntheses and personal language samples stay outside the repository. Run `python src/tests/verify_arabic_plato_source_fidelity.py` along with the established Arabic/print/reader tests.
 
+**Arabic 2.2.1:** The complete original [16-page Arabic source](docs/editorial/READING_2_2_1_ARABIC_METAPHYSICS_SOURCE_COVERAGE.md) governs the reworked metaphysics chapter; [its prior full 2.2.1 edition is immutable](archive/pre-redevelopment-2026-11-21/README.md). Source DOCX, three syntheses, language profile and personal writing samples are private editorial references, not published. Run `python src/tests/verify_arabic_metaphysics_source_fidelity.py` alongside all existing reader/RTL/PDF/offline checks.
+
 ## Subsequent dossier snapshots
 
 Dossier 2.1.6 was archived in full before its first replacement on 21 November 2026: [pre-redevelopment snapshot](archive/pre-redevelopment-2026-11-21/README.md). It is separately pinned and never a build input. The fixed original ten-dossier baseline below remains unchanged.
