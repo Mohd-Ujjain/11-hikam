@@ -10,6 +10,8 @@ This repository follows the same **published root → modular `src/` → organiz
 
 **Arabic 2.2.2:** The [source-faithful eight-page Arabic traditional-division coverage register](src/docs/editorial/READING_2_2_2_ARABIC_METAPHYSICS_DIVISION_SOURCE_COVERAGE.md) governs the expanded source-verified four-branch dossier and preserves the source's Kant/Hegel conclusion. The [full old edition](src/archive/pre-redevelopment-2026-11-21/README.md) was archived before replacement. Private Arabic sources and authorial profile samples are not published.
 
+**Arabic 2.2.3:** The [eight-page Islamic and Christian metaphysics source register](src/docs/editorial/READING_2_2_3_ARABIC_ISLAM_CHRISTIAN_METAPHYSICS_SOURCE_COVERAGE.md) governs the original author's treatment of al-Kindi, al-Farabi, Ibn Sina, Ibn Rushd, and Augustine, including the incomplete final sentence and unresolved manuscript wording. The [complete previous Arabic dossier](src/archive/pre-redevelopment-2026-11-21/README.md) was archived before the update. Primary DOCX, supplements and language-profile samples are private.
+
 **Historical preservation:** The complete 2.1.6 pre-redevelopment section was separately preserved [on 21 November 2026](src/archive/pre-redevelopment-2026-11-21/README.md), before its replacement, with a pinned Git blob and verification. The existing ten-file original archive remains unchanged.
 
 **Earlier historical preservation:** [Ten complete original dossier sections](src/archive/pre-revamp-2026-11-05/README.md) (1.1.1–1.1.5 and 2.1.1–2.1.5) have been preserved from the 5 November 2026 pre-revamp commit, with a pinned manifest and CI integrity check. These are read-only historical snapshots outside the published book; the revised `main` dossiers remain canonical.

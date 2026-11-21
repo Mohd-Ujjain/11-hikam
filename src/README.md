@@ -10,6 +10,8 @@
 
 **Arabic 2.2.2:** The original eight-page Arabic reading controls the revised traditional-division dossier. The [full original source-to-section coverage record](docs/editorial/READING_2_2_2_ARABIC_METAPHYSICS_DIVISION_SOURCE_COVERAGE.md) preserves the source's distinct introductory and exposition orderings and all author-attributed positions. The [complete former dossier](archive/pre-redevelopment-2026-11-21/README.md) is stored with a protected Git hash. Source DOCX, Arabic syntheses, writing samples and profile remain private. Verify via `python src/tests/verify_arabic_metaphysics_division_source_fidelity.py` and all existing reader, print and offline gates.
 
+**Arabic 2.2.3:** Read the [full source-to-dossier coverage and two textual-boundary notes](docs/editorial/READING_2_2_3_ARABIC_ISLAM_CHRISTIAN_METAPHYSICS_SOURCE_COVERAGE.md). The original eight-page Arabic DOCX's author metadata is blank, its final Augustine sentence is incomplete, and it contains the unverified «حرثات الأجرام السماوية» reading. Neither missing text nor an unverified correction is invented. The [complete predecessor](archive/pre-redevelopment-2026-11-21/README.md) was archived and pinned on `main` first. Run `python src/tests/verify_arabic_metaphysics_islam_christian_source_fidelity.py` and all required RTL, print, offline and browser regressions.
+
 ## Subsequent dossier snapshots
 
 Dossier 2.1.6 was archived in full before its first replacement on 21 November 2026: [pre-redevelopment snapshot](archive/pre-redevelopment-2026-11-21/README.md). It is separately pinned and never a build input. The fixed original ten-dossier baseline below remains unchanged.

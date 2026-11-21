@@ -57,3 +57,14 @@ This original is for historical recovery, **never** a second published reading, 
 - **Intellectual source:** the user's `2.2.2 Source - التقسيم التقليدي للميتافيزيقا.docx`, eight supplied pages, chapter title «الفصل الثاني: التقسيم التقليدي للميتافيزيقا», with no verified author credit in Word metadata. Three Arabic syntheses, language-profile instructions and private writing examples inform editorial phrasing and are **not** published or treated as higher authority than this reading.
 
 Preserve this entire historical edition for future recovery, separate from the live reader. This addition does not alter the ten original protected dossiers or the preserved 2.1.6–2.2.1 snapshots.
+
+## Dossier 2.2.3 — Original Arabic Islam/Christian metaphysics, before source-led revision
+
+**Entire previous dossier preserved before editorial replacement:** 21 November 2026, authoritative `main` commit [`f01d0a01`](https://github.com/MohdUjjain/11-hikam/commit/f01d0a0104076f9eb6f018bb38c085323b963e7d).
+
+- **Read-only historic section:** [`dossier-2.2.3.html`](dossier-2.2.3.html), including its original Arabic frontmatter, all main-body teaching aids, chapter navigation, six original revision sections and five examination categories.
+- **Canonical original placement:** `src/chapters/subtopic-2-2.html`, section `ch2-2-3`, with `lang="ar"` and hue `148`.
+- **Independently pinned blob SHA:** `6d9a061553530b847235215d99f579fcf2740285`, enforced by `src/tests/verify_dossier_archive.py`.
+- **Supplied source authority:** `2.2.3 Source - الميتافيزيقا عند فلاسفة الإسلام والمسيحيين.docx`, eight-page Arabic excerpt spanning «الفصل الأول: الميتافيزيقا عند فلاسفة الإسلام» and «الفصل الثاني: الميتافيزيقا في الفلسفة المسيحية». Document metadata has no verified author. The provided excerpt ends mid-sentence on page eight during the Augustine section. This is recorded as a textual boundary, **not reconstructed**. The source's «حرثات الأجرام السماوية» remains an unresolved textual variant; supplementary syntheses propose «حركات» but are not authority for silent correction.
+
+The archive is not a second chapter in the published reader; it is a recoverable historical edition. All previously pinned archives stay unaltered. Private DOCX, synthesis drafts, language profile and samples are editorial input and remain unpublished.
