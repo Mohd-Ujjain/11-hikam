@@ -64,7 +64,7 @@ for d in depths:
 
 visible = re.sub(r'<details class="hikam-source-depth-inline"[\s\S]*?</details>', "", body)
 units = [
-    ("Wolff and tentative identification", "ربما كان من أبرز من اهتموا"),
+    ("Wolff and tentative identification", "ربما كان هو الذي اهتم"),
     ("four subjects", "تقسيم الميتافيزيقا إلى أربعة مباحث"),
     ("original list and exposition mismatch", "خلاف ترتيبهما في القائمة الافتتاحية"),
     ("Aristotle's being as being", "«الوجود بما هو وجود»"),
