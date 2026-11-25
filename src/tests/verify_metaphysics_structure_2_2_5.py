@@ -21,7 +21,10 @@ b = SOURCE.index("\n</section>", a) + len("\n</section>")
 chapter = SOURCE[a:b]
 assert SOURCE.count('id="ch2-2-5"') == 1
 assert '<h1 class="chapter-title">The Structure of Aristotle’s Metaphysics</h1>' in chapter
-assert "Introductory author not identified in the supplied excerpt" in chapter
+assert "By W. D. Ross" in chapter
+assert "Clarendon Press, 1924" in chapter
+assert "Introductory author not identified" not in chapter
+assert "— W. D. Ross, Introduction I" in chapter
 assert "The Ladder of Cognition" not in chapter
 assert "all men by nature desire to know" not in chapter.lower()
 assert chapter.count('class="end-block"') == 1
@@ -66,7 +69,7 @@ manifest = json.loads((SRC / "reading_companions.json").read_text(encoding="utf-
 items = [x for x in manifest["companions"] if x["chapter"] == "ch2-2-5"]
 assert len(items) == 10, "Ten exact 2.2.5 context-first Companions expected"
 assert len(set(x["id"] for x in items)) == 10
-assert all(x["source"]["author"] == "Author not identified in supplied excerpt"
+assert all(x["source"]["author"] == "W. D. Ross"
            and x.get("simple") and x.get("why_here") and x.get("remember")
            and 1 <= x["source"]["printedPages"][0] <= 21
            for x in items)

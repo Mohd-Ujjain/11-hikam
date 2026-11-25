@@ -1,7 +1,7 @@
 {
   "version": 1,
   "editorialPolicy": "src/docs/editorial/CONCISE_DOSSIER_AND_READING_COMPANIONS.md",
-  "description": "Context-first source-grounded companions through the English critical introduction 2.2.5, with source-author strictness and local optional evidence.",
+  "description": "Source-anchored contextual Reading Companions through Aristotle introductions 2.2.5 (W. D. Ross) and 2.2.6 (Hugh Lawson-Tancred).",
   "companions": [
     {
       "id": "h111-russell-idealism",
@@ -4512,8 +4512,8 @@
       "title": "What are the two different orders?",
       "explanation": "The writing order asks when Aristotle composed each passage. The lecture order asks what he discussed before or after another part in teaching. The author warns that a backward reference does not automatically date the writing of the whole book.",
       "source": {
-        "author": "Author not identified in supplied excerpt",
-        "work": "Introduction, I. The Structure of the Metaphysics",
+        "author": "W. D. Ross",
+        "work": "Introduction I, The Structure of the Metaphysics, in Aristotle's Metaphysics, vol. I (Clarendon Press, 1924); locators are PDF pages",
         "printedPages": [
           2
         ]
@@ -4532,8 +4532,8 @@
       "title": "Why trust internal cross-references?",
       "explanation": "A reference is strong evidence when removing it would also disrupt the surrounding reasoning; it seems part of the actual argument. The author is deciding which clues are reliable enough to reconstruct connections among books.",
       "source": {
-        "author": "Author not identified in supplied excerpt",
-        "work": "Introduction, I. The Structure of the Metaphysics",
+        "author": "W. D. Ross",
+        "work": "Introduction I, The Structure of the Metaphysics, in Aristotle's Metaphysics, vol. I (Clarendon Press, 1924); locators are PDF pages",
         "printedPages": [
           1
         ]
@@ -4552,8 +4552,8 @@
       "title": "Why distinguish the first four puzzles?",
       "explanation": "They ask what kind of science metaphysics could be and which principles fall within its scope; later puzzles are more specific questions for that science to answer. The distinction explains why Γ settles the initial scope before later books pursue substance and other topics.",
       "source": {
-        "author": "Author not identified in supplied excerpt",
-        "work": "Introduction, I. The Structure of the Metaphysics",
+        "author": "W. D. Ross",
+        "work": "Introduction I, The Structure of the Metaphysics, in Aristotle's Metaphysics, vol. I (Clarendon Press, 1924); locators are PDF pages",
         "printedPages": [
           4
         ]
@@ -4572,8 +4572,8 @@
       "title": "What does E set aside?",
       "explanation": "Not every sense of the word “being” becomes an object of the same inquiry. Incidental connections and the truth of assertions are treated separately from the central metaphysical subjects. The author uses E to connect the scope established in Γ to the kinds of being discussed later.",
       "source": {
-        "author": "Author not identified in supplied excerpt",
-        "work": "Introduction, I. The Structure of the Metaphysics",
+        "author": "W. D. Ross",
+        "work": "Introduction I, The Structure of the Metaphysics, in Aristotle's Metaphysics, vol. I (Clarendon Press, 1924); locators are PDF pages",
         "printedPages": [
           5
         ]
@@ -4592,8 +4592,8 @@
       "title": "Why study sensible substances here?",
       "explanation": "The analysis is concerned with the form or principle in visible things, not merely with physical matter. That formal aspect prepares investigation of substance beyond the sensible. This is the key reply to Jaeger’s claim that Z–H–Θ belong to physics rather than metaphysics.",
       "source": {
-        "author": "Author not identified in supplied excerpt",
-        "work": "Introduction, I. The Structure of the Metaphysics",
+        "author": "W. D. Ross",
+        "work": "Introduction I, The Structure of the Metaphysics, in Aristotle's Metaphysics, vol. I (Clarendon Press, 1924); locators are PDF pages",
         "printedPages": [
           7
         ]
@@ -4612,8 +4612,8 @@
       "title": "What are the two versions in M–N?",
       "explanation": "The source identifies an earlier and a later way of discussing Academic theories, supported by differences in cross-references and reused arguments. The distinction lets the author explain repetition as a result of revision rather than treating the collection as shapeless.",
       "source": {
-        "author": "Author not identified in supplied excerpt",
-        "work": "Introduction, I. The Structure of the Metaphysics",
+        "author": "W. D. Ross",
+        "work": "Introduction I, The Structure of the Metaphysics, in Aristotle's Metaphysics, vol. I (Clarendon Press, 1924); locators are PDF pages",
         "printedPages": [
           9
         ]
@@ -4632,8 +4632,8 @@
       "title": "Why is K an unusual case?",
       "explanation": "Its first part independently revisits metaphysical problems. Its second closely extracts text from Aristotle’s Physics; they do not have the same origin or purpose. This is why the author does not assign one simple verdict about the entire book.",
       "source": {
-        "author": "Author not identified in supplied excerpt",
-        "work": "Introduction, I. The Structure of the Metaphysics",
+        "author": "W. D. Ross",
+        "work": "Introduction I, The Structure of the Metaphysics, in Aristotle's Metaphysics, vol. I (Clarendon Press, 1924); locators are PDF pages",
         "printedPages": [
           13
         ]
@@ -4652,8 +4652,8 @@
       "title": "Why can’t Λ be dated so easily?",
       "explanation": "Conditional language and the absence of a technical label are too weak on their own to show when Λ was written. Its astronomical details raise further chronological complications. The author distinguishes the separate character of Λ from certainty about its date.",
       "source": {
-        "author": "Author not identified in supplied excerpt",
-        "work": "Introduction, I. The Structure of the Metaphysics",
+        "author": "W. D. Ross",
+        "work": "Introduction I, The Structure of the Metaphysics, in Aristotle's Metaphysics, vol. I (Clarendon Press, 1924); locators are PDF pages",
         "printedPages": [
           16
         ]
@@ -4672,8 +4672,8 @@
       "title": "Why use several small clues?",
       "explanation": "A repeated chapter or awkward join might have multiple explanations. Several comparable cases together make an editorial insertion more plausible. This is the argument’s transition from individual anomalies to a cumulative account of compilation.",
       "source": {
-        "author": "Author not identified in supplied excerpt",
-        "work": "Introduction, I. The Structure of the Metaphysics",
+        "author": "W. D. Ross",
+        "work": "Introduction I, The Structure of the Metaphysics, in Aristotle's Metaphysics, vol. I (Clarendon Press, 1924); locators are PDF pages",
         "printedPages": [
           18
         ]
@@ -4692,8 +4692,8 @@
       "title": "How could fourteen books occupy seven rolls?",
       "explanation": "The source suggests that two shorter books may have been copied on each commercial papyrus roll. Catchwords help connect one portion of the copied text to the next. The author is using physical manuscript clues, not just argument, to reconstruct an edition.",
       "source": {
-        "author": "Author not identified in supplied excerpt",
-        "work": "Introduction, I. The Structure of the Metaphysics",
+        "author": "W. D. Ross",
+        "work": "Introduction I, The Structure of the Metaphysics, in Aristotle's Metaphysics, vol. I (Clarendon Press, 1924); locators are PDF pages",
         "printedPages": [
           21
         ]
@@ -4702,6 +4702,266 @@
       "simple": "The source suggests that two shorter books may have been copied on each commercial papyrus roll. Catchwords help connect one portion of the copied text to the next.",
       "why_here": "The author is using physical manuscript clues, not just argument, to reconstruct an edition.",
       "remember": "Fourteen books need not mean fourteen physical rolls."
+    },
+    {
+      "id": "h226-project",
+      "chapter": "ch2-2-6",
+      "passage": "Lawson-Tancred does not offer a simple definition of metaphysics. Science uses observation and revisable hypotheses, whi",
+      "text": "comprehensive knowledge beyond changes",
+      "kind": "Contextual explanation",
+      "title": "Metaphysics’ ambition",
+      "explanation": "Metaphysics asks for a comprehensive rational view that remains stable despite changes in empirical theories. This distinguishes the aim from scientific hypotheses without treating the aim as necessarily fulfilled.",
+      "source": {
+        "author": "Hugh Lawson-Tancred",
+        "work": "Introduction to The Metaphysics (Penguin Classics, 1998); page locator is PDF page",
+        "printedPages": [
+          2
+        ]
+      },
+      "added_value": "Explains the local source-based inference without placing essential premises in the popup.",
+      "simple": "Metaphysics asks for a comprehensive rational view that remains stable despite changes in empirical theories.",
+      "why_here": "This distinguishes the aim from scientific hypotheses without treating the aim as necessarily fulfilled.",
+      "remember": "Ambition is not achievement."
+    },
+    {
+      "id": "h226-value",
+      "chapter": "ch2-2-6",
+      "passage": "Ordinary facts thus become premises for extraordinary claims about reality; Plato, Kant and Russell illustrate the appro",
+      "text": "arguments can remain worth study",
+      "kind": "Contextual explanation",
+      "title": "Arguments without proven conclusions",
+      "explanation": "An argument may reveal important problems and reasoning even if its extraordinary final conclusion is unsuccessful. The author is explaining why historical metaphysical texts still repay reading.",
+      "source": {
+        "author": "Hugh Lawson-Tancred",
+        "work": "Introduction to The Metaphysics (Penguin Classics, 1998); page locator is PDF page",
+        "printedPages": [
+          4
+        ]
+      },
+      "added_value": "Explains the local source-based inference without placing essential premises in the popup.",
+      "simple": "An argument may reveal important problems and reasoning even if its extraordinary final conclusion is unsuccessful.",
+      "why_here": "The author is explaining why historical metaphysical texts still repay reading.",
+      "remember": "Value of argument differs from truth of result."
+    },
+    {
+      "id": "h226-synthesis",
+      "chapter": "ch2-2-6",
+      "passage": "Plato combined distrust of the senses, confidence in reason and the pursuit of value into a theory of eternal Forms beyo",
+      "text": "natural reality and intelligible structure",
+      "kind": "Contextual explanation",
+      "title": "The two demands",
+      "explanation": "Aristotle wants physical things and change to be real, while also holding that their nature can be rationally explained. The historical conflict makes this reconciliation his task.",
+      "source": {
+        "author": "Hugh Lawson-Tancred",
+        "work": "Introduction to The Metaphysics (Penguin Classics, 1998); page locator is PDF page",
+        "printedPages": [
+          11
+        ]
+      },
+      "added_value": "Explains the local source-based inference without placing essential premises in the popup.",
+      "simple": "Aristotle wants physical things and change to be real, while also holding that their nature can be rationally explained.",
+      "why_here": "The historical conflict makes this reconciliation his task.",
+      "remember": "Natural reality and order belong together."
+    },
+    {
+      "id": "h226-development",
+      "chapter": "ch2-2-6",
+      "passage": "Lawson-Tancred gives a qualified reconstruction of Aristotle’s development. His father Nicomachus’ medical background ma",
+      "text": "qualified reconstruction",
+      "kind": "Contextual explanation",
+      "title": "Why historical caution?",
+      "explanation": "The suggested path from medicine through Platonism to synthesis is plausible, but the source says the surviving evidence is insufficient to establish every stage. This marks the difference between philosophical interpretation and documented intellectual biography.",
+      "source": {
+        "author": "Hugh Lawson-Tancred",
+        "work": "Introduction to The Metaphysics (Penguin Classics, 1998); page locator is PDF page",
+        "printedPages": [
+          12
+        ]
+      },
+      "added_value": "Explains the local source-based inference without placing essential premises in the popup.",
+      "simple": "The suggested path from medicine through Platonism to synthesis is plausible, but the source says the surviving evidence is insufficient to establish every stage.",
+      "why_here": "This marks the difference between philosophical interpretation and documented intellectual biography.",
+      "remember": "Developmental chronology remains proposed."
+    },
+    {
+      "id": "h226-qualities",
+      "chapter": "ch2-2-6",
+      "passage": "Aristotle’s three questions are what exists, how it changes, and how it is understood. The Categories distinguishes ten ",
+      "text": "Musicality requires a bearer",
+      "kind": "Contextual explanation",
+      "title": "What depends on what?",
+      "explanation": "A quality needs something to have it. Socrates can lose a particular quality without ceasing to be Socrates. The dependency underlies the Categories account of substance’s priority.",
+      "source": {
+        "author": "Hugh Lawson-Tancred",
+        "work": "Introduction to The Metaphysics (Penguin Classics, 1998); page locator is PDF page",
+        "printedPages": [
+          15
+        ]
+      },
+      "added_value": "Explains the local source-based inference without placing essential premises in the popup.",
+      "simple": "A quality needs something to have it. Socrates can lose a particular quality without ceasing to be Socrates.",
+      "why_here": "The dependency underlies the Categories account of substance’s priority.",
+      "remember": "A property needs a bearer."
+    },
+    {
+      "id": "h226-hylemorphism",
+      "chapter": "ch2-2-6",
+      "passage": "The Physics confronts Parmenides: change seems impossible if something comes either from what already exists or from not",
+      "text": "This matter–form doctrine",
+      "kind": "Contextual explanation",
+      "title": "Why matter must persist",
+      "explanation": "The subject can remain through changes of quality, but its own birth requires a deeper persisting constituent in Aristotle’s account. The move explains substantial generation and sets up the later problem.",
+      "source": {
+        "author": "Hugh Lawson-Tancred",
+        "work": "Introduction to The Metaphysics (Penguin Classics, 1998); page locator is PDF page",
+        "printedPages": [
+          17
+        ]
+      },
+      "added_value": "Explains the local source-based inference without placing essential premises in the popup.",
+      "simple": "The subject can remain through changes of quality, but its own birth requires a deeper persisting constituent in Aristotle’s account.",
+      "why_here": "The move explains substantial generation and sets up the later problem.",
+      "remember": "Change in quality differs from a thing’s generation."
+    },
+    {
+      "id": "h226-crisis",
+      "chapter": "ch2-2-6",
+      "passage": "But if matter underlies individual substance, it may be more fundamental. An underlying series of composite matter seems",
+      "text": "incapable of explaining a thing’s intelligible nature",
+      "kind": "Contextual explanation",
+      "title": "Why formlessness is dangerous",
+      "explanation": "If the basic reality has no determining form, it cannot explain what things are. The move from change to intelligibility motivates Metaphysics.",
+      "source": {
+        "author": "Hugh Lawson-Tancred",
+        "work": "Introduction to The Metaphysics (Penguin Classics, 1998); page locator is PDF page",
+        "printedPages": [
+          18
+        ]
+      },
+      "added_value": "Explains the local source-based inference without placing essential premises in the popup.",
+      "simple": "If the basic reality has no determining form, it cannot explain what things are.",
+      "why_here": "The move from change to intelligibility motivates Metaphysics.",
+      "remember": "Formless foundation threatens explanation."
+    },
+    {
+      "id": "h226-essence",
+      "chapter": "ch2-2-6",
+      "passage": "Zeta asks what qualifies as substance and which things are substances. Its candidates are substrate, essence, universal ",
+      "text": "what-it-was-to-be-that-thing",
+      "kind": "Contextual explanation",
+      "title": "Aristotle’s awkward phrase",
+      "explanation": "The phrase designates essence: what a thing is essentially and what a full definition seeks to capture. It is the central proposed answer to what a substance is in Zeta.",
+      "source": {
+        "author": "Hugh Lawson-Tancred",
+        "work": "Introduction to The Metaphysics (Penguin Classics, 1998); page locator is PDF page",
+        "printedPages": [
+          20
+        ]
+      },
+      "added_value": "Explains the local source-based inference without placing essential premises in the popup.",
+      "simple": "The phrase designates essence: what a thing is essentially and what a full definition seeks to capture.",
+      "why_here": "It is the central proposed answer to what a substance is in Zeta.",
+      "remember": "Essence is the defining nature."
+    },
+    {
+      "id": "h226-thisness",
+      "chapter": "ch2-2-6",
+      "passage": "What is familiar to us need not be intelligible in itself: the wetness of water is familiar; its structure as H₂O explai",
+      "text": "A breed of dog can be",
+      "kind": "Contextual explanation",
+      "title": "Species and thisness",
+      "explanation": "One can select a determinate kind of dog without selecting an individual dog. The genus animal is less determinate. This supports the source’s distinction of species from a broad universal.",
+      "source": {
+        "author": "Hugh Lawson-Tancred",
+        "work": "Introduction to The Metaphysics (Penguin Classics, 1998); page locator is PDF page",
+        "printedPages": [
+          23
+        ]
+      },
+      "added_value": "Explains the local source-based inference without placing essential premises in the popup.",
+      "simple": "One can select a determinate kind of dog without selecting an individual dog. The genus animal is less determinate.",
+      "why_here": "This supports the source’s distinction of species from a broad universal.",
+      "remember": "Thisness need not be individual particularity."
+    },
+    {
+      "id": "h226-unity",
+      "chapter": "ch2-2-6",
+      "passage": "Two objections follow. A definition has genus and differentia: how is it one? Lawson-Tancred reconstructs the contrast b",
+      "text": "how is it one?",
+      "kind": "Contextual explanation",
+      "title": "Unity of a definition",
+      "explanation": "Aristotle’s proposed answer treats the components of a definition as intelligible through the whole they describe, rather than as independently prior pieces. This addresses the objection that genus plus differentia cannot define one essence.",
+      "source": {
+        "author": "Hugh Lawson-Tancred",
+        "work": "Introduction to The Metaphysics (Penguin Classics, 1998); page locator is PDF page",
+        "printedPages": [
+          25
+        ]
+      },
+      "added_value": "Explains the local source-based inference without placing essential premises in the popup.",
+      "simple": "Aristotle’s proposed answer treats the components of a definition as intelligible through the whole they describe, rather than as independently prior pieces.",
+      "why_here": "This addresses the objection that genus plus differentia cannot define one essence.",
+      "remember": "Posterior parts need not break a whole."
+    },
+    {
+      "id": "h226-gill",
+      "chapter": "ch2-2-6",
+      "passage": "Eta appears to restore the individual composite. On M. L. Gill’s interpretation, persisting matter has only potential be",
+      "text": "potential being within the actual whole",
+      "kind": "Contextual explanation",
+      "title": "Why matter is merely potential",
+      "explanation": "Gill proposes that the matter persisting in an actual composite does not itself enjoy the status of an actual, independent constituent there. This is a tentative way to protect the priority of an individual substance.",
+      "source": {
+        "author": "Hugh Lawson-Tancred",
+        "work": "Introduction to The Metaphysics (Penguin Classics, 1998); page locator is PDF page",
+        "printedPages": [
+          28
+        ]
+      },
+      "added_value": "Explains the local source-based inference without placing essential premises in the popup.",
+      "simple": "Gill proposes that the matter persisting in an actual composite does not itself enjoy the status of an actual, independent constituent there.",
+      "why_here": "This is a tentative way to protect the priority of an individual substance.",
+      "remember": "Actual whole, potential underlying matter."
+    },
+    {
+      "id": "h226-unfinished",
+      "chapter": "ch2-2-6",
+      "passage": "Lawson-Tancred calls the Metaphysics an esoteric specialist text, open to additions and revision. He considers Felix Gra",
+      "text": "a random heap",
+      "kind": "Contextual explanation",
+      "title": "Why compilation need not erase design",
+      "explanation": "Lawson-Tancred allows many rough joins but sees a largely intelligible course of inquiry in the transmitted books. This qualifies the account of Kappa and other editorial irregularities.",
+      "source": {
+        "author": "Hugh Lawson-Tancred",
+        "work": "Introduction to The Metaphysics (Penguin Classics, 1998); page locator is PDF page",
+        "printedPages": [
+          41
+        ]
+      },
+      "added_value": "Explains the local source-based inference without placing essential premises in the popup.",
+      "simple": "Lawson-Tancred allows many rough joins but sees a largely intelligible course of inquiry in the transmitted books.",
+      "why_here": "This qualifies the account of Kappa and other editorial irregularities.",
+      "remember": "Unfinished need not mean structureless."
+    },
+    {
+      "id": "h226-translation",
+      "chapter": "ch2-2-6",
+      "passage": "Lawson-Tancred ends by weighing literal precision against readability. His version is deliberately an introductory or pr",
+      "text": "a first approach for readers new",
+      "kind": "Contextual explanation",
+      "title": "An introductory translation",
+      "explanation": "The translator accepts a trade-off between literal precision and readability to help beginners approach a demanding work. The final section states a deliberately limited pedagogical purpose.",
+      "source": {
+        "author": "Hugh Lawson-Tancred",
+        "work": "Introduction to The Metaphysics (Penguin Classics, 1998); page locator is PDF page",
+        "printedPages": [
+          42
+        ]
+      },
+      "added_value": "Explains the local source-based inference without placing essential premises in the popup.",
+      "simple": "The translator accepts a trade-off between literal precision and readability to help beginners approach a demanding work.",
+      "why_here": "The final section states a deliberately limited pedagogical purpose.",
+      "remember": "Introductory is not definitive."
     }
   ]
 }

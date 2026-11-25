@@ -44,7 +44,7 @@ for item in manifest['companions']:
     seen.add(ident)
     assert re.fullmatch(r'ch\d+-\d+-\d+', item['chapter']), ident
     assert item['source']['printedPages'], f'No primary page reference: {ident}'
-    assert item['source']['author'] in ('Dermot Moran', 'Rowland Stout', 'David Papineau', 'Gary Gutting', 'Simon Critchley', 'Colin Bird', 'Jonathan Wolff', 'Author not identified in supplied excerpt', 'المؤلف غير مذكور في النص المقرر'), ident
+    assert item['source']['author'] in ('Dermot Moran', 'Rowland Stout', 'David Papineau', 'Gary Gutting', 'Simon Critchley', 'Colin Bird', 'Jonathan Wolff', 'W. D. Ross', 'Hugh Lawson-Tancred', 'المؤلف غير مذكور في النص المقرر'), ident
     assert 20 <= len(item['explanation'].split()) <= 110, f'Explanation out of pilot range: {ident}'
     assert item['added_value'].strip(), ident
     # Arabic chapters are existing "chapter rtl" sections; match both
@@ -76,7 +76,7 @@ stout = [x for x in manifest['companions'] if x['chapter'] == 'ch1-1-2']
 papineau = [x for x in manifest['companions'] if x['chapter'] == 'ch1-1-3']
 gutting = [x for x in manifest['companions'] if x['chapter'] == 'ch1-1-4']
 assert len(moran) == 10 and len(stout) == 24 and len(papineau) == 12 and len(gutting) == 12
-assert len(seen) == 223  # adds ten source-grounded English 2.2.5 contextual cues
+assert len(seen) == 236  # adds ten Ross plus thirteen Lawson-Tancred contextual cues
 assert 'class="historical-timeline"' in chapters
 assert 'The One Thread to Follow' in chapters
 assert 'The four thinkers below are not four unrelated stories.' in chapters
@@ -466,7 +466,7 @@ assert len(d225_disclosures) == 4, "2.2.5 has four paragraph-adjacent optional d
 assert sum(int(re.search(r'data-depth-count="(\d+)"', block.group()).group(1))
            for block in d225_disclosures) == 7
 assert d225_body.count('class="hikam-source-depth-item"') == 7
-assert all(item['source']['author'] == 'Author not identified in supplied excerpt'
+assert all(item['source']['author'] == 'W. D. Ross'
            and item['source']['printedPages'] and item.get('simple')
            and item.get('why_here') and item.get('remember')
            for item in d225_items)
@@ -477,6 +477,30 @@ for disclosure in d225_disclosures:
     assert ' open' not in disclosure.group().split('>', 1)[0]
     assert 'hikam-source-depth-citation' in disclosure.group()
 assert 'Socrates, Plato, and the Platonists' in d225
+# English 2.2.6 — Hugh Lawson-Tancred, full 42-page introduction.
+d226_start = chapters.index('<section class="chapter" id="ch2-2-6"')
+d226 = chapters[d226_start:chapters.index('\n</section>', d226_start) + len('\n</section>')]
+d226_body = d226[d226.index('<div class="chapter-body">'):d226.index('<nav class="chapter-endnav"')]
+d226_items = [x for x in manifest['companions'] if x['chapter'] == 'ch2-2-6']
+assert len(d226_items) == 13
+assert 'Hugh Lawson-Tancred' in d226
+assert 'style="--hue:208;"' in d226
+assert '<h1 class="chapter-title">Substance, Change and Intelligibility: An Introduction to Aristotle’s Metaphysics</h1>' in d226
+assert len(re.findall(r'<h2 class="endh">', d226)) == 6
+assert d226.count('class="examq-cat"') == 5
+d226_depth = list(re.finditer(r'<details class="hikam-source-depth-inline"[\s\S]*?</details>', d226_body))
+assert len(d226_depth) == 5
+assert [int(re.search(r'data-depth-count="(\d+)"', block.group()).group(1))
+        for block in d226_depth] == [2, 2, 2, 3, 3]
+assert d226_body.count('class="hikam-source-depth-item"') == 12
+assert all(item['source']['author'] == 'Hugh Lawson-Tancred'
+           and item['source']['printedPages'] and all(1 <= p <= 42 for p in item['source']['printedPages'])
+           and item.get('simple') and item.get('why_here') and item.get('remember')
+           for item in d226_items)
+for block in d226_depth:
+    assert d226_body[:block.start()].rstrip().endswith('</p>'), "226 Source Depth must follow source paragraph"
+    assert ' open' not in block.group().split('>', 1)[0]
+    assert 'hikam-source-depth-citation' in block.group()
 assert 'hikam-companion-context-field' in reader
 assert 'item.simple && item.why_here && item.remember' in reader
 assert "'.hikam-source-depth-inline'" in (SRC/'philosophy_notes.js').read_text(encoding='utf-8') or '.hikam-source-depth-inline' in (SRC/'philosophy_notes.js').read_text(encoding='utf-8')
