@@ -61,6 +61,8 @@ jobs:
         run: python src/tests/verify_arabic_metaphysics_division_source_fidelity.py
       - name: Verify Arabic metaphysics 2.2.3 complete Islamic and Christian source units and editorial limits
         run: python src/tests/verify_arabic_metaphysics_islam_christian_source_fidelity.py
+      - name: Verify English 2.2.5 critical introduction, 21-page source map, companion cues and revision
+        run: python src/tests/verify_metaphysics_structure_2_2_5.py
       - name: Validate book structure and chapter navigation
         run: python src/tests/validate_structure.py
       - name: Validate accessible contents and print controls
