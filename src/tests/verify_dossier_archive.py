@@ -167,7 +167,19 @@ def verify() -> None:
     assert old_223.count('class="endh"') == 6
     assert old_223.count('class="examq-cat"') == 5
     assert "pre-redevelopment-2026-11-21" not in (ROOT / "src/main.html").read_text(encoding="utf-8")
-    print("PASS: ten originals plus all protected 2.1.6–2.1.8 and 2.2.1–2.2.3 complete editions")
+    original_224 = ROOT / "src/archive/pre-redevelopment-2026-11-21/dossier-2.2.4.html"
+    archived_224 = original_224.read_bytes()
+    assert blob_sha(archived_224) == "69ae2963586085257096fde723ba2a8d3b0851be", (
+        "Original 2.2.4 Aristotle Metaphysics introduction snapshot changed"
+    )
+    old_224 = archived_224.decode("utf-8")
+    assert old_224.startswith('<section class="chapter rtl" id="ch2-2-4" lang="ar" style="--hue:168;"')
+    assert old_224.endswith("</section>")
+    assert old_224.count('class="end-block"') == 1
+    assert old_224.count('class="endh"') == 6
+    assert old_224.count('class="examq-cat"') == 5
+    assert "pre-redevelopment-2026-11-21" not in (ROOT / "src/main.html").read_text(encoding="utf-8")
+    print("PASS: ten originals plus all protected 2.1.6–2.1.8 and 2.2.1–2.2.4 complete editions")
 
 
 if __name__ == "__main__":
