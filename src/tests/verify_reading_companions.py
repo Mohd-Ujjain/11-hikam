@@ -44,7 +44,7 @@ for item in manifest['companions']:
     seen.add(ident)
     assert re.fullmatch(r'ch\d+-\d+-\d+', item['chapter']), ident
     assert item['source']['printedPages'], f'No primary page reference: {ident}'
-    assert item['source']['author'] in ('Dermot Moran', 'Rowland Stout', 'David Papineau', 'Gary Gutting', 'Simon Critchley', 'Colin Bird', 'Jonathan Wolff', 'المؤلف غير مذكور في النص المقرر'), ident
+    assert item['source']['author'] in ('Dermot Moran', 'Rowland Stout', 'David Papineau', 'Gary Gutting', 'Simon Critchley', 'Colin Bird', 'Jonathan Wolff', 'Author not identified in supplied excerpt', 'المؤلف غير مذكور في النص المقرر'), ident
     assert 20 <= len(item['explanation'].split()) <= 110, f'Explanation out of pilot range: {ident}'
     assert item['added_value'].strip(), ident
     # Arabic chapters are existing "chapter rtl" sections; match both
@@ -76,7 +76,7 @@ stout = [x for x in manifest['companions'] if x['chapter'] == 'ch1-1-2']
 papineau = [x for x in manifest['companions'] if x['chapter'] == 'ch1-1-3']
 gutting = [x for x in manifest['companions'] if x['chapter'] == 'ch1-1-4']
 assert len(moran) == 10 and len(stout) == 24 and len(papineau) == 12 and len(gutting) == 12
-assert len(seen) == 213  # includes thirteen verified Arabic 2.2.3 contextual cues
+assert len(seen) == 223  # adds ten source-grounded English 2.2.5 contextual cues
 assert 'class="historical-timeline"' in chapters
 assert 'The One Thread to Follow' in chapters
 assert 'The four thinkers below are not four unrelated stories.' in chapters
@@ -448,6 +448,35 @@ for disclosure in d223_depths:
     assert d223_body[:disclosure.start()].rstrip().endswith('</p>'), "2.2.3 Source Depth must immediately follow prose"
     assert ' open' not in disclosure.group(0).split('>', 1)[0]
     assert 'hikam-source-depth-citation' in disclosure.group(0)
+# English 2.2.5 — critical introduction to the composite Metaphysics
+# (not the general Aristotle textbook summaries supplied as planning aids).
+d225_start = chapters.index('<section class="chapter" id="ch2-2-5"')
+d225 = chapters[d225_start:chapters.index('\n</section>', d225_start) + len('\n</section>')]
+d225_body = d225[d225.index('<div class="chapter-body">'):d225.index('<nav class="chapter-endnav"')]
+d225_items = [x for x in manifest['companions'] if x['chapter'] == 'ch2-2-5']
+assert len(d225_items) == 10, "Expected ten exact local 2.2.5 cues"
+assert 'style="--hue:188;"' in d225
+assert '<h1 class="chapter-title">The Structure of Aristotle’s Metaphysics</h1>' in d225
+assert len(re.findall(r'<h2 class="endh">', d225)) == 6
+assert d225.count('class="examq-cat"') == 5
+d225_disclosures = list(re.finditer(
+    r'<details class="hikam-source-depth-inline"[\s\S]*?</details>', d225_body
+))
+assert len(d225_disclosures) == 4, "2.2.5 has four paragraph-adjacent optional disclosures"
+assert sum(int(re.search(r'data-depth-count="(\d+)"', block.group()).group(1))
+           for block in d225_disclosures) == 7
+assert d225_body.count('class="hikam-source-depth-item"') == 7
+assert all(item['source']['author'] == 'Author not identified in supplied excerpt'
+           and item['source']['printedPages'] and item.get('simple')
+           and item.get('why_here') and item.get('remember')
+           for item in d225_items)
+for disclosure in d225_disclosures:
+    assert d225_body[:disclosure.start()].rstrip().endswith('</p>'), (
+        "2.2.5 Source Depth must follow its source paragraph"
+    )
+    assert ' open' not in disclosure.group().split('>', 1)[0]
+    assert 'hikam-source-depth-citation' in disclosure.group()
+assert 'Socrates, Plato, and the Platonists' in d225
 assert 'hikam-companion-context-field' in reader
 assert 'item.simple && item.why_here && item.remember' in reader
 assert "'.hikam-source-depth-inline'" in (SRC/'philosophy_notes.js').read_text(encoding='utf-8') or '.hikam-source-depth-inline' in (SRC/'philosophy_notes.js').read_text(encoding='utf-8')

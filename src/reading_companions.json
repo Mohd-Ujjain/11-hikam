@@ -1,7 +1,7 @@
 {
   "version": 1,
   "editorialPolicy": "src/docs/editorial/CONCISE_DOSSIER_AND_READING_COMPANIONS.md",
-  "description": "Context-first source-grounded companions through Arabic 2.1.8, with source-author strictness and local optional evidence.",
+  "description": "Context-first source-grounded companions through the English critical introduction 2.2.5, with source-author strictness and local optional evidence.",
   "companions": [
     {
       "id": "h111-russell-idealism",
@@ -4502,6 +4502,206 @@
       "simple": "يروي المؤلف أنه سرق ثمراً من غير جوع، مع وجود ما هو أفضل منه في بيت أهله، ويربط غياب المبرر بعذابه النفسي اللاحق.",
       "why_here": "تُستخدم الحادثة شاهداً من «الاعترافات» على انشغاله بخبرة الإثم ومشكلة الشر.",
       "remember": "إثم من غير حاجة في رواية المؤلف."
+    },
+    {
+      "id": "h225-two-orders",
+      "chapter": "ch2-2-5",
+      "passage": "There are also two different orders to reconstruct: the order in which Aristotle composed the material, and the order in whic",
+      "text": "two different orders to reconstruct",
+      "kind": "Contextual explanation",
+      "title": "What are the two different orders?",
+      "explanation": "The writing order asks when Aristotle composed each passage. The lecture order asks what he discussed before or after another part in teaching. The author warns that a backward reference does not automatically date the writing of the whole book.",
+      "source": {
+        "author": "Author not identified in supplied excerpt",
+        "work": "Introduction, I. The Structure of the Metaphysics",
+        "printedPages": [
+          2
+        ]
+      },
+      "added_value": "Locally resolves the source’s textual-critical reasoning without replacing the visible argument.",
+      "simple": "The writing order asks when Aristotle composed each passage. The lecture order asks what he discussed before or after another part in teaching.",
+      "why_here": "The author warns that a backward reference does not automatically date the writing of the whole book.",
+      "remember": "A lecture reference is not a composition date."
+    },
+    {
+      "id": "h225-evidence",
+      "chapter": "ch2-2-5",
+      "passage": "The introduction begins with discontinuity. Most books open without a connective particle, an uncommon feature in Aristotle’s",
+      "text": "too organically embedded to dismiss",
+      "kind": "Contextual explanation",
+      "title": "Why trust internal cross-references?",
+      "explanation": "A reference is strong evidence when removing it would also disrupt the surrounding reasoning; it seems part of the actual argument. The author is deciding which clues are reliable enough to reconstruct connections among books.",
+      "source": {
+        "author": "Author not identified in supplied excerpt",
+        "work": "Introduction, I. The Structure of the Metaphysics",
+        "printedPages": [
+          1
+        ]
+      },
+      "added_value": "Locally resolves the source’s textual-critical reasoning without replacing the visible argument.",
+      "simple": "A reference is strong evidence when removing it would also disrupt the surrounding reasoning; it seems part of the actual argument.",
+      "why_here": "The author is deciding which clues are reliable enough to reconstruct connections among books.",
+      "remember": "Read a reference in its context."
+    },
+    {
+      "id": "h225-aporiai",
+      "chapter": "ch2-2-5",
+      "passage": "A opens with a historical survey and anticipates B. B identifies fourteen problems, plus a subsidiary question, as an opening",
+      "text": "Its four preliminary problems concern",
+      "kind": "Contextual explanation",
+      "title": "Why distinguish the first four puzzles?",
+      "explanation": "They ask what kind of science metaphysics could be and which principles fall within its scope; later puzzles are more specific questions for that science to answer. The distinction explains why Γ settles the initial scope before later books pursue substance and other topics.",
+      "source": {
+        "author": "Author not identified in supplied excerpt",
+        "work": "Introduction, I. The Structure of the Metaphysics",
+        "printedPages": [
+          4
+        ]
+      },
+      "added_value": "Locally resolves the source’s textual-critical reasoning without replacing the visible argument.",
+      "simple": "They ask what kind of science metaphysics could be and which principles fall within its scope; later puzzles are more specific questions for that science to answer.",
+      "why_here": "The distinction explains why Γ settles the initial scope before later books pursue substance and other topics.",
+      "remember": "First determine the science; then pursue its problems."
+    },
+    {
+      "id": "h225-epsilon",
+      "chapter": "ch2-2-5",
+      "passage": "A opens with a historical survey and anticipates B. B identifies fourteen problems, plus a subsidiary question, as an opening",
+      "text": "while excluding incidental being and being as truth",
+      "kind": "Contextual explanation",
+      "title": "What does E set aside?",
+      "explanation": "Not every sense of the word “being” becomes an object of the same inquiry. Incidental connections and the truth of assertions are treated separately from the central metaphysical subjects. The author uses E to connect the scope established in Γ to the kinds of being discussed later.",
+      "source": {
+        "author": "Author not identified in supplied excerpt",
+        "work": "Introduction, I. The Structure of the Metaphysics",
+        "printedPages": [
+          5
+        ]
+      },
+      "added_value": "Locally resolves the source’s textual-critical reasoning without replacing the visible argument.",
+      "simple": "Not every sense of the word “being” becomes an object of the same inquiry. Incidental connections and the truth of assertions are treated separately from the central metaphysical subjects.",
+      "why_here": "The author uses E to connect the scope established in Γ to the kinds of being discussed later.",
+      "remember": "E sorts the relevant senses of being."
+    },
+    {
+      "id": "h225-formal",
+      "chapter": "ch2-2-5",
+      "passage": "Z–H–Θ form a recognizably connected group: H resumes Z, Θ looks back to Z, and their treatments follow the categories of bein",
+      "text": "the formal element of sensible substances",
+      "kind": "Contextual explanation",
+      "title": "Why study sensible substances here?",
+      "explanation": "The analysis is concerned with the form or principle in visible things, not merely with physical matter. That formal aspect prepares investigation of substance beyond the sensible. This is the key reply to Jaeger’s claim that Z–H–Θ belong to physics rather than metaphysics.",
+      "source": {
+        "author": "Author not identified in supplied excerpt",
+        "work": "Introduction, I. The Structure of the Metaphysics",
+        "printedPages": [
+          7
+        ]
+      },
+      "added_value": "Locally resolves the source’s textual-critical reasoning without replacing the visible argument.",
+      "simple": "The analysis is concerned with the form or principle in visible things, not merely with physical matter. That formal aspect prepares investigation of substance beyond the sensible.",
+      "why_here": "This is the key reply to Jaeger’s claim that Z–H–Θ belong to physics rather than metaphysics.",
+      "remember": "Sensible form prepares the further inquiry."
+    },
+    {
+      "id": "h225-versions",
+      "chapter": "ch2-2-5",
+      "passage": "M–N examine the Academic doctrines of Forms and numbers, including two stages of criticism that the author distinguishes by c",
+      "text": "including two stages of criticism",
+      "kind": "Contextual explanation",
+      "title": "What are the two versions in M–N?",
+      "explanation": "The source identifies an earlier and a later way of discussing Academic theories, supported by differences in cross-references and reused arguments. The distinction lets the author explain repetition as a result of revision rather than treating the collection as shapeless.",
+      "source": {
+        "author": "Author not identified in supplied excerpt",
+        "work": "Introduction, I. The Structure of the Metaphysics",
+        "printedPages": [
+          9
+        ]
+      },
+      "added_value": "Locally resolves the source’s textual-critical reasoning without replacing the visible argument.",
+      "simple": "The source identifies an earlier and a later way of discussing Academic theories, supported by differences in cross-references and reused arguments.",
+      "why_here": "The distinction lets the author explain repetition as a result of revision rather than treating the collection as shapeless.",
+      "remember": "One topic can survive in more than one version."
+    },
+    {
+      "id": "h225-kappa",
+      "chapter": "ch2-2-5",
+      "passage": "The author then distinguishes the four outlying books. α interrupts A and B; the early testimony assigning it to Pasicles is ",
+      "text": "K consists of two different halves",
+      "kind": "Contextual explanation",
+      "title": "Why is K an unusual case?",
+      "explanation": "Its first part independently revisits metaphysical problems. Its second closely extracts text from Aristotle’s Physics; they do not have the same origin or purpose. This is why the author does not assign one simple verdict about the entire book.",
+      "source": {
+        "author": "Author not identified in supplied excerpt",
+        "work": "Introduction, I. The Structure of the Metaphysics",
+        "printedPages": [
+          13
+        ]
+      },
+      "added_value": "Locally resolves the source’s textual-critical reasoning without replacing the visible argument.",
+      "simple": "Its first part independently revisits metaphysical problems. Its second closely extracts text from Aristotle’s Physics; they do not have the same origin or purpose.",
+      "why_here": "This is why the author does not assign one simple verdict about the entire book.",
+      "remember": "K must be assessed in two parts."
+    },
+    {
+      "id": "h225-lambda",
+      "chapter": "ch2-2-5",
+      "passage": "Λ is also treated as a separate work whose chief aim is establishing an eternal unmoved mover. Its first chapters approach se",
+      "text": "author rejects Jaeger’s confident dating argument",
+      "kind": "Contextual explanation",
+      "title": "Why can’t Λ be dated so easily?",
+      "explanation": "Conditional language and the absence of a technical label are too weak on their own to show when Λ was written. Its astronomical details raise further chronological complications. The author distinguishes the separate character of Λ from certainty about its date.",
+      "source": {
+        "author": "Author not identified in supplied excerpt",
+        "work": "Introduction, I. The Structure of the Metaphysics",
+        "printedPages": [
+          16
+        ]
+      },
+      "added_value": "Locally resolves the source’s textual-critical reasoning without replacing the visible argument.",
+      "simple": "Conditional language and the absence of a technical label are too weak on their own to show when Λ was written. Its astronomical details raise further chronological complications.",
+      "why_here": "The author distinguishes the separate character of Λ from certainty about its date.",
+      "remember": "Separate treatise does not mean certain early date."
+    },
+    {
+      "id": "h225-insertions",
+      "chapter": "ch2-2-5",
+      "passage": "Smaller passages, too, may have been inserted where a manuscript roll had room: the source examines A.10, the close of K, Θ.1",
+      "text": "None supplies conclusive proof by itself",
+      "kind": "Contextual explanation",
+      "title": "Why use several small clues?",
+      "explanation": "A repeated chapter or awkward join might have multiple explanations. Several comparable cases together make an editorial insertion more plausible. This is the argument’s transition from individual anomalies to a cumulative account of compilation.",
+      "source": {
+        "author": "Author not identified in supplied excerpt",
+        "work": "Introduction, I. The Structure of the Metaphysics",
+        "printedPages": [
+          18
+        ]
+      },
+      "added_value": "Locally resolves the source’s textual-critical reasoning without replacing the visible argument.",
+      "simple": "A repeated chapter or awkward join might have multiple explanations. Several comparable cases together make an editorial insertion more plausible.",
+      "why_here": "This is the argument’s transition from individual anomalies to a cumulative account of compilation.",
+      "remember": "The evidence is cumulative, not individually decisive."
+    },
+    {
+      "id": "h225-catchwords",
+      "chapter": "ch2-2-5",
+      "passage": "The oldest surviving lists offer different totals: a ten-book Metaphysics in the Anonymus Menagii tradition, a thirteen-book ",
+      "text": "seven rolls containing two books each",
+      "kind": "Contextual explanation",
+      "title": "How could fourteen books occupy seven rolls?",
+      "explanation": "The source suggests that two shorter books may have been copied on each commercial papyrus roll. Catchwords help connect one portion of the copied text to the next. The author is using physical manuscript clues, not just argument, to reconstruct an edition.",
+      "source": {
+        "author": "Author not identified in supplied excerpt",
+        "work": "Introduction, I. The Structure of the Metaphysics",
+        "printedPages": [
+          21
+        ]
+      },
+      "added_value": "Locally resolves the source’s textual-critical reasoning without replacing the visible argument.",
+      "simple": "The source suggests that two shorter books may have been copied on each commercial papyrus roll. Catchwords help connect one portion of the copied text to the next.",
+      "why_here": "The author is using physical manuscript clues, not just argument, to reconstruct an edition.",
+      "remember": "Fourteen books need not mean fourteen physical rolls."
     }
   ]
 }
