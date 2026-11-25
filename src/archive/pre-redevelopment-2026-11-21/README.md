@@ -88,3 +88,13 @@ The archive is never included in the reader or regenerated as a publication asse
 - **Pinned Git blob hash:** `e5262ba842d1621d415dcf71384b1f6f7d92ffa3`. Tested independently in `src/tests/verify_dossier_archive.py`.
 - **Reason for revision:** the supplied primary PDF (21 pages, printed pp. xiii–xxxiii), “Introduction — The Structure of the Metaphysics,” discusses textual composition, inter-book references and early editions, not the general philosophical progression presented by the original 2.2.5. The secondary study syntheses were not permitted to override the primary PDF.
 - **Reader isolation:** this archived section is never part of the build, page content, search, printing, or offline cache. Earlier ten original chapters and later independent snapshots are unchanged.
+
+## Dossier 2.2.6 — Complete original English general Metaphysics notes
+
+**Source historical baseline:** authoritative `MohdUjjain/11-hikam` `main`, commit `a936586e2156efa80b1fd7296ea7f7f560fcb945`, before any replacement of 2.2.6 on the 26 November 2026 testing branch.
+
+- **Immutable original:** [`dossier-2.2.6.html`](dossier-2.2.6.html), extracted verbatim from the former `src/chapters/subtopic-2-2.html`. It contains the chapter frontmatter, main prose, all original study aids, navigation, six revision sections and five examination categories.
+- **Pinned original blob:** `ada81602b06a0d9fd76ea62dc640f9b730a54082`. Validated independently by `src/tests/verify_dossier_archive.py`; all older archive snapshots remain untouched.
+- **Revised primary reading:** Hugh Lawson-Tancred, Introduction to Aristotle’s *The Metaphysics*, Penguin Classics (1998), original 42-page excerpt. Unlike the former general account of Aristotle's system, the new 2.2.6 accurately preserves the modern translator’s sceptical valuation of metaphysical systems, deep Zeta/Eta interpretive uncertainties, and source-specific text/translation position.
+- **Author correction in neighbouring 2.2.5:** W. D. Ross is positively identified for the 1924 critical introduction, not an anonymous source. That dossier's original archived section is unaltered.
+- **Reader isolation:** The archived fragment is excluded from the live build, public search, print, reading position, and PWA. These are independent historical versions for the user’s archival policy.
