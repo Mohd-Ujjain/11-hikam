@@ -1,0 +1,93 @@
+name: Verify Arabic dossier 2.2.4 in isolated fork
+
+# Fork-only release check. Never transfer this workflow to original.
+on:
+  push:
+    branches:
+      - editorial/2-2-4-original-synced-verification
+    paths-ignore:
+      - index.html
+      - src/philosophy_study_notes.html
+      - service-worker.js
+
+permissions:
+  contents: write
+
+concurrency:
+  group: hikam-224-source-check
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    name: Build, archive, source, structure, browser, print and PWA
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Build canonical outputs and verify reproducibility
+        run: |
+          python src/build.py
+          python src/build.py --check
+      - name: Validate archival, editorial and publication invariants
+        run: |
+          set -euo pipefail
+          python src/tests/verify_dossier_archive.py
+          python src/tests/verify_publication.py
+          python src/tests/verify_reading_companions.py
+          python src/tests/verify_source_attribution.py
+          python src/tests/verify_3_4_house_style.py
+          python src/tests/verify_editorial_fidelity.py
+          python src/tests/validate_structure.py
+          python src/tests/verify_sidebar.py
+          python src/tests/verify_reading_progress.py
+          python src/tests/verify_reader_search_tabs.py
+          python src/tests/verify_revision_visibility.py
+          python src/tests/verify_search_integrity.py
+          python src/tests/verify_mobile_interaction.py
+          python src/tests/verify_visual_polish.py
+          node src/tests/test_offline_cache.mjs
+          node src/tests/test_optional_precache.mjs
+      - name: Install pinned Chromium and PDF dependencies
+        run: |
+          python -m pip install playwright==1.57.0 pypdf==5.9.0
+          python -m playwright install chromium
+      - name: Run all established browser and real A4 PDF regressions
+        run: |
+          set -euo pipefail
+          python src/tests/browser_quality.py
+          python src/tests/browser_design_tokens.py
+          python src/tests/browser_reading_companions.py
+          python src/tests/browser_3_4_house_style.py
+          python src/tests/browser_batch2_continuity.py
+          python src/tests/browser_batch4_edition_migration.py
+          python src/tests/browser_pwa_updates.py
+      - name: Preserve generated site and browser evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: hikam-224-fork-artifacts
+          path: |
+            index.html
+            src/philosophy_study_notes.html
+            service-worker.js
+            test-artifacts/
+          if-no-files-found: ignore
+          retention-days: 7
+      - name: Commit tested generated outputs to fork branch
+        if: success()
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add index.html src/philosophy_study_notes.html service-worker.js
+          if ! git diff --cached --quiet; then
+            git commit -m 'Build verified Hikam outputs for 2.2.4 [skip ci]'
+            git push origin HEAD:refs/heads/editorial/2-2-4-original-synced-verification
+          fi
+          python src/build.py --check
