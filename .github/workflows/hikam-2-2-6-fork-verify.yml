@@ -1,0 +1,95 @@
+name: Verify Metaphysics 2.2.6 with corrected 2.2.5 author on isolated fork
+
+# Temporary secondary-account test only; removed before original transfer.
+on:
+  push:
+    branches: [editorial/2-2-6-lawson-tancred-with-2-2-5-ross]
+    paths-ignore: [index.html, src/philosophy_study_notes.html, service-worker.js]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: hikam-226-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  test:
+    name: Source, archive, reader, print and offline checks
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Canonical build and content-hash verification
+        run: |
+          set -euo pipefail
+          python src/build.py
+          python src/build.py --check
+      - name: Full source, historical archive, anchors, publication and reader tests
+        run: |
+          set -euo pipefail
+          python src/tests/verify_dossier_archive.py
+          python src/tests/verify_metaphysics_structure_2_2_5.py
+          python src/tests/verify_metaphysics_substance_2_2_6.py
+          python src/tests/verify_publication.py
+          python src/tests/verify_reading_companions.py
+          python src/tests/verify_source_attribution.py
+          python src/tests/verify_3_4_house_style.py
+          python src/tests/verify_editorial_fidelity.py
+          python src/tests/verify_papineau_source_fidelity.py
+          python src/tests/verify_gutting_source_fidelity.py
+          python src/tests/verify_critchley_source_fidelity.py
+          python src/tests/validate_structure.py
+          python src/tests/verify_sidebar.py
+          python src/tests/verify_reading_progress.py
+          python src/tests/verify_reader_search_tabs.py
+          python src/tests/verify_revision_visibility.py
+          python src/tests/verify_search_integrity.py
+          python src/tests/verify_mobile_interaction.py
+          python src/tests/verify_visual_polish.py
+          node src/tests/test_offline_cache.mjs
+          node src/tests/test_optional_precache.mjs
+      - name: Install Chromium and pinned PDF tools
+        run: |
+          python -m pip install playwright==1.57.0 pypdf==5.9.0
+          python -m playwright install chromium
+      - name: Real browser, A4 PDF, 236 Companion, mobile, RTL, contrast, and PWA suites
+        run: |
+          set -euo pipefail
+          python src/tests/browser_quality.py
+          python src/tests/browser_design_tokens.py
+          python src/tests/browser_reading_companions.py
+          python src/tests/browser_3_4_house_style.py
+          python src/tests/browser_batch2_continuity.py
+          python src/tests/browser_batch4_edition_migration.py
+          python src/tests/browser_pwa_updates.py
+      - name: Preserve generated files and browser/PDF evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: hikam-226-fork-tested
+          path: |
+            index.html
+            src/philosophy_study_notes.html
+            service-worker.js
+            test-artifacts/
+          retention-days: 7
+          if-no-files-found: ignore
+      - name: Commit generated publication bytes to tested branch only
+        if: success()
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add index.html src/philosophy_study_notes.html service-worker.js
+          if ! git diff --cached --quiet; then
+            git commit -m 'Build source-verified Ross/Lawson-Tancred edition [skip ci]'
+            git push origin HEAD:refs/heads/editorial/2-2-6-lawson-tancred-with-2-2-5-ross
+          fi
+          python src/build.py --check
