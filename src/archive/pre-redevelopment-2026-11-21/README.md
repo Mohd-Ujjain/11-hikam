@@ -68,3 +68,14 @@ Preserve this entire historical edition for future recovery, separate from the l
 - **Supplied source authority:** `2.2.3 Source - الميتافيزيقا عند فلاسفة الإسلام والمسيحيين.docx`, eight-page Arabic excerpt spanning «الفصل الأول: الميتافيزيقا عند فلاسفة الإسلام» and «الفصل الثاني: الميتافيزيقا في الفلسفة المسيحية». Document metadata has no verified author. The provided excerpt ends mid-sentence on page eight during the Augustine section. This is recorded as a textual boundary, **not reconstructed**. The source's «حرثات الأجرام السماوية» remains an unresolved textual variant; supplementary syntheses propose «حركات» but are not authority for silent correction.
 
 The archive is not a second chapter in the published reader; it is a recoverable historical edition. All previously pinned archives stay unaltered. Private DOCX, synthesis drafts, language profile and samples are editorial input and remain unpublished.
+
+## Dossier 2.2.4 — Original Aristotle Metaphysics introduction
+
+**Complete original prior to revision:** 26 November 2026, authoritative original `main` commit `3de8c0eda188fe8426f8abe7d4472ed3506757d1`.
+
+- **Read-only original section:** [`dossier-2.2.4.html`](dossier-2.2.4.html), including chapter frontmatter, all main-body notes and teaching aids, navigation, six revision sections and five examination classes.
+- **Original canonical location:** `src/chapters/subtopic-2-2.html`, section `ch2-2-4`, `lang="ar"`, hue `168`.
+- **Pinned original Git blob SHA:** `69ae2963586085257096fde723ba2a8d3b0851be`, verified in `src/tests/verify_dossier_archive.py`.
+- **Primary reading:** User-supplied `2.2.4 Source - مقدمة (أرسطوطاليس - الميتافيزيقا).docx` (Arabic introduction to Aristotle's writings, the naming of Metaphysics, and the fourteen articles). The private DOCX, Arabic voice samples and study syntheses are editorial working materials, not a public source deposit.
+
+The archive is never included in the reader or regenerated as a publication asset. The ten pre-revamp originals and previous post-redevelopment archives remain unchanged.
