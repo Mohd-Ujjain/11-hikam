@@ -45,9 +45,9 @@ jobs:
           python src/tests/verify_source_attribution.py
           python src/tests/verify_3_4_house_style.py
           python src/tests/verify_editorial_fidelity.py
-          python src/tests/verify_papineau_source_coverage.py
-          python src/tests/verify_gutting_source_coverage.py
-          python src/tests/verify_critchley_source_coverage.py
+          python src/tests/verify_papineau_source_fidelity.py
+          python src/tests/verify_gutting_source_fidelity.py
+          python src/tests/verify_critchley_source_fidelity.py
           python src/tests/validate_structure.py
           python src/tests/verify_sidebar.py
           python src/tests/verify_reading_progress.py
