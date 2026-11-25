@@ -1,6 +1,6 @@
 # Reading 2.2.5 — Primary-source comparison: “The Structure of the Metaphysics”
 
-**Date:** 26 November 2026. **Source supplied:** `2.2.5 Source - Introduction (Aristotle's Metaphysics).pdf`, 21 rendered PDF pages. The source prints Roman pagination **xiii–xxxiii**. The 21st PDF page concludes the first section and only *begins* section II, “Socrates, Plato, and the Platonists,” giving the opening of a Greek-text comparison; the rest of section II is **not** supplied. The excerpt and PDF metadata do not identify its introductory author, publisher or complete edition unambiguously; none is invented in the live chapter.
+**Date:** 26 November 2026. **Source supplied:** `2.2.5 Source - Introduction (Aristotle's Metaphysics).pdf`, 21 rendered PDF pages. The source prints Roman pagination **xiii–xxxiii**. The 21st PDF page concludes the first section and only *begins* section II, “Socrates, Plato, and the Platonists,” giving the opening of a Greek-text comparison; the rest of section II is **not** supplied. The excerpt itself has no title leaf or embedded bibliographic metadata, but the chapter heading and distinctive text match the independently catalogued **W. D. Ross** introduction to *Aristotle's Metaphysics: A Revised Text with Introduction and Commentary*, vol. I (Oxford: Clarendon Press, **1924**), under the same heading “The Structure of the Metaphysics.” Oxford University Press and library catalogues confirm that edition. Attribution is to the **modern commentator Ross**, not to Aristotle as the author of the original treatise. [OUP volume](https://doi.org/10.1093/actrade/9780198847762.book.1) · [Library catalogue](https://works.www.wellcomecollection.org/works/wshanspd).
 
 **Binding interpretation:** This is a scholarly *textual-critical argument about the structure and history of the surviving corpus*. It is **not** a general textbook introduction to Aristotle's metaphysical doctrines. The two separately supplied “Total Recall” guides and the user's schematic synopsis chiefly expound First Philosophy, the four causes, hylomorphism, potentiality, the Prime Mover and Platonism; they must not override the 21-page primary text. Likewise the old 2.2.5 described a five-step ladder from sensory cognition to wisdom. That complete previous chapter is preserved before revision, but its thesis and examples could not be represented as the claims of this source.
 
@@ -32,7 +32,7 @@ The author begins from the observable seams in the transmitted `Metaphysics`, re
 | 21 / xxxiii | Catchwords and hypothetical seven double-book rolls | §IV prose, mnemonic and quick sheet | `h225-depth-editions` | Covered |
 | 21 / xxxiii | Heading and brief Greek opening of “Socrates, Plato, and the Platonists” | §V explicitly identifies excerpt boundary; no invented continuation | — | Boundary recorded |
 
-**Direct source attribution:** Embedded introductory positions belong to the unidentified author of this supplied excerpt. The book labels and argumentative connections are presented as the *author's reconstruction*, not as claims about an uncontested scholarly consensus. All optional notes identify the excerpt by its printed Roman pages and corresponding PDF pages.
+**Direct source attribution:** Embedded introductory positions belong to **W. D. Ross** (1924), as bibliographically verified above. The book labels and argumentative connections are presented as the *author's reconstruction*, not as claims about an uncontested scholarly consensus. All optional notes identify the excerpt by its printed Roman pages and corresponding PDF pages.
 
 ## Layering and review criteria
 
@@ -44,7 +44,7 @@ The author begins from the observable seams in the transmitted `Metaphysics`, re
 
 ## Editorial issues and safeguards
 
-1. The public chapter does **not** identify the introductory author as Aristotle: Aristotle is the ancient author under discussion, not the author of this modern editorial introduction.
+1. The public chapter credits **W. D. Ross** prominently and separately identifies Aristotle as the ancient author of the treatise being discussed. All ten Companion attribution records also credit Ross.
 2. The supplementary “Total Recall” drafts emphasize philosophical doctrines that appear only tangentially in the primary introduction; they are **not** the intellectual source for 2.2.5.
 3. The received order, the reconstructed ten-book teaching order, the inferred composition chronology, and the physical roll arrangement are **different kinds of order**, each with its own evidentiary limits.
 4. α, Δ, K and Λ are not indiscriminately labeled forged. The source distinguishes genuine separate books from possible notes, and K’s two halves must be evaluated independently.
