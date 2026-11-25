@@ -79,3 +79,12 @@ The archive is not a second chapter in the published reader; it is a recoverable
 - **Primary reading:** User-supplied `2.2.4 Source - مقدمة (أرسطوطاليس - الميتافيزيقا).docx` (Arabic introduction to Aristotle's writings, the naming of Metaphysics, and the fourteen articles). The private DOCX, Arabic voice samples and study syntheses are editorial working materials, not a public source deposit.
 
 The archive is never included in the reader or regenerated as a publication asset. The ten pre-revamp originals and previous post-redevelopment archives remain unchanged.
+
+## Dossier 2.2.5 — Original English general Metaphysics notes
+
+**Preservation baseline:** authoritative `MohdUjjain/11-hikam` `main` at `91f30c3eb25044374db3844bd7c77532ad068517`, immediately before the first source-led replacement on 26 November 2026.
+
+- **Full unchanged historical section:** [`dossier-2.2.5.html`](dossier-2.2.5.html), extracted exactly from `src/chapters/subtopic-2-2.html`, including its entire original frontmatter, English main body, teaching aids, navigation, six full revision sections, and five examination question categories.
+- **Pinned Git blob hash:** `e5262ba842d1621d415dcf71384b1f6f7d92ffa3`. Tested independently in `src/tests/verify_dossier_archive.py`.
+- **Reason for revision:** the supplied primary PDF (21 pages, printed pp. xiii–xxxiii), “Introduction — The Structure of the Metaphysics,” discusses textual composition, inter-book references and early editions, not the general philosophical progression presented by the original 2.2.5. The secondary study syntheses were not permitted to override the primary PDF.
+- **Reader isolation:** this archived section is never part of the build, page content, search, printing, or offline cache. Earlier ten original chapters and later independent snapshots are unchanged.
