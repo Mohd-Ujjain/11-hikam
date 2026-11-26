@@ -1,7 +1,7 @@
 {
   "version": 1,
   "editorialPolicy": "src/docs/editorial/CONCISE_DOSSIER_AND_READING_COMPANIONS.md",
-  "description": "Context-first, source-anchored Reading Companions for the published dossiers, including the first five source-led 3.3 dossiers.",
+  "description": "Context-first, source-anchored Reading Companions for the published dossiers, including the seven source-led 3.3 dossiers.",
   "companions": [
     {
       "id": "h111-russell-idealism",
@@ -7393,6 +7393,282 @@
       "why_here": "This decision answers the question of how to write a short and direct response after rejecting insult and exhaustive rebuttal.",
       "remember": "Inspect selected arguments; then judge what they show.",
       "sourceDepthId": "source-depth-h336-response"
+    },
+    {
+      "id": "h337-violence",
+      "chapter": "ch3-3-7",
+      "passage": "The McGraths reject Dawkins’s hostile picture of God but agree with him about the need to oppose religious violence. They ask whether violence is a necessary feature of religion. For them, Jesus reveals God and responds to violence without returning it. They see that ethic enacted in the Amish community’s forgiveness after the 2006 school murders. Alister’s own experience of Northern Ireland rules out denying religious violence. But the book also cites violence in the service of secular political worldviews, especially the Soviet campaign to eradicate religion. Humans can do great harm or great good under religious and nonreligious worldviews alike.",
+      "text": "violence is a necessary feature of religion",
+      "kind": "Contextual clarification",
+      "title": "What is at issue once religious violence is admitted?",
+      "explanation": "The authors accept that religious belief can motivate violence. What they reject is the claim that religion must generate violence or is the only kind of worldview that can do so.",
+      "source": {
+        "author": "Alister E. McGrath and Joanna Collicutt McGrath",
+        "work": "The Dawkins Delusion? Atheist Fundamentalism and the Denial of the Divine",
+        "printedPages": [
+          76,
+          77,
+          78,
+          79
+        ]
+      },
+      "added_value": "This distinction lets them agree with Dawkins about a real evil without accepting the wider conclusion they attribute to him.",
+      "simple": "The authors accept that religious belief can motivate violence. What they reject is the claim that religion must generate violence or is the only kind of worldview that can do so.",
+      "why_here": "This distinction lets them agree with Dawkins about a real evil without accepting the wider conclusion they attribute to him.",
+      "remember": "Can produce violence does not mean must produce it.",
+      "sourceDepthId": "source-depth-h337-violence"
+    },
+    {
+      "id": "h337-groups",
+      "chapter": "ch3-3-7",
+      "passage": "In answer to Dawkins’s account of suicide attacks after 9/11, the McGraths cite Robert Pape: in his study religious belief was neither necessary nor sufficient, and he stressed political goals connected with military occupation. The authors nevertheless identify a danger in religion: it can make a human conflict seem like a cosmic struggle, so ordinary compromise gives way. Secular ideals such as liberty can also be made unquestionable. Communities further distinguish insiders from outsiders and may devalue those they designate as the other. In Northern Ireland, the Catholic–Protestant distinction marked such a division. Eliminating religion would leave this process intact and allow other labels to take its place.",
+      "text": "may devalue those they designate as the other",
+      "kind": "Contextual clarification",
+      "title": "Why distinguish a group label from the forces that shape a division?",
+      "explanation": "A label can help people decide who belongs and who does not. Its presence does not by itself explain why a division began or why it took the form it did.",
+      "source": {
+        "author": "Alister E. McGrath and Joanna Collicutt McGrath",
+        "work": "The Dawkins Delusion? Atheist Fundamentalism and the Denial of the Divine",
+        "printedPages": [
+          81,
+          82,
+          83
+        ]
+      },
+      "added_value": "The authors look at the social processes behind antagonism before asking what would change if one label disappeared.",
+      "simple": "A label can help people decide who belongs and who does not. Its presence does not by itself explain why a division began or why it took the form it did.",
+      "why_here": "The authors look at the social processes behind antagonism before asking what would change if one label disappeared.",
+      "remember": "Removing a label does not remove the process of exclusion.",
+      "sourceDepthId": "source-depth-h337-groups"
+    },
+    {
+      "id": "h337-neighbors",
+      "chapter": "ch3-3-7",
+      "passage": "Dawkins follows John Hartung in assigning in-group hostility to Jesus and the welcome of Gentiles to Paul. The McGraths answer with Jesus’s command to love enemies and the Good Samaritan. Jesus gave Jews priority, but welcomed people excluded within Jewish society, including tax collectors and people considered ritually unclean. The authors describe his approach to Greco-Roman Gentiles as more cautious, not closed. Gentile conversions became widespread after his death, and Peter, John and Philip as well as Paul were involved. Jesus did reorder family loyalties, as Dawkins notes; the authors read this alongside teachings and actions that sustain family obligations.",
+      "text": "his approach to Greco-Roman Gentiles as more cautious, not closed",
+      "kind": "Contextual clarification",
+      "title": "Why distinguish Jewish priority from exclusion?",
+      "explanation": "Giving one group priority describes the order of a mission. It does not settle whether others can be welcomed. The authors read the Gospel encounters as evidence that they can.",
+      "source": {
+        "author": "Alister E. McGrath and Joanna Collicutt McGrath",
+        "work": "The Dawkins Delusion? Atheist Fundamentalism and the Denial of the Divine",
+        "printedPages": [
+          85,
+          86,
+          87
+        ]
+      },
+      "added_value": "This is their answer to the particular Hartung–Dawkins claim that welcome outside the group was entirely Paul’s innovation.",
+      "simple": "Giving one group priority describes the order of a mission. It does not settle whether others can be welcomed. The authors read the Gospel encounters as evidence that they can.",
+      "why_here": "This is their answer to the particular Hartung–Dawkins claim that welcome outside the group was entirely Paul’s innovation.",
+      "remember": "Priority is not a closed boundary.",
+      "sourceDepthId": "source-depth-h337-neighbors"
+    },
+    {
+      "id": "h337-criterion",
+      "chapter": "ch3-3-7",
+      "passage": "The McGraths distinguish belief in God from religion as a human institution, open to corruption and renewal. God’s justice and mercy provide a standard distinct from prevailing practice. Micah and Isaiah use it to challenge worship that coexists with exploitation or neglect of the vulnerable. Jesus’s challenge to Sabbath regulations continues this criticism when observance comes between God and the people. The authors agree with Dawkins that religion must be criticized. They deny that its only possible criticism comes from outside faith, and connect Jesus’s challenge to established forms with his crucifixion.",
+      "text": "a standard distinct from prevailing practice",
+      "kind": "Contextual clarification",
+      "title": "How can criticism be internal to faith yet independent of a practice?",
+      "explanation": "People inside a religion can judge one of its practices by a standard other than the practice itself. Here, what God demands is not settled by what worshippers happen to do.",
+      "source": {
+        "author": "Alister E. McGrath and Joanna Collicutt McGrath",
+        "work": "The Dawkins Delusion? Atheist Fundamentalism and the Denial of the Divine",
+        "printedPages": [
+          88,
+          89
+        ]
+      },
+      "added_value": "The authors appeal to the prophets and Jesus to show why accepting criticism need not mean giving up belief in God.",
+      "simple": "People inside a religion can judge one of its practices by a standard other than the practice itself. Here, what God demands is not settled by what worshippers happen to do.",
+      "why_here": "The authors appeal to the prophets and Jesus to show why accepting criticism need not mean giving up belief in God.",
+      "remember": "Faith can supply grounds for criticizing religious conduct.",
+      "sourceDepthId": "source-depth-h337-criterion"
+    },
+    {
+      "id": "h337-reading",
+      "chapter": "ch3-3-7",
+      "passage": "The authors acknowledge that culturally distant Hebrew texts can puzzle or appall modern readers. They situate the texts in a people trying to preserve its identity, with its understanding of God developing over a long period of transmission and editing. They also point to laws of compassion and limits on revenge that Dawkins passes over. They agree that interpretation needs an external criterion. The Christian criterion they name is the life and teaching of Jesus, who fulfills rather than abolishes the law. This Christological reading is why, on their account, Christians do not implement the ancient cultic law.",
+      "text": "fulfills rather than abolishes the law",
+      "kind": "Contextual clarification",
+      "title": "What does fulfillment do in the authors’ reading?",
+      "explanation": "The older law is neither set aside as wholly wrong nor applied unchanged. The authors understand it in the light of Jesus’s life and teaching, which they say transform it.",
+      "source": {
+        "author": "Alister E. McGrath and Joanna Collicutt McGrath",
+        "work": "The Dawkins Delusion? Atheist Fundamentalism and the Denial of the Divine",
+        "printedPages": [
+          89,
+          90,
+          91
+        ]
+      },
+      "added_value": "This distinction answers Dawkins’s claim that taking the Bible seriously requires enforcing ancient penalties and ritual rules unchanged.",
+      "simple": "The older law is neither set aside as wholly wrong nor applied unchanged. The authors understand it in the light of Jesus’s life and teaching, which they say transform it.",
+      "why_here": "This distinction answers Dawkins’s claim that taking the Bible seriously requires enforcing ancient penalties and ritual rules unchanged.",
+      "remember": "Fulfillment is neither simple rejection nor literal reinstatement.",
+      "sourceDepthId": "source-depth-h337-reading"
+    },
+    {
+      "id": "h337-wellbeing",
+      "chapter": "ch3-3-7",
+      "passage": "The McGraths say observational studies suggest religious commitment may benefit well-being and longevity. They call for more work, not a conclusion that religion is true, and argue that spirituality merits attention in healthcare when it matters to patients. They contrast research on harmful and helpful religious experience, including Kenneth Pargament’s work, with Dawkins’s reliance on stereotypes and anecdote. Their fasting comparison separates the form of an action from its purpose, meaning and effects: harmful and beneficial patterns are possible under religious and nonreligious descriptions.",
+      "text": "observational studies suggest religious commitment may benefit well-being and longevity",
+      "kind": "Contextual clarification",
+      "title": "What is the force of “may benefit”?",
+      "explanation": "The studies are cited as evidence worth investigating. They do not warrant a universal claim that commitment will improve someone’s health, and they cannot settle whether a religious belief is true.",
+      "source": {
+        "author": "Alister E. McGrath and Joanna Collicutt McGrath",
+        "work": "The Dawkins Delusion? Atheist Fundamentalism and the Denial of the Divine",
+        "printedPages": [
+          91,
+          92,
+          93,
+          94,
+          95
+        ]
+      },
+      "added_value": "The authors use this distinction to ask that both beneficial and harmful effects be examined instead of assumed in advance.",
+      "simple": "The studies are cited as evidence worth investigating. They do not warrant a universal claim that commitment will improve someone’s health, and they cannot settle whether a religious belief is true.",
+      "why_here": "The authors use this distinction to ask that both beneficial and harmful effects be examined instead of assumed in advance.",
+      "remember": "A possible effect is not a proof of truth.",
+      "sourceDepthId": "source-depth-h337-wellbeing"
+    },
+    {
+      "id": "h337-conclusion",
+      "chapter": "ch3-3-7",
+      "passage": "The conclusion treats each worldview as vulnerable where experience strains its account. The authors name suffering for Christianity and, in their assessment of atheism, the unexpected persistence of belief in God. They interpret Dawkins’s polemic as a response to anxiety about that resurgence, and link fundamentalism to the defensiveness of a worldview that feels threatened. Its confidence and rhetoric, they argue, are more likely to reassure sympathetic readers than to engage believers or other inquirers fairly. It may even backfire by making atheism look as intolerant as the religion it attacks. The final question about atheism and delusion is posed as a reversal of Dawkins’s charge.",
+      "text": "It may even backfire",
+      "kind": "Contextual clarification",
+      "title": "What would it mean for the polemic to backfire?",
+      "explanation": "Readers may come away with a worse impression of atheism instead of being persuaded to accept it. The authors propose a possible reversal of the book’s intended effect.",
+      "source": {
+        "author": "Alister E. McGrath and Joanna Collicutt McGrath",
+        "work": "The Dawkins Delusion? Atheist Fundamentalism and the Denial of the Divine",
+        "printedPages": [
+          95,
+          96,
+          97
+        ]
+      },
+      "added_value": "The question follows their judgment that rhetorical assurance has taken the place of fair engagement with contrary evidence.",
+      "simple": "Readers may come away with a worse impression of atheism instead of being persuaded to accept it. The authors propose a possible reversal of the book’s intended effect.",
+      "why_here": "The question follows their judgment that rhetorical assurance has taken the place of fair engagement with contrary evidence.",
+      "remember": "Persuasive force and sound evidence are different.",
+      "sourceDepthId": "source-depth-h337-conclusion"
+    },
+    {
+      "id": "h338-path",
+      "chapter": "ch3-3-8",
+      "passage": "Dawkins instead pictures a gentle route up Mount Improbable: small changes accumulate rather than the whole structure appearing at once. Lennox’s thought experiment assigns a thousand independent steps, each with one viable choice out of two. Dividing the climb into steps does not on its own make the right path likely. Brian Josephson adds a different concern: a continuous route of small changes favoured at each stage must be shown to exist rather than treated as logically necessary.",
+      "text": "Dividing the climb into steps",
+      "kind": "Context first",
+      "title": "Why does the route still matter?",
+      "explanation": "Smaller steps help only if they form a route that can actually be taken. Lennox separates naming many stages from showing that the needed viable choices are available at those stages.",
+      "source": {
+        "author": "John C. Lennox",
+        "work": "God’s Undertaker: Has Science Buried God?",
+        "printedPages": [
+          164,
+          165
+        ]
+      },
+      "added_value": "The phrase connects Dawkins’s mountain analogy to the separate questions of the assumed probabilities and the existence of a path.",
+      "simple": "Smaller steps help only if they form a route that can actually be taken. Lennox separates naming many stages from showing that the needed viable choices are available at those stages.",
+      "why_here": "The phrase connects Dawkins’s mountain analogy to the separate questions of the assumed probabilities and the existence of a path.",
+      "remember": "Splitting up the climb does not supply a path.",
+      "sourceDepthId": "source-depth-h338-path"
+    },
+    {
+      "id": "h338-goal",
+      "chapter": "ch3-3-8",
+      "passage": "Under the model, matching a known target is how the program measures fitness. Dawkins reports reaching the phrase in 43 steps. Lennox argues that the target, the comparison and the preservation rule already supply the order that the simulation is meant to explain. This is why he calls the argument circular as an account of the origin of information. He distinguishes that criticism from a denial that evolutionary algorithms can solve engineering problems.",
+      "text": "matching a known target is how the program measures fitness",
+      "kind": "Context first",
+      "title": "What does “fitness” measure here?",
+      "explanation": "For the typing model, a better result is one closer to a phrase the program has been given. That measure tells us how well a guess matches the answer, rather than how a guess works on its own.",
+      "source": {
+        "author": "John C. Lennox",
+        "work": "God’s Undertaker: Has Science Buried God?",
+        "printedPages": [
+          166,
+          167,
+          168
+        ]
+      },
+      "added_value": "The distinction explains what the 43-step result actually measures before Lennox considers a different use of optimization.",
+      "simple": "For the typing model, a better result is one closer to a phrase the program has been given. That measure tells us how well a guess matches the answer, rather than how a guess works on its own.",
+      "why_here": "The distinction explains what the 43-step result actually measures before Lennox considers a different use of optimization.",
+      "remember": "Distance from an answer is not the same as measured performance.",
+      "sourceDepthId": "source-depth-h338-goal"
+    },
+    {
+      "id": "h338-function",
+      "chapter": "ch3-3-8",
+      "passage": "Elliott Sober substitutes a letter-disc lock for the phrase. Michael Behe asks what a half-correct combination does: if the lock remains shut, being nearer to the answer confers no present function. Lennox applies Behe’s objection to the typing model. If the intermediate strings had to make sense before they could be retained, Lennox argues, the displayed run could not even get started.",
+      "text": "confers no present function",
+      "kind": "Context first",
+      "title": "How can a closer answer fail to help?",
+      "explanation": "The half-right combination is closer to the solution in the number of matching letters, but it still leaves the lock closed. In Behe’s objection the outcome that matters is opening it.",
+      "source": {
+        "author": "John C. Lennox",
+        "work": "God’s Undertaker: Has Science Buried God?",
+        "printedPages": [
+          169,
+          170
+        ]
+      },
+      "added_value": "Lennox uses this gap to show why present function and closeness to the final sequence are different tests.",
+      "simple": "The half-right combination is closer to the solution in the number of matching letters, but it still leaves the lock closed. In Behe’s objection the outcome that matters is opening it.",
+      "why_here": "Lennox uses this gap to show why present function and closeness to the final sequence are different tests.",
+      "remember": "Being closer is not the same as working.",
+      "sourceDepthId": "source-depth-h338-function"
+    },
+    {
+      "id": "h338-information",
+      "chapter": "ch3-3-8",
+      "passage": "As errors disappear the result looks newly produced, but Lennox distinguishes producing a copy of a sequence from generating the sequence’s information. Retention makes the known answer the only final outcome. He invokes Bernd-Olaf Küppers’s result, presented in a preceding chapter, that the output information is in the input or the structure of the machine. In his reading of this model, the order was supplied by the machine’s structure.",
+      "text": "producing a copy of a sequence from generating the sequence’s information",
+      "kind": "Context first",
+      "title": "What was already present before the run?",
+      "explanation": "The printed result is new on the screen, but its order was already needed to judge which letters to keep. Lennox treats that prior order as the information the procedure did not explain.",
+      "source": {
+        "author": "John C. Lennox",
+        "work": "God’s Undertaker: Has Science Buried God?",
+        "printedPages": [
+          170,
+          171,
+          172
+        ]
+      },
+      "added_value": "It connects the retention procedure to the argument about whether its output contains anything new in the relevant sense.",
+      "simple": "The printed result is new on the screen, but its order was already needed to judge which letters to keep. Lennox treats that prior order as the information the procedure did not explain.",
+      "why_here": "It connects the retention procedure to the argument about whether its output contains anything new in the relevant sense.",
+      "remember": "The result can appear later than the information that fixes it.",
+      "sourceDepthId": "source-depth-h338-information"
+    },
+    {
+      "id": "h338-cake",
+      "chapter": "ch3-3-8",
+      "passage": "The epilogue opens with Schrödinger on the difference between ordering observed facts and answering questions of value and meaning. Lennox calls the universe’s intelligibility and fine-tuning clues to a Mind. He compares them with Aunt Matilda’s cake: analysis may indicate that it was made for people to eat, but it cannot disclose why this cake was made on this occasion. The maker would have to tell us.",
+      "text": "it cannot disclose why this cake was made on this occasion",
+      "kind": "Context first",
+      "title": "What can analysis say about purpose?",
+      "explanation": "It may tell us that a thing looks suited to an end. It cannot give the maker’s reason for making this particular thing, which is what Lennox asks about in the cake example.",
+      "source": {
+        "author": "John C. Lennox",
+        "work": "God’s Undertaker: Has Science Buried God?",
+        "printedPages": [
+          207,
+          208,
+          209
+        ]
+      },
+      "added_value": "It prepares the move from what can be read from the universe to what a personal Creator might communicate directly.",
+      "simple": "It may tell us that a thing looks suited to an end. It cannot give the maker’s reason for making this particular thing, which is what Lennox asks about in the cake example.",
+      "why_here": "It prepares the move from what can be read from the universe to what a personal Creator might communicate directly.",
+      "remember": "Evidence of suitability does not state the maker’s intention.",
+      "sourceDepthId": "source-depth-h338-cake"
     }
   ]
 }

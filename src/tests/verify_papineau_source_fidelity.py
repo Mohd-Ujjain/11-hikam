@@ -109,9 +109,9 @@ assert all(x["source"]["author"] == "David Papineau" for x in papineau)
 assert all(all(286 <= p <= 315 for p in x["source"]["printedPages"]) for x in papineau)
 all_sources = '\n'.join(p.read_text(encoding="utf-8")
                         for p in sorted((ROOT/"src/chapters").glob("subtopic-*.html")))
-assert len(re.findall(r'<section class="chapter(?: [^"]+)?" id="ch\d', all_sources)) == 44
+assert len(re.findall(r'<section class="chapter(?: [^"]+)?" id="ch\d', all_sources)) == 46
 
-print("PASS: Papineau source structure; 44 chapters; 15 subsections; "
+print("PASS: Papineau source structure; 46 chapters; 15 subsections; "
       f"{len(papineau)} contextual cues; prose={counts['prose']}, "
       f"aids={counts['aids']}, optional-depth={counts['depth']} words; "
       "all six revision zones preserved.")
