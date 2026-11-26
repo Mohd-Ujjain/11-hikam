@@ -17,6 +17,7 @@ SPEC = {
     3: (8, "سامي عامري", {441, *range(443, 462)}, "fcedc9256c33f26c8034fc27fe3799063dec84d7", ("الضرورة المادية أو الصدفة أو الحكمة", "بنروز", "دينتون")),
     4: (28, "عبد الله بن صالح العجيري", set(range(95, 120)), "d278e05012c13fe7d59a40896af1ba431fe77646", ("أولية كوننا", "ابن حزم", "التعادل الحراري")),
     5: (48, "هشام عزمي", {*range(14, 36), *range(91, 98)}, "2b03c83ef8fa35078655c1dee6bec9708c1a37f3", ("لا يضم الدرس ص 36–90", "القابلية والتأزم", "مرجّحات خارجية")),
+    6: (68, "محمد باقر السيستاني", {*range(5, 57), *range(59, 71)}, "5b46e8fb8930fd6fe37145e0843db114e43bbb78", ("تفسير المجموع", "إنضاج الموقف", "لمجرد التباسها")),
 }
 AIDS = set("box checkpoint comparison tbl-wrap section-objective golden-quote hierarchy analogy concept-rel".split())
 DEPTH = re.compile(r'<details class="hikam-source-depth-inline"[^>]*>[\s\S]*?</details>')
@@ -61,7 +62,7 @@ for n, (hue, author, pages, pinned, anchors) in SPEC.items():
     assert 650 <= p <= 850 and 850 <= a <= 1150 and 1500 <= p+a <= 2000, (key, w.count)
     cues = [c for c in CUES if c["chapter"] == key]
     records = list(DEPTH.finditer(body))
-    assert len(cues) == len(records) == 5
+    assert len(cues) == len(records) == (6 if n == 6 else 5)
     for c in cues:
         assert all(c.get(k) for k in ("simple", "why_here", "remember", "sourceDepthId"))
         assert c["source"]["author"] == author and set(c["source"]["printedPages"]) <= pages
@@ -69,4 +70,4 @@ for n, (hue, author, pages, pinned, anchors) in SPEC.items():
         assert " open" not in r[0].split(">", 1)[0] and author in r[0]
         pstart = body.rfind("<p>", 0, r.start())
         assert c["text"] in body[pstart:r.start()] and body[:r.start()].rstrip().endswith("</p>")
-    print(f"PASS {key}: scoped content, Arabic RTL, 5 Companions/Depth, 6 revisions, 5 exam classes; {w.count} visible words")
+    print(f"PASS {key}: scoped content, Arabic RTL, {len(cues)} Companions/Depth, 6 revisions, 5 exam classes; {w.count} visible words")

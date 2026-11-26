@@ -154,3 +154,8 @@ The archive is never included in the reader or regenerated as a publication asse
 
 - [Complete unchanged predecessor](dossier-3.2.5.html), Git blob `2b03c83ef8fa35078655c1dee6bec9708c1a37f3`.
 - Replacement is the source-led Arabic edition of «الإلحاد الجديد» by هشام عزمي.
+
+### 3.2.6 — preserved previous dossier
+
+- [Complete unchanged predecessor](dossier-3.2.6.html), Git blob `5b46e8fb8930fd6fe37145e0843db114e43bbb78`.
+- Replacement is the source-led Arabic edition of «أفي الله شك؟» by محمد باقر السيستاني.
