@@ -67,7 +67,7 @@ The regression `src/tests/browser_design_tokens.py` checks actual Chromium compu
 
 ### Stable hue allocation for catalog insertions
 
-The 39 existing chapter hues are unchanged when the first two 3.3 dossiers are inserted in numerical reading order. New 3.3.2 and 3.3.3 use the next two slots of the same 20° wheel (268°, 288°), while 3.4.3 retains 128°. Dossiers 3.3.4–3.3.6 use the next slots at 308°, 328°, and 348°. Check the full hue cycle in allocation order; screen and print retain chapter-number order. This does not change the palette, semantic callout colors, or page geometry.
+The 39 existing chapter hues are unchanged when the first two 3.3 dossiers are inserted in numerical reading order. New 3.3.2 and 3.3.3 use the next two slots of the same 20° wheel (268°, 288°), while 3.4.3 retains 128°. Dossiers 3.3.4–3.3.6 use the next slots at 308°, 328°, and 348°. Dossiers 3.3.7 and 3.3.8 continue at 8° and 28°. Check the full hue cycle in allocation order; screen and print retain chapter-number order. This does not change the palette, semantic callout colors, or page geometry.
 
 ## Typography
 

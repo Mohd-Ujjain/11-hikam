@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Verify Hikam's established visual tokens and readable light/dark surfaces.
 
-This tests the 44-chapter, +20 degree hue cycle, fixed semantic study-aid
+This tests the 46-chapter, +20 degree hue cycle, fixed semantic study-aid
 colours, display/body/UI font families, original-author credit and every
 revision comparison table, using actual computed Chromium styles.
 """
@@ -73,11 +73,11 @@ AUDIT = r"""() => {
     };
     return 'rgb(' + [f(0), f(8), f(4)].join(', ') + ')';
   }
-  if (chapters.length !== 44) failures.push('Unexpected chapter count: ' + chapters.length);
+  if (chapters.length !== 46) failures.push('Unexpected chapter count: ' + chapters.length);
   const hues = chapters.map(ch => Number(css(ch).getPropertyValue('--hue').trim()));
   // Check the hue wheel in allocation order, not in the chapter list order.
   // New inserts adopt a new slot without changing any published hue.
-  const newcomers = ['ch3-3-2', 'ch3-3-3', 'ch3-3-4', 'ch3-3-5', 'ch3-3-6'];
+  const newcomers = ['ch3-3-2', 'ch3-3-3', 'ch3-3-4', 'ch3-3-5', 'ch3-3-6', 'ch3-3-7', 'ch3-3-8'];
   const allocated = [...chapters.filter(ch => !newcomers.includes(ch.id)),
                      ...newcomers.map(id => chapters.find(ch => ch.id === id))];
   const allocationHues = allocated.map(ch => ch && Number(css(ch).getPropertyValue('--hue').trim()));
@@ -172,16 +172,16 @@ def main():
                 assert not result['failures'], (
                     f'{width}px: ' + '\n'.join(result['failures'])
                 )
-                assert result['chapters'] == 44
+                assert result['chapters'] == 46
                 assert result['uniqueHues'] == 18
                 assert len(result['authorCredits']) >= 2
                 # Revision sections can present their key comparison through
                 # several established formats; inspect every real table rather
-                # than inventing a requirement for 44 HTML table elements.
+                # than inventing a requirement for 46 HTML table elements.
                 covered = {entry['chapter'] for entry in result['tables']}
                 assert {'ch1-1-1', 'ch1-1-2'} <= covered
                 assert len(result['tables']) >= 2
-                print(f"PASS {width}px: 44 chapters / 18-hue 360-degree cycle, "
+                print(f"PASS {width}px: 46 chapters / 18-hue 360-degree cycle, "
                       f"{len(result['tables'])} revision tables, "
                       f"{len(result['authorCredits'])} author credits, "
                       "six fixed semantic colors and canonical fonts")

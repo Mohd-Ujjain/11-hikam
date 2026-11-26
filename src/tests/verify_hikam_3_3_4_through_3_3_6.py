@@ -31,7 +31,7 @@ class Words(HTMLParser):
                 self.stack=self.stack[:i];break
     def handle_data(self,data):
         self.count[any(v for _,v in self.stack)]+=len(data.split())
-for key,hue,prev,nxt in zip(ids,(308,328,348),('ch3-3-3','ch3-3-4','ch3-3-5'),('ch3-3-5','ch3-3-6','ch3-4-3')):
+for key,hue,prev,nxt in zip(ids,(308,328,348),('ch3-3-3','ch3-3-4','ch3-3-5'),('ch3-3-5','ch3-3-6','ch3-3-7')):
     sec=chapter(index,key)
     rtl=' rtl' if key!=ids[-1] else ''
     lang=' lang="ar"' if rtl else ''

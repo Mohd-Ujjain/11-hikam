@@ -138,8 +138,8 @@ for cue in cues:
     if cue.get("sourceDepthId"):
         assert body.count('id="'+cue["sourceDepthId"]+'"')==1
 all_files="\n".join(p.read_text(encoding="utf-8") for p in sorted((ROOT/"src/chapters").glob("subtopic-*.html")))
-assert len(re.findall(r'<section class="chapter(?: [^"]+)?" id="ch\d',all_files))==44
+assert len(re.findall(r'<section class="chapter(?: [^"]+)?" id="ch\d',all_files))==46
 print(f"PASS Wolff 2.1.4: 21 printed-page source units through exact Rousseau boundary, "
       f"23 context-first cues, 9 adjacent Depth disclosures, 17 source records, "
-      f"six independent revision blocks, 44 dossiers; "
+      f"six independent revision blocks, 46 dossiers; "
       f"prose={n['prose']}, aids={n['aids']}, depth={n['depth']}")
