@@ -1,7 +1,7 @@
 {
   "version": 1,
   "editorialPolicy": "src/docs/editorial/CONCISE_DOSSIER_AND_READING_COMPANIONS.md",
-  "description": "Source-anchored contextual Reading Companions through Aristotle introductions 2.2.5 (W. D. Ross) and 2.2.6 (Hugh Lawson-Tancred).",
+  "description": "Context-first source-anchored Companions through James Kellenberger's 3.1.1 introduction.",
   "companions": [
     {
       "id": "h111-russell-idealism",
@@ -4962,6 +4962,246 @@
       "simple": "The translator accepts a trade-off between literal precision and readability to help beginners approach a demanding work.",
       "why_here": "The final section states a deliberately limited pedagogical purpose.",
       "remember": "Introductory is not definitive."
+    },
+    {
+      "id": "h311-agnostic",
+      "chapter": "ch3-1-1",
+      "passage": "Some readers practise a religion; others rejected it or gradually drifted away. For Kellenberger, an agnostic holds that",
+      "text": "withholds belief that God exists",
+      "kind": "Contextual explanation",
+      "title": "Why withholding is not denial",
+      "explanation": "Kellenberger’s agnostic withholds both the assertion that God exists and the assertion that God does not, because knowledge is thought insufficient. This distinction separates agnosticism from his affirmative description of atheism.",
+      "source": {
+        "author": "James Kellenberger",
+        "work": "Introduction: Philosophy and Religion, in Introduction to Philosophy of Religion (Routledge); locators are PDF ordinal pages",
+        "printedPages": [
+          2
+        ]
+      },
+      "added_value": "Local source-faithful conceptual clarification; essential claim remains in visible notes.",
+      "simple": "Kellenberger’s agnostic withholds both the assertion that God exists and the assertion that God does not, because knowledge is thought insufficient.",
+      "why_here": "This distinction separates agnosticism from his affirmative description of atheism.",
+      "remember": "Agnostic: withholds both beliefs."
+    },
+    {
+      "id": "h311-freedom",
+      "chapter": "ch3-1-1",
+      "passage": "Philosophy questions familiar things: knowledge, moral rightness and love. Such inquiry grows from awe, as in Kant’s hea",
+      "text": "our inward sense of free choice",
+      "kind": "Contextual explanation",
+      "title": "External laws and inward freedom",
+      "explanation": "The example compares the external picture of our actions as governed by scientific laws with our inward sense that we choose among possibilities. Kellenberger uses the tension to show philosophy arising in ordinary living.",
+      "source": {
+        "author": "James Kellenberger",
+        "work": "Introduction: Philosophy and Religion, in Introduction to Philosophy of Religion (Routledge); locators are PDF ordinal pages",
+        "printedPages": [
+          2
+        ]
+      },
+      "added_value": "Local source-faithful conceptual clarification; essential claim remains in visible notes.",
+      "simple": "The example compares the external picture of our actions as governed by scientific laws with our inward sense that we choose among possibilities.",
+      "why_here": "Kellenberger uses the tension to show philosophy arising in ordinary living.",
+      "remember": "Laws versus felt freedom."
+    },
+    {
+      "id": "h311-compartment",
+      "chapter": "ch3-1-1",
+      "passage": "For Kellenberger, the question whether religion is reasonable or grounded in reality concerns both sides. A believer who",
+      "text": "isolate religion arbitrarily from reason elsewhere",
+      "kind": "Contextual explanation",
+      "title": "What is compartmentalization?",
+      "explanation": "A person who calls religion unreasonable yet continues believing can isolate religion from the standards of reason used in other areas of life. This explains why believers must examine reasonableness.",
+      "source": {
+        "author": "James Kellenberger",
+        "work": "Introduction: Philosophy and Religion, in Introduction to Philosophy of Religion (Routledge); locators are PDF ordinal pages",
+        "printedPages": [
+          3
+        ]
+      },
+      "added_value": "Local source-faithful conceptual clarification; essential claim remains in visible notes.",
+      "simple": "A person who calls religion unreasonable yet continues believing can isolate religion from the standards of reason used in other areas of life.",
+      "why_here": "This explains why believers must examine reasonableness.",
+      "remember": "One standard of reason across life."
+    },
+    {
+      "id": "h311-proof-relevance",
+      "chapter": "ch3-1-1",
+      "passage": "An argument is reasoning intended to support or prove a claim. Traditional arguments for God’s existence prompt two ques",
+      "text": "are they relevant to religious belief?",
+      "kind": "Contextual explanation",
+      "title": "Why relevance after proof?",
+      "explanation": "Even if an argument achieves its intended conclusion, the author asks if this intellectual result matters to religion as a lived commitment. This introduces Chapter 3 as a separate investigation from proof’s success.",
+      "source": {
+        "author": "James Kellenberger",
+        "work": "Introduction: Philosophy and Religion, in Introduction to Philosophy of Religion (Routledge); locators are PDF ordinal pages",
+        "printedPages": [
+          3
+        ]
+      },
+      "added_value": "Local source-faithful conceptual clarification; essential claim remains in visible notes.",
+      "simple": "Even if an argument achieves its intended conclusion, the author asks if this intellectual result matters to religion as a lived commitment.",
+      "why_here": "This introduces Chapter 3 as a separate investigation from proof’s success.",
+      "remember": "Proof success and religious relevance differ."
+    },
+    {
+      "id": "h311-experience",
+      "chapter": "ch3-1-1",
+      "passage": "An argument is reasoning intended to support or prove a claim. Traditional arguments for God’s existence prompt two ques",
+      "text": "a kind of experience available to human beings",
+      "kind": "Contextual explanation",
+      "title": "Why another basis for belief?",
+      "explanation": "The author considers a possible basis for reasonable religion in an experience available to human beings rather than formal proof. The topic prepares Chapter 5 after other approaches in Chapter 4.",
+      "source": {
+        "author": "James Kellenberger",
+        "work": "Introduction: Philosophy and Religion, in Introduction to Philosophy of Religion (Routledge); locators are PDF ordinal pages",
+        "printedPages": [
+          3
+        ]
+      },
+      "added_value": "Local source-faithful conceptual clarification; essential claim remains in visible notes.",
+      "simple": "The author considers a possible basis for reasonable religion in an experience available to human beings rather than formal proof.",
+      "why_here": "The topic prepares Chapter 5 after other approaches in Chapter 4.",
+      "remember": "Experience is a possible ground, not yet established."
+    },
+    {
+      "id": "h311-evil",
+      "chapter": "ch3-1-1",
+      "passage": "The Religious Problem of Evil arises for belief in an all-good, all-powerful God, as in traditional Christianity and Jud",
+      "text": "no sufficient divine reason for allowing it could exist",
+      "kind": "Contextual explanation",
+      "title": "What must the evil-based rejection show?",
+      "explanation": "A nonbeliever who cites evil against God must consider whether proposed reasons why a good and powerful God permits evil actually fail. The issue is relevant to the rejection precisely because that rejection depends on the problem.",
+      "source": {
+        "author": "James Kellenberger",
+        "work": "Introduction: Philosophy and Religion, in Introduction to Philosophy of Religion (Routledge); locators are PDF ordinal pages",
+        "printedPages": [
+          3
+        ]
+      },
+      "added_value": "Local source-faithful conceptual clarification; essential claim remains in visible notes.",
+      "simple": "A nonbeliever who cites evil against God must consider whether proposed reasons why a good and powerful God permits evil actually fail.",
+      "why_here": "The issue is relevant to the rejection precisely because that rejection depends on the problem.",
+      "remember": "Evaluate the proposed explanations."
+    },
+    {
+      "id": "h311-miracles",
+      "chapter": "ch3-1-1",
+      "passage": "A miracle, in the Jewish, Christian and Islamic sense introduced here, is an act of God in the world. Kellenberger cites",
+      "text": "justify impossibility beyond prior disbelief",
+      "kind": "Contextual explanation",
+      "title": "Why a prior stance is not enough",
+      "explanation": "Calling something a miracle entails divine action; rejecting all miracles merely because one already denies God presumes the point at issue. The author asks both positions to give reasons apart from their assumptions.",
+      "source": {
+        "author": "James Kellenberger",
+        "work": "Introduction: Philosophy and Religion, in Introduction to Philosophy of Religion (Routledge); locators are PDF ordinal pages",
+        "printedPages": [
+          4
+        ]
+      },
+      "added_value": "Local source-faithful conceptual clarification; essential claim remains in visible notes.",
+      "simple": "Calling something a miracle entails divine action; rejecting all miracles merely because one already denies God presumes the point at issue.",
+      "why_here": "The author asks both positions to give reasons apart from their assumptions.",
+      "remember": "Do not assume the answer."
+    },
+    {
+      "id": "h311-morality",
+      "chapter": "ch3-1-1",
+      "passage": "Everyone enters the sphere of morality when deciding what ought to be done or regretting wrongdoing. Religions likewise ",
+      "text": "whether morality could exist without religion",
+      "kind": "Contextual explanation",
+      "title": "Why morality concerns everyone",
+      "explanation": "People consider what they ought to do whether or not they practise religion. Kellenberger then asks if such moral life depends upon religion. This separates moral participation from religion’s possible grounding role.",
+      "source": {
+        "author": "James Kellenberger",
+        "work": "Introduction: Philosophy and Religion, in Introduction to Philosophy of Religion (Routledge); locators are PDF ordinal pages",
+        "printedPages": [
+          4
+        ]
+      },
+      "added_value": "Local source-faithful conceptual clarification; essential claim remains in visible notes.",
+      "simple": "People consider what they ought to do whether or not they practise religion. Kellenberger then asks if such moral life depends upon religion.",
+      "why_here": "This separates moral participation from religion’s possible grounding role.",
+      "remember": "Moral practice does not settle its basis."
+    },
+    {
+      "id": "h311-language",
+      "chapter": "ch3-1-1",
+      "passage": "When believers call God merciful or caring, can this be literally true, or is it metaphor? If God is a loving Father, do",
+      "text": "can this be literally true",
+      "kind": "Contextual explanation",
+      "title": "What does literal speech about God mean?",
+      "explanation": "Saying God is merciful asserts something about God. Kellenberger asks whether this description is literal or only a metaphor. The same difficulty leads to questions about Father and Mother imagery.",
+      "source": {
+        "author": "James Kellenberger",
+        "work": "Introduction: Philosophy and Religion, in Introduction to Philosophy of Religion (Routledge); locators are PDF ordinal pages",
+        "printedPages": [
+          4
+        ]
+      },
+      "added_value": "Local source-faithful conceptual clarification; essential claim remains in visible notes.",
+      "simple": "Saying God is merciful asserts something about God. Kellenberger asks whether this description is literal or only a metaphor.",
+      "why_here": "The same difficulty leads to questions about Father and Mother imagery.",
+      "remember": "Literal statement versus metaphor."
+    },
+    {
+      "id": "h311-realism",
+      "chapter": "ch3-1-1",
+      "passage": "Religious Realism means that the religious understanding of God requires a transcendent being independent of human belie",
+      "text": "without reference to an independently existing transcendent being",
+      "kind": "Contextual explanation",
+      "title": "Why nonrealism retains religion",
+      "explanation": "The position tries to preserve religious spirituality and the word God without requiring a transcendent being independent of human practice. This is a question about the meaning religion needs, not simply disbelief.",
+      "source": {
+        "author": "James Kellenberger",
+        "work": "Introduction: Philosophy and Religion, in Introduction to Philosophy of Religion (Routledge); locators are PDF ordinal pages",
+        "printedPages": [
+          5
+        ]
+      },
+      "added_value": "Local source-faithful conceptual clarification; essential claim remains in visible notes.",
+      "simple": "The position tries to preserve religious spirituality and the word God without requiring a transcendent being independent of human practice.",
+      "why_here": "This is a question about the meaning religion needs, not simply disbelief.",
+      "remember": "Nonrealism does not necessarily end spirituality."
+    },
+    {
+      "id": "h311-plurality",
+      "chapter": "ch3-1-1",
+      "passage": "Theism can mean belief in a god or gods, or more narrowly in one God. Christianity, Judaism and Islam are monotheistic, ",
+      "text": "Some Hindu traditions are polytheistic, others non-theistic",
+      "kind": "Contextual explanation",
+      "title": "Why two descriptions of Hinduism?",
+      "explanation": "Different forms of Hinduism are described differently: some believe in several gods, while others do not regard God or gods as supreme reality. This avoids turning a varied tradition into a single theological category.",
+      "source": {
+        "author": "James Kellenberger",
+        "work": "Introduction: Philosophy and Religion, in Introduction to Philosophy of Religion (Routledge); locators are PDF ordinal pages",
+        "printedPages": [
+          5
+        ]
+      },
+      "added_value": "Local source-faithful conceptual clarification; essential claim remains in visible notes.",
+      "simple": "Different forms of Hinduism are described differently: some believe in several gods, while others do not regard God or gods as supreme reality.",
+      "why_here": "This avoids turning a varied tradition into a single theological category.",
+      "remember": "A tradition need not be uniform."
+    },
+    {
+      "id": "h311-sensibility",
+      "chapter": "ch3-1-1",
+      "passage": "The book will consider problems and solutions critically, using philosophy’s clarity and balance. Kellenberger also lets",
+      "text": "senses of religious appropriateness formed within traditions",
+      "kind": "Contextual explanation",
+      "title": "What can sensibility illuminate?",
+      "explanation": "A sensibility concerns what is religiously appropriate within a tradition, helping philosophers identify the practical context of a disputed question. Kellenberger explicitly does not treat it as proof or as a final verdict.",
+      "source": {
+        "author": "James Kellenberger",
+        "work": "Introduction: Philosophy and Religion, in Introduction to Philosophy of Religion (Routledge); locators are PDF ordinal pages",
+        "printedPages": [
+          6
+        ]
+      },
+      "added_value": "Local source-faithful conceptual clarification; essential claim remains in visible notes.",
+      "simple": "A sensibility concerns what is religiously appropriate within a tradition, helping philosophers identify the practical context of a disputed question.",
+      "why_here": "Kellenberger explicitly does not treat it as proof or as a final verdict.",
+      "remember": "Illuminate; do not settle."
     }
   ]
 }
