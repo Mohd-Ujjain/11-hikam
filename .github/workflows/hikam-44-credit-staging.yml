@@ -1,0 +1,32 @@
+name: Focused Hikam author credit verification
+on:
+  push:
+    branches: [editorial/hikam-44-credit-staging]
+permissions:
+  contents: write
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - name: Rebuild the scoped credit correction
+        run: |
+          set -eu
+          test "$(git rev-parse HEAD^)" = "7482b0fdcbfbc98a804be7baef4aa59c96c4a267"
+          printf '%s' 'H4sIAAAAAAAAA9VUy07bQBTd+ytG6aZVOnFCSGgrY+VXjONgC8eO7AGVXUnzasSm6gcghIQhQFFEodAvubPlS3rGDxoQKGybyPaM77n3nHtmxm2v02Gcb3qCWXoc2brtWj3hRLEeb2+IsOfZvM5XKq7o+mxjCUDzgrbzmTUbnUZzdbVSqdZXGs1ak9WqVcw1zvlSDq1cLi/nabUYr3+ov19j5ezRamlM/Yy2t8Ns34rj9VKez2NhdXsl04h7VmBSIgdyRLdyyORETWhGf+SU5sX0gi4xOjP0FG7oKGi+XHvDCgI8PHUHxTOILc/eUjE6QuEBnSqec1yXLJUykONUWJHWDgXqZORySBe4gDwBtg+NqcIryL2C7ESO5NSwikwR2pBjb5WYGzmd9dIbvCiZ96PvGRFq0UxOkJvQzNCtx625tae6hSd8R8mWe3L6oJXRL/mVDgzdrZkaf9HxcDuyHWW5iMJg83WN6DmY9tnzpCpQdJLQDc3pVL26Zo37Lz8aTRjb+IjRWpUBcsfkHlDXcpBxHYHpWPlfyfpevGvlJY2wWOz6Dl6Hfhh92rGit5z3rMh2u04g3v0/fb64jbtWDw21H+9gL+DC9WKegxB066rFK/BlnakWMTmkU2yIummEvmn4XmbDpMAstAHpSjJs+JbFJpjAEeSkeenJUD68+pAWmUNKGAC/YcZxZoQ6bEl+4PIwBn0UHVPyL7GvKtJdfhzBc0FzLAmgIxyXKZ2jQBo5QWSRUI7U8kFxkfozd2RfJY+xHiDsY33S9i/pDJtCSWLw7wT/g4daafZdqmNON8WWASPoF9TTGbJmLGO+BWpcODxKp8OsoK4W4cmiL4ye+4aF7d2Sqf0Fxa5/PQkGAAA=' | base64 -d | gzip -dc >/tmp/credit.patch
+          git apply --index /tmp/credit.patch
+          python src/build.py
+          python src/tests/verify_hikam_3_2_1_through_3_2_6.py
+          python src/tests/verify_reading_companions.py
+          python src/build.py --check
+          git add index.html src/philosophy_study_notes.html service-worker.js
+          git rm --cached ".github/workflows/hikam-44-credit-staging.yml"
+          test "$(git write-tree)" = "976f53cd558e5c0e04011d1502648d4773808301"
+          git restore --staged ".github/workflows/hikam-44-credit-staging.yml"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Stage verified banner-credit contrast correction'
+          git push origin "HEAD:refs/heads/editorial/hikam-44-credit-staging"
