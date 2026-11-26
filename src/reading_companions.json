@@ -1,7 +1,7 @@
 {
   "version": 1,
   "editorialPolicy": "src/docs/editorial/CONCISE_DOSSIER_AND_READING_COMPANIONS.md",
-  "description": "Context-first source-anchored Companions through Keith E. Yandell’s 3.1.2 reading.",
+  "description": "Context-first source-anchored Companions through Anthony Kenny’s 3.1.3 reading.",
   "companions": [
     {
       "id": "h111-russell-idealism",
@@ -5432,6 +5432,155 @@
       "simple": "A probabilistic law says how likely an outcome is given certain things and conditions. It does not assert that the outcome happens in every case meeting the conditions.",
       "why_here": "Yandell leaves room for different pictures of what a law explains.",
       "remember": "A probability is not a guarantee."
+    },
+    {
+      "id": "h313-alienation",
+      "chapter": "ch3-1-3",
+      "passage": "Hegel saw religions as presenting philosophical truths in shifting, mythical forms. Kenny begins by placing two reactions on opposite sides of Hegel. Ludwig Feuerbach thought Hegel conceded too much to religion: human beings become strangers to their own nature when they ascribe their reason, will and love to a separate divine being. Feuerbach describes a move from dependence on nature, and the divinisation of natural objects, to the conception of a personal God.",
+      "text": "become strangers to their own nature",
+      "kind": "Contextual explanation",
+      "title": "What becomes alien?",
+      "explanation": "What belongs to humanity is experienced as the attribute of someone else. For Feuerbach, this is not simply an error about an external object; it changes how people understand themselves. Marx retains the pattern of alienation but changes what produces it.",
+      "source": {
+        "author": "Anthony Kenny",
+        "work": "God, Chapter 12 of Philosophy in the Modern World (Oxford University Press)",
+        "printedPages": [
+          291,
+          292
+        ]
+      },
+      "added_value": "Explains a distinction in the immediate source-backed passage.",
+      "simple": "What belongs to humanity is experienced as the attribute of someone else. For Feuerbach, this is not simply an error about an external object; it changes how people understand themselves.",
+      "why_here": "Marx retains the pattern of alienation but changes what produces it.",
+      "remember": "Human powers treated as another’s."
+    },
+    {
+      "id": "h313-abraham",
+      "chapter": "ch3-1-3",
+      "passage": "The suspension of the ethical means that a higher end can override a universal duty in the case of faith. It does not make Abraham’s act ethically admirable by ordinary standards or provide a public test for distinguishing faith from a delusion. Kierkegaard sets passionate commitment against historical approximation and detached inquiry. Abraham trusts the promise of posterity even as he raises the knife. Kenny notes that few Christians accept infinite improbability and that some atheist existentialists found the account of choice attractive.",
+      "text": "a higher end can override a universal duty",
+      "kind": "Contextual explanation",
+      "title": "Why can Abraham not explain himself?",
+      "explanation": "A tragic hero can offer a reason the community recognises. Abraham cannot justify his decision that way; Kierkegaard makes it depend on his relation to God. Without shared grounds, faith does not become a public exception anyone can verify.",
+      "source": {
+        "author": "Anthony Kenny",
+        "work": "God, Chapter 12 of Philosophy in the Modern World (Oxford University Press)",
+        "printedPages": [
+          293,
+          295,
+          296,
+          297
+        ]
+      },
+      "added_value": "Explains a distinction in the immediate source-backed passage.",
+      "simple": "A tragic hero can offer a reason the community recognises. Abraham cannot justify his decision that way; Kierkegaard makes it depend on his relation to God.",
+      "why_here": "Without shared grounds, faith does not become a public exception anyone can verify.",
+      "remember": "The tragic hero can invoke a public end."
+    },
+    {
+      "id": "h313-mill",
+      "chapter": "ch3-1-3",
+      "passage": "John Stuart Mill rejects ontological and causal proofs but allows the design argument some evidential weight. He does not infer that every feature of nature is good. Suffering, destructive natural processes and the doctrine of hell stand against identifying the world’s ruler with both unrestricted power and goodness as human beings understand it.",
+      "text": "some evidential weight",
+      "kind": "Contextual explanation",
+      "title": "Why not infer omnipotence?",
+      "explanation": "An adaptation can count in favour of intelligence without telling us that the designer can do anything. Mill measures the inference against the rest of what nature contains, including suffering. The conclusion is narrower than traditional theism.",
+      "source": {
+        "author": "Anthony Kenny",
+        "work": "God, Chapter 12 of Philosophy in the Modern World (Oxford University Press)",
+        "printedPages": [
+          298,
+          299
+        ]
+      },
+      "added_value": "Explains a distinction in the immediate source-backed passage.",
+      "simple": "An adaptation can count in favour of intelligence without telling us that the designer can do anything. Mill measures the inference against the rest of what nature contains, including suffering.",
+      "why_here": "The conclusion is narrower than traditional theism.",
+      "remember": "Design alone does not establish unlimited power."
+    },
+    {
+      "id": "h313-darwin",
+      "chapter": "ch3-1-3",
+      "passage": "Kenny distinguishes Darwin’s opposition to special creation from a denial of creation altogether. Darwin allows that life could begin in created forms and develop through secondary causes. Kenny notes that non-literal Genesis is not a modern invention, but that evolution complicates an account in which human disobedience introduced death into nature.",
+      "text": "opposition to special creation",
+      "kind": "Contextual explanation",
+      "title": "What does the distinction protect?",
+      "explanation": "Darwin rejects a separate creative act for each species. Kenny points out that this does not rule out a creator working through the laws and processes by which lineages change. One explanation need not displace every other level of explanation.",
+      "source": {
+        "author": "Anthony Kenny",
+        "work": "God, Chapter 12 of Philosophy in the Modern World (Oxford University Press)",
+        "printedPages": [
+          301,
+          302
+        ]
+      },
+      "added_value": "Explains a distinction in the immediate source-backed passage.",
+      "simple": "Darwin rejects a separate creative act for each species. Kenny points out that this does not rule out a creator working through the laws and processes by which lineages change.",
+      "why_here": "One explanation need not displace every other level of explanation.",
+      "remember": "Separate creation from special creation."
+    },
+    {
+      "id": "h313-frege",
+      "chapter": "ch3-1-3",
+      "passage": "Newman appeals to the emotional colouring of conscience, not to bare moral judgement, as pointing to a personal judge. Kenny allows the feelings but challenges the inference to their cause. Gottlob Frege approaches from a different direction: existence and uniqueness concern whether a concept has instances, not features included in its definition. Kenny does not treat that analysis as closing every possible ontological argument.",
+      "text": "whether a concept has instances",
+      "kind": "Contextual explanation",
+      "title": "What belongs to the concept?",
+      "explanation": "To say there is one God is to say that the concept has one instance. It is not to add being the only one to a list of characteristics inside the concept. Kenny nevertheless distinguishes this point from a universal ban on reasoning from a concept to its properties.",
+      "source": {
+        "author": "Anthony Kenny",
+        "work": "God, Chapter 12 of Philosophy in the Modern World (Oxford University Press)",
+        "printedPages": [
+          308,
+          309
+        ]
+      },
+      "added_value": "Explains a distinction in the immediate source-backed passage.",
+      "simple": "To say there is one God is to say that the concept has one instance. It is not to add being the only one to a list of characteristics inside the concept.",
+      "why_here": "Kenny nevertheless distinguishes this point from a universal ban on reasoning from a concept to its properties.",
+      "remember": "Existence asks whether the concept has instances."
+    },
+    {
+      "id": "h313-illusion",
+      "chapter": "ch3-1-3",
+      "passage": "James distinguishes petitionary prayer from inward communion and a God of general laws from the particular concerns of an individual. Sigmund Freud, by contrast, calls religion a wish-shaped illusion, which is not for that reason necessarily false. He moves from helplessness and the protective father to an account of religion as collective neurosis. Kenny separates this psychological proposal from Freud’s speculative prehistoric narrative, which Kenny criticises.",
+      "text": "wish-shaped illusion",
+      "kind": "Contextual explanation",
+      "title": "Does Freud mean false?",
+      "explanation": "For Freud an illusion is a belief motivated by a wish, not necessarily a false belief. Its origin does not provide evidence for its truth; if true, it may be true by accident. Kenny keeps this definition apart from his criticism of Freud’s speculative history.",
+      "source": {
+        "author": "Anthony Kenny",
+        "work": "God, Chapter 12 of Philosophy in the Modern World (Oxford University Press)",
+        "printedPages": [
+          314,
+          315
+        ]
+      },
+      "added_value": "Explains a distinction in the immediate source-backed passage.",
+      "simple": "For Freud an illusion is a belief motivated by a wish, not necessarily a false belief. Its origin does not provide evidence for its truth; if true, it may be true by accident.",
+      "why_here": "Kenny keeps this definition apart from his criticism of Freud’s speculative history.",
+      "remember": "Wish-shaped is not the same as false."
+    },
+    {
+      "id": "h313-plantinga",
+      "chapter": "ch3-1-3",
+      "passage": "Alvin Plantinga recasts the ontological argument through possible worlds. Maximal excellence is omniscience, omnipotence and moral perfection in a world; maximal greatness requires that excellence in every possible world. If maximal greatness is possible, his reasoning brings it into the actual world. Kenny identifies the possibility premise and assumptions about possible worlds and identity across them. The ending is a warning against calling a philosophical question definitively closed, not Kenny’s declaration that the argument proves God exists.",
+      "text": "Maximal excellence is",
+      "kind": "Contextual explanation",
+      "title": "Why distinguish excellence and greatness?",
+      "explanation": "Excellence concerns what a being is like in a particular world. Greatness extends that standard across possible worlds. The move to actuality depends on whether greatness really can be exemplified. Kenny identifies the premise; he does not declare it proved.",
+      "source": {
+        "author": "Anthony Kenny",
+        "work": "God, Chapter 12 of Philosophy in the Modern World (Oxford University Press)",
+        "printedPages": [
+          317,
+          318
+        ]
+      },
+      "added_value": "Explains a distinction in the immediate source-backed passage.",
+      "simple": "Excellence concerns what a being is like in a particular world. Greatness extends that standard across possible worlds. The move to actuality depends on whether greatness really can be exemplified.",
+      "why_here": "Kenny identifies the premise; he does not declare it proved.",
+      "remember": "One world versus every possible world."
     }
   ]
 }

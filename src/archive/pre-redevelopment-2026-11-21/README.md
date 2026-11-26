@@ -114,3 +114,8 @@ The archive is never included in the reader or regenerated as a publication asse
 - Original baseline: `178c725e30d3545d69b293942a5dfe2beab260b3`.
 - Untouched chapter-section Git blob: `c645f9a706db47be51f153ec910df8e327dcd3f6`, pinned in the archive regression.
 - Replacement: source-led Keith E. Yandell edition; previous six-part revision and all five examination categories remain in the archived fragment.
+
+### 3.1.3 — The Evolution of the Divine
+
+- [Complete former course-brief dossier](dossier-3.1.3.html), preserved unchanged before the source-led revision.
+- Original baseline: `78b3553113aafe9edd0d58423243a2741d9a17b4`; exact chapter blob: `9d02494a0fe387f99c5ceff769a9b4d163f03e6b`.

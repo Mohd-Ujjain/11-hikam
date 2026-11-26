@@ -215,7 +215,13 @@ def verify() -> None:
     assert prior_312.endswith(b"</section>")
     assert prior_312.count(b'class="endh"') == 6
     assert prior_312.count(b'class="examq-cat"') == 5
-    print("PASS: ten originals plus all protected 2.1.6–2.1.8, 2.2.1–2.2.6 and 3.1.1–3.1.2 complete editions")
+    prior_313 = (ROOT / "src/archive/pre-redevelopment-2026-11-21/dossier-3.1.3.html").read_bytes()
+    assert blob_sha(prior_313) == "9d02494a0fe387f99c5ceff769a9b4d163f03e6b", "Original 3.1.3 snapshot changed"
+    assert prior_313.startswith(b'<section class="chapter" id="ch3-1-3" style="--hue:268;"')
+    assert prior_313.endswith(b"</section>")
+    assert prior_313.count(b'class="endh"') == 6
+    assert prior_313.count(b'class="examq-cat"') == 5
+    print("PASS: ten originals plus all protected 2.1.6–2.1.8, 2.2.1–2.2.6 and 3.1.1–3.1.3 complete editions")
 
 
 if __name__ == "__main__":
