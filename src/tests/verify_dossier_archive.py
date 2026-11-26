@@ -199,7 +199,17 @@ def verify() -> None:
     assert prior_226.count('class="endh"') == 6
     assert prior_226.count('class="examq-cat"') == 5
     assert "pre-redevelopment-2026-11-21" not in (ROOT / "src/main.html").read_text(encoding="utf-8")
-    print("PASS: ten originals plus all protected 2.1.6–2.1.8 and 2.2.1–2.2.6 complete editions")
+    original_311 = ROOT / "src/archive/pre-redevelopment-2026-11-21/dossier-3.1.1.html"
+    original_311_bytes = original_311.read_bytes()
+    assert blob_sha(original_311_bytes) == "e684148b7b500c424830aecbb5264f21bf88e768", "Original 3.1.1 snapshot changed"
+    original_311_text = original_311_bytes.decode("utf-8")
+    assert original_311_text.startswith('<section class="chapter" id="ch3-1-1" style="--hue:228;"')
+    assert original_311_text.endswith("</section>")
+    assert original_311_text.count('class="end-block"') == 1
+    assert original_311_text.count('class="endh"') == 6
+    assert original_311_text.count('class="examq-cat"') == 5
+    assert "pre-redevelopment-2026-11-21" not in (ROOT / "src/main.html").read_text(encoding="utf-8")
+    print("PASS: ten originals plus all protected 2.1.6–2.1.8, 2.2.1–2.2.6 and 3.1.1 complete editions")
 
 
 if __name__ == "__main__":
