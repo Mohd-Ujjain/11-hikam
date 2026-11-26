@@ -129,3 +129,28 @@ The archive is never included in the reader or regenerated as a publication asse
 
 - [Complete unchanged predecessor](dossier-3.1.5.html), Git blob `8ad4d9c6d4c83a264394ece70182a545d0aeff18`.
 - Replacement is the source-led Arabic edition of «الاعتراضات الإجمالية التي اعترض بها الناقدون على الأديان» by سلطان بن عبد الرحمن العميري.
+
+### 3.2.1 — preserved previous dossier
+
+- [Complete unchanged predecessor](dossier-3.2.1.html), Git blob `a26bbc4b7bea93e810f1cc43875bf64087a9feb3`.
+- Replacement is the source-led Arabic edition of «تمهيد — برهان النزوع الفطري» by سامي عامري.
+
+### 3.2.2 — preserved previous dossier
+
+- [Complete unchanged predecessor](dossier-3.2.2.html), Git blob `05249cfd2c67cac97204d426a82f719a69ba20b7`.
+- Replacement is the source-led Arabic edition of «البرهان الأخلاقي» by سامي عامري.
+
+### 3.2.3 — preserved previous dossier
+
+- [Complete unchanged predecessor](dossier-3.2.3.html), Git blob `fcedc9256c33f26c8034fc27fe3799063dec84d7`.
+- Replacement is the source-led Arabic edition of «برهان الضبط الدقيق» by سامي عامري.
+
+### 3.2.4 — preserved previous dossier
+
+- [Complete unchanged predecessor](dossier-3.2.4.html), Git blob `d278e05012c13fe7d59a40896af1ba431fe77646`.
+- Replacement is the source-led Arabic edition of «الدلالة العقلية الأولى على وجود الله: دلالة الخلق والإيجاد» by عبد الله بن صالح العجيري.
+
+### 3.2.5 — preserved previous dossier
+
+- [Complete unchanged predecessor](dossier-3.2.5.html), Git blob `2b03c83ef8fa35078655c1dee6bec9708c1a37f3`.
+- Replacement is the source-led Arabic edition of «الإلحاد الجديد» by هشام عزمي.
