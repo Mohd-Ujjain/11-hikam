@@ -98,3 +98,12 @@ The archive is never included in the reader or regenerated as a publication asse
 - **Revised primary reading:** Hugh Lawson-Tancred, Introduction to Aristotle’s *The Metaphysics*, Penguin Classics (1998), original 42-page excerpt. Unlike the former general account of Aristotle's system, the new 2.2.6 accurately preserves the modern translator’s sceptical valuation of metaphysical systems, deep Zeta/Eta interpretive uncertainties, and source-specific text/translation position.
 - **Author correction in neighbouring 2.2.5:** W. D. Ross is positively identified for the 1924 critical introduction, not an anonymous source. That dossier's original archived section is unaltered.
 - **Reader isolation:** The archived fragment is excluded from the live build, public search, print, reading position, and PWA. These are independent historical versions for the user’s archival policy.
+
+## Dossier 3.1.1 — Original Philosophy and Religion overview
+
+**Historical baseline:** original authoritative `MohdUjjain/11-hikam` `main` at `a5f551292d01caf38517b969f47ce3715cb8623d`, before the 26 November 2026 redevelopment. The snapshot was committed independently on the secondary-account branch **before** changes to the chapter.
+
+- **Complete read-only original:** [`dossier-3.1.1.html`](dossier-3.1.1.html), extracted verbatim from `src/chapters/subtopic-3-1.html`, including chapter frontmatter, main notes and aids, navigation, all six revision sections and all five examination classes.
+- **Independently pinned Git blob:** `e684148b7b500c424830aecbb5264f21bf88e768`; immutable via `src/tests/verify_dossier_archive.py`. Older archive files and their pinned checks remain unchanged.
+- **Reason for replacement:** source-led study edition of James Kellenberger’s “Introduction: Philosophy and Religion” from *Introduction to Philosophy of Religion* (Routledge), five supplied PDF text pages after the cover. The source author is now credited, arguments mapped and the specific discussion of language, religious relevance, realism and religious sensibilities restored.
+- **Reader isolation:** Historical HTML is never built into the reader, PWA, print, search or new chapter progress state. The private supplied source is not distributed.
