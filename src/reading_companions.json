@@ -1,7 +1,7 @@
 {
   "version": 1,
   "editorialPolicy": "src/docs/editorial/CONCISE_DOSSIER_AND_READING_COMPANIONS.md",
-  "description": "Context-first source-anchored Companions through the Arabic source editions of 3.2.1–3.2.6.",
+  "description": "Context-first source-anchored Companions through the source-led editions of 3.2.1–3.2.8.",
   "companions": [
     {
       "id": "h111-russell-idealism",
@@ -6506,6 +6506,229 @@
       "why_here": "به يفرق جواب العوارض بين طلب معرفة الوجه الخفي وبين وجود أمارة مستقلة على نفي التدبير.",
       "remember": "الشيء الغامض ليس في نفسه شاهدًا على كل جواب محتمل.",
       "sourceDepthId": "source-depth-h326-ambiguity"
+    },
+    {
+      "id": "h327-absence",
+      "chapter": "ch3-2-7",
+      "passage": "يفتتح الدرس بآية فصلت التي تصل رؤية الآيات في الآفاق والأنفس بتبيّن الحق، ثم يعرض قول من يرى أن براهين وجود الله لا تكفي وأنه يلزم من ذلك إنكاره. ويبدأ الجواب بالفصل بين عدم وجدان الدليل وعدم وجود المدلول. فلو سُلّم جدلًا بأن ما عرضه المستدل لا يبلغ غايته، لكان حاصل ذلك اعتراضًا على أدلة الإثبات، لا إثباتًا لنقيض القضية. وبهذا يعزل الدرس النقلة التي يحتاجها المنكر بعد طعنه في إحدى طرق الإثبات.",
+      "text": "عدم وجدان الدليل وعدم وجود المدلول",
+      "kind": "إيضاح سياقي",
+      "title": "موضع الانتقال من الطعن في الدليل إلى النفي",
+      "explanation": "قد تثبت أن حجة بعينها لا توصل إلى المطلوب، وتظل القضية نفسها غير محسومة بهذا القدر من النظر. فالجواب هنا يمنع الانتقال من شأن الدليل إلى الحكم على الموضوع بغير حجة أخرى.",
+      "source": {
+        "author": "مركز المعارف للمناهج والمتون التعليمية",
+        "work": "أجوبة الشبهات العقدية، الجزء الثالث، الدرس الثاني",
+        "printedPages": [
+          29,
+          30
+        ]
+      },
+      "added_value": "به يفرق الجواب بين أثر الاعتراض على البرهان وبين إثبات نقيض القضية.",
+      "simple": "قد تثبت أن حجة بعينها لا توصل إلى المطلوب، وتظل القضية نفسها غير محسومة بهذا القدر من النظر. فالجواب هنا يمنع الانتقال من شأن الدليل إلى الحكم على الموضوع بغير حجة أخرى.",
+      "why_here": "به يفرق الجواب بين أثر الاعتراض على البرهان وبين إثبات نقيض القضية.",
+      "remember": "الطعن في طريق الإثبات لا يثبت نقيض المدّعى.",
+      "sourceDepthId": "source-depth-h327-absence"
+    },
+    {
+      "id": "h327-order",
+      "chapter": "ch3-2-7",
+      "passage": "أما مقابلة الكون بالشيء الذي عرف الإنسان صانعه، فيجعلها الدرس شاهدًا يؤيد الاستدلال لا دليلًا مستقلًا عنه. ويقرّب جهة السؤال بمثال المستشكل نفسه إذا نُفي عنه تأليف ما كتبه. فالناظر يسأل عمن أوجد الشيء منتظمًا، ولا يحتاج في كل موطن إلى أن يراه يصنعه. ولا يلزم من الاستشهاد بأثر المؤلف أو الصانع أن تكون طبيعة عمله أو مادته مساوية لما يبحث عنه الناظر في خلق العالم.",
+      "text": "شاهدًا يؤيد الاستدلال لا دليلًا مستقلًا",
+      "kind": "إيضاح سياقي",
+      "title": "ما موضع الشاهد من برهان النظم؟",
+      "explanation": "يقرب المثال العادي سؤال الإنسان عن مصدر الشيء المنظّم. لكن الدرس لا يجعل برهان الخالق قائمًا على تشابه مصنوعات الناس والكون من كل جهة، ولا على مساواة نوع العملين.",
+      "source": {
+        "author": "مركز المعارف للمناهج والمتون التعليمية",
+        "work": "أجوبة الشبهات العقدية، الجزء الثالث، الدرس الثاني",
+        "printedPages": [
+          30,
+          31
+        ]
+      },
+      "added_value": "يجيب هذا التحديد من يشترط التلازم بين النظم البشري والكوني حتى يقبل الاستدلال.",
+      "simple": "يقرب المثال العادي سؤال الإنسان عن مصدر الشيء المنظّم. لكن الدرس لا يجعل برهان الخالق قائمًا على تشابه مصنوعات الناس والكون من كل جهة، ولا على مساواة نوع العملين.",
+      "why_here": "يجيب هذا التحديد من يشترط التلازم بين النظم البشري والكوني حتى يقبل الاستدلال.",
+      "remember": "المثال يقرّب جهة السؤال، ولا يحمل وحده نتيجة البرهان.",
+      "sourceDepthId": "source-depth-h327-order"
+    },
+    {
+      "id": "h327-nature",
+      "chapter": "ch3-2-7",
+      "passage": "يقسم النص الدعوى، على فرض التسليم بها، إلى طبيعة تدرك فعلها وطبيعة لا تدركه. إن كانت مدركة، حصل أصل ما يقصده البرهان من افتقار النظم إلى ناظم مدرك، وإن بقي السؤال عن حقيقة ذلك الناظم. ثم ينفي الدرس أن تكون الطبيعة المادية عالمة بذاتها وفعلها، ويرجع انتظامها إلى علة مجردة أوجدتها ووجّهت أفعالها. وإن فرضت الطبيعة غير مدركة، بقي في نظر واضعي الدرس السؤال: كيف يسند إليها النظم المقصود من غير ناظم عالم؟",
+      "text": "وإن بقي السؤال عن حقيقة ذلك الناظم",
+      "kind": "إيضاح سياقي",
+      "title": "ما الذي يُسلّم به مؤقتًا في قسمة الطبيعة؟",
+      "explanation": "يفترض الدرس، أولًا، ما يقوله المعترض عن الطبيعة على سبيل البحث: إن كانت ناظمًا واعيًا عاد الإقرار بافتقار النظم إلى مدرك. وبعد ذلك يفحص هل يصح وصف الطبيعة المادية بذلك.",
+      "source": {
+        "author": "مركز المعارف للمناهج والمتون التعليمية",
+        "work": "أجوبة الشبهات العقدية، الجزء الثالث، الدرس الثاني",
+        "printedPages": [
+          31
+        ]
+      },
+      "added_value": "تمهد هذه الخطوة لفحص إمكان بقاء صفة الإدراك إذا كانت الطبيعة المقصودة مادية.",
+      "simple": "يفترض الدرس، أولًا، ما يقوله المعترض عن الطبيعة على سبيل البحث: إن كانت ناظمًا واعيًا عاد الإقرار بافتقار النظم إلى مدرك. وبعد ذلك يفحص هل يصح وصف الطبيعة المادية بذلك.",
+      "why_here": "تمهد هذه الخطوة لفحص إمكان بقاء صفة الإدراك إذا كانت الطبيعة المقصودة مادية.",
+      "remember": "إثبات الحاجة إلى مدرك وتعيين حقيقة المدرك خطوتان.",
+      "sourceDepthId": "source-depth-h327-nature"
+    },
+    {
+      "id": "h327-origination",
+      "chapter": "ch3-2-7",
+      "passage": "يعرض النص قياس الحدوث من ثلاث جمل: العالم حادث، وكل حادث محتاج إلى محدث، فالعالم محتاج إلى محدث. ويضع دعوى قدم العالم في موضع الاعتراض على الصغرى، ثم يميز بين الحدوث الزماني، وهو سبق العدم في الزمان، والحدوث الذاتي، وهو افتقار الشيء إلى الغير في أصل وجوده. ويذكر الملائكة مثالًا لما لا يتصور في الدرس وقوعه في زمان ومكان، ومع ذلك يكون ممكنًا مفتقرًا. ولهذا يقول ببقاء جهة الاستدلال حتى على قول من ينكر ابتداء العالم زمانًا، مع نقل عدم تسليم بعض المتكلمين بذلك.",
+      "text": "افتقار الشيء إلى الغير في أصل وجوده",
+      "kind": "إيضاح سياقي",
+      "title": "هل يلزم سبق زمني لكل ما كان مفتقرًا إلى علة؟",
+      "explanation": "يستعمل الدرس الحدوث الذاتي في بيان الحاجة إلى علة وإن لم تكن الدعوى عن لحظة سابقة. ويمثّل بما يعدّه موجودًا مجردًا، لا ليجعله شاهدًا محسوسًا على أول لحظة للكون.",
+      "source": {
+        "author": "مركز المعارف للمناهج والمتون التعليمية",
+        "work": "أجوبة الشبهات العقدية، الجزء الثالث، الدرس الثاني",
+        "printedPages": [
+          32,
+          33
+        ]
+      },
+      "added_value": "به يجيب الدرس من احتج بنفي البداية الزمانية على نفي افتقار العالم.",
+      "simple": "يستعمل الدرس الحدوث الذاتي في بيان الحاجة إلى علة وإن لم تكن الدعوى عن لحظة سابقة. ويمثّل بما يعدّه موجودًا مجردًا، لا ليجعله شاهدًا محسوسًا على أول لحظة للكون.",
+      "why_here": "به يجيب الدرس من احتج بنفي البداية الزمانية على نفي افتقار العالم.",
+      "remember": "الحدوث الزماني سبق عدم، والحدوث الذاتي افتقار.",
+      "sourceDepthId": "source-depth-h327-origination"
+    },
+    {
+      "id": "h327-closing",
+      "chapter": "ch3-2-7",
+      "passage": "بعد جمع المفاهيم وأسئلة التقويم يورد الدرس من الكافي سؤال الزنديق للإمام جعفر الصادق عن الدليل. ويأتي الجواب من الأفعال التي تشهد لصانعها، مع مثال البناء المشيد: يعرف الناظر أن له بانيًا وإن لم يره. ولا يحمل الدرس هذا الانتقال على مشاهدة الإله بالحواس، ولا يقف عند تقرير وجود البناء من غير التفات إلى ما دل عليه.",
+      "text": "الأفعال التي تشهد لصانعها",
+      "kind": "إيضاح سياقي",
+      "title": "كيف يعمل المثال في الخبر؟",
+      "explanation": "يعرف الإنسان من البناء غير ما تراه العين مباشرة. ويستعمل الخبر هذا الشاهد لبيان إثبات الصانع بالأفعال من غير حصر طريق العلم في مشاهدة الصانع نفسه.",
+      "source": {
+        "author": "مركز المعارف للمناهج والمتون التعليمية",
+        "work": "أجوبة الشبهات العقدية، الجزء الثالث، الدرس الثاني",
+        "printedPages": [
+          34
+        ]
+      },
+      "added_value": "يستعمل الخبر هذا الانتقال قبل أن يفرق بين إثبات الصانع وإدراك كنهه.",
+      "simple": "يعرف الإنسان من البناء غير ما تراه العين مباشرة. ويستعمل الخبر هذا الشاهد لبيان إثبات الصانع بالأفعال من غير حصر طريق العلم في مشاهدة الصانع نفسه.",
+      "why_here": "يستعمل الخبر هذا الانتقال قبل أن يفرق بين إثبات الصانع وإدراك كنهه.",
+      "remember": "إثبات المدلول بالأثر لا يساوي وصفه بأوصاف الأثر.",
+      "sourceDepthId": "source-depth-h327-closing"
+    },
+    {
+      "id": "h328-speech",
+      "chapter": "ch3-2-8",
+      "passage": "Armstrong recalls Jewish, Christian and Muslim theologians who made doctrines but trained readers to recognize their limits. When some called God “Nothing,” they were refusing to classify God as another thing, not denying divine reality. Medieval liturgy, figurative readings and mystery plays similarly made scriptural narratives more than factual reports: music, gesture, silence and even changes to familiar stories could alter what worshippers noticed.",
+      "text": "refusing to classify God as another thing",
+      "kind": "Context-first companion",
+      "title": "What does it mean to call God “Nothing”?",
+      "explanation": "The word does not express the conclusion that there is no God. In the theology Armstrong describes, it prevents a familiar category, the category of things, from being applied to what exceeds it.",
+      "source": {
+        "author": "Karen Armstrong",
+        "work": "The Case for God",
+        "printedPages": [
+          1,
+          2
+        ],
+        "paginationBasis": "Assigned PDF leaves; no printed folios in the extract"
+      },
+      "added_value": "It explains what the premodern theologians were protecting when they put ordinary religious terms under pressure.",
+      "simple": "The word does not express the conclusion that there is no God. In the theology Armstrong describes, it prevents a familiar category, the category of things, from being applied to what exceeds it.",
+      "why_here": "It explains what the premodern theologians were protecting when they put ordinary religious terms under pressure.",
+      "remember": "Negating a description is not the same as denying divine reality.",
+      "sourceDepthId": "source-depth-h328-speech"
+    },
+    {
+      "id": "h328-myth",
+      "chapter": "ch3-2-8",
+      "passage": "Armstrong uses the Greek terms mythos and logos for complementary ways of knowing. Logos is pragmatic reason. It must answer to external reality if it is to guide action, solve a practical problem, or invent something that works. Its achievements do not make it a method for finding ultimate meaning in loss or for coming to terms with mortality. Mythos addresses just such experiences through stories that people can enact, rather than through alternative reports about external events.",
+      "text": "complementary ways of knowing",
+      "kind": "Context-first companion",
+      "title": "Why does Armstrong insist on keeping their roles distinct?",
+      "explanation": "Reason must answer to facts when it guides a worldly task. A myth guides how people face matters like grief and mortality; that work is not performed simply by reporting whether its story happened.",
+      "source": {
+        "author": "Karen Armstrong",
+        "work": "The Case for God",
+        "printedPages": [
+          3,
+          4
+        ],
+        "paginationBasis": "Assigned PDF leaves; no printed folios in the extract"
+      },
+      "added_value": "This difference lets Armstrong defend myth without making it a competitor to scientific inquiry.",
+      "simple": "Reason must answer to facts when it guides a worldly task. A myth guides how people face matters like grief and mortality; that work is not performed simply by reporting whether its story happened.",
+      "why_here": "This difference lets Armstrong defend myth without making it a competitor to scientific inquiry.",
+      "remember": "Complementary does not mean interchangeable.",
+      "sourceDepthId": "source-depth-h328-myth"
+    },
+    {
+      "id": "h328-practice",
+      "chapter": "ch3-2-8",
+      "passage": "Zhuangzi’s wheelwright and cicada catcher illustrate knowing how to act without being able to state all that guides the action. Armstrong connects this trained self-forgetfulness with apprehending a depth she says has been named God, Dao, Brahman or Nirvana. Her music example makes the point from another direction: a late Beethoven quartet is precisely organized and deeply bodily, yet it lets the listener encounter sorrow without treating it as mere information or a private misfortune. Reason is not discarded; its limits become perceptible.",
+      "text": "trained self-forgetfulness",
+      "kind": "Context-first companion",
+      "title": "Why do the Daoist examples follow the account of skill?",
+      "explanation": "With enough practice a craftsperson can attend to the work without making each movement a separate conscious decision. Armstrong uses that change to explain why people learn the practice before evaluating all it can disclose.",
+      "source": {
+        "author": "Karen Armstrong",
+        "work": "The Case for God",
+        "printedPages": [
+          5,
+          6
+        ],
+        "paginationBasis": "Assigned PDF leaves; no printed folios in the extract"
+      },
+      "added_value": "The examples show where a practice can change the person’s attention rather than merely confirm an idea already held.",
+      "simple": "With enough practice a craftsperson can attend to the work without making each movement a separate conscious decision. Armstrong uses that change to explain why people learn the practice before evaluating all it can disclose.",
+      "why_here": "The examples show where a practice can change the person’s attention rather than merely confirm an idea already held.",
+      "remember": "Knowing how need not be fully expressible as knowing that.",
+      "sourceDepthId": "source-depth-h328-practice"
+    },
+    {
+      "id": "h328-modern",
+      "chapter": "ch3-2-8",
+      "passage": "Historically, she says, atheism often denies a particular conception of divinity rather than every sense of the sacred. She contrasts Feuerbach, Marx, Nietzsche and Freud with Dawkins, Hitchens and Harris. The newer writers particularly target the God of fundamentalism, but take that theology to stand for religion as a whole. Armstrong agrees that religious violence is real and that fundamentalist theology has serious faults; she thinks the criticism becomes shallow when it overlooks more representative traditions. The two camps are related, not identical: one defends and the other rejects a form of religion framed by the same literal standards.",
+      "text": "often denies a particular conception of divinity",
+      "kind": "Context-first companion",
+      "title": "Why bring earlier accusations of atheism into the introduction?",
+      "explanation": "Pagans, Armstrong says, called early Christians and Muslims atheists because their conception of the divine was unacceptable to them. The example illustrates how the charge depends on which conception is being rejected.",
+      "source": {
+        "author": "Karen Armstrong",
+        "work": "The Case for God",
+        "printedPages": [
+          7,
+          8
+        ],
+        "paginationBasis": "Assigned PDF leaves; no printed folios in the extract"
+      },
+      "added_value": "It prepares the distinction between classical atheism and critics who make fundamentalism their main target.",
+      "simple": "Pagans, Armstrong says, called early Christians and Muslims atheists because their conception of the divine was unacceptable to them. The example illustrates how the charge depends on which conception is being rejected.",
+      "why_here": "It prepares the distinction between classical atheism and critics who make fundamentalism their main target.",
+      "remember": "Ask which God is at issue before treating the rejection as a general conclusion.",
+      "sourceDepthId": "source-depth-h328-modern"
+    },
+    {
+      "id": "h328-limits",
+      "chapter": "ch3-2-8",
+      "passage": "Armstrong does not ask readers to give up a familiar God-symbol that sustains compassion, empathy and respect. Her own change of mind leads her to argue against religious quarrelling, not to identify a new orthodoxy. She outlines two parts to the book: premodern approaches that clarify difficult religious concepts, and the development of the modern God. Christianity receives most attention because it met scientific modernity most directly in this history, but she does not treat it as internally uniform or claim that reticence was universal.",
+      "text": "does not treat it as internally uniform",
+      "kind": "Context-first companion",
+      "title": "What does her historical claim not require?",
+      "explanation": "Armstrong finds a major practice of withholding definitive claims about God across several traditions. A major current is not the only current; her chosen historical emphasis does not erase contrasting forms of faith.",
+      "source": {
+        "author": "Karen Armstrong",
+        "work": "The Case for God",
+        "printedPages": [
+          9,
+          10
+        ],
+        "paginationBasis": "Assigned PDF leaves; no printed folios in the extract"
+      },
+      "added_value": "The qualification matters because she is proposing a selective history, not claiming that all premodern religion was the same.",
+      "simple": "Armstrong finds a major practice of withholding definitive claims about God across several traditions. A major current is not the only current; her chosen historical emphasis does not erase contrasting forms of faith.",
+      "why_here": "The qualification matters because she is proposing a selective history, not claiming that all premodern religion was the same.",
+      "remember": "A recurring practice is not a universal rule.",
+      "sourceDepthId": "source-depth-h328-limits"
     }
   ]
 }

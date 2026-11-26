@@ -159,3 +159,13 @@ The archive is never included in the reader or regenerated as a publication asse
 
 - [Complete unchanged predecessor](dossier-3.2.6.html), Git blob `5b46e8fb8930fd6fe37145e0843db114e43bbb78`.
 - Replacement is the source-led Arabic edition of «أفي الله شك؟» by محمد باقر السيستاني.
+
+### 3.2.7 — preserved previous dossier
+
+- [Complete unchanged predecessor](dossier-3.2.7.html), Git blob `73f14ee2f736f39c708853245bf3d86a42d00680`.
+- Source-led edition of شبهات حول أدلّة وجود الله تعالى, credited to مركز المعارف للمناهج والمتون التعليمية.
+
+### 3.2.8 — preserved previous dossier
+
+- [Complete unchanged predecessor](dossier-3.2.8.html), Git blob `6b28ab108990f8c49026c96eca85dacda96f847e`.
+- Source-led edition of Introduction (The Case for God), credited to Karen Armstrong.
