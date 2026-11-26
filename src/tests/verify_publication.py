@@ -52,8 +52,8 @@ def verify():
     parser.feed(index)
     assert parser.title == TITLE, parser.title
     assert '<title>'+TITLE+'</title>' in main, 'Browser title must be authored in main.html'
-    assert len(parser.chapters)==39, f'Expected 39 dossiers, found {len(parser.chapters)}'
-    assert len(set(parser.chapters))==39, 'Duplicate chapter IDs'
+    assert len(parser.chapters)==41, f'Expected 41 dossiers, found {len(parser.chapters)}'
+    assert len(set(parser.chapters))==41, 'Duplicate chapter IDs'
     assert not any(x.get('src') for x in parser.scripts), 'Published reader must have inline JS'
     assert not any('philosophy_notes.css' in x.get('href','') for x in parser.links), 'Published reader must inline CSS'
     assert 'serviceWorker.register' in index, 'Service worker registration is missing'
@@ -102,7 +102,7 @@ def verify():
     stale_paths = [path for path in legacy_paths if (HERE / path).exists()]
     assert not stale_paths, 'Obsolete files still at repository root: ' + ', '.join(stale_paths)
 
-    print('Valid publication: 39 dossiers, correct HTML/meta/canonical, manifest/icons, offline update notice, 404, sitemap, social preview.')
+    print('Valid publication: 41 dossiers, correct HTML/meta/canonical, manifest/icons, offline update notice, 404, sitemap, social preview.')
 
 if __name__ == '__main__':
     try:

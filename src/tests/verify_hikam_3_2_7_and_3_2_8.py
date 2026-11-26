@@ -48,7 +48,7 @@ for n, (hue, author, pages, pinned, anchors) in SPEC.items():
     assert author in chap and re.search(r'<strong>' + author + r'</strong>', chap)
     assert author in next(line for line in TOC.splitlines() if f'href="#{key}"' in line)
     assert chap.count('class="endh"') == 6 and chap.count('class="examq-cat"') == 5
-    assert ('href="#ch3-2-8"' if n == 7 else 'href="#ch3-4-3"') in chap
+    assert ('href="#ch3-2-8"' if n == 7 else 'href="#ch3-3-2"') in chap
     assert 'class="chapter-source" style="color:var(--parchment)"' in chap
     body = chap.split('<div class="chapter-body">', 1)[1].split('<nav class="chapter-endnav"', 1)[0]
     visible = DEPTH.sub("", body)

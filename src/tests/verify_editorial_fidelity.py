@@ -25,7 +25,7 @@ for label, text in (("canonical", source), ("non-inlined", html), ("published", 
     assert not re.search(r"\bextract\b|\bsupplied\s+study\b", chapter_34, re.I), (label, "source-input label restored")
     assert "Indirect routes remain logically possible" in chapter_34
 assert source in html and source in public
-assert len(re.findall(r'<section class="chapter(?: [^"]+)?" id="ch\d+-\d+-\d+"', public)) == 39
+assert len(re.findall(r'<section class="chapter(?: [^"]+)?" id="ch\d+-\d+-\d+"', public)) == 41
 for name in ("3.4.3_Original_Study_Extract.txt", "3.4.4_Original_Study_Extract.txt"):
     assert (ROOT/"src/source_materials"/name).is_file()
-print("PASS: 95 source-faithful corrections; 39 dossiers retained")
+print("PASS: 95 source-faithful corrections; 41 dossiers retained")
