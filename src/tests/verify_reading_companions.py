@@ -44,7 +44,7 @@ for item in manifest['companions']:
     seen.add(ident)
     assert re.fullmatch(r'ch\d+-\d+-\d+', item['chapter']), ident
     assert item['source']['printedPages'], f'No primary page reference: {ident}'
-    assert item['source']['author'] in ('Dermot Moran', 'Rowland Stout', 'David Papineau', 'Gary Gutting', 'Simon Critchley', 'Colin Bird', 'Jonathan Wolff', 'W. D. Ross', 'Hugh Lawson-Tancred', 'James Kellenberger', 'Keith E. Yandell', 'Anthony Kenny', 'المؤلف غير مذكور في النص المقرر'), ident
+    assert item['source']['author'] in ('Dermot Moran', 'Rowland Stout', 'David Papineau', 'Gary Gutting', 'Simon Critchley', 'Colin Bird', 'Jonathan Wolff', 'W. D. Ross', 'Hugh Lawson-Tancred', 'James Kellenberger', 'Keith E. Yandell', 'Anthony Kenny', 'سامر توفيق عجمي', 'سلطان بن عبد الرحمن العميري', 'المؤلف غير مذكور في النص المقرر'), ident
     assert 20 <= len(item['explanation'].split()) <= 110, f'Explanation out of pilot range: {ident}'
     assert item['added_value'].strip(), ident
     # Arabic chapters are existing "chapter rtl" sections; match both
@@ -76,7 +76,7 @@ stout = [x for x in manifest['companions'] if x['chapter'] == 'ch1-1-2']
 papineau = [x for x in manifest['companions'] if x['chapter'] == 'ch1-1-3']
 gutting = [x for x in manifest['companions'] if x['chapter'] == 'ch1-1-4']
 assert len(moran) == 10 and len(stout) == 24 and len(papineau) == 12 and len(gutting) == 12
-assert len(seen) == 266  # 259 previous cues plus seven for Kenny 3.1.3
+assert len(seen) == 277  # 266 previous cues plus eleven for 3.1.4–3.1.5
 assert 'class="historical-timeline"' in chapters
 assert 'The One Thread to Follow' in chapters
 assert 'The four thinkers below are not four unrelated stories.' in chapters

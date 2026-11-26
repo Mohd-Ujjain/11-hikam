@@ -119,3 +119,13 @@ The archive is never included in the reader or regenerated as a publication asse
 
 - [Complete former course-brief dossier](dossier-3.1.3.html), preserved unchanged before the source-led revision.
 - Original baseline: `78b3553113aafe9edd0d58423243a2741d9a17b4`; exact chapter blob: `9d02494a0fe387f99c5ceff769a9b4d163f03e6b`.
+
+### 3.1.4 — preserved previous dossier
+
+- [Complete unchanged predecessor](dossier-3.1.4.html), Git blob `8b34ad53f1a01e4b87618a5a9f3b4fe8f962bf5b`.
+- Replacement is the source-led Arabic edition of «نظريات حول نشوء الدين: دراسة تحليلية نقدية» by سامر توفيق عجمي.
+
+### 3.1.5 — preserved previous dossier
+
+- [Complete unchanged predecessor](dossier-3.1.5.html), Git blob `8ad4d9c6d4c83a264394ece70182a545d0aeff18`.
+- Replacement is the source-led Arabic edition of «الاعتراضات الإجمالية التي اعترض بها الناقدون على الأديان» by سلطان بن عبد الرحمن العميري.
