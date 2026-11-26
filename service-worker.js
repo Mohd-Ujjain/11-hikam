@@ -3,7 +3,7 @@
  * are not copied into the repository. Storage may still be cleared by a device.
  */
 const PREFIX = '11am-hikam-reader-';
-const CACHE_NAME = PREFIX + '4c4cd16b0863';
+const CACHE_NAME = PREFIX + '049c35f4459a';
 const FONT_CACHE_NAME = '11am-hikam-cdn-fonts-v1';
 // The offline book is atomic; promotional/metadata assets are best-effort.
 const CORE_ASSETS = ['./index.html', './manifest.webmanifest'];
