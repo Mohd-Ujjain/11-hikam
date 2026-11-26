@@ -1,7 +1,7 @@
 {
   "version": 1,
   "editorialPolicy": "src/docs/editorial/CONCISE_DOSSIER_AND_READING_COMPANIONS.md",
-  "description": "Context-first, source-anchored Reading Companions for the published dossiers, including 3.3.2 and 3.3.3.",
+  "description": "Context-first, source-anchored Reading Companions for the published dossiers, including the first five source-led 3.3 dossiers.",
   "companions": [
     {
       "id": "h111-russell-idealism",
@@ -7006,6 +7006,393 @@
       "why_here": "ينقل المؤلف السؤال من مجرد تصور شيئين في مكان إلى ما يقتضيه هذا التصور في حق واجب الوجود.",
       "remember": "المركّب يتقوّم بأجزائه؛ وواجب الوجود لا يتقوّم بغيره.",
       "sourceDepthId": "source-depth-h333-indwell"
+    },
+    {
+      "id": "h334-begun",
+      "chapter": "ch3-3-4",
+      "passage": "والسؤال عند عامري اعتراض على دليل، لا سؤال منفصل عنه. فصورة دليل الحدوث أن كل ما ابتدأ وجوده يحتاج إلى سبب. أما الصيغة التي يردّ عليها فتجعل الحاجة إلى السبب حكمًا على كل شيء، ثم تنسب إلى المؤمن استثناء الله بلا دليل. ويذكر أن بعض المعترضين يرجّح أزلية المادة على إثبات خالق غائب عن الحس.",
+      "text": "حكمًا على كل شيء",
+      "kind": "إيضاح سياقي",
+      "title": "أيّ موجود يقع تحت الحكم؟",
+      "explanation": "تجعل الصيغة التي ينقلها عامري عن خصومه السبب مطلوبًا من كل موجود. أما الكبرى التي يدافع عنها فتطلب السبب لما بدأ وجوده؛ وتعيين ما بدأ بحث آخر.",
+      "source": {
+        "author": "سامي عامري",
+        "work": "فمن خلق الله؟",
+        "printedPages": [
+          18,
+          19
+        ]
+      },
+      "added_value": "به يحدّد عامري الخلاف قبل أن يعرض صورة الدليل ويبحث في حدوث العالم.",
+      "simple": "تجعل الصيغة التي ينقلها عامري عن خصومه السبب مطلوبًا من كل موجود. أما الكبرى التي يدافع عنها فتطلب السبب لما بدأ وجوده؛ وتعيين ما بدأ بحث آخر.",
+      "why_here": "به يحدّد عامري الخلاف قبل أن يعرض صورة الدليل ويبحث في حدوث العالم.",
+      "remember": "الحدوث وصف للمحكوم عليه، لا لفظ يمكن حذفه من الكبرى.",
+      "sourceDepthId": "source-depth-h334-begun"
+    },
+    {
+      "id": "h334-time",
+      "chapter": "ch3-3-4",
+      "passage": "يردّ عامري السؤال إلى علاقة الله بالزمان. فإن ثبت أن الزمان مخلوق، لم يتوقّف وجود الخالق على ما أوجده. وإن ثبت أن الله واجب الوجود، لم يكن وجوده مرهونًا بزمان أصلًا. وكلا الوجهين عنده ينفي اتصاف الخالق بابتداء؛ فالخلق في معنى السؤال وقوع للحادث في زمان، ولا يسبِق الخالقَ زمانٌ حتى يقع ابتداء وجوده فيه.",
+      "text": "لم يتوقّف وجود الخالق على ما أوجده",
+      "kind": "إيضاح سياقي",
+      "title": "ما معنى أن الخالق لا يتوقّف على الزمان؟",
+      "explanation": "إذا كان الزمن نفسه مخلوقًا في الاستدلال، فليس معنى أولوية الخالق أنه وُجد في لحظة أسبق داخل المجرى نفسه. المقصود أن وجوده لا ينتظر وجود ذلك المجرى.",
+      "source": {
+        "author": "سامي عامري",
+        "work": "فمن خلق الله؟",
+        "printedPages": [
+          19,
+          20
+        ]
+      },
+      "added_value": "يفيد هذا الفرق لأن السؤال يفترض ابتداءً يقع في زمان، وهذا هو الشرط الذي ينفيه المؤلف.",
+      "simple": "إذا كان الزمن نفسه مخلوقًا في الاستدلال، فليس معنى أولوية الخالق أنه وُجد في لحظة أسبق داخل المجرى نفسه. المقصود أن وجوده لا ينتظر وجود ذلك المجرى.",
+      "why_here": "يفيد هذا الفرق لأن السؤال يفترض ابتداءً يقع في زمان، وهذا هو الشرط الذي ينفيه المؤلف.",
+      "remember": "أولوية الخالق عند عامري لا تعني تاريخًا أسبق.",
+      "sourceDepthId": "source-depth-h334-time"
+    },
+    {
+      "id": "h334-category",
+      "chapter": "ch3-3-4",
+      "passage": "أغلوطة الفئة عند عامري أن يُطلب من الشيء وصف لا يلائم نوعه، كالسؤال عن لون الرائحة. ويجعل سؤال سبب السبب الأول من هذا الباب: لأنه يسأل عن محدث ما يُفهم أنه غير حادث. ويصرّح بأن بيان خطأ السؤال لا يثبت بنفسه وجود الله، وإنما يبيّن أنه إن ثبت الخالق على هذا المعنى فلا يكون ذا بداية.",
+      "text": "بيان خطأ السؤال لا يثبت بنفسه",
+      "kind": "إيضاح سياقي",
+      "title": "هل ردّ السؤال إثبات لوجود الله؟",
+      "explanation": "يفرّق عامري بين تصحيح ما يفهم من اسم الخالق وبين إقامة الدليل على وجوده. فإذا تبيّن أن السؤال لا يوافق معنى الخالق عنده، بقي إثبات وجود هذا الخالق عملًا مستقلًا.",
+      "source": {
+        "author": "سامي عامري",
+        "work": "فمن خلق الله؟",
+        "printedPages": [
+          128,
+          129,
+          130,
+          131
+        ]
+      },
+      "added_value": "يمنع هذا التمييز تحويل الردّ على أغلوطة الفئة إلى مصادرة على وجود الخالق.",
+      "simple": "يفرّق عامري بين تصحيح ما يفهم من اسم الخالق وبين إقامة الدليل على وجوده. فإذا تبيّن أن السؤال لا يوافق معنى الخالق عنده، بقي إثبات وجود هذا الخالق عملًا مستقلًا.",
+      "why_here": "يمنع هذا التمييز تحويل الردّ على أغلوطة الفئة إلى مصادرة على وجود الخالق.",
+      "remember": "إبطال الاعتراض غير إقامة دليل الوجود.",
+      "sourceDepthId": "source-depth-h334-category"
+    },
+    {
+      "id": "h334-composition",
+      "chapter": "ch3-3-4",
+      "passage": "وأما التركيب فليس كل حكم على المجموع مأخوذًا من الأجزاء باطلًا. فصغر الطوبة لا يلزم منه صغر الجدار، لكن حمرة الطوب تظهر في مجموع الجدار في مثال المؤلف. ولا يرى أن اجتماع الممكنات يحوّلها إلى واجب الوجود؛ إذ يبقى الكل عنده ممكن العدم إذا كانت أجزاؤه كذلك، ويحتاج تركيبه إلى ما يفسّره.",
+      "text": "اجتماع الممكنات يحوّلها إلى واجب الوجود",
+      "kind": "إيضاح سياقي",
+      "title": "لماذا لا يكفي ضمّ الممكنات إلى بعضها؟",
+      "explanation": "قد يغيّر الجمع صفة كالحجم، فلا تكون نتيجة اجتماع الأجزاء مثل كل جزء. لكن الدعوى هنا أن اجتماعها لا يكفي وحده لجعل انعدام المجموع محالًا.",
+      "source": {
+        "author": "سامي عامري",
+        "work": "فمن خلق الله؟",
+        "printedPages": [
+          132,
+          133,
+          134
+        ]
+      },
+      "added_value": "به يحدّد عامري موضع خلافه مع من يتّهم دليل الإمكان بنقل صفة الأجزاء إلى الكل بلا قرينة.",
+      "simple": "قد يغيّر الجمع صفة كالحجم، فلا تكون نتيجة اجتماع الأجزاء مثل كل جزء. لكن الدعوى هنا أن اجتماعها لا يكفي وحده لجعل انعدام المجموع محالًا.",
+      "why_here": "به يحدّد عامري موضع خلافه مع من يتّهم دليل الإمكان بنقل صفة الأجزاء إلى الكل بلا قرينة.",
+      "remember": "انتقال الوصف يحتاج إلى النظر في أثر الاجتماع.",
+      "sourceDepthId": "source-depth-h334-composition"
+    },
+    {
+      "id": "h334-imagine",
+      "chapter": "ch3-3-4",
+      "passage": "ويفرّق عامري بين التصوّر والتعقّل. الأول إنشاء صورة في الذهن، والثاني قبول ما يوافق قواعد العقل. ويبين أن الخيال يعجز عن تصوير الموجود الذي لا أول له، كما يعجز عن تصوير اللحظة الأولى غير المسبوقة. ولا يجعل العجزَ دليلًا على التناقض: فالعجز نفسه يلازم مخيّلة من يجعل المادة أزلية كما يلازم مخيّلة من يثبت أزلية الخالق.",
+      "text": "العجزَ دليلًا على التناقض",
+      "kind": "إيضاح سياقي",
+      "title": "هل تعذّر تخيّل الشيء تناقض؟",
+      "explanation": "التصور صورة يتخيّلها الإنسان، والتعقل نظر في اتساق المعنى. يُفرّق المؤلف بين ألا نجد صورة في أذهاننا وبين أن تجمع الدعوى معنيين يستحيل اجتماعهما.",
+      "source": {
+        "author": "سامي عامري",
+        "work": "فمن خلق الله؟",
+        "printedPages": [
+          135,
+          136,
+          137,
+          138
+        ]
+      },
+      "added_value": "يقع الاحتجاج هنا على قياس إمكان وجود الأول بقدرة الخيال على تمثيل الأزلي.",
+      "simple": "التصور صورة يتخيّلها الإنسان، والتعقل نظر في اتساق المعنى. يُفرّق المؤلف بين ألا نجد صورة في أذهاننا وبين أن تجمع الدعوى معنيين يستحيل اجتماعهما.",
+      "why_here": "يقع الاحتجاج هنا على قياس إمكان وجود الأول بقدرة الخيال على تمثيل الأزلي.",
+      "remember": "ما لم تتخيّله بعدُ ليس لذلك وحده محالًا.",
+      "sourceDepthId": "source-depth-h334-imagine"
+    },
+    {
+      "id": "h334-gaps",
+      "chapter": "ch3-3-4",
+      "passage": "يعترض داوكنز على الانتقال من السبب الأول إلى إله القرآن. ويسلّم عامري بأن الدليل الكوسمولوجي لا يعيّن الله كما جاء خبره في الوحي بمجرّده، وإنما هو مقدّمة لهذا التعيين. ويرفض أن يكون دليلَه مجرّد الجهل بالتفسير؛ إذ ينتقل عنده من بحث أزلية العالم إلى النظر فيما يلزم عن كونه مخلوقًا.",
+      "text": "مقدّمة لهذا التعيين",
+      "kind": "إيضاح سياقي",
+      "title": "ما الذي يبقى بعد إثبات السبب الأول؟",
+      "explanation": "يقول المؤلف إن إثبات سبب غير العالم يهيّئ للسؤال عن هوية السبب، ولا يجيب وحده عن كل صفاته أو عن صدق الخبر الذي يسمّيه ويصفه.",
+      "source": {
+        "author": "سامي عامري",
+        "work": "فمن خلق الله؟",
+        "printedPages": [
+          180,
+          181
+        ]
+      },
+      "added_value": "هذا موضع الجواب عن اعتراض داوكنز على الانتقال من السبب الأول إلى إله القرآن.",
+      "simple": "يقول المؤلف إن إثبات سبب غير العالم يهيّئ للسؤال عن هوية السبب، ولا يجيب وحده عن كل صفاته أو عن صدق الخبر الذي يسمّيه ويصفه.",
+      "why_here": "هذا موضع الجواب عن اعتراض داوكنز على الانتقال من السبب الأول إلى إله القرآن.",
+      "remember": "وجود السبب، وصفه، وتعيينه أسئلة متمايزة.",
+      "sourceDepthId": "source-depth-h334-gaps"
+    },
+    {
+      "id": "h335-competence",
+      "chapter": "ch3-3-5",
+      "passage": "يمهّد المصري بانتشار كتاب «وهم الإله» لريتشارد دوكينز، وترجمة بسام البغدادي له، ويذكر أنه سيعرض مختاراته على الأصول التي سبق أن قررها، تاركًا الحكم للقارئ. ويعترض على أن يعدّ البغدادي ما في الكتاب براهين علمية لا تقبل الشك، ويرى في وصفه بالدراما قرينة على حضور القصص والسخرية بدل البحث العقلي. ويقرّ لدوكينز باختصاصه في الأحياء التطوّرية، لكنه لا يراه أهلية للحكم في الفلسفة الإلهية. فعنده اختلاف الاختصاص ليس اختلافًا في الألفاظ؛ بل اختلاف في الموضوع والمنهج والغاية.",
+      "text": "اختلاف في الموضوع والمنهج والغاية",
+      "kind": "إيضاح سياقي",
+      "title": "لماذا يذكر اختصاص صاحب الكتاب؟",
+      "explanation": "معرفة أحوال الكائن الحي دليل خبرة في هذا الباب، لكنها لا تثبت وحدها خبرة صاحبه في أصل وجود العالم. فمن حق كل باب أن تُعرض دعواه على منهجه.",
+      "source": {
+        "author": "أيمن المصري",
+        "work": "نهاية حلم «وهم الإله»",
+        "printedPages": [
+          91,
+          92,
+          93
+        ]
+      },
+      "added_value": "يردّ على لبس الخبرة بالسلطة على كل موضوع.",
+      "simple": "معرفة أحوال الكائن الحي دليل خبرة في هذا الباب، لكنها لا تثبت وحدها خبرة صاحبه في أصل وجود العالم. فمن حق كل باب أن تُعرض دعواه على منهجه.",
+      "why_here": "يمهّد المصري به للتمييز بين قبول خبرة دوكينز في الأحياء وقبول أحكامه عن المبدأ غير المحسوس.",
+      "remember": "لا تنتقل حجية الاختصاص بمجرد انتقال صاحبه إلى سؤال آخر.",
+      "sourceDepthId": "source-depth-h335-competence"
+    },
+    {
+      "id": "h335-garden",
+      "chapter": "ch3-3-5",
+      "passage": "يستهلّ دوكينز مقدمته بكلام دوغلاس آدمز عن جمال الحديقة والاستغناء عن افتراض جنيّات وراءها. ولا يعترض المصري على الأديب من حيث هو أديب؛ بل على إعطاء صورة الحديقة وظيفة الحجة. فالطبيعي نفسه لا يكتفي بالاستمتاع بالمشهد، بل يبحث في أسبابه، ودوكينز ينتقل إلى طرح رؤية في نشأة العالم بدل الاكتفاء بما يُرى. ويرى المصري أن الإبداع يدعو إلى السؤال عن الصانع والغاية، وأن تشبيه الخالق وملائكته بالجنيّات يخلط ما يستدل عليه الفلاسفة بما يُلصقه بعض الناس بالدين.",
+      "text": "إعطاء صورة الحديقة وظيفة الحجة",
+      "kind": "إيضاح سياقي",
+      "title": "أين موضع الاعتراض على الاستشهاد الأدبي؟",
+      "explanation": "يمكن أن تصف عبارة أدبية أثر الجمال في النفس، ولكن هذا غير الحكم بأنه لا صانع له. اعتراض المؤلف على الاستدلال بالعبارة، لا على كتابة الأدب.",
+      "source": {
+        "author": "أيمن المصري",
+        "work": "نهاية حلم «وهم الإله»",
+        "printedPages": [
+          94,
+          95,
+          96,
+          97
+        ]
+      },
+      "added_value": "يميز كلام آدمز من عمله عند دوكينز ومن رد المصري.",
+      "simple": "يمكن أن تصف عبارة أدبية أثر الجمال في النفس، ولكن هذا غير الحكم بأنه لا صانع له. اعتراض المؤلف على الاستدلال بالعبارة، لا على كتابة الأدب.",
+      "why_here": "ينقل المصري السؤال من جمال عبارة آدمز إلى صلاحيتها جوابًا عن أصل العالم.",
+      "remember": "الأدب يصف الانفعال؛ والحجة تجيب عن المطلوب.",
+      "sourceDepthId": "source-depth-h335-garden"
+    },
+    {
+      "id": "h335-denial",
+      "chapter": "ch3-3-5",
+      "passage": "يناقش المصري وصف دوكينز الإلحاد بالواقعية والشجاعة والسعادة. فترجيح النفي عند دوكينز ليس يقينًا؛ وعظم العاقبة في أمر المبدأ والمعاد عند المصري يوجب التوقف، حتى مع ضعف الاحتمال. والإحساس بالسعادة لا يثبت السعادة الفعلية. ثم يعيّن ما يعدّه المغالطة الأساسية في الكتاب: نقد تطرّف بعض المنتسبين إلى دين أو الاعتراض على ظاهر نص لا ينفي المبدأ الإلهي. وهو يستعمل لفظ اللادينيين هنا لمن يثبتون مبدأ خالقًا وينكرون الأديان، ويميّزهم من الملحدين ومن العلمانيين الذين قد يؤمنون ويجعلون الدين شأنًا شخصيًا.",
+      "text": "لا ينفي المبدأ الإلهي",
+      "kind": "إيضاح سياقي",
+      "title": "لماذا لا يكفي الاعتراض على أحد الأديان لنفي المبدأ؟",
+      "explanation": "قد يقول شخص إن للعالم خالقًا، ثم لا يقبل دينًا من الأديان. فإذا رفض قولًا دينيًا بعينه، لم يلزم من ذلك أنه أنكر الخالق.",
+      "source": {
+        "author": "أيمن المصري",
+        "work": "نهاية حلم «وهم الإله»",
+        "printedPages": [
+          100,
+          101
+        ]
+      },
+      "added_value": "يوضح عدم انعكاس اللزوم بدل إغراق القارئ في الأسماء.",
+      "simple": "قد يقول شخص إن للعالم خالقًا، ثم لا يقبل دينًا من الأديان. فإذا رفض قولًا دينيًا بعينه، لم يلزم من ذلك أنه أنكر الخالق.",
+      "why_here": "هذا الفرق هو أصل الاعتراض عند المصري على نقل الكلام من سلوك أشخاص أو نقد نص إلى قضية وجود الخالق.",
+      "remember": "نفي المبدأ يستلزم في تقرير المؤلف نفي الدين الإلهي، لا العكس.",
+      "sourceDepthId": "source-depth-h335-denial"
+    },
+    {
+      "id": "h335-gradual",
+      "chapter": "ch3-3-5",
+      "passage": "في الفصل الثاني يجعل دوكينز القدرة المعقّدة على التصميم حصيلة تراكم تطوّري، فتأتي متأخرة عن الكون ولا يمكن أن تكون عنده سبب تصميمه. ويردّ المصري بأن خروج الشيء بنفسه من العدم إلى الوجود، أو من القوّة إلى الفعل، ممتنع عنده لاجتماع النقيضين. وصغر المقدار وطول المدة لا يبدّلان حكم المحال. كما يحصر صلة نظرية داروين هنا بكيفية تطوّر الأنواع الحية، لا ببيان مبدأ الكون أو الحياة.",
+      "text": "صغر المقدار وطول المدة",
+      "kind": "إيضاح سياقي",
+      "title": "هل التدرج جواب عن دعوى الامتناع؟",
+      "explanation": "لو كان الاعتراض أن التغيّر سريع أو كبير، لتعلّق الجواب بالمدة والمقدار. أما المصري فيعترض على أن يخرج الشيء نفسه إلى الوجود؛ فلا يرى أن إبطاء ذلك يغيّر الحكم.",
+      "source": {
+        "author": "أيمن المصري",
+        "work": "نهاية حلم «وهم الإله»",
+        "printedPages": [
+          120,
+          121
+        ]
+      },
+      "added_value": "يفصل نوع الاعتراض عن مدة التطور.",
+      "simple": "لو كان الاعتراض أن التغيّر سريع أو كبير، لتعلّق الجواب بالمدة والمقدار. أما المصري فيعترض على أن يخرج الشيء نفسه إلى الوجود؛ فلا يرى أن إبطاء ذلك يغيّر الحكم.",
+      "why_here": "يقابل المؤلف اعتراضًا على أصل نسبة الإيجاد إلى الشيء نفسه بافتراض يعالج مقدار التغيّر وزمنه.",
+      "remember": "احكم أولًا: أموضع النزاع وقوع الشيء، أم وصف وقوعه؟",
+      "sourceDepthId": "source-depth-h335-gradual"
+    },
+    {
+      "id": "h335-causes",
+      "chapter": "ch3-3-5",
+      "passage": "ينقل المصري عن ستيفان جاي جولد نفي قدرة العلم الطبيعي على إثبات الله أو نفيه، وعن دوكينز الاعتراض بأن الكون مع خالق غير الكون بدونه. ويجيب بأن تكرار المشاهدة في الفيزياء والأحياء يتناول الموجودات المادية وظواهرها، لا المبدأ غير المحسوس. لكنه لا يمنع أن يستدل الفيلسوف بنظام الطبيعة على مبدئها؛ فالانتقال من المعطى المشاهد إلى أصل الوجود عنده انتقال استدلالي. ومن ثمّ يفرّق بين العلل الطبيعية القريبة والعلل البعيدة: ليس لفظ «لماذا» هو الفارق، بل العلة التي يسأل عنها المتكلم.",
+      "text": "العلل الطبيعية القريبة والعلل البعيدة",
+      "kind": "إيضاح سياقي",
+      "title": "متى تكون «لماذا» سؤالًا في العلم الطبيعي؟",
+      "explanation": "قد يكون المراد بلماذا تفسير حصول زلزال، فالسؤال عن سبب قريب للظاهرة. وقد يكون المراد أصل وجود عالم تعمل فيه هذه الأسباب؛ فهذا بحث في المبدأ عند المؤلف.",
+      "source": {
+        "author": "أيمن المصري",
+        "work": "نهاية حلم «وهم الإله»",
+        "printedPages": [
+          123,
+          128,
+          129
+        ]
+      },
+      "added_value": "يعرض سؤالين لا تُبيّن أداة الاستفهام وحدها الفرق بينهما.",
+      "simple": "قد يكون المراد بلماذا تفسير حصول زلزال، فالسؤال عن سبب قريب للظاهرة. وقد يكون المراد أصل وجود عالم تعمل فيه هذه الأسباب؛ فهذا بحث في المبدأ عند المؤلف.",
+      "why_here": "يوافق المصري على أن كلمة «لماذا» وحدها لا تجعل السؤال مشروعًا أو فلسفيًا؛ المهم ما يطلب السؤال تعليله.",
+      "remember": "لفظ السؤال قد يتّحد، لكن المطلوب هو الذي يعيّن المنهج.",
+      "sourceDepthId": "source-depth-h335-causes"
+    },
+    {
+      "id": "h335-prayer",
+      "chapter": "ch3-3-5",
+      "passage": "يعرض المصري ما رواه دوكينز عن تجربة قارنت بين مرضى دُعي لهم دون علمهم، ومرضى لم يتلقوا دعاءً، ومرضى علموا بالدعاء لهم. وبحسب الرواية التي يناقشها، لم يظهر تحسّن يُعزى إلى الدعاء، وساءت حال الفئة التي علمت به. ثم يفرّق بين النتيجة الجزئية وبين الحكم على وجود الله: يُحتمل عنده أن يكون الشفاء راجعًا إلى علاج الأطباء، وأن يكون عدمه راجعًا إلى خطئهم. كما لا يجعل الحكايات عن الكرامات برهانًا بديلًا عن التجربة؛ بل يطلب في أصل القضية برهانًا عقليًا عامًا. ويقرر أن الدعاء سبب من الأسباب، وليس علّة تامّة لتحقّق المطلوب؛ فقد تتأخر الإجابة أو تأتي في صورة أخرى. ويبقى عنده عبادةً وصلةً بالله في الشدّة، وإن لم يحصل المطلوب عاجلًا.",
+      "text": "ليس علّة تامّة لتحقّق المطلوب",
+      "kind": "إيضاح سياقي",
+      "title": "هل عدم الشفاء يعني عند المؤلف أن الدعاء لا أثر له؟",
+      "explanation": "لا يجعل المؤلف أداء الدعاء كافيًا وحده لوقوع عين ما طُلب. ولذلك يردّ الاستدلال من غياب نتيجة علاجية محددة إلى نفي الاستجابة من أصلها.",
+      "source": {
+        "author": "أيمن المصري",
+        "work": "نهاية حلم «وهم الإله»",
+        "printedPages": [
+          132,
+          133,
+          134,
+          135
+        ]
+      },
+      "added_value": "يعيّن الخطوة التي تغيب إذا سُوّي السبب بالضمان.",
+      "simple": "لا يجعل المؤلف أداء الدعاء كافيًا وحده لوقوع عين ما طُلب. ولذلك يردّ الاستدلال من غياب نتيجة علاجية محددة إلى نفي الاستجابة من أصلها.",
+      "why_here": "ينتقل المؤلف من نقد ما تؤديه التجربة إلى بيان معنى السبب الذي يسنده إلى الدعاء.",
+      "remember": "السبب ليس ضمانًا لوقوع هذه النتيجة بعينها.",
+      "sourceDepthId": "source-depth-h335-prayer"
+    },
+    {
+      "id": "h336-prediction",
+      "chapter": "ch3-3-6",
+      "passage": "The very existence of this extended attack prompts a question. If the confident forecasts of religion’s disappearance had come true, why would anyone still need to argue against it at such length? Alister remembers welcoming those forecasts in the late 1960s. Having experienced religious tension and violence in Northern Ireland, he thought removing religion would remove the conflict. The introduction identifies two changes: religion returned as a significant public reality, and Alister himself came to regard Christianity as more intellectually compelling than atheism.",
+      "text": "the confident forecasts of religion’s disappearance",
+      "kind": "Contextual clarification",
+      "title": "What is the force of the question about religion’s survival?",
+      "explanation": "The question challenges an expectation about the course of society. If religion had faded on its own, an extended effort to persuade people to abandon it would have seemed less necessary.",
+      "source": {
+        "author": "Alister E. McGrath and Joanna Collicutt McGrath",
+        "work": "The Dawkins Delusion? Atheist Fundamentalism and the Denial of the Divine",
+        "printedPages": [
+          8,
+          9
+        ]
+      },
+      "added_value": "The authors ask this before recounting the change in Alister’s own outlook, so the wider historical change and the personal change should be distinguished.",
+      "simple": "The question challenges an expectation about the course of society. If religion had faded on its own, an extended effort to persuade people to abandon it would have seemed less necessary.",
+      "why_here": "The authors ask this before recounting the change in Alister’s own outlook, so the wider historical change and the personal change should be distinguished.",
+      "remember": "The forecast was about what people would believe.",
+      "sourceDepthId": "source-depth-h336-prediction"
+    },
+    {
+      "id": "h336-journeys",
+      "chapter": "ch3-3-6",
+      "passage": "Dawkins and Alister are presented as Oxford academics with a love of the natural sciences and a commitment to proportioning belief to evidence. Both want to think they would revise their views if the evidence required it. Yet their judgments about God diverge. Dawkins describes evolutionary biology as carrying him toward atheism. Alister moved from atheism toward Christianity; he completed a doctorate in molecular biophysics in George Radda’s Oxford laboratory before leaving active scientific research to study theology.",
+      "text": "their judgments about God diverge",
+      "kind": "Contextual clarification",
+      "title": "Why compare journeys that ended in opposite conclusions?",
+      "explanation": "The comparison makes a difficulty for the idea of a single compulsory destination. Both men take the sciences and evidence seriously, but each understands the world differently.",
+      "source": {
+        "author": "Alister E. McGrath and Joanna Collicutt McGrath",
+        "work": "The Dawkins Delusion? Atheist Fundamentalism and the Denial of the Divine",
+        "printedPages": [
+          9,
+          10
+        ]
+      },
+      "added_value": "The introduction establishes the shared commitments before asking how the disagreement can be explained.",
+      "simple": "The comparison makes a difficulty for the idea of a single compulsory destination. Both men take the sciences and evidence seriously, but each understands the world differently.",
+      "why_here": "The introduction establishes the shared commitments before asking how the disagreement can be explained.",
+      "remember": "Similar commitments, different conclusions.",
+      "sourceDepthId": "source-depth-h336-journeys"
+    },
+    {
+      "id": "h336-compatible",
+      "chapter": "ch3-3-6",
+      "passage": "Stephen Jay Gould offers the beginning of an answer, not an easy resolution. Though himself an atheist, he held that the natural sciences, including evolutionary theory, were consistent with both atheism and conventional religious belief. Gould had seen intelligent, informed colleagues reach different conclusions. To dismiss as fools whichever group disagreed with him would, in his view, fail to explain the actual range of judgments among his colleagues.",
+      "text": "consistent with both atheism and conventional religious belief",
+      "kind": "Contextual clarification",
+      "title": "What does Gould mean by “consistent with both”?",
+      "explanation": "He does not say a scientific finding establishes two opposite answers. He says accepting the sciences, including evolutionary theory, does not by itself rule out either of the two positions.",
+      "source": {
+        "author": "Alister E. McGrath and Joanna Collicutt McGrath",
+        "work": "The Dawkins Delusion? Atheist Fundamentalism and the Denial of the Divine",
+        "printedPages": [
+          7,
+          10,
+          11
+        ]
+      },
+      "added_value": "This offers the authors a way to understand why people who know the sciences can continue to disagree about God.",
+      "simple": "He does not say a scientific finding establishes two opposite answers. He says accepting the sciences, including evolutionary theory, does not by itself rule out either of the two positions.",
+      "why_here": "This offers the authors a way to understand why people who know the sciences can continue to disagree about God.",
+      "remember": "Compatible with is weaker than proves.",
+      "sourceDepthId": "source-depth-h336-compatible"
+    },
+    {
+      "id": "h336-dismissal",
+      "chapter": "ch3-3-6",
+      "passage": "The deeper concern is a framework that decides the result before the evidence is heard. According to the McGraths, disagreement by believers is dismissed on the ground that they are biased; leading scientists who speak favorably of religion are treated as not meaning what they say. The authors compare this certainty with a form of religious fundamentalism that will not allow its views to be examined. The comparison applies to dogmatic conviction in some sections of Western atheism, not to atheism as such.",
+      "text": "decides the result before the evidence is heard",
+      "kind": "Contextual clarification",
+      "title": "What makes the treatment of dissent dogmatic in this account?",
+      "explanation": "A contrary statement does not get assessed on its merits. It is set aside because the speaker is already classed as biased or is assumed not to mean what they say.",
+      "source": {
+        "author": "Alister E. McGrath and Joanna Collicutt McGrath",
+        "work": "The Dawkins Delusion? Atheist Fundamentalism and the Denial of the Divine",
+        "printedPages": [
+          12,
+          13,
+          14
+        ]
+      },
+      "added_value": "The authors are explaining what goes wrong when confidence in an interpretation prevents contrary evidence from testing it.",
+      "simple": "A contrary statement does not get assessed on its merits. It is set aside because the speaker is already classed as biased or is assumed not to mean what they say.",
+      "why_here": "The authors are explaining what goes wrong when confidence in an interpretation prevents contrary evidence from testing it.",
+      "remember": "Test the claim before dismissing the speaker.",
+      "sourceDepthId": "source-depth-h336-dismissal"
+    },
+    {
+      "id": "h336-response",
+      "chapter": "ch3-3-6",
+      "passage": "A reply is needed because silence might suggest that there is no answer. But the McGraths reject a counterattack built on caricature, and they also reject an exhaustive list of corrections as tedious and unhelpful. Their stated procedure is to test representative points, assuming Dawkins has comparable confidence across the book, and let readers judge the reliability of his evidence and judgment for themselves.",
+      "text": "test representative points",
+      "kind": "Contextual clarification",
+      "title": "Why examine a selection rather than every disputed statement?",
+      "explanation": "The authors use a number of points from the book to give readers grounds for judging its reliability. A complete list of corrections is not the objective.",
+      "source": {
+        "author": "Alister E. McGrath and Joanna Collicutt McGrath",
+        "work": "The Dawkins Delusion? Atheist Fundamentalism and the Denial of the Divine",
+        "printedPages": [
+          13,
+          15
+        ]
+      },
+      "added_value": "This decision answers the question of how to write a short and direct response after rejecting insult and exhaustive rebuttal.",
+      "simple": "The authors use a number of points from the book to give readers grounds for judging its reliability. A complete list of corrections is not the objective.",
+      "why_here": "This decision answers the question of how to write a short and direct response after rejecting insult and exhaustive rebuttal.",
+      "remember": "Inspect selected arguments; then judge what they show.",
+      "sourceDepthId": "source-depth-h336-response"
     }
   ]
 }

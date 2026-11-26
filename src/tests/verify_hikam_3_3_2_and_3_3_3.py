@@ -26,7 +26,7 @@ class Words(HTMLParser):
                 self.stack=self.stack[:i];break
     def handle_data(self,data):
         self.count[any(v for _,v in self.stack)]+=len(data.split())
-for key,hue,author,prev,nxt in zip(ids,(268,288),('أحمد إبراهيم','علي آل محسن'),('ch3-2-8','ch3-3-2'),('ch3-3-3','ch3-4-3')):
+for key,hue,author,prev,nxt in zip(ids,(268,288),('أحمد إبراهيم','علي آل محسن'),('ch3-2-8','ch3-3-2'),('ch3-3-3','ch3-3-4')):
     sec=chapter(index,key)
     assert sec.startswith(f'<section class="chapter rtl" id="{key}" lang="ar" style="--hue:{hue};">')
     assert sec.count('class="endh"')==6 and sec.count('class="examq-cat"')==5
