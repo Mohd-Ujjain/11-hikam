@@ -1,7 +1,7 @@
 {
   "version": 1,
   "editorialPolicy": "src/docs/editorial/CONCISE_DOSSIER_AND_READING_COMPANIONS.md",
-  "description": "Context-first source-anchored Companions through James Kellenberger's 3.1.1 introduction.",
+  "description": "Context-first source-anchored Companions through Keith E. Yandell’s 3.1.2 reading.",
   "companions": [
     {
       "id": "h111-russell-idealism",
@@ -5202,6 +5202,236 @@
       "simple": "A sensibility concerns what is religiously appropriate within a tradition, helping philosophers identify the practical context of a disputed question.",
       "why_here": "Kellenberger explicitly does not treat it as proof or as a final verdict.",
       "remember": "Illuminate; do not settle."
+    },
+    {
+      "id": "h312-systems",
+      "chapter": "ch3-1-2",
+      "passage": "We inherit views about what exists, what we can know, and what is worth pursuing. Philosophy makes these commitments explicit, asks how they fit together and tests the arguments for them. Yandell offers a working account rather than a definition everyone must accept: philosophy constructs and assesses categorial systems. A category is a basic concept whose meaning cannot be analysed into other concepts within the system; different systems may take different concepts as basic.",
+      "text": "constructs and assesses categorial systems",
+      "kind": "Contextual explanation",
+      "title": "Why two jobs?",
+      "explanation": "Building a worldview makes its commitments clear. Assessing it asks whether there are good reasons to accept them. A clear account is not necessarily a true one.",
+      "source": {
+        "author": "Keith E. Yandell",
+        "work": "Philosophy of Religion: A Contemporary Introduction (Routledge)",
+        "printedPages": [
+          3,
+          13
+        ]
+      },
+      "added_value": "Clarifies the immediate source-backed claim without adding an independent thesis.",
+      "simple": "Building a worldview makes its commitments clear. Assessing it asks whether there are good reasons to accept them.",
+      "why_here": "A clear account is not necessarily a true one.",
+      "remember": "Construct, then test."
+    },
+    {
+      "id": "h312-particular",
+      "chapter": "ch3-1-2",
+      "passage": "One can work from a general picture down to a particular issue, or begin with a particular issue and discover the wider commitments that an answer carries. Neither route exempts a claim from assessment. Understanding a philosophical position requires grasping the reasons its supporters can offer, not merely listing its conclusions.",
+      "text": "wider commitments",
+      "kind": "Contextual explanation",
+      "title": "How does a small question lead outward?",
+      "explanation": "A local answer often assumes something more general. A claim about whether we can be free, for example, depends on a wider account of causation or responsibility. The two ways of starting need not be two kinds of philosophy.",
+      "source": {
+        "author": "Keith E. Yandell",
+        "work": "Philosophy of Religion: A Contemporary Introduction (Routledge)",
+        "printedPages": [
+          13,
+          14
+        ]
+      },
+      "added_value": "Clarifies the immediate source-backed claim without adding an independent thesis.",
+      "simple": "A local answer often assumes something more general. A claim about whether we can be free, for example, depends on a wider account of causation or responsibility.",
+      "why_here": "The two ways of starting need not be two kinds of philosophy.",
+      "remember": "Local answers can have wide commitments."
+    },
+    {
+      "id": "h312-cure",
+      "chapter": "ch3-1-2",
+      "passage": "Yandell asks what a tradition thinks is fundamentally wrong with human life and what could put it right. The cure makes sense only in light of the diagnosis. Forgiveness addresses sin; it does not replace insight where ignorance is the basic difficulty. A tradition gives its answer through doctrines, practices, institutions and rituals, not by making a theoretical claim in isolation.",
+      "text": "The cure makes sense only in light of the diagnosis",
+      "kind": "Contextual explanation",
+      "title": "Why does the remedy change?",
+      "explanation": "A remedy counts as relevant only if it addresses what the tradition takes to be the basic difficulty. Forgiving a person and correcting an error answer different diagnoses. This makes the comparison below a comparison of reasons, not just of customs.",
+      "source": {
+        "author": "Keith E. Yandell",
+        "work": "Philosophy of Religion: A Contemporary Introduction (Routledge)",
+        "printedPages": [
+          4,
+          17
+        ]
+      },
+      "added_value": "Clarifies the immediate source-backed claim without adding an independent thesis.",
+      "simple": "A remedy counts as relevant only if it addresses what the tradition takes to be the basic difficulty. Forgiving a person and correcting an error answer different diagnoses.",
+      "why_here": "This makes the comparison below a comparison of reasons, not just of customs.",
+      "remember": "A cure answers a diagnosis."
+    },
+    {
+      "id": "h312-definitions",
+      "chapter": "ch3-1-2",
+      "passage": "A functional definition identifies what religion does; a substantial definition specifies what a religious tradition includes. Neither a generic social function nor belief in a creator alone identifies the range of traditions at issue. Yandell's account includes a diagnosis and cure, their expression in a community's life, and an account of what is ultimately real. Belief and practice give one another content and direction.",
+      "text": "A functional definition identifies what religion does",
+      "kind": "Contextual explanation",
+      "title": "Function or substance?",
+      "explanation": "Functional accounts look at a role in human life; substantial ones look at what adherents believe. Yandell wants his account to recognise both activity and belief. The distinction explains why doctrine and ritual both appear in his proposal.",
+      "source": {
+        "author": "Keith E. Yandell",
+        "work": "Philosophy of Religion: A Contemporary Introduction (Routledge)",
+        "printedPages": [
+          16,
+          17
+        ]
+      },
+      "added_value": "Clarifies the immediate source-backed claim without adding an independent thesis.",
+      "simple": "Functional accounts look at a role in human life; substantial ones look at what adherents believe. Yandell wants his account to recognise both activity and belief.",
+      "why_here": "The distinction explains why doctrine and ritual both appear in his proposal.",
+      "remember": "Role and content are distinct."
+    },
+    {
+      "id": "h312-preference",
+      "chapter": "ch3-1-2",
+      "passage": "There is no single test of truth that answers every question. Whether evidence is relevant depends on the claim. Having a preference does not rule out objectivity if one can follow reasons against it. Yandell treats a blanket denial of objectivity as self-undermining, while allowing that objective inquiry is hard and that success is not guaranteed.",
+      "text": "Having a preference does not rule out objectivity",
+      "kind": "Contextual explanation",
+      "title": "Can I care and still be objective?",
+      "explanation": "One may strongly prefer an outcome and still accept evidence against it. Yandell gives the example of caring whether a dog has cancer without denying what the evidence shows. Objectivity describes the basis of judgement, not the strength of feeling.",
+      "source": {
+        "author": "Keith E. Yandell",
+        "work": "Philosophy of Religion: A Contemporary Introduction (Routledge)",
+        "printedPages": [
+          15
+        ]
+      },
+      "added_value": "Clarifies the immediate source-backed claim without adding an independent thesis.",
+      "simple": "One may strongly prefer an outcome and still accept evidence against it. Yandell gives the example of caring whether a dog has cancer without denying what the evidence shows.",
+      "why_here": "Objectivity describes the basis of judgement, not the strength of feeling.",
+      "remember": "Follow the evidence, not the wish."
+    },
+    {
+      "id": "h312-person",
+      "chapter": "ch3-1-2",
+      "passage": "Respecting a tradition means taking its claims seriously. Where Jainism affirms the same person endures into enlightenment and Theravāda denies that an enduring person survives in that sense, both accounts cannot be true in the same respect. This does not mean traditions never agree, that all religious claims are false, or that seeing a contradiction tells us which side is right. Philosophy of religion examines concepts, positions and arguments rather than resolving disagreements by definition.",
+      "text": "the same person endures into enlightenment",
+      "kind": "Contextual explanation",
+      "title": "What is at stake in endurance?",
+      "explanation": "The issue is not whether events follow one another. It is whether there is an identical person undergoing the change. The Jain view says yes; the Theravāda view presented denies it. This is why the two cures are not just interchangeable descriptions.",
+      "source": {
+        "author": "Keith E. Yandell",
+        "work": "Philosophy of Religion: A Contemporary Introduction (Routledge)",
+        "printedPages": [
+          5
+        ]
+      },
+      "added_value": "Clarifies the immediate source-backed claim without adding an independent thesis.",
+      "simple": "The issue is not whether events follow one another. It is whether there is an identical person undergoing the change. The Jain view says yes; the Theravāda view presented denies it.",
+      "why_here": "This is why the two cures are not just interchangeable descriptions.",
+      "remember": "Continuity is not identity."
+    },
+    {
+      "id": "h312-independence",
+      "chapter": "ch3-1-2",
+      "passage": "Generic philosophical monotheism identifies God as necessarily independent, self-conscious, distinct from and not dependent on the world, and highest in value. Necessary independence says what God cannot depend on; it does not yet decide whether God's existence is itself necessary. Yandell then compares three models, not an exhaustive classification.",
+      "text": "Necessary independence says what God cannot depend on",
+      "kind": "Contextual explanation",
+      "title": "Is independence the same as necessary existence?",
+      "explanation": "No. One claim rules out dependence if God exists. The other rules out every possibility of God not existing. The contingent monotheist accepts the first without accepting the second. This prepares the comparison of two kinds of monotheism.",
+      "source": {
+        "author": "Keith E. Yandell",
+        "work": "Philosophy of Religion: A Contemporary Introduction (Routledge)",
+        "printedPages": [
+          85,
+          91,
+          93
+        ]
+      },
+      "added_value": "Clarifies the immediate source-backed claim without adding an independent thesis.",
+      "simple": "No. One claim rules out dependence if God exists. The other rules out every possibility of God not existing. The contingent monotheist accepts the first without accepting the second.",
+      "why_here": "This prepares the comparison of two kinds of monotheism.",
+      "remember": "Cannot depend does not mean must exist."
+    },
+    {
+      "id": "h312-beginningless",
+      "chapter": "ch3-1-2",
+      "passage": "The Greek deity is immutable, knows necessary truths but not contingent events, and neither creates nor intervenes. Its perfection remains a standard of value. The Semitic model makes the world's existence contingent on God's choice. God sustains and acts in history, so particular events matter to the traditions' truth claims. The Hindu model combines a beginningless world with continued dependence on God: having no first moment is not the same as having to exist.",
+      "text": "having no first moment is not the same as having to exist",
+      "kind": "Contextual explanation",
+      "title": "Can a beginningless world be contingent?",
+      "explanation": "Yes, on the Hindu account compared here. The world never first began, yet it exists at every moment only because God sustains it. An account of its duration does not settle whether it could fail to exist. This explains why the Hindu and Greek answers differ even though neither model gives the world a first moment.",
+      "source": {
+        "author": "Keith E. Yandell",
+        "work": "Philosophy of Religion: A Contemporary Introduction (Routledge)",
+        "printedPages": [
+          89,
+          90
+        ]
+      },
+      "added_value": "Clarifies the immediate source-backed claim without adding an independent thesis.",
+      "simple": "Yes, on the Hindu account compared here. The world never first began, yet it exists at every moment only because God sustains it. An account of its duration does not settle whether it could fail to exist.",
+      "why_here": "This explains why the Hindu and Greek answers differ even though neither model gives the world a first moment.",
+      "remember": "Always and necessarily answer different questions."
+    },
+    {
+      "id": "h312-frog",
+      "chapter": "ch3-1-2",
+      "passage": "A first-order claim says that something is so. A modal claim tells us whether it must be so, cannot be so, or could have gone either way. Tim says frogs exist and Tom says they do not. Tex and Tim both accept frogs, but Tex thinks a frogless world is impossible while Tim does not. That disagreement concerns modality rather than the observed animals.",
+      "text": "Tex thinks a frogless world is impossible",
+      "kind": "Contextual explanation",
+      "title": "Which disagreement is modal?",
+      "explanation": "Tex and Tim agree there are frogs. They disagree over whether a frogless world is possible. Tim and Tom instead disagree about whether there actually are frogs. The contrast separates a proposition from a judgement about its status.",
+      "source": {
+        "author": "Keith E. Yandell",
+        "work": "Philosophy of Religion: A Contemporary Introduction (Routledge)",
+        "printedPages": [
+          91,
+          92
+        ]
+      },
+      "added_value": "Clarifies the immediate source-backed claim without adding an independent thesis.",
+      "simple": "Tex and Tim agree there are frogs. They disagree over whether a frogless world is possible. Tim and Tom instead disagree about whether there actually are frogs.",
+      "why_here": "The contrast separates a proposition from a judgement about its status.",
+      "remember": "Is it so? Must it be so?"
+    },
+    {
+      "id": "h312-nn",
+      "chapter": "ch3-1-2",
+      "passage": "Yandell's NN principle concerns the status of modal claims: true modal propositions are necessarily true, false ones necessarily false. This applies at higher orders too. It does not decide whether God exists or which modal description is right. A contingent monotheist can consistently say that God exists, could have failed to exist, and could not depend on anything if existing.",
+      "text": "It does not decide whether God exists",
+      "kind": "Contextual explanation",
+      "title": "What does NN leave undecided?",
+      "explanation": "NN makes true modal claims necessarily true and false modal claims necessarily false. It does not give evidence for which modal claim is true or establish the truth of the underlying claim. This prevents a rule about modality from being misread as a proof.",
+      "source": {
+        "author": "Keith E. Yandell",
+        "work": "Philosophy of Religion: A Contemporary Introduction (Routledge)",
+        "printedPages": [
+          92,
+          93
+        ]
+      },
+      "added_value": "Clarifies the immediate source-backed claim without adding an independent thesis.",
+      "simple": "NN makes true modal claims necessarily true and false modal claims necessarily false. It does not give evidence for which modal claim is true or establish the truth of the underlying claim.",
+      "why_here": "This prevents a rule about modality from being misread as a proof.",
+      "remember": "Status is not evidence."
+    },
+    {
+      "id": "h312-laws",
+      "chapter": "ch3-1-2",
+      "passage": "Monotheists typically distinguish God from dependent persons and physical things, but this leaves questions about souls, moral freedom and rebellion, and what natural laws explain. A law might describe a regularity, state a deeper or more basic relation, or be probabilistic rather than exceptionless. Which account is right affects later reasoning about creation, determinism, freedom and responsibility. The supplied extract opens these questions rather than settling them.",
+      "text": "probabilistic rather than exceptionless",
+      "kind": "Contextual explanation",
+      "title": "What would a probabilistic law say?",
+      "explanation": "A probabilistic law says how likely an outcome is given certain things and conditions. It does not assert that the outcome happens in every case meeting the conditions. Yandell leaves room for different pictures of what a law explains.",
+      "source": {
+        "author": "Keith E. Yandell",
+        "work": "Philosophy of Religion: A Contemporary Introduction (Routledge)",
+        "printedPages": [
+          94,
+          95
+        ]
+      },
+      "added_value": "Clarifies the immediate source-backed claim without adding an independent thesis.",
+      "simple": "A probabilistic law says how likely an outcome is given certain things and conditions. It does not assert that the outcome happens in every case meeting the conditions.",
+      "why_here": "Yandell leaves room for different pictures of what a law explains.",
+      "remember": "A probability is not a guarantee."
     }
   ]
 }

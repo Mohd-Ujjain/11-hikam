@@ -107,3 +107,10 @@ The archive is never included in the reader or regenerated as a publication asse
 - **Independently pinned Git blob:** `e684148b7b500c424830aecbb5264f21bf88e768`; immutable via `src/tests/verify_dossier_archive.py`. Older archive files and their pinned checks remain unchanged.
 - **Reason for replacement:** source-led study edition of James Kellenberger’s “Introduction: Philosophy and Religion” from *Introduction to Philosophy of Religion* (Routledge), five supplied PDF text pages after the cover. The source author is now credited, arguments mapped and the specific discussion of language, religious relevance, realism and religious sensibilities restored.
 - **Reader isolation:** Historical HTML is never built into the reader, PWA, print, search or new chapter progress state. The private supplied source is not distributed.
+
+### 3.1.2 — The Architecture of Divine Inquiry
+
+- Full former course-brief edition: [dossier-3.1.2.html](dossier-3.1.2.html).
+- Original baseline: `178c725e30d3545d69b293942a5dfe2beab260b3`.
+- Untouched chapter-section Git blob: `c645f9a706db47be51f153ec910df8e327dcd3f6`, pinned in the archive regression.
+- Replacement: source-led Keith E. Yandell edition; previous six-part revision and all five examination categories remain in the archived fragment.
