@@ -1,7 +1,7 @@
 {
   "version": 1,
   "editorialPolicy": "src/docs/editorial/CONCISE_DOSSIER_AND_READING_COMPANIONS.md",
-  "description": "Context-first source-anchored Companions through Keith E. Yandell’s 3.1.2 reading.",
+  "description": "Context-first source-anchored Companions through the Arabic source editions of 3.1.4 and 3.1.5.",
   "companions": [
     {
       "id": "h111-russell-idealism",
@@ -5432,6 +5432,396 @@
       "simple": "A probabilistic law says how likely an outcome is given certain things and conditions. It does not assert that the outcome happens in every case meeting the conditions.",
       "why_here": "Yandell leaves room for different pictures of what a law explains.",
       "remember": "A probability is not a guarantee."
+    },
+    {
+      "id": "h313-alienation",
+      "chapter": "ch3-1-3",
+      "passage": "Hegel saw religions as presenting philosophical truths in shifting, mythical forms. Kenny begins by placing two reactions on opposite sides of Hegel. Ludwig Feuerbach thought Hegel conceded too much to religion: human beings become strangers to their own nature when they ascribe their reason, will and love to a separate divine being. Feuerbach describes a move from dependence on nature, and the divinisation of natural objects, to the conception of a personal God.",
+      "text": "become strangers to their own nature",
+      "kind": "Contextual explanation",
+      "title": "What becomes alien?",
+      "explanation": "What belongs to humanity is experienced as the attribute of someone else. For Feuerbach, this is not simply an error about an external object; it changes how people understand themselves. Marx retains the pattern of alienation but changes what produces it.",
+      "source": {
+        "author": "Anthony Kenny",
+        "work": "God, Chapter 12 of Philosophy in the Modern World (Oxford University Press)",
+        "printedPages": [
+          291,
+          292
+        ]
+      },
+      "added_value": "Explains a distinction in the immediate source-backed passage.",
+      "simple": "What belongs to humanity is experienced as the attribute of someone else. For Feuerbach, this is not simply an error about an external object; it changes how people understand themselves.",
+      "why_here": "Marx retains the pattern of alienation but changes what produces it.",
+      "remember": "Human powers treated as another’s."
+    },
+    {
+      "id": "h313-abraham",
+      "chapter": "ch3-1-3",
+      "passage": "The suspension of the ethical means that a higher end can override a universal duty in the case of faith. It does not make Abraham’s act ethically admirable by ordinary standards or provide a public test for distinguishing faith from a delusion. Kierkegaard sets passionate commitment against historical approximation and detached inquiry. Abraham trusts the promise of posterity even as he raises the knife. Kenny notes that few Christians accept infinite improbability and that some atheist existentialists found the account of choice attractive.",
+      "text": "a higher end can override a universal duty",
+      "kind": "Contextual explanation",
+      "title": "Why can Abraham not explain himself?",
+      "explanation": "A tragic hero can offer a reason the community recognises. Abraham cannot justify his decision that way; Kierkegaard makes it depend on his relation to God. Without shared grounds, faith does not become a public exception anyone can verify.",
+      "source": {
+        "author": "Anthony Kenny",
+        "work": "God, Chapter 12 of Philosophy in the Modern World (Oxford University Press)",
+        "printedPages": [
+          293,
+          295,
+          296,
+          297
+        ]
+      },
+      "added_value": "Explains a distinction in the immediate source-backed passage.",
+      "simple": "A tragic hero can offer a reason the community recognises. Abraham cannot justify his decision that way; Kierkegaard makes it depend on his relation to God.",
+      "why_here": "Without shared grounds, faith does not become a public exception anyone can verify.",
+      "remember": "The tragic hero can invoke a public end."
+    },
+    {
+      "id": "h313-mill",
+      "chapter": "ch3-1-3",
+      "passage": "John Stuart Mill rejects ontological and causal proofs but allows the design argument some evidential weight. He does not infer that every feature of nature is good. Suffering, destructive natural processes and the doctrine of hell stand against identifying the world’s ruler with both unrestricted power and goodness as human beings understand it.",
+      "text": "some evidential weight",
+      "kind": "Contextual explanation",
+      "title": "Why not infer omnipotence?",
+      "explanation": "An adaptation can count in favour of intelligence without telling us that the designer can do anything. Mill measures the inference against the rest of what nature contains, including suffering. The conclusion is narrower than traditional theism.",
+      "source": {
+        "author": "Anthony Kenny",
+        "work": "God, Chapter 12 of Philosophy in the Modern World (Oxford University Press)",
+        "printedPages": [
+          298,
+          299
+        ]
+      },
+      "added_value": "Explains a distinction in the immediate source-backed passage.",
+      "simple": "An adaptation can count in favour of intelligence without telling us that the designer can do anything. Mill measures the inference against the rest of what nature contains, including suffering.",
+      "why_here": "The conclusion is narrower than traditional theism.",
+      "remember": "Design alone does not establish unlimited power."
+    },
+    {
+      "id": "h313-darwin",
+      "chapter": "ch3-1-3",
+      "passage": "Kenny distinguishes Darwin’s opposition to special creation from a denial of creation altogether. Darwin allows that life could begin in created forms and develop through secondary causes. Kenny notes that non-literal Genesis is not a modern invention, but that evolution complicates an account in which human disobedience introduced death into nature.",
+      "text": "opposition to special creation",
+      "kind": "Contextual explanation",
+      "title": "What does the distinction protect?",
+      "explanation": "Darwin rejects a separate creative act for each species. Kenny points out that this does not rule out a creator working through the laws and processes by which lineages change. One explanation need not displace every other level of explanation.",
+      "source": {
+        "author": "Anthony Kenny",
+        "work": "God, Chapter 12 of Philosophy in the Modern World (Oxford University Press)",
+        "printedPages": [
+          301,
+          302
+        ]
+      },
+      "added_value": "Explains a distinction in the immediate source-backed passage.",
+      "simple": "Darwin rejects a separate creative act for each species. Kenny points out that this does not rule out a creator working through the laws and processes by which lineages change.",
+      "why_here": "One explanation need not displace every other level of explanation.",
+      "remember": "Separate creation from special creation."
+    },
+    {
+      "id": "h313-frege",
+      "chapter": "ch3-1-3",
+      "passage": "Newman appeals to the emotional colouring of conscience, not to bare moral judgement, as pointing to a personal judge. Kenny allows the feelings but challenges the inference to their cause. Gottlob Frege approaches from a different direction: existence and uniqueness concern whether a concept has instances, not features included in its definition. Kenny does not treat that analysis as closing every possible ontological argument.",
+      "text": "whether a concept has instances",
+      "kind": "Contextual explanation",
+      "title": "What belongs to the concept?",
+      "explanation": "To say there is one God is to say that the concept has one instance. It is not to add being the only one to a list of characteristics inside the concept. Kenny nevertheless distinguishes this point from a universal ban on reasoning from a concept to its properties.",
+      "source": {
+        "author": "Anthony Kenny",
+        "work": "God, Chapter 12 of Philosophy in the Modern World (Oxford University Press)",
+        "printedPages": [
+          308,
+          309
+        ]
+      },
+      "added_value": "Explains a distinction in the immediate source-backed passage.",
+      "simple": "To say there is one God is to say that the concept has one instance. It is not to add being the only one to a list of characteristics inside the concept.",
+      "why_here": "Kenny nevertheless distinguishes this point from a universal ban on reasoning from a concept to its properties.",
+      "remember": "Existence asks whether the concept has instances."
+    },
+    {
+      "id": "h313-illusion",
+      "chapter": "ch3-1-3",
+      "passage": "James distinguishes petitionary prayer from inward communion and a God of general laws from the particular concerns of an individual. Sigmund Freud, by contrast, calls religion a wish-shaped illusion, which is not for that reason necessarily false. He moves from helplessness and the protective father to an account of religion as collective neurosis. Kenny separates this psychological proposal from Freud’s speculative prehistoric narrative, which Kenny criticises.",
+      "text": "wish-shaped illusion",
+      "kind": "Contextual explanation",
+      "title": "Does Freud mean false?",
+      "explanation": "For Freud an illusion is a belief motivated by a wish, not necessarily a false belief. Its origin does not provide evidence for its truth; if true, it may be true by accident. Kenny keeps this definition apart from his criticism of Freud’s speculative history.",
+      "source": {
+        "author": "Anthony Kenny",
+        "work": "God, Chapter 12 of Philosophy in the Modern World (Oxford University Press)",
+        "printedPages": [
+          314,
+          315
+        ]
+      },
+      "added_value": "Explains a distinction in the immediate source-backed passage.",
+      "simple": "For Freud an illusion is a belief motivated by a wish, not necessarily a false belief. Its origin does not provide evidence for its truth; if true, it may be true by accident.",
+      "why_here": "Kenny keeps this definition apart from his criticism of Freud’s speculative history.",
+      "remember": "Wish-shaped is not the same as false."
+    },
+    {
+      "id": "h313-plantinga",
+      "chapter": "ch3-1-3",
+      "passage": "Alvin Plantinga recasts the ontological argument through possible worlds. Maximal excellence is omniscience, omnipotence and moral perfection in a world; maximal greatness requires that excellence in every possible world. If maximal greatness is possible, his reasoning brings it into the actual world. Kenny identifies the possibility premise and assumptions about possible worlds and identity across them. The ending is a warning against calling a philosophical question definitively closed, not Kenny’s declaration that the argument proves God exists.",
+      "text": "Maximal excellence is",
+      "kind": "Contextual explanation",
+      "title": "Why distinguish excellence and greatness?",
+      "explanation": "Excellence concerns what a being is like in a particular world. Greatness extends that standard across possible worlds. The move to actuality depends on whether greatness really can be exemplified. Kenny identifies the premise; he does not declare it proved.",
+      "source": {
+        "author": "Anthony Kenny",
+        "work": "God, Chapter 12 of Philosophy in the Modern World (Oxford University Press)",
+        "printedPages": [
+          317,
+          318
+        ]
+      },
+      "added_value": "Explains a distinction in the immediate source-backed passage.",
+      "simple": "Excellence concerns what a being is like in a particular world. Greatness extends that standard across possible worlds. The move to actuality depends on whether greatness really can be exemplified.",
+      "why_here": "Kenny identifies the premise; he does not declare it proved.",
+      "remember": "One world versus every possible world."
+    },
+    {
+      "id": "h314-distinction",
+      "chapter": "ch3-1-4",
+      "passage": "ويُرجع عجمي الخطأ المنهجي إلى الخلط بين الدين المنزل وممارسة الناس له، وإلى تعميم حكم واحد على أديان تختلف في نشأتها، وإلى غياب الدليل العلمي على الفرضيات التي يعرضها. وهو لا يمنع أن يصدق تفسيرٌ ما على دين وضعي معين، ولكنه لا يسلم بنقله إلى الدين الإلهي. ومن هذا التفريق ينتقل إلى مناقشة كل أطروحة بحسب مقدماتها، لا إلى ردها لمجرد اشتراكها مع غيرها في النتيجة.",
+      "text": "الخلط بين الدين المنزل وممارسة الناس له",
+      "kind": "إيضاح سياقي",
+      "title": "لماذا يفرّق بين الأصل والممارسة؟",
+      "explanation": "قد يصف الباحث تصرف جماعة في تاريخها، لكن وصف التصرف شيء وتحديد مصدر الدين الذي تنتسب إليه شيء آخر. عجمي يجعل هذا الفرق نقطة الانطلاق في محاكمة النظريات.",
+      "source": {
+        "author": "سامر توفيق عجمي",
+        "work": "نظريات حول نشوء الدين: دراسة تحليلية نقدية، مجلة العقيدة، العدد 28",
+        "printedPages": [
+          19,
+          21,
+          22
+        ]
+      },
+      "added_value": "يبين معنى العبارة في موضعها من احتجاج المؤلف.",
+      "simple": "قد يصف الباحث تصرف جماعة في تاريخها، لكن وصف التصرف شيء وتحديد مصدر الدين الذي تنتسب إليه شيء آخر. عجمي يجعل هذا الفرق نقطة الانطلاق في محاكمة النظريات.",
+      "remember": "لا ينتقل حكم من الممارسة إلى الوحي من غير دليل."
+    },
+    {
+      "id": "h314-causality",
+      "chapter": "ch3-1-4",
+      "passage": "يناقش عجمي أولًا دعوى تعاقب المراحل؛ فقد يجتمع التفسير اللاهوتي والفلسفي والتجريبي في عصر واحد، بل عند شخص واحد. ثم يرفض أن تكون العلة الإلهية بديلًا من العلة الطبيعية. النار تسخن الماء، وفي الوقت نفسه يرى المؤلف أن سببيتها معطاة لها؛ فالعلاقة طولية، أي إن التفسيرين لا يقعان على مرتبة واحدة حتى ينفي أحدهما الآخر. ومع اعترافه بمنافع العلم، يرفض أن يُحصر الإنسان في حاجاته المادية، ويربط عمران الأرض بإعمال العلم مع حفظ الغاية الروحية.",
+      "text": "فالعلاقة طولية",
+      "kind": "إيضاح سياقي",
+      "title": "كيف تكون للظاهرة علتان؟",
+      "explanation": "لا يجعل عجمي الله تعالى سببًا ثانيًا ينازع النار أثرها. فالنار سبب قريب للتسخين، والبحث في مصدر قدرتها على التأثير يتعلق بمرتبة أخرى من العلية في تصوره.",
+      "source": {
+        "author": "سامر توفيق عجمي",
+        "work": "نظريات حول نشوء الدين: دراسة تحليلية نقدية، مجلة العقيدة، العدد 28",
+        "printedPages": [
+          26,
+          27,
+          28
+        ]
+      },
+      "added_value": "يبين معنى العبارة في موضعها من احتجاج المؤلف.",
+      "simple": "لا يجعل عجمي الله تعالى سببًا ثانيًا ينازع النار أثرها. فالنار سبب قريب للتسخين، والبحث في مصدر قدرتها على التأثير يتعلق بمرتبة أخرى من العلية في تصوره.",
+      "remember": "اكتشاف السبب القريب لا ينفي ما يقيم سببيته."
+    },
+    {
+      "id": "h314-fear",
+      "chapter": "ch3-1-4",
+      "passage": "يرجع برتراند رسل نشوء الدين، في العرض الذي ينقله عجمي، إلى الخوف وما يصاحبه من شعور بالعجز والحاجة إلى قوة تحمي الإنسان. ويقول عجمي إن الخوف أو الجهل لو كان علة تامة لازداد التدين بزيادتهما وانتفى بانتفائهما؛ لكنه يحتج بما يراه من علم وطمأنينة عند متدينين، ومن قلق لا ينعدم بزوال الاعتقاد. وهو لا ينكر أن الخوف يقع، بل ينازع في جعله تفسيرًا جامعًا.",
+      "text": "لو كان علة تامة",
+      "kind": "إيضاح سياقي",
+      "title": "ما الذي كان سيلزم من تمام العلة؟",
+      "explanation": "يبني عجمي اعتراضه على أنه لو كان الخوف وحده كافيًا ولازمًا لتوليد التدين، لظهر الأثر حيث يظهر الخوف ولزال بزواله. وهو لا يقول إن التدين لا يقع أحيانًا عند الخوف.",
+      "source": {
+        "author": "سامر توفيق عجمي",
+        "work": "نظريات حول نشوء الدين: دراسة تحليلية نقدية، مجلة العقيدة، العدد 28",
+        "printedPages": [
+          32,
+          33
+        ]
+      },
+      "added_value": "يبين معنى العبارة في موضعها من احتجاج المؤلف.",
+      "simple": "يبني عجمي اعتراضه على أنه لو كان الخوف وحده كافيًا ولازمًا لتوليد التدين، لظهر الأثر حيث يظهر الخوف ولزال بزواله. وهو لا يقول إن التدين لا يقع أحيانًا عند الخوف.",
+      "remember": "وجود الباعث في بعض الحالات لا يجعله أصلًا شاملًا."
+    },
+    {
+      "id": "h314-self",
+      "chapter": "ch3-1-4",
+      "passage": "يوافق عجمي على وصف الضعف والحاجة وقابلية التكامل، ولكنه يرفض أن يلزم من هذه المقدمات أن الكامل المطلق متوهم. ويحتج بتعاقب القوة والضعف والمرض والصحة على أن الإنسان ليس قائمًا بنفسه، ثم يرفض تسلسل العلل الناقصة إلى غير نهاية. ويرى أن انجذاب الناقص إلى الكامل من فطرة الإنسان، ويأخذ هذا الانجذاب دليلًا على واقعية متعلقه. ولذلك يعكس النتيجة التي يعرضها عن فويرباخ: التوغل في معرفة النفس يكشف الحاجة ويزيد معرفة الله، ولا يرفع الارتباط به.",
+      "text": "أن يلزم من هذه المقدمات",
+      "kind": "إيضاح سياقي",
+      "title": "أين يفترق المؤلف عن فويرباخ؟",
+      "explanation": "يتفق الطرفان في العرض على أن الإنسان يشعر بالنقص ويطلب الكمال. لكن هذا الوصف لا يقرر وحده هل المطلوب إسقاط من الذات أو متعلق حقيقي؛ وعجمي يمنع الاستدلال من الشعور على الوهم.",
+      "source": {
+        "author": "سامر توفيق عجمي",
+        "work": "نظريات حول نشوء الدين: دراسة تحليلية نقدية، مجلة العقيدة، العدد 28",
+        "printedPages": [
+          38,
+          39,
+          40,
+          41,
+          42
+        ]
+      },
+      "added_value": "يبين معنى العبارة في موضعها من احتجاج المؤلف.",
+      "simple": "يتفق الطرفان في العرض على أن الإنسان يشعر بالنقص ويطلب الكمال. لكن هذا الوصف لا يقرر وحده هل المطلوب إسقاط من الذات أو متعلق حقيقي؛ وعجمي يمنع الاستدلال من الشعور على الوهم.",
+      "remember": "المقدمة المشتركة لا تفرض النتيجة نفسها."
+    },
+    {
+      "id": "h314-class",
+      "chapter": "ch3-1-4",
+      "passage": "ينقل عجمي عن ماركس أن الدين تعبير عن التعاسة الواقعية واحتجاج عليها، ويربط التفسير الماركسي الذي يعرضه بالإنتاج والتناقض الطبقي. ويميز فيه بين تصور يجعل الطبقة المستغلة تستعمل الدين لتسويغ البؤس وصرف الأمل إلى الآخرة، وتصوّر يجعل المقهورين يصنعون لأنفسهم عزاءً. والجامع عنده هو رد نشأة الدين إلى العلاقات الطبقية، بصرف النظر عمن ينسب إليه الصنع في كل تصور.",
+      "text": "بين تصور يجعل الطبقة المستغلة",
+      "kind": "إيضاح سياقي",
+      "title": "لماذا يذكر المؤلف صورتين لا صورة واحدة؟",
+      "explanation": "في الأولى ينسب صنع العزاء أو استغلاله إلى صاحب السلطة، وفي الثانية ينسب صنعه إلى المقهور نفسه. الاعتراض المشترك عند عجمي هو أن كليهما يحوّل وظيفة أو ظرفًا اجتماعيًا إلى تفسير لنشأة الدين.",
+      "source": {
+        "author": "سامر توفيق عجمي",
+        "work": "نظريات حول نشوء الدين: دراسة تحليلية نقدية، مجلة العقيدة، العدد 28",
+        "printedPages": [
+          42,
+          43,
+          44,
+          45,
+          46
+        ]
+      },
+      "added_value": "يبين معنى العبارة في موضعها من احتجاج المؤلف.",
+      "simple": "في الأولى ينسب صنع العزاء أو استغلاله إلى صاحب السلطة، وفي الثانية ينسب صنعه إلى المقهور نفسه. الاعتراض المشترك عند عجمي هو أن كليهما يحوّل وظيفة أو ظرفًا اجتماعيًا إلى تفسير لنشأة الدين.",
+      "remember": "انقد الصورتين من غير أن تخلط بين الفاعلين."
+    },
+    {
+      "id": "h315-evidence",
+      "chapter": "ch3-1-5",
+      "passage": "يعرض سلطان بن عبد الرحمن العميري دعوى أن الإنسان عاش أولًا بلا دين، ثم صنعه في ظروف تفسرها حاجاته وجهله. وينقل في تقريرها قولًا عن فولتير في سبق الحياة المادية، ثم يذكر الاستدلال بالأحافير والبقايا ودراسة جماعات قيل إنها تمثل العهد الأول. ولا يقتصر اعتراضه على النتائج؛ بل يبدأ بالسؤال عما تتيحه المادة التاريخية من معرفة، وبالفرق بين العثور على أثر لممارسة وبين معرفة المعنى الذي قصده أصحابها.",
+      "text": "العثور على أثر لممارسة",
+      "kind": "إيضاح سياقي",
+      "title": "ماذا يدل الأثر، وماذا لا يدل؟",
+      "explanation": "قد يثبت وجود أثر يدل على نشاط ديني، لكن ذلك لا يعيّن وحده معنى النشاط عند أهله، ولا يخبر عن أصل التدين في البشرية كلها. هذا هو موضع اعتراض العميري على الجزم من مادة ناقصة.",
+      "source": {
+        "author": "سلطان بن عبد الرحمن العميري",
+        "work": "ظاهرة نقد الدين في الفكر الغربي الحديث، المبحث الثاني، الاعتراض الأول",
+        "printedPages": [
+          412,
+          413,
+          414,
+          415
+        ]
+      },
+      "added_value": "يبين معنى العبارة في موضعها من احتجاج المؤلف.",
+      "simple": "قد يثبت وجود أثر يدل على نشاط ديني، لكن ذلك لا يعيّن وحده معنى النشاط عند أهله، ولا يخبر عن أصل التدين في البشرية كلها. هذا هو موضع اعتراض العميري على الجزم من مادة ناقصة.",
+      "remember": "فرّق بين وجود الشاهد ودلالة الشاهد."
+    },
+    {
+      "id": "h315-inference",
+      "chapter": "ch3-1-5",
+      "passage": "يناقش العميري افتراض صعود التاريخ في خط واحد من البسيط إلى المركب، ويعترض أيضًا على التسليم بفرضية التطور التي يقول إن بعض الناقدين بنوا عليها تصوّرهم. وقد تكون مرحلة أقدم أرقى من مرحلة لاحقة في وجه من الوجوه؛ فلا يكون كون الشيء قديمًا وحده دليلًا على بساطته. ثم يأتي اعتراضه على فقدان المسوغ الترابطي: ولو ثبت أن جماعة بعينها أنشأت اعتقادًا من تلقاء نفسها، لم يلزم أن تكون الأديان الأخرى فروعًا لها أو أن يمتنع نزول الوحي في زمن أو موضع آخر.",
+      "text": "فقدان المسوغ الترابطي",
+      "kind": "إيضاح سياقي",
+      "title": "ما الرابط الذي يطلبه العميري؟",
+      "explanation": "المقدّمة تتحدث عن جماعة أو حالة، والنتيجة تتحدث عن البشر كلهم والأزمنة اللاحقة. يطلب العميري دليلًا يصل بينهما، لا مجرد انتقال من واقعة جزئية إلى دعوى كلية.",
+      "source": {
+        "author": "سلطان بن عبد الرحمن العميري",
+        "work": "ظاهرة نقد الدين في الفكر الغربي الحديث، المبحث الثاني، الاعتراض الأول",
+        "printedPages": [
+          416,
+          417,
+          418
+        ]
+      },
+      "added_value": "يبين معنى العبارة في موضعها من احتجاج المؤلف.",
+      "simple": "المقدّمة تتحدث عن جماعة أو حالة، والنتيجة تتحدث عن البشر كلهم والأزمنة اللاحقة. يطلب العميري دليلًا يصل بينهما، لا مجرد انتقال من واقعة جزئية إلى دعوى كلية.",
+      "remember": "سبق ظاهرةٍ في بعض المجتمعات لا يثبت أنها أصل جميع الصور."
+    },
+    {
+      "id": "h315-gap",
+      "chapter": "ch3-1-5",
+      "passage": "وفي نظرية الجهل يقرّ المؤلف بأن الغموض قد يؤثّر في معتقدات بعينها، غير أنه يفرق بين سؤال العلم عن سبب الظاهرة القريب وسؤال الخلق والغاية. ولا يسلم بأن كشف المجهول يزيل دليل الخالق؛ فهو يعترض على المؤمن الذي لا يستدل إلا بجهل السبب، وعلى الناقد الذي يجعل تفسير السبب نفيًا للخالق. ويقرر أن أدلته في هذا الباب إيجابية في نظره، ومنها ما يستند إلى الحدوث والإتقان.",
+      "text": "تفسير السبب نفيًا للخالق",
+      "kind": "إيضاح سياقي",
+      "title": "كيف يقع الطرفان في الخطأ نفسه؟",
+      "explanation": "يربط أحدهما إيمانه بوجود فجوة في المعرفة، ويربط الآخر النفي بانغلاق الفجوة. العميري يرفض الرابط نفسه؛ لأن دليل الخالق في احتجاجه ليس جهل كيفية وقوع الظاهرة.",
+      "source": {
+        "author": "سلطان بن عبد الرحمن العميري",
+        "work": "ظاهرة نقد الدين في الفكر الغربي الحديث، المبحث الثاني، الاعتراض الأول",
+        "printedPages": [
+          423,
+          424,
+          425,
+          426,
+          427,
+          428
+        ]
+      },
+      "added_value": "يبين معنى العبارة في موضعها من احتجاج المؤلف.",
+      "simple": "يربط أحدهما إيمانه بوجود فجوة في المعرفة، ويربط الآخر النفي بانغلاق الفجوة. العميري يرفض الرابط نفسه؛ لأن دليل الخالق في احتجاجه ليس جهل كيفية وقوع الظاهرة.",
+      "remember": "معرفة الكيفية لا تحسم وحدها سؤال الخالق."
+    },
+    {
+      "id": "h315-freud",
+      "chapter": "ch3-1-5",
+      "passage": "وعند فرويد يعرض المؤلف عقدة أوديب، وقتل الأب المفترض، وتحول الشعور بالذنب إلى تعظيمه، ثم تشبيه التدين بالعصاب. ويطعن في بناء التفسير على رواية غير مثبتة، وفي رد الدوافع إلى الجنس، وتعميم ما يُستخرج من حالات العيادة على الجميع، وعسر اختبار بعض المفاهيم. كما يسأل عن مصدر الذنب الذي تفترضه القصة، ويربط نقده بمحدودية البيئة التي صيغ فيها التفسير وبما يراه من أثر الحتمية على العقل والإرادة والمسؤولية.",
+      "text": "تعميم ما يُستخرج من حالات العيادة",
+      "kind": "إيضاح سياقي",
+      "title": "لماذا يميّز بين الحالة والقاعدة؟",
+      "explanation": "ما يُلاحظ في حالات مرضية محددة لا يكفي بذاته لتفسير السلوك السوي، فضلًا عن تاريخ البشر جميعًا. المؤلف يعترض على سعة النتيجة بالنسبة إلى المادة التي استند إليها التفسير.",
+      "source": {
+        "author": "سلطان بن عبد الرحمن العميري",
+        "work": "ظاهرة نقد الدين في الفكر الغربي الحديث، المبحث الثاني، الاعتراض الأول",
+        "printedPages": [
+          429,
+          430,
+          431,
+          432,
+          433,
+          434
+        ]
+      },
+      "added_value": "يبين معنى العبارة في موضعها من احتجاج المؤلف.",
+      "simple": "ما يُلاحظ في حالات مرضية محددة لا يكفي بذاته لتفسير السلوك السوي، فضلًا عن تاريخ البشر جميعًا. المؤلف يعترض على سعة النتيجة بالنسبة إلى المادة التي استند إليها التفسير.",
+      "remember": "حدود العينة تحدد ما يمكن أن يثبت بها."
+    },
+    {
+      "id": "h315-totem",
+      "chapter": "ch3-1-5",
+      "passage": "أما دوركايم فيردّ التدين في التفسير المعروض إلى سلطة الظاهرة الاجتماعية، ويجعل تجمع القبيلة حول الطوطم أساسًا لنشوء الدين. ويعترض العميري على جعل الطوطم أقدم نظام، وعلى دعوى أن كل رمز قبلي دين، وعلى نسبة نشأة الدين إليه ولو ثبت له وصف ديني. ثم ينقد اختيار قبائل جنوب أستراليا مثالًا أوليًا والاعتماد على أخبار منقولة عنها. وعنده أن وجود طقوس ذات طابع اجتماعي لا يثبت أن الدين نفسه وليد الجبرية الاجتماعية.",
+      "text": "وجود طقوس ذات طابع اجتماعي",
+      "kind": "إيضاح سياقي",
+      "title": "هل يثبت الرمز القبلي منشأ الدين؟",
+      "explanation": "يميز العميري بين ثلاث دعاوى: وجود رمز في قبيلة، وكون الرمز دينيًا، وكونه الأصل الذي نشأت منه الأديان. إثبات الأولى لا يثبت الثانية، ولو ثبتت الثانية بقيت الثالثة محتاجة إلى دليل.",
+      "source": {
+        "author": "سلطان بن عبد الرحمن العميري",
+        "work": "ظاهرة نقد الدين في الفكر الغربي الحديث، المبحث الثاني، الاعتراض الأول",
+        "printedPages": [
+          437,
+          438,
+          439,
+          440,
+          441
+        ]
+      },
+      "added_value": "يبين معنى العبارة في موضعها من احتجاج المؤلف.",
+      "simple": "يميز العميري بين ثلاث دعاوى: وجود رمز في قبيلة، وكون الرمز دينيًا، وكونه الأصل الذي نشأت منه الأديان. إثبات الأولى لا يثبت الثانية، ولو ثبتت الثانية بقيت الثالثة محتاجة إلى دليل.",
+      "remember": "الطابع الاجتماعي غير الأصل الاجتماعي."
+    },
+    {
+      "id": "h315-bio",
+      "chapter": "ch3-1-5",
+      "passage": "يختم المقتطف بعرض دعوى أن الميل الديني نشأ نتيجة عرضية في التطور البيولوجي، وبأن أصحابه افترضوا جينًا يتعلق بالتدين. ويعترض العميري بأن الدليل على الدعوى غير قائم في العرض الذي يناقشه. ويعترض كذلك على وصف النتيجة بأنها عرضية قياسًا إلى القصد، مع أن أصحاب التفسير، كما يعرضه، لا ينسبون إلى الانتخاب خطة أو غاية مقصودة. وهذا الاعتراض من استدلال المؤلف على الصيغة المعروضة، وليس حكمًا يضيفه الدرس على كل بحث بيولوجي.",
+      "text": "نتيجة عرضية في التطور البيولوجي",
+      "kind": "إيضاح سياقي",
+      "title": "ما حدّ هذا الاعتراض في النص؟",
+      "explanation": "يناقش العميري دعوى معيّنة عن جين مرتبط بالتدين. اعتراضه على كفاية الدليل وعلى صياغة النتيجة بالعرض يتعلق بالدعوى كما يوردها، ولا يستقل هذا الموضع بإثبات تفسير آخر أو بحث كل فرض بيولوجي.",
+      "source": {
+        "author": "سلطان بن عبد الرحمن العميري",
+        "work": "ظاهرة نقد الدين في الفكر الغربي الحديث، المبحث الثاني، الاعتراض الأول",
+        "printedPages": [
+          442
+        ]
+      },
+      "added_value": "يبين معنى العبارة في موضعها من احتجاج المؤلف.",
+      "simple": "يناقش العميري دعوى معيّنة عن جين مرتبط بالتدين. اعتراضه على كفاية الدليل وعلى صياغة النتيجة بالعرض يتعلق بالدعوى كما يوردها، ولا يستقل هذا الموضع بإثبات تفسير آخر أو بحث كل فرض بيولوجي.",
+      "remember": "قيد الجواب بحدود القول الذي عرضه المؤلف."
     }
   ]
 }
