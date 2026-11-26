@@ -44,7 +44,7 @@ for item in manifest['companions']:
     seen.add(ident)
     assert re.fullmatch(r'ch\d+-\d+-\d+', item['chapter']), ident
     assert item['source']['printedPages'], f'No primary page reference: {ident}'
-    assert item['source']['author'] in ('Dermot Moran', 'Rowland Stout', 'David Papineau', 'Gary Gutting', 'Simon Critchley', 'Colin Bird', 'Jonathan Wolff', 'W. D. Ross', 'Hugh Lawson-Tancred', 'المؤلف غير مذكور في النص المقرر'), ident
+    assert item['source']['author'] in ('Dermot Moran', 'Rowland Stout', 'David Papineau', 'Gary Gutting', 'Simon Critchley', 'Colin Bird', 'Jonathan Wolff', 'W. D. Ross', 'Hugh Lawson-Tancred', 'James Kellenberger', 'المؤلف غير مذكور في النص المقرر'), ident
     assert 20 <= len(item['explanation'].split()) <= 110, f'Explanation out of pilot range: {ident}'
     assert item['added_value'].strip(), ident
     # Arabic chapters are existing "chapter rtl" sections; match both
@@ -76,7 +76,7 @@ stout = [x for x in manifest['companions'] if x['chapter'] == 'ch1-1-2']
 papineau = [x for x in manifest['companions'] if x['chapter'] == 'ch1-1-3']
 gutting = [x for x in manifest['companions'] if x['chapter'] == 'ch1-1-4']
 assert len(moran) == 10 and len(stout) == 24 and len(papineau) == 12 and len(gutting) == 12
-assert len(seen) == 236  # adds ten Ross plus thirteen Lawson-Tancred contextual cues
+assert len(seen) == 248  # plus twelve source-grounded Kellenberger context-first cues
 assert 'class="historical-timeline"' in chapters
 assert 'The One Thread to Follow' in chapters
 assert 'The four thinkers below are not four unrelated stories.' in chapters
@@ -501,6 +501,30 @@ for block in d226_depth:
     assert d226_body[:block.start()].rstrip().endswith('</p>'), "226 Source Depth must follow source paragraph"
     assert ' open' not in block.group().split('>', 1)[0]
     assert 'hikam-source-depth-citation' in block.group()
+# English 3.1.1 — Kellenberger's Philosophy and Religion opening.
+d311_start=chapters.index('<section class="chapter" id="ch3-1-1"')
+d311=chapters[d311_start:chapters.index('\n</section>', d311_start)+len('\n</section>')]
+d311_body=d311[d311.index('<div class="chapter-body">'):d311.index('<nav class="chapter-endnav"')]
+d311_items=[x for x in manifest['companions'] if x['chapter']=='ch3-1-1']
+assert len(d311_items)==12
+assert 'James Kellenberger' in d311
+assert 'style="--hue:228;"' in d311
+assert '<h1 class="chapter-title">Introduction: Philosophy and Religion</h1>' in d311
+assert len(re.findall(r'<h2 class="endh">', d311))==6
+assert d311.count('class="examq-cat"')==5
+d311_depth=list(re.finditer(r'<details class="hikam-source-depth-inline"[\s\S]*?</details>', d311_body))
+assert len(d311_depth)==7
+assert [int(re.search(r'data-depth-count="(\d+)"',d.group()).group(1)) for d in d311_depth]==[2,1,2,1,2,1,2]
+assert d311_body.count('class="hikam-source-depth-item"')==11
+assert all(item['source']['author']=='James Kellenberger'
+           and all(2<=p<=6 for p in item['source']['printedPages'])
+           and all(item.get(k) for k in ('simple','why_here','remember'))
+           for item in d311_items)
+for d in d311_depth:
+    assert d311_body[:d.start()].rstrip().endswith('</p>'), '3.1.1 Source Depth must follow prose'
+    assert ' open' not in d.group().split('>',1)[0]
+    assert 'hikam-source-depth-citation' in d.group()
+
 assert 'hikam-companion-context-field' in reader
 assert 'item.simple && item.why_here && item.remember' in reader
 assert "'.hikam-source-depth-inline'" in (SRC/'philosophy_notes.js').read_text(encoding='utf-8') or '.hikam-source-depth-inline' in (SRC/'philosophy_notes.js').read_text(encoding='utf-8')
