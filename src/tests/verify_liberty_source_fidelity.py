@@ -148,9 +148,9 @@ for item in items:
     assert body.count('id="'+item['sourceDepthId']+'"')==1
 all_files="\n".join(p.read_text(encoding='utf-8')
                     for p in sorted((ROOT/"src/chapters").glob("subtopic-*.html")))
-assert len(re.findall(r'<section class="chapter(?: [^"]+)?" id="ch\d',all_files))==60
+assert len(re.findall(r'<section class="chapter(?: [^"]+)?" id="ch\d',all_files))==62
 print(f"PASS Wolff 2.1.5: Oxford original pp104–117; qualified Alexandria/creationism, "
       f"Mill's and Wolff's separate arguments, exact utilitarian endpoint; "
       f"22 contextual cues, 8 local Depth disclosures, 16 records, "
-      f"six independent revision sections, 60 dossiers; "
+      f"six independent revision sections, 62 dossiers; "
       f"prose={n['prose']}, aids={n['aids']}, depth={n['depth']}")
