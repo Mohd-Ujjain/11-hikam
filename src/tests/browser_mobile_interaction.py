@@ -17,8 +17,8 @@ with sync_playwright() as p:
   page.set_content(HTML,wait_until='domcontentloaded',timeout=60000)
   page.wait_for_function('Boolean(window.__hikamReadingProgress && window.__hikamFullTextSearch)',timeout=60000)
   page.wait_for_timeout(500)
-  # All 47 chapters unaffected; no document-level overflow
-  assert page.locator('section.chapter').count()==47
+  # All 51 chapters unaffected; no document-level overflow
+  assert page.locator('section.chapter').count()==51
   assert page.evaluate('document.documentElement.scrollWidth<=window.innerWidth+2'), 'document overflow '+str(width)
   assert page.locator('#resumeReaderPrompt').is_visible(), 'resume not visible '+str(width)
   page.evaluate("document.getElementById('editionUpdateNotice').hidden=false;window.dispatchEvent(new CustomEvent('hikam:edition-notice',{detail:{visible:true}}))")
