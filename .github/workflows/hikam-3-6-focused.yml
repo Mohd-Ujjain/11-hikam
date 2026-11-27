@@ -1,0 +1,31 @@
+name: Hikam 3.6 focused verification
+on:
+  push:
+    branches: [audit/hikam-3-6-focused]
+permissions:
+  contents: read
+jobs:
+  verify:
+    name: Source anchors, layouts and sampled A4 PDFs
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Build and verify authored edition
+        run: |
+          python src/build.py --check
+          python src/tests/verify_hikam_3_6_1_through_3_6_6.py
+          python src/tests/verify_reading_companions.py
+          python src/tests/verify_hikam_3_5_1_through_3_5_4.py
+          python src/tests/verify_editorial_fidelity.py
+          python src/tests/verify_publication.py
+          python src/tests/validate_structure.py
+      - name: Install browser tools
+        run: |
+          python -m pip install playwright==1.57.0 pypdf==5.9.0
+          python -m playwright install --with-deps chromium
+      - name: Check only the 3.6 refresh
+        run: python src/tests/.hikam-3-6-fork-focused.py
