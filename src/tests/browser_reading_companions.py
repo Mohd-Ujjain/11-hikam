@@ -42,7 +42,7 @@ def check(browser, url, width):
     page.goto(url, wait_until='domcontentloaded', timeout=60000)
     page.wait_for_function("(n) => window.__hikamReadingCompanions && window.__hikamReadingCompanions.attached() === n", arg=EXPECTED_COUNT)
     assert page.evaluate("window.__hikamReadingCompanions.failed()") == []
-    assert page.locator('section.chapter').count() == 60
+    assert page.locator('section.chapter').count() == 62
     cues = page.locator('.hikam-companion-trigger')
     assert cues.count() == EXPECTED_COUNT
     assert page.locator('.end-block .hikam-companion-trigger').count() == 0
@@ -83,6 +83,14 @@ def check(browser, url, width):
     assert timeline.locator('.historical-timeline-event').count() == 4
     cue = page.locator('[data-companion-id="h111-russell-idealism"]')
     cue.scroll_into_view_if_needed()
+    # Previous mouse clicks and scrolling can put the pointer on this cue,
+    # and closing the popup restores focus. Measure only its resting style.
+    page.mouse.move(0, 0)
+    cue.evaluate("(e) => { if (document.activeElement === e) e.blur(); }")
+    page.wait_for_function(
+        "(e) => !e.matches(':hover, :focus-visible')",
+        arg=cue.element_handle(),
+    )
     assert cue.evaluate("(e) => getComputedStyle(e).textDecorationStyle") == 'dotted'
     color = cue.evaluate("(e) => getComputedStyle(e).textDecorationColor")
     other_color = page.locator('[data-companion-id="h112-parfit-identity"]').evaluate(
@@ -127,6 +135,14 @@ def check(browser, url, width):
     assert cue.evaluate("(e) => getComputedStyle(e).textDecorationStyle") == 'solid'
     popup.locator('.hikam-companion-close').click()
     assert popup.is_hidden()
+    # Previous mouse clicks and scrolling can put the pointer on this cue,
+    # and closing the popup restores focus. Measure only its resting style.
+    page.mouse.move(0, 0)
+    cue.evaluate("(e) => { if (document.activeElement === e) e.blur(); }")
+    page.wait_for_function(
+        "(e) => !e.matches(':hover, :focus-visible')",
+        arg=cue.element_handle(),
+    )
     assert cue.evaluate("(e) => getComputedStyle(e).textDecorationStyle") == 'dotted'
     cue = page.locator('[data-companion-id="h112-parfit-identity"]')
     cue.scroll_into_view_if_needed()
