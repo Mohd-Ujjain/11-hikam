@@ -85,6 +85,7 @@ jobs:
           python src/tests/browser_quality.py
           python src/tests/browser_reading_companions.py
           python src/tests/browser_design_tokens.py
+          python src/tests/browser_kenny_3_1_3_aids.py
           python src/tests/browser_3_4_house_style.py
           python src/tests/browser_batch2_continuity.py
           python src/tests/browser_batch4_edition_migration.py
