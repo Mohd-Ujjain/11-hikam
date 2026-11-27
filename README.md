@@ -1,6 +1,6 @@
 # 11AM — Takhassus Hikam Dossier
 
-**[Open the published book](https://mohdujjain.github.io/11-hikam/)** · Bilingual Arabic/English philosophy and religious studies notes · 52 published dossiers.
+**[Open the published book](https://mohdujjain.github.io/11-hikam/)** · Bilingual Arabic/English philosophy and religious studies notes · 60 published dossiers.
 
 This repository follows the same **published root → modular `src/` → organized documentation/tests** model as [World History Dossier](https://github.com/MohdUjjain/world-history-dossier). The book text, interactive sidebar, print layout and offline app have not been redesigned during this directory migration.
 
@@ -30,12 +30,12 @@ Use **Install app** on Chrome/Edge/Android, or **Add to Home Screen** on iPhone/
 
 | Path | Purpose |
 | --- | --- |
-| `index.html` | **Published** self-contained 52-chapter reader; generated, not hand edited |
+| `index.html` | **Published** self-contained 60-chapter reader; generated, not hand edited |
 | `service-worker.js` | **Published** content-hashed offline service worker; generated |
 | `manifest.webmanifest`, `icons/`, `og-image.jpg` | PWA installation icons and social-sharing preview |
 | `404.html`, `sitemap.xml`, `robots.txt`, `.nojekyll` | GitHub Pages and discovery assets |
 | `src/main.html` | Authored book spine, cover, TOC, chapter include markers and metadata |
-| `src/chapters/subtopic-*.html` | **Canonical chapter content** (nine subtopic modules, 52 dossiers) |
+| `src/chapters/subtopic-*.html` | **Canonical chapter content** (ten subtopic modules, 60 dossiers) |
 | `src/philosophy_notes.css` and `src/philosophy_notes.js` | Shared design, navigation and print/pagination engine |
 | `src/offline-reader.js`, `src/service-worker.template.js` | PWA status and offline worker source |
 | `src/build.py` | Rebuilds published HTML, local reference HTML and service worker |
@@ -53,7 +53,9 @@ More details: [src/README.md](src/README.md), [documentation index](src/docs/REA
 
 **Approved comprehension method:** [Context-First Companions, paragraph-adjacent Source Depth, accessible chapter-hue dotted/solid cues and real timelines](src/docs/editorial/CONTEXT_FIRST_COMPANIONS_AND_SOURCE_DEPTH.md#8-binding-future-reading-protocol--accessibility-contextual-richness-and-source-depth) — published for both Moran 1.1.1 and Stout 1.1.2; all original study aids and source fidelity remain binding.
 
-**Religion & Ethics (3.7.1):** [Assigned source coverage and visible word counts](src/docs/editorial/READING_3_7_1_SOURCE_COVERAGE.md).
+**Religion & Ethics (3.7.1–3.7.3):** [Assigned source boundaries, attributions and visible word counts](src/docs/editorial/READINGS_3_7_1_THROUGH_3_7_3_SOURCE_COVERAGE.md).
+
+**Prophecy & Polemics (3.6.1–3.6.6):** [Assigned source boundaries, attributions and visible word counts](src/docs/editorial/READINGS_3_6_1_THROUGH_3_6_6_SOURCE_COVERAGE.md).
 
 **The Problem of Evil (3.5.1–3.5.4):** [Assigned source boundaries, attributions and visible word counts](src/docs/editorial/READINGS_3_5_1_THROUGH_3_5_4_SOURCE_COVERAGE.md).
 

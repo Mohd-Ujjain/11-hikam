@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""No-dependency check of authored subtopics and the assembled 52-dossier book.
+"""No-dependency check of authored subtopics and the assembled 60-dossier book.
 
 Validates the book's identity, chapter uniqueness, revision blocks, internal links,
 and that every authored subtopic contributes to the compiled reader.
@@ -38,14 +38,14 @@ def main():
     assert '<!-- INCLUDE:' not in rendered, 'Unresolved chapter marker in live website'
     parser = Book()
     parser.feed(rendered)
-    assert len(parser.chapters) == 52, f'Wrong chapter count: {len(parser.chapters)}'
+    assert len(parser.chapters) == 60, f'Wrong chapter count: {len(parser.chapters)}'
     assert len(set(parser.ids)) == len(parser.ids), 'Duplicate HTML ids'
-    assert parser.revision == 52, f'Wrong revision block count: {parser.revision}'
+    assert parser.revision == 60, f'Wrong revision block count: {parser.revision}'
     assert all(ch[0].startswith('ch') for ch in parser.chapters), 'Nonstandard chapter id'
     assert all(x in parser.ids for x in parser.refs), 'Broken internal anchor references'
     for chapter_id, language, rtl in parser.chapters:
         if rtl: assert language == 'ar', 'Arabic RTL missing language tag: ' + chapter_id
-    print('Structure validated: 52 unique chapters, 52 revision blocks, all anchors valid, nine modular sources included.')
+    print('Structure validated: 60 unique chapters, 60 revision blocks, all anchors valid, ten modular sources included.')
 
 if __name__=='__main__':
     try: main()
