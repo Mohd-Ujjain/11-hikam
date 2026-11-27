@@ -9,6 +9,7 @@ on:
       - 'index.html'
       - 'src/philosophy_study_notes.html'
       - 'service-worker.js'
+      - '.github/kenny-3-1-3-fork-ci-status.md'
   workflow_dispatch:
 permissions:
   contents: write
@@ -112,3 +113,24 @@ jobs:
             git push origin "HEAD:refs/heads/editorial/3-1-3-kenny-source-refinement-2026-11-27"
           fi
           python src/build.py --check
+      - name: Record verification status only in the testing fork
+        if: always()
+        env:
+          CHECK_STATUS: ${{ job.status }}
+          RUN_ID: ${{ github.run_id }}
+        run: |
+          set -euo pipefail
+          cat > .github/kenny-3-1-3-fork-ci-status.md <<EOF
+          # Fork-only candidate verification (not a release)
+          Result: $CHECK_STATUS
+          Workflow run: https://github.com/Mohd-Ujjain/11-hikam/actions/runs/$RUN_ID
+          Branch: editorial/3-1-3-kenny-source-refinement-2026-11-27
+          Checked head: $(git rev-parse HEAD)
+          EOF
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .github/kenny-3-1-3-fork-ci-status.md
+          if ! git diff --cached --quiet; then
+            git commit -m "Record Kenny fork verification status [skip ci]"
+            git push origin "HEAD:refs/heads/editorial/3-1-3-kenny-source-refinement-2026-11-27"
+          fi
