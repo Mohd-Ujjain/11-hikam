@@ -1,6 +1,6 @@
 # 11AM — Takhassus Hikam Dossier
 
-**[Open the published book](https://mohdujjain.github.io/11-hikam/)** · Bilingual Arabic/English philosophy and religious studies notes · 46 published dossiers.
+**[Open the published book](https://mohdujjain.github.io/11-hikam/)** · Bilingual Arabic/English philosophy and religious studies notes · 47 published dossiers.
 
 This repository follows the same **published root → modular `src/` → organized documentation/tests** model as [World History Dossier](https://github.com/MohdUjjain/world-history-dossier). The book text, interactive sidebar, print layout and offline app have not been redesigned during this directory migration.
 
@@ -30,12 +30,12 @@ Use **Install app** on Chrome/Edge/Android, or **Add to Home Screen** on iPhone/
 
 | Path | Purpose |
 | --- | --- |
-| `index.html` | **Published** self-contained 46-chapter reader; generated, not hand edited |
+| `index.html` | **Published** self-contained 47-chapter reader; generated, not hand edited |
 | `service-worker.js` | **Published** content-hashed offline service worker; generated |
 | `manifest.webmanifest`, `icons/`, `og-image.jpg` | PWA installation icons and social-sharing preview |
 | `404.html`, `sitemap.xml`, `robots.txt`, `.nojekyll` | GitHub Pages and discovery assets |
 | `src/main.html` | Authored book spine, cover, TOC, chapter include markers and metadata |
-| `src/chapters/subtopic-*.html` | **Canonical chapter content** (seven subtopic modules, 46 dossiers) |
+| `src/chapters/subtopic-*.html` | **Canonical chapter content** (seven subtopic modules, 47 dossiers) |
 | `src/philosophy_notes.css` and `src/philosophy_notes.js` | Shared design, navigation and print/pagination engine |
 | `src/offline-reader.js`, `src/service-worker.template.js` | PWA status and offline worker source |
 | `src/build.py` | Rebuilds published HTML, local reference HTML and service worker |
@@ -52,6 +52,8 @@ More details: [src/README.md](src/README.md), [documentation index](src/docs/REA
 **Current bilingual editorial delivery rules:** [Accessible context-first Companions and paragraph-adjacent Source Depth](src/docs/editorial/CONTEXT_FIRST_COMPANIONS_AND_SOURCE_DEPTH.md), applied to Moran 1.1.1 and Stout 1.1.2. Existing study aids, revision blocks and source fidelity are preserved; optional Source Depth does not print.
 
 **Approved comprehension method:** [Context-First Companions, paragraph-adjacent Source Depth, accessible chapter-hue dotted/solid cues and real timelines](src/docs/editorial/CONTEXT_FIRST_COMPANIONS_AND_SOURCE_DEPTH.md#8-binding-future-reading-protocol--accessibility-contextual-richness-and-source-depth) — published for both Moran 1.1.1 and Stout 1.1.2; all original study aids and source fidelity remain binding.
+
+**Design & Evolution (3.4.2–3.4.9):** [Assigned source boundaries, attributions, and visible word counts](src/docs/editorial/READINGS_3_4_2_THROUGH_3_4_9_SOURCE_COVERAGE.md).
 
 **Current published concise edition — dossiers 2.1.3–2.1.5 (21 November 2026):** [Detailed source-to-layer comparison and final measurements](src/docs/editorial/READINGS_2_1_3_TO_2_1_5_CONCISE_REPASS.md) restores the binding **650–850 main prose / 850–1,150 meaningful study-aid / 1,500–2,000 immediately visible words** per dossier without suppressing essential primary-source arguments. Final CI counts are **2.1.3 — War: 780 prose + 1,117 aids = 1,897 visible; 2.1.4 — Introduction & Who Should Rule?: 729 + 1,131 = 1,860; 2.1.5 — The Place of Liberty: 715 + 1,113 = 1,828**. The three combined visible readings fall from **7,628 to 5,585 words (2,043 fewer; 26.8%)**; all **64** existing context-first Companion explanations, **47** cited records in **27** adjacent Source Depth disclosures, all six revision sections for each chapter and all **39** book chapters remain. Source limits and original authorial qualifications are retained. The user's newer [archived pre-revamp dossiers](src/archive/pre-revamp-2026-11-05/README.md) are preserved unchanged. [Passing secondary-fork CI](https://github.com/Mohd-Ujjain/11-hikam/actions/runs/44804689030), [PR #31](https://github.com/MohdUjjain/11-hikam/pull/31) with [independent review verification](https://github.com/MohdUjjain/11-hikam/actions/runs/44805445176), [successful post-merge main checks](https://github.com/MohdUjjain/11-hikam/actions/runs/44806050346) and [Pages publication](https://github.com/MohdUjjain/11-hikam/actions/runs/44806049856) all validate the released academic commit [`f275047f`](https://github.com/MohdUjjain/11-hikam/commit/f275047f4d1365b720af05c3bb315db98018264f). Previously reported larger figures in the three earlier source audits refer to the **historical pre-compression editions**.
 

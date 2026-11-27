@@ -57,6 +57,16 @@ class ChapterStructure(HTMLParser):
         self.stack.pop()
 
 
+def outer_chapter(source):
+    start = re.search(r'<section class="chapter(?: rtl)?"', source).start()
+    depth = 0
+    for tag in re.finditer(r'</?section\b[^>]*>', source[start:]):
+        depth += -1 if tag[0].startswith("</") else 1
+        if depth == 0:
+            return source[start:start + tag.end()]
+    raise AssertionError("Unclosed chapter")
+
+
 def run():
     parser = ChapterStructure()
     parser.feed(HTML)
@@ -65,7 +75,7 @@ def run():
         id_ = f"ch3-4-{n}"
         prefix = f"<!-- CHAPTER 3.4.{n} -->"
         assert HTML.count(prefix) == 1
-        chunk = HTML.split(prefix, 1)[1].split("</section>", 1)[0]
+        chunk = outer_chapter(HTML.split(prefix, 1)[1])
         assert len(chunk) >= 16000, (id_, "thin chapter", len(chunk))
         children = [cls[0] for tag, cls in parser.children[n] if cls and cls[0] in {
             "chapter-frontmatter", "chapter-body", "chapter-endnav", "end-block"}]
