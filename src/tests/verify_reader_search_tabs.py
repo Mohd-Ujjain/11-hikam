@@ -31,5 +31,5 @@ for snippet in ('function initFullBookSearch()',"querySelectorAll('section.chapt
     assert snippet in js, 'Missing search, tab or reading-state logic: '+snippet
 assert 'src="philosophy_notes.js"' not in index, 'Published JS must be inlined'
 assert 'id="readerSearchInput"' in index and 'id="tocIndexTab"' in index
-assert index.count('section class="chapter')>=51, 'Dossier content unexpectedly missing'
+assert index.count('section class="chapter')>=57, 'Dossier content unexpectedly missing'
 print('Reader UI validated: book-wide search, accessible tab panels, mobile constraints, resumable reading and print-safe chrome.')
