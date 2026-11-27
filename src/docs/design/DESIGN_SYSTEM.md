@@ -67,7 +67,7 @@ The regression `src/tests/browser_design_tokens.py` checks actual Chromium compu
 
 ### Stable hue allocation for catalog insertions
 
-The 39 existing chapter hues are unchanged when the first two 3.3 dossiers are inserted in numerical reading order. New 3.3.2 and 3.3.3 use the next two slots of the same 20° wheel (268°, 288°), while 3.4.3 retains 128°. Dossiers 3.3.4–3.3.6 use the next slots at 308°, 328°, and 348°. Dossiers 3.3.7 and 3.3.8 continue at 8° and 28°. Check the full hue cycle in allocation order; screen and print retain chapter-number order. This does not change the palette, semantic callout colors, or page geometry.
+The 39 existing chapter hues are unchanged when the first two 3.3 dossiers are inserted in numerical reading order. New 3.3.2 and 3.3.3 use the next two slots of the same 20° wheel (268°, 288°), while 3.4.3 retains 128°. Dossiers 3.3.4–3.3.6 use the next slots at 308°, 328°, and 348°. Dossiers 3.3.7 and 3.3.8 continue at 8° and 28°. Dossier 3.4.2 then takes 48°; the existing 3.4 hues remain in place. Check the full hue cycle in allocation order; screen and print retain chapter-number order. This does not change the palette, semantic callout colors, or page geometry.
 
 ## Typography
 
@@ -151,13 +151,9 @@ authoritative, always-current version — this list rots):
   (2.2.1–2.2.6, Arabic + 2 English)
 - **Topic 3** — Sub-topic 3.1 complete (3.1.1–3.1.5, three English + two Arabic),
   Sub-topic 3.2 complete (3.2.1–3.2.8, six Arabic + two English),
-  Sub-topics 3.3–3.8 not started
+  Sub-topic 3.3 has seven dossiers (3.3.2–3.3.8), and Sub-topic 3.4 has eight (3.4.2–3.4.9)
 
-**Chapter hue**: `--hue` steps +20° from the *immediately preceding chapter in
-the whole book*, not per-topic or per-subtopic, wrapping at 360. Chapter 1
-(`ch1-1-1`) is 208°; the sequence completes a full circle exactly every 18
-chapters, so chapters 18 apart share a hue by construction (e.g. `ch1-1-1`
-and `ch2-2-6` are both 208°) — this is expected, not a bug.
+**Chapter hue**: `--hue` steps +20° globally in [allocation order](#stable-hue-allocation-for-catalog-insertions), wrapping at 360°. An insertion uses the next slot; it does not recolor existing chapters. The same hue recurs every 18 allocations.
 
 **RTL / Arabic chapters**: add `class="chapter rtl"` and `lang="ar"` to the
 `<section>`. Keep the `.chapter-stamp` tagline in English (cross-book
