@@ -1,0 +1,136 @@
+# Fork-only candidate verification. Do not transfer this file upstream.
+# Used when connector access does not expose workflow_dispatch.
+name: Verify Kenny study-aid redevelopment on secondary fork
+on:
+  push:
+    branches:
+      - editorial/3-1-3-study-aids-pedagogy-2026-11-27
+    paths-ignore:
+      - 'index.html'
+      - 'src/philosophy_study_notes.html'
+      - 'service-worker.js'
+      - '.github/kenny-3-1-3-aids-fork-ci-status.md'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: kenny-fork-candidate-3-1-3-aids
+  cancel-in-progress: true
+jobs:
+  verify-and-build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 50
+    steps:
+      - name: Ensure fork identity and exact candidate branch
+        run: |
+          test "$GITHUB_REPOSITORY" = "Mohd-Ujjain/11-hikam"
+          test "$GITHUB_REF_NAME" = "editorial/3-1-3-study-aids-pedagogy-2026-11-27"
+      - name: Check out candidate only
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          persist-credentials: true
+      - name: Set up pinned Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Build canonical edition
+        run: |
+          python src/build.py
+          python src/build.py --check
+      - name: Execute every current upstream static regression
+        run: |
+          set -euo pipefail
+          python src/tests/verify_dossier_archive.py
+          python src/tests/verify_publication.py
+          python src/tests/verify_reading_companions.py
+          python src/tests/verify_source_attribution.py
+          python src/tests/verify_3_4_house_style.py
+          python src/tests/verify_editorial_fidelity.py
+          python src/tests/verify_papineau_source_fidelity.py
+          python src/tests/verify_gutting_source_fidelity.py
+          python src/tests/verify_critchley_source_fidelity.py
+          python src/tests/verify_bird_source_fidelity.py
+          python src/tests/verify_common_good_source_fidelity.py
+          python src/tests/verify_war_source_fidelity.py
+          python src/tests/verify_wolff_source_fidelity.py
+          python src/tests/verify_liberty_source_fidelity.py
+          python src/tests/verify_arabic_politics_source_fidelity.py
+          python src/tests/verify_arabic_plato_source_fidelity.py
+          python src/tests/verify_arabic_metaphysics_source_fidelity.py
+          python src/tests/verify_arabic_metaphysics_division_source_fidelity.py
+          python src/tests/verify_arabic_metaphysics_islam_christian_source_fidelity.py
+          python src/tests/verify_metaphysics_structure_2_2_5.py
+          python src/tests/verify_metaphysics_substance_2_2_6.py
+          python src/tests/verify_philosophy_religion_3_1_1_kellenberger.py
+          python src/tests/verify_philosophy_religion_3_1_2_yandell.py
+          python src/tests/verify_kenny_3_1_3_source_fidelity.py
+          python src/tests/validate_structure.py
+          python src/tests/verify_sidebar.py
+          python src/tests/verify_reading_progress.py
+          python src/tests/verify_reader_search_tabs.py
+          python src/tests/verify_revision_visibility.py
+          python src/tests/verify_search_integrity.py
+          python src/tests/verify_mobile_interaction.py
+          python src/tests/verify_visual_polish.py
+          node src/tests/test_offline_cache.mjs
+          node src/tests/test_optional_precache.mjs
+      - name: Install exact browser and PDF tools
+        run: |
+          python -m pip install playwright==1.57.0 pypdf==5.9.0
+          python -m playwright install chromium
+      - name: Execute every current upstream browser, design, print and offline regression
+        run: |
+          set -euo pipefail
+          python src/tests/browser_quality.py
+          python src/tests/browser_reading_companions.py
+          python src/tests/browser_design_tokens.py
+          python src/tests/browser_3_4_house_style.py
+          python src/tests/browser_batch2_continuity.py
+          python src/tests/browser_batch4_edition_migration.py
+          python src/tests/browser_pwa_updates.py
+      - name: Keep generated artifacts and browser evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: kenny-fork-3-1-3-${{ github.run_id }}
+          path: |
+            index.html
+            src/philosophy_study_notes.html
+            service-worker.js
+            test-artifacts/
+          if-no-files-found: ignore
+          retention-days: 7
+      - name: Commit only canonical generated outputs after all tests pass
+        if: success()
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html src/philosophy_study_notes.html service-worker.js
+          if ! git diff --cached --quiet; then
+            git commit -m "Build verified 3.1.3 reader outputs [skip ci]"
+            git push origin "HEAD:refs/heads/editorial/3-1-3-study-aids-pedagogy-2026-11-27"
+          fi
+          python src/build.py --check
+      - name: Record verification status only in the testing fork
+        if: always()
+        env:
+          CHECK_STATUS: ${{ job.status }}
+          RUN_ID: ${{ github.run_id }}
+        run: |
+          set -euo pipefail
+          cat > .github/kenny-3-1-3-aids-fork-ci-status.md <<EOF
+          # Fork-only candidate verification (not a release)
+          Result: $CHECK_STATUS
+          Workflow run: https://github.com/Mohd-Ujjain/11-hikam/actions/runs/$RUN_ID
+          Branch: editorial/3-1-3-study-aids-pedagogy-2026-11-27
+          Checked head: $(git rev-parse HEAD)
+          EOF
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .github/kenny-3-1-3-aids-fork-ci-status.md
+          if ! git diff --cached --quiet; then
+            git commit -m "Record Kenny fork verification status [skip ci]"
+            git push origin "HEAD:refs/heads/editorial/3-1-3-study-aids-pedagogy-2026-11-27"
+          fi
