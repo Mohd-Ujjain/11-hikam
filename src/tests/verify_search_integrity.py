@@ -23,5 +23,5 @@ assert 'window.__hikamRevisions.show()' not in js, 'Search persists revision set
 assert 'html.reader-hide-revisions section.chapter > .end-block.reader-search-reveal' in css
 assert 'reader-hit-context mark' in css
 assert "document.createElement('mark')" in reader
-assert reader.count('<div class="end-block">')==51, 'All revisions must remain authored'
+assert reader.count('<div class="end-block">')==52, 'All revisions must remain authored'
 print('Search integrity validated: educational tools, Arabic normalization, paged matches, precise excerpts, hidden-revision filtering and print safeguards.')

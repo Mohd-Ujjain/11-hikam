@@ -17,8 +17,8 @@ for term in ('wireRevisionVisibility()', 'visibleRevisionEnd(chapter)',
     assert term in js, term
 assert 'if (state.includeRevision)' in js
 assert 'var endblockClone = endblock.cloneNode(true);' in js
-assert index.count('<div class="end-block">')==51
-assert index.count('class="chapter')>=51
+assert index.count('<div class="end-block">')==52
+assert index.count('class="chapter')>=52
 assert 'tocShowRevisionBlocks' in index
 # Context-sensitive chapter navigation is independent in HTML and PDF.
 assert 'section.chapter > .chapter-endnav .endnav-toc' in css
@@ -26,4 +26,4 @@ assert 'html.reader-hide-revisions section.chapter > .chapter-endnav:has(> .endn
 assert 'navClone.querySelectorAll(\'.endnav-next:not([href="#toc"])\')' in js
 assert 'if (!state.includeRevision)' in js
 
-print('Revision visibility verified: 51 preserved blocks, persistent screen setting, print independence.')
+print('Revision visibility verified: 52 preserved blocks, persistent screen setting, print independence.')

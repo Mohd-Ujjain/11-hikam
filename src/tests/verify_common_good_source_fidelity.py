@@ -114,7 +114,7 @@ for cue in cues:
 
 chapters = "\n".join(p.read_text(encoding="utf-8") for p in sorted(
     (ROOT/"src/chapters").glob("subtopic-*.html")))
-assert len(re.findall(r'<section class="chapter(?: [^"]+)?" id="ch\d',chapters)) == 51
+assert len(re.findall(r'<section class="chapter(?: [^"]+)?" id="ch\d',chapters)) == 52
 print(f"PASS Bird 2.1.2: 10-page source coverage, qualified classical argument, "
       f"12 contextual cues, 6 adjacent Depth disclosures, six revision blocks, "
-      f"51 chapters; prose={n['prose']}, aids={n['aids']}, depth={n['depth']}")
+      f"52 chapters; prose={n['prose']}, aids={n['aids']}, depth={n['depth']}")

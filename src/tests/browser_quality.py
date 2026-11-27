@@ -69,7 +69,7 @@ def load(ctx, url):
     page.on('pageerror', lambda exc: failures.append(str(exc)))
     page.goto(url, wait_until='domcontentloaded', timeout=60000)
     page.wait_for_function('Boolean(window.__hikamFullTextSearch && window.__hikamReadingProgress && window.__hikamRevisions)', timeout=60000)
-    page.wait_for_function('document.querySelectorAll("section.chapter").length===51', timeout=20000)
+    page.wait_for_function('document.querySelectorAll("section.chapter").length===52', timeout=20000)
     page.__failures = failures
     return page
 
@@ -82,8 +82,8 @@ def viewport_and_accessibility(browser, url):
     for width in (320, 390, 768, 1366):
         ctx = context(browser, width)
         page = load(ctx, url)
-        assert page.locator('section.chapter').count() == 51
-        assert page.locator('.end-block').count() == 51
+        assert page.locator('section.chapter').count() == 52
+        assert page.locator('.end-block').count() == 52
         assert page.evaluate('document.documentElement.scrollWidth <= innerWidth+2'), f'horizontal overflow at {width}px'
         assert page.locator('#readingProgressHeader').evaluate('(el) => getComputedStyle(el).position') == 'fixed'
         page.evaluate("document.getElementById('ch3-2-4').scrollIntoView({behavior:'instant',block:'start'})")
@@ -113,7 +113,7 @@ def viewport_and_accessibility(browser, url):
         assert page.evaluate('document.querySelector("section.chapter").inert')
         assert page.evaluate('document.activeElement.closest("#tocSidebar") !== null')
         page.locator('#tocExpandAll').click()
-        assert page.locator('#tocTree .toc-chapter-sections-toggle').count() == 51
+        assert page.locator('#tocTree .toc-chapter-sections-toggle').count() == 52
         assert page.locator('#tocTree .toc-chapter-sections-toggle').evaluate_all(
             '(nodes)=>nodes.every(n=>n.getAttribute("aria-expanded")==="true")')
         page.locator('#tocCollapseAll').click()
@@ -382,7 +382,7 @@ def print_and_restore(browser, url):
     page.wait_for_function('Boolean(window.__printControl)')
     assert page.evaluate('document.documentElement.classList.contains("reader-hide-revisions")')
     original = page.evaluate("Array.from(document.querySelectorAll('section.chapter')).map(e=>e.id)")
-    assert len(original) == 51
+    assert len(original) == 52
     counts = {}
     for with_revision in (False, True):
         page.evaluate("(revision) => {window.__printControl.setFilter(['ch1-1-1']);window.__printControl.includeRevision(revision);window.dispatchEvent(new Event('beforeprint'));}", with_revision)
