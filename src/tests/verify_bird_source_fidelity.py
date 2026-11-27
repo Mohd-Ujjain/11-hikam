@@ -112,7 +112,7 @@ assert all(all(1<=p<=11 for p in x["source"]["printedPages"]) for x in items)
 assert all(x.get("simple") and x.get("why_here") and x.get("remember") for x in items)
 all_sources="\n".join(p.read_text(encoding="utf-8") for p in
                      sorted((ROOT/"src/chapters").glob("subtopic-*.html")))
-assert len(re.findall(r'<section class="chapter(?: [^"]+)?" id="ch\d',all_sources))==46
+assert len(re.findall(r'<section class="chapter(?: [^"]+)?" id="ch\d',all_sources))==47
 print(f"PASS Bird 2.1.1: author/title, qualified source argument, 11 cues, "
-      f"6 adjacent source records, all six revision sections, 46 chapters; "
+      f"6 adjacent source records, all six revision sections, 47 chapters; "
       f"prose={n['prose']}, aids={n['aids']}, optional depth={n['depth']}")

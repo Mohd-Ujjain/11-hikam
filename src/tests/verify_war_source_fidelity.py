@@ -147,7 +147,7 @@ for cue in cues:
         assert body.count('id="'+cue["sourceDepthId"]+'"')==1
 
 all_chapters="\n".join(f.read_text(encoding="utf-8") for f in sorted((ROOT/"src/chapters").glob("subtopic-*.html")))
-assert len(re.findall(r'<section class="chapter(?: [^"]+)?" id="ch\d',all_chapters))==46
+assert len(re.findall(r'<section class="chapter(?: [^"]+)?" id="ch\d',all_chapters))==47
 print(f"PASS Bird 2.1.3: 30-page authorial argument, 19 exact Companion cues, "
       f"10 local Depth disclosures, 14 source records, six independent revision sections, "
-      f"46 chapters; prose={n['prose']}, aids={n['aids']}, depth={n['depth']}")
+      f"47 chapters; prose={n['prose']}, aids={n['aids']}, depth={n['depth']}")
