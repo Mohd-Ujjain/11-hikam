@@ -169,3 +169,9 @@ The archive is never included in the reader or regenerated as a publication asse
 
 - [Complete unchanged predecessor](dossier-3.2.8.html), Git blob `6b28ab108990f8c49026c96eca85dacda96f847e`.
 - Source-led edition of Introduction (The Case for God), credited to Karen Armstrong.
+
+### 3.1.2 — additionally preserved immediate predecessor (27 November 2026)
+
+The original pre-redevelopment 3.1.2 archive, `dossier-3.1.2.html`, remains unchanged and independently pinned as `c645f9a706db47be51f153ec910df8e327dcd3f6`.
+
+Before the **second source-faithful redevelopment**, the complete more recent AI-authored 3.1.2 live section was separately archived as [`dossier-3.1.2-before-2026-11-27-redo.html`](dossier-3.1.2-before-2026-11-27-redo.html) at authoritative `main` commit `06f0f1d326e64d30979ed72fb618ab2c8d6dc8ae`. **Pinned historical Git blob: `3b7b5759a48f78e36f713feb992f014de762624e`.** It preserves the full original-section HTML, author attribution, notes and study aids, navigation, six-part revision and five question classes. Both archives are read-only, omitted from live publication/search/PWA/print, and verified independently. The current source-led edition restores Keith E. Yandell's explicitly argued criticisms, including his rejection of the doctrine-denying form of Religious Pluralism and the importance of knowing arguments rather than merely descriptions.
