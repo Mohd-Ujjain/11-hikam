@@ -1,12 +1,12 @@
 # Prophecy & Polemics: 3.6.1–3.6.6 source coverage
 
-The prepared Arabic texts control the reading, with scans consulted for boundaries, pagination, attribution and transcription. For 3.6.1 the complete numbered image set was transcribed and proofed in a separate Word OCR pass; this supplied the six assigned pages missing from the older Word and checked the earlier pages without duplicating them. Three recalls per reading guided teaching, not authorial claims. The source coverage pass followed the language pass. Existing layout and print geometry are unchanged. The additional reading 3.6.7 is not a dossier.
+The prepared Arabic texts control the reading, with scans consulted for boundaries, pagination, attribution and transcription. For 3.6.1 the replacement prepared Word controls the reading. Its complete 26-leaf text was checked against the image-verified batches, and the dossier was rerun with three new matching recalls. Three recalls per reading guided teaching, not authorial claims. The source coverage pass followed the language pass. Existing layout and print geometry are unchanged. The additional reading 3.6.7 is not a dossier.
 
 ## Visible counts
 
 | Reading | Prose | Aids | Total | Companions |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| 3.6.1 | 806 | 962 | 1,768 | 7 |
+| 3.6.1 | 834 | 1,023 | 1,857 | 7 |
 | 3.6.2 | 750 | 942 | 1,692 | 7 |
 | 3.6.3 | 719 | 909 | 1,628 | 6 |
 | 3.6.4 | 753 | 910 | 1,663 | 6 |
@@ -16,19 +16,19 @@ The prepared Arabic texts control the reading, with scans consulted for boundari
 Counts exclude frontmatter, navigation, revision, popup and closed optional Source Depth.
 
 ### 3.6.1 · سامي عامري، براهين النبوة
-**Assigned boundary.** The prepared Word supplies **pp. 23–30 and 45–56**. It repeats pp. 47–56; the repeated transcription is counted once. The assigned scan has 26 leaves, pp. 23–30 and 45–62, with pp. 57–62 present only in the scan. The six missing pages were transcribed and visually checked from the assigned numbered images; the image-verified OCR also checks the earlier spans and removes the duplication. The dossier covers pp. 23–30 and 45–62; pp. 31–44 are absent from both assigned sources and were not supplied. Authorship is corroborated by the catalogue and by the distinctive match of the two chapter headings and pagination.
+**Assigned boundary.** The replacement prepared Word contains 26 folios in order: **pp. 23–30 and 45–62**. The 26-leaf assigned scan confirms the same boundary; the gap, pp. 31–44, is not part of the extract. The new Word consolidates the previously image-verified text: the formerly repeated pp. 47–56 occur once, and pp. 57–62 now appear in the Word itself. The authored excerpts therefore have the same boundary as the prior scan-checked draft. Authorship is corroborated by the catalogue and by the distinctive match of the two chapter headings and pagination. The extract does not establish an exact printing.
 
 | Prepared span | Source coverage |
 | --- | --- |
-| 23–27 | Four preliminary objections; gift versus acquisition; mystical practice and philosophical inference; the author’s distinct criticisms of their asserted sufficiency. |
-| 28–30 | Eight reasons for the need for revelation, extending from the unseen and unresolved reasoning to legislation, knowledge of God, correction of desire, notice, confirming signs and the living model. |
-| 45–47 | Prophecy as truthful communication; reasons for crediting both a claimant and his report; independent evidential role of biography and a sign not requiring a formal challenge. |
-| 48–49 | Spinoza’s seven points on laws and signs, providence, constancy, the God–nature premise, alleged repair, ignorance of causes and the reading of scriptural reports. |
-| 50–53 | Hume’s objection; worldview premises, contingency of laws, difference between unusual and impossible, descriptive law, the causation question, circular exclusion of exceptional evidence, and testimony. |
-| 54–56 | Strength of testimony, plausible competing causes, extraordinary evidence versus a second miracle, competing religious reports, refusal even under the stated evidential conditions, and unrepeatable events. The fourteenth reply begins on p. 56 and continues on p. 57. |
-| 57–62 | Conclusion of the fourteenth reply; limits of experimental testing, relevant corroboration and direct contradiction, the weight of testimony, and the reply about witnesses. Different religious claims require comparing, reconciling or weighing reports rather than dismissing them collectively. The author’s distinction between a prophetic sign and other alleged extraordinary events, and his closing summary, remain visible. |
+| 23–27 | Four preliminary objections; gift versus acquisition; separate critiques of the asserted sufficiency of Gnostic exercise and philosophical inference, including the limit of knowledge through effects. |
+| 28–30 | Eight reasons for needing revelation: the unseen, undecided questions, law and social interests, knowledge of God, correction of desire, notice, confirming signs, and the living model. Retains the author’s closing reply to the deist about creation's order and divine guidance. |
+| 45–47 | Prophecy as truthful report, how the claimant and the report are tested, biography as independent evidence, and a prophetic sign not conditioned on a formal challenge. |
+| 48–49 | Spinoza’s seven points kept distinct: stronger evidential force of order, denial of providential meaning in a sign, constancy, the God–nature premise, alleged repair, ignorance of causes, and the reading of scriptural reports. |
+| 50–53 | Hume’s appeal to regular experience; worldview and contingency, unusual versus impossible, descriptive law, causation versus necessary regularity, circular exclusion of contrary reports, and the place of testimony. |
+| 54–56 | Three conditions on a report, evidence proportionate to the claim versus a second miracle, rule and exception, refusal despite the stated corroboration, and the possibility of knowing unrepeatable events. The fourteenth reply starts on p. 56. |
+| 57–62 | Completion of the fourteenth reply and the limits of natural experiment. Contest the report about the same event, rather than pitting it against unrelated habitual experience; weigh testimony, including the author’s appeal to integrity and accuracy. Distinguish competing reports from one another, combine them where possible or weigh them by content and transmission, and distinguish prophetic signs by the event and the claimant. Retains the author’s closing summary of rarity and evidential force. |
 
-The separate comparison checked the reasoning and all cited locations against the prepared excerpts. Three recalls guided review questions but did not extend the source scope. Seven closed optional details follow their exact ordinary-prose cue paragraphs.
+The replacement prepared Word and the scan control content and page numbers. Three newly supplied recalls informed comparisons and retrieval prompts only, without adding claims or enlarging the excerpt. Seven closed optional details follow the relevant ordinary-prose paragraphs. Source argument, teaching aids, and six revision sections were checked separately.
 
 ### 3.6.2 · حسين أحمد الخشن، عالم دون أنبياء! دراسة نقدية في الفكر الربوبي
 
