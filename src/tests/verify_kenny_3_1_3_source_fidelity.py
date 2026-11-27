@@ -32,11 +32,11 @@ blob = hashlib.sha1(b"blob " + str(len(archive)).encode() + b"\0" + archive).hex
 assert blob == "783ef089b31252a077dd5257fae81d7501ec8a61", blob
 assert archive.startswith(b'<section class="chapter" id="ch3-1-3"')
 assert archive.count(b'<h2 class="endh">') == 6
-assert archive.endswith(b'</section>\\n')
+assert archive.endswith(b'</section>\n')
 assert b'Kierkegaard also gives <strong>three reasons</strong>' not in archive
 
 body = chapter.split('<div class="chapter-body">', 1)[1].split('<nav class="chapter-endnav"', 1)[0]
-depth = list(re.finditer(r'<details class="hikam-source-depth-inline"[\\s\\S]*?</details>', body))
+depth = list(re.finditer(r'<details class="hikam-source-depth-inline"[\s\S]*?</details>', body))
 assert len(depth) == 7
 assert body.count('class="hikam-source-depth-item"') == 7
 assert body.count('class="hikam-source-depth-citation"') == 7
@@ -44,7 +44,7 @@ for d in depth:
     assert body[:d.start()].rstrip().endswith("</p>")
     assert " open" not in d.group().split(">", 1)[0]
     assert "Anthony Kenny" in d.group()
-visible = re.sub(r'<details class="hikam-source-depth-inline"[\\s\\S]*?</details>', "", body)
+visible = re.sub(r'<details class="hikam-source-depth-inline"[\s\S]*?</details>', "", body)
 
 required = (
     "Hegel", "Feuerbach", "Marx", "Kierkegaard", "three reasons",
@@ -76,7 +76,7 @@ class WordPool(HTMLParser):
                 self.tags = self.tags[:i]
                 return
     def handle_data(self, value):
-        n = len(re.findall(r"[^\\W_]+(?:['’\\-][^\\W_]+)*", value, re.UNICODE))
+        n = len(re.findall(r"[^\W_]+(?:['’\-][^\W_]+)*", value, re.UNICODE))
         self.words["aids" if any(flag for _,flag in self.tags) else "prose"] += n
 
 wc = WordPool()
@@ -91,7 +91,7 @@ companions = [c for c in manifest["companions"] if c["chapter"] == "ch3-1-3"]
 assert len(companions) == 10 and len({c["id"] for c in companions}) == 10
 paragraphs = [
     " ".join(unescape(re.sub(r"<[^>]+>", "", raw)).split())
-    for raw in re.findall(r"<p(?:\\s[^>]*)?>([\\s\\S]*?)</p>", visible)
+    for raw in re.findall(r"<p(?:\s[^>]*)?>([\s\S]*?)</p>", visible)
 ]
 for c in companions:
     assert c["source"]["author"] == "Anthony Kenny" and c["source"]["printedPages"]
@@ -102,7 +102,7 @@ for c in companions:
     assert sum(p == c["passage"] for p in paragraphs) == 1, c["id"]
 
 audit = (SRC / "docs/editorial/READING_3_1_3_KENNY_GOD_SOURCE_COVERAGE.md").read_text(encoding="utf-8")
-ledger = [int(x) for x in re.findall(r"^\\| (\\d+) \\|", audit, re.M)]
+ledger = [int(x) for x in re.findall(r"^\| (\d+) \|", audit, re.M)]
 assert ledger == list(range(1, 27)), ledger
 assert "**Absent from the supplied PDF.**" in audit
 assert "783ef089b31252a077dd5257fae81d7501ec8a61" in audit
