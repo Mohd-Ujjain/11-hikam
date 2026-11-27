@@ -78,7 +78,7 @@ units = (
     "descriptive", "altruism", "political agnosticism", "feminist",
     # Who Should Rule? (62–66): triad and two foundational tensions
     "for the people", "by the people", "of the people",
-    "benevolent", "term of praise", "57%", "tocqueville", "mill",
+    "benevolent", "term of praise", "51%", "tocqueville", "mill",
     "madisonian", "direct democracy", "representative democracy",
     "lottery", "enfranchised", "proportional representation",
     # Plato (66–68): allegory, craft and long guardian training
