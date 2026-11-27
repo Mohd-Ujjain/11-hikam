@@ -78,7 +78,7 @@ units = (
     "descriptive", "altruism", "political agnosticism", "feminist",
     # Who Should Rule? (62–66): triad and two foundational tensions
     "for the people", "by the people", "of the people",
-    "benevolent", "term of praise", "51%", "tocqueville", "mill",
+    "benevolent", "term of praise", "57%", "tocqueville", "mill",
     "madisonian", "direct democracy", "representative democracy",
     "lottery", "enfranchised", "proportional representation",
     # Plato (66–68): allegory, craft and long guardian training
@@ -138,8 +138,8 @@ for cue in cues:
     if cue.get("sourceDepthId"):
         assert body.count('id="'+cue["sourceDepthId"]+'"')==1
 all_files="\n".join(p.read_text(encoding="utf-8") for p in sorted((ROOT/"src/chapters").glob("subtopic-*.html")))
-assert len(re.findall(r'<section class="chapter(?: [^"]+)?" id="ch\d',all_files))==51
+assert len(re.findall(r'<section class="chapter(?: [^"]+)?" id="ch\d',all_files))==57
 print(f"PASS Wolff 2.1.4: 21 printed-page source units through exact Rousseau boundary, "
       f"23 context-first cues, 9 adjacent Depth disclosures, 17 source records, "
-      f"six independent revision blocks, 51 dossiers; "
+      f"six independent revision blocks, 57 dossiers; "
       f"prose={n['prose']}, aids={n['aids']}, depth={n['depth']}")

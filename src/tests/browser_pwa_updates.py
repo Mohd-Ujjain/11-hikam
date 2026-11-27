@@ -103,7 +103,7 @@ def main():
         page.evaluate('navigator.serviceWorker.ready')
         page.wait_for_function('Boolean(navigator.serviceWorker.controller)', timeout=30000)
         initial = state(page)
-        assert initial['book'] == 51 and initial['controlled']
+        assert initial['book'] == 57 and initial['controlled']
         assert len([key for key in initial['keys'] if key.startswith('11am-hikam-reader-')]) == 1, initial
         old_key = next(key for key in initial['keys'] if key.startswith('11am-hikam-reader-'))
         assert page.evaluate('''async () => Boolean(await (await caches.open(
@@ -132,11 +132,11 @@ def main():
         page.locator('#tocSidebarClose').click()
         offline = ctx.new_page()
         offline.goto(base, wait_until='domcontentloaded', timeout=30000)
-        offline.wait_for_function('document.querySelectorAll("section.chapter").length===51')
-        assert state(offline)['book'] == 51
+        offline.wait_for_function('document.querySelectorAll("section.chapter").length===57')
+        assert state(offline)['book'] == 57
         offline.close()
         ctx.set_offline(False)
-        print('PASS fresh offline navigation returns the complete 51-chapter edition', flush=True)
+        print('PASS fresh offline navigation returns the complete 57-chapter edition', flush=True)
 
         # Publish a new local edition with a new content-hashed-style key.
         new_edition(root, 'v2')
@@ -163,13 +163,13 @@ def main():
         page.locator('#editionReloadBtn').click()
         page.wait_for_load_state('domcontentloaded')
         page.wait_for_function("document.querySelector('meta[name=\"hikam-test-edition\"]')?.content === 'v2'", timeout=30000)
-        assert state(page)['book'] == 51
+        assert state(page)['book'] == 57
         print('PASS content update -> new atomic cache -> controllerchange notice -> user-initiated reload', flush=True)
 
         # The new edition must itself be immediately available offline.
         ctx.set_offline(True)
         page.reload(wait_until='domcontentloaded', timeout=30000)
-        assert state(page)['edition'] == 'v2' and state(page)['book'] == 51
+        assert state(page)['edition'] == 'v2' and state(page)['book'] == 57
         ctx.set_offline(False)
         print('PASS updated edition opens offline after a full reload', flush=True)
 
@@ -188,7 +188,7 @@ def main():
         assert '11am-hikam-reader-browser-v2-test' in valid_keys, after_bad
         ctx.set_offline(True)
         page.reload(wait_until='domcontentloaded', timeout=30000)
-        assert state(page)['edition'] == 'v2' and state(page)['book'] == 51
+        assert state(page)['edition'] == 'v2' and state(page)['book'] == 57
         assert not issues, issues
         print('PASS rejected incomplete release preserves prior offline edition', flush=True)
         ctx.close()
