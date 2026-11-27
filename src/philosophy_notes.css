@@ -808,6 +808,10 @@ hr.rule{border:none; border-top:1px solid var(--paper-line); margin:38px 0;}
   @page ch3-3-2{ @top-left{content:"3.3 · The New Atheism";} @top-right{content:"3.3.2 · اختراق عقل";} }
 
   @page ch3-4-2{ @top-left{content:"3.4 · Design & Evolution";} @top-right{content:"3.4.2 · برهان النظم";} }
+  @page ch3-5-1{ @top-left{content:"3.5 · The Problem of Evil";} @top-right{content:"3.5.1 · مشكلة الشر ووجود الله";} }
+  @page ch3-5-2{ @top-left{content:"3.5 · The Problem of Evil";} @top-right{content:"3.5.2 · اختراق عقل";} }
+  @page ch3-5-3{ @top-left{content:"3.5 · The Problem of Evil";} @top-right{content:"3.5.3 · شبهات وجود الشرور والنقص في العالم الدنيوي";} }
+  @page ch3-5-4{ @top-left{content:"3.5 · The Problem of Evil";} @top-right{content:"3.5.4 · إجابة ابن سينا عن مفارقة العناية الإلهية والشر";} }
   @page ch3-4-3{ @top-left{content:"3.4 · Design & Evolution";} @top-right{content:"3.4.3 · نظرية داروين";} }
   @page ch3-4-4{ @top-left{content:"3.4 · Design & Evolution";} @top-right{content:"3.4.4 · A Black Box under the Microscope";} }
   @page ch3-4-5{ @top-left{content:"3.4 · Design & Evolution";} @top-right{content:"3.4.5 · Liliputian Biology";} }
@@ -1374,6 +1378,46 @@ hr.rule{border:none; border-top:1px solid var(--paper-line); margin:38px 0;}
     @right-top{ content:""; background:var(--ink); } @right-middle{ content:""; background:var(--ink); } @right-bottom{ content:""; background:var(--ink); }
     @bottom-left-corner{ content:""; background:var(--ink); } @bottom-left{ content:""; background:var(--ink); } @bottom-right{ content:""; background:var(--ink); } @bottom-right-corner{ content:""; background:var(--ink); }
   }
+  @page rev3-5-1{
+    margin:25mm 9mm 22mm 9mm; background:var(--ink);
+    @top-left{ content:"3.5 · The Problem of Evil"; font-family:var(--font-sans); font-size:8.2pt; letter-spacing:.1em; text-transform:uppercase; color:var(--gold-pale); background:var(--ink); vertical-align:bottom; padding-bottom:6mm; border-bottom:0.75pt solid rgba(255,255,255,.22); }
+    @top-right{ content:"Revision · 3.5.1"; font-family:var(--font-sans); font-size:8.2pt; letter-spacing:.04em; text-transform:uppercase; font-weight:600; color:#E8EBF3; background:var(--ink); text-align:right; vertical-align:bottom; padding-bottom:6mm; border-bottom:0.75pt solid rgba(255,255,255,.22); }
+    @bottom-center{ content:counter(page) " / " counter(pages); font-family:var(--font-mono); font-size:8.5pt; letter-spacing:.03em; color:#B9C2D9; background:var(--ink); vertical-align:top; padding-top:5mm; border-top:0.75pt solid rgba(255,255,255,.22); }
+    @top-center{ content:""; background:var(--ink); } @top-left-corner{ content:""; background:var(--ink); } @top-right-corner{ content:""; background:var(--ink); }
+    @left-top{ content:""; background:var(--ink); } @left-middle{ content:""; background:var(--ink); } @left-bottom{ content:""; background:var(--ink); }
+    @right-top{ content:""; background:var(--ink); } @right-middle{ content:""; background:var(--ink); } @right-bottom{ content:""; background:var(--ink); }
+    @bottom-left-corner{ content:""; background:var(--ink); } @bottom-left{ content:""; background:var(--ink); } @bottom-right{ content:""; background:var(--ink); } @bottom-right-corner{ content:""; background:var(--ink); }
+  }
+  @page rev3-5-2{
+    margin:25mm 9mm 22mm 9mm; background:var(--ink);
+    @top-left{ content:"3.5 · The Problem of Evil"; font-family:var(--font-sans); font-size:8.2pt; letter-spacing:.1em; text-transform:uppercase; color:var(--gold-pale); background:var(--ink); vertical-align:bottom; padding-bottom:6mm; border-bottom:0.75pt solid rgba(255,255,255,.22); }
+    @top-right{ content:"Revision · 3.5.2"; font-family:var(--font-sans); font-size:8.2pt; letter-spacing:.04em; text-transform:uppercase; font-weight:600; color:#E8EBF3; background:var(--ink); text-align:right; vertical-align:bottom; padding-bottom:6mm; border-bottom:0.75pt solid rgba(255,255,255,.22); }
+    @bottom-center{ content:counter(page) " / " counter(pages); font-family:var(--font-mono); font-size:8.5pt; letter-spacing:.03em; color:#B9C2D9; background:var(--ink); vertical-align:top; padding-top:5mm; border-top:0.75pt solid rgba(255,255,255,.22); }
+    @top-center{ content:""; background:var(--ink); } @top-left-corner{ content:""; background:var(--ink); } @top-right-corner{ content:""; background:var(--ink); }
+    @left-top{ content:""; background:var(--ink); } @left-middle{ content:""; background:var(--ink); } @left-bottom{ content:""; background:var(--ink); }
+    @right-top{ content:""; background:var(--ink); } @right-middle{ content:""; background:var(--ink); } @right-bottom{ content:""; background:var(--ink); }
+    @bottom-left-corner{ content:""; background:var(--ink); } @bottom-left{ content:""; background:var(--ink); } @bottom-right{ content:""; background:var(--ink); } @bottom-right-corner{ content:""; background:var(--ink); }
+  }
+  @page rev3-5-3{
+    margin:25mm 9mm 22mm 9mm; background:var(--ink);
+    @top-left{ content:"3.5 · The Problem of Evil"; font-family:var(--font-sans); font-size:8.2pt; letter-spacing:.1em; text-transform:uppercase; color:var(--gold-pale); background:var(--ink); vertical-align:bottom; padding-bottom:6mm; border-bottom:0.75pt solid rgba(255,255,255,.22); }
+    @top-right{ content:"Revision · 3.5.3"; font-family:var(--font-sans); font-size:8.2pt; letter-spacing:.04em; text-transform:uppercase; font-weight:600; color:#E8EBF3; background:var(--ink); text-align:right; vertical-align:bottom; padding-bottom:6mm; border-bottom:0.75pt solid rgba(255,255,255,.22); }
+    @bottom-center{ content:counter(page) " / " counter(pages); font-family:var(--font-mono); font-size:8.5pt; letter-spacing:.03em; color:#B9C2D9; background:var(--ink); vertical-align:top; padding-top:5mm; border-top:0.75pt solid rgba(255,255,255,.22); }
+    @top-center{ content:""; background:var(--ink); } @top-left-corner{ content:""; background:var(--ink); } @top-right-corner{ content:""; background:var(--ink); }
+    @left-top{ content:""; background:var(--ink); } @left-middle{ content:""; background:var(--ink); } @left-bottom{ content:""; background:var(--ink); }
+    @right-top{ content:""; background:var(--ink); } @right-middle{ content:""; background:var(--ink); } @right-bottom{ content:""; background:var(--ink); }
+    @bottom-left-corner{ content:""; background:var(--ink); } @bottom-left{ content:""; background:var(--ink); } @bottom-right{ content:""; background:var(--ink); } @bottom-right-corner{ content:""; background:var(--ink); }
+  }
+  @page rev3-5-4{
+    margin:25mm 9mm 22mm 9mm; background:var(--ink);
+    @top-left{ content:"3.5 · The Problem of Evil"; font-family:var(--font-sans); font-size:8.2pt; letter-spacing:.1em; text-transform:uppercase; color:var(--gold-pale); background:var(--ink); vertical-align:bottom; padding-bottom:6mm; border-bottom:0.75pt solid rgba(255,255,255,.22); }
+    @top-right{ content:"Revision · 3.5.4"; font-family:var(--font-sans); font-size:8.2pt; letter-spacing:.04em; text-transform:uppercase; font-weight:600; color:#E8EBF3; background:var(--ink); text-align:right; vertical-align:bottom; padding-bottom:6mm; border-bottom:0.75pt solid rgba(255,255,255,.22); }
+    @bottom-center{ content:counter(page) " / " counter(pages); font-family:var(--font-mono); font-size:8.5pt; letter-spacing:.03em; color:#B9C2D9; background:var(--ink); vertical-align:top; padding-top:5mm; border-top:0.75pt solid rgba(255,255,255,.22); }
+    @top-center{ content:""; background:var(--ink); } @top-left-corner{ content:""; background:var(--ink); } @top-right-corner{ content:""; background:var(--ink); }
+    @left-top{ content:""; background:var(--ink); } @left-middle{ content:""; background:var(--ink); } @left-bottom{ content:""; background:var(--ink); }
+    @right-top{ content:""; background:var(--ink); } @right-middle{ content:""; background:var(--ink); } @right-bottom{ content:""; background:var(--ink); }
+    @bottom-left-corner{ content:""; background:var(--ink); } @bottom-left{ content:""; background:var(--ink); } @bottom-right{ content:""; background:var(--ink); } @bottom-right-corner{ content:""; background:var(--ink); }
+  }
   @page rev3-4-3{
     margin:25mm 9mm 22mm 9mm; background:var(--ink);
     @top-left{ content:"3.4 · Design & Evolution"; font-family:var(--font-sans); font-size:8.2pt; letter-spacing:.1em; text-transform:uppercase; color:var(--gold-pale); background:var(--ink); vertical-align:bottom; padding-bottom:6mm; border-bottom:0.75pt solid rgba(255,255,255,.22); }
@@ -1517,6 +1561,10 @@ hr.rule{border:none; border-top:1px solid var(--paper-line); margin:38px 0;}
   #ch3-3-3 .chapter-body, #ch3-3-3 .chapter-endnav{ page:ch3-3-3; } #ch3-3-3 .end-block{ page:rev3-3-3; }
   #ch3-3-2 .chapter-body, #ch3-3-2 .chapter-endnav{ page:ch3-3-2; } #ch3-3-2 .end-block{ page:rev3-3-2; }
   #ch3-4-2 .chapter-body, #ch3-4-2 .chapter-endnav{ page:ch3-4-2; } #ch3-4-2 .end-block{ page:rev3-4-2; }
+  #ch3-5-1 .chapter-body, #ch3-5-1 .chapter-endnav{ page:ch3-5-1; } #ch3-5-1 .end-block{ page:rev3-5-1; }
+  #ch3-5-2 .chapter-body, #ch3-5-2 .chapter-endnav{ page:ch3-5-2; } #ch3-5-2 .end-block{ page:rev3-5-2; }
+  #ch3-5-3 .chapter-body, #ch3-5-3 .chapter-endnav{ page:ch3-5-3; } #ch3-5-3 .end-block{ page:rev3-5-3; }
+  #ch3-5-4 .chapter-body, #ch3-5-4 .chapter-endnav{ page:ch3-5-4; } #ch3-5-4 .end-block{ page:rev3-5-4; }
   #ch3-4-3 .chapter-body, #ch3-4-3 .chapter-endnav{ page:ch3-4-3; } #ch3-4-3 .end-block{ page:rev3-4-3; }
   #ch3-4-4 .chapter-body, #ch3-4-4 .chapter-endnav{ page:ch3-4-4; } #ch3-4-4 .end-block{ page:rev3-4-4; }
   #ch3-4-5 .chapter-body, #ch3-4-5 .chapter-endnav{ page:ch3-4-5; } #ch3-4-5 .end-block{ page:rev3-4-5; }
