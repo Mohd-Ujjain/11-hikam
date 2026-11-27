@@ -215,6 +215,14 @@ def verify() -> None:
     assert prior_312.endswith(b"</section>")
     assert prior_312.count(b'class="endh"') == 6
     assert prior_312.count(b'class="examq-cat"') == 5
+    prior_312_redo = (ROOT / "src/archive/pre-redevelopment-2026-11-21/dossier-3.1.2-before-2026-11-27-redo.html").read_bytes()
+    assert blob_sha(prior_312_redo) == "3b7b5759a48f78e36f713feb992f014de762624e", "Immediate predecessor 3.1.2 snapshot changed"
+    assert prior_312_redo.startswith(b'<section class="chapter" id="ch3-1-2" style="--hue:248;"')
+    assert prior_312_redo.endswith(b"</section>")
+    assert prior_312_redo.count(b'class="end-block"') == 1
+    assert prior_312_redo.count(b'class="endh"') == 6
+    assert prior_312_redo.count(b'class="examq-cat"') == 5
+    assert "dossier-3.1.2-before-2026-11-27-redo.html" not in (ROOT / "src/main.html").read_text(encoding="utf-8")
     prior_313 = (ROOT / "src/archive/pre-redevelopment-2026-11-21/dossier-3.1.3.html").read_bytes()
     assert blob_sha(prior_313) == "9d02494a0fe387f99c5ceff769a9b4d163f03e6b", "Original 3.1.3 snapshot changed"
     assert prior_313.startswith(b'<section class="chapter" id="ch3-1-3" style="--hue:268;"')
