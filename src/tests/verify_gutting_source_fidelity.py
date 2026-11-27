@@ -109,9 +109,9 @@ assert all(x.get("simple") and x.get("why_here") and x.get("remember") for x in 
 assert all(all(860 <= n <= 871 for n in x["source"]["printedPages"]) for x in items)
 all_sources = "\n".join(p.read_text(encoding="utf-8")
     for p in sorted((ROOT/"src/chapters").glob("subtopic-*.html")))
-assert len(re.findall(r'<section class="chapter(?: [^"]+)?" id="ch\d', all_sources)) == 57
+assert len(re.findall(r'<section class="chapter(?: [^"]+)?" id="ch\d', all_sources)) == 60
 
 print("PASS: Gutting source argument, three exact quotations, eleven subsections,"
       f" 12 contextual cues and nine source records; prose={counts['prose']},"
       f" aids={counts['aids']}, optional depth={counts['depth']} words;"
-      " all six revision sections and all 57 chapters retained")
+      " all six revision sections and all 60 chapters retained")

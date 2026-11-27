@@ -76,7 +76,7 @@ stout = [x for x in manifest['companions'] if x['chapter'] == 'ch1-1-2']
 papineau = [x for x in manifest['companions'] if x['chapter'] == 'ch1-1-3']
 gutting = [x for x in manifest['companions'] if x['chapter'] == 'ch1-1-4']
 assert len(moran) == 10 and len(stout) == 24 and len(papineau) == 12 and len(gutting) == 12
-assert len(seen) == 470  # Includes the six 3.6 dossiers
+assert len(seen) == 491  # Includes all three 3.7 dossiers
 assert 'class="historical-timeline"' in chapters
 assert 'The One Thread to Follow' in chapters
 assert 'The four thinkers below are not four unrelated stories.' in chapters

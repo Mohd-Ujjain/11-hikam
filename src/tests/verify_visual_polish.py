@@ -21,5 +21,5 @@ assert '#E5C77C' in css
 assert 'color:var(--gold-pale)' in css
 assert 'readerSearchInput' in main and 'function initFullBookSearch()' in js
 assert '11AM · Takhassus Hikam Dossier' in index
-assert len(re.findall(r'<section\s+class="chapter[^"]*"\s+id="ch',index))==57
+assert len(re.findall(r'<section\s+class="chapter[^"]*"\s+id="ch',index))==60
 print('Phase 3 publication branding, complete accordion, contrast and dead-code guards passed.')

@@ -23,7 +23,7 @@ for label, text in (("canonical", source), ("non-inlined", html), ("published", 
     assert not re.search(r"\bextract\b|\bsupplied\s+study\b", chapter_34, re.I), (label, "source-input label restored")
     assert "An indirect route remains logically possible" in chapter_34
 assert source in html and source in public
-assert len(re.findall(r'<section class="chapter(?: [^"]+)?" id="ch\d+-\d+-\d+"', public)) == 57
+assert len(re.findall(r'<section class="chapter(?: [^"]+)?" id="ch\d+-\d+-\d+"', public)) == 60
 for name in ("3.4.3_Original_Study_Extract.txt", "3.4.4_Original_Study_Extract.txt"):
     assert (ROOT/"src/source_materials"/name).is_file()
-print("PASS: 95 historical intrusion guards; current 3.4 fidelity and 57 dossiers verified")
+print("PASS: 95 historical intrusion guards; current 3.4 fidelity and 60 dossiers verified")
