@@ -65,6 +65,10 @@ The regression `src/tests/browser_design_tokens.py` checks actual Chromium compu
 
 **First verification:** [Secondary-account GitHub Actions run 44524655246](https://github.com/Mohd-Ujjain/11-hikam/actions/runs/44524655246) passed the complete canonical build, source/structure tests, Chromium computed-style audit at 390px and 1366px, Reader/RTL, real PDF pagination and offline/PWA regressions. The computed-style audit confirmed **39 chapters**, **18 unique rotational hues**, **two existing revision comparison tables** (Moran and Stout), **two authored source-credit emphasis instances**, and the six fixed semantic backgrounds. The missing table/author contrast was caused by CSS foreground inheritance, not by a missing or reset hue sequence. No source text or semantic callout type was revised.
 
+### Stable hue allocation for catalog insertions
+
+The 39 existing chapter hues are unchanged when the first two 3.3 dossiers are inserted in numerical reading order. New 3.3.2 and 3.3.3 use the next two slots of the same 20° wheel (268°, 288°), while 3.4.3 retains 128°. Dossiers 3.3.4–3.3.6 use the next slots at 308°, 328°, and 348°. Dossiers 3.3.7 and 3.3.8 continue at 8° and 28°. Check the full hue cycle in allocation order; screen and print retain chapter-number order. This does not change the palette, semantic callout colors, or page geometry.
+
 ## Typography
 
 | Token | Stack | Use |

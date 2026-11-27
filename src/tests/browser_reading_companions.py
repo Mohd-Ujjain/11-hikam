@@ -42,7 +42,7 @@ def check(browser, url, width):
     page.goto(url, wait_until='domcontentloaded', timeout=60000)
     page.wait_for_function("(n) => window.__hikamReadingCompanions && window.__hikamReadingCompanions.attached() === n", arg=EXPECTED_COUNT)
     assert page.evaluate("window.__hikamReadingCompanions.failed()") == []
-    assert page.locator('section.chapter').count() == 39
+    assert page.locator('section.chapter').count() == 46
     cues = page.locator('.hikam-companion-trigger')
     assert cues.count() == EXPECTED_COUNT
     assert page.locator('.end-block .hikam-companion-trigger').count() == 0
