@@ -34,7 +34,7 @@ visible = re.sub(r'<details class="hikam-source-depth-inline"[\s\S]*?</details>'
 for claim in ('construction and assessment of categorial systems',
               'Edmund Gettier', 'self-refuting and self-contradictory',
               'false or meaningless', 'failure of intellectual nerve',
-              'necessarily independent', 'false ones necessarily false',
+              'necessarily independent', 'false modal proposition is necessarily false',
               'This does not decide which modal account of God is true',
               'CG*', 'Contingent atheism', 'Weak providence', 'probabilistic'):
     assert claim in visible or claim in chapter, claim
