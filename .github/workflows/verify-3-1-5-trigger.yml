@@ -1,0 +1,182 @@
+name: Trigger 3.1.5 candidate complete verification on isolated fork
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  verify:
+    name: Check generated site and installable assets
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out candidate from latest authoritative baseline
+        uses: actions/checkout@v4
+        with:
+          ref: editorial/3-1-5-umayri-source-redevelopment-2026-11-28
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Canonical build on fork candidate
+        run: python src/build.py
+      - name: Verify the ten original archived dossier fragments and six-part revision blocks
+        run: python src/tests/verify_dossier_archive.py
+      - name: Verify the published HTML and hashed service worker are current
+        run: python src/build.py --check
+      - name: Validate links, manifest, meta tags, and 39 dossiers
+        run: python src/tests/verify_publication.py
+      - name: Verify exact Reading Companion source anchors and offline manifest
+        run: python src/tests/verify_reading_companions.py
+      - name: Verify source-verified dossier titles and original author credits
+        run: python src/tests/verify_source_attribution.py
+      - name: Verify complete six-part house architecture for dossiers 35–39
+        run: python src/tests/verify_3_4_house_style.py
+      - name: Verify Dossiers 33–34 against source-fidelity corrections
+        run: python src/tests/verify_editorial_fidelity.py
+      - name: Verify Papineau source coverage, quotations, word distribution and six-part revision
+        run: python src/tests/verify_papineau_source_fidelity.py
+      - name: Verify Gutting 1.1.4 source, original quotations, concise density and six-part revision
+        run: python src/tests/verify_gutting_source_fidelity.py
+      - name: Verify Critchley 1.1.5 source, source depth, word distribution and six-part revision
+        run: python src/tests/verify_critchley_source_fidelity.py
+      - name: Verify Bird 2.1.1 source fidelity, chapter density and six-part revision
+        run: python src/tests/verify_bird_source_fidelity.py
+      - name: Verify Bird 2.1.2 common-good source, companion cues, study density and revision
+        run: python src/tests/verify_common_good_source_fidelity.py
+      - name: Verify Colin Bird War 2.1.3 source fidelity, exact Companions, optional depth and six-part revision
+        run: python src/tests/verify_war_source_fidelity.py
+      - name: Verify Wolff 2.1.4 full source, exact Companions and six-part revision
+        run: python src/tests/verify_wolff_source_fidelity.py
+      - name: Verify Wolff 2.1.5 Oxford liberty, qualifications, contextual depth and six-part revision
+        run: python src/tests/verify_liberty_source_fidelity.py
+      - name: Verify Arabic 2.1.7 source structure, reader density and six-part revision
+        run: python src/tests/verify_arabic_politics_source_fidelity.py
+      - name: Verify Arabic Plato 2.1.8 source argument, RTL reading density and six-part revision
+        run: python src/tests/verify_arabic_plato_source_fidelity.py
+      - name: Verify Arabic metaphysics 2.2.1 source coverage, reading density, citations and revision
+        run: python src/tests/verify_arabic_metaphysics_source_fidelity.py
+      - name: Verify Arabic metaphysics 2.2.2 original source units and complete study architecture
+        run: python src/tests/verify_arabic_metaphysics_division_source_fidelity.py
+      - name: Verify Arabic metaphysics 2.2.3 complete Islamic and Christian source units and editorial limits
+        run: python src/tests/verify_arabic_metaphysics_islam_christian_source_fidelity.py
+      - name: Verify English 2.2.5 critical introduction, 21-page source map, companion cues and revision
+        run: python src/tests/verify_metaphysics_structure_2_2_5.py
+      - name: Verify English 2.2.6 Hugh Lawson-Tancred full 42-page source map, credit, and revision
+        run: python src/tests/verify_metaphysics_substance_2_2_6.py
+      - name: Verify 3.1.1 Kellenberger complete Philosophy and Religion introduction and original archive
+        run: python src/tests/verify_philosophy_religion_3_1_1_kellenberger.py
+      - name: Verify 3.1.2 Yandell excerpt, editorial layers and attribution
+        run: python src/tests/verify_philosophy_religion_3_1_2_yandell.py
+      - name: Verify 3.1.3 Kenny source, distinctions, companion anchors and pinned archive
+        run: python src/tests/verify_kenny_3_1_3_source_fidelity.py
+      - name: Verify both Arabic 3.1.4 and 3.1.5 authored density, attribution, RTL and Companions
+        run: python src/tests/verify_philosophy_religion_3_1_4_3_1_5_arabic.py
+      - name: Verify Ajami 3.1.4 exact published archive and diverse source-led Arabic teaching aids
+        run: python src/tests/verify_ajami_3_1_4_pedagogical_aids.py
+      - name: Verify Umayri 3.1.5 archive, semantic aids and Arabic density
+        run: python src/tests/verify_umayri_3_1_5_pedagogical_aids.py
+      - name: Validate book structure and chapter navigation
+        run: python src/tests/validate_structure.py
+      - name: Validate accessible contents and print controls
+        run: python src/tests/verify_sidebar.py
+      - name: Verify dual reading progress, saved place, and print exclusion
+        run: python src/tests/verify_reading_progress.py
+      - name: Verify full-book search, tabs, and mobile layout contracts
+        run: python src/tests/verify_reader_search_tabs.py
+      - name: Verify persistent on-screen revision visibility
+        run: python src/tests/verify_revision_visibility.py
+      - name: Verify complete search indexing and revision preference safety
+        run: python src/tests/verify_search_integrity.py
+      - name: Verify mobile interaction and accessibility contract
+        run: python src/tests/verify_mobile_interaction.py
+      - name: Verify Phase 3 brand, sidebar expansion and obsolete code removal
+        run: python src/tests/verify_visual_polish.py
+      - name: Test offline worker's cache lifecycle
+        run: node src/tests/test_offline_cache.mjs
+      - name: Regression — optional offline assets must not block reader
+        run: node src/tests/test_optional_precache.mjs
+
+
+  browser:
+    name: Playwright reading, print and PWA regressions
+    needs: verify
+    # Pinned because Playwright 1.57 does not support Ubuntu 26.04.
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - name: Check out candidate for real browser verification
+        uses: actions/checkout@v4
+        with:
+          ref: editorial/3-1-5-umayri-source-redevelopment-2026-11-28
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Build candidate for browser tests
+        run: python src/build.py
+      - name: Install reproducible Playwright and PDF inspection tools
+        run: python -m pip install playwright==1.57.0 pypdf==5.9.0
+      - name: Install pinned Chromium browser
+        # GitHub's Ubuntu 24.04 hosted image includes Chromium's runtime libs.
+        run: python -m playwright install chromium
+      - name: Test full-book search, responsive layout, preferences, keyboard and PDF
+        run: python src/tests/browser_quality.py
+      - name: Test Reading Companion interaction, RTL, accessibility and print cloning
+        run: python src/tests/browser_reading_companions.py
+      - name: Verify chapter-color wheel, semantic colors, typography and contrast
+        run: python src/tests/browser_design_tokens.py
+      - name: Verify Kenny 3.1.3 real mobile table layout and A4 pedagogy
+        run: python src/tests/browser_kenny_3_1_3_aids.py
+      - name: Verify Ajami 3.1.4 RTL semantic comparisons, mobile layout and real A4 PDF
+        run: python src/tests/browser_ajami_3_1_4_aids.py
+      - name: Inspect reconstructed 3.4 dossiers with Chromium and a real A4 PDF
+        run: python src/tests/browser_3_4_house_style.py
+      - name: Batch 2 permalink and altered-edition checkpoint browser coverage
+        run: python src/tests/browser_batch2_continuity.py
+      - name: Batch D — altered-edition insertion, reordering and legacy checkpoint continuity
+        run: python src/tests/browser_batch4_edition_migration.py
+      - name: Test real offline installation, edition upgrades and failed updates
+        run: python src/tests/browser_pwa_updates.py
+      - name: Upload screenshots and sampled print PDFs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: hikam-browser-regressions-${{ github.run_id }}
+          path: test-artifacts/
+          if-no-files-found: ignore
+          retention-days: 7
+
+  commit_tested_outputs:
+    name: Commit only the generated assets after both full suites pass
+    needs: [verify, browser]
+    if: ${{ success() }}
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Check out exact candidate branch
+        uses: actions/checkout@v4
+        with:
+          ref: editorial/3-1-5-umayri-source-redevelopment-2026-11-28
+          persist-credentials: true
+      - name: Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Rebuild exact publication files
+        run: |
+          python src/build.py
+          python src/build.py --check
+      - name: Commit generated outputs to fork only
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html src/philosophy_study_notes.html service-worker.js
+          if ! git diff --cached --quiet; then
+            git commit -m "Build verified 3.1.5 Hikam reader outputs [skip ci]"
+            git push origin HEAD:refs/heads/editorial/3-1-5-umayri-source-redevelopment-2026-11-28
+          fi
+          python src/build.py --check
