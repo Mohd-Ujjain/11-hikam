@@ -1,0 +1,32 @@
+name: Temporary canonical build for Umayri 3.1.5 upstream review
+on:
+  push:
+    branches: [editorial/3-1-5-umayri-source-redevelopment-2026-11-28]
+permissions:
+  contents: write
+jobs:
+  rebuild:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: editorial/3-1-5-umayri-source-redevelopment-2026-11-28
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Rebuild from canonical source
+        run: |
+          python src/build.py
+          python src/build.py --check
+          python src/tests/verify_umayri_3_1_5_pedagogical_aids.py
+      - name: Commit exact generated assets only on review branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html src/philosophy_study_notes.html service-worker.js
+          if ! git diff --cached --quiet; then
+            git commit -m "Canonical rebuilt 3.1.5 publication artifacts [skip ci]"
+            git push origin HEAD:refs/heads/editorial/3-1-5-umayri-source-redevelopment-2026-11-28
+          fi
+          python src/build.py --check
