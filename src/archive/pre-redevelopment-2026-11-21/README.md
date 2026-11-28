@@ -215,3 +215,14 @@ This is a read-only historical artifact, not an alternate chapter included in th
 - **Primary reading:** Sultan ibn Abd al-Rahman al-Umayri, `الاعتراضات الإجمالية التي اعترض بها الناقدون على الأديان`; the assigned DOCX/PDF and three Total Recall guides remain private editorial references, outside the repository.
 
 This archive is not a build input. Never rewrite it to match later revisions.
+
+## Dossier 3.2.1 — immediately preceding Sami Ameri edition (28 November 2026)
+
+- **Full, unchanged pre-edit dossier:** [`dossier-3.2.1-before-2026-11-28-pedagogical-rework.html`](dossier-3.2.1-before-2026-11-28-pedagogical-rework.html).
+- **Exact authoritative baseline:** `MohdUjjain/11-hikam` `main` at commit `70229823786cfcfc56c140ff1d7402b80772700c`; this predecessor was archived in the secondary testing fork **before** any editorial changes.
+- **Pinned immutable Git blob:** `8f1a4f6ee18ee5464104c73d35a80cb3b1f543ff`.
+- **Preserved:** Arabic frontmatter, the author's complete current prose, five generic two-column main-body tables, hierarchy, pedagogical aids and quotations, five adjacent Source Depth disclosures, navigation, all six revision sections and five examination-question categories.
+- **Earlier original remains independent:** `dossier-3.2.1.html` with Git blob `a26bbc4b7bea93e810f1cc43875bf64087a9feb3` is not modified.
+- **Primary source:** Sami Ameri, *براهين وجود الله في النفس والعقل والعلم*, assigned extract pp. 165–185. Private Word and matching scan, plus three secondary Total Recall guides, remain outside this public repository.
+
+This archived edition is read-only, not a reader build input and must never be altered to track later releases.
