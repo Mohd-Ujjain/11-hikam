@@ -1,0 +1,36 @@
+name: Temporary canonical upstream review build for 3.2.2
+on:
+  push:
+    branches: [editorial/3-2-2-amiri-moral-source-pedagogy-2026-11-28]
+permissions:
+  contents: write
+jobs:
+  rebuild:
+    name: Build exact 3.2.2 publication and preserve source checks
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: editorial/3-2-2-amiri-moral-source-pedagogy-2026-11-28
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Rebuild canonical reader and verify new source, archive and exact Companions
+        run: |
+          python src/build.py
+          python src/build.py --check
+          python src/tests/verify_hikam_3_2_1_through_3_2_6.py
+          python src/tests/verify_amiri_3_2_2_source_led_aids.py
+          python src/tests/verify_reading_companions.py
+          python src/tests/verify_publication.py
+      - name: Commit only generated artifacts to upstream review branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html src/philosophy_study_notes.html service-worker.js
+          if ! git diff --cached --quiet; then
+            git commit -m "Build exactly source-verified 3.2.2 reader assets [skip ci]"
+            git push origin HEAD:refs/heads/editorial/3-2-2-amiri-moral-source-pedagogy-2026-11-28
+          fi
+          python src/build.py --check
