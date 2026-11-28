@@ -39,8 +39,6 @@ The immediately preceding version relied on **five two-column tables**, most of 
 - The candidate still needs exact PDF-page verification of quotations/source references, a complete source-to-body account of the six/seven/four/nine/five/five objection subseries, Arabic word-budget measurement, Companion-anchor checks, existing source-fidelity tests, canonical build, browser/RTL/accessibility/A4/PWA tests, generated asset transfer and upstream checks.
 - **Do not merge or deploy** before full fork verification and byte-for-byte transfer of the generated outputs.
 
-## Source locations (private editorial reference)
+## Private-source handling
 
-- Drive source DOCX: `1ycKk--rr9vLBr1MLZTdp7-fOrpaN-X2e`
-- Drive matching PDF: `1Qr-rNLi6-0rJw4oFHLKGJKxx7r0gd7EA`
-- Three recall guides: `1z1jzmjZAsp24empkSEW_O2mAYVXPoU-iVBT76GX7ZV4`, `1fv4kHaVlxm1xLUOsFupyZ2UU-KGnfEhO1HuRMDAbVsM`, `1n5KudqXy8-NnEHh1GFUR-cA1GT9Mv7EcDNhe46VA-B8`.
+The assigned source DOCX, matching PDF and all three Total Recall documents remain in the user's private Google Drive hierarchy. Their Drive identifiers and private document links are deliberately omitted from the public repository. The primary reading, rather than the study guides, controls all source assertions.
