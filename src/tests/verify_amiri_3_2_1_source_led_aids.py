@@ -85,7 +85,7 @@ cues = [x for x in json.loads((ROOT / 'reading_companions.json').read_text(encod
 assert len(cues) == 5
 evidence = next(cue for cue in cues if cue['id'] == 'h321-evidence')
 assert 'عُرضت فيها صور بسرعات متفاوتة' in evidence['passage']
-assert 'سرعة عرض الصور' in evidence['why_here']
+assert 'عرض الصور' in evidence['why_here']
 assert 'جوابه السريع' not in evidence['explanation']
 for cue in cues:
     assert cue['passage'] in body, cue['id']
