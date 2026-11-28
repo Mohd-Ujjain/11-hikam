@@ -115,3 +115,16 @@ python src/tests/browser_ujairi_3_2_4_aids.py
 ```
 
 The static checks were observed locally. Local Chromium could not launch because the installed wrapper's executable was absent; the standard browser download returned HTTP 403. No local rendering result is claimed. The chapter-only browser check runs on the testing fork and covers 390/1366 px Arabic reading, table containment, keyboard Companion behavior, native no-JS disclosures, real A4 PDF content/geometry and restoration of the reader. Final fork run, artifact, exact-blob transfer, merge and Pages evidence belong to the release record; none is inferred from a source or word-count pass.
+
+
+## Observed targeted release evidence
+
+The final [chapter-only fork run 46138724712](https://github.com/Mohd-Ujjain/11-hikam/actions/runs/46138724712) completed successfully: the static/isolation job, real Chromium job and conditional canonical-output commit all passed. Tested candidate: `1ff5481d93bae755e571d7be9df2ea5ab8885b0b`. The runner then committed the generated publication files as `723d3e1a6918261f6d880f8f13b053a69fdccc61`; all twelve intended release-file blobs matched the local verified edition before this documentation-only completion note.
+
+The actual PDF contains **15 A4 pages**. All six complete revision headings were extracted exactly once and in order on physical pages **11, 11, 12, 13, 14, 15**, independently using the CI-pinned pypdf 5.9.0. Amiri regular/bold/italic and Noto Sans Arabic regular/bold are embedded. The print snapshot records **zero horizontal overflow**, minimum footer clearance **31.265625 px**, chronology-date clearances **20 / 20 / 20 px**, two title text rectangles with **no stamp collision**, and no optional Source Depth or Companion cues in print. Keyboard access, focus return, 390/1366 px reading views and native disclosures without JavaScript passed.
+
+The corrected desktop title and printed cover were visually inspected. All remaining fourteen PDF pages were pixel-identical to the already fully inspected preceding intended-font render; the mobile comparison, hierarchy and chronology screenshots were also identical. The Qur'anic brackets and all dates render clearly. The artifact ZIP (ID `15261020821`) was downloaded and verified against SHA-256 `e55b054c827f64e9310338e8f5854e9dab4e0e9afaa97e08a6242dcca7877d5d`.
+
+Earlier bounded attempts exposed test assumptions about shared interface font roles, print-event restoration and Arabic PDF extraction, plus the two local layout collisions documented above. The fork-only runner installs the reader's intended Arabic fonts locally while remote font requests remain blocked. Its pinned pypdf 5.9.0 plain extractor recovers complete Amiri headings; its layout mode introduces internal gaps, so the test does not reconstruct words by deleting spaces. Both 5.9.0 and local 6.21.4 passed the final exact-heading helper and rejected altered headings and wrong order. These corrections changed no argument or shared reader implementation.
+
+The full whole-book suite was not initiated or rerun. This completion note changes documentation only; no further rendering cycle is needed for it. Exact transfer, upstream merge and Pages deployment are recorded separately in the release pull request.
