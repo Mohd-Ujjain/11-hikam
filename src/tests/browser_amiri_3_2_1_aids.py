@@ -29,7 +29,7 @@ def screen(browser, url):
             assert table.evaluate('(e) => getComputedStyle(e).direction') == 'rtl'
         for selector, count in (
             ('.hierarchy',4),('.box.tip',1),('.box.mistake',1),
-            ('.box.memory',1),('.analogy',1),('.concept-rel',2),
+            ('.box.memory',1),('.box.definition',1),('.analogy',1),('.concept-rel',2),
         ):
             assert chap.locator(':scope > .chapter-body ' + selector).count() == count, (selector,width)
         assert chap.locator(':scope > .end-block .examq-cat').count() == 5
