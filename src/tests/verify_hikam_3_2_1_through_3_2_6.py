@@ -19,7 +19,7 @@ SPEC = {
     5: (48, "هشام عزمي", {*range(14, 36), *range(91, 98)}, "2b03c83ef8fa35078655c1dee6bec9708c1a37f3", ("لا يضم الدرس ص 36–90", "القابلية والتأزم", "مرجّحات خارجية")),
     6: (68, "محمد باقر السيستاني", {*range(5, 57), *range(59, 71)}, "5b46e8fb8930fd6fe37145e0843db114e43bbb78", ("تفسير المجموع", "إنضاج الموقف", "لمجرد التباسها")),
 }
-AIDS = set("box checkpoint comparison tbl-wrap section-objective golden-quote hierarchy analogy concept-rel".split())
+AIDS = set("box checkpoint comparison tbl-wrap section-objective golden-quote hierarchy analogy concept-rel historical-timeline".split())
 DEPTH = re.compile(r'<details class="hikam-source-depth-inline"[^>]*>[\s\S]*?</details>')
 
 class Words(HTMLParser):
@@ -62,7 +62,12 @@ for n, (hue, author, pages, pinned, anchors) in SPEC.items():
     assert 650 <= p <= 850 and 850 <= a <= 1150 and 1500 <= p+a <= 2000, (key, w.count)
     cues = [c for c in CUES if c["chapter"] == key]
     records = list(DEPTH.finditer(body))
-    assert len(cues) == len(records) == (6 if n == 6 else 5)
+    if n == 4:
+        # Contextual cues and optional source expansions have distinct jobs.
+        # The source-led second pass selects them independently, not in pairs.
+        assert len(cues) == 7 and len(records) == 11
+    else:
+        assert len(cues) == len(records) == (6 if n == 6 else 5)
     for c in cues:
         assert all(c.get(k) for k in ("simple", "why_here", "remember", "sourceDepthId"))
         assert c["source"]["author"] == author and set(c["source"]["printedPages"]) <= pages
