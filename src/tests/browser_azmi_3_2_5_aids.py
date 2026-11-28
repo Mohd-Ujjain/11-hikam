@@ -15,17 +15,22 @@ ID = 'ch3-2-5'
 SRC = Path(__file__).resolve().parents[1]
 CUES = [c for c in json.loads((SRC / 'reading_companions.json').read_text(encoding='utf-8'))['companions'] if c['chapter'] == ID]
 TITLE_STAMP_AUDIT = r'''root => {
-  const title=root.querySelector('.chapter-title'), stamp=root.querySelector('.chapter-stamp');
-  const walker=document.createTreeWalker(title,NodeFilter.SHOW_TEXT), rects=[];
-  while(walker.nextNode()) {
-    if(!walker.currentNode.textContent.trim()) continue;
-    const range=document.createRange(); range.selectNodeContents(walker.currentNode);
-    for(const r of range.getClientRects()) if(r.width && r.height)
-      rects.push({left:r.left,right:r.right,top:r.top,bottom:r.bottom});
+  const stamp=root.querySelector('.chapter-stamp'), rects=[];
+  for(const selector of ['.chapter-title','.chapter-source']) {
+    const walker=document.createTreeWalker(root.querySelector(selector),NodeFilter.SHOW_TEXT);
+    while(walker.nextNode()) {
+      if(!walker.currentNode.textContent.trim()) continue;
+      const range=document.createRange(); range.selectNodeContents(walker.currentNode);
+      for(const r of range.getClientRects()) if(r.width && r.height)
+        rects.push({selector,left:r.left,right:r.right,top:r.top,bottom:r.bottom});
+    }
   }
   const s=stamp.getBoundingClientRect(), style=getComputedStyle(stamp);
   const visible=style.display!=='none' && style.visibility!=='hidden' && s.width>0 && s.height>0;
-  return {stampVisible:visible,titleTextRects:rects.length,overlaps:visible ? rects.filter(r=>
+  return {stampVisible:visible,
+    titleTextRects:rects.filter(r=>r.selector==='.chapter-title').length,
+    sourceTextRects:rects.filter(r=>r.selector==='.chapter-source').length,
+    overlaps:visible ? rects.filter(r=>
     Math.min(r.right,s.right)-Math.max(r.left,s.left)>1 &&
     Math.min(r.bottom,s.bottom)-Math.max(r.top,s.top)>1) : []};
 }'''
@@ -40,7 +45,7 @@ def screen(browser, url):
         assert chapter.get_attribute('style') == '--hue:48;'
         assert chapter.evaluate('(e)=>getComputedStyle(e).direction') == 'rtl'
         title_stamp = chapter.evaluate(TITLE_STAMP_AUDIT)
-        assert title_stamp['titleTextRects'] and not title_stamp['overlaps'], ('Title text must clear the visible stamp', width, title_stamp)
+        assert title_stamp['titleTextRects'] and title_stamp['sourceTextRects'] and not title_stamp['overlaps'], ('Title and citation text must clear the visible stamp', width, title_stamp)
         # Match the actual shared component contracts. Narrative, table cells,
         # hierarchy values, revision content and local source prose inherit the
         # Arabic stacks. Existing chrome has explicit sans/display stacks; a
@@ -222,7 +227,7 @@ def print_a4(browser, url):
     (ARTIFACTS / 'azmi-325-print-audit.json').write_text(json.dumps(audit, indent=2), encoding='utf-8')
     count = audit['count']
     assert count >= 3
-    assert audit['titleStamp']['titleTextRects'] and not audit['titleStamp']['overlaps'], ('Printed title text must clear the visible stamp', audit['titleStamp'])
+    assert audit['titleStamp']['titleTextRects'] and audit['titleStamp']['sourceTextRects'] and not audit['titleStamp']['overlaps'], ('Printed title and citation text must clear the visible stamp', audit['titleStamp'])
     geometry = audit['geometry']
     assert all(g['overflow'] <= 3 and g['clearance'] >= -1 for g in geometry), geometry
     assert any(g['dark'] for g in geometry) and any(not g['dark'] for g in geometry)
