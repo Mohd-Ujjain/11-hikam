@@ -79,6 +79,8 @@ jobs:
         run: python src/tests/verify_hikam_3_2_1_through_3_2_6.py
       - name: Verify the new Samy Ameri 3.2.1 source-led argument and study-aid regression
         run: python src/tests/verify_amiri_3_2_1_source_led_aids.py
+      - name: Verify source-defined 3.2.2 moral distinctions, five exact Companions and immutable archive
+        run: python src/tests/verify_amiri_3_2_2_source_led_aids.py
       - name: Validate book structure and chapter navigation
         run: python src/tests/validate_structure.py
       - name: Validate accessible contents and print controls
@@ -131,6 +133,8 @@ jobs:
         run: python src/tests/browser_ajami_3_1_4_aids.py
       - name: Verify Samy Ameri 3.2.1 Arabic RTL semantic aids and real A4 PDF
         run: python src/tests/browser_amiri_3_2_1_aids.py
+      - name: Verify Samy Ameri 3.2.2 accessible Arabic comparison axes and real A4 print
+        run: python src/tests/browser_amiri_3_2_2_aids.py
       - name: Inspect reconstructed 3.4 dossiers with Chromium and a real A4 PDF
         run: python src/tests/browser_3_4_house_style.py
       - name: Batch 2 permalink and altered-edition checkpoint browser coverage
