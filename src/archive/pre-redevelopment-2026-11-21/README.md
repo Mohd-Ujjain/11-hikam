@@ -236,3 +236,12 @@ This archived edition is read-only, not a reader build input and must never be a
 - **Preservation scope:** Arabic title and author, current source-led explanatory prose, all five original generic main-body tables and other aids, five context-adjacent Source Depth disclosures, chapter navigation, all six revision sections and five examination-question categories.
 - **Assigned source:** سامي عامري، *براهين وجود الله في النفس والعقل والعلم*, prepared Word selection and paired PDF scan pp. 221–262. Three secondary Total Recall guides and user writing samples remain private editorial inputs, outside this archive.
 - **This archive is historical read-only HTML**, never a build input or a target for future retroactive polishing.
+
+## Dossier 3.2.3 — immediately preceding Arabic fine-tuning edition (28 November 2026)
+
+- **Complete predecessor:** [`dossier-3.2.3-before-2026-11-28-pedagogical-rework.html`](dossier-3.2.3-before-2026-11-28-pedagogical-rework.html), saved **before any changes** to the chapter.
+- **Authoritative baseline:** `MohdUjjain/11-hikam` `main` at `83d46f15c935fac96e5a659584bd78ce1b57c156` (verified 3.2.2 merge).
+- **Read-only complete Git blob:** `5b7dfde49d5a2c08518f37c73b6ff573a2f24d26`. Contains original frontmatter, every main paragraph and all five originally repetitive comparison tables, five source-adjacent Source Depth disclosures, study aids, chapter links, all six revision sections and five examination categories.
+- **Independent earlier historical original:** `dossier-3.2.3.html`, Git blob `fcedc9256c33f26c8034fc27fe3799063dec84d7`, is preserved separately and never replaced.
+- **Assigned primary reading:** سامي عامري، *براهين وجود الله في النفس والعقل والعلم*، `برهان الضبط الدقيق`, selected title leaf p. 441 and pp. 443–461 only. The original document and matched scan remain in private Google Drive, outside the public repository; three Total Recall guides are secondary educational references.
+- **Usage:** the predecessor archive is a historical preservation artifact, not a build input; do not update it after this redevelopment.
