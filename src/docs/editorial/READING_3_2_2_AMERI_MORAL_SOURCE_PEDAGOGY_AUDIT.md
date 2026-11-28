@@ -1,0 +1,44 @@
+# Reading 3.2.2 — Source-led moral argument, real teaching aids and archive audit
+
+**Edition prepared 28 November 2026.** Author: **سامي عامري**; assigned section «الفصل الثاني: البرهان الأخلاقي» in *براهين وجود الله في النفس والعقل والعلم*, prepared Word reading and paired scanned PDF with **printed pages 221–262**. The Word text governs the overlapping content. Its ending contains the fourth reply concerning Sam Harris and well-being; the scanned p. 262 additionally contains the completion of Michael Ruse's example and the **opening**, not the completion, of the fifth objection concerning the biological origin of morality. Three independent Total Recall guides were read as secondary study references, not primary evidence or editorial authority. The user's language-profile and Arabic samples control *voice only*.
+
+**Scope:** `section#ch3-2-2` in canonical `src/chapters/subtopic-3-2.html`; original Companion manifest unchanged because all five original prose anchors are preserved. No edits to 3.2.1, 3.2.3, 3.1.6, other chapters, shared CSS/JS, source texts or architecture.
+
+## Primary source traceability register
+
+| Printed source units | Argumentative function | Visible home / optional detail | Source-integrity decision |
+| --- | --- | --- | --- |
+| **221–225**, original thesis, two rival worldview expectations, five-stage elaborated formulation, three-stage concise formulation and difference from Kant | Core proof and framing | §1 and the two distinct argument hierarchies | The five stages explicitly present; Kant's own argument remains the separate justice/supreme-good route, not retroactively assigned this formulation |
+| **225–227**, personal force of conscience, Kai Nielsen, beauty and mercy of divine attributes, test of prophecy through moral agreement | Ethical-psychological force and two source applications | §1 main prose, concept aid, source-adjacent Companion/Depth | Restores Nielsen and retains moral perfection and prophetic sign already visible in the exact anchored passage |
+| **228–230**, William Ritchie Sorley and `الموضوعية` contrasted with `الإطلاقية` | Conceptual axis: truth/independence versus unconditional invariability | §2, real three-column same-axes comparison and misconception aid | Explicitly restores the distinction missing in predecessor; two terms not treated as mutually exclusive rivals |
+| **230–235**, practical normativity, censure, relative-taste view and Dawkins questioned about assigning praise | Evidence for mind-independent norm | §2 connected prose and immediate §2 source detail | Retains objective judgment vs preference, self-interest, intersubjective agreement and blame under disagreement |
+| **235–241**, Rosenberg's ethical nihilism (not merely uncertainty), Russell, Peter Cave and reported tension between conduct and materialist explanation | Distinguish source admissions, inference, and consequences | §3 prose, witness-function hierarchy, Companion and local Depth | Rosenberg's three consequences distinguished; authorial inference attributed to Ameri, not to atheists as conversions |
+| **241–249**, Mackie, Sartre, Joel Marks, Julian Baggini, Michael Ruse, Dawkins; Collins and Philip Vander Elst recount effects of reading C. S. Lewis | Different statuses of philosophical testimony and conversion narratives | §3 prose and witness/function hierarchy, source record | Mackie says objective values strengthen the case for theism, not that he became a theist; Ameri's conclusion from Dawkins is clearly **Ameri's** |
+| **249–253**, Frank Turek and Nathaniel, altruism/survival and dispute over ontological ground | Shift from *how we acquire/describe a moral judgment* to *why it is binding* | §4 dialogue prose, definition of `الأنطولوجيا` vs `الإبستيمولوجيا`, existing Companion and Depth | The dialogue is not invented or independently authenticated; it is the conversation as presented by the assigned author |
+| **253–258**, objections 1–3: the good atheist; moral intuition without revelation; cross-cultural moral differences | Objection/reply architecture | §4 with three-column genuine objection/diagnosis/source reply table, short definition and revised questions | Preserves author's categorical claim that an atheist can *do* good but cannot, under the described materialist worldview, be *good* in the relevant grounding sense; does not soften it into the model's position |
+| **258–261**, objection 4: Harris and naturalistic well-being; Carroll's three objections, consequentialism versus duty ethics, is/ought, clashes of interests and Ruse's termite counterfactual | Different tests of the welfare proposal | §5 prose, four-part argument hierarchy, existing concept map, optional welfare Depth | Science's ability to describe consequences is kept separate from moral obligation; conflicting interests and evolution treated as Ameri's supplied objections, not independent research |
+| **262 scan alone**, end of termite example and opening of objection 5 | Hard source boundary | §5 visible boundary checkpoint plus *separate*, grouped p. 262 Source Depth record | First three reported critiques of biological grounding preserved; no invented sequel or claim to have covered subsequent pages |
+
+## Pedagogical operations and nonredundancy
+
+The immediately preceding edition used **five almost identical `وجه النظر / بيانه في القراءة` two-column tables**. The revised teaching components now do distinct jobs:
+
+1. **Five-stage argument hierarchy**: exact inferential sequence of source's elaborate moral proof, plus retrieval key contrasting the concise proof with Kant
+2. **Genuine common-axes comparison**: objectivity versus absoluteness, tested against independence of value, stability across circumstances and the author's lying example; misconception aid protects the technical distinction
+3. **Witness-status hierarchy**: distinguishes explicit nihilist claims, statements on moral grounding, Ameri's inference from claimed tension, and autobiographical conversion experiences; local exam attribution tip
+4. **Genuine objection-response matrix** with three named columns and accessible row/column headers for the first three objections; a definition separately distinguishes ontological and epistemological questions
+5. **Four-theme welfare hierarchy**, `is/ought` and biological-boundary concept relationship and a stop-point checkpoint; retains original high-yield exercise and original final checkpoint without turning the material into another broad generic table
+
+Earlier concept, three-stage argument overview, important author quote, analogy, all five context-first Companions and their exact original passage text, original five paragraph-adjacent disclosures, six revision headings and the five examination-question classes retained. The fifth Source Depth now groups **two distinct source records** (welfare pp. 259–261; new biological opening p. 262) in a single native disclosure directly after the relevant prose paragraph. It is screen-only and excluded from print measurements.
+
+**Word pools after review:** **778 explanatory prose + 1,128 study aids = 1,906 immediately visible words** (frontmatter, all six revision sections and optional Companion/Depth excluded).
+
+## Preservation and audit
+
+- Older historic original remains at `src/archive/pre-redevelopment-2026-11-21/dossier-3.2.2.html`, pinned as Git blob `05249cfd2c67cac97204d426a82f719a69ba20b7`.
+- Immediately preceding complete edition preserved before edits in `src/archive/pre-redevelopment-2026-11-21/dossier-3.2.2-before-2026-11-28-pedagogical-rework.html`, immutable Git blob **`79cd9e6cd383eeb33c238bc5a9c843d9996e95b9`**. Re-read-back verified identical on fork.
+- PDF-source qualification: the paired scanned PDF's available machine-text extraction was reviewed, especially the p. 262 opening. Its OCR has evident Arabic recognition noise and was used only to confirm the explicit limited content on p. 262; no fresh full manual page-by-page image comparison of all 42 scanned leaves was performed.
+- Canonical publication must build through `python src/build.py`, not by manually editing generated `index.html`, `src/philosophy_study_notes.html`, or `service-worker.js`.
+- Required release checks: pinned archive, five unique Companion anchors, six revision components, all five exam categories, hue 348°, semantic visual palette, word pools and source distinctions; independent browser A4/mobile RTL and table headings; full search/keyboard/print/offline PWA regression suites; fork-first Git blob match, independent upstream checks, clean PR merge and Pages verification.
+
+**Intellectual authority:** This is a faithful presentation of the assigned author's position, not an independent philosophical critique. Statements reported from other writers and the author's evaluations are consistently separated.
