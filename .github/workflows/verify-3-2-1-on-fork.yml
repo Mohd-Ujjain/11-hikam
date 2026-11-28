@@ -8,6 +8,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: amiri-321-review-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   verify:
     name: Check generated site and installable assets
