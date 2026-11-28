@@ -1,0 +1,82 @@
+name: Targeted 3.2.3 fine-tuning verification - no whole-book suite
+on:
+  push:
+    branches: [editorial/3-2-3-amiri-fine-tuning-source-2026-11-28]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: targeted-amiri-323-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  chapter_static:
+    name: Canonical build, source fidelity, archive and exact Companions
+    runs-on: ubuntu-24.04
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Canonical build and authored revision checks
+        run: |
+          python -m py_compile src/tests/verify_amiri_3_2_3_source_led_aids.py src/tests/browser_amiri_3_2_3_aids.py
+          python src/build.py
+          python src/build.py --check
+          python src/tests/verify_amiri_3_2_3_source_led_aids.py
+          python src/tests/verify_hikam_3_2_1_through_3_2_6.py
+          python src/tests/verify_reading_companions.py
+          python src/tests/verify_publication.py
+          python src/tests/validate_structure.py
+
+  chapter_browser:
+    name: Only 3.2.3 real mobile/RTL and A4 printing
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install pinned browser and PDF reader
+        run: |
+          python -m pip install playwright==1.57.0 pypdf==5.9.0
+          python -m playwright install chromium
+      - name: Canonically build and test 3.2.3 alone
+        run: |
+          python src/build.py
+          python src/tests/browser_amiri_3_2_3_aids.py
+      - name: Preserve scoped screenshots and A4 PDF
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: amiri-323-targeted-${{ github.run_id }}
+          path: test-artifacts/
+          if-no-files-found: ignore
+          retention-days: 7
+
+  commit_tested_outputs:
+    name: Build and commit only generated assets after both targeted checks pass
+    needs: [chapter_static, chapter_browser]
+    if: ${{ success() }}
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: editorial/3-2-3-amiri-fine-tuning-source-2026-11-28
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Assemble, check and commit exact candidate assets to fork
+        run: |
+          python src/build.py
+          python src/build.py --check
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html src/philosophy_study_notes.html service-worker.js
+          if ! git diff --cached --quiet; then
+            git commit -m "Build targeted-verified 3.2.3 reader files [skip ci]"
+            git push origin HEAD:refs/heads/editorial/3-2-3-amiri-fine-tuning-source-2026-11-28
+          fi
+          python src/build.py --check
