@@ -226,3 +226,13 @@ This archive is not a build input. Never rewrite it to match later revisions.
 - **Primary source:** Sami Ameri, *براهين وجود الله في النفس والعقل والعلم*, assigned extract pp. 165–185. Private Word and matching scan, plus three secondary Total Recall guides, remain outside this public repository.
 
 This archived edition is read-only, not a reader build input and must never be altered to track later releases.
+
+## Dossier 3.2.2 — immediately preceding Arabic moral-argument edition (28 November 2026)
+
+- **Preserved complete predecessor:** [`dossier-3.2.2-before-2026-11-28-pedagogical-rework.html`](dossier-3.2.2-before-2026-11-28-pedagogical-rework.html).
+- **Baseline:** authoritative `MohdUjjain/11-hikam` `main` at `126a9342cd1867716c2477ac7f139f978c3776a6` (after the verified 3.2.1 release).
+- **Pinned complete Git blob:** `79cd9e6cd383eeb33c238bc5a9c843d9996e95b9`; content and full six-part revision were read back byte-for-byte on the testing fork before any replacement.
+- **Earlier independent original:** `dossier-3.2.2.html`, pinned original `05249cfd2c67cac97204d426a82f719a69ba20b7`, is not modified.
+- **Preservation scope:** Arabic title and author, current source-led explanatory prose, all five original generic main-body tables and other aids, five context-adjacent Source Depth disclosures, chapter navigation, all six revision sections and five examination-question categories.
+- **Assigned source:** سامي عامري، *براهين وجود الله في النفس والعقل والعلم*, prepared Word selection and paired PDF scan pp. 221–262. Three secondary Total Recall guides and user writing samples remain private editorial inputs, outside this archive.
+- **This archive is historical read-only HTML**, never a build input or a target for future retroactive polishing.
