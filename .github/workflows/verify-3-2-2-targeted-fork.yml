@@ -1,0 +1,31 @@
+name: 3.2.2 targeted source and archive audit (fork only)
+on:
+  push:
+    branches: [editorial/3-2-2-amiri-moral-source-pedagogy-2026-11-28]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: amiri-322-targeted-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  targeted:
+    name: Source, anchors, archive, generated assets, RTL structure
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Compile new tests and rebuild canonically
+        run: |
+          python -m py_compile src/tests/verify_amiri_3_2_2_source_led_aids.py src/tests/browser_amiri_3_2_2_aids.py
+          python src/build.py
+          python src/build.py --check
+      - name: Verify full 3.2 batch source and manifest fidelity
+        run: |
+          python src/tests/verify_hikam_3_2_1_through_3_2_6.py
+          python src/tests/verify_amiri_3_2_2_source_led_aids.py
+          python src/tests/verify_reading_companions.py
+          python src/tests/verify_publication.py
+          python src/tests/validate_structure.py
