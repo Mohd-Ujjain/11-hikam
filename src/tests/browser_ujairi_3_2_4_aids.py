@@ -25,11 +25,31 @@ def screen(browser, url):
         assert chapter.get_attribute('lang') == 'ar'
         assert chapter.get_attribute('style') == '--hue:28;'
         assert chapter.evaluate('(e)=>getComputedStyle(e).direction') == 'rtl'
-        bad_fonts = chapter.evaluate(r'''(root) => [...root.querySelectorAll('*')]
-          .filter(e=>[...e.childNodes].some(n=>n.nodeType===3 && /[\u0600-\u06ff]/.test(n.textContent)))
-          .filter(e=>!/Amiri|Arabic/i.test(getComputedStyle(e).fontFamily))
-          .map(e=>({tag:e.tagName,cls:e.className,font:getComputedStyle(e).fontFamily}))''')
-        assert not bad_fonts, (width, bad_fonts)
+        # Match the actual shared component contracts. Narrative, table cells,
+        # hierarchy values, revision content and local source prose inherit the
+        # Arabic stacks. Existing chrome has explicit sans/display stacks; a
+        # chapter-only editorial pass must not redefine those shared selectors.
+        fonts = chapter.evaluate(r'''(root) => {
+          const norm=s=>s.split(',').map(x=>x.trim().replace(/['"]/g,'').toLowerCase()).join(',');
+          const style=getComputedStyle(root);
+          const token=n=>norm(style.getPropertyValue(n));
+          const arabic=[token('--font-arabic'),token('--font-arabic-sans')];
+          const chrome=[
+            ['.box-label .ico','--font-display'],
+            ['.chapter-stamp, .toc-back, .chapter-source, .chapter-endnav .endnav-btn, .hikam-source-depth-mini, .hikam-source-depth-hint, .hikam-source-depth-item h4, .historical-timeline-title, .historical-timeline-date','--font-sans']
+          ];
+          const report={readingNodes:0,chromeNodes:0,failures:[]};
+          for(const e of root.querySelectorAll('*')) {
+            if(![...e.childNodes].some(n=>n.nodeType===3 && /[\u0600-\u06ff]/.test(n.textContent))) continue;
+            const rule=chrome.find(([selector])=>e.closest(selector));
+            const expected=rule ? [token(rule[1])] : arabic;
+            report[rule ? 'chromeNodes' : 'readingNodes']++;
+            const actual=norm(getComputedStyle(e).fontFamily);
+            if(!expected.includes(actual)) report.failures.push({tag:e.tagName,cls:e.className,actual,expected});
+          }
+          return report;
+        }''')
+        assert fonts['readingNodes'] > 25 and not fonts['failures'], (width, fonts)
         tables = chapter.locator(':scope > .chapter-body .tbl-wrap')
         assert tables.count() >= 2
         for i in range(tables.count()):
@@ -104,6 +124,23 @@ def print_a4(browser, url):
     original_ids = page.evaluate('Array.from(document.querySelectorAll("section.chapter")).map(e=>e.id)')
     revision_headings = page.locator('#'+ID+' > .end-block .endh').all_text_contents()
     page.evaluate('''() => {
+      // The application removes generated pages on afterprint. Capture each
+      // completed beforeprint layout after its registered paginator, including
+      // Chromium's actual PDF event, instead of inspecting removed nodes later.
+      window.addEventListener('beforeprint', () => {
+        const pages=[...document.querySelectorAll('#ch3-2-4 > .js-print-page')];
+        window.__ujairiPrintAudit={
+          count:pages.length,
+          depthAndCues:pages.reduce((n,p)=>n+p.querySelectorAll('.hikam-source-depth-inline, .hikam-companion-trigger').length,0),
+          revisionHeadings:pages.reduce((n,p)=>n+p.querySelectorAll('.endh').length,0),
+          geometry:pages.map(e=>{
+            const content=e.querySelector('.js-page-content');
+            const footer=e.querySelector('.js-page-footer').getBoundingClientRect();
+            const bottom=Math.max(content.getBoundingClientRect().top,...[...content.children].map(c=>c.getBoundingClientRect().bottom));
+            return {overflow:content.scrollWidth-content.clientWidth,clearance:footer.top-bottom,dark:e.classList.contains('js-dark')};
+          })
+        };
+      });
       window.__printControl.setFilter(['ch3-2-4']);
       window.__printControl.includeRevision(true);
       window.dispatchEvent(new Event('beforeprint'));
@@ -111,19 +148,15 @@ def print_a4(browser, url):
     page.emulate_media(media='print')
     pdf = page.pdf(print_background=True, prefer_css_page_size=True)
     (ARTIFACTS / 'ujairi-324-creation-a4.pdf').write_bytes(pdf)
-    pages = page.locator('#'+ID+' > .js-print-page')
-    count = pages.count()
+    audit = page.evaluate('window.__ujairiPrintAudit')
+    (ARTIFACTS / 'ujairi-324-print-audit.json').write_text(json.dumps(audit, indent=2), encoding='utf-8')
+    count = audit['count']
     assert count >= 3
-    geometry = pages.evaluate_all('''nodes=>nodes.map(e=>{
-      const content=e.querySelector('.js-page-content');
-      const footer=e.querySelector('.js-page-footer').getBoundingClientRect();
-      const bottom=Math.max(content.getBoundingClientRect().top,...[...content.children].map(c=>c.getBoundingClientRect().bottom));
-      return {overflow:content.scrollWidth-content.clientWidth,clearance:footer.top-bottom,dark:e.classList.contains('js-dark')};
-    })''')
+    geometry = audit['geometry']
     assert all(g['overflow'] <= 3 and g['clearance'] >= -1 for g in geometry), geometry
     assert any(g['dark'] for g in geometry) and any(not g['dark'] for g in geometry)
-    assert pages.locator('.hikam-source-depth-inline, .hikam-companion-trigger').count() == 0
-    assert pages.locator('.endh').count() == 6
+    assert audit['depthAndCues'] == 0
+    assert audit['revisionHeadings'] == 6
     reader = PdfReader(BytesIO(pdf))
     assert len(reader.pages) == count+1, ('A4 must contain the frontmatter and every generated page', len(reader.pages), count)
     assert all(abs(float(p.mediabox.width)-595.28) < 2 and abs(float(p.mediabox.height)-841.89) < 2 for p in reader.pages)
