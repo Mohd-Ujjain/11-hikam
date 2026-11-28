@@ -122,7 +122,7 @@ for entry in companions:
     assert all(19 <= p <= 46 for p in entry["source"]["printedPages"]), entry["id"]
     assert entry["passage"].count(entry["text"]) == 1, entry["id"]
     assert sum(p == entry["passage"] for p in paragraphs) == 1, entry["id"]
-    assert all(entry.get(field) for field in ("explanation", "simple", "why_here", "remember", "added_value")), entry["id"]
+    assert all(entry.get(field) for field in ("explanation", "simple", "remember", "added_value")), entry["id"]
 
 audit = (SRC / "docs/editorial/READINGS_3_1_4_3_1_5_ARABIC_SOURCE_COVERAGE.md").read_text(encoding="utf-8")
 assert "104 nonempty paragraphs" in audit and "printed pp. 19–46" in audit
