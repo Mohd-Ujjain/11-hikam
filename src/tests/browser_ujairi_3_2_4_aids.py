@@ -5,7 +5,6 @@ from __future__ import annotations
 from io import BytesIO
 from pathlib import Path
 import json
-import re
 import unicodedata
 
 from pypdf import PdfReader
@@ -61,6 +60,9 @@ def screen(browser, url):
             assert wrap.evaluate('(e)=>getComputedStyle(e).overflowX') == 'auto'
             assert table.evaluate('(e)=>getComputedStyle(e).direction') == 'rtl'
             assert wrap.evaluate('(e)=>e.getBoundingClientRect().width <= e.closest(".chapter-body").getBoundingClientRect().width+2')
+        timeline_clearances = chapter.locator(':scope > .chapter-body .historical-timeline-event').evaluate_all('''events => events.map(e =>
+          e.getBoundingClientRect().right-e.querySelector('.historical-timeline-date').getBoundingClientRect().right)''')
+        assert timeline_clearances and all(gap >= 12 for gap in timeline_clearances), ('RTL timeline dates must clear their markers', width, timeline_clearances)
         details = chapter.locator(':scope > .chapter-body details.hikam-source-depth-inline')
         assert details.count() > 0
         assert all(details.nth(i).get_attribute('open') is None for i in range(details.count()))
@@ -89,6 +91,7 @@ def screen(browser, url):
             tables.first.screenshot(path=str(ARTIFACTS / 'ujairi-324-comparison-mobile-rtl.png'))
         else:
             chapter.locator('.hierarchy').first.screenshot(path=str(ARTIFACTS / 'ujairi-324-argument-desktop.png'))
+            chapter.locator('.historical-timeline').screenshot(path=str(ARTIFACTS / 'ujairi-324-timeline-rtl.png'))
         no_errors(page, f'3.2.4 RTL {width}px')
         ctx.close()
     print('PASS 3.2.4 mobile/desktop RTL, Arabic fonts, comparable tables and keyboard Companion access', flush=True)
@@ -112,10 +115,51 @@ def no_javascript(browser, url):
     print('PASS 3.2.4 native Source Depth remains accessible without JavaScript', flush=True)
 
 
-def arabic_tokens(text):
-    text = ''.join(c for c in unicodedata.normalize('NFKC', text) if not unicodedata.combining(c) and c != 'ـ')
-    tokens = set(re.findall(r'[\u0621-\u064a]+', text))
-    return tokens | {t[::-1] for t in tokens}
+def normalized_pdf_text(text):
+    text = ''.join(c for c in unicodedata.normalize('NFKC', text)
+                   if not unicodedata.combining(c) and unicodedata.category(c) != 'Cf' and c != 'ـ')
+    return ' '.join(text.split())
+
+
+def pdf_revision_heading_locations(reader, geometry, headings):
+    # Layout extraction preserves the visual glyph sequence. Reverse a visual
+    # Arabic line BEFORE expanding presentation ligatures: reversing NFKC text
+    # would reverse the two letters within lam-alef and corrupt e.g. خلاصة.
+    # Accept either logical or visual storage, but require the complete heading
+    # on one line, exactly once, and in the original revision-section order.
+    lines = []
+    for i, item in enumerate(geometry):
+        if item['dark']:
+            for line_no, line in enumerate(reader.pages[i+1].extract_text(extraction_mode='layout').splitlines()):
+                lines.append((i+2, line_no, {normalized_pdf_text(line), normalized_pdf_text(line[::-1])}))
+    locations = []
+    for heading in headings:
+        matches = [(page_no, line_no) for page_no, line_no, forms in lines if normalized_pdf_text(heading) in forms]
+        assert len(matches) == 1, ('PDF must contain the complete revision heading exactly once', heading, matches)
+        locations.append(matches[0])
+    assert locations == sorted(locations), ('PDF revision headings are out of order', locations)
+    return [{'heading': heading, 'page': page_no, 'line': line_no}
+            for heading, (page_no, line_no) in zip(headings, locations)]
+
+
+def pdf_font_inventory(reader):
+    fonts = {}
+    for page_no, page in enumerate(reader.pages, 1):
+        font_map = page['/Resources'].get('/Font')
+        if not font_map:
+            continue
+        for ref in font_map.get_object().values():
+            font = ref.get_object()
+            variants = [font] + [child.get_object() for child in font.get('/DescendantFonts', [])]
+            descriptors = [item['/FontDescriptor'] for item in variants if item.get('/FontDescriptor')]
+            name = str(font.get('/BaseFont') or next((d.get('/FontName') for d in descriptors if d.get('/FontName')), 'unknown'))
+            embedding = sorted({key for d in descriptors for key in ('/FontFile', '/FontFile2', '/FontFile3') if d.get(key)})
+            if font.get('/Subtype') == '/Type3' and font.get('/CharProcs'):
+                embedding.append('/CharProcs')
+            key = (name, str(font.get('/Subtype')), tuple(embedding))
+            entry = fonts.setdefault(key, {'name': name, 'subtype': key[1], 'embedded': bool(embedding), 'embedding': embedding, 'pages': []})
+            entry['pages'].append(page_no)
+    return list(fonts.values())
 
 
 def print_a4(browser, url):
@@ -133,6 +177,8 @@ def print_a4(browser, url):
           count:pages.length,
           depthAndCues:pages.reduce((n,p)=>n+p.querySelectorAll('.hikam-source-depth-inline, .hikam-companion-trigger').length,0),
           revisionHeadings:pages.reduce((n,p)=>n+p.querySelectorAll('.endh').length,0),
+          timelineDateClearances:pages.flatMap(p=>[...p.querySelectorAll('.historical-timeline-event')].map(e=>
+            e.getBoundingClientRect().right-e.querySelector('.historical-timeline-date').getBoundingClientRect().right)),
           geometry:pages.map(e=>{
             const content=e.querySelector('.js-page-content');
             const footer=e.querySelector('.js-page-footer').getBoundingClientRect();
@@ -157,14 +203,20 @@ def print_a4(browser, url):
     assert any(g['dark'] for g in geometry) and any(not g['dark'] for g in geometry)
     assert audit['depthAndCues'] == 0
     assert audit['revisionHeadings'] == 6
+    assert audit['timelineDateClearances'] and all(gap >= 12 for gap in audit['timelineDateClearances']), ('Printed RTL timeline dates must clear their markers', audit['timelineDateClearances'])
     reader = PdfReader(BytesIO(pdf))
     assert len(reader.pages) == count+1, ('A4 must contain the frontmatter and every generated page', len(reader.pages), count)
     assert all(abs(float(p.mediabox.width)-595.28) < 2 and abs(float(p.mediabox.height)-841.89) < 2 for p in reader.pages)
-    # Check dark revision material actually reached the PDF, including all six headings.
-    revision_text = '\n'.join(reader.pages[i+1].extract_text() or '' for i,g in enumerate(geometry) if g['dark'])
-    tokens = arabic_tokens(revision_text)
-    for heading in revision_headings:
-        assert all(t in tokens or t[::-1] in tokens for t in re.findall(r'[\u0621-\u064a]+', heading)), ('Missing PDF revision heading', heading)
+    # Inspect the emitted PDF, not just the CSS stack or pre-print DOM. The
+    # runner installs the intended Arabic fonts locally; remote fonts stay
+    # blocked, so a fallback-only artifact must not silently pass.
+    fonts = pdf_font_inventory(reader)
+    (ARTIFACTS / 'ujairi-324-pdf-fonts.json').write_text(json.dumps(fonts, indent=2), encoding='utf-8')
+    assert any('amiri' in font['name'].lower() and font['embedded'] for font in fonts), ('The actual PDF must embed Amiri', fonts)
+    # Check dark revision material actually reached the PDF, including all six
+    # complete headings in order, rather than scattered matching word tokens.
+    heading_locations = pdf_revision_heading_locations(reader, geometry, revision_headings)
+    (ARTIFACTS / 'ujairi-324-pdf-headings.json').write_text(json.dumps(heading_locations, ensure_ascii=False, indent=2), encoding='utf-8')
     page.evaluate('window.dispatchEvent(new Event("afterprint"))')
     assert page.locator('.js-print-page').count() == 0
     assert page.evaluate('Array.from(document.querySelectorAll("section.chapter")).map(e=>e.id)') == original_ids

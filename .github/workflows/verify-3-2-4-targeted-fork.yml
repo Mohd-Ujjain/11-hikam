@@ -48,6 +48,13 @@ jobs:
         run: |
           python -m pip install playwright==1.57.0 pypdf==5.9.0
           python -m playwright install chromium
+      - name: Install the established Arabic font families
+        # Browser checks block remote font URLs; exercise Amiri/Noto locally.
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install --no-install-recommends -y fonts-hosny-amiri fonts-noto-core
+          fc-match Amiri
+          fc-match 'Noto Sans Arabic'
       - name: Build and exercise 3.2.4 only
         run: |
           python src/build.py
