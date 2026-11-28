@@ -127,6 +127,6 @@ for entry in companions:
 audit = (SRC / "docs/editorial/READINGS_3_1_4_3_1_5_ARABIC_SOURCE_COVERAGE.md").read_text(encoding="utf-8")
 assert "104 nonempty paragraphs" in audit and "printed pp. 19–46" in audit
 assert "ce82a1403643f4d17443377eb57400eed5404fc1" in audit
-assert "فويرباخ وعجمي" in audit
+assert "Feuerbach/Ajami matrix" in audit
 assert "3.1.5" in audit
 print("PASS Ajami 3.1.4: original intellectual prose unchanged; five exact cues, five depth records, three real comparisons, diverse Arabic teaching aids, both archival stages and six revision sections")
