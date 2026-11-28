@@ -31,7 +31,7 @@ The established chapter concept, important source quotation, source-adjacent dis
 
 ## Readability, word distribution, and verification gates
 
-After the candidate editing pass, expected immediately visible prose/aids are **767 / 1,090 = 1,857 words** (remeasure in CI; excludes frontmatter, optional Source Depth, five Companion explanations, and six revision sections). The newly clarified source reports, rather than filler, account for the larger prose section.
+After the candidate editing pass, expected immediately visible prose/aids are **774 / 1,135 = 1,909 words** (remeasure in CI; excludes frontmatter, optional Source Depth, five Companion explanations, and six revision sections). The newly clarified source reports, rather than filler, account for the larger prose section.
 
 - Author/title, `lang="ar"`, RTL, hue 328°, chapter navigation, TOC and all five exam categories preserved.
 - Complete immediate predecessor: `src/archive/pre-redevelopment-2026-11-21/dossier-3.2.1-before-2026-11-28-pedagogical-rework.html`, immutable Git blob `8f1a4f6ee18ee5464104c73d35a80cb3b1f543ff`; the older original `dossier-3.2.1.html` has a separate immutable hash.
