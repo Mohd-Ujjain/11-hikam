@@ -9,7 +9,7 @@
 
 ## Status and authority
 
-The complete editorial second pass, independent source/Arabic reviews, local build and bounded static checks are complete. **Fork browser verification, upstream PR/merge and Pages publication have not run for this edition.** Automatic approval review rejected the chapter-archive upload to the testing fork, even after its exact equality to the already-public predecessor was verified. No alternate upload route was used. The completed candidate is held for explicit publication approval; it must not be described as merged, deployed, browser-verified or print-verified.
+The complete editorial second pass, independent source/Arabic reviews, local build, bounded static checks and targeted fork browser/A4 verification are complete. The user explicitly authorized publication to `Mohd-Ujjain/11-hikam`, targeted checks, transfer of the verified result to `MohdUjjain/11-hikam`, merge and reader publication on 28 November 2026. That explicit approval cleared the earlier automatic archive-upload rejection; no alternate upload route was used. **The final fork run and actual artifacts are accepted for the authorized upstream release.** The upstream PR records the subsequent merge, exact Pages deployment and live-file verification; those later outcomes are not inferred from the fork result.
 
 This pass corrects execution under the established methodology. It introduces no methodological change. The supplied original governs the thesis, certainty, attributions, examples, objections and conclusions. The three Total Recalls are secondary reading aids; their mistakes do not override the original. No independent philosophical, historical or clinical correction was imported.
 
@@ -29,6 +29,8 @@ The fine-tuning fragment preceding that heading on p. 91 is excluded. Pages 36â€
 ## Complete predecessor preserved before editing
 
 Local archival commit `d6e58b6230354947b8fb709cda2f420d8a920254` precedes all canonical edits in this pass. It adds the complete unchanged predecessor and its README entry.
+
+The same two archive files were published first on the testing fork in commit `0078ff902976cdf3f527711338fb97ecc0c7a3ee`, before its candidate commit. Their immutable blobs are retained when transferring the release upstream.
 
 | Independent historical edition | Immutable Git blob |
 | --- | --- |
@@ -127,12 +129,28 @@ Completed local checks:
 - `python src/tests/verify_publication.py` and `python src/tests/validate_structure.py` â€” **62** dossiers and revision blocks, valid anchors and modular publication structure.
 - Compilation and static review of the new target browser test and fork-only workflow.
 
-The new browser test and fork-only workflow are prepared for 390px/1366px RTL, actual component fonts, timeline clearance, accessible popup interaction, native no-JavaScript details, selected-chapter actual A4 geometry, six complete PDF revision headings, embedded Amiri and DOM restoration. **These runtime checks remain unexecuted.** The local Chromium command is only a wrapper with no browser binary, and no blocked download was retried.
+The targeted browser verification ran on the established testing fork because the local Chromium command is only a wrapper without a browser binary. No blocked local download was retried. The final [targeted run 46144249254](https://github.com/Mohd-Ujjain/11-hikam/actions/runs/46144249254) completed successfully at candidate `1f578fe9b0706a7973327d42dbf9defc4f3aca6c`; its output job committed the canonical generated files at `c76812e56161c85cac65b5275f2841c5ba033b01`.
+
+| Bounded runtime check | Observed result |
+| --- | --- |
+| 390px / 1366px reading | RTL, established Arabic font stacks, both accessible comparisons, chronology marker clearance and no page-level horizontal overflow pass |
+| Contextual access | Keyboard opening, RTL popup bounds, Escape, focus restoration and exact cue count pass |
+| JavaScript disabled | Native Source Depth opens and closes; revision remains accessible |
+| Actual selected-chapter print | **15 A4 pages**: one frontmatter page and fourteen generated content/revision pages |
+| Print geometry | Maximum overflow **0 px**; minimum footer clearance **22 px**; all five chronology marker clearances **20 px** |
+| Printed revision | All six complete headings appear exactly once in order on pages **11, 11, 12, 13, 14 and 15**; all five examination categories are complete |
+| Actual PDF fonts | Embedded Amiri Regular/Bold and Noto Sans Arabic; the check does not rely only on declared CSS families |
+| Print exclusion / cleanup | Optional Source Depth and Companion cues omitted; original chapter DOM restored after printing |
+| Cover text | Both title and complete source citation clear the visible stamp on desktop and in the actual print layout |
+
+The first [targeted run 46143898476](https://github.com/Mohd-Ujjain/11-hikam/actions/runs/46143898476) passed its automated checks. A separate visual review of all fifteen actual PDF pages identified one defect: the long cover citation touched the stamp. Two explicit line breaks in that chapter's citation resolved the defect without changing its words or the shared layout. The browser guard now measures citation text as well as title text. The final targeted run verifies this corrected candidate. Its new print cover and desktop header both passed independent visual review; all fourteen body/revision page PNGs are byte-identical to the fully reviewed first artifact. No remaining visual defect was observed.
+
+The final artifact ZIP (`azmi-325-targeted-46144249254`, artifact `15262923901`) was downloaded and checked against its published SHA-256: `5545cb8da071a0234caf402210195bab7c74dd865e4e39cb22095bcb8dd4f9ba`. All thirteen intended release-file blobs matched the local candidate and fork-generated head before the documentation-only verification record was added.
 
 No full suite was manually launched, rerun or awaited. The temporary target-only workflow remains outside the upstream repository. The standing user instruction to avoid a full-suite run for every chapter continues to govern.
 
-## Isolation and pending release
+## Isolation and verified transfer
 
 The dedicated isolation check protects every unrelated chapter (including the newly published 3.2.4), every non-target Companion, the TOC, shared CSS, reader/Companion/offline JavaScript, build script and service-worker template. Only the canonical target, its manifest entries, scoped tests, this source audit, the target ledger clarification, exact archive and build-generated outputs change. A4/H22 behavior is untouched.
 
-After explicit approval clears the automatic block, the remaining steps are: publish the exact predecessor archive and candidate to the established second-account fork; run only the prepared targeted verification; review actual artifacts; transfer verified identical blobs through the upstream review branch; merge; verify the exact Pages deployment and live generated files. Any changes required by real browser findings must receive a new bounded verification before release.
+The authorized release transfers these verified content, test, archive and generated-file blobs through the upstream review branch. Only this audit and the chapter's ledger addendum are updated after runtime verification; the tested reader files remain identical. The fork-only workflow is excluded from the upstream tree. Merge and publication are accepted only after checking the exact Pages deployment and the live HTML/service-worker blob identities, with those final outcomes recorded in the PR.
