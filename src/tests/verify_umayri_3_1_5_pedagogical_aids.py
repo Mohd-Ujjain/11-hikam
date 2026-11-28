@@ -14,7 +14,7 @@ original = archive.read_bytes()
 blob = hashlib.sha1(b"blob " + str(len(original)).encode() + b"\0" + original).hexdigest()
 assert blob == "654d736715575ab88301f67d7e2f899dbaef2395", blob
 assert original.decode().count('class="endh"') == 6
-assert original.decode().count('class="comparison"') == 5
+assert original.decode().count('class="comparison"') == 7
 
 class Aids(HTMLParser):
     def __init__(self):
