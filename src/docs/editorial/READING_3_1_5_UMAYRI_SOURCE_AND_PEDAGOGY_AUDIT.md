@@ -29,6 +29,8 @@ The immediately preceding version relied on **five two-column tables**, most of 
 - Replaced the fear/ignorance table with a comparison of common analytical dimensions and a relation between natural causes and the author's theological question.
 - Replaced the deception/Freud pseudo-comparison with a source-grounded chain of inference and an exam-answering method.
 - Rebuilt the animism/Durkheim table as a real shared-criteria comparison and added a recall bridge.
+- Replaced the remaining generic main-body table on the biological account with an active checkpoint; the revision block's existing key table remains untouched.
+- Restored three source-premises omitted from the visible explanation: fear needs hope before prompting prayer; the class theory's disputed chronology and early poor adherents; Durkheim's inability, as the author challenges it, to account for the idea of God as Creator.
 - Preserved the six revision sections, the five examination categories, the six original major sections, and all existing paragraph-adjacent Source Depth disclosures and Reading Companion trigger phrases.
 
 ## Verification and editorial limitations
