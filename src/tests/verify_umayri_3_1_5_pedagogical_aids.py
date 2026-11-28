@@ -44,10 +44,10 @@ assert chapter.count('class="endh"') == 6
 assert chapter.count('class="examq-cat"') == 5
 assert chapter.count('class="hikam-source-depth-inline"') == 6
 assert chapter.count('class="hierarchy"') == 3
-assert chapter.count('class="comparison"') == 4
+assert chapter.count('class="comparison"') == 3
 assert chapter.count('class="concept-rel"') >= 1
 assert all(bad not in chapter for bad in ('class="hier-row"', 'class="hier-title"', 'class="hier-node"'))
-for phrase in ('المعلومات', 'المسوغ الترابطي', 'فرويد', 'الخوف', 'الجهل', 'الطوطم', 'التطور البيولوجي'):
+for phrase in ('المعلومات', 'المسوغ الترابطي', 'فرويد', 'الخوف', 'الجهل', 'الطوطم', 'التطور البيولوجي', 'أمل في النجاة', 'أوائل أتباعها', 'الإله الأعظم'):
     assert phrase in body, phrase
 for caption in ('مقارنة حقيقية: الخوف والجهل في تفسير نشأة الدين', 'مقارنة أصلية: المذهب الحيوي ودوركايم'):
     assert caption in chapter
@@ -55,4 +55,4 @@ for class_name in ('box mistake','box memory','box tip','h-node l1','h-tag','h-v
     assert f'class="{class_name}"' in chapter
 assert raw.index('id="ch3-1-4"') < start
 assert (ROOT / 'docs/editorial/READING_3_1_5_UMAYRI_SOURCE_AND_PEDAGOGY_AUDIT.md').exists()
-print(f'PASS 3.1.5: archive={blob}, visible prose/aids={aids.words}; 3 hierarchies, 4 comparisons, 6 source depths; complete revision')
+print(f'PASS 3.1.5: archive={blob}, visible prose/aids={aids.words}; 3 hierarchies, 3 comparisons, 6 source depths; complete revision')
