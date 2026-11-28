@@ -245,3 +245,10 @@ This archived edition is read-only, not a reader build input and must never be a
 - **Independent earlier historical original:** `dossier-3.2.3.html`, Git blob `fcedc9256c33f26c8034fc27fe3799063dec84d7`, is preserved separately and never replaced.
 - **Assigned primary reading:** سامي عامري، *براهين وجود الله في النفس والعقل والعلم*، `برهان الضبط الدقيق`, selected title leaf p. 441 and pp. 443–461 only. The original document and matched scan remain in private Google Drive, outside the public repository; three Total Recall guides are secondary educational references.
 - **Usage:** the predecessor archive is a historical preservation artifact, not a build input; do not update it after this redevelopment.
+
+
+### 3.2.4 — complete predecessor before the 28 November pedagogical second pass
+
+- [Complete immediately preceding edition](dossier-3.2.4-before-2026-11-28-pedagogical-rework.html), extracted unchanged from authoritative `main` at `beae14901b4dbc9bcdd6f214f2a5cea981463b18` before editing.
+- Exact Git blob: `0e83f0c55c87e47b6436cf030f17127c4c125dd4` (33,892 bytes, no added trailing newline). Includes frontmatter, full body and every aid, navigation, all six revision sections and five examination categories.
+- The older `dossier-3.2.4.html` (`d278e05012c13fe7d59a40896af1ba431fe77646`) and the separate `pre-prepared-source-2026-11-26` edition remain independent and unchanged. This is an archive, not a build input.
