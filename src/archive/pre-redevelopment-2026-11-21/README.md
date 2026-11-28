@@ -204,3 +204,14 @@ This record is an archival artifact, not a build input or an alternate published
 - **Primary reading:** Samer Tawfiq Ajami, `نظريات حول نشوء الدين: دراسة تحليلية نقدية`, `مجلة العقيدة` 28, pp. 19–46; private original Word and matching PDF, with three separate Total Recall guides. The source documents are not added to the public repo.
 
 This is a read-only historical artifact, not an alternate chapter included in the build or a template for other readings. Never rewrite either archived edition in order to match a newer published dossier.
+
+## Dossier 3.1.5 — immediately preceding Arabic edition (28 November 2026)
+
+- **Preserved full predecessor:** [`dossier-3.1.5-before-2026-11-28-source-redevelopment.html`](dossier-3.1.5-before-2026-11-28-source-redevelopment.html).
+- **Authoritative source baseline:** `MohdUjjain/11-hikam` main at `3cd5e3c304e258f2608dbd1472bfa377c2216fc3`, before this isolated testing-fork branch was created.
+- **Pinned Git blob:** `654d736715575ab88301f67d7e2f899dbaef2395`.
+- **Complete preservation:** author attribution, Arabic frontmatter, explanatory prose, source-depth disclosures, all study aids including five generic two-column tables, navigation, all six revision sections and the five examination categories.
+- **Independent earlier historical edition:** `dossier-3.1.5.html`, pinned at `8ad4d9c6d4c83a264394ece70182a545d0aeff18`; do not modify or replace.
+- **Primary reading:** Sultan ibn Abd al-Rahman al-Umayri, `الاعتراضات الإجمالية التي اعترض بها الناقدون على الأديان`; the assigned DOCX/PDF and three Total Recall guides remain private editorial references, outside the repository.
+
+This archive is not a build input. Never rewrite it to match later revisions.
