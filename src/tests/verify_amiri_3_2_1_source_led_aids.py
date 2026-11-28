@@ -74,7 +74,7 @@ assert 'صياغة برهان الفطرة في سبع حلقات' in visible
 for phrase in ('الشاهد التاريخي', 'التفسير المنافس', 'منزلة النزوع', 'أثر التشكيك',
                'لزوم التصديق', 'تطبيق اللزوم', 'نتيجة البرهان',
                'كولومبيا البريطانية سنة 2011', 'دراسة أحداث الحياة', 'سنة 2014',
-               'باسكال', 'لويس', 'بلانتينجا', 'ساباتيه', 'هوكنج', 'الخير الأعظم'):
+               'باسكال', 'لويس', 'بلانتينجا', 'ساباتيه', 'هوكنج', 'الخير الأعظم', 'صور بسرعات متفاوتة'):
     assert phrase in visible, phrase
 assert visible.count('class="h-node ') >= 12
 assert 'الخير الأعظم هو اجتماع السعادة مع أداء الواجبات' in visible
@@ -83,6 +83,10 @@ assert 'هنا ينتهي المصدر المقرر' in visible
 
 cues = [x for x in json.loads((ROOT / 'reading_companions.json').read_text(encoding='utf-8'))['companions'] if x['chapter'] == key]
 assert len(cues) == 5
+evidence = next(cue for cue in cues if cue['id'] == 'h321-evidence')
+assert 'عُرضت فيها صور بسرعات متفاوتة' in evidence['passage']
+assert 'عرض الصور' in evidence['why_here']
+assert 'جوابه السريع' not in evidence['explanation']
 for cue in cues:
     assert cue['passage'] in body, cue['id']
     assert cue['text'] in cue['passage']
