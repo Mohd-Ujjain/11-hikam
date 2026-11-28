@@ -64,6 +64,7 @@ assert visible.count('class="hierarchy"') == 4
 assert visible.count('class="box tip"') == 1
 assert visible.count('class="box mistake"') == 1
 assert visible.count('class="box memory"') == 1
+assert visible.count('class="box definition"') == 1
 assert visible.count('class="checkpoint"') == 2
 assert visible.count('class="concept-rel"') == 2
 assert visible.count('class="analogy"') == 1
@@ -73,7 +74,7 @@ assert 'صياغة برهان الفطرة في سبع حلقات' in visible
 for phrase in ('الشاهد التاريخي', 'التفسير المنافس', 'منزلة النزوع', 'أثر التشكيك',
                'لزوم التصديق', 'تطبيق اللزوم', 'نتيجة البرهان',
                'كولومبيا البريطانية سنة 2011', 'دراسة أحداث الحياة', 'سنة 2014',
-               'باسكال', 'لويس', 'بلانتينجا', 'هوكنج', 'الخير الأعظم'):
+               'باسكال', 'لويس', 'بلانتينجا', 'ساباتيه', 'هوكنج', 'الخير الأعظم'):
     assert phrase in visible, phrase
 assert visible.count('class="h-node ') >= 12
 assert 'الخير الأعظم هو اجتماع السعادة مع أداء الواجبات' in visible
