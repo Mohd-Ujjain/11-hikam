@@ -14,6 +14,21 @@ from browser_quality import ARTIFACTS, context, launch, load, no_errors, site
 ID = 'ch3-2-4'
 SRC = Path(__file__).resolve().parents[1]
 CUES = [c for c in json.loads((SRC / 'reading_companions.json').read_text(encoding='utf-8'))['companions'] if c['chapter'] == ID]
+TITLE_STAMP_AUDIT = r'''root => {
+  const title=root.querySelector('.chapter-title'), stamp=root.querySelector('.chapter-stamp');
+  const walker=document.createTreeWalker(title,NodeFilter.SHOW_TEXT), rects=[];
+  while(walker.nextNode()) {
+    if(!walker.currentNode.textContent.trim()) continue;
+    const range=document.createRange(); range.selectNodeContents(walker.currentNode);
+    for(const r of range.getClientRects()) if(r.width && r.height)
+      rects.push({left:r.left,right:r.right,top:r.top,bottom:r.bottom});
+  }
+  const s=stamp.getBoundingClientRect(), style=getComputedStyle(stamp);
+  const visible=style.display!=='none' && style.visibility!=='hidden' && s.width>0 && s.height>0;
+  return {stampVisible:visible,titleTextRects:rects.length,overlaps:visible ? rects.filter(r=>
+    Math.min(r.right,s.right)-Math.max(r.left,s.left)>1 &&
+    Math.min(r.bottom,s.bottom)-Math.max(r.top,s.top)>1) : []};
+}'''
 
 
 def screen(browser, url):
@@ -24,6 +39,8 @@ def screen(browser, url):
         assert chapter.get_attribute('lang') == 'ar'
         assert chapter.get_attribute('style') == '--hue:28;'
         assert chapter.evaluate('(e)=>getComputedStyle(e).direction') == 'rtl'
+        title_stamp = chapter.evaluate(TITLE_STAMP_AUDIT)
+        assert title_stamp['titleTextRects'] and not title_stamp['overlaps'], ('Title text must clear the visible stamp', width, title_stamp)
         # Match the actual shared component contracts. Narrative, table cells,
         # hierarchy values, revision content and local source prose inherit the
         # Arabic stacks. Existing chrome has explicit sans/display stacks; a
@@ -90,6 +107,7 @@ def screen(browser, url):
             tables.first.scroll_into_view_if_needed()
             tables.first.screenshot(path=str(ARTIFACTS / 'ujairi-324-comparison-mobile-rtl.png'))
         else:
+            chapter.locator('.chapter-banner').screenshot(path=str(ARTIFACTS / 'ujairi-324-title-desktop.png'))
             chapter.locator('.hierarchy').first.screenshot(path=str(ARTIFACTS / 'ujairi-324-argument-desktop.png'))
             chapter.locator('.historical-timeline').screenshot(path=str(ARTIFACTS / 'ujairi-324-timeline-rtl.png'))
         no_errors(page, f'3.2.4 RTL {width}px')
@@ -122,19 +140,18 @@ def normalized_pdf_text(text):
 
 
 def pdf_revision_heading_locations(reader, geometry, headings):
-    # Layout extraction preserves the visual glyph sequence. Reverse a visual
-    # Arabic line BEFORE expanding presentation ligatures: reversing NFKC text
-    # would reverse the two letters within lam-alef and corrupt e.g. خلاصة.
-    # Accept either logical or visual storage, but require the complete heading
-    # on one line, exactly once, and in the original revision-section order.
+    # The mandatory embedded Amiri font maps these headings to logical Unicode.
+    # Plain extraction recovers every complete line with both pypdf 5.9.0 and
+    # 6.21.4. Version 5.9.0's layout mode invents gaps inside Amiri words, so do
+    # not reconstruct them by deleting spaces or matching scattered tokens.
     lines = []
     for i, item in enumerate(geometry):
         if item['dark']:
-            for line_no, line in enumerate(reader.pages[i+1].extract_text(extraction_mode='layout').splitlines()):
-                lines.append((i+2, line_no, {normalized_pdf_text(line), normalized_pdf_text(line[::-1])}))
+            for line_no, line in enumerate(reader.pages[i+1].extract_text().splitlines()):
+                lines.append((i+2, line_no, normalized_pdf_text(line)))
     locations = []
     for heading in headings:
-        matches = [(page_no, line_no) for page_no, line_no, forms in lines if normalized_pdf_text(heading) in forms]
+        matches = [(page_no, line_no) for page_no, line_no, line in lines if normalized_pdf_text(heading) == line]
         assert len(matches) == 1, ('PDF must contain the complete revision heading exactly once', heading, matches)
         locations.append(matches[0])
     assert locations == sorted(locations), ('PDF revision headings are out of order', locations)
@@ -168,6 +185,7 @@ def print_a4(browser, url):
     original_ids = page.evaluate('Array.from(document.querySelectorAll("section.chapter")).map(e=>e.id)')
     revision_headings = page.locator('#'+ID+' > .end-block .endh').all_text_contents()
     page.evaluate('''() => {
+      const titleStampAudit = ''' + TITLE_STAMP_AUDIT + ''';
       // The application removes generated pages on afterprint. Capture each
       // completed beforeprint layout after its registered paginator, including
       // Chromium's actual PDF event, instead of inspecting removed nodes later.
@@ -175,6 +193,7 @@ def print_a4(browser, url):
         const pages=[...document.querySelectorAll('#ch3-2-4 > .js-print-page')];
         window.__ujairiPrintAudit={
           count:pages.length,
+          titleStamp:titleStampAudit(document.querySelector('#ch3-2-4')),
           depthAndCues:pages.reduce((n,p)=>n+p.querySelectorAll('.hikam-source-depth-inline, .hikam-companion-trigger').length,0),
           revisionHeadings:pages.reduce((n,p)=>n+p.querySelectorAll('.endh').length,0),
           timelineDateClearances:pages.flatMap(p=>[...p.querySelectorAll('.historical-timeline-event')].map(e=>
@@ -198,6 +217,7 @@ def print_a4(browser, url):
     (ARTIFACTS / 'ujairi-324-print-audit.json').write_text(json.dumps(audit, indent=2), encoding='utf-8')
     count = audit['count']
     assert count >= 3
+    assert audit['titleStamp']['titleTextRects'] and not audit['titleStamp']['overlaps'], ('Printed title text must clear the visible stamp', audit['titleStamp'])
     geometry = audit['geometry']
     assert all(g['overflow'] <= 3 and g['clearance'] >= -1 for g in geometry), geometry
     assert any(g['dark'] for g in geometry) and any(not g['dark'] for g in geometry)
